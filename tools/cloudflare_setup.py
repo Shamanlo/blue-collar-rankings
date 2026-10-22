@@ -80,8 +80,13 @@ def ensure_domains():
 
     _, zones = call("GET", f"/zones?name={DOMAIN}")
     if not zones["result"]:
-        print(f"::notice::{DOMAIN} isn't in Cloudflare yet (or the token can't see it). Site is live on {target}; add the domain to Cloudflare and re-run.")
-        return
+        # Add the domain to Cloudflare; needs Zone:Edit on the token.
+        status, created = call("POST", "/zones", {"name": DOMAIN, "account": {"id": ACCOUNT}, "type": "full"}, ok=(200, 400, 403))
+        if status != 200:
+            print(f"::notice::Couldn't add {DOMAIN} to Cloudflare ({status}: {created.get('errors')}). Add it in the dashboard and re-run. Site is live on {target}.")
+            return
+        print(f"Added {DOMAIN} to Cloudflare; nameservers: {', '.join(created['result']['name_servers'])}")
+        _, zones = call("GET", f"/zones?name={DOMAIN}")
 
     _, existing = call("GET", f"/accounts/{ACCOUNT}/pages/projects/{PROJECT}/domains")
     attached = {d["name"] for d in existing["result"]}
