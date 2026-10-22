@@ -88,7 +88,7 @@ function layout({ title, description, canonical, body, active = "", ogImage = "/
 <meta property="og:image" content="${ogImage.startsWith("http") ? ogImage : site.url + ogImage}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#012456">
-<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/img/favicon-64.png" sizes="64x64" type="image/png">
 <link rel="icon" href="/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -100,7 +100,7 @@ ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</sc
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="${esc(site.name)} home"><img src="/img/logo-wide.png" alt="${esc(site.name)}" width="653" height="112"></a>
+    <a class="brand" href="/" aria-label="${esc(site.name)} home"><img src="/img/logo-wide.png" alt="${esc(site.name)}" width="408" height="128"></a>
     <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
     <nav class="nav" id="nav">
       ${NAV.map(([h, l]) => `<a href="${h}"${active === h ? ' aria-current="page"' : ""}>${l}</a>`).join("\n      ")}
@@ -115,7 +115,7 @@ ${body}
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="foot-logo" href="/"><img src="/img/logo-wide.png" alt="${esc(site.name)}" width="653" height="112"></a>
+        <a class="foot-logo" href="/"><img src="/img/logo-wide.png" alt="${esc(site.name)}" width="408" height="128"></a>
         <p>Local contractor rankings and home service breakdowns. One trade, one town, one video at a time.</p>
       </div>
       <div>
@@ -153,7 +153,7 @@ document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener(
 `;
 }
 
-const orgLd = { "@context": "https://schema.org", "@type": "Organization", name: site.name, url: site.url, logo: site.url + "/img/logo-square.jpg", sameAs: [site.youtube] };
+const orgLd = { "@context": "https://schema.org", "@type": "Organization", name: site.name, url: site.url, logo: site.url + "/img/logo-stacked.png", sameAs: [site.youtube] };
 const crumbsLd = (items) => ({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: items.map(([name, url], i) => ({ "@type": "ListItem", position: i + 1, name, item: site.url + url })) });
 const crumbsHtml = (items) => `<ol class="crumbs">${items.map(([n, u], i) => `<li>${i === items.length - 1 ? esc(n) : `<a href="${u}">${esc(n)}</a>`}</li>`).join("")}</ol>`;
 
@@ -330,10 +330,9 @@ function rankingPage(r) {
   const field = r.contenders.map((name) => {
     const b = biz[name] || {};
     const loc = b.city ? `<p class="muted" style="font-size:.88rem">${esc(b.city)}</p>` : "";
-    const site_ = b.website ? `<div class="site">${naked(b.website)}</div>` : "";
     return `<li id="${slugify(name)}">
       <div class="mini">${areaBadge({ id: `m-${slugify(name)}`, area: r.city, trade: r.badgeTrade, year: YEAR, title: `Best in ${r.city} badge` })}</div>
-      <div><h3>${esc(name)}</h3>${loc}<p>${esc(summaryFor(name))}</p>${site_}</div>
+      <div><h3>${esc(name)}</h3>${loc}<p>${esc(summaryFor(name))}</p></div>
     </li>`;
   }).join("\n");
 
@@ -356,10 +355,13 @@ function rankingPage(r) {
       itemListElement: [r.winner, ...r.contenders].map((name, i) => {
         const b = biz[name] || {};
         const item = { "@type": "LocalBusiness", name };
-        if (b.website) item.url = b.website;
-        if (b.phone) item.telephone = b.phone;
-        if (b.address) item.address = b.address;
-        if (i === 0 && b.gbp) item.hasMap = b.gbp;
+        // Only the #1 pick gets contact details and links.
+        if (i === 0) {
+          if (b.website) item.url = b.website;
+          if (b.phone) item.telephone = b.phone;
+          if (b.address) item.address = b.address;
+          if (b.gbp) item.hasMap = b.gbp;
+        }
         return { "@type": "ListItem", position: i + 1, item };
       }),
     },
