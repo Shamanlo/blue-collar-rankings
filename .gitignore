@@ -1,0 +1,4 @@
+node_modules/
+public/
+scripts/.badge-jobs.json
+.DS_Store

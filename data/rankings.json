@@ -1,0 +1,576 @@
+{
+  "site": {
+    "name": "Blue Collar Rankings",
+    "url": "https://bluecollarrankings.com",
+    "youtube": "https://www.youtube.com/@BlueCollarRankings",
+    "year": 2026,
+    "tagline": "Local trades, ranked. So you call the right pro first."
+  },
+  "rankings": [
+    {
+      "slug": "drain-cleaning",
+      "videoId": "RwbNqPTgeYM",
+      "published": "2026-10-22",
+      "trade": "Drain Cleaning",
+      "tradePlural": "Drain Cleaning Companies",
+      "badgeTrade": "Drain Cleaning",
+      "city": "Iowa City",
+      "citySlug": "iowa-city",
+      "state": "Iowa",
+      "stateSlug": "iowa",
+      "stateAbbr": "IA",
+      "count": 6,
+      "areas": [
+        "Iowa City",
+        "Coralville",
+        "North Liberty",
+        "Tiffin",
+        "the Amana Colonies"
+      ],
+      "hook": "A slow drain is a warning. Ignore it, and the next clog shows up as water coming through the basement floor drain.",
+      "intro": "We looked at six drain cleaning companies serving the Iowa City area, what each one offers and where their experience holds up. Each company is described from its own website, or from its Google or Facebook listing where a website wasn't available.",
+      "winner": "A-1 Sewer Service",
+      "winnerContact": "Andy",
+      "winnerWhy": [
+        "Andy and the A-1 Sewer Service crew clear main sewer lines, kitchen sinks, basement floor drains and bathroom drains. On a main line they open the cleanout and run a cable machine to cut the blockage loose. If the line keeps clogging, they run a camera and show you what's actually in there before anyone starts talking about digging.",
+        "They answer 24/7, there are no after-hours fees until 8 p.m. (weekends included), and estimates are free and upfront. For a homeowner staring at a backed-up floor drain, that combination of availability and straight pricing is what put A-1 at the top of this list."
+      ],
+      "contenders": [
+        "Ackerman Plumbing",
+        "Busy Bee Drain Cleaning",
+        "Clog Busters Drain Cleaning & Repair",
+        "Phil's Sewer and Drain Cleaning",
+        "Streit's Maintenance"
+      ],
+      "tips": [
+        "Ask what a camera inspection costs if the line keeps clogging.",
+        "Ask about after-hours and weekend fees before you book.",
+        "Get the price before the work starts."
+      ],
+      "chapters": [
+        [
+          "0:00",
+          "Why a slow drain is a warning"
+        ],
+        [
+          "0:13",
+          "Ackerman Plumbing"
+        ],
+        [
+          "0:19",
+          "Busy Bee Drain Cleaning"
+        ],
+        [
+          "0:28",
+          "Clog Busters Drain Cleaning & Repair"
+        ],
+        [
+          "0:47",
+          "Phil's Sewer and Drain Cleaning"
+        ],
+        [
+          "0:54",
+          "Streit's Maintenance"
+        ],
+        [
+          "1:06",
+          "#1 Top-rated pick: A-1 Sewer Service"
+        ],
+        [
+          "1:36",
+          "What a customer says"
+        ],
+        [
+          "1:45",
+          "Before you hire"
+        ]
+      ],
+      "asOf": "October 2026"
+    },
+    {
+      "slug": "storm-water-damage-restoration",
+      "videoId": "s9snRYbqB64",
+      "published": "2026-10-22",
+      "trade": "Storm & Water Damage Restoration",
+      "tradePlural": "Storm & Water Damage Companies",
+      "badgeTrade": "Storm & Water Damage",
+      "city": "Iowa City",
+      "citySlug": "iowa-city",
+      "state": "Iowa",
+      "stateSlug": "iowa",
+      "stateAbbr": "IA",
+      "count": 8,
+      "areas": [
+        "Iowa City",
+        "Coralville",
+        "North Liberty",
+        "Solon",
+        "Cedar Rapids"
+      ],
+      "hook": "Hail, straight-line winds, a burst pipe, a flooded basement: in Iowa City, storm and water damage don't wait for a convenient week.",
+      "intro": "We looked at eight storm and water damage specialists serving the Iowa City area, what each one focuses on and where their experience holds up. Each company is described from its own website, or from its Google listing where a website wasn't available.",
+      "winner": "Michel Cuevas Home Improvement",
+      "winnerWhy": [
+        "Michel Cuevas Home Improvement has been family-owned in Iowa City since 1997. On a water damage job they find and fix the source first, whether that's the roof, the siding or a failed pipe. Then they pull wet drywall, flooring and trim, dry the structure, treat the framing to prevent mold, and rebuild it with their own crews. No subcontractors.",
+        "After a storm they document hail and wind damage for your insurance adjuster and meet the adjuster on-site. And the number on the estimate is the number on the invoice. Fixing the cause instead of just the stain, plus pricing that doesn't move, is why they earned the top spot."
+      ],
+      "contenders": [
+        "Firstcall Restoration",
+        "Five One Five Restoration",
+        "Heartland Roofing, Siding & Solar",
+        "My Storm Heroes",
+        "SERVPRO of Iowa City",
+        "Stormex Restoration & Remodel",
+        "United Water Restoration Group"
+      ],
+      "tips": [
+        "Ask who finds and fixes the source of the water, not just who dries it out.",
+        "Confirm their license and insurance.",
+        "Get the estimate in writing, and ask whether they'll meet your adjuster."
+      ],
+      "chapters": [
+        [
+          "0:00",
+          "Why storm and water damage can't wait"
+        ],
+        [
+          "0:12",
+          "Firstcall Restoration"
+        ],
+        [
+          "0:21",
+          "Five One Five Restoration"
+        ],
+        [
+          "0:32",
+          "Heartland Roofing, Siding & Solar"
+        ],
+        [
+          "0:40",
+          "My Storm Heroes"
+        ],
+        [
+          "0:46",
+          "SERVPRO of Iowa City"
+        ],
+        [
+          "0:53",
+          "Stormex Restoration & Remodel"
+        ],
+        [
+          "1:02",
+          "United Water Restoration Group"
+        ],
+        [
+          "1:13",
+          "#1 Top-rated pick: Michel Cuevas Home Improvement"
+        ],
+        [
+          "1:40",
+          "What a customer says"
+        ],
+        [
+          "1:44",
+          "Before you hire"
+        ]
+      ],
+      "asOf": "October 2026"
+    },
+    {
+      "slug": "water-heater-installers",
+      "videoId": "81pHM5lvuDk",
+      "published": "2026-10-21",
+      "trade": "Water Heater Installation",
+      "tradePlural": "Water Heater Installers",
+      "badgeTrade": "Water Heater Installers",
+      "city": "Iowa City",
+      "citySlug": "iowa-city",
+      "state": "Iowa",
+      "stateSlug": "iowa",
+      "stateAbbr": "IA",
+      "count": 6,
+      "areas": [
+        "Iowa City",
+        "Coralville",
+        "North Liberty",
+        "Tiffin",
+        "Cedar Rapids"
+      ],
+      "hook": "When a water heater fails, it usually picks a busy morning: cold showers, and maybe a puddle on the basement floor.",
+      "intro": "We looked at six Iowa City-area companies that install water heaters, what each one offers and where their experience holds up. Each company is described from its own website, or from its Google listing where a website wasn't available.",
+      "winner": "A-1 Sewer Service",
+      "winnerContact": "Andy",
+      "winnerWhy": [
+        "Andy at A-1 Sewer Service installs both tank and tankless water heaters for homes and businesses around Iowa City and the Corridor. Before recommending a unit, he checks the gas supply, the venting and the space the heater has to fit in.",
+        "If the gas line or vent has to change, A-1 explains why and builds it into the price up front, so the quote you approve is the job you get. That homework before the sale is exactly what you want when the alternative is cold showers, and it's why A-1 is our top-rated pick. They install across Iowa City, Coralville, North Liberty, Tiffin, Cedar Rapids, West Liberty, Kalona and the Amana Colonies."
+      ],
+      "contenders": [
+        "Ackerman Plumbing",
+        "Affordable Plumbing & Remodeling",
+        "Beachy Plumbing",
+        "Colony Plumbing, Heating & Air Conditioning",
+        "Wichhart Repair"
+      ],
+      "tips": [
+        "Ask whether gas line and venting changes are included in the quote.",
+        "Ask whether they haul away the old tank.",
+        "Get the quote in writing."
+      ],
+      "chapters": [
+        [
+          "0:00",
+          "Why the right installer matters"
+        ],
+        [
+          "0:13",
+          "Ackerman Plumbing"
+        ],
+        [
+          "0:19",
+          "Affordable Plumbing & Remodeling"
+        ],
+        [
+          "0:28",
+          "Beachy Plumbing"
+        ],
+        [
+          "0:33",
+          "Colony Plumbing, Heating & Air Conditioning"
+        ],
+        [
+          "0:44",
+          "Wichhart Repair"
+        ],
+        [
+          "0:48",
+          "#1 Top-rated pick: A-1 Sewer Service"
+        ],
+        [
+          "1:16",
+          "What a customer says"
+        ],
+        [
+          "1:22",
+          "Before you hire"
+        ]
+      ],
+      "asOf": "October 2026"
+    },
+    {
+      "slug": "electricians",
+      "videoId": "wYXjwkqC0Ec",
+      "published": "2026-10-21",
+      "trade": "Electricians",
+      "tradePlural": "Electricians",
+      "badgeTrade": "Electricians",
+      "city": "Denver",
+      "citySlug": "denver",
+      "state": "Colorado",
+      "stateSlug": "colorado",
+      "stateAbbr": "CO",
+      "count": 7,
+      "areas": [
+        "Denver",
+        "Aurora",
+        "Littleton",
+        "Thornton",
+        "Westminster",
+        "Arvada"
+      ],
+      "hook": "Breakers that keep tripping, lights that flicker, a panel that can't handle your new EV charger: in Denver, the right electrician makes all the difference.",
+      "intro": "We looked at seven Denver-area electricians, what each one focuses on and what their customers say. Each company is described from its own website, or from its Google listing where a website wasn't available.",
+      "method": "How we picked #1 here: we compared each company's Google star rating together with how many reviews back it up, so a high rating from a handful of reviews doesn't outrank a near-perfect rating from hundreds.",
+      "winner": "Power Electrical, Heating & Cooling Services",
+      "winnerWhy": [
+        "Power Electrical, Heating & Cooling Services came out on top with a perfect 5.0 rating across more than 200 Google reviews. That's not a lucky streak from a few happy customers. It's hundreds of Denver-area homeowners saying the same thing.",
+        "The work behind the rating covers the whole house: panel upgrades, wiring and rewiring, EV charger installation, lighting, surge protection and troubleshooting, plus heating and cooling. Their site says they've been licensed since 2007, and they serve the Denver metro including Aurora, Littleton, Thornton, Westminster and Arvada."
+      ],
+      "contenders": [
+        "AMP Electric",
+        "ChargerPro",
+        "D & J Enterprises",
+        "JD Electrical Home Solutions",
+        "Red Fox Electric",
+        "Sundog Electric"
+      ],
+      "tips": [
+        "Confirm their electrical license.",
+        "Ask whether permits are included in the price.",
+        "Get the price in writing."
+      ],
+      "chapters": [
+        [
+          "0:00",
+          "Why the right electrician matters"
+        ],
+        [
+          "0:15",
+          "AMP Electric"
+        ],
+        [
+          "0:23",
+          "ChargerPro"
+        ],
+        [
+          "0:31",
+          "D & J Enterprises"
+        ],
+        [
+          "0:36",
+          "JD Electrical Home Solutions"
+        ],
+        [
+          "0:44",
+          "Red Fox Electric"
+        ],
+        [
+          "0:53",
+          "Sundog Electric"
+        ],
+        [
+          "1:04",
+          "#1 Top-rated pick: Power Electrical, Heating & Cooling Services"
+        ],
+        [
+          "1:26",
+          "What a customer says"
+        ],
+        [
+          "1:32",
+          "Before you hire"
+        ]
+      ],
+      "asOf": "October 2026"
+    },
+    {
+      "slug": "hunting-outfitters",
+      "videoId": "mOSZyHjkPQA",
+      "published": "2026-10-21",
+      "trade": "Guided Hunting",
+      "tradePlural": "Hunting Outfitters",
+      "badgeTrade": "Hunting Outfitters",
+      "city": "Monterey County",
+      "citySlug": "monterey-county",
+      "state": "California",
+      "stateSlug": "california",
+      "stateAbbr": "CA",
+      "count": 5,
+      "areas": [
+        "Monterey County",
+        "California's Central Coast"
+      ],
+      "hook": "Wild pigs run year-round in Monterey County, and the right outfitter is the difference between a long walk and a full freezer.",
+      "intro": "We looked at five guided hunting outfitters working Monterey County and California's Central Coast, what each one offers and where their experience holds up. Each outfitter is described from its own website, or from its HuntLease listing where it has no website.",
+      "winner": "Indian Valley Outfitters",
+      "winnerWhy": [
+        "Indian Valley Outfitters, based in San Miguel, runs guided and unguided hunts on private ranch land in Monterey and Santa Clara counties that's run under a game management program. Hunts cover year-round wild pig, blacktail deer, turkey, quail, dove and more, and hunters can stay in a three-bedroom ranch home on the property.",
+        "Their guarantee is in writing on their website: professional guides, reliable transportation in the field and game-managed private land, and if they fall short of that, they'll work with you to make it right. Every outfitter here has real strengths, so watch the full breakdown and make your own call."
+      ],
+      "contenders": [
+        "Camp Five Outfitters",
+        "Oak Stone Outfitters",
+        "SkyRose Ranch Hunting",
+        "SMC Williams Guide Service"
+      ],
+      "tips": [
+        "Ask exactly what's included: lodging, meals, processing, taxidermy.",
+        "Confirm the guide is licensed with the California Department of Fish and Wildlife.",
+        "Get the price and deposit terms in writing. California requires nonlead ammunition for hunting."
+      ],
+      "chapters": [
+        [
+          "0:00",
+          "Why the right outfitter matters"
+        ],
+        [
+          "0:12",
+          "Camp Five Outfitters"
+        ],
+        [
+          "0:24",
+          "Oak Stone Outfitters"
+        ],
+        [
+          "0:35",
+          "SkyRose Ranch Hunting"
+        ],
+        [
+          "0:48",
+          "SMC Williams Guide Service"
+        ],
+        [
+          "0:58",
+          "#1 Top-rated pick: Indian Valley Outfitters"
+        ],
+        [
+          "1:22",
+          "Their written guarantee"
+        ],
+        [
+          "1:28",
+          "Before you book"
+        ]
+      ],
+      "asOf": "October 2026"
+    },
+    {
+      "slug": "privacy-window-film",
+      "videoId": "yX8qgWdYTn4",
+      "published": "2026-10-20",
+      "trade": "Privacy Window Film",
+      "tradePlural": "Privacy Window Film Installers",
+      "badgeTrade": "Privacy Window Film",
+      "city": "Los Angeles",
+      "citySlug": "los-angeles",
+      "state": "California",
+      "stateSlug": "california",
+      "stateAbbr": "CA",
+      "count": 6,
+      "areas": [
+        "Los Angeles",
+        "Santa Monica",
+        "Beverly Hills",
+        "Culver City",
+        "Pasadena",
+        "the San Fernando Valley"
+      ],
+      "hook": "Clear glass looks great until everyone can see into your office, your conference room or your home. Privacy frost film fixes that without replacing the glass, and it still lets the light in.",
+      "intro": "We looked at six Los Angeles window film installers, what each one focuses on and where their experience holds up. Each company is described from its own website.",
+      "winner": "MD Window Films",
+      "winnerWhy": [
+        "MD Window Films is a Santa Monica window film contractor that has been open since 2010 and is an Armorcoat certified dealer. Frosted privacy film is a core service, alongside security, anti-graffiti and solar films and window tinting, for commercial and residential buildings across Greater Los Angeles.",
+        "Privacy without giving up daylight is the whole point of frost film, and it's the job MD Window Films does every day. Every installer here has real strengths, so compare samples and warranties before you decide. MD Window Films is where we'd start."
+      ],
+      "contenders": [
+        "American Window Film",
+        "Halibut Window Film",
+        "Smart Sun Control",
+        "Window Film Depot",
+        "Window Tints Everything"
+      ],
+      "tips": [
+        "Ask which film brand and product they install.",
+        "Find out what the warranty covers, and for how long.",
+        "Ask to see samples on your glass, and get the price in writing."
+      ],
+      "chapters": [
+        [
+          "0:00",
+          "Why privacy frost film"
+        ],
+        [
+          "0:15",
+          "American Window Film"
+        ],
+        [
+          "0:25",
+          "Halibut Window Film"
+        ],
+        [
+          "0:34",
+          "Smart Sun Control"
+        ],
+        [
+          "0:43",
+          "Window Film Depot"
+        ],
+        [
+          "0:52",
+          "Window Tints Everything"
+        ],
+        [
+          "1:01",
+          "#1 Top-rated pick: MD Window Films"
+        ],
+        [
+          "1:21",
+          "What a customer says"
+        ],
+        [
+          "1:27",
+          "Before you hire"
+        ]
+      ],
+      "asOf": "October 2026"
+    },
+    {
+      "slug": "kitchen-remodelers",
+      "videoId": "UAjvF2nSvP4",
+      "published": "2026-10-20",
+      "trade": "Kitchen Remodeling",
+      "tradePlural": "Kitchen Remodelers",
+      "badgeTrade": "Kitchen Remodelers",
+      "city": "Malibu",
+      "citySlug": "malibu",
+      "state": "California",
+      "stateSlug": "california",
+      "stateAbbr": "CA",
+      "count": 6,
+      "areas": [
+        "Malibu",
+        "Pacific Palisades",
+        "Topanga",
+        "Calabasas",
+        "Agoura Hills"
+      ],
+      "hook": "Remodeling a kitchen in Malibu means salt air, hillside lots and coastal permits, and the wrong contractor can turn it into an expensive project.",
+      "intro": "We looked at six Malibu-area kitchen remodelers, what each one focuses on and where their experience holds up. Each company is described from its own website. Some focus on kitchens and baths; others also handle additions, ADUs and full custom homes.",
+      "winner": "All Exclusive Construction",
+      "winnerWhy": [
+        "All Exclusive Construction is a licensed remodeling contractor (CA Lic. #1120170) with a page built specifically for Malibu kitchens. It covers remodels for coastal and hillside homes, including materials chosen to stand up to salt air and coordination with City of Malibu permits and, when needed, the California Coastal Commission.",
+        "They also handle bathrooms, additions and ADUs, work out of offices in Santa Monica and Westlake Village, and offer free in-home consultations. Every remodeler in this ranking has real strengths, so compare two or three before you sign. All Exclusive Construction is our top-rated pick."
+      ],
+      "contenders": [
+        "LA Home Contractor",
+        "My SoCal Builders",
+        "Rolen Construction",
+        "Silver Stone Remodeling",
+        "Stillmark Construction"
+      ],
+      "tips": [
+        "Confirm their California contractor license.",
+        "Ask who pulls the permits, especially for coastal-zone work.",
+        "Get the price and timeline in writing."
+      ],
+      "chapters": [
+        [
+          "0:00",
+          "Why Malibu kitchens need the right contractor"
+        ],
+        [
+          "0:13",
+          "LA Home Contractor"
+        ],
+        [
+          "0:23",
+          "My SoCal Builders"
+        ],
+        [
+          "0:31",
+          "Rolen Construction"
+        ],
+        [
+          "0:39",
+          "Silver Stone Remodeling"
+        ],
+        [
+          "0:47",
+          "Stillmark Construction"
+        ],
+        [
+          "0:54",
+          "#1 Top-rated pick: All Exclusive Construction"
+        ],
+        [
+          "1:09",
+          "What a customer says"
+        ],
+        [
+          "1:16",
+          "Before you hire"
+        ]
+      ],
+      "asOf": "October 2026"
+    }
+  ]
+}

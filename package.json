@@ -1,0 +1,10 @@
+{
+  "name": "bluecollarrankings",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "badges": "node scripts/build.mjs && node scripts/render-badges.mjs && node scripts/build.mjs",
+    "serve": "npx serve public"
+  }
+}

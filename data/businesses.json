@@ -1,0 +1,435 @@
+{
+  "A-1 Sewer Service": {
+    "website": "https://a1seweriowacity.com/",
+    "city": "Iowa City, IA",
+    "address": "738 Bay Ridge Dr, Iowa City, IA 52246",
+    "phone": "(319) 600-4224",
+    "gbp": "https://www.google.com/maps?cid=4626743948717435902",
+    "rating": 5.0,
+    "reviews": 43,
+    "summary": "A-1 Sewer Service (listed on Google as A1 Sewer Service LLC) is a locally owned sewer, drain and plumbing company based in Iowa City, run by owner Andy. It handles drain and sewer line cleaning, hydro jetting, camera inspection, sump pumps, fixtures and water heater installation across Johnson, Linn, Iowa and Washington Counties, is open 24/7, and offers free upfront estimates. Appears in both the water heater video (#1) and the drain cleaning video (#1).",
+    "summaries": {
+      "water-heater-installers": "A-1 Sewer Service installs tank and tankless water heaters for homes and businesses around Iowa City and the Corridor. Before recommending a unit it checks the gas supply, venting and space, and if the gas line or vent has to change it explains why and includes that in the price up front. It lists water heater installs in Iowa City, Coralville, North Liberty, Tiffin, Cedar Rapids, West Liberty, Kalona and the Amana Colonies.",
+      "drain-cleaning": "A-1 Sewer Service clears main sewer lines, kitchen sinks, basement floor drains and bathroom drains, opening the main line at the cleanout and running a cable machine through it. If a line keeps clogging it can run a camera through it before any digging is discussed. It is open 24/7 with no after-hours fees until 8 p.m., weekends included, and gives free upfront estimates."
+    },
+    "servicePage": {
+      "water-heater-installers": "https://a1seweriowacity.com/water-heater-installation/",
+      "drain-cleaning": "https://a1seweriowacity.com/drain-cleaning/"
+    },
+    "ratingAsOf": "Oct 22, 2026"
+  },
+  "Ackerman Plumbing": {
+    "website": "https://www.ackerman-plumbing.com/",
+    "city": "Iowa City, IA",
+    "address": "4584 Rapid Creek Rd NE, Iowa City, IA 52240",
+    "phone": "(319) 250-5442",
+    "gbp": "https://www.google.com/maps?cid=12063848246276630309",
+    "rating": 4.9,
+    "reviews": 153,
+    "summary": "Ackerman Plumbing is a family-owned plumbing company in the Iowa City area, owned by Corey Ackerman, serving Johnson County and surrounding towns. It describes itself as licensed, bonded and insured, hiring master and journeyman plumbers, with 24/7 emergency service. Appears in both the water heater video and the drain cleaning video.",
+    "summaries": {
+      "water-heater-installers": "Ackerman Plumbing repairs, replaces and installs tank and tankless water heaters, including work on ignition and gas lines, and says it handles all types and brands. Its water heater page covers code-compliant installs, permits, and annual maintenance such as tank flushing and anode rod checks. Listed service towns include Iowa City, Coralville, North Liberty, Tiffin, Hills, Parnell and Williamsburg.",
+      "drain-cleaning": "Ackerman Plumbing is a family-owned plumbing company owned by Corey Ackerman, serving Iowa City and the rest of Johnson County. It describes itself as licensed, bonded and insured, staffs master and journeyman plumbers, and offers 24/7 emergency plumbing with same-day appointments."
+    }
+  },
+  "Affordable Plumbing & Remodeling": {
+    "website": "https://www.affordableplumbingandremodeling.com/",
+    "city": "Cedar Rapids, IA",
+    "address": "1251 Rockford Rd SW, Cedar Rapids, IA 52404",
+    "phone": "(319) 364-3868",
+    "gbp": "https://www.google.com/maps?cid=13725529370936443293",
+    "rating": 4.8,
+    "reviews": 208,
+    "summary": "Affordable Plumbing & Remodeling is a Cedar Rapids business that combines plumbing service, a plumbing supply and fixtures showroom, and kitchen and bath remodeling. It says it has been locally owned and operated for over 25 years. Appears in the water heater video only.",
+    "summaries": {
+      "water-heater-installers": "Affordable Plumbing & Remodeling lists water heater work among its plumbing services, alongside gas lines, sump pumps, water lines and drain cleaning, and sells plumbing parts and fixtures from its Cedar Rapids showroom. Estimates are free, with a $53.50 diagnostic fee when a problem takes more than half an hour to investigate, waived if the company does the work."
+    }
+  },
+  "Beachy Plumbing": {
+    "city": "North Liberty, IA",
+    "address": "1350 Kennel Ct B4, North Liberty, IA 52317",
+    "phone": "(319) 430-2211",
+    "gbp": "https://www.google.com/maps?cid=15386776574210834063",
+    "rating": 5.0,
+    "reviews": 2,
+    "summary": "Beachy Plumbing is a plumbing business in North Liberty, listed on Google as a plumber at 1350 Kennel Ct. It is also listed in a Department of Labor apprenticeship directory as a PHCC-affiliated sponsor at the same address. Appears in the water heater video only.",
+    "summaries": {
+      "water-heater-installers": "Beachy Plumbing is a North Liberty plumbing shop at 1350 Kennel Ct. It's a smaller local operation without a website, so call for water heater pricing and availability."
+    }
+  },
+  "Colony Plumbing, Heating & Air Conditioning": {
+    "website": "https://colonyheating.com/",
+    "city": "Cedar Rapids, IA",
+    "address": "2224 16th Ave SW, Cedar Rapids, IA 52404",
+    "phone": "(319) 364-4328",
+    "gbp": "https://www.google.com/maps?cid=16031586974942153964",
+    "rating": 4.9,
+    "reviews": 3111,
+    "summary": "Colony Plumbing, Heating & Air Conditioning is a Cedar Rapids HVAC, plumbing and hearth contractor that says it has served Eastern Iowa for over 50 years, including Iowa City, Coralville and North Liberty. Its plumbing department handles service, repair and new installation for homes and businesses. Appears in the water heater video only.",
+    "summaries": {
+      "water-heater-installers": "Colony services all makes and models of tank and tankless, gas and electric water heaters, from new installation to annual maintenance, and installs the Ruud Professional gas water heater line. It offers free estimates on new water heaters in Cedar Rapids, Iowa City and surrounding communities, with service available 24/7, 365 days a year."
+    }
+  },
+  "Wichhart Repair": {
+    "website": "http://www.wichhartrepair.net/",
+    "city": "North Liberty, IA",
+    "address": "1160 Hauer Dr, North Liberty, IA 52317",
+    "phone": "(319) 321-2119",
+    "gbp": "https://www.google.com/maps?cid=14262828635089076895",
+    "rating": 4.8,
+    "reviews": 38,
+    "summary": "Wichhart Repair is run by Doug Wichhart and serves the greater Iowa City area, including Coralville, Iowa City, North Liberty, Solon and Tiffin. It specializes in water heater installs and also installs appliances. Appears in the water heater video only.",
+    "summaries": {
+      "water-heater-installers": "Wichhart Repair specializes in water heater installation and replacement for all brands, including upgrading undersized units for larger households. Old units are hauled away free of charge."
+    }
+  },
+  "Busy Bee Drain Cleaning": {
+    "website": "https://www.facebook.com/share/15h4FVNvbp/",
+    "phone": "(641) 863-0738",
+    "gbp": "https://www.google.com/maps?cid=6632473035414763362",
+    "rating": 5.0,
+    "reviews": 110,
+    "summary": "Busy Bee Drain Cleaning is a veteran-owned drain and sewer cleaning company that says it serves the North Iowa area. Its Google listing shows it open 24 hours. Appears in the drain cleaning video only.",
+    "summaries": {
+      "drain-cleaning": "Busy Bee Drain Cleaning is a veteran-owned drain and sewer cleaning company that answers 24 hours a day, seven days a week. Call to confirm they cover your part of eastern Iowa."
+    }
+  },
+  "Clog Busters Drain Cleaning & Repair": {
+    "website": "https://clogbusters.co/north-liberty/",
+    "city": "North Liberty, IA",
+    "address": "390 Herky St #1E, North Liberty, IA 52317",
+    "phone": "(319) 462-1981",
+    "gbp": "https://www.google.com/maps?cid=2575912786991148629",
+    "rating": 4.9,
+    "reviews": 356,
+    "summary": "Clog Busters Drain Cleaning & Repair has a North Liberty branch serving North Liberty, Iowa City and Cedar Rapids. It is one of five Clog Busters branches, with others in Des Moines and Oskaloosa, Iowa, Lake Ozark, Missouri and Grand Rapids, Michigan. Appears in the drain cleaning video only.",
+    "summaries": {
+      "drain-cleaning": "Clog Busters clears clogged sinks, tubs and floor drains, uses camera inspection to find the cause of a backup, and offers hydro jetting to remove grease, scale and roots from pipe walls. It also locates, repairs and replaces sewer lines, and its North Liberty location is open 24 hours, 7 days a week."
+    }
+  },
+  "Phil's Sewer and Drain Cleaning": {
+    "city": "Amana, IA",
+    "address": "4203 I St, Amana, IA 52203",
+    "phone": "(319) 430-0220",
+    "gbp": "https://www.google.com/maps?cid=14399500373938775506",
+    "rating": 5.0,
+    "reviews": 25,
+    "summary": "Phil's Sewer and Drain Cleaning is an Amana-based drain and sewer business run by Phil, who says he has over 15 years of experience in residential and commercial maintenance. Appears in the drain cleaning video only.",
+    "summaries": {
+      "drain-cleaning": "Phil's Sewer and Drain Cleaning is based in Amana and run by Phil, who brings more than 15 years of residential and commercial maintenance experience. He clears backed-up drains and sewer lines, and customer reviews mention sewer camera inspections and washer drain clogs around Coralville."
+    }
+  },
+  "Streit's Maintenance": {
+    "website": "https://streitsmaintenance.com/",
+    "city": "Iowa City, IA",
+    "phone": "(319) 400-4483",
+    "gbp": "https://www.google.com/maps?cid=14047764635191728919",
+    "rating": 4.9,
+    "reviews": 70,
+    "summary": "Streit's Maintenance is an Iowa City plumbing and home maintenance business run by Jim Streit, a licensed and insured master plumber, serving Iowa City, Coralville and surrounding areas. It also does water heater repair and replacement, mobile home plumbing and kitchen and bath remodeling. Appears in the drain cleaning video only.",
+    "summaries": {
+      "drain-cleaning": "Streit's Maintenance clears backed-up lines, cleans main sewer lines out to 100 feet, and cleans tub, kitchen and bathroom drains. It offers free phone consultations and says it is bonded and insured."
+    }
+  },
+  "Michel Cuevas Home Improvement": {
+    "website": "https://michelcuevashome.com/",
+    "city": "Iowa City, IA",
+    "address": "1570 1st Ave, Unit M, Iowa City, IA 52240",
+    "phone": "(319) 333-5046",
+    "gbp": "https://maps.app.goo.gl/dPak8eKk5woXEhsn8",
+    "summary": "Family-owned Iowa City contractor (est. 1997) handling roofing, siding, remodeling and storm, water and fire damage restoration with its own crews rather than subcontractors. For water damage it finds and repairs the leak source first, removes wet drywall, flooring and trim, dries the structure, treats framing for mold prevention and rebuilds the interior, with documentation for insurance. For storm damage it documents hail and wind damage for the adjuster and repairs it with one crew, and states that the number on the estimate is the number on the invoice.",
+    "servicePage": {
+      "storm-water-damage-restoration": "https://michelcuevashome.com/water-damage-restoration"
+    }
+  },
+  "Firstcall Restoration": {
+    "website": "https://www.firstcalliowa.com/",
+    "city": "Grimes, IA",
+    "address": "3910 SE Capitol Circle, Grimes, IA 50111",
+    "phone": "(515) 986-9300",
+    "summary": "Firstcall Restoration is an Iowa restoration and remodeling company with offices in Grimes, Cedar Rapids and Ames and a 24/7 emergency line. It handles water damage restoration, storm damage after wind, hail and severe weather, plus fire and mold work, and says it has more than 30 years in Iowa."
+  },
+  "Five One Five Restoration": {
+    "website": "https://515restoration.com/",
+    "city": "Grimes, IA",
+    "phone": "515-452-1876",
+    "summary": "Five One Five Restoration is a veteran- and family-owned restoration company out of the Des Moines area. It offers 24/7 emergency water damage restoration and flood cleanup, sewage cleanup and mold removal, with free inspections."
+  },
+  "Heartland Roofing, Siding & Solar": {
+    "website": "https://heartlandroofingandsiding.com/",
+    "city": "North Liberty, IA",
+    "address": "7 Hawkeye Dr, Suite 106, North Liberty, IA 52317",
+    "phone": "(319) 640-7087",
+    "summary": "Heartland Roofing, Siding & Solar is a roofing, siding, gutter, window and solar contractor headquartered in Des Moines, with an Eastern Iowa office in North Liberty that serves Iowa City. It handles residential and commercial roofing, including roof repair for leaks, the most common way storm damage turns into water damage."
+  },
+  "My Storm Heroes": {
+    "summary": "My Storm Heroes made our Iowa City storm and water damage breakdown. We couldn't confirm a current website for them, so call ahead to verify their service area and availability."
+  },
+  "SERVPRO of Iowa City": {
+    "website": "https://www.servpro.com/locations/ia/servpro-of-iowa-city/",
+    "city": "Iowa City, IA",
+    "address": "615 Hwy 1 West, Iowa City, IA 52246",
+    "phone": "(319) 338-8550",
+    "summary": "Local SERVPRO franchise (also listed as SERVPRO of Iowa City/Coralville) offering 24/7 emergency response for water damage, storm and disaster cleanup, fire and smoke damage, and mold, plus roof tarping, board-up and construction repairs. Its service area includes Iowa City, Coralville, North Liberty, Solon, Tiffin, West Branch, Lone Tree, Oxford and Shueyville."
+  },
+  "Stormex Restoration & Remodel": {
+    "website": "https://stormexusa.com/",
+    "city": "Iowa City, IA",
+    "phone": "(319) 254-3131",
+    "summary": "Locally owned, family-run general contractor serving the Iowa City / Cedar Rapids Corridor with roofing, siding, gutters, windows, decks and insulation. For storms it handles roof repairs and helps with insurance claims, and it states it is a GAF Certified contractor."
+  },
+  "United Water Restoration Group": {
+    "website": "https://uwrgiowacity.com/",
+    "city": "Fairfield, IA",
+    "address": "1805 West Jefferson Avenue, Suite 3, Fairfield, IA 52556",
+    "phone": "(319) 304-3500",
+    "gbp": "https://www.google.com/maps?cid=7454443474921821988",
+    "summary": "United Water Restoration Group of Iowa City is part of a national restoration franchise and answers calls 24/7. It handles water damage restoration, emergency water extraction, flood, sewage backup and appliance leak cleanup, plus storm damage cleanup, fire and mold work and reconstruction, serving Iowa City, Coralville and Cedar Rapids from its Fairfield office."
+  },
+  "Power Electrical, Heating & Cooling Services": {
+    "website": "https://www.powerelectricalservices.net/",
+    "city": "Denver, CO",
+    "address": "5650 Washington St Unit C-6, Denver, CO 80216",
+    "phone": "(720) 272-2562",
+    "gbp": "https://maps.app.goo.gl/Lw2x8JKXuSi5YrMq9",
+    "rating": 5.0,
+    "reviews": 232,
+    "summary": "Denver-based contractor offering electrical, heating, cooling and indoor air quality services. Electrical work listed on its site includes panel upgrades, wiring and rewiring, EV charger installation, lighting, surge protection and troubleshooting, alongside AC, furnace, heat pump and mini split installation and repair. The site says it has been licensed since 2007 and serves the Denver metro area, including Aurora, Littleton, Thornton, Westminster and Arvada.",
+    "ratingAsOf": "Oct 22, 2026"
+  },
+  "AMP Electric": {
+    "website": "https://ampelectric.info/",
+    "city": "Aurora, CO",
+    "address": "14802 E Grand Pl, Aurora, CO 80015",
+    "phone": "(303) 963-6711",
+    "gbp": "https://www.google.com/maps?cid=11169919473453046916",
+    "rating": 4.9,
+    "reviews": 84,
+    "summary": "Family-owned residential electrical contractor serving the Denver metro area; its site says it has served the community since 2011. Listed services include troubleshooting and repairs, circuit additions and panel upgrades, EV charger installation, lighting upgrades and electrical safety inspections."
+  },
+  "ChargerPro": {
+    "website": "https://chargerpro.com/",
+    "city": "Denver, CO",
+    "address": "5180 Fox St Unit 2, Denver, CO 80216",
+    "phone": "(833) 379-7129",
+    "gbp": "https://www.google.com/maps?cid=7696154589741660180",
+    "rating": 5.0,
+    "reviews": 96,
+    "summary": "Electrical company focused on home EV charger installation, with service in Denver, Dallas and Houston. Its site says its licensed electricians install wall connectors for Tesla and other electric vehicles. Its Google listing is categorized as an electrician."
+  },
+  "D & J Enterprises": {
+    "website": "http://dandjenterprises.org/",
+    "city": "Denver, CO",
+    "address": "2609 S Holly St, Denver, CO 80222",
+    "phone": "(303) 947-7218",
+    "gbp": "https://www.google.com/maps?cid=13161955599111763426",
+    "rating": 4.9,
+    "reviews": 87,
+    "summary": "Denver electrical and lighting contractor working for residential and commercial clients. Its site lists lighting and electrical repairs, installations and build-outs, and says the team includes a master electrician with 30 years of experience. Its Google listing also covers landscape lighting design and lighting consulting."
+  },
+  "JD Electrical Home Solutions": {
+    "website": "https://jdehs.com/",
+    "city": "Denver, CO",
+    "address": "6145 Broadway Ste 67, Denver, CO 80216",
+    "phone": "(720) 465-6451",
+    "gbp": "https://www.google.com/maps?cid=17242464709990187953",
+    "rating": 5.0,
+    "reviews": 336,
+    "summary": "Family-owned electrical contractor in Denver providing residential and commercial services across the Denver metro area. Listed services include panel replacement, EV chargers, generator installation, lighting upgrades, surge protection, troubleshooting, hot tub wiring and electrical home inspections. Its site cites more than 15 years of experience."
+  },
+  "Red Fox Electric": {
+    "website": "https://www.redfoxelectric.com/",
+    "city": "Denver, CO",
+    "address": "877 Wyandot St, Denver, CO 80204",
+    "phone": "(720) 520-0812",
+    "gbp": "https://www.google.com/maps?cid=15292338947658138498",
+    "rating": 4.9,
+    "reviews": 447,
+    "summary": "Family-owned electrical contractor based in Denver serving residential and commercial customers. Services on its site include diagnostics and repairs, panel upgrades, wiring, lighting, generators, hot tub installation, surge protection, EV charger installation and electrification. The site says the company was founded in 2013 and serves Denver, Boulder, Longmont, Aurora, Westminster, Lone Tree and Centennial."
+  },
+  "Sundog Electric": {
+    "website": "https://sundogelectric.com/",
+    "city": "Littleton, CO",
+    "address": "1501 W Campus Dr, Littleton, CO 80120",
+    "phone": "(303) 503-0081",
+    "gbp": "https://www.google.com/maps?cid=2263236999074245388",
+    "rating": 5.0,
+    "reviews": 599,
+    "summary": "Family-owned electrical contractor in Littleton that its site says has operated since December 2004. Services include panel upgrades, EV charger circuits, Generac generator installation, troubleshooting, custom home and multi-family wiring, and Lutron smart lighting. It serves Littleton, Highlands Ranch, Centennial, Lakewood, Aurora and the wider Denver metro area."
+  },
+  "MD Window Films": {
+    "website": "https://www.mdwindowfilms.com/",
+    "city": "Santa Monica, CA",
+    "address": "730 Arizona Ave, Santa Monica, CA 90401",
+    "phone": "(310) 699-9691",
+    "gbp": "https://www.google.com/maps?cid=1835867733664061720",
+    "rating": 5.0,
+    "reviews": 24,
+    "summary": "Santa Monica window film contractor serving commercial and residential buildings across Greater Los Angeles. Its services include frosted privacy film, security film, anti-graffiti film, solar window film, window tinting and skylight tinting. The site says it has been open since 2010 and is an Armorcoat certified dealer.",
+    "servicePage": {
+      "privacy-window-film": "https://www.mdwindowfilms.com/frosted-privacy-glass/"
+    },
+    "ratingAsOf": "Oct 22, 2026"
+  },
+  "American Window Film": {
+    "website": "https://americanwindowfilm.com/locations/los-angeles-window-film",
+    "city": "Carson, CA",
+    "address": "118 Savarona Way, Carson, CA 90746",
+    "phone": "(818) 888-1600",
+    "gbp": "https://www.google.com/maps?cid=5689148717412199541",
+    "rating": 4.9,
+    "reviews": 116,
+    "summary": "Installs 3M window film for residential and commercial properties in the Los Angeles area. Its offerings include solar, decorative, frosted privacy, security and anti-graffiti films, plus storefront and wall graphics."
+  },
+  "Halibut Window Film": {
+    "website": "https://halibutwindowfilm.com/",
+    "city": "Paramount, CA",
+    "address": "13801 Paramount Blvd, Paramount, CA 90723",
+    "phone": "(323) 359-3633",
+    "gbp": "https://www.google.com/maps?cid=6996827682372114000",
+    "rating": 5.0,
+    "reviews": 22,
+    "summary": "Locally owned window film installer serving residential and commercial customers across Southern California. Its site lists window tinting, decorative films, safety and security films and anti-graffiti films, and cites over 28 years of experience."
+  },
+  "Smart Sun Control": {
+    "website": "https://www.smartsuncontrol.com/",
+    "city": "Tarzana, CA",
+    "address": "18750 Oxnard St #411, Tarzana, CA 91356",
+    "phone": "(818) 450-4575",
+    "gbp": "https://www.google.com/maps?cid=9406245012532447185",
+    "rating": 4.9,
+    "reviews": 63,
+    "summary": "Window tinting company in Tarzana serving homes and businesses across Los Angeles, including the San Fernando Valley, Santa Monica and Beverly Hills. Its site describes it as a 3M authorized window film dealer offering sun control, safety and security, privacy and decorative, and anti-graffiti films, as well as automotive tint."
+  },
+  "Window Film Depot": {
+    "website": "https://www.windowfilmdepot.com/locations/california/los-angeles/",
+    "city": "Los Angeles, CA",
+    "address": "4445 S Figueroa St, 31st Floor, Los Angeles, CA 90037",
+    "phone": "(323) 800-2653",
+    "gbp": "https://www.google.com/maps?cid=818151780961689394",
+    "rating": 5.0,
+    "reviews": 18,
+    "summary": "Family-owned national window film company with a Los Angeles location serving commercial, retail, government and residential customers. Its privacy options include frosted, blackout, mirror and switchable films, alongside security, sun control and decorative films. Its site says it has operated since 1992 and lists California contractor license #900586."
+  },
+  "Window Tints Everything": {
+    "website": "https://wteverything.com/",
+    "city": "North Hollywood, CA",
+    "address": "7125 Laurel Canyon Blvd, North Hollywood, CA 91605",
+    "phone": "(323) 466-0608",
+    "gbp": "https://www.google.com/maps?cid=14502376892857898987",
+    "rating": 4.9,
+    "reviews": 311,
+    "summary": "Family-owned residential and commercial window tinting company serving Los Angeles County; its site says it has operated since 1994. It is an authorized LLumar SelectPro dealer and also works with V-KOOL and Huper Optik films, offering heat and glare control, privacy, security and storefront film."
+  },
+  "All Exclusive Construction": {
+    "website": "https://www.allexclusivepro.com/",
+    "city": "Santa Monica, CA",
+    "address": "301 Arizona Ave, Santa Monica, CA 90401",
+    "phone": "(818) 836-1722",
+    "gbp": "https://maps.app.goo.gl/iC3B9pi65jSKe4YJ7",
+    "rating": 5.0,
+    "reviews": 42,
+    "summary": "All Exclusive Construction, Inc. is a licensed remodeling and construction company (CA Lic. #1120170) whose Malibu page covers kitchen remodeling for coastal and hillside homes, including material selection for salt air and coordination with City of Malibu permits and, when needed, the California Coastal Commission. The company also does bathroom remodeling, home additions, ADUs and commercial remodeling, and lists offices in Santa Monica and Westlake Village. Its Malibu page gives kitchen price tiers from $45k for a basic remodel to $75k-$150k+ for a luxury kitchen and offers free in-home consultations.",
+    "servicePage": {
+      "kitchen-remodelers": "https://www.allexclusivepro.com/malibu/"
+    },
+    "ratingAsOf": "Oct 2026"
+  },
+  "LA Home Contractor": {
+    "website": "https://www.lahomecontractor.com/",
+    "city": "Malibu, CA",
+    "address": "22221 Pacific Coast Hwy, Malibu, CA 90265",
+    "phone": "(323) 918-4868",
+    "gbp": "https://www.google.com/maps?cid=16033013141108113027",
+    "rating": 5.0,
+    "reviews": 72,
+    "summary": "LA Home Contractor Inc. is a licensed residential general contractor (CSLB #1027193) with locations in Malibu, Van Nuys and Beverly Hills. It builds ADUs, garage conversions and home additions and does kitchen and bathroom remodels, plus roofing, HVAC, flooring, decks, pools and other home improvement work. The company handles permitting, engineering coordination and scheduling for its projects."
+  },
+  "My SoCal Builders": {
+    "website": "https://www.mysocalbuilders.com/",
+    "city": "Sherman Oaks, CA",
+    "address": "15335 Morrison St #375, Sherman Oaks, CA 91403",
+    "phone": "(888) 877-1585",
+    "gbp": "https://www.google.com/maps?cid=2285891437141350891",
+    "rating": 5.0,
+    "reviews": 1,
+    "summary": "My SoCal Builders is the web name of So Cal Builders & Design Inc., a Los Angeles-area home remodeling contractor (License #990258) based in Sherman Oaks. It does kitchen and bathroom remodeling, room additions, masonry and roofing, along with plumbing, painting, decks and cabinet resurfacing. The company says it uses its own crews rather than outside contractors and provides detailed written estimates and completion dates."
+  },
+  "Rolen Construction": {
+    "website": "https://rolenconstruction.com/",
+    "city": "Pacific Palisades, CA",
+    "address": "984 Monument St, Suite 204, Pacific Palisades, CA 90272",
+    "phone": "(424) 275-2755",
+    "gbp": "https://www.google.com/maps?cid=7462401413094411709",
+    "rating": 5.0,
+    "reviews": 10,
+    "summary": "Rolen Construction is a Los Angeles general contractor (License #1105889) based in Pacific Palisades that builds custom homes, multifamily developments and ADUs. It also handles major remodels and the rebuilding of fire-damaged homes, including permit coordination and construction management, working with a design and owner's representation partner on Palisades rebuilds."
+  },
+  "Silver Stone Remodeling": {
+    "website": "https://sshomeremodeling.com/",
+    "city": "Calabasas, CA",
+    "address": "26635 Agoura Rd, Suite 245, Calabasas, CA 91302",
+    "phone": "(818) 737-0647",
+    "gbp": "https://www.google.com/maps?cid=10254794911298348528",
+    "rating": 5.0,
+    "reviews": 84,
+    "summary": "Silver Stone Remodeling is a locally owned home remodeling company with an office in Calabasas. It offers complete home remodels, kitchen and bathroom remodeling, accessible (handicap) bathrooms, roofing, water damage and mold restoration, ADU and garage conversions, and backyard remodeling. Its listed service area includes Malibu, Calabasas, Agoura Hills, Westlake Village, Thousand Oaks and other Conejo Valley and San Fernando Valley communities."
+  },
+  "Stillmark Construction": {
+    "website": "https://stillmark.cc/",
+    "city": "Northridge, CA",
+    "phone": "(818) 739-9439",
+    "gbp": "https://www.google.com/maps?cid=10762380282390053875",
+    "rating": 5.0,
+    "reviews": 2,
+    "summary": "Stillmark Construction is a carpenter-led Class B general contractor (CSLB #1157202) working across greater Los Angeles. It does kitchen and bath renovations and whole-home remodels, ADU and garage conversions, finish carpentry, and wildfire home hardening such as ember-resistant vents, Class A roofing and non-combustible siding. It provides itemized estimates after an on-site walkthrough."
+  },
+  "Indian Valley Outfitters": {
+    "website": "https://indianvalleyoutfitters.com/",
+    "city": "San Miguel, CA",
+    "address": "San Miguel, CA 93451",
+    "phone": "(669) 270-7127",
+    "gbp": "https://www.google.com/maps/search/?api=1&query=Indian%20Valley%20Outfitters%2C%20San%20Miguel%2C%20CA%2093451",
+    "summary": "Indian Valley Outfitters is based in San Miguel and runs guided and unguided hunts on private ranch land in Monterey County and Santa Clara County that follows a game management program. Hunts cover year-round wild pig, blacktail deer, turkey, quail, dove, coyote, ground squirrel and rabbit, with drinks and refreshments included. Hunters can stay in a three-bedroom, 1,800 sq ft ranch home on the property.",
+    "gbpIsSearch": true
+  },
+  "Camp Five Outfitters": {
+    "website": "https://campfiveoutfitters.com/",
+    "city": "San Miguel, CA",
+    "address": "77502 Hog Canyon Rd, San Miguel, CA 93451",
+    "phone": "(805) 610-5864",
+    "gbp": "https://www.google.com/maps?cid=4649239692670486712",
+    "rating": 5.0,
+    "reviews": 3,
+    "summary": "Camp Five Outfitters, Inc. runs guided hunts on about 45,000 acres of private ranch land just north of Paso Robles, in southern Monterey and northern San Luis Obispo counties. Hunts include wild pig, Columbian blacktail deer on private land tags, Tule elk through California's Private Lands Management program, and wild turkey, with lodging and home-cooked meals available. Its written 'Guarantee of Excellence' offers a 100% refund of the hunt fee if the hunt is not provided as described."
+  },
+  "Oak Stone Outfitters": {
+    "website": "https://oakstoneoutfitters.com/",
+    "city": "Bradley, CA",
+    "address": "71201 Sargents Rd, Bradley, CA 93426",
+    "phone": "(805) 472-2200",
+    "gbp": "https://www.google.com/maps?cid=15995232558328214991",
+    "rating": 5.0,
+    "reviews": 88,
+    "summary": "Oak Stone Outfitters is a guide service in Bradley on California's Central Coast with about 80,000 acres of hunting ground. It offers big game hunts (blacktail deer, wild pig, Tule elk), upland hunts (turkey, dove, band-tailed pigeon), varmint and predator hunts, and combo hunts, plus lodging, meal packages, taxidermy, meat processing and shooting and butcher classes. Bookings require a 50% deposit."
+  },
+  "SkyRose Ranch Hunting": {
+    "website": "https://skyroseranchhunting.com/",
+    "city": "San Miguel, CA",
+    "address": "69430 Deer Valley Ranch Rd, San Miguel, CA 93451",
+    "phone": "(805) 467-2022",
+    "gbp": "https://www.google.com/maps?cid=13446850693493450158",
+    "rating": 4.7,
+    "reviews": 15,
+    "summary": "SkyRose Ranch Hunting operates on a 25,000-acre working cattle and hay ranch at the southern edge of Monterey County, about 30 minutes from Highway 101 out of San Miguel. It offers guided wild pig, blacktail deer, Tule elk (through the PLM program) and bird hunts, hosts up to three hunters at a time, and provides lodging. Guide Jared personally guides all hunts."
+  },
+  "SMC Williams Guide Service": {
+    "website": "https://www.smcwilliamsguideservice.com/",
+    "city": "Paso Robles, CA",
+    "phone": "(805) 710-2434",
+    "gbp": "https://www.google.com/maps?cid=2592388056070644003",
+    "rating": 4.8,
+    "reviews": 16,
+    "summary": "SMC Williams Guide Service LLC is owned by guides Sam McGuire and Colby Williams and runs guided hunts on private ranches across California's Central Coast and Central Valley, including Monterey, San Benito, San Luis Obispo, Fresno, Merced, Tulare and Madera counties. It offers year-round wild pig hunts, using spot-and-stalk and, when conditions warrant, trained pig dogs, plus blacktail deer, Tule elk and spring turkey hunts."
+  }
+}
