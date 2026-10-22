@@ -8,6 +8,90 @@
   },
   "rankings": [
     {
+      "slug": "painters",
+      "videoId": "v0m5e1qtVYs",
+      "published": "2026-10-22",
+      "trade": "Painting",
+      "tradePlural": "Painting Companies",
+      "badgeTrade": "Painting Companies",
+      "city": "Vancouver",
+      "citySlug": "vancouver",
+      "state": "British Columbia",
+      "stateSlug": "british-columbia",
+      "stateAbbr": "BC",
+      "count": 7,
+      "areas": [
+        "Kitsilano",
+        "Shaughnessy",
+        "Kerrisdale",
+        "Yaletown",
+        "the rest of Vancouver"
+      ],
+      "hook": "Peeling paint, scuffed walls, faded colours. In Vancouver's rain, a paint job has to be done right.",
+      "intro": "We looked at seven painting companies in Vancouver, BC, what each one offers and where their experience holds up. Each company is described from its own website, or from its Google listing where a website wasn't available.",
+      "winner": "Cambie Painters",
+      "winnerWhy": [
+        "Cambie Painters is licensed, insured and WCB covered, with more than 15 years painting Vancouver homes and businesses. They prep properly before a brush touches the wall and use premium low-VOC paints, inside and out.",
+        "Every job comes with a written 2-year workmanship warranty: if the paint peels, blisters or fails, they come back and make it right. Add interiors, exteriors, popcorn ceiling removal and drywall repair under one roof, and it's an easy first call."
+      ],
+      "contenders": [
+        "4C Painters Vancouver",
+        "Brush and Beyond Painting",
+        "CertaPro Painters of Vancouver, BC",
+        "Dunbar Painting",
+        "PLE Painting",
+        "Precision Vancouver Painting"
+      ],
+      "tips": [
+        "Ask exactly what prep is included: washing, scraping, patching, priming.",
+        "Ask what the warranty covers and for how long, and get it in writing.",
+        "Get a fixed price in writing, not an hourly estimate."
+      ],
+      "chapters": [
+        [
+          "0:00",
+          "Why a paint job has to be done right"
+        ],
+        [
+          "0:11",
+          "4C Painters Vancouver"
+        ],
+        [
+          "0:22",
+          "Brush and Beyond Painting"
+        ],
+        [
+          "0:30",
+          "CertaPro Painters of Vancouver, BC"
+        ],
+        [
+          "0:40",
+          "Dunbar Painting"
+        ],
+        [
+          "0:47",
+          "PLE Painting"
+        ],
+        [
+          "0:54",
+          "Precision Vancouver Painting"
+        ],
+        [
+          "1:02",
+          "#1 Top-rated pick: Cambie Painters"
+        ],
+        [
+          "1:31",
+          "What a customer says"
+        ],
+        [
+          "1:36",
+          "Before you hire"
+        ]
+      ],
+      "asOf": "October 2026"
+    },
+    {
       "slug": "drain-cleaning",
       "videoId": "RwbNqPTgeYM",
       "published": "2026-10-22",

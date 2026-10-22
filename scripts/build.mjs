@@ -218,7 +218,7 @@ function homePage() {
 <div class="stats"><div class="wrap"><div class="stats-grid">
   <div class="stat"><div class="k">Rankings</div><div class="v">${rankings.length}</div></div>
   <div class="stat"><div class="k">Cities</div><div class="v">${cities.length}</div></div>
-  <div class="stat"><div class="k">States</div><div class="v">${states.length}</div></div>
+  <div class="stat"><div class="k">States &amp; provinces</div><div class="v">${states.length}</div></div>
   <div class="stat"><div class="k">Businesses ranked</div><div class="v">${uniqueBiz.size}</div></div>
 </div></div></div>
 
