@@ -1,0 +1,22 @@
+{
+  "show": {
+    "name": "Blue Collar Rankings",
+    "spotifyId": "1bCuRVvmdYJKt2gWmQPZHN",
+    "url": "https://open.spotify.com/show/1bCuRVvmdYJKt2gWmQPZHN",
+    "description": "Local contractor rankings and home service breakdowns, in audio. Each episode compares the companies that do one job in one town, so you know who to call first."
+  },
+  "episodes": [
+    {
+      "spotifyId": "0rHAbiOg0jY6kLiz0QT2Uk",
+      "title": "Storm or Water Damage in Iowa City? 8 Pros Compared",
+      "published": "2026-10-22",
+      "ranking": "iowa-city/storm-water-damage-restoration"
+    },
+    {
+      "spotifyId": "6g9NuUN8O0bdsM3kqGbqbh",
+      "title": "THE BEST Water Heater Installers In Iowa City, Iowa",
+      "published": "2026-10-21",
+      "ranking": "iowa-city/water-heater-installers"
+    }
+  ]
+}

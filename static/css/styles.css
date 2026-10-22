@@ -205,6 +205,19 @@ p { margin: 0 0 1em; }
 .embed .preview a { font-size: .85rem; }
 .embed select { font: inherit; font-size: .9rem; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 12px; max-width: 100%; }
 
+/* Podcast */
+iframe.spotify { width: 100%; border: 0; border-radius: 12px; display: block; }
+.episode { margin: 0 0 40px; }
+.episode h3 { text-transform: uppercase; font-size: 1.25rem; }
+.podcast-feature { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.podcast-feature p { color: var(--ink-2); }
+.eps { list-style: none; padding: 0; margin: 0; display: grid; gap: 28px; max-width: 860px; }
+.ep { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px 24px; }
+.ep h3 { margin: 4px 0 6px; text-transform: uppercase; }
+.ep p { margin: 0 0 14px; color: var(--ink-2); font-size: .95rem; }
+.pod-tag { position: absolute; right: 12px; top: 12px; background: #1db954; color: #04130a; font-size: .72rem; font-weight: 700; padding: 4px 9px; border-radius: 999px; }
+.facts .cta .btn-outline { width: 100%; justify-content: center; }
+
 /* CTA band */
 .band { background: var(--orange); color: #fff; }
 .band .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 44px; padding-bottom: 44px; flex-wrap: wrap; }
@@ -233,6 +246,7 @@ p { margin: 0 0 1em; }
   .layout { grid-template-columns: 1fr; }
   .facts { position: static; }
   .badge-duo { grid-template-columns: 1fr; }
+  .podcast-feature { grid-template-columns: 1fr; gap: 28px; }
   .foot-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 820px) {

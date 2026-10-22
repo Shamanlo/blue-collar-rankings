@@ -9,6 +9,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "public");
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, "data/rankings.json"), "utf8"));
 const biz = JSON.parse(fs.readFileSync(path.join(ROOT, "data/businesses.json"), "utf8"));
+const podcast = JSON.parse(fs.readFileSync(path.join(ROOT, "data/podcast.json"), "utf8"));
 const { site } = data;
 const YEAR = site.year;
 
@@ -19,6 +20,8 @@ const fmtDate = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US"
 const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
 const toSec = (t) => t.split(":").reduce((a, b) => a * 60 + +b, 0);
 const naked = (url) => `<a href="${esc(url)}" rel="noopener" target="_blank">${esc(url)}</a>`;
+const spotifyEmbed = (kind, id, title, height) =>
+  `<iframe class="spotify" src="https://open.spotify.com/embed/${kind}/${id}?utm_source=generator" title="${esc(title)} on Spotify" height="${height}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
 const telHref = (p) => "tel:+1" + String(p).replace(/\D/g, "").replace(/^1(?=\d{10}$)/, "");
 const listJoin = (a) => (a.length < 2 ? a.join("") : a.slice(0, -1).join(", ") + " and " + a[a.length - 1]);
 
@@ -50,6 +53,7 @@ const rankings = data.rankings
       areaPng: `/badges/${badgeBase}-best-in-${r.citySlug}.png`,
       thumb: `/img/thumbs/${r.videoId}.jpg`,
       w: biz[r.winner] || {},
+      episodes: podcast.episodes.filter((e) => e.ranking === `${r.citySlug}/${r.slug}`),
     };
   })
   .sort((a, b) => b.published.localeCompare(a.published) || a.city.localeCompare(b.city));
@@ -65,10 +69,16 @@ const states = [...new Set(cities.map((c) => c.stateSlug))].map((s) => {
   const cs = cities.filter((c) => c.stateSlug === s);
   return { state: cs[0].state, stateSlug: s, url: `/rankings/${s}/`, cities: cs, count: cs.reduce((n, c) => n + c.rankings.length, 0) };
 }).sort((a, b) => a.state.localeCompare(b.state));
+for (const e of podcast.episodes) {
+  if (e.ranking && !rankings.some((r) => `${r.citySlug}/${r.slug}` === e.ranking)) throw new Error(`podcast.json: unknown ranking "${e.ranking}"`);
+  e.url = `https://open.spotify.com/episode/${e.spotifyId}`;
+  e.rankingPage = rankings.find((r) => `${r.citySlug}/${r.slug}` === e.ranking);
+}
+podcast.episodes.sort((a, b) => b.published.localeCompare(a.published));
 const uniqueBiz = new Set(rankings.flatMap((r) => [r.winner, ...r.contenders]));
 
 // ---------- layout ----------
-const NAV = [["/rankings/", "Rankings"], ["/rankings/#cities", "Cities"], ["/badges/", "Badges"], ["/methodology/", "How we rank"], ["/about/", "About"]];
+const NAV = [["/rankings/", "Rankings"], ["/podcast/", "Podcast"], ["/badges/", "Badges"], ["/methodology/", "How we rank"], ["/about/", "About"]];
 
 function layout({ title, description, canonical, body, active = "", ogImage = "/img/og-default.jpg", jsonld = [] }) {
   const full = canonical.startsWith("http") ? canonical : site.url + canonical;
@@ -136,8 +146,10 @@ ${body}
         <ul>
           <li><a href="/methodology/">How we rank</a></li>
           <li><a href="/badges/">Badges</a></li>
+          <li><a href="/podcast/">Podcast</a></li>
           <li><a href="/about/">About us</a></li>
           <li><a href="${site.youtube}" rel="noopener" target="_blank">YouTube</a></li>
+          <li><a href="${podcast.show.url}" rel="noopener" target="_blank">Spotify</a></li>
         </ul>
       </div>
     </div>
@@ -153,13 +165,13 @@ document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener(
 `;
 }
 
-const orgLd = { "@context": "https://schema.org", "@type": "Organization", name: site.name, url: site.url, logo: site.url + "/img/logo-stacked.png", sameAs: [site.youtube] };
+const orgLd = { "@context": "https://schema.org", "@type": "Organization", name: site.name, url: site.url, logo: site.url + "/img/logo-stacked.png", sameAs: [site.youtube, podcast.show.url] };
 const crumbsLd = (items) => ({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: items.map(([name, url], i) => ({ "@type": "ListItem", position: i + 1, name, item: site.url + url })) });
 const crumbsHtml = (items) => `<ol class="crumbs">${items.map(([n, u], i) => `<li>${i === items.length - 1 ? esc(n) : `<a href="${u}">${esc(n)}</a>`}</li>`).join("")}</ol>`;
 
 // ---------- components ----------
 const card = (r) => `<a class="card" href="${r.url}">
-  <div class="card-thumb" style="background-image:url('${r.thumb}')"><span class="play">Watch the ranking</span></div>
+  <div class="card-thumb" style="background-image:url('${r.thumb}')"><span class="play">Watch the ranking</span>${r.episodes.length ? '<span class="pod-tag">Podcast episode</span>' : ""}</div>
   <div class="card-body">
     <span class="card-meta">${esc(r.area)} · ${r.count} ranked · ${fmtDate(r.published)}</span>
     <h3>${esc(r.title)}</h3>
@@ -232,6 +244,18 @@ function homePage() {
 </section>
 
 <section class="section section-alt">
+  <div class="wrap podcast-feature">
+    <div>
+      <span class="eyebrow">Podcast</span>
+      <h2>Listen on Spotify</h2>
+      <p>${esc(podcast.show.description)} New episodes follow the videos.</p>
+      <div class="actions" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-primary" href="${podcast.show.url}" rel="noopener" target="_blank">Follow on Spotify</a><a class="btn btn-outline" href="/podcast/">All episodes</a></div>
+    </div>
+    ${spotifyEmbed("show", podcast.show.spotifyId, podcast.show.name + " podcast", 352)}
+  </div>
+</section>
+
+<section class="section">
   <div class="wrap">
     <div class="section-head"><div><span class="eyebrow">Methodology</span><h2>How a ranking is made</h2></div></div>
     ${steps}
@@ -392,6 +416,11 @@ function rankingPage(r) {
 
       <div class="video" id="video"><iframe src="https://www.youtube-nocookie.com/embed/${r.videoId}?rel=0" title="${esc(r.title)} | Blue Collar Rankings" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
       <p class="chapters">Jump to: ${r.chapters.map(([t, l]) => `<a href="${ytUrl}&amp;t=${toSec(t)}s" rel="noopener" target="_blank">${t} ${esc(l)}</a>`).join(" · ")}</p>
+      ${r.episodes.map((e) => `<div class="episode" id="podcast">
+        <h3>Listen to the podcast episode</h3>
+        ${spotifyEmbed("episode", e.spotifyId, e.title, 152)}
+        <p class="muted" style="font-size:.9rem;margin-top:8px">Prefer audio? <a href="${e.url}" rel="noopener" target="_blank">Open “${esc(e.title)}” on Spotify</a> or <a href="${podcast.show.url}" rel="noopener" target="_blank">follow the Blue Collar Rankings podcast</a>.</p>
+      </div>`).join("\n")}
 
       <section class="top-pick" id="top-pick">
         <div class="tp-head">
@@ -431,7 +460,7 @@ ${field}
         <div class="row"><dt>#1 Pick</dt><dd><a href="#top-pick">${esc(r.winner)}</a></dd></div>
         <div class="row"><dt>Published</dt><dd>${fmtDate(r.published)}</dd></div>
       </dl>
-      <div class="cta"><a class="btn btn-primary" href="${ytUrl}" rel="noopener" target="_blank">Watch on YouTube</a></div>
+      <div class="cta"><a class="btn btn-primary" href="${ytUrl}" rel="noopener" target="_blank">Watch on YouTube</a>${r.episodes.length ? `<a class="btn btn-outline" style="margin-top:10px" href="${r.episodes[0].url}" rel="noopener" target="_blank">Listen on Spotify</a>` : ""}</div>
     </aside>
   </div>
 </section>
@@ -476,6 +505,34 @@ ${band}`;
   return layout({ title: `Badges: #1 Top Ranked and Best in Area | ${site.name}`, description: "The #1 Top Ranked and Best in Area badges from Blue Collar Rankings, who has earned them, and how to display them.", canonical: "/badges/", body, active: "/badges/", jsonld: [crumbsLd(trail)] });
 }
 
+function podcastPage() {
+  const trail = [["Home", "/"], ["Podcast", "/podcast/"]];
+  const eps = podcast.episodes.map((e) => `<li class="ep">
+    <div class="ep-head">
+      <span class="card-meta">${fmtDate(e.published)}${e.rankingPage ? ` · ${esc(e.rankingPage.area)}` : ""}</span>
+      <h3>${esc(e.title)}</h3>
+      ${e.rankingPage ? `<p><a href="${e.rankingPage.url}">Read the ranking and watch the video</a> · #1 pick: <b>${esc(e.rankingPage.winner)}</b></p>` : ""}
+    </div>
+    ${spotifyEmbed("episode", e.spotifyId, e.title, 152)}
+  </li>`).join("\n");
+  const body = `
+<section class="hero hero-sub"><div class="wrap">
+  ${crumbsHtml(trail)}
+  <span class="eyebrow">Podcast</span>
+  <h1>The Blue Collar Rankings podcast</h1>
+  <p class="lede">${esc(podcast.show.description)}</p>
+  <div class="actions"><a class="btn btn-primary" href="${podcast.show.url}" rel="noopener" target="_blank">Follow on Spotify</a><a class="btn btn-ghost" href="/rankings/">Browse the rankings</a></div>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">${podcast.episodes.length} episode${podcast.episodes.length === 1 ? "" : "s"}</span><h2>Latest episodes</h2></div><p>Every episode goes with a ranking on this site: the full field, the #1 pick and how to reach them.</p></div>
+  <ul class="eps">${eps}</ul>
+</div></section>
+${band}`;
+  const ld = { "@context": "https://schema.org", "@type": "PodcastSeries", name: podcast.show.name, url: site.url + "/podcast/", sameAs: [podcast.show.url], description: podcast.show.description,
+    episode: podcast.episodes.map((e) => ({ "@type": "PodcastEpisode", name: e.title, datePublished: e.published, url: e.url })) };
+  return layout({ title: `Podcast | ${site.name}`, description: `Listen to the Blue Collar Rankings podcast on Spotify: ${podcast.episodes.map((e) => e.title).join("; ")}.`, canonical: "/podcast/", body, active: "/podcast/", jsonld: [crumbsLd(trail), ld] });
+}
+
 function simplePage({ slug, eyebrow, h1, lede, content, title, description }) {
   const trail = [["Home", "/"], [h1, `/${slug}/`]];
   const body = `
@@ -507,6 +564,7 @@ for (const s of states) write(`rankings/${s.stateSlug}/index.html`, statePage(s)
 for (const c of cities) write(`rankings/${c.stateSlug}/${c.citySlug}/index.html`, cityPage(c));
 for (const r of rankings) write(`rankings/${r.stateSlug}/${r.citySlug}/${r.slug}/index.html`, rankingPage(r));
 write("badges/index.html", badgesPage());
+write("podcast/index.html", podcastPage());
 write("methodology/index.html", simplePage({
   slug: "methodology", eyebrow: "Methodology", h1: "How we rank",
   lede: "No pay-to-play. No random reviews. Just the legwork a homeowner doesn't have time to do.",
@@ -542,7 +600,7 @@ write("about/index.html", simplePage({
 write("404.html", notFound());
 
 // sitemap + robots + headers
-const urls = ["/", "/rankings/", ...states.map((s) => s.url), ...cities.map((c) => c.url), ...rankings.map((r) => r.url), "/badges/", "/methodology/", "/about/"];
+const urls = ["/", "/rankings/", ...states.map((s) => s.url), ...cities.map((c) => c.url), ...rankings.map((r) => r.url), "/badges/", "/podcast/", "/methodology/", "/about/"];
 const lastmod = rankings[0].published;
 write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${site.url}${u}</loc><lastmod>${lastmod}</lastmod></url>`).join("\n")}\n</urlset>\n`);
 write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);
