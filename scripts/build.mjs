@@ -10,6 +10,19 @@ const OUT = path.join(ROOT, "public");
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, "data/rankings.json"), "utf8"));
 const biz = JSON.parse(fs.readFileSync(path.join(ROOT, "data/businesses.json"), "utf8"));
 const podcast = JSON.parse(fs.readFileSync(path.join(ROOT, "data/podcast.json"), "utf8"));
+
+// Blog posts: content/blog/<slug>.html, starting with a <!--meta {json} --> block.
+const BLOG_DIR = path.join(ROOT, "content/blog");
+const posts = (fs.existsSync(BLOG_DIR) ? fs.readdirSync(BLOG_DIR) : [])
+  .filter((f) => f.endsWith(".html"))
+  .map((f) => {
+    const raw = fs.readFileSync(path.join(BLOG_DIR, f), "utf8");
+    const m = raw.match(/^<!--meta\s*([\s\S]*?)-->\s*/);
+    if (!m) throw new Error(`${f}: missing <!--meta {...} --> block`);
+    const slug = f.replace(/\.html$/, "");
+    return { ...JSON.parse(m[1]), slug, url: `/blog/${slug}/`, html: raw.slice(m[0].length) };
+  })
+  .sort((a, b) => b.published.localeCompare(a.published));
 const { site } = data;
 const YEAR = site.year;
 
@@ -78,7 +91,7 @@ podcast.episodes.sort((a, b) => b.published.localeCompare(a.published));
 const uniqueBiz = new Set(rankings.flatMap((r) => [r.winner, ...r.contenders]));
 
 // ---------- layout ----------
-const NAV = [["/rankings/", "Rankings"], ["/podcast/", "Podcast"], ["/badges/", "Badges"], ["/methodology/", "How we rank"], ["/about/", "About"]];
+const NAV = [["/rankings/", "Rankings"], ["/podcast/", "Podcast"], ["/blog/", "Blog"], ["/badges/", "Badges"], ["/methodology/", "How we rank"], ["/about/", "About"]];
 
 function layout({ title, description, canonical, body, active = "", ogImage = "/img/og-default.jpg", jsonld = [] }) {
   const full = canonical.startsWith("http") ? canonical : site.url + canonical;
@@ -147,6 +160,7 @@ ${body}
           <li><a href="/methodology/">How we rank</a></li>
           <li><a href="/badges/">Badges</a></li>
           <li><a href="/podcast/">Podcast</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="/about/">About us</a></li>
           <li><a href="${site.youtube}" rel="noopener" target="_blank">YouTube</a></li>
           <li><a href="${podcast.show.url}" rel="noopener" target="_blank">Spotify</a></li>
@@ -242,6 +256,13 @@ function homePage() {
     ${badgeDuo}
   </div>
 </section>
+
+${posts.length ? `<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">Blog</span><h2>Cost guides and advice</h2></div><p><a href="/blog/">All posts</a></p></div>
+    <div class="post-list">${posts.slice(0, 3).map(postCard).join("")}</div>
+  </div>
+</section>` : ""}
 
 <section class="section section-alt">
   <div class="wrap podcast-feature">
@@ -533,6 +554,49 @@ ${band}`;
   return layout({ title: `Podcast | ${site.name}`, description: `Listen to the Blue Collar Rankings podcast on Spotify: ${podcast.episodes.map((e) => e.title).join("; ")}.`, canonical: "/podcast/", body, active: "/podcast/", jsonld: [crumbsLd(trail), ld] });
 }
 
+function postCard(p) {
+  return `<a class="post-card" href="${p.url}"><span class="card-meta">${esc(p.eyebrow)} · ${fmtDate(p.published)}</span><h3>${esc(p.title)}</h3><p>${esc(p.description)}</p><span class="more">Read the guide →</span></a>`;
+}
+
+function blogIndex() {
+  const trail = [["Home", "/"], ["Blog", "/blog/"]];
+  const body = `
+<section class="hero hero-sub"><div class="wrap">
+  ${crumbsHtml(trail)}
+  <span class="eyebrow">Blog</span>
+  <h1>Cost guides and hiring advice</h1>
+  <p class="lede">What local projects actually cost, what drives the price, and what to ask before you sign.</p>
+</div></section>
+<section class="section"><div class="wrap"><div class="post-list">${posts.map(postCard).join("")}</div></div></section>
+${band}`;
+  return layout({ title: `Blog | ${site.name}`, description: "Cost guides and hiring advice for homeowners from Blue Collar Rankings.", canonical: "/blog/", body, active: "/blog/", jsonld: [crumbsLd(trail)] });
+}
+
+function postPage(p) {
+  const trail = [["Home", "/"], ["Blog", "/blog/"], [p.title, p.url]];
+  const ld = [
+    crumbsLd(trail),
+    { "@context": "https://schema.org", "@type": "Article", headline: p.title, description: p.description, datePublished: p.published, dateModified: p.published,
+      author: { "@type": "Organization", name: site.name, url: site.url }, publisher: { "@type": "Organization", name: site.name, logo: { "@type": "ImageObject", url: site.url + "/img/logo-stacked.png" } },
+      mainEntityOfPage: site.url + p.url, ...(p.source ? { citation: p.source.url } : {}) },
+    ...(p.faq ? [{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: p.faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }] : []),
+  ];
+  const faq = p.faq ? `<h2>Frequently asked questions</h2><div class="faq">${p.faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>` : "";
+  const body = `
+<section class="hero hero-sub"><div class="wrap">
+  ${crumbsHtml(trail)}
+  <span class="eyebrow">${esc(p.eyebrow)}</span>
+  <h1>${esc(p.title)}</h1>
+  <p class="meta" style="color:#9fb0d1">Published ${fmtDate(p.published)} · By ${esc(site.name)}</p>
+</div></section>
+<section class="section"><div class="wrap"><article class="prose post">
+${p.html}
+${faq}
+</article></div></section>
+${band}`;
+  return layout({ title: `${p.title} | ${site.name}`, description: p.description, canonical: p.url, body, active: "/blog/", jsonld: ld });
+}
+
 function simplePage({ slug, eyebrow, h1, lede, content, title, description }) {
   const trail = [["Home", "/"], [h1, `/${slug}/`]];
   const body = `
@@ -565,6 +629,8 @@ for (const c of cities) write(`rankings/${c.stateSlug}/${c.citySlug}/index.html`
 for (const r of rankings) write(`rankings/${r.stateSlug}/${r.citySlug}/${r.slug}/index.html`, rankingPage(r));
 write("badges/index.html", badgesPage());
 write("podcast/index.html", podcastPage());
+if (posts.length) write("blog/index.html", blogIndex());
+for (const p of posts) write(`blog/${p.slug}/index.html`, postPage(p));
 write("methodology/index.html", simplePage({
   slug: "methodology", eyebrow: "Methodology", h1: "How we rank",
   lede: "No pay-to-play. No random reviews. Just the legwork a homeowner doesn't have time to do.",
@@ -600,7 +666,7 @@ write("about/index.html", simplePage({
 write("404.html", notFound());
 
 // sitemap + robots + headers
-const urls = ["/", "/rankings/", ...states.map((s) => s.url), ...cities.map((c) => c.url), ...rankings.map((r) => r.url), "/badges/", "/podcast/", "/methodology/", "/about/"];
+const urls = ["/", "/rankings/", ...states.map((s) => s.url), ...cities.map((c) => c.url), ...rankings.map((r) => r.url), "/badges/", "/podcast/", ...(posts.length ? ["/blog/", ...posts.map((p) => p.url)] : []), "/methodology/", "/about/"];
 const lastmod = rankings[0].published;
 write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${site.url}${u}</loc><lastmod>${lastmod}</lastmod></url>`).join("\n")}\n</urlset>\n`);
 write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);
