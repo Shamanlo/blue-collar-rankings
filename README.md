@@ -22,6 +22,14 @@ npm run serve    # preview public/ locally
 
 Run `npm run badges` after adding a ranking so its PNG badges exist. `public/` is what gets deployed.
 
+## Deploy
+
+Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site and deploys `public/`
+to the `blue-collar-rankings` Cloudflare Pages project (https://blue-collar-rankings.pages.dev).
+It needs a `CLOUDFLARE_API_TOKEN` repository secret with Pages:Edit (plus Zone:Read and DNS:Edit
+to connect the domain). Once bluecollarrankings.com is added to Cloudflare, the same workflow
+attaches it and points DNS at Pages.
+
 ## Add a new video
 
 1. Add an entry to `data/rankings.json` (copy an existing one; `videoId` is the YouTube ID).
