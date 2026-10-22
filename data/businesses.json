@@ -431,5 +431,76 @@
     "rating": 4.8,
     "reviews": 16,
     "summary": "SMC Williams Guide Service LLC is owned by guides Sam McGuire and Colby Williams and runs guided hunts on private ranches across California's Central Coast and Central Valley, including Monterey, San Benito, San Luis Obispo, Fresno, Merced, Tulare and Madera counties. It offers year-round wild pig hunts, using spot-and-stalk and, when conditions warrant, trained pig dogs, plus blacktail deer, Tule elk and spring turkey hunts."
+  },
+  "Cambie Painters": {
+    "website": "https://cambiepainters.com/",
+    "city": "Vancouver, BC",
+    "address": "60 W 22nd Ave, Vancouver, BC V5Y 2E8",
+    "phone": "(778) 900-1968",
+    "summary": "Cambie Painters is a Vancouver painting company offering residential and commercial interior and exterior painting, popcorn ceiling removal and drywall repair. Its website says it has more than 15 years of experience, uses WorkSafeBC-covered and insured crews, works with low-VOC and zero-VOC paints, and gives a written 2-year workmanship warranty. Listed service areas include Kitsilano, Shaughnessy, Kerrisdale, Yaletown, Fairview, Oakridge and other Vancouver neighbourhoods.",
+    "gbp": "https://www.google.com/maps?cid=15353785140638561745",
+    "rating": 5.0,
+    "reviews": 31,
+    "ratingAsOf": "Oct 22, 2026"
+  },
+  "4C Painters Vancouver": {
+    "website": "https://4cpaintersvancouver.ca/",
+    "city": "Vancouver, BC",
+    "address": "49 Dunlevy Ave #220, Vancouver, BC V6A 3A3",
+    "phone": "(604) 561-5305",
+    "summary": "4C Painters Vancouver is a locally owned painting company serving homes, condos, stratas and businesses across Metro Vancouver. Services listed on its website include interior and exterior painting, cabinet refinishing, condo painting, commercial painting, drywall repair and popcorn ceiling removal. The site says it is licensed, insured and WCB-covered and offers a 1 to 2 year workmanship warranty.",
+    "gbp": "https://www.google.com/maps?cid=13633747204510931048",
+    "rating": 5.0,
+    "reviews": 163
+  },
+  "Brush and Beyond Painting": {
+    "website": "https://bnbservices.ca/",
+    "city": "Vancouver, BC",
+    "address": "1090 W Georgia St, Vancouver, BC V6E 3V7",
+    "phone": "(604) 841-9590",
+    "summary": "Brush and Beyond (Brush and Beyond Services Ltd.) is a Vancouver painting company offering interior, exterior, condo, high-rise and office painting, along with deck and wood staining. Its website also lists specialty services such as popcorn ceiling removal, drywall repair, epoxy coating and power washing, and says it uses low-VOC paints. The site describes more than a decade of experience and lists workmanship, fixed-pricing and timeliness guarantees.",
+    "gbp": "https://www.google.com/maps?cid=16621225477799614846",
+    "rating": 5.0,
+    "reviews": 14
+  },
+  "CertaPro Painters of Vancouver, BC": {
+    "website": "https://certapro.com/vancouver/",
+    "city": "Vancouver, BC",
+    "address": "2902 W Broadway Ste 309, Vancouver, BC V6K 2G8",
+    "phone": "(604) 737-9002",
+    "summary": "CertaPro Painters of Vancouver, BC is the local franchise of the CertaPro Painters network, offering residential and commercial painting. Its pages cover house painting across Vancouver neighbourhoods such as Kitsilano, Marpole, Shaughnessy and Southlands, as well as commercial painting services.",
+    "gbp": "https://www.google.com/maps?cid=15511103829559788073",
+    "rating": 4.9,
+    "reviews": 329
+  },
+  "Dunbar Painting": {
+    "website": "https://www.dunbarpainting.com/",
+    "city": "Vancouver, BC",
+    "address": "3891 Dunbar St, Vancouver, BC V6S 2E1",
+    "phone": "(604) 788-3382",
+    "summary": "Dunbar Painting is a residential painting company based on Dunbar Street in Vancouver. Its website lists interior and exterior repainting, new construction painting, heritage house painting, wood staining and drywall services, and says it has served Vancouver for over 15 years.",
+    "gbp": "https://www.google.com/maps?cid=2475975997283812708",
+    "rating": 4.8,
+    "reviews": 94
+  },
+  "PLE Painting": {
+    "website": "https://plepainting.com/",
+    "city": "Vancouver, BC",
+    "address": "200-116 W Hastings St, Vancouver, BC V6B 1G8",
+    "phone": "(778) 980-1490",
+    "summary": "PLE Painting is a Vancouver painting contractor working with commercial contractors, custom home builders, property managers, strata councils and homeowners. Its website lists commercial, new construction, strata and residential painting, and it serves Vancouver, Richmond, Burnaby and the North Shore.",
+    "gbp": "https://www.google.com/maps?cid=7103976060245846677",
+    "rating": 5.0,
+    "reviews": 122
+  },
+  "Precision Vancouver Painting": {
+    "website": "https://precisionpainting.ca/",
+    "city": "Vancouver, BC",
+    "address": "601 West Broadway, Vancouver, BC V6P 4J3",
+    "phone": "(604) 500-8023",
+    "summary": "Precision Vancouver Painting (branded Precision Painting on its website) offers residential and commercial painting in Vancouver and the surrounding area. Services listed include interior, exterior, condo and commercial painting, cabinet refinishing, drywall repair and baseboard or trim installation.",
+    "gbp": "https://www.google.com/maps?cid=8507748034919379092",
+    "rating": 4.9,
+    "reviews": 42
   }
 }
