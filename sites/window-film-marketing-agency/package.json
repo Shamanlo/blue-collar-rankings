@@ -1,0 +1,10 @@
+{
+  "name": "window-film-marketing-agency",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "images": "node scripts/render-images.mjs",
+    "serve": "npx serve public"
+  }
+}
