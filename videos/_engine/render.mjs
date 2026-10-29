@@ -72,7 +72,7 @@ const build = {
   title: (s) => `
     <div class="col">
       <div ${a("up kicker", 0.15)}>${esc(s.kicker)}</div>
-      <div class="h1">${s.title.map((l, i) => `<div ${a("left", 0.3 + i * 0.25)}>${esc(l)}</div>`).join("")}</div>
+      <div class="h1"${s.titlePx ? ` style="font-size:${s.titlePx}px"` : ""}>${s.title.map((l, i) => `<div ${a("left", 0.3 + i * 0.25)}>${esc(l)}</div>`).join("")}</div>
       <div ${a("wipe bar-accent", 0.9)}></div>
       <div class="center"><span ${a("pop year", 1.2)}>${esc(s.year)}</span></div>
       <div class="chips">${s.chips.map((c, i) => `<span ${a("pop chip", 1.6 + i * 0.12)}>${esc(c)}</span>`).join("")}</div>
@@ -122,7 +122,7 @@ const build = {
     <div ${a("up h2", 0.1, "text-align:center")}>${esc(s.title)}</div>
     <div class="tiles${s.tiles.length === 3 ? " three" : ""}">${s.tiles.map((t, i) => `
       <div class="a pop tile${i === 0 ? " best" : ""}"${cueAttr(t.cue)} style="--d:${0.5 + i * 0.3}">
-        <div class="tv">${esc(t.v)}</div><div class="tn">${esc(t.n)}</div><div class="ts">${esc(t.s)}</div></div>`).join("")}</div>
+        <div class="tv"${s.tvPx ? ` style="font-size:${s.tvPx}px"` : ""}>${esc(t.v)}</div><div class="tn">${esc(t.n)}</div><div class="ts">${esc(t.s)}</div></div>`).join("")}</div>
     ${s.note ? `<div class="a fade note center"${cueAttr(s.noteCue)} style="--d:4">${esc(s.note)}</div>` : ""}`,
 
   table: (s) => {
@@ -192,7 +192,17 @@ const build = {
     ${s.sub ? `<div ${a("up subline", 0.3)}>${esc(s.sub)}</div>` : ""}
     <div class="sgrid">${s.steps.map((st, i) => `
       <div class="a pop step"${cueAttr(st.cue)} style="--d:${0.6 + i * 0.3}">
-        <img src="${img(st.image)}" style="object-position:${st.imgPos || "50% 50%"}"><span class="sn">${String(i + 1).padStart(2, "0")}</span><span class="st">${esc(st.name)}</span></div>`).join("")}</div>`,
+        <img src="${img(st.image)}" style="object-position:${st.imgPos || "50% 50%"}">${s.plain ? "" : `<span class="sn">${String(i + 1).padStart(2, "0")}</span>`}${st.name ? `<span class="st">${esc(st.name)}</span>` : ""}</div>`).join("")}</div>`,
+
+  reviews: (s) => `
+    <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
+    ${s.sub ? `<div ${a("up subline", 0.3)}>${esc(s.sub)}</div>` : ""}
+    <div class="rgrid">${s.cards.map((c, i) => `
+      <div class="a up rcard"${cueAttr(c.cue)} style="--d:${0.6 + i * 0.5}">
+        <div class="rstars">★★★★★</div>
+        <div class="rtext">“${esc(c.text)}”</div>
+        <div class="rname2">${esc(c.name)}</div><div class="rmeta">${esc(c.meta)}</div>
+      </div>`).join("")}</div>`,
 
   quote: (s) => `
     ${photo(s)}

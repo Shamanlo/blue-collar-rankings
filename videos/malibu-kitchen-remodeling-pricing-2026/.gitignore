@@ -1,0 +1,7 @@
+# Keep only the deliverables and timings from out/
+out/*
+!out/timings.json
+!out/malibu-kitchen-remodeling-pricing-2026.mp4
+!out/malibu-kitchen-remodeling-pricing-2026-reel.mp4
+!out/thumbnail-youtube.jpg
+!out/thumbnail-reel.jpg

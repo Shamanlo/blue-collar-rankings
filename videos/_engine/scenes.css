@@ -365,3 +365,19 @@ blockquote { font: 400 76px/1.12 var(--display); text-transform: uppercase; colo
 /* CTA logo */
 .clogo { height: 110px; display: block; margin-bottom: 14px; }
 .reel .clogo { margin: 0 auto 14px; height: 140px; }
+
+/* Reviews */
+.reviews { flex-direction: column; justify-content: center; align-items: stretch; }
+.rgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 30px; }
+.rcard { background: #fff; border-radius: 26px; padding: 30px 32px; box-shadow: var(--shadow); border-top: 10px solid var(--orange); display: flex; flex-direction: column; }
+.rcard:nth-child(2) { border-top-color: var(--teal); }
+.rcard:nth-child(3) { border-top-color: #1388d8; }
+.rstars { font: 900 34px/1 var(--body); color: var(--orange); letter-spacing: .08em; }
+.rtext { font: 700 30px/1.35 var(--body); color: var(--navy); margin-top: 18px; flex: 1; }
+.rname2 { font: 400 34px/1 var(--display); text-transform: uppercase; margin-top: 22px; }
+.rmeta { font: 600 20px/1.2 var(--body); color: var(--teal); margin-top: 6px; }
+.reel .rgrid { grid-template-columns: 1fr; gap: 28px; }
+.reel .rtext { font-size: 40px; }
+.reel .rstars { font-size: 44px; }
+.reel .rname2 { font-size: 44px; }
+.reel .rmeta { font-size: 26px; }

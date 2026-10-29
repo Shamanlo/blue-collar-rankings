@@ -1,0 +1,191 @@
+{
+  "voice": "en-US-AndrewNeural",
+  "rate": "+6%",
+  "header": "Malibu, CA · Kitchen Remodel Prices · 2026",
+  "source": "2026 Malibu ranges from allexclusivepro.com. Ballpark only, depending on size and scope: get a written estimate.",
+  "sourceKinds": ["ranges", "price"],
+  "thumbs": {
+    "image": "kitchen-05.jpg", "landscapePos": "45% 50%", "reelPos": "50% 50%",
+    "lines": ["Kitchen", "Prices"], "sub": "Malibu, CA", "tag": "$45K – $150K+", "year": "2026",
+    "stamp": ["3", ["PRICE", "TIERS"]], "reelStamp": ["2026", ["PRICE", "GUIDE"]]
+  },
+  "landscape": [
+    {
+      "id": "hook", "kind": "title", "label": "2026 Price Guide",
+      "image": "kitchen-05.jpg", "imgPos": "45% 50%",
+      "kicker": "Malibu, California", "titlePx": 128,
+      "title": ["Kitchen Remodel", "Pricing Guide"], "year": "2026",
+      "chips": ["Basic", "In-Depth Makeover", "Luxury", "Permits", "Upgrades"],
+      "say": "How much does a kitchen remodel cost in Malibu in 2026? Here's the pricing guide: the three price tiers, what each one gets you, permit costs, and what makes a Malibu kitchen different."
+    },
+    {
+      "id": "ranges", "kind": "ranges", "label": "2026 Price Tiers",
+      "title": "What a Malibu kitchen remodel costs", "sub": "2026 ranges · depending on size and scope",
+      "max": 150, "ticks": [0, 50, 100, 150],
+      "rows": [
+        {"name": "Basic remodel", "note": "Fresh, updated look", "lo": 45, "hi": 55, "plus": true, "cue": "basic"},
+        {"name": "In-depth makeover", "note": "Most popular in Malibu", "lo": 55, "hi": 75, "plus": true, "cue": "in-depth"},
+        {"name": "Luxury kitchen", "note": "Custom everything", "lo": 75, "hi": 150, "plus": true, "cue": "luxury"}
+      ],
+      "say": "In Malibu, a basic kitchen remodel runs about $45,000 to $55,000 and up. An in-depth kitchen makeover, the most popular scope, runs $55,000 to $75,000 and up. And a luxury kitchen runs $75,000 to $150,000 and up, depending on size and scope."
+    },
+    {
+      "id": "basic", "kind": "price", "label": "Tier 1 of 3",
+      "image": "kitchen-02.jpg",
+      "kicker": "Tier 1 of 3", "name": "Basic kitchen remodel", "lo": 45, "hi": 55, "plus": true, "priceCue": "$45,000",
+      "desc": "New paint, flooring, countertops & lighting with quality materials.",
+      "bullets": [{"t": "Keep your existing layout", "cue": "layout"}, {"t": "Refaced or new stock cabinets", "cue": "refaced"}, {"t": "New backsplash, lighting & flooring", "cue": "backsplash"}, {"t": "Ideal for a quick refresh or a rental", "cue": "ideal"}],
+      "say": "A basic kitchen remodel, at $45,000 to $55,000 and up, covers new paint, flooring, countertops, and lighting with quality materials. You'll usually keep your existing layout, with refaced or new stock cabinets and a new backsplash. It's ideal for a quick refresh or a rental property."
+    },
+    {
+      "id": "indepth", "kind": "price", "label": "Tier 2 of 3",
+      "image": "kitchen-12.jpg",
+      "kicker": "Tier 2 of 3 · Most popular", "name": "In-depth kitchen makeover", "lo": 55, "hi": 75, "plus": true, "priceCue": "$55,000",
+      "desc": "Layout changes and higher-end materials throughout.",
+      "bullets": [{"t": "New semi-custom cabinets", "cue": "semi-custom"}, {"t": "Quartz or granite countertops", "cue": "quartz"}, {"t": "Tile backsplash & appliance upgrades", "cue": "tile"}, {"t": "Plumbing or electrical relocations", "cue": "plumbing"}],
+      "say": "An in-depth kitchen makeover, $55,000 to $75,000 and up, is the most popular scope in Malibu. It adds layout changes and higher-end materials: new semi-custom cabinets, quartz or granite counters, a tile backsplash, appliance upgrades, and plumbing or electrical relocations."
+    },
+    {
+      "id": "luxury", "kind": "price", "label": "Tier 3 of 3",
+      "image": "kitchen-07.jpg",
+      "kicker": "Tier 3 of 3", "name": "Luxury kitchen", "lo": 75, "hi": 150, "plus": true, "priceCue": "$75,000",
+      "desc": "Premium materials, custom everything, top-tier appliances.",
+      "bullets": [{"t": "Layout redesign & wall changes", "cue": "layout"}, {"t": "Custom cabinetry with organizers", "cue": "custom"}, {"t": "Full-slab quartz or granite", "cue": "full-slab"}, {"t": "Commercial-grade appliances & custom island", "cue": "commercial-grade"}],
+      "say": "A luxury kitchen, $75,000 to $150,000 and up, is the ultimate Malibu kitchen: a layout redesign and wall changes, custom cabinetry, full-slab quartz or granite, commercial-grade appliances, and a custom island or built-in seating."
+    },
+    {
+      "id": "drivers", "kind": "factors", "label": "What Drives the Price",
+      "title": "What affects your kitchen price",
+      "cards": [
+        {"name": "Size & layout", "desc": "Bigger kitchens & layout changes cost more", "image": "kitchen-04.jpg", "cue": "size"},
+        {"name": "Cabinets", "desc": "Refaced, stock, semi-custom or fully custom", "image": "kitchen-11.jpg", "cue": "cabinets"},
+        {"name": "Countertops", "desc": "Laminate, quartz, granite or full slab", "image": "kitchen-13.jpg", "cue": "countertop"},
+        {"name": "Appliances", "desc": "Keep, upgrade or go commercial-grade", "image": "kitchen-01.jpg", "imgPos": "50% 80%", "cue": "appliance"},
+        {"name": "Plumbing & electrical", "desc": "Moving a sink, range or outlets adds cost", "image": "kitchen-06.jpg", "imgPos": "60% 50%", "cue": "plumbing"},
+        {"name": "Flooring & lighting", "desc": "Tile, hardwood & lighting design", "image": "kitchen-08.jpg", "cue": "flooring"}
+      ],
+      "say": "So what moves your price? Your kitchen's size and layout, the quality of cabinets, your countertop material, appliance upgrades, any plumbing or electrical work, and your flooring and lighting choices."
+    },
+    {
+      "id": "malibu", "kind": "factors", "label": "Malibu Considerations",
+      "title": "What makes Malibu different",
+      "cards": [
+        {"name": "Salt air", "desc": "Marine-grade hardware & corrosion-resistant fixtures", "image": "kitchen-10.jpg", "imgPos": "40% 60%", "cue": "salt"},
+        {"name": "Coastal Commission", "desc": "Interior remodels usually aren't reviewed; exterior or footprint changes may need a permit", "icon": "wave", "cue": "interior"},
+        {"name": "Ocean views", "desc": "Open layouts that frame the Pacific", "image": "kitchen-09.jpg", "cue": "ocean"}
+      ],
+      "say": "Malibu kitchens have a few extra considerations. Salt air corrodes standard hardware and appliances, so plan on marine-grade hardware and corrosion-resistant fixtures. An interior kitchen remodel usually doesn't need California Coastal Commission review, but changes to the exterior or footprint may need a coastal permit. And many Malibu remodels open up the layout to frame ocean views."
+    },
+    {
+      "id": "permits", "kind": "stats", "label": "Permit Costs", "source": false,
+      "title": "Estimated permit costs", "tvPx": 84,
+      "tiles": [
+        {"v": "$420–$735", "n": "Minor remodel", "s": "No layout changes", "cue": "minor"},
+        {"v": "$840–$1,260", "n": "Walls, plumbing, electrical", "s": "Wall removal or system upgrades", "cue": "removing"},
+        {"v": "$1,260–$1,575+", "n": "Major remodel", "s": "Structural changes or additions", "cue": "major"}
+      ],
+      "note": "Estimates based on 2026 Southern California permit averages. Confirm with the City of Malibu.", "noteCue": "All",
+      "say": "Budget for permits too. A minor remodel with no layout changes runs about $420 to $735 in permit fees. Removing walls or upgrading plumbing or electrical, about $840 to $1,260. And a major remodel with structural changes, $1,260 to $1,575 and up. All Exclusive Construction handles permits with the City of Malibu for you."
+    },
+    {
+      "id": "upgrades", "kind": "list", "label": "Optional Upgrades",
+      "title": "Upgrades that add cost",
+      "items": ["Panel-ready appliances", "Custom storage & pantry pull-outs", "Slab backsplashes", "Heated floors", "Beverage or coffee bar", "New windows, doors or skylights"],
+      "note": "Prioritize the upgrades you'll use every day.",
+      "say": "Optional upgrades add to the total: panel-ready appliances, custom storage like pantry pull-outs, slab backsplashes, heated floors, a beverage or coffee bar, and new windows, doors, or skylights."
+    },
+    {
+      "id": "recommend", "kind": "winner", "label": "Need a Kitchen Remodel?",
+      "image": "kitchen-modern.jpg",
+      "stamp": "Give them a call", "name": "All Exclusive Construction, Inc.", "nameCue": "All",
+      "where": "Kitchen remodeling · Malibu & Southern California",
+      "logo": "ae-logo.png", "logoBg": "#fff",
+      "points": ["Design, permits, demolition & installation", "CA licensed & insured · Lic. #1120170", "5.0★ Google rating · 7+ years in business", "City of Malibu & Coastal Commission coordination", "Free consultations & written estimates"],
+      "say": "If you need a kitchen remodel in Malibu, give All Exclusive Construction, Inc. a call. They're a licensed and insured contractor with a 5.0 Google rating, and they manage design, permits, demolition, and installation, including City of Malibu and Coastal Commission coordination. Consultations are free, with written estimates and no pressure."
+    },
+    {
+      "id": "gallery", "kind": "steps", "label": "Recent Kitchens", "plain": true, "hold": 1.5,
+      "title": "Recent kitchen remodels", "sub": "By All Exclusive Construction",
+      "steps": [
+        {"image": "kitchen-05.jpg"}, {"image": "kitchen-08.jpg"}, {"image": "kitchen-12.jpg"}, {"image": "kitchen-04.jpg"}, {"image": "kitchen-10.jpg"},
+        {"image": "kitchen-06.jpg"}, {"image": "kitchen-09.jpg"}, {"image": "kitchen-11.jpg"}, {"image": "kitchen-07.jpg"}, {"image": "kitchen-modern.jpg"}
+      ],
+      "say": "Here are a few of their recent kitchen remodels."
+    },
+    {
+      "id": "reviews", "kind": "reviews", "label": "What Clients Say",
+      "title": "What their clients say", "sub": "5-star Google reviews",
+      "cards": [
+        {"text": "Our kitchen and bathroom turned out even better than we imagined, and we couldn't be happier with the final results.", "name": "Manuel Muniz", "meta": "Kitchen & bathroom remodel", "cue": "Our"},
+        {"text": "Not only did he complete the project in a timely manner but his pricing was very fair and reasonable.", "name": "Dedra Sloan Whitesell", "meta": "Full remodel", "cue": "His"},
+        {"text": "They showed up when they said they would, kept the project moving, and went above and beyond.", "name": "Melissa Banks", "meta": "Home construction", "cue": "They"}
+      ],
+      "say": "And here's what their clients say: \"Our kitchen and bathroom turned out even better than we imagined.\" \"His pricing was very fair and reasonable.\" And: \"They showed up when they said they would, and kept the project moving.\""
+    },
+    {
+      "id": "cta", "kind": "cta", "label": "Get a Free Estimate",
+      "image": "kitchen-13.jpg",
+      "logo": "ae-logo.png",
+      "name": "All Exclusive Construction, Inc.",
+      "phone": "(818) 836-1722",
+      "address": "Serving Malibu & Southern California",
+      "hours": "Mon–Fri · 8 AM – 4:30 PM · CA Lic. #1120170",
+      "url": "allexclusivepro.com/kitchen-remodeling/malibu",
+      "urlCue": "link",
+      "tip": "Free consultation, no pressure, no obligation.",
+      "say": "Need a kitchen remodel? Call All Exclusive Construction at (818) 836-1722 for a free estimate, or visit the link in the description. This has been Local Vibe Check."
+    }
+  ],
+  "reel": [
+    {
+      "id": "r-hook", "kind": "title", "label": "2026 Price Guide",
+      "image": "kitchen-05.jpg", "imgPos": "45% 50%",
+      "kicker": "Malibu, CA",
+      "title": ["Kitchen", "Prices"], "year": "2026",
+      "chips": ["Basic", "In-Depth", "Luxury"],
+      "say": "What does a kitchen remodel cost in Malibu in 2026?"
+    },
+    {
+      "id": "r-ranges", "kind": "ranges", "label": "2026 Price Tiers",
+      "title": "Kitchen remodel prices", "sub": "Malibu · 2026",
+      "max": 150, "ticks": [0, 75, 150],
+      "rows": [
+        {"name": "Basic remodel", "note": "Fresh look", "lo": 45, "hi": 55, "plus": true, "cue": "basic"},
+        {"name": "In-depth makeover", "note": "Most popular", "lo": 55, "hi": 75, "plus": true, "cue": "in-depth"},
+        {"name": "Luxury kitchen", "note": "Custom everything", "lo": 75, "hi": 150, "plus": true, "cue": "luxury"}
+      ],
+      "say": "A basic remodel: $45,000 to $55,000. An in-depth makeover, the most popular: $55,000 to $75,000. A luxury kitchen: $75,000 to $150,000 and up."
+    },
+    {
+      "id": "r-recommend", "kind": "winner", "label": "Need a Kitchen Remodel?",
+      "image": "kitchen-modern.jpg",
+      "stamp": "Give them a call", "name": "All Exclusive Construction, Inc.", "nameCue": "All",
+      "where": "Kitchen remodeling · Malibu",
+      "logo": "ae-logo.png", "logoBg": "#fff",
+      "points": ["Licensed & insured · Lic. #1120170", "5.0★ Google rating", "Free consultations & written estimates"],
+      "say": "Need a kitchen remodel? Give All Exclusive Construction a call: licensed, insured, and rated 5.0 stars on Google."
+    },
+    {
+      "id": "r-reviews", "kind": "reviews", "label": "What Clients Say",
+      "title": "Client reviews",
+      "cards": [
+        {"text": "Our kitchen and bathroom turned out even better than we imagined.", "name": "Manuel Muniz", "meta": "Kitchen & bathroom remodel", "cue": "Our"},
+        {"text": "His pricing was very fair and reasonable.", "name": "Dedra Sloan Whitesell", "meta": "Full remodel", "cue": "His"}
+      ],
+      "say": "Clients say: \"Our kitchen and bathroom turned out even better than we imagined.\" And: \"His pricing was very fair and reasonable.\""
+    },
+    {
+      "id": "r-cta", "kind": "cta", "label": "Get a Free Estimate",
+      "image": "kitchen-13.jpg",
+      "logo": "ae-logo.png",
+      "name": "All Exclusive Construction",
+      "phone": "(818) 836-1722",
+      "address": "Serving Malibu & Southern California",
+      "hours": "Mon–Fri · 8 AM – 4:30 PM",
+      "url": "Full price guide: link in description",
+      "urlCue": "link",
+      "tip": "Follow Local Vibe Check for more local price guides.",
+      "say": "Call (818) 836-1722 for a free estimate. Link in the description. Follow for more."
+    }
+  ]
+}
