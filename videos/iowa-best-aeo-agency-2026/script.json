@@ -16,6 +16,7 @@
       "kicker": "Iowa · AI search for local businesses", "titlePx": 128,
       "title": ["Best AEO Agency", "in Iowa"], "year": "2026",
       "chips": ["ChatGPT", "Gemini", "Perplexity", "Claude", "Google AI Overviews"],
+      "speak": "Who's the best A-E-O agency in Iowa? Our top pick is Iowa A-E-O. But first: what is A-E-O, and why does AI search matter so much for plumbers, roofers, electricians, and every other blue-collar business?",
       "say": "Who's the best AEO agency in Iowa? Our top pick is Iowa AEO. But first: what is AEO, and why does AI search matter so much for plumbers, roofers, electricians, and every other blue-collar business?"
     },
     {
@@ -36,6 +37,7 @@
       "lead": "Making your business easy for AI assistants to understand, trust and recommend.",
       "features": [{"t": "Understand", "cue": "understand"}, {"t": "Trust", "cue": "trust"}, {"t": "Recommend", "cue": "recommend"}],
       "aka": ["GEO", "AIO", "AI SEO", "LLM SEO"], "akaCue": "also",
+      "speak": "That's where A-E-O comes in. Answer Engine Optimization is the work of making your business easy for AI assistants to understand, trust, and recommend, so when someone asks ChatGPT, Gemini, Perplexity, Claude, or Google's AI Overviews, your business is in the answer. You'll also hear it called G-E-O, AI SEO, or LLM SEO.",
       "say": "That's where AEO comes in. Answer Engine Optimization is the work of making your business easy for AI assistants to understand, trust, and recommend, so when someone asks ChatGPT, Gemini, Perplexity, Claude, or Google's AI Overviews, your business is in the answer. You'll also hear it called GEO, AI SEO, or LLM SEO."
     },
     {
@@ -48,6 +50,7 @@
         {"label": "How people search", "a": "“plumber Ankeny”", "b": "“Who can fix my water heater in Ankeny today?”", "cue": "people"}
       ],
       "note": "You still need SEO: the two work together.", "noteCue": "still",
+      "speak": "How is that different from SEO? SEO is about ranking in a list of ten blue links, with keywords and backlinks. A-E-O is about getting named in the answer itself, with consistent facts, specific reviews, clear answers, and trusted mentions. And people search differently: not \"plumber Ankeny,\" but \"who can fix my water heater in Ankeny today?\" You still need SEO. The two work together.",
       "say": "How is that different from SEO? SEO is about ranking in a list of ten blue links, with keywords and backlinks. AEO is about getting named in the answer itself, with consistent facts, specific reviews, clear answers, and trusted mentions. And people search differently: not \"plumber Ankeny,\" but \"who can fix my water heater in Ankeny today?\" You still need SEO. The two work together."
     },
     {
@@ -91,6 +94,7 @@
       "where": "Des Moines · Cedar Rapids · Iowa City · Quad Cities",
       "logo": "iowa-aeo-logo.png", "logoBg": "#F6F5F0",
       "points": ["AI visibility audit across 5 AI assistants", "Listing & entity cleanup", "Answer-ready pages, FAQs & structured data", "Specific reviews & trusted local mentions", "Re-tested monthly, explained in plain English"],
+      "speak": "So who's the best A-E-O agency in Iowa? Our top pick is Iowa A-E-O. They focus on Iowa businesses, from Des Moines and Cedar Rapids to Iowa City and the Quad Cities. They test real customer questions across five AI assistants, clean up your listings, build answer-ready pages, grow specific reviews and local mentions, and re-test every month so you can see what changed.",
       "say": "So who's the best AEO agency in Iowa? Our top pick is Iowa AEO. They focus on Iowa businesses, from Des Moines and Cedar Rapids to Iowa City and the Quad Cities. They test real customer questions across five AI assistants, clean up your listings, build answer-ready pages, grow specific reviews and local mentions, and re-test every month so you can see what changed."
     },
     {
@@ -116,6 +120,7 @@
       "url": "iowaaeo.com",
       "urlCue": "visit",
       "tip": "See what ChatGPT, Gemini, Perplexity, Claude & Google AI say about you.",
+      "speak": "Want to know if AI is recommending your business? Get a free AI visibility check from Iowa A-E-O, with no cost and no obligation. Call (515) 690-6632, or visit iowaaeo.com. This has been Local Vibe Check.",
       "say": "Want to know if AI is recommending your business? Get a free AI visibility check from Iowa AEO, with no cost and no obligation. Call (515) 690-6632, or visit iowaaeo.com. This has been Local Vibe Check."
     }
   ],
@@ -145,6 +150,7 @@
       "lead": "Getting your business named in AI answers.",
       "features": [{"t": "Listings", "cue": "listings"}, {"t": "Reviews", "cue": "reviews"}, {"t": "Clear answers", "cue": "clear"}],
       "aka": ["GEO", "AI SEO"], "akaCue": "AEO",
+      "speak": "That's A-E-O, Answer Engine Optimization: consistent listings, specific reviews, and clear answers, so AI can recommend you.",
       "say": "That's AEO, Answer Engine Optimization: consistent listings, specific reviews, and clear answers, so AI can recommend you."
     },
     {
@@ -154,6 +160,7 @@
       "where": "Des Moines · Cedar Rapids · Iowa City · Quad Cities",
       "logo": "iowa-aeo-logo.png", "logoBg": "#F6F5F0",
       "points": ["Tests 5 AI assistants", "Fixes listings & content", "Re-tests every month"],
+      "speak": "The best A-E-O agency in Iowa? Our top pick is Iowa A-E-O.",
       "say": "The best AEO agency in Iowa? Our top pick is Iowa AEO."
     },
     {

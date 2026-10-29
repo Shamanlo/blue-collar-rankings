@@ -10,8 +10,8 @@ from the same site. The AI chat scene uses placeholder businesses ("Plumber A/B/
 Voice: Google Gemini TTS (`gemini-3.8-flash-tts`, voice Charon). Needs `GEMINI_API_KEY`.
 
 - `youtube.md`: titles, descriptions, chapters, tags and the reel caption
-- `out/iowa-best-aeo-agency-2026.mp4`: main video, 1920x1080, 3:13
-- `out/iowa-best-aeo-agency-2026-reel.mp4`: Reel/Short, 1080x1920, 0:37
+- `out/iowa-best-aeo-agency-2026.mp4`: main video, 1920x1080, 3:19
+- `out/iowa-best-aeo-agency-2026-reel.mp4`: Reel/Short, 1080x1920, 0:38
 - `out/thumbnail-youtube.jpg` (1280x720), `out/thumbnail-reel.jpg` (1080x1920)
 
 Rebuild with the shared engine: see `../README.md`.

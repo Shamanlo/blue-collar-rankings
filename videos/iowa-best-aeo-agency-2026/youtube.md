@@ -2,7 +2,7 @@
 
 ## Main video (16:9)
 
-File: `out/iowa-best-aeo-agency-2026.mp4` (3:13)
+File: `out/iowa-best-aeo-agency-2026.mp4` (3:19)
 Thumbnail: `out/thumbnail-youtube.jpg` (1280x720)
 
 ### Title
@@ -54,15 +54,15 @@ Why Iowa AEO is our top pick:
 
 Chapters:
 0:00 Who's the best AEO agency in Iowa?
-0:13 How customers search now
-0:32 What is AEO?
-0:54 AEO vs. traditional SEO
-1:18 Why blue-collar businesses can't skip it
-1:39 The 5 signals AI looks for
-2:01 What tips the answer for contractors
-2:23 Our top pick: Iowa AEO
-2:47 How they work
-2:57 Free AI visibility check
+0:14 How customers search now
+0:33 What is AEO?
+0:56 AEO vs. traditional SEO
+1:24 Why blue-collar businesses can't skip it
+1:45 The 5 signals AI looks for
+2:07 What tips the answer for contractors
+2:29 Our top pick: Iowa AEO
+2:53 How they work
+3:03 Free AI visibility check
 
 The AI chat example uses placeholder businesses. Real AI answers vary by platform and change over time.
 
@@ -76,7 +76,7 @@ aeo agency iowa, best aeo agency, answer engine optimization, what is aeo, ai se
 
 ## Reel / YouTube Short (9:16)
 
-File: `out/iowa-best-aeo-agency-2026-reel.mp4` (0:37)
+File: `out/iowa-best-aeo-agency-2026-reel.mp4` (0:38)
 Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
