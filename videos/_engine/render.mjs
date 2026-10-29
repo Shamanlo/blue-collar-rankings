@@ -142,11 +142,12 @@ const build = {
 
   table: (s) => {
     const t = spec.table;
+    const hl = t.highlight ?? 0; // index of the featured column
     return `
     <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
     <table class="a fade" style="--d:.35">
-      <tr><th>${esc(t.corner || "")}</th>${t.cols.map((c, i) => `<th class="${i === 0 ? "ivo" : ""}">${esc(c)}</th>`).join("")}</tr>
-      ${t.rows.map((r, ri) => `<tr class="a fade" style="--d:${0.5 + ri * 0.1}">${r.map((c, i) => `<td class="${i === 1 ? "ivo" : ""}${c === "—" || c === "n/a" ? " dash" : ""}">${esc(c)}</td>`).join("")}</tr>`).join("")}
+      <tr><th>${esc(t.corner || "")}</th>${t.cols.map((c, i) => `<th class="${i === hl ? "ivo" : ""}">${esc(c)}</th>`).join("")}</tr>
+      ${t.rows.map((r, ri) => `<tr class="a fade" style="--d:${0.5 + ri * 0.1}">${r.map((c, i) => `<td class="${i === hl + 1 ? "ivo" : ""}${c === "—" || c === "n/a" ? " dash" : ""}">${esc(c)}</td>`).join("")}</tr>`).join("")}
     </table>
     <div class="a pop callout"${cueAttr(s.calloutCue)} style="--d:5">${s.callout}</div>`;
   },
@@ -164,19 +165,20 @@ const build = {
 
   // Floating price ranges on a shared axis.
   ranges: (s) => {
+    const rf = s.dollars ? money : kfmt; // "dollars": values are whole dollars, not thousands
     const max = s.max;
     const ticks = s.ticks;
     return `
     <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
     ${s.sub ? `<div ${a("up subline", 0.3)}>${esc(s.sub)}</div>` : ""}
-    <div class="rangebox">
-      <div class="axis">${ticks.map((t) => `<span style="left:${(t / max) * 100}%">${t ? kfmt(t) : "$0"}${t === max ? "+" : ""}</span>`).join("")}</div>
+    <div class="rangebox${s.rows.length > 4 ? " compact" : ""}">
+      <div class="axis">${ticks.map((t) => `<span style="left:${(t / max) * 100}%">${t ? rf(t) : "$0"}${t === max ? "+" : ""}</span>`).join("")}</div>
       ${s.rows.map((r, i) => {
         const l = (r.lo / max) * 100, w = ((r.hi - r.lo) / max) * 100;
         return `<div class="rrow"${cueAttr(r.cue)} data-cuegroup>
           <div class="a left rname" style="--d:${0.6 + i * 0.3}">${esc(r.name)}<small>${esc(r.note || "")}</small></div>
           <div class="rtrack">${ticks.map((t) => `<i style="left:${(t / max) * 100}%"></i>`).join("")}
-            <div class="a grow rfill c${i}${r.hi / max > 0.75 ? " inside" : ""}" style="left:${l}%;width:${w}%;--d:${0.6 + i * 0.3}"><b>${kfmt(r.lo)} – ${kfmt(r.hi)}${r.plus ? "+" : ""}</b></div>
+            <div class="a grow rfill c${i}${r.hi / max > 0.75 ? " inside" : ""}" style="left:${l}%;width:${w}%;--d:${0.6 + i * 0.3}"><b>${rf(r.lo)} – ${rf(r.hi)}${r.plus ? "+" : ""}</b></div>
           </div></div>`;
       }).join("")}
     </div>`;

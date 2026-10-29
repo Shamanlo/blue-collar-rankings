@@ -420,3 +420,9 @@ blockquote { font: 400 76px/1.12 var(--display); text-transform: uppercase; colo
 .vhead span:last-child { background: var(--orange) !important; color: #fff !important; }
 .reel .vrow { grid-template-columns: 220px 1fr 1fr; }
 .reel .vrow span { font-size: 28px; padding: 18px 18px; }
+.rfill.c4 { background: linear-gradient(90deg, #ff9f4a, #e0560b); }
+.rangebox.compact { margin-top: 18px; }
+.rangebox.compact .rrow { margin-top: 12px; }
+.rangebox.compact .rtrack { height: 66px; }
+.rangebox.compact .rname { font-size: 40px; }
+.rangebox.compact .rfill b { font-size: 36px; }

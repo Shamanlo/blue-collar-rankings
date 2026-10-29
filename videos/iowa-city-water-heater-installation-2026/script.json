@@ -1,0 +1,182 @@
+{
+  "tts": "gemini",
+  "gemini": {"model": "gemini-3.8-flash-tts", "voice": "Charon"},
+  "header": "Iowa City, IA · Water Heater Prices · 2026",
+  "source": "2026 average installed costs. Ballpark only: your price depends on the unit, gas line, venting and space.",
+  "sourceKinds": ["ranges", "table"],
+  "table": {
+    "corner": "System type", "highlight": 2,
+    "cols": ["Unit cost", "Labor cost", "Total installed"],
+    "rows": [
+      ["Electric tank", "$700 – $1,800", "$500 – $1,200", "$1,200 – $3,000"],
+      ["Gas tank", "$800 – $2,850", "$500 – $1,200", "$1,300 – $4,050"],
+      ["Electric tankless", "$800 – $1,500", "$300 – $1,200", "$1,100 – $2,700"],
+      ["Heat pump / hybrid", "$1,200 – $4,800", "$800 – $1,500", "$2,000 – $6,300"],
+      ["Gas tankless", "$1,800 – $2,750", "$1,500 – $3,500", "$3,300 – $6,250"]
+    ]
+  },
+  "thumbs": {
+    "image": "water-heater-install-2.jpg", "landscapePos": "50% 35%", "reelPos": "50% 40%",
+    "lines": ["Water Heater", "Prices"], "sub": "Iowa City, IA", "tag": "$950 – $6,000", "year": "2026",
+    "bigPx": 100, "reelBigPx": 190,
+    "stamp": ["5", ["TYPES", "PRICED"]], "reelStamp": ["2026", ["PRICE", "GUIDE"]]
+  },
+  "landscape": [
+    {
+      "id": "hook", "kind": "title", "label": "2026 Price Guide",
+      "image": "water-heater-install-2.jpg", "imgPos": "50% 35%",
+      "kicker": "Iowa City, Iowa", "titlePx": 128,
+      "title": ["Water Heater", "Installation Cost"], "year": "2026",
+      "chips": ["Electric tank", "Gas tank", "Tankless", "Heat pump"],
+      "speak": "How much does it cost to install a new water heater in Iowa City in 2026? Most installs run from about nine hundred fifty dollars to six thousand dollars. Here's what each type of system costs, and what moves your price.",
+      "say": "How much does it cost to install a new water heater in Iowa City in 2026? Most installs run from about $950 to $6,000. Here's what each type of system costs, and what moves your price."
+    },
+    {
+      "id": "ranges", "kind": "ranges", "label": "Cost by System Type",
+      "title": "Total installed cost by system", "sub": "2026 averages · unit + labor",
+      "dollars": true, "max": 6500, "ticks": [0, 2000, 4000, 6000],
+      "rows": [
+        {"name": "Electric tankless", "note": "Heats on demand", "lo": 1100, "hi": 2700, "cue": "$1,100"},
+        {"name": "Electric tank", "note": "Simplest swap", "lo": 1200, "hi": 3000, "cue": "$1,200"},
+        {"name": "Gas tank", "note": "Most common", "lo": 1300, "hi": 4050, "cue": "$1,300"},
+        {"name": "Heat pump / hybrid", "note": "Most efficient", "lo": 2000, "hi": 6300, "cue": "$2,000"},
+        {"name": "Gas tankless", "note": "Endless hot water", "lo": 3300, "hi": 6250, "cue": "$3,300"}
+      ],
+      "speak": "Here's the average total installed cost by system in 2026. An electric tankless heater runs about eleven hundred dollars to twenty-seven hundred dollars. An electric tank, twelve hundred dollars to three thousand dollars. A gas tank, thirteen hundred dollars to four thousand fifty dollars. A heat pump or hybrid, two thousand dollars to sixty-three hundred dollars. And a gas tankless system, thirty-three hundred dollars to six thousand two hundred fifty dollars.",
+      "say": "Here's the average total installed cost by system in 2026. An electric tankless heater runs about $1,100 to $2,700. An electric tank, $1,200 to $3,000. A gas tank, $1,300 to $4,050. A heat pump or hybrid, $2,000 to $6,300. And a gas tankless system, $3,300 to $6,250."
+    },
+    {
+      "id": "table", "kind": "table", "label": "Unit vs. Labor",
+      "title": "Where the money goes",
+      "callout": "Gas tankless labor: <b>$1,500 – $3,500</b>", "calloutCue": "gas",
+      "speak": "Where does the money go? The unit itself runs about seven hundred dollars to forty-eight hundred dollars and labor runs three hundred dollars to thirty-five hundred dollars. Gas tankless costs the most to install, because it usually needs a bigger gas line and different venting.",
+      "say": "Where does the money go? The unit itself runs about $700 to $4,800, and labor runs $300 to $3,500. Gas tankless costs the most to install, because it usually needs a bigger gas line and different venting."
+    },
+    {
+      "id": "versus", "kind": "versus", "label": "Tank or Tankless?",
+      "title": "Tank or tankless?", "left": "Tank", "right": "Tankless",
+      "rows": [
+        {"label": "Hot water", "a": "Limited to what's in the tank", "b": "Continuous while a tap is open", "cue": "tank"},
+        {"label": "Space", "a": "Floor space for the tank", "b": "Mounts on a wall", "cue": "wall"},
+        {"label": "Upfront cost", "a": "Lower", "b": "Higher", "cue": "costs"},
+        {"label": "Install work", "a": "Usually a straight swap", "b": "Often needs gas line & venting changes", "cue": "because"},
+        {"label": "Best fit", "a": "Smaller households, simpler installs", "b": "Busy households, tight utility rooms", "cue": "busy"}
+      ],
+      "say": "Tank or tankless? A tank keeps a set amount of water hot and ready, costs less upfront, and is usually a straight swap. A tankless heater heats water only when a tap is open and mounts on the wall, but costs more, because it often needs gas line and venting changes. Busy households that keep running out of hot water often do better with tankless."
+    },
+    {
+      "id": "drivers", "kind": "factors", "label": "What Drives the Price", "cols": 4,
+      "title": "What moves your price",
+      "cards": [
+        {"name": "Type & size", "desc": "Tank, tankless or heat pump, and how big", "icon": "drop", "cue": "type"},
+        {"name": "Gas line", "desc": "Tankless usually needs a larger gas supply", "icon": "flame", "cue": "gas"},
+        {"name": "Venting", "desc": "Tankless units often vent differently", "icon": "roof", "cue": "venting"},
+        {"name": "Tight space", "desc": "Closets & corners: tankless often fits", "icon": "map", "cue": "tight"}
+      ],
+      "say": "What moves your price? The type and size of the unit, whether the gas line needs to be upsized, venting changes, and a tight utility space, where a wall-mounted tankless unit often fits when a new tank won't."
+    },
+    {
+      "id": "signs", "kind": "list", "label": "Time to Replace?",
+      "title": "Signs it's time to replace",
+      "items": ["Water leaking from the bottom", "Rusty or discolored hot water", "Popping or rumbling sounds", "Hot water runs out faster", "Tank over 10 years old", "A leak is an emergency: call now"],
+      "note": "Most tank water heaters last about 8 to 12 years.", "noteCue": "Most",
+      "say": "When is it time to replace? Most tank heaters last about 8 to 12 years. Watch for water leaking from the bottom, rusty or discolored hot water, popping or rumbling sounds, or hot water that runs out faster than it used to. A tank over 10 years old showing any of these is worth replacing. And a leaking tank is an emergency."
+    },
+    {
+      "id": "hardwater", "kind": "stats", "label": "Iowa Hard Water Tip",
+      "title": "Eastern Iowa hard water tip",
+      "tiles": [
+        {"v": "Scale", "n": "Builds in the tank", "s": "Makes the heater work harder", "cue": "minerals"},
+        {"v": "Flush", "n": "Your tank", "s": "Now and then, to slow the buildup", "cue": "flushing"},
+        {"v": "Descale", "n": "Tankless units", "s": "Scale collects in the heat exchanger", "cue": "descaling"}
+      ],
+      "note": "Ask your gas or electric utility about rebates on efficient models.", "noteCue": "rebates",
+      "say": "One local tip: Eastern Iowa water is hard. Minerals settle in the tank as scale, which makes the heater work harder. Flushing the tank now and then slows the buildup, and tankless units need periodic descaling. And ask your utility about rebates on efficient models."
+    },
+    {
+      "id": "recommend", "kind": "winner", "label": "Need It Installed?",
+      "image": "a1-truck.jpg", "imgPos": "35% 50%",
+      "stamp": "Give Andy a call", "name": "A-1 Sewer Service", "nameCue": "A-1",
+      "where": "Water heater installation · Iowa City & the Corridor",
+      "logo": "a1-logo.jpg", "logoBg": "#fff",
+      "points": ["Tank & tankless installs", "Gas line & venting checked first", "Changes priced up front · free estimates", "Open 24/7 · no after-hours fees until 8 PM", "5.0★ · 40 reviews · 8+ years in Eastern Iowa"],
+      "say": "If you need your water heater installed, give Andy at A-1 Sewer Service a call. They install tank and tankless water heaters around Iowa City and the Corridor, check your gas line and venting first, and include any changes in the price up front. They're open 24/7, rated 5.0 across 40 reviews, and estimates are free."
+    },
+    {
+      "id": "reviews", "kind": "reviews", "label": "What Customers Say",
+      "title": "What customers say", "sub": "5.0 ★ · 40 reviews",
+      "cards": [
+        {"text": "Told him the bottom of my water heater is leaking, sent him pics of everything and he was out the next day replacing it at a reasonable price!", "name": "Noah H.", "meta": "Water heater replacement", "cue": "told"},
+        {"text": "Andy came within the hour that I called to unclog a basement floor drain. Reasonable charges for good work and an honest pleasant person.", "name": "Dennis Harnack", "meta": "Floor drain", "cue": "Andy"},
+        {"text": "Answered the phone 8am first try, flexible to when I needed, arrived within hours of first contact. More than reasonable price.", "name": "Joshua Nimmo", "meta": "Plumbing repair", "cue": "answered"}
+      ],
+      "say": "Here's what customers say: \"Told him the bottom of my water heater is leaking, and he was out the next day replacing it at a reasonable price.\" \"Andy came within the hour that I called.\" And: \"Answered the phone first try, and arrived within hours.\""
+    },
+    {
+      "id": "cta", "kind": "cta", "label": "Free Estimate",
+      "image": "water-heater-install-1.jpg", "imgPos": "50% 40%",
+      "logo": "a1-logo.jpg",
+      "name": "A-1 Sewer Service",
+      "phone": "(319) 600-4224",
+      "address": "738 Bay Ridge Dr, Iowa City, IA 52246",
+      "hours": "Open 24/7 · No after-hours fees until 8 PM",
+      "url": "a1seweriowacity.com/water-heater-installation",
+      "urlCue": "link",
+      "tip": "Ask for Andy. Free, upfront estimates.",
+      "say": "Need a new water heater? Call Andy at A-1 Sewer Service at (319) 600-4224 for a free estimate, or visit the link in the description. This has been Local Vibe Check."
+    }
+  ],
+  "reel": [
+    {
+      "id": "r-hook", "kind": "title", "label": "2026 Price Guide",
+      "image": "water-heater-install-2.jpg", "imgPos": "50% 35%",
+      "kicker": "Iowa City, IA",
+      "title": ["Water Heater", "Prices"], "year": "2026", "titlePx": 140,
+      "chips": ["Tank", "Tankless", "Heat pump"],
+      "speak": "What does a new water heater cost in Iowa City in 2026? Most installs run nine hundred fifty dollars to six thousand dollars.",
+      "say": "What does a new water heater cost in Iowa City in 2026? Most installs run $950 to $6,000."
+    },
+    {
+      "id": "r-ranges", "kind": "ranges", "label": "Cost by System Type",
+      "title": "Installed cost", "sub": "2026 averages",
+      "dollars": true, "max": 6500, "ticks": [0, 3000, 6000],
+      "rows": [
+        {"name": "Electric tank", "note": "Simplest swap", "lo": 1200, "hi": 3000, "cue": "$1,200"},
+        {"name": "Gas tank", "note": "Most common", "lo": 1300, "hi": 4050, "cue": "$1,300"},
+        {"name": "Gas tankless", "note": "Endless hot water", "lo": 3300, "hi": 6250, "cue": "$3,300"}
+      ],
+      "speak": "An electric tank: twelve hundred dollars to three thousand dollars. A gas tank: thirteen hundred dollars to four thousand fifty dollars. Gas tankless: thirty-three hundred dollars to six thousand two hundred fifty dollars.",
+      "say": "An electric tank: $1,200 to $3,000. A gas tank: $1,300 to $4,050. Gas tankless: $3,300 to $6,250."
+    },
+    {
+      "id": "r-recommend", "kind": "winner", "label": "Need It Installed?",
+      "image": "a1-truck.jpg", "imgPos": "35% 50%",
+      "stamp": "Give Andy a call", "name": "A-1 Sewer Service", "nameCue": "A-1",
+      "where": "Iowa City & the Corridor",
+      "logo": "a1-logo.jpg", "logoBg": "#fff",
+      "points": ["Open 24/7", "5.0★ · 40 reviews", "Free, upfront estimates"],
+      "say": "Need it installed? Call Andy at A-1 Sewer Service: open 24/7, rated 5.0, with free estimates."
+    },
+    {
+      "id": "r-reviews", "kind": "reviews", "label": "What Customers Say",
+      "title": "Customer review",
+      "cards": [
+        {"text": "Told him the bottom of my water heater is leaking… he was out the next day replacing it at a reasonable price!", "name": "Noah H.", "meta": "Water heater replacement", "cue": "told"}
+      ],
+      "say": "\"Told him the bottom of my water heater is leaking, and he was out the next day replacing it at a reasonable price.\""
+    },
+    {
+      "id": "r-cta", "kind": "cta", "label": "Free Estimate",
+      "image": "water-heater-install-1.jpg", "imgPos": "50% 40%",
+      "logo": "a1-logo.jpg",
+      "name": "A-1 Sewer Service",
+      "phone": "(319) 600-4224",
+      "address": "Iowa City & the Corridor",
+      "hours": "Open 24/7",
+      "url": "Link in description",
+      "urlCue": "link",
+      "tip": "Follow Local Vibe Check for more local price guides.",
+      "say": "Call (319) 600-4224 for a free estimate. Link in the description. Follow for more."
+    }
+  ]
+}
