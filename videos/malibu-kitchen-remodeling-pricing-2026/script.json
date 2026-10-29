@@ -1,6 +1,6 @@
 {
-  "voice": "en-US-AndrewNeural",
-  "rate": "+6%",
+  "tts": "gemini",
+  "gemini": {"model": "gemini-3.8-flash-tts", "voice": "Charon"},
   "header": "Malibu, CA · Kitchen Remodel Prices · 2026",
   "source": "2026 Malibu ranges from allexclusivepro.com. Ballpark only, depending on size and scope: get a written estimate.",
   "sourceKinds": ["ranges", "price"],
@@ -51,6 +51,7 @@
       "kicker": "Tier 3 of 3", "name": "Luxury kitchen", "lo": 75, "hi": 150, "plus": true, "priceCue": "$75,000",
       "desc": "Premium materials, custom everything, top-tier appliances.",
       "bullets": [{"t": "Layout redesign & wall changes", "cue": "layout"}, {"t": "Custom cabinetry with organizers", "cue": "custom"}, {"t": "Full-slab quartz or granite", "cue": "full-slab"}, {"t": "Commercial-grade appliances & custom island", "cue": "commercial-grade"}],
+      "speak": "A luxury kitchen, seventy-five thousand to one hundred fifty thousand dollars and up, is the ultimate Malibu kitchen: a layout redesign and wall changes, custom cabinetry, full-slab quartz or granite, commercial-grade appliances, and a custom island or built-in seating.",
       "say": "A luxury kitchen, $75,000 to $150,000 and up, is the ultimate Malibu kitchen: a layout redesign and wall changes, custom cabinetry, full-slab quartz or granite, commercial-grade appliances, and a custom island or built-in seating."
     },
     {
@@ -85,6 +86,7 @@
         {"v": "$1,260–$1,575+", "n": "Major remodel", "s": "Structural changes or additions", "cue": "major"}
       ],
       "note": "Estimates based on 2026 Southern California permit averages. Confirm with the City of Malibu.", "noteCue": "All",
+      "speak": "Budget for permits too. A minor remodel with no layout changes runs about four hundred twenty to seven hundred thirty-five dollars in permit fees. Removing walls or upgrading plumbing or electrical, about eight hundred forty to one thousand two hundred sixty dollars. And a major remodel with structural changes, one thousand two hundred sixty to one thousand five hundred seventy-five dollars and up. All Exclusive Construction handles permits with the City of Malibu for you.",
       "say": "Budget for permits too. A minor remodel with no layout changes runs about $420 to $735 in permit fees. Removing walls or upgrading plumbing or electrical, about $840 to $1,260. And a major remodel with structural changes, $1,260 to $1,575 and up. All Exclusive Construction handles permits with the City of Malibu for you."
     },
     {
@@ -154,6 +156,7 @@
         {"name": "In-depth makeover", "note": "Most popular", "lo": 55, "hi": 75, "plus": true, "cue": "in-depth"},
         {"name": "Luxury kitchen", "note": "Custom everything", "lo": 75, "hi": 150, "plus": true, "cue": "luxury"}
       ],
+      "speak": "A basic remodel: forty-five thousand to fifty-five thousand dollars. An in-depth makeover, the most popular: fifty-five thousand to seventy-five thousand dollars. A luxury kitchen: seventy-five thousand to one hundred fifty thousand dollars and up.",
       "say": "A basic remodel: $45,000 to $55,000. An in-depth makeover, the most popular: $55,000 to $75,000. A luxury kitchen: $75,000 to $150,000 and up."
     },
     {

@@ -11,6 +11,13 @@ brand fonts and pin logo.
 ## Build a video
 
 Needs Python 3 with `edge-tts` and `numpy`, Node with Playwright + Chromium, and ffmpeg.
+
+Voice: by default the Microsoft neural voice set by `"voice"`/`"rate"` in `script.json`.
+For Google Gemini TTS, set `"tts": "gemini"` and `"gemini": {"model": "gemini-3.8-flash-tts",
+"voice": "Charon"}`, provide `GEMINI_API_KEY` as an environment secret (never commit it), and
+`pip install faster-whisper` (a local Whisper model times the captions against Gemini's audio and
+flags any take that doesn't match the script). A scene's optional `"speak"` text is what
+Gemini reads (e.g. numbers spelled out) while `"say"` stays the caption text.
 Run from this folder, with `P` set to the project folder:
 
 ```sh

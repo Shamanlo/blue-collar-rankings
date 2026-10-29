@@ -2,7 +2,7 @@
 
 ## Main video (16:9)
 
-File: `out/malibu-kitchen-remodeling-pricing-2026.mp4` (3:42)
+File: `out/malibu-kitchen-remodeling-pricing-2026.mp4` (3:35)
 Thumbnail: `out/thumbnail-youtube.jpg` (1280x720)
 
 ### Title
@@ -50,17 +50,17 @@ Licensed & insured (CA Lic. #1120170) · 5.0★ Google rating · Free consultati
 Chapters:
 0:00 What does a kitchen remodel cost in Malibu?
 0:12 2026 price tiers
-0:34 Basic kitchen remodel
-0:54 In-depth kitchen makeover
-1:14 Luxury kitchen
-1:31 What affects your price
-1:43 What makes Malibu different
-2:07 Estimated permit costs
-2:36 Upgrades that add cost
-2:50 Need a kitchen remodel? All Exclusive Construction
-3:11 Recent kitchen remodels
-3:16 What their clients say
-3:29 Get a free estimate
+0:32 Basic kitchen remodel
+0:49 In-depth kitchen makeover
+1:08 Luxury kitchen
+1:26 What affects your price
+1:39 What makes Malibu different
+2:02 Estimated permit costs
+2:29 Upgrades that add cost
+2:44 Need a kitchen remodel? All Exclusive Construction
+3:04 Recent kitchen remodels
+3:09 What their clients say
+3:22 Get a free estimate
 
 Prices are 2026 ballpark ranges and depend on your kitchen's size and scope. Get a written estimate for your project.
 
@@ -74,7 +74,7 @@ malibu kitchen remodel, kitchen remodel cost malibu, kitchen remodeling pricing 
 
 ## Reel / YouTube Short (9:16)
 
-File: `out/malibu-kitchen-remodeling-pricing-2026-reel.mp4` (0:48)
+File: `out/malibu-kitchen-remodeling-pricing-2026-reel.mp4` (0:43)
 Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
