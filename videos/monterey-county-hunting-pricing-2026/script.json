@@ -1,0 +1,199 @@
+{
+  "voice": "en-US-AndrewNeural",
+  "rate": "+6%",
+  "header": "Monterey County, CA · Hunting Prices · 2026",
+  "source": "Prices for one hunter, from each outfitter's website, Oct 27, 2026. Confirm before booking.",
+  "outfitters": ["Indian Valley Outfitters", "Bitterwater Outfitters", "Frontera Hunting", "Tejon Ranch", "Oak Stone Outfitters", "Lockwood Hunting"],
+  "table": {
+    "cols": ["Indian Valley", "Bitterwater", "Frontera", "Tejon Ranch", "Oak Stone", "Lockwood"],
+    "rows": [
+      ["Meat pig", "$800", "$1,150", "$1,500", "$2,800", "$3,000", "$3,000"],
+      ["Trophy boar", "$1,200", "$1,500", "$3,000", "$2,800", "—", "—"],
+      ["Management buck", "$3,000", "$3,850", "$4,500", "$6,000", "$6,500", "$12,500"],
+      ["Trophy buck", "$6,500", "Call", "$8,500", "$6,600", "$11,500", "$12,500"],
+      ["Turkey", "$950", "$1,500", "—", "$2,000", "$3,250", "$3,000"],
+      ["Quail & dove", "$550", "$550", "—", "—", "$2,300", "—"],
+      ["Coyote & predator", "$600", "$700", "Add-on", "$1,435", "$2,250", "—"],
+      ["Squirrel & rabbit", "$600", "$700", "Add-on", "$1,435", "$2,250", "—"],
+      ["Deposit", "$200", "n/a", "25%", "50%", "50%", "n/a"]
+    ]
+  },
+  "landscape": [
+    {
+      "id": "hook", "kind": "title", "label": "2026 Price Guide",
+      "image": "wild-boar-monterey-county.jpg",
+      "kicker": "Monterey County, California",
+      "title": ["Hunting", "Pricing Guide"], "year": "2026",
+      "chips": ["Pig", "Deer", "Turkey", "Quail & Dove", "Predator", "Small Game"],
+      "say": "How much does a guided hunt in Monterey County, California actually cost in 2026? We compared the posted prices from six outfitters, hunt by hunt, so you know what to expect before you book."
+    },
+    {
+      "id": "who", "kind": "list", "label": "Who We Compared",
+      "title": "6 outfitters compared",
+      "items": ["Indian Valley Outfitters", "Bitterwater Outfitters", "Frontera Hunting", "Tejon Ranch", "Oak Stone Outfitters", "Lockwood Hunting"],
+      "note": "Prices for one hunter, from each outfitter's website · Oct 27, 2026",
+      "say": "Here's who we compared: Indian Valley Outfitters, Bitterwater Outfitters, Frontera Hunting, Tejon Ranch, Oak Stone Outfitters, and Lockwood Hunting. Every price is for one hunter, taken from each outfitter's own website in October 2026."
+    },
+    {
+      "id": "pig", "kind": "bars", "label": "Hunt 1 · Wild Pig",
+      "image": "wild-boar-monterey-county.jpg",
+      "title": "Meat pig hunt", "range": "$800 – $3,000",
+      "rows": [["Indian Valley", 800], ["Bitterwater", 1150], ["Frontera", 1500], ["Tejon Ranch", 2800], ["Oak Stone", 3000], ["Lockwood", 3000]],
+      "max": 3000,
+      "say": "Let's start with wild pig. A meat pig hunt runs from $800 at Indian Valley, up to $3,000 at Oak Stone and Lockwood."
+    },
+    {
+      "id": "boar", "kind": "bars", "label": "Hunt 2 · Trophy Boar",
+      "image": "trophy-boar-tusks-monterey-county.jpg",
+      "title": "Trophy boar hunt", "range": "$1,200 – $3,000",
+      "rows": [["Indian Valley", 1200], ["Bitterwater", 1500], ["Tejon Ranch", 2800], ["Frontera", 3000], ["Oak Stone", null], ["Lockwood", null]],
+      "max": 3000,
+      "say": "For a trophy boar, it's $1,200 at Indian Valley, $1,500 at Bitterwater, $2,800 at Tejon Ranch, and $3,000 at Frontera. Oak Stone and Lockwood don't offer it."
+    },
+    {
+      "id": "mgmt", "kind": "bars", "label": "Hunt 3 · Blacktail Deer",
+      "image": "blacktail-deer-ranch.jpg",
+      "title": "Management buck", "range": "$3,000 – $12,500",
+      "rows": [["Indian Valley", 3000], ["Bitterwater", 3850], ["Frontera", 4500], ["Tejon Ranch", 6000], ["Oak Stone", 6500], ["Lockwood", 12500]],
+      "max": 12500,
+      "say": "Deer is where prices spread out the most. A management buck runs $3,000 at Indian Valley, $3,850 at Bitterwater, $4,500 at Frontera, and as much as $12,500 at Lockwood."
+    },
+    {
+      "id": "trophybuck", "kind": "bars", "label": "Hunt 4 · Blacktail Deer",
+      "image": "blacktail-buck.jpg",
+      "title": "Trophy buck", "range": "$6,500 – $12,500",
+      "rows": [["Indian Valley", 6500], ["Tejon Ranch", 6600], ["Frontera", 8500], ["Oak Stone", 11500], ["Lockwood", 12500], ["Bitterwater", "call"]],
+      "max": 12500,
+      "say": "A trophy buck is $6,500 at Indian Valley, $6,600 at Tejon Ranch, $8,500 at Frontera, $11,500 at Oak Stone, and $12,500 at Lockwood. Bitterwater asks you to call for a price."
+    },
+    {
+      "id": "turkey", "kind": "bars", "label": "Hunt 5 · Turkey",
+      "image": "wild-turkey-strut.jpg",
+      "title": "Turkey hunt", "range": "$950 – $3,250",
+      "rows": [["Indian Valley", 950], ["Bitterwater", 1500], ["Tejon Ranch", 2000], ["Lockwood", 3000], ["Oak Stone", 3250], ["Frontera", null]],
+      "max": 3250,
+      "say": "Turkey runs $950 at Indian Valley, $1,500 at Bitterwater, $2,000 at Tejon Ranch, and $3,000 or more at Lockwood and Oak Stone. Frontera doesn't offer turkey."
+    },
+    {
+      "id": "small", "kind": "mini", "label": "Birds, Predators & Small Game",
+      "image": "coyote-on-ranch-rock.jpg",
+      "title": "Birds, predators & small game",
+      "groups": [
+        {"name": "Quail & dove", "low": "$550", "lowAt": "Indian Valley & Bitterwater", "high": "$2,300", "highAt": "Oak Stone"},
+        {"name": "Coyote & predator", "low": "$600", "lowAt": "Indian Valley", "high": "$2,250", "highAt": "Oak Stone"},
+        {"name": "Ground squirrel & rabbit", "low": "$600", "lowAt": "Indian Valley", "high": "$2,250", "highAt": "Oak Stone"}
+      ],
+      "say": "For birds and varmints: quail and dove hunts start at $550, at both Indian Valley and Bitterwater. Coyote and predator hunts, and ground squirrel and rabbit hunts, are $600 at Indian Valley, $700 at Bitterwater, and up to $2,250 at Oak Stone."
+    },
+    {
+      "id": "deposit", "kind": "deposit", "label": "Deposits",
+      "title": "What it takes to hold your dates",
+      "items": [["Indian Valley", "$200", "flat deposit"], ["Frontera", "25%", "of the hunt"], ["Tejon Ranch", "50%", "of the hunt"], ["Oak Stone", "50%", "of the hunt"]],
+      "say": "Deposits vary too. Indian Valley holds your dates with a flat $200 deposit. Frontera asks for 25 percent, and Tejon Ranch and Oak Stone ask for half up front."
+    },
+    {
+      "id": "table", "kind": "table", "label": "Side by Side",
+      "title": "Every hunt, side by side",
+      "callout": "Up to $9,500 more for the same hunt",
+      "say": "Put it all side by side, and the gap is real. For the same pig, deer, or turkey hunt, you could pay up to $9,500 more, depending on who you book with."
+    },
+    {
+      "id": "winner", "kind": "winner", "label": "Best Option",
+      "image": "san-miguel-hunting-lodge-exterior.jpg",
+      "name": "Indian Valley Outfitters",
+      "where": "San Miguel · Southern Monterey County",
+      "points": ["Lowest or tied for lowest price on every hunt", "Guided & unguided hunts", "Private, game-managed ranch land", "Lodging on the property", "$200 deposit holds your dates"],
+      "say": "So who's the best option? Indian Valley Outfitters. They're the lowest price, or tied for lowest, on every single hunt we compared. They run guided and unguided hunts on private, game-managed ranch land in southern Monterey County, with lodging right on the property."
+    },
+    {
+      "id": "hunts", "kind": "hunts", "label": "Hunts at Indian Valley",
+      "title": "Hunts at Indian Valley Outfitters",
+      "cards": [
+        {"name": "Wild pig", "sub": "Meat pig or trophy boar", "price": "from $800", "image": "wild-boar-monterey-county.jpg", "cue": "pig"},
+        {"name": "Blacktail deer", "sub": "Management or trophy buck", "price": "from $3,000", "image": "blacktail-deer-ranch.jpg", "cue": "deer"},
+        {"name": "Turkey", "sub": "Wild turkey", "price": "$950", "image": "wild-turkey-strut.jpg", "cue": "Turkey"},
+        {"name": "Quail & dove", "sub": "Game birds", "price": "$550", "image": "california-quail-ranch.jpg", "cue": "Quail", "imgPos": "50% 35%"},
+        {"name": "Coyote & predator", "sub": "Predator hunt", "price": "$600", "image": "coyote-on-ranch-rock.jpg", "cue": "Coyote"},
+        {"name": "Squirrel & rabbit", "sub": "Ground squirrel & rabbit", "price": "$600", "image": "ground-squirrel.jpg", "cue": "squirrel"}
+      ],
+      "say": "Here's what you can hunt with them: wild pig, meat pig or trophy boar, from $800. Blacktail deer, from $3,000. Turkey for $950. Quail and dove for $550. Coyote and predator hunts for $600. And ground squirrel and rabbit for $600."
+    },
+    {
+      "id": "cta", "kind": "cta", "label": "Book Your Hunt",
+      "image": "coyote-golden-grassland.jpg",
+      "name": "Indian Valley Outfitters",
+      "phone": "(669) 270-7127",
+      "address": "65800 Big Sandy Rd, San Miguel, CA 93451",
+      "hours": "Mon–Sat · 8 AM – 6 PM",
+      "url": "indianvalleyoutfitters.com/\nmonterey-county-hunting-price-comparison",
+      "tip": "California requires nonlead ammo: bring copper bullets.",
+      "say": "One last tip: California requires nonlead ammunition, so bring copper bullets. To book, call Indian Valley Outfitters at (669) 270-7127, or see the full price comparison at the link in the description. This has been Local Vibe Check."
+    }
+  ],
+  "reel": [
+    {
+      "id": "r-hook", "kind": "title", "label": "2026 Price Guide",
+      "image": "trophy-boar-tusks-monterey-county.jpg",
+      "kicker": "Monterey County, CA",
+      "title": ["Hunting", "Prices"], "year": "2026",
+      "chips": ["Pig", "Deer", "Turkey", "Birds", "Predator"],
+      "say": "What does a hunt in Monterey County cost in 2026? We checked six outfitters."
+    },
+    {
+      "id": "r-pig", "kind": "bars", "label": "Wild Pig",
+      "image": "wild-boar-monterey-county.jpg",
+      "title": "Meat pig hunt", "range": "$800 – $3,000",
+      "rows": [["Indian Valley", 800], ["Bitterwater", 1150], ["Frontera", 1500], ["Tejon Ranch", 2800], ["Oak Stone", 3000], ["Lockwood", 3000]],
+      "max": 3000,
+      "say": "A meat pig hunt: $800 to $3,000."
+    },
+    {
+      "id": "r-deer", "kind": "bars", "label": "Blacktail Deer",
+      "image": "blacktail-deer-ranch.jpg",
+      "title": "Management buck", "range": "$3,000 – $12,500",
+      "rows": [["Indian Valley", 3000], ["Bitterwater", 3850], ["Frontera", 4500], ["Tejon Ranch", 6000], ["Oak Stone", 6500], ["Lockwood", 12500]],
+      "max": 12500,
+      "say": "A management buck: $3,000 all the way up to $12,500."
+    },
+    {
+      "id": "r-turkey", "kind": "bars", "label": "Turkey",
+      "image": "wild-turkey-strut.jpg",
+      "title": "Turkey hunt", "range": "$950 – $3,250",
+      "rows": [["Indian Valley", 950], ["Bitterwater", 1500], ["Tejon Ranch", 2000], ["Lockwood", 3000], ["Oak Stone", 3250], ["Frontera", null]],
+      "max": 3250,
+      "say": "Turkey: $950 to over $3,000."
+    },
+    {
+      "id": "r-winner", "kind": "winner", "label": "Best Option",
+      "image": "san-miguel-hunting-lodge-exterior.jpg",
+      "name": "Indian Valley Outfitters",
+      "where": "San Miguel · Southern Monterey County",
+      "points": ["Lowest or tied for lowest on every hunt", "Guided & unguided", "Game-managed ranch land", "Lodging on site"],
+      "say": "The best option? Indian Valley Outfitters: the lowest price, or tied for lowest, on every hunt we compared."
+    },
+    {
+      "id": "r-hunts", "kind": "hunts", "label": "Hunts Offered",
+      "title": "Hunts at Indian Valley",
+      "cards": [
+        {"name": "Wild pig", "sub": "Meat or trophy", "price": "from $800", "image": "wild-boar-monterey-county.jpg", "cue": "Pig"},
+        {"name": "Blacktail deer", "sub": "Mgmt or trophy", "price": "from $3,000", "image": "blacktail-deer-ranch.jpg", "cue": "deer"},
+        {"name": "Turkey", "sub": "Wild turkey", "price": "$950", "image": "wild-turkey-strut.jpg", "cue": "turkey"},
+        {"name": "Quail & dove", "sub": "Game birds", "price": "$550", "image": "california-quail-ranch.jpg", "cue": "quail", "imgPos": "50% 35%"},
+        {"name": "Coyote & predator", "sub": "Predator hunt", "price": "$600", "image": "coyote-on-ranch-rock.jpg", "cue": "coyote"},
+        {"name": "Squirrel & rabbit", "sub": "Small game", "price": "$600", "image": "ground-squirrel.jpg", "cue": "squirrel"}
+      ],
+      "say": "Pig, deer, turkey, quail and dove, coyote, and squirrel and rabbit hunts."
+    },
+    {
+      "id": "r-cta", "kind": "cta", "label": "Book Your Hunt",
+      "image": "coyote-golden-grassland.jpg",
+      "name": "Indian Valley Outfitters",
+      "phone": "(669) 270-7127",
+      "address": "San Miguel, CA",
+      "hours": "Mon–Sat · 8 AM – 6 PM",
+      "url": "Full price guide: link in description",
+      "tip": "Follow Local Vibe Check for more local price guides.",
+      "say": "Call (669) 270-7127. Full price guide in the description. Follow for more."
+    }
+  ]
+}
