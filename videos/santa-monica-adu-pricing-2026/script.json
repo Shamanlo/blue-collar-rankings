@@ -1,0 +1,212 @@
+{
+  "voice": "en-US-AndrewNeural",
+  "rate": "+6%",
+  "header": "Santa Monica, CA · ADU Prices · 2026",
+  "source": "2026 planning ranges for design/build ADUs in Santa Monica, via allexclusivepro.com. Ballpark only: get a firm on-site estimate.",
+  "sourceKinds": ["ranges", "price"],
+  "thumbs": {
+    "image": "adu-finished-exterior.jpg", "landscapePos": "35% 50%", "reelPos": "40% 50%",
+    "lines": ["ADU", "Prices"], "sub": "Santa Monica, CA", "tag": "$75K – $500K+", "year": "2026",
+    "stamp": ["4", ["ADU TYPES", "PRICED"]], "reelStamp": ["2026", ["PRICE", "GUIDE"]]
+  },
+  "landscape": [
+    {
+      "id": "hook", "kind": "title", "label": "2026 Price Guide",
+      "image": "adu-finished-exterior.jpg", "imgPos": "35% 50%",
+      "kicker": "Santa Monica, California",
+      "title": ["ADU", "Pricing Guide"], "year": "2026",
+      "chips": ["Junior ADU", "Garage Conversion", "Attached", "Detached", "Two-Story"],
+      "say": "Thinking about building an ADU in Santa Monica? Here's what it costs in 2026: the price of every type of ADU, what drives the cost, and the permits and fees to plan for."
+    },
+    {
+      "id": "define", "kind": "define", "label": "What's an ADU?",
+      "image": "adu-kitchen.jpg",
+      "title": "What is an ADU?", "sub": "Accessory Dwelling Unit",
+      "lead": "A second, fully independent home on the same lot as your house.",
+      "features": [{"t": "Own kitchen", "cue": "kitchen"}, {"t": "Own bathroom", "cue": "bathroom"}, {"t": "Own entrance", "cue": "entrance"}],
+      "aka": ["Granny flat", "Guest house", "Backyard home", "In-law suite"], "akaCue": "granny",
+      "say": "First, what is an ADU? An accessory dwelling unit is a second, fully independent home on your lot, with its own kitchen, bathroom, and entrance. You might know it as a granny flat, guest house, backyard home, or in-law suite."
+    },
+    {
+      "id": "ranges", "kind": "ranges", "label": "2026 Price Ranges",
+      "title": "What an ADU costs in Santa Monica", "sub": "2026 planning ranges · design/build",
+      "max": 500, "ticks": [0, 100, 200, 300, 400, 500],
+      "rows": [
+        {"name": "Junior ADU", "note": "Up to 500 sq ft", "lo": 75, "hi": 150, "plus": true, "cue": "junior"},
+        {"name": "Garage conversion", "note": "Studio or 1-bedroom", "lo": 125, "hi": 250, "plus": true, "cue": "garage"},
+        {"name": "Attached ADU", "note": "New addition", "lo": 200, "hi": 375, "plus": true, "cue": "attached"},
+        {"name": "Detached ADU", "note": "New backyard home", "lo": 250, "hi": 500, "plus": true, "cue": "detached"}
+      ],
+      "say": "Here are the 2026 planning ranges for a design-build ADU in Santa Monica. A junior ADU runs about $75,000 to $150,000 and up. A garage conversion, $125,000 to $250,000 and up. An attached ADU, $200,000 to $375,000 and up. And a brand-new detached ADU, $250,000 to $500,000 and up."
+    },
+    {
+      "id": "jadu", "kind": "price", "label": "ADU Type 1 of 4",
+      "image": "adu-vanity.jpg",
+      "kicker": "Type 1 of 4", "name": "Junior ADU (JADU)", "lo": 75, "hi": 150, "plus": true, "priceCue": "$75,000",
+      "desc": "A compact unit carved out of existing space inside your home.",
+      "bullets": [{"t": "Bedroom suite or attached garage", "cue": "bedroom"}, {"t": "Efficiency kitchen & bath", "cue": "efficiency"}, {"t": "Up to 500 sq ft, inside the main house", "cue": "capped"}],
+      "say": "A junior ADU is carved out of space inside your home, like a bedroom suite or an attached garage, with an efficiency kitchen and bath. It's capped at 500 square feet, and typically runs $75,000 to $150,000 and up, depending on size and scope."
+    },
+    {
+      "id": "garage", "kind": "price", "label": "ADU Type 2 of 4",
+      "image": "adu-demolition.jpg",
+      "kicker": "Type 2 of 4", "name": "Garage conversion", "lo": 125, "hi": 250, "plus": true, "priceCue": "$125,000",
+      "desc": "Turn an existing garage into a full studio or one-bedroom ADU.",
+      "bullets": [{"t": "Often the fastest, most affordable path", "cue": "fastest"}, {"t": "Reuses the existing foundation & structure", "cue": "foundation"}, {"t": "Includes foundation, utility & roof upgrades", "cue": "including"}],
+      "say": "A garage conversion turns an existing garage into a full studio or one-bedroom ADU. It's often the fastest, most affordable path to a legal rental, because the foundation and structure often already exist. Plan on $125,000 to $250,000 and up, including foundation, utility, and roof upgrades."
+    },
+    {
+      "id": "attached", "kind": "price", "label": "ADU Type 3 of 4",
+      "image": "adu-wall-framing.jpg",
+      "kicker": "Type 3 of 4", "name": "Attached ADU", "lo": 200, "hi": 375, "plus": true, "priceCue": "$200,000",
+      "desc": "A new addition connected to your home.",
+      "bullets": [{"t": "Own entrance, full kitchen & bath", "cue": "entrance"}, {"t": "Up to 1,200 sq ft", "cue": "1,200"}, {"t": "Generally no more than 50% of your home", "cue": "half"}],
+      "say": "An attached ADU is a new addition connected to your home, with its own entrance, full kitchen, and bathroom. It can be up to 1,200 square feet, but generally no more than half the size of your existing home. Expect $200,000 to $375,000 and up."
+    },
+    {
+      "id": "detached", "kind": "price", "label": "ADU Type 4 of 4",
+      "image": "adu-new-roof.jpg",
+      "kicker": "Type 4 of 4", "name": "Detached ADU", "lo": 250, "hi": 500, "plus": true, "priceCue": "$250,000",
+      "desc": "A completely new, stand-alone backyard home.",
+      "bullets": [{"t": "Up to 2 stories or 24 ft tall", "cue": "24"}, {"t": "850 sq ft for a studio or 1-bedroom", "cue": "850"}, {"t": "1,200 sq ft for 2+ bedrooms", "cue": "1,200"}],
+      "say": "A detached ADU is a completely new, stand-alone backyard home: entirely new construction, one or two stories. Santa Monica allows up to 24 feet tall, 850 square feet for a studio or one-bedroom, and 1,200 square feet for two or more bedrooms. Budget $250,000 to $500,000 and up."
+    },
+    {
+      "id": "drivers", "kind": "factors", "label": "What Drives the Price",
+      "title": "What drives your ADU price",
+      "cards": [
+        {"name": "Size & bedrooms", "desc": "Bigger costs more overall; smaller costs more per sq ft", "image": "adu-interior-framing.jpg", "cue": "Size"},
+        {"name": "New build vs. conversion", "desc": "Reusing a foundation & framing usually costs less", "image": "adu-slab.jpg", "cue": "New"},
+        {"name": "Utilities", "desc": "Sewer, water, gas, electrical & panel upgrades", "image": "adu-plumbing.jpg", "cue": "Utilities"},
+        {"name": "Site access", "desc": "Narrow side yards & alley access on Westside lots", "image": "adu-demolition.jpg", "imgPos": "30% 50%", "cue": "Site"},
+        {"name": "Coastal zone", "desc": "Coastal permit review adds time & fees near the beach", "icon": "wave", "cue": "Coastal"},
+        {"name": "Finishes", "desc": "Cabinets, counters, flooring & fixtures", "image": "adu-kitchen.jpg", "cue": "finishes"}
+      ],
+      "say": "So what moves your price? Size: bigger units cost more overall, but smaller units cost more per square foot. New build versus conversion: reusing a foundation and framing usually lowers cost. Utilities, like new sewer, water, gas, electrical, and panel upgrades. Site access on narrow Westside lots. Coastal zone review near the beach. And finishes: cabinets, counters, flooring, and fixtures."
+    },
+    {
+      "id": "fees", "kind": "stats", "label": "Permits & Fees", "source": true,
+      "title": "Permits & fees to plan for",
+      "tiles": [
+        {"v": "≤750", "n": "sq ft", "s": "Exempt from state impact fees", "cue": "750"},
+        {"v": "60", "n": "days", "s": "City must act on a complete application", "cue": "60"},
+        {"v": "15", "n": "business days", "s": "Completeness check, since Jan 1, 2026", "cue": "15"},
+        {"v": "0", "n": "parking spaces", "s": "No parking required for ADUs", "cue": "parking"}
+      ],
+      "note": "Plan check & permit fees are based on project valuation. Larger units may owe utility & school fees.", "noteCue": "Plan",
+      "say": "Permits and fees affect your budget too. Under state law, ADUs of 750 square feet or less are exempt from impact fees, and Santa Monica exempts ADUs from several of its own. Plan check and permit fees are based on your project's value. The City must act on a complete application within 60 days, and confirm it's complete within 15 business days. And no parking is required."
+    },
+    {
+      "id": "recommend", "kind": "winner", "label": "Our Recommendation",
+      "image": "adu-finished-exterior.jpg", "imgPos": "35% 50%",
+      "stamp": "We recommend", "name": "All Exclusive Construction, Inc.", "nameCue": "All",
+      "where": "ADU builder · Santa Monica & the Westside",
+      "logo": "ae-logo.png", "logoBg": "#fff",
+      "points": ["Design, engineering, permits & construction under one roof", "CA licensed & insured · Lic. #1120170", "5.0 stars · 82 Google reviews", "Local office: 301 Arizona Ave, Santa Monica", "Free on-site ADU feasibility review"],
+      "say": "Ready to build? We recommend All Exclusive Construction, Inc. They handle design, engineering, City of Santa Monica permits, and construction under one roof, from a local office on Arizona Avenue. They're licensed and insured, rated 5.0 stars across 82 Google reviews, and every project starts with a free on-site feasibility review."
+    },
+    {
+      "id": "build", "kind": "steps", "label": "A Real Project",
+      "title": "Garage to ADU: start to finish", "sub": "A real All Exclusive Construction project",
+      "steps": [
+        {"name": "Demolition & site prep", "image": "adu-demolition.jpg", "cue": "demolition"},
+        {"name": "Underground plumbing", "image": "adu-plumbing.jpg", "cue": "underground"},
+        {"name": "New concrete slab", "image": "adu-slab.jpg", "cue": "slab"},
+        {"name": "Wall framing", "image": "adu-wall-framing.jpg", "cue": "wall"},
+        {"name": "New roof", "image": "adu-new-roof.jpg", "cue": "roof"},
+        {"name": "Interior framing & rough-in", "image": "adu-interior-framing.jpg", "cue": "interior"},
+        {"name": "Tiled bathroom", "image": "adu-tiled-bathroom.jpg", "cue": "tiled"},
+        {"name": "Vanity & finishes", "image": "adu-vanity.jpg", "cue": "vanity"},
+        {"name": "Full kitchen", "image": "adu-kitchen.jpg", "cue": "kitchen"},
+        {"name": "Finished ADU", "image": "adu-finished-exterior.jpg", "imgPos": "35% 50%", "cue": "finished"}
+      ],
+      "say": "Here's one of their real garage-to-ADU conversions, start to finish: demolition and site prep, underground plumbing, a new concrete slab, wall framing, a new roof, interior framing and rough-in, a tiled bathroom, vanity and finishes, a full kitchen, and the finished ADU."
+    },
+    {
+      "id": "quote", "kind": "quote", "label": "What a Client Says",
+      "image": "adu-tiled-bathroom.jpg",
+      "text": "I had a specific budget for my ADU and Jacob came in very close to budget!",
+      "author": "Jodi Binstock", "meta": "ADU construction client · 5-star review",
+      "say": "One of their ADU clients put it this way: \"I had a specific budget for my ADU, and Jacob came in very close to budget.\""
+    },
+    {
+      "id": "cta", "kind": "cta", "label": "Get a Firm Estimate",
+      "image": "adu-kitchen.jpg",
+      "logo": "ae-logo.png",
+      "name": "All Exclusive Construction, Inc.",
+      "phone": "(818) 836-1722",
+      "address": "301 Arizona Ave, Santa Monica, CA 90401",
+      "hours": "Mon–Fri · 8 AM – 4:30 PM · CA Lic. #1120170",
+      "url": "allexclusivepro.com/adu-builder-santa-monica",
+      "urlCue": "see",
+      "tip": "Free on-site visit and a written estimate.",
+      "say": "Remember, these are ballpark planning ranges. For a firm price, All Exclusive Construction will visit your property and give you a written estimate. Call or text (818) 836-1722, or see the full pricing guide at the link in the description. This has been Local Vibe Check."
+    }
+  ],
+  "reel": [
+    {
+      "id": "r-hook", "kind": "title", "label": "2026 Price Guide",
+      "image": "adu-finished-exterior.jpg", "imgPos": "35% 50%",
+      "kicker": "Santa Monica, CA",
+      "title": ["ADU", "Prices"], "year": "2026",
+      "chips": ["Junior ADU", "Garage", "Attached", "Detached"],
+      "say": "What does an ADU cost in Santa Monica in 2026? Here's the price guide."
+    },
+    {
+      "id": "r-ranges", "kind": "ranges", "label": "2026 Price Ranges",
+      "title": "ADU prices", "sub": "2026 planning ranges",
+      "max": 500, "ticks": [0, 250, 500],
+      "rows": [
+        {"name": "Junior ADU", "note": "Up to 500 sq ft", "lo": 75, "hi": 150, "plus": true, "cue": "junior"},
+        {"name": "Garage conversion", "note": "Studio or 1-bed", "lo": 125, "hi": 250, "plus": true, "cue": "garage"},
+        {"name": "Attached ADU", "note": "New addition", "lo": 200, "hi": 375, "plus": true, "cue": "attached"},
+        {"name": "Detached ADU", "note": "New backyard home", "lo": 250, "hi": 500, "plus": true, "cue": "detached"}
+      ],
+      "say": "A junior ADU: $75,000 to $150,000. A garage conversion: $125,000 to $250,000. Attached: $200,000 to $375,000. Detached: $250,000 to $500,000 and up."
+    },
+    {
+      "id": "r-fees", "kind": "stats", "label": "Save on Fees", "source": true,
+      "title": "Fee tip",
+      "tiles": [
+        {"v": "≤750", "n": "sq ft", "s": "Exempt from state impact fees", "cue": "750"},
+        {"v": "0", "n": "parking spaces", "s": "No parking required", "cue": "parking"}
+      ],
+      "say": "Tip: ADUs of 750 square feet or less are exempt from state impact fees, and no parking is required."
+    },
+    {
+      "id": "r-recommend", "kind": "winner", "label": "Our Recommendation",
+      "image": "adu-finished-exterior.jpg", "imgPos": "35% 50%",
+      "stamp": "We recommend", "name": "All Exclusive Construction, Inc.", "nameCue": "All",
+      "where": "ADU builder · Santa Monica",
+      "logo": "ae-logo.png", "logoBg": "#fff",
+      "points": ["Design, permits & build under one roof", "5.0 stars · 82 Google reviews", "Free on-site feasibility review"],
+      "say": "Who should build it? We recommend All Exclusive Construction: design, permits, and construction under one roof, rated 5.0 stars on Google."
+    },
+    {
+      "id": "r-build", "kind": "steps", "label": "A Real Project",
+      "title": "Garage to ADU",
+      "steps": [
+        {"name": "Demolition", "image": "adu-demolition.jpg"},
+        {"name": "New slab", "image": "adu-slab.jpg"},
+        {"name": "Framing", "image": "adu-wall-framing.jpg"},
+        {"name": "Tiled bathroom", "image": "adu-tiled-bathroom.jpg"},
+        {"name": "Full kitchen", "image": "adu-kitchen.jpg"},
+        {"name": "Finished ADU", "image": "adu-finished-exterior.jpg", "imgPos": "35% 50%"}
+      ],
+      "say": "Here's one of their garage conversions, from demolition to the finished ADU."
+    },
+    {
+      "id": "r-cta", "kind": "cta", "label": "Get a Firm Estimate",
+      "image": "adu-kitchen.jpg",
+      "logo": "ae-logo.png",
+      "name": "All Exclusive Construction",
+      "phone": "(818) 836-1722",
+      "address": "301 Arizona Ave, Santa Monica",
+      "hours": "Mon–Fri · 8 AM – 4:30 PM",
+      "url": "Full price guide: link in description",
+      "urlCue": "Full",
+      "tip": "Follow Local Vibe Check for more local price guides.",
+      "say": "Call or text (818) 836-1722 for a free estimate. Full price guide in the description. Follow for more."
+    }
+  ]
+}

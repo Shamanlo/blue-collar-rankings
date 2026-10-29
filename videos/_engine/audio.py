@@ -1,4 +1,6 @@
-"""Mix voiceover + a synthesized music bed + scene whooshes into out/{format}-mix.wav.
+"""Mix voiceover + a synthesized music bed + scene whooshes into {project}/out/{format}-mix.wav.
+
+    python3 _engine/audio.py <project> [landscape] [reel]
 
 The music is generated here (no licensed tracks): soft keys, bass, light kick and shaker,
 ducked under the voice.
@@ -11,7 +13,7 @@ from pathlib import Path
 
 import numpy as np
 
-HERE = Path(__file__).parent
+HERE = Path(sys.argv[1]).resolve()
 OUT = HERE / "out"
 SR = 48000
 LEAD = 0.35  # matches tts.py
@@ -142,5 +144,5 @@ def main(fmt):
 
 
 if __name__ == "__main__":
-    for f in sys.argv[1:] or ["landscape", "reel"]:
+    for f in sys.argv[2:] or ["landscape", "reel"]:
         main(f)

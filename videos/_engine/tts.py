@@ -1,6 +1,8 @@
 """Generate voiceover per scene with edge-tts and record word timings.
 
-Writes out/vo/{scene-id}.wav and out/timings.json:
+    python3 _engine/tts.py <project> [landscape] [reel]
+
+Writes {project}/out/vo/{scene-id}.wav and {project}/out/timings.json:
   {format: [{id, start, dur, audio, words: [[t, text], ...]}]}
 """
 import asyncio
@@ -14,7 +16,7 @@ from pathlib import Path
 import edge_tts
 import edge_tts.communicate as ec
 
-HERE = Path(__file__).parent
+HERE = Path(sys.argv[1]).resolve()
 OUT = HERE / "out"
 LEAD = 0.35   # silence before the first word of a scene
 TAIL = 0.55   # hold after the last word
@@ -26,13 +28,22 @@ if Path(CA).exists():
 PROXY = os.environ.get("HTTPS_PROXY")
 
 
-async def speak(text, voice, rate, mp3, tries=5):
+async def speak(text, voice, rate, mp3, tries=8):
+    # Reuse the last take when the line, voice and rate haven't changed.
+    cache = mp3.with_suffix(".json")
+    key = {"text": text, "voice": voice, "rate": rate}
+    if cache.exists() and mp3.exists():
+        saved = json.loads(cache.read_text())
+        if saved["key"] == key:
+            return saved["words"]
     for i in range(tries):
         try:
-            return await _speak(text, voice, rate, mp3)
+            words = await _speak(text, voice, rate, mp3)
+            cache.write_text(json.dumps({"key": key, "words": words}))
+            return words
         except Exception as e:
             print(f"  retry {i + 1}: {e}")
-            await asyncio.sleep(2 * (i + 1))
+            await asyncio.sleep(3 * (i + 1))
     raise RuntimeError(f"TTS failed: {text[:40]}")
 
 
@@ -78,4 +89,4 @@ async def main(formats):
 
 
 if __name__ == "__main__":
-    asyncio.run(main(sys.argv[1:] or ["landscape", "reel"]))
+    asyncio.run(main(sys.argv[2:] or ["landscape", "reel"]))

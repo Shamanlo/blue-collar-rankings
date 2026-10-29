@@ -1,0 +1,7 @@
+# Keep only the deliverables and timings from out/
+out/*
+!out/timings.json
+!out/santa-monica-adu-pricing-2026.mp4
+!out/santa-monica-adu-pricing-2026-reel.mp4
+!out/thumbnail-youtube.jpg
+!out/thumbnail-reel.jpg

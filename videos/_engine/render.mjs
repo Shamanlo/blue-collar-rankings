@@ -1,34 +1,41 @@
-// Render the Local Vibe Check pricing video from script.json + out/timings.json.
-//   node render.mjs landscape|reel [--still t] [--workers n]
-// Builds out/{format}.html, captures every frame with Playwright, encodes with ffmpeg.
+// Render a Local Vibe Check video from {project}/script.json + {project}/out/timings.json.
+//   node _engine/render.mjs <project> landscape|reel [--still t1,t2] [--workers n]
+// Builds out/{format}.html, captures every frame with Playwright, encodes with ffmpeg,
+// then muxes out/{format}-mix.wav (from audio.py) into out/{name}[-reel].mp4 if it exists.
 import { createRequire } from "node:module";
-import { spawn } from "node:child_process";
-import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
+import { spawn, spawnSync } from "node:child_process";
+import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
-const HERE = path.dirname(fileURLToPath(import.meta.url));
-const OUT = path.join(HERE, "out");
+const ENGINE = path.dirname(fileURLToPath(import.meta.url));
 const FPS = 30;
 const SIZES = { landscape: [1920, 1080], reel: [1080, 1920] };
 
 const args = process.argv.slice(2);
-const format = args[0] || "landscape";
+const PROJECT = path.resolve(args[0]);
+const OUT = path.join(PROJECT, "out");
+const format = args[1] || "landscape";
 const still = args.includes("--still") ? args[args.indexOf("--still") + 1] : null;
 const workers = args.includes("--workers") ? +args[args.indexOf("--workers") + 1] : 4;
 const [W, H] = SIZES[format];
 
-const spec = JSON.parse(readFileSync(path.join(HERE, "script.json"), "utf8"));
+const spec = JSON.parse(readFileSync(path.join(PROJECT, "script.json"), "utf8"));
 const timings = JSON.parse(readFileSync(path.join(OUT, "timings.json"), "utf8"))[format];
 const scenes = spec[format].map((s, i) => ({ ...s, ...timings[i] }));
 const total = scenes.reduce((a, s) => a + s.dur, 0);
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-const img = (f) => `../assets/${f}`;
+const rel = (p) => path.relative(OUT, p).split(path.sep).join("/");
+const img = (f) => rel(path.join(PROJECT, "assets", f));
+const engineAsset = (f) => rel(path.join(ENGINE, "assets", f));
 const money = (n) => "$" + n.toLocaleString("en-US");
+const kfmt = (n) => (n >= 1000 ? "$" + n / 1000 + "M" : "$" + n + "K");
 const a = (cls, d, extra = "") => `class="a ${cls}" style="--d:${d}${extra ? ";" + extra : ""}"`;
+const cueAttr = (c) => (c ? ` data-cue="${esc(c)}"` : "");
+const firstWord = (s) => String(s).split(/[\s(]/).filter(Boolean)[0];
 
 // Re-attach punctuation from the script to the spoken words, for caption chunking.
 function punctuate(words, say) {
@@ -37,7 +44,7 @@ function punctuate(words, say) {
     const i = say.indexOf(w, pos);
     if (i < 0) return { t, w, end: "" };
     pos = i + w.length;
-    const m = say.slice(pos).match(/^[.,?!:;]+/);
+    const m = say.slice(pos).match(/^[.,?!:;"”]+/);
     return { t, w, end: m ? m[0] : "" };
   });
 }
@@ -53,7 +60,13 @@ function chunks(words) {
   return out;
 }
 
-const pinSvg = img("pin.svg");
+const pinSvg = engineAsset("pin.svg");
+const photo = (s, dir = "left", d = 0.1, extra = "") =>
+  `<div ${a(`${dir} photo`, d)}><img class="kb" src="${img(s.image)}" style="object-position:${s.imgPos || "50% 50%"}">${extra}</div>`;
+
+const icons = {
+  wave: `<svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"><path d="M8 30c10-10 20-10 30 0s20 10 30 0 20-10 30 0 16 8 16 8"/><path d="M8 54c10-10 20-10 30 0s20 10 30 0 20-10 30 0 16 8 16 8"/></svg>`,
+};
 
 const build = {
   title: (s) => `
@@ -64,16 +77,16 @@ const build = {
       <div class="center"><span ${a("pop year", 1.2)}>${esc(s.year)}</span></div>
       <div class="chips">${s.chips.map((c, i) => `<span ${a("pop chip", 1.6 + i * 0.12)}>${esc(c)}</span>`).join("")}</div>
     </div>
-    <div class="photowrap"><div ${a("right photo", 0.2)}><img class="kb" src="${img(s.image)}"></div><img class="a pop pinbig" style="--d:1" src="${pinSvg}"></div>`,
+    <div class="photowrap">${photo(s, "right", 0.2)}<img class="a pop pinbig" style="--d:1" src="${pinSvg}"></div>`,
 
   list: (s) => `
     <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
     <div ${a("wipe bar-accent", 0.4, "width:420px;margin:22px 0 0")}></div>
-    <div class="grid2">${s.items.map((it, i) => `<div class="a up item" data-cue="${esc(it.split(" ")[0])}" style="--d:${0.6 + i * 0.3}"><span class="n">${i + 1}</span>${esc(it)}</div>`).join("")}</div>
-    <div class="a fade note" data-cue="Every" style="--d:4">${esc(s.note)}</div>`,
+    <div class="grid2">${s.items.map((it, i) => `<div class="a up item" data-cue="${esc(firstWord(it))}" style="--d:${0.6 + i * 0.3}"><span class="n">${i + 1}</span>${esc(it)}</div>`).join("")}</div>
+    <div class="a fade note"${cueAttr(s.noteCue)} style="--d:4">${esc(s.note)}</div>`,
 
   bars: (s) => `
-    <div ${a("left photo", 0.1)}><img class="kb" src="${img(s.image)}"></div>
+    ${photo(s)}
     <div class="col">
       <div ${a("up h2", 0.15)}>${esc(s.title)}</div>
       <div ${a("pop range", 0.45)}>${esc(s.range)}</div>
@@ -86,48 +99,118 @@ const build = {
         }
         const pct = Math.max(6, (v / s.max) * 100);
         return `<div class="row${best}"><div ${a("left name", d)}>${esc(name)}</div>
-          <div class="track"><div ${a("grow fill", d, `width:${pct}%`)}></div>${best ? `<span class="a pop lowest" data-cue="Indian" style="left:${pct}%;--d:${d + 0.9}">LOWEST</span>` : ""}</div>
+          <div class="track"><div ${a("grow fill", d, `width:${pct}%`)}></div>${best ? `<span class="a pop lowest"${cueAttr(spec.featuredCue)} style="left:${pct}%;--d:${d + 0.9}">LOWEST</span>` : ""}</div>
           <div class="val" data-count="${v}" data-cd="${d}">${money(v)}</div></div>`;
       }).join("")}</div>
     </div>`,
 
   mini: (s) => `
-    <div ${a("left photo", 0.1)}><img class="kb" src="${img(s.image)}"></div>
+    ${photo(s)}
     <div class="col">
       <div ${a("up h2", 0.15, "font-size:70px")}>${esc(s.title)}</div>
       <div class="groups">${s.groups.map((g, i) => `
-        <div class="a up group" data-cue="${["quail", "Coyote", "squirrel"][i]}" style="--d:${0.6 + i * 0.5}">
+        <div class="a up group"${cueAttr(g.cue)} style="--d:${0.6 + i * 0.5}">
           <div class="gname">${esc(g.name)}</div>
           <div class="span"><span class="orange">${esc(g.low)}</span> <span style="color:#93a0b5">–</span> ${esc(g.high)}</div>
           <div class="gsub">Low: ${esc(g.lowAt)} · High: ${esc(g.highAt)}</div>
         </div>`).join("")}</div>
     </div>`,
 
-  deposit: (s) => `
+  deposit: (s) => build.stats({ ...s, tiles: s.items.map(([n, v, sub]) => ({ v, n, s: sub, cue: firstWord(n) })) }),
+
+  stats: (s) => `
     <div ${a("up h2", 0.1, "text-align:center")}>${esc(s.title)}</div>
-    <div class="tiles">${s.items.map(([n, v, sub], i) => `
-      <div class="a pop tile${i === 0 ? " best" : ""}" data-cue="${esc(n.split(" ")[0])}" style="--d:${0.5 + i * 0.3}">
-        <div class="tv">${esc(v)}</div><div class="tn">${esc(n)}</div><div class="ts">${esc(sub)}</div></div>`).join("")}</div>`,
+    <div class="tiles${s.tiles.length === 3 ? " three" : ""}">${s.tiles.map((t, i) => `
+      <div class="a pop tile${i === 0 ? " best" : ""}"${cueAttr(t.cue)} style="--d:${0.5 + i * 0.3}">
+        <div class="tv">${esc(t.v)}</div><div class="tn">${esc(t.n)}</div><div class="ts">${esc(t.s)}</div></div>`).join("")}</div>
+    ${s.note ? `<div class="a fade note center"${cueAttr(s.noteCue)} style="--d:4">${esc(s.note)}</div>` : ""}`,
 
   table: (s) => {
     const t = spec.table;
     return `
     <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
     <table class="a fade" style="--d:.35">
-      <tr><th>Hunt</th>${t.cols.map((c, i) => `<th class="${i === 0 ? "ivo" : ""}">${esc(c)}</th>`).join("")}</tr>
+      <tr><th>${esc(t.corner || "")}</th>${t.cols.map((c, i) => `<th class="${i === 0 ? "ivo" : ""}">${esc(c)}</th>`).join("")}</tr>
       ${t.rows.map((r, ri) => `<tr class="a fade" style="--d:${0.5 + ri * 0.1}">${r.map((c, i) => `<td class="${i === 1 ? "ivo" : ""}${c === "—" || c === "n/a" ? " dash" : ""}">${esc(c)}</td>`).join("")}</tr>`).join("")}
     </table>
-    <div class="a pop callout" data-cue="9,500" style="--d:5">Up to <b>$9,500 more</b> for the same hunt</div>`;
+    <div class="a pop callout"${cueAttr(s.calloutCue)} style="--d:5">${s.callout}</div>`;
   },
+
+  define: (s) => `
+    <div class="col">
+      <div ${a("up kicker", 0.2)}>${esc(s.sub)}</div>
+      <div ${a("up h2", 0.1, "font-size:110px")}>${esc(s.title)}</div>
+      <div ${a("wipe bar-accent", 0.6, "width:520px")}></div>
+      <div ${a("up desc", 1)}>${esc(s.lead)}</div>
+      <div class="feats">${s.features.map((f, i) => `<div class="a pop feat"${cueAttr(f.cue)} style="--d:${1.5 + i * 0.4}"><i></i>${esc(f.t)}</div>`).join("")}</div>
+      <div class="aka a up"${cueAttr(s.akaCue)} style="--d:4"><span>Also called</span>${s.aka.map((c) => `<span class="chip">${esc(c)}</span>`).join("")}</div>
+    </div>
+    ${photo(s, "right", 0.2)}`,
+
+  // Floating price ranges on a shared axis.
+  ranges: (s) => {
+    const max = s.max;
+    const ticks = s.ticks;
+    return `
+    <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
+    ${s.sub ? `<div ${a("up subline", 0.3)}>${esc(s.sub)}</div>` : ""}
+    <div class="rangebox">
+      <div class="axis">${ticks.map((t) => `<span style="left:${(t / max) * 100}%">${t ? kfmt(t) : "$0"}${t === max ? "+" : ""}</span>`).join("")}</div>
+      ${s.rows.map((r, i) => {
+        const l = (r.lo / max) * 100, w = ((r.hi - r.lo) / max) * 100;
+        return `<div class="rrow"${cueAttr(r.cue)} data-cuegroup>
+          <div class="a left rname" style="--d:${0.6 + i * 0.3}">${esc(r.name)}<small>${esc(r.note || "")}</small></div>
+          <div class="rtrack">${ticks.map((t) => `<i style="left:${(t / max) * 100}%"></i>`).join("")}
+            <div class="a grow rfill c${i}${r.hi / max > 0.75 ? " inside" : ""}" style="left:${l}%;width:${w}%;--d:${0.6 + i * 0.3}"><b>${kfmt(r.lo)} – ${kfmt(r.hi)}${r.plus ? "+" : ""}</b></div>
+          </div></div>`;
+      }).join("")}
+    </div>`;
+  },
+
+  // One ADU type: photo + big price range + bullets.
+  price: (s) => `
+    ${photo(s)}
+    <div class="col">
+      <div ${a("up kicker", 0.1)}>${esc(s.kicker || "")}</div>
+      <div ${a("up h2", 0.2)}>${esc(s.name)}</div>
+      <div class="bigprice a pop" style="--d:${s.priceAt ?? 0.8}"${cueAttr(s.priceCue)}>
+        <span data-count="${s.lo}" data-fmt="k" data-cd="${s.priceAt ?? 0.8}">${kfmt(s.lo)}</span> – <span data-count="${s.hi}" data-fmt="k" data-cd="${(s.priceAt ?? 0.8) + 0.2}">${kfmt(s.hi)}</span>${s.plus ? "+" : ""}</div>
+      <div ${a("up desc", 0.5)}>${esc(s.desc)}</div>
+      <ul class="points">${s.bullets.map((p, i) => `<li class="a left"${cueAttr(p.cue)} data-at="${p.cue ? "" : 0.25 + (i * 0.55) / s.bullets.length}" style="--d:2"><i></i>${esc(p.t || p)}</li>`).join("")}</ul>
+    </div>`,
+
+  factors: (s) => `
+    <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
+    <div class="fgrid">${s.cards.map((c, i) => `
+      <div class="a pop fcard"${cueAttr(c.cue)} style="--d:${0.6 + i * 0.4}">
+        <div class="fi">${c.image ? `<img src="${img(c.image)}" style="object-position:${c.imgPos || "50% 50%"}">` : `<div class="fic">${icons[c.icon] || ""}</div>`}<span class="fn">${i + 1}</span></div>
+        <div class="fb"><div class="ft">${esc(c.name)}</div><div class="fd">${esc(c.desc)}</div></div>
+      </div>`).join("")}</div>`,
+
+  steps: (s) => `
+    <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
+    ${s.sub ? `<div ${a("up subline", 0.3)}>${esc(s.sub)}</div>` : ""}
+    <div class="sgrid">${s.steps.map((st, i) => `
+      <div class="a pop step"${cueAttr(st.cue)} style="--d:${0.6 + i * 0.3}">
+        <img src="${img(st.image)}" style="object-position:${st.imgPos || "50% 50%"}"><span class="sn">${String(i + 1).padStart(2, "0")}</span><span class="st">${esc(st.name)}</span></div>`).join("")}</div>`,
+
+  quote: (s) => `
+    ${photo(s)}
+    <div class="col">
+      <div ${a("pop stars", 0.2)}>★★★★★</div>
+      <blockquote ${a("up", 0.5)}>“${esc(s.text)}”</blockquote>
+      <div ${a("up qauthor", 0.9)}>${esc(s.author)}</div>
+      <div ${a("up qmeta", 1.1)}>${esc(s.meta)}</div>
+    </div>`,
 
   winner: (s) => `
     <div class="col">
-      <div ${a("pop stamp", 0.2)}><img src="${pinSvg}">Best option</div>
-      <div class="a up wname" data-cue="Indian" style="--d:1">${esc(s.name)}</div>
-      <div class="a up where" data-cue="Indian" style="--d:1.2">${esc(s.where)}</div>
+      <div ${a("pop stamp", 0.2)}><img src="${pinSvg}">${esc(s.stamp || "Best option")}</div>
+      <div class="a up wname" data-cue="${esc(s.nameCue || firstWord(s.name))}" style="--d:1">${esc(s.name)}</div>
+      <div class="a up where" data-cue="${esc(s.nameCue || firstWord(s.name))}" style="--d:1.2">${esc(s.where)}</div>
       <ul class="points">${s.points.map((p, i) => `<li class="a left" data-at="${0.3 + (i * 0.6) / s.points.length}" style="--d:2"><i></i>${esc(p)}</li>`).join("")}</ul>
     </div>
-    <div ${a("right photo", 0.3)}><img class="kb" src="${img(s.image)}"><div class="a up ivologo" style="--d:1.2"><img src="${img("ivo-logo.png")}"></div></div>`,
+    ${photo(s, "right", 0.3, s.logo ? `<div class="a up ivologo" style="--d:1.2;background:${s.logoBg || "#111"}"><img src="${img(s.logo)}"></div>` : "")}`,
 
   hunts: (s) => `
     <div ${a("up h2", 0.1, `font-size:${format === "reel" ? 84 : 72}px`)}>${esc(s.title)}</div>
@@ -139,25 +222,27 @@ const build = {
       </div>`).join("")}</div>`,
 
   cta: (s) => `
-    <div ${a("left photo", 0.1)}><img class="kb" src="${img(s.image)}"></div>
+    ${photo(s)}
     <div class="col">
       <div ${a("up contact", 0.3)}>
+        ${s.logo ? `<img class="clogo" src="${img(s.logo)}">` : ""}
         <div class="cname">${esc(s.name)}</div>
-        <div class="a pop phone" data-cue="(669)" style="--d:1">${esc(s.phone)}</div>
+        <div class="a pop phone" data-cue="${esc(s.phoneCue || firstWord(s.phone))}" style="--d:1">${esc(s.phone)}</div>
         <div class="cline">${esc(s.address)}</div>
         <div class="cline">${esc(s.hours)}</div>
-        <div class="a up url" data-cue="${format === "reel" ? "Full" : "see"}" style="--d:2">${esc(s.url).replace("\n", "<br>")}</div>
+        <div class="a up url"${cueAttr(s.urlCue)} style="--d:2">${esc(s.url).replace("\n", "<br>")}</div>
       </div>
       <div class="a up tip" style="--d:.6"><img src="${pinSvg}">${esc(s.tip)}</div>
     </div>`,
 };
 
-const priceScenes = new Set(["bars", "mini", "deposit", "table", "list"]);
+const sourceKinds = new Set(spec.sourceKinds || ["bars", "mini", "deposit", "table", "list"]);
 
 function html() {
   const sceneHtml = scenes.map((s) => {
     const words = punctuate(s.words, s.say);
-    return `<section class="scene ${s.kind}" data-start="${s.start}" data-dur="${s.dur}" data-words="${esc(JSON.stringify(words))}" data-label="${esc(s.label)}" data-source="${priceScenes.has(s.kind) ? 1 : 0}">${build[s.kind](s)}</section>`;
+    const src = s.source ?? sourceKinds.has(s.kind);
+    return `<section class="scene ${s.kind}" data-start="${s.start}" data-dur="${s.dur}" data-words="${esc(JSON.stringify(words))}" data-label="${esc(s.label)}" data-source="${src ? 1 : 0}">${build[s.kind](s)}</section>`;
   }).join("\n");
   const caps = scenes.flatMap((s) => chunks(punctuate(s.words, s.say)).map((c) => ({ t0: s.start + c[0].t - 0.05, words: c.map((w) => [s.start + w.t, w.w]), sceneEnd: s.start + s.dur })));
   const wave = `<svg viewBox="0 0 1200 300" preserveAspectRatio="none">
@@ -165,7 +250,7 @@ function html() {
     <path d="M0 170 C 160 120, 330 250, 560 240 S 760 260, 820 300 L0 300Z" fill="#7fd6cc" opacity=".55"/>
     <path d="M520 300 C 760 230, 960 160, 1200 120 L1200 300Z" fill="#ffb562" opacity=".5"/>
     <path d="M0 230 C 150 200, 300 270, 470 300 L0 300Z" fill="#2cb6bd" opacity=".45"/></svg>`;
-  return `<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../scenes.css">
+  return `<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="${rel(path.join(ENGINE, "scenes.css"))}">
   <style>:root{--w:${W}px;--h:${H}px}</style></head>
   <body class="${format}"><div class="stage">
     <div class="wave">${wave}</div>
@@ -178,7 +263,7 @@ function html() {
   <script>
   const CAPS = ${JSON.stringify(caps)};
   const scenes = [...document.querySelectorAll('.scene')];
-  const fmtMoney = n => '$' + Math.round(n).toLocaleString('en-US');
+  const fmt = (n, k) => k === 'k' ? (n >= 1000 ? '$' + (n / 1000).toFixed(n % 1000 ? 2 : 0) + 'M' : '$' + Math.round(n) + 'K') : '$' + Math.round(n).toLocaleString('en-US');
   for (const sc of scenes) {
     const words = JSON.parse(sc.dataset.words);
     const dur = +sc.dataset.dur;
@@ -186,10 +271,17 @@ function html() {
     const norm = s => s.toLowerCase().replace(/[^a-z0-9$,()]/g, '');
     for (const el of sc.querySelectorAll('[data-cue],[data-at]')) {
       if (el.dataset.at) { el.style.setProperty('--d', (+el.dataset.at * dur).toFixed(3)); continue; }
+      if (!el.dataset.cue) continue;
       const cue = norm(el.dataset.cue);
       let i = words.findIndex((w, k) => k >= ptr && norm(w.w).startsWith(cue));
       if (i < 0) i = words.findIndex(w => norm(w.w).startsWith(cue));
-      if (i >= 0) { el.style.setProperty('--d', Math.max(0, words[i].t - 0.15).toFixed(3)); ptr = i; }
+      if (i < 0) continue;
+      const d = Math.max(0, words[i].t - 0.15).toFixed(3);
+      ptr = i;
+      // A cued group passes its time to every animated child.
+      if (el.hasAttribute('data-cuegroup')) el.querySelectorAll('.a').forEach(c => c.style.setProperty('--d', d));
+      else el.style.setProperty('--d', d);
+      el.querySelectorAll('[data-cd]').forEach(c => c.dataset.cd = d);
     }
     sc._anims = sc.getAnimations({ subtree: true });
     sc._anims.forEach(a => a.pause());
@@ -212,7 +304,7 @@ function html() {
       sc._counts.forEach(el => {
         const p = Math.min(1, Math.max(0, (lt - +el.dataset.cd) / 0.9));
         const e = 1 - Math.pow(1 - p, 3);
-        el.textContent = fmtMoney(+el.dataset.count * e);
+        el.textContent = fmt(+el.dataset.count * e, el.dataset.fmt);
       });
     });
     bgAnims.forEach(a => a.currentTime = t * 1000);
@@ -283,6 +375,13 @@ if (still) {
   console.log(`${format}: ${frames} frames, ${total.toFixed(1)}s`);
   await Promise.all(parts.map(([a, b, f]) => renderRange(browser, a, b, f)));
   writeFileSync(path.join(seg, "list.txt"), parts.map((p) => `file '${p[2]}'`).join("\n"));
-  console.log("video frames done");
+  const mix = path.join(OUT, `${format}-mix.wav`);
+  if (existsSync(mix)) {
+    const name = path.basename(PROJECT) + (format === "reel" ? "-reel" : "") + ".mp4";
+    const r = spawnSync("ffmpeg", ["-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", path.join(seg, "list.txt"), "-i", mix,
+      "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", path.join(OUT, name)], { stdio: "inherit" });
+    if (r.status) throw new Error("mux failed");
+    console.log(`wrote out/${name}`);
+  } else console.log("video frames done (run audio.py, then re-run to mux)");
 }
 await browser.close();
