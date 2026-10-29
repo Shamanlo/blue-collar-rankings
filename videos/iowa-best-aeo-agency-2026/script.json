@@ -1,0 +1,173 @@
+{
+  "tts": "gemini",
+  "gemini": {"model": "gemini-3.8-flash-tts", "voice": "Charon"},
+  "header": "Iowa · AEO & AI Search · 2026",
+  "source": "AEO details from iowaaeo.com. AI answers vary by platform and change over time.",
+  "sourceKinds": [],
+  "thumbs": {
+    "image": "iowa-aeo-commercial.jpg", "landscapePos": "55% 0%", "reelPos": "50% 0%",
+    "lines": ["Best AEO", "Agency"], "sub": "in Iowa", "tag": "Iowa AEO", "year": "2026",
+    "stamp": ["#1", ["TOP", "PICK"]], "reelStamp": ["2026", ["AI", "SEARCH"]]
+  },
+  "landscape": [
+    {
+      "id": "hook", "kind": "title", "label": "AI Search · 2026",
+      "image": "iowa-aeo-commercial.jpg", "imgPos": "55% 0%", "zoomFrom": "50% 0%",
+      "kicker": "Iowa · AI search for local businesses", "titlePx": 128,
+      "title": ["Best AEO Agency", "in Iowa"], "year": "2026",
+      "chips": ["ChatGPT", "Gemini", "Perplexity", "Claude", "Google AI Overviews"],
+      "say": "Who's the best AEO agency in Iowa? Our top pick is Iowa AEO. But first: what is AEO, and why does AI search matter so much for plumbers, roofers, electricians, and every other blue-collar business?"
+    },
+    {
+      "id": "shift", "kind": "chat", "label": "How Customers Search Now",
+      "app": "AI assistant",
+      "ask": "My water heater is leaking. Is there a plumber in Des Moines who can come today?", "askCue": "My",
+      "answer": "Here are a few Des Moines plumbers that offer same-day service:", "answerCue": "doesn't",
+      "picks": [{"name": "Plumber A", "note": "Same-day · 4.9★"}, {"name": "Plumber B", "note": "24/7 emergency"}, {"name": "Plumber C", "note": "Water heater specialist"}],
+      "pickAt": 0.66,
+      "miss": "Not mentioned", "missCue": "isn't",
+      "side": [{"t": "No list of 10 links", "cue": "doesn't"}, {"t": "Just 2 or 3 names", "cue": "names"}],
+      "say": "Here's what changed. Instead of scrolling a list of links, more customers ask an AI assistant a full question, like: \"My water heater is leaking. Is there a plumber in Des Moines who can come today?\" The AI doesn't show ten websites. It names two or three businesses. And if yours isn't one of them, you don't get the call."
+    },
+    {
+      "id": "define", "kind": "define", "label": "What Is AEO?",
+      "image": "iowa-aeo-card.jpg", "fit": "#F6F5F0",
+      "title": "What is AEO?", "sub": "Answer Engine Optimization",
+      "lead": "Making your business easy for AI assistants to understand, trust and recommend.",
+      "features": [{"t": "Understand", "cue": "understand"}, {"t": "Trust", "cue": "trust"}, {"t": "Recommend", "cue": "recommend"}],
+      "aka": ["GEO", "AIO", "AI SEO", "LLM SEO"], "akaCue": "also",
+      "say": "That's where AEO comes in. Answer Engine Optimization is the work of making your business easy for AI assistants to understand, trust, and recommend, so when someone asks ChatGPT, Gemini, Perplexity, Claude, or Google's AI Overviews, your business is in the answer. You'll also hear it called GEO, AI SEO, or LLM SEO."
+    },
+    {
+      "id": "versus", "kind": "versus", "label": "AEO vs. SEO",
+      "title": "AEO vs. traditional SEO", "left": "SEO", "right": "AEO",
+      "rows": [
+        {"label": "Goal", "a": "Rank in a list of ten blue links", "b": "Get named in the answer itself", "cue": "SEO"},
+        {"label": "Where it shows", "a": "Google & Bing results pages", "b": "ChatGPT, Gemini, Perplexity, Claude, AI Overviews", "cue": "AEO"},
+        {"label": "What wins", "a": "Keywords, backlinks, page speed", "b": "Consistent facts, specific reviews, clear answers, trusted mentions", "cue": "consistent"},
+        {"label": "How people search", "a": "“plumber Ankeny”", "b": "“Who can fix my water heater in Ankeny today?”", "cue": "people"}
+      ],
+      "note": "You still need SEO: the two work together.", "noteCue": "still",
+      "say": "How is that different from SEO? SEO is about ranking in a list of ten blue links, with keywords and backlinks. AEO is about getting named in the answer itself, with consistent facts, specific reviews, clear answers, and trusted mentions. And people search differently: not \"plumber Ankeny,\" but \"who can fix my water heater in Ankeny today?\" You still need SEO. The two work together."
+    },
+    {
+      "id": "why", "kind": "factors", "label": "Why It Matters for Trades", "cols": 4,
+      "title": "Why blue-collar businesses can't skip it",
+      "cards": [
+        {"name": "Burst pipe", "desc": "“Who can come today?”", "icon": "drop", "cue": "pipe"},
+        {"name": "Furnace out", "desc": "“Who does weekend calls?”", "icon": "flame", "cue": "furnace"},
+        {"name": "Hail damage", "desc": "“Which roofer handles insurance claims?”", "icon": "roof", "cue": "hail"},
+        {"name": "Power out", "desc": "“Who's a licensed electrician near me?”", "icon": "bolt", "cue": "breaker"}
+      ],
+      "say": "Why does this matter so much for blue-collar businesses? Because your jobs are urgent and local. When a pipe bursts, a furnace quits, hail hits a roof, or a breaker won't reset, people want one answer, fast. AI names only a few businesses, and if yours isn't one of them, you don't get the call, no matter how good your work is."
+    },
+    {
+      "id": "signals", "kind": "factors", "label": "What AI Looks For",
+      "title": "The 5 signals AI looks for",
+      "cards": [
+        {"name": "Consistent listings", "desc": "Name, hours & address match on Google, Bing, Apple Maps & Yelp", "icon": "pin", "cue": "consistent"},
+        {"name": "Specific reviews", "desc": "Customers name the job and the town", "icon": "star", "cue": "specific"},
+        {"name": "Answer-ready website", "desc": "Pages that answer the questions people ask AI", "icon": "page", "cue": "answer-ready"},
+        {"name": "Structured data", "desc": "Schema tells AI your services, area & hours", "icon": "code", "cue": "structured"},
+        {"name": "Trusted mentions", "desc": "Local press, guides & directories name you", "icon": "mega", "cue": "trusted"}
+      ],
+      "say": "So how does AI pick a contractor? It looks for five signals. Consistent listings: your name, hours, and address match on Google, Bing, Apple Maps, and Yelp. Specific reviews that mention the job and the town. An answer-ready website. Structured data that tells AI your services and service area. And trusted mentions in local press, guides, and directories."
+    },
+    {
+      "id": "checklist", "kind": "factors", "label": "Contractor Checklist", "cols": 4,
+      "title": "What tips the answer for contractors",
+      "cards": [
+        {"name": "Service area", "desc": "Name every town you actually cover", "icon": "map", "cue": "service-area"},
+        {"name": "After-hours", "desc": "Emergency availability, stated the same way everywhere", "icon": "clock", "cue": "emergency"},
+        {"name": "Job + town reviews", "desc": "“Water heater”, “hail damage”, “AC repair”", "icon": "star", "cue": "reviews"},
+        {"name": "License & warranty", "desc": "Licensing, insurance & warranty AI can quote", "icon": "shield", "cue": "licensing"}
+      ],
+      "say": "For contractors, a few details tip the answer your way: a service-area list that names every town you cover, emergency and after-hours availability stated the same way everywhere, reviews that mention the job and the town, and licensing, insurance, and warranty details AI can quote. And your Google Business Profile still matters a lot."
+    },
+    {
+      "id": "pick", "kind": "winner", "label": "Our Top Pick",
+      "image": "iowa-aeo-commercial.jpg", "imgPos": "55% 0%", "zoomFrom": "50% 0%",
+      "stamp": "Our top pick", "name": "Iowa AEO", "nameCue": "Iowa",
+      "where": "Des Moines · Cedar Rapids · Iowa City · Quad Cities",
+      "logo": "iowa-aeo-logo.png", "logoBg": "#F6F5F0",
+      "points": ["AI visibility audit across 5 AI assistants", "Listing & entity cleanup", "Answer-ready pages, FAQs & structured data", "Specific reviews & trusted local mentions", "Re-tested monthly, explained in plain English"],
+      "say": "So who's the best AEO agency in Iowa? Our top pick is Iowa AEO. They focus on Iowa businesses, from Des Moines and Cedar Rapids to Iowa City and the Quad Cities. They test real customer questions across five AI assistants, clean up your listings, build answer-ready pages, grow specific reviews and local mentions, and re-test every month so you can see what changed."
+    },
+    {
+      "id": "process", "kind": "stats", "label": "How They Work",
+      "title": "From invisible to recommended",
+      "tiles": [
+        {"v": "01", "n": "Audit", "s": "Real customer questions across 5 AI assistants", "cue": "audit"},
+        {"v": "02", "n": "Fix the facts", "s": "Listings, website details & structured data", "cue": "fix"},
+        {"v": "03", "n": "Publish answers", "s": "Pages & FAQs for the questions people ask AI", "cue": "publish"},
+        {"v": "04", "n": "Earn trust & track", "s": "Reviews, local mentions & monthly re-tests", "cue": "earn"}
+      ],
+      "note": "No tricks or spammy shortcuts: clean, consistent, verifiable facts.", "noteCue": "no",
+      "say": "Their process is simple: audit, fix the facts, publish answers, then earn trust and track the results. No tricks, and no spammy shortcuts."
+    },
+    {
+      "id": "cta", "kind": "cta", "label": "Free AI Visibility Check",
+      "image": "iowa-aeo-card.jpg", "fit": "#F6F5F0",
+      "logo": "iowa-aeo-logo.png",
+      "name": "Iowa AEO",
+      "phone": "(515) 690-6632",
+      "address": "Serving businesses across Iowa",
+      "hours": "Free AI visibility check · No cost, no obligation",
+      "url": "iowaaeo.com",
+      "urlCue": "visit",
+      "tip": "See what ChatGPT, Gemini, Perplexity, Claude & Google AI say about you.",
+      "say": "Want to know if AI is recommending your business? Get a free AI visibility check from Iowa AEO, with no cost and no obligation. Call (515) 690-6632, or visit iowaaeo.com. This has been Local Vibe Check."
+    }
+  ],
+  "reel": [
+    {
+      "id": "r-hook", "kind": "title", "label": "AI Search · 2026",
+      "image": "iowa-aeo-commercial.jpg", "imgPos": "55% 0%", "zoomFrom": "50% 0%",
+      "kicker": "Iowa · 2026",
+      "title": ["Best AEO", "Agency"], "year": "2026",
+      "chips": ["ChatGPT", "Gemini", "Perplexity", "Claude"],
+      "say": "Is AI recommending your business? If you run a trade in Iowa, this matters."
+    },
+    {
+      "id": "r-shift", "kind": "chat", "label": "How Customers Search Now",
+      "app": "AI assistant",
+      "ask": "My water heater is leaking. Who can come today?", "askCue": "My",
+      "answer": "Here are a few plumbers near you:", "answerCue": "names",
+      "picks": [{"name": "Plumber A", "note": "Same-day"}, {"name": "Plumber B", "note": "24/7"}, {"name": "Plumber C", "note": "Specialist"}],
+      "pickAt": 0.55,
+      "miss": "Not mentioned", "missCue": "isn't",
+      "say": "Customers now ask AI: \"My water heater is leaking. Who can come today?\" It names two or three businesses. If yours isn't one, you don't get the call."
+    },
+    {
+      "id": "r-define", "kind": "define", "label": "What Is AEO?",
+      "image": "iowa-aeo-card.jpg", "fit": "#F6F5F0",
+      "title": "What is AEO?", "sub": "Answer Engine Optimization",
+      "lead": "Getting your business named in AI answers.",
+      "features": [{"t": "Listings", "cue": "listings"}, {"t": "Reviews", "cue": "reviews"}, {"t": "Clear answers", "cue": "clear"}],
+      "aka": ["GEO", "AI SEO"], "akaCue": "AEO",
+      "say": "That's AEO, Answer Engine Optimization: consistent listings, specific reviews, and clear answers, so AI can recommend you."
+    },
+    {
+      "id": "r-pick", "kind": "winner", "label": "Our Top Pick",
+      "image": "iowa-aeo-commercial.jpg", "imgPos": "55% 0%", "zoomFrom": "50% 0%",
+      "stamp": "Our top pick", "name": "Iowa AEO", "nameCue": "Iowa",
+      "where": "Des Moines · Cedar Rapids · Iowa City · Quad Cities",
+      "logo": "iowa-aeo-logo.png", "logoBg": "#F6F5F0",
+      "points": ["Tests 5 AI assistants", "Fixes listings & content", "Re-tests every month"],
+      "say": "The best AEO agency in Iowa? Our top pick is Iowa AEO."
+    },
+    {
+      "id": "r-cta", "kind": "cta", "label": "Free AI Visibility Check",
+      "image": "iowa-aeo-card.jpg", "fit": "#F6F5F0",
+      "logo": "iowa-aeo-logo.png",
+      "name": "Iowa AEO",
+      "phone": "(515) 690-6632",
+      "address": "Free AI visibility check",
+      "hours": "No cost, no obligation",
+      "url": "iowaaeo.com",
+      "urlCue": "iowaaeo.com",
+      "tip": "Follow Local Vibe Check for more.",
+      "say": "Get a free AI visibility check. Call (515) 690-6632 or visit iowaaeo.com."
+    }
+  ]
+}

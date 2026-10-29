@@ -62,9 +62,24 @@ function chunks(words) {
 
 const pinSvg = engineAsset("pin.svg");
 const photo = (s, dir = "left", d = 0.1, extra = "") =>
-  `<div ${a(`${dir} photo`, d)}><img class="kb" src="${img(s.image)}" style="object-position:${s.imgPos || "50% 50%"}">${extra}</div>`;
+  `<div ${a(`${dir} photo`, d)}><img class="kb" src="${img(s.image)}" style="object-position:${s.imgPos || "50% 50%"}${s.zoomFrom ? `;transform-origin:${s.zoomFrom}` : ""}${s.fit ? `;object-fit:contain;background:${s.fit}` : ""}">${extra}</div>`;
 
+const ic = (d) => `<svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
 const icons = {
+  pin: ic(`<path d="M24 43s-13-12.5-13-23a13 13 0 0 1 26 0c0 10.5-13 23-13 23z"/><circle cx="24" cy="20" r="5"/>`),
+  star: ic(`<path d="M24 6l5.4 11.4 12.4 1.6-9.1 8.6 2.3 12.3L24 34l-11 5.9 2.3-12.3-9.1-8.6 12.4-1.6z"/>`),
+  page: ic(`<rect x="8" y="8" width="32" height="32" rx="4"/><path d="M8 16h32M14 24h20M14 30h14"/>`),
+  code: ic(`<path d="M17 14L7 24l10 10M31 14l10 10-10 10M27 10l-6 28"/>`),
+  mega: ic(`<path d="M8 20v8h6l14 8V12l-14 8H8zM34 18a8 8 0 0 1 0 12M14 28l3 10h5l-2-9"/>`),
+  drop: ic(`<path d="M24 6s-12 13.5-12 22a12 12 0 0 0 24 0C36 19.5 24 6 24 6z"/><path d="M18 30a6 6 0 0 0 6 6"/>`),
+  flame: ic(`<path d="M24 42c-8 0-13-5.5-13-12.5C11 20 20 15 19 6c7 4 12 10 12 17 2-2 3-4.5 3-7 3 3.5 4 7.5 4 11.5C38 36.5 32 42 24 42z"/>`),
+  roof: ic(`<path d="M5 24L24 9l19 15M11 20v19h26V20M20 39V28h8v11"/>`),
+  bolt: ic(`<path d="M27 4L10 27h12l-2 17 18-24H26z"/>`),
+  clock: ic(`<circle cx="24" cy="24" r="17"/><path d="M24 14v11l7 4"/>`),
+  map: ic(`<path d="M6 12l12-5 12 5 12-5v29l-12 5-12-5-12 5z"/><path d="M18 7v29M30 12v29"/>`),
+  shield: ic(`<path d="M24 5l16 6v11c0 10-7 17.5-16 21-9-3.5-16-11-16-21V11z"/><path d="M17 24l5 5 9-10"/>`),
+  search: ic(`<circle cx="21" cy="21" r="12"/><path d="M30 30l11 11"/>`),
+  chart: ic(`<path d="M7 41h34M12 34V24M20 34V16M28 34V21M36 34V10"/>`),
   wave: `<svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"><path d="M8 30c10-10 20-10 30 0s20 10 30 0 20-10 30 0 16 8 16 8"/><path d="M8 54c10-10 20-10 30 0s20 10 30 0 20-10 30 0 16 8 16 8"/></svg>`,
 };
 
@@ -181,7 +196,7 @@ const build = {
 
   factors: (s) => `
     <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
-    <div class="fgrid">${s.cards.map((c, i) => `
+    <div class="fgrid"${s.cols ? ` style="grid-template-columns:repeat(${s.cols},1fr)"` : ""}>${s.cards.map((c, i) => `
       <div class="a pop fcard"${cueAttr(c.cue)} style="--d:${0.6 + i * 0.4}">
         <div class="fi">${c.image ? `<img src="${img(c.image)}" style="object-position:${c.imgPos || "50% 50%"}">` : `<div class="fic">${icons[c.icon] || ""}</div>`}<span class="fn">${i + 1}</span></div>
         <div class="fb"><div class="ft">${esc(c.name)}</div><div class="fd">${esc(c.desc)}</div></div>
@@ -193,6 +208,29 @@ const build = {
     <div class="sgrid">${s.steps.map((st, i) => `
       <div class="a pop step"${cueAttr(st.cue)} style="--d:${0.6 + i * 0.3}">
         <img src="${img(st.image)}" style="object-position:${st.imgPos || "50% 50%"}">${s.plain ? "" : `<span class="sn">${String(i + 1).padStart(2, "0")}</span>`}${st.name ? `<span class="st">${esc(st.name)}</span>` : ""}</div>`).join("")}</div>`,
+
+  // An AI-assistant chat: the customer's question, the answer, and who it names.
+  chat: (s) => `
+    <div class="chatwin a up" style="--d:.1">
+      <div class="chathead"><span class="dot"></span><span class="dot"></span><span class="dot"></span><b>${esc(s.app || "AI assistant")}</b></div>
+      <div class="chatbody">
+        <div class="bub user a type"${cueAttr(s.askCue)} style="--d:.5">${esc(s.ask)}</div>
+        <div class="bub ai a up"${cueAttr(s.answerCue)} style="--d:3">${esc(s.answer)}
+          ${s.picks.map((p, i) => `<div class="pick a left" data-at="${(s.pickAt || 0.55) + i * 0.04}" style="--d:4"><span class="pn">${i + 1}</span><span>${esc(p.name)}</span><small>${esc(p.note)}</small></div>`).join("")}
+        </div>
+        <div class="missing2 a pop"${cueAttr(s.missCue)} data-at="${s.missCue ? "" : 0.85}" style="--d:6"><b>Your business?</b> ${esc(s.miss || "Not mentioned")}</div>
+      </div>
+    </div>
+    ${s.side ? `<div class="col chatside">${s.side.map((t, i) => `<div class="a up sideitem"${cueAttr(t.cue)} style="--d:${1 + i}">${esc(t.t)}</div>`).join("")}</div>` : ""}`,
+
+  // Two-column comparison, e.g. SEO vs AEO.
+  versus: (s) => `
+    <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
+    <div class="vs">
+      <div class="vrow vhead a fade" style="--d:.3"><span></span><span>${esc(s.left)}</span><span>${esc(s.right)}</span></div>
+      ${s.rows.map((r, i) => `<div class="vrow a up"${cueAttr(r.cue)} data-at="${r.cue ? "" : 0.12 + i * 0.13}" style="--d:1"><span>${esc(r.label)}</span><span>${esc(r.a)}</span><span>${esc(r.b)}</span></div>`).join("")}
+    </div>
+    ${s.note ? `<div class="a fade note center"${cueAttr(s.noteCue)} style="--d:6">${esc(s.note)}</div>` : ""}`,
 
   reviews: (s) => `
     <div ${a("up h2", 0.1)}>${esc(s.title)}</div>

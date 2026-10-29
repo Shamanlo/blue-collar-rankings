@@ -34,6 +34,6 @@ node _engine/thumbs.mjs $P                 # out/thumbnail-youtube.jpg, out/thum
 ## Scene kinds
 
 `title`, `define`, `list`, `bars`, `ranges`, `price`, `mini`, `stats`, `deposit`, `table`, `reviews`,
-`factors`, `steps`, `quote`, `winner`, `hunts`, `cta`. See the two existing `script.json`
+`factors`, `steps`, `quote`, `winner`, `hunts`, `chat`, `versus`, `cta`. See the two existing `script.json`
 files for the fields each one takes. `data-cue`-style fields (`cue`, `priceCue`, `urlCue`,
 `nameCue`) time an element to the first spoken word that starts with that text.
