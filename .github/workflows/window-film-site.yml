@@ -1,0 +1,51 @@
+# Temporary: deploys windowfilmmarketingagency.com (sites/window-film-marketing-agency/) to Cloudflare Pages
+# using this repo's Cloudflare secret, until the site has its own repository.
+name: Deploy windowfilmmarketingagency.com
+
+on:
+  push:
+    branches: [claude/admiring-allen-kfqdwm]
+    paths:
+      - "sites/window-film-marketing-agency/**"
+      - ".github/workflows/window-film-site.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-window-film
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: sites/window-film-marketing-agency
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      PROJECT: window-film-marketing-agency
+      DOMAIN: windowfilmmarketingagency.com
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Build site
+        run: npm run build
+
+      - name: Find Cloudflare account
+        run: python3 tools/cloudflare_setup.py account
+
+      - name: Create Pages project
+        run: python3 tools/cloudflare_setup.py project
+
+      - name: Deploy
+        run: npx --yes wrangler@4.140.0 pages deploy public --project-name "$PROJECT" --branch main --commit-dirty=true
+
+      - name: Add windowfilmmarketingagency.com to Cloudflare and connect it
+        run: python3 tools/cloudflare_setup.py domains
