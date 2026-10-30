@@ -7,7 +7,7 @@ export const site = {
   email: "info@windowfilmmarketingagency.com",
   // Free key from https://web3forms.com (enter the inbox that should receive leads).
   // Left empty, the forms open the visitor's email app addressed to site.email instead.
-  web3formsKey: "",
+  web3formsKey: "2e86fdf3-c02f-4b53-a2ba-1447b92b6347",
   year: 2026,
   tagline: "Marketing, AI search and web design built only for window film companies.",
 };

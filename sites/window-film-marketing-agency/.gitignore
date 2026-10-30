@@ -3,3 +3,4 @@ public/
 scripts/.badge-jobs.json
 .DS_Store
 __pycache__/
+.wrangler/
