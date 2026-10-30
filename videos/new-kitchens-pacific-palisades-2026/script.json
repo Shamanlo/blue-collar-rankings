@@ -47,30 +47,30 @@
   ]
  },
  "thumbs": {
-  "image": "kitchen-01.jpg",
-  "landscapePos": "40% 50%",
-  "reelPos": "40% 50%",
+  "image": "kitchen-07.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
   "lines": [
    "Kitchen",
-   "Prices"
+   "Costs"
   ],
   "sub": "Pacific Palisades, CA",
-  "tag": "$25K – $120K+",
+  "tag": "From $25K",
   "year": "2026",
   "subPx": 54,
   "reelSubPx": 70,
   "stamp": [
-   "3",
+   "$75K",
    [
-    "PRICE",
-    "TIERS"
+    "LESS TO",
+    "START"
    ]
   ],
   "reelStamp": [
-   "2026",
+   "$75K",
    [
-    "PRICE",
-    "GUIDE"
+    "LESS TO",
+    "START"
    ]
   ]
  },

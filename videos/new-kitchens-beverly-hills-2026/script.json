@@ -53,9 +53,9 @@
   ]
  },
  "thumbs": {
-  "image": "kitchen-01.jpg",
-  "landscapePos": "40% 50%",
-  "reelPos": "40% 50%",
+  "image": "kitchen-03.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
   "lines": [
    "Kitchen",
    "Prices"
@@ -66,17 +66,17 @@
   "subPx": 66,
   "reelSubPx": 86,
   "stamp": [
-   "3",
+   "$75K",
    [
-    "PRICE",
-    "TIERS"
+    "LESS TO",
+    "START"
    ]
   ],
   "reelStamp": [
-   "2026",
+   "$75K",
    [
-    "PRICE",
-    "GUIDE"
+    "LESS TO",
+    "START"
    ]
   ]
  },

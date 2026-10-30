@@ -205,6 +205,32 @@ def scenes(c):
     return landscape, reel
 
 
+# A different photo, headline word, price tag and badge for each city's thumbnails.
+THUMB = {
+    "Beverly Hills": ("kitchen-03.jpg", "50% 50%", "Prices", "$25K – $120K+", "save"),
+    "Calabasas": ("kitchen-06.jpg", "45% 50%", "Remodel", "From $25K", "tiers"),
+    "Culver City": ("kitchen-11.jpg", "40% 50%", "Costs", "$25K – $120K+", "save"),
+    "Los Angeles": ("kitchen-09.jpg", "30% 50%", "Prices", "From $25K", "guide"),
+    "Malibu": ("kitchen-05.jpg", "50% 50%", "Remodel", "$25K – $120K+", "save"),
+    "Pacific Palisades": ("kitchen-07.jpg", "50% 50%", "Costs", "From $25K", "save"),
+    "Santa Clarita": ("kitchen-10.jpg", "45% 50%", "Prices", "From $25K", "tiers"),
+    "Santa Monica": ("kitchen-08.jpg", "40% 50%", "Remodel", "$25K – $120K+", "save"),
+    "Thousand Oaks": ("kitchen-04.jpg", "50% 50%", "Costs", "$25K – $120K+", "tiers"),
+    "Westlake": ("kitchen-12.jpg", "40% 50%", "Prices", "From $25K", "guide"),
+}
+
+
+def thumbs(c):
+    image, pos, word, tag, badge = THUMB[c["city"]]
+    k = f"${int(c['most'].replace(',', '')) // 1000}K"
+    stamp = {"save": [k, ["LESS TO", "START"]], "tiers": ["3", ["PRICE", "TIERS"]], "guide": ["2026", ["PRICE", "GUIDE"]]}[badge]
+    long_ = len(c["city"]) >= 14
+    return {"image": image, "landscapePos": pos, "reelPos": pos,
+            "lines": ["Kitchen", word], "sub": f"{c['city']}, CA", "tag": tag, "year": "2026",
+            "subPx": 54 if long_ else 66, "reelSubPx": 70 if long_ else 86,
+            "stamp": stamp, "reelStamp": stamp if badge != "tiers" else ["2026", ["PRICE", "GUIDE"]]}
+
+
 def main():
     for url in URLS:
         c = parse(url)
@@ -222,10 +248,7 @@ def main():
             "company": c["company"], "pageUrl": c["url"],
             "table": {"corner": "Published by", "highlight": 1,
                       "cols": ["Their published price", "New Kitchens", "Difference"], "rows": c["rows"]},
-            "thumbs": {"image": "kitchen-01.jpg", "landscapePos": "40% 50%", "reelPos": "40% 50%",
-                       "lines": ["Kitchen", "Prices"], "sub": f"{c['city']}, CA", "tag": "$25K – $120K+", "year": "2026",
-                       "subPx": 66 if len(c["city"]) < 14 else 54, "reelSubPx": 86 if len(c["city"]) < 14 else 70,
-                       "stamp": ["3", ["PRICE", "TIERS"]], "reelStamp": ["2026", ["PRICE", "GUIDE"]]},
+            "thumbs": thumbs(c),
             "landscape": landscape, "reel": reel,
         }
         (proj / "script.json").write_text(json.dumps(spec, indent=1, ensure_ascii=False) + "\n")

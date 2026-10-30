@@ -47,7 +47,7 @@
   ]
  },
  "thumbs": {
-  "image": "kitchen-01.jpg",
+  "image": "kitchen-12.jpg",
   "landscapePos": "40% 50%",
   "reelPos": "40% 50%",
   "lines": [
@@ -55,15 +55,15 @@
    "Prices"
   ],
   "sub": "Westlake, CA",
-  "tag": "$25K – $120K+",
+  "tag": "From $25K",
   "year": "2026",
   "subPx": 66,
   "reelSubPx": 86,
   "stamp": [
-   "3",
+   "2026",
    [
     "PRICE",
-    "TIERS"
+    "GUIDE"
    ]
   ],
   "reelStamp": [
