@@ -21,6 +21,12 @@ All copy is in `scripts/content.mjs`. Styles: `static/css/site.css`. Behavior: `
 (sign up with the inbox that should receive leads). Until then the form opens the visitor's email app
 addressed to `site.email`.
 
+## Search engines
+
+- `static/<key>.txt` is the IndexNow key. `npm run indexnow` (also run by the deploy workflow) submits every
+  page in the sitemap to Bing and the other IndexNow engines, which also feed ChatGPT search and Copilot.
+- Google needs Search Console: verify the domain (DNS TXT record in Cloudflare) and submit `sitemap.xml`.
+
 ## Homepage reel
 
 `video/` holds the 38-second 9:16 reel shown on the homepage. It is code, not a timeline file:
