@@ -81,17 +81,17 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What a Kitchen Remodel Costs in Malibu (2026) 🍳 #shorts
+Malibu Kitchen Remodel Prices (2026) 🌊 #shorts
 
 ### Caption
 
-What does a kitchen remodel cost in Malibu in 2026?
-🔹 Entry-level: $25K – $35K
-🔸 Mid-range (most popular): $40K – $70K
-💎 High-end: $75K – $120K+
-💰 Up to $70,000 less to start than other local remodelers' published prices
+Salt air, ocean views and a brand-new kitchen. Here's what a Malibu kitchen remodel costs in 2026:
+• Entry-level remodel: $25,000 – $35,000
+• Mid-range (most popular): $40,000 – $70,000
+• High-end: $75,000 – $120,000+
+💰 Up to $70,000 less than what other Malibu-area remodelers publish
 
-🛠️ Need a kitchen remodel? Give New Kitchens of Malibu a shout
+🛠️ Remodeling a Malibu kitchen? Give New Kitchens of Malibu a shout
 🔗 https://kitchenremodelingmalibu.com/malibu-kitchen-remodeling-pricing-comparison
 
-#shorts #Malibu #KitchenRemodel #HomeRenovation #KitchenDesign
+#shorts #Malibu #PointDume #KitchenRemodel #HomeRenovation

@@ -82,17 +82,17 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What a Kitchen Remodel Costs in Culver City (2026) 🍳 #shorts
+How Much Is a Kitchen Remodel in Culver City? (2026) #shorts
 
 ### Caption
 
-What does a kitchen remodel cost in Culver City in 2026?
-🔹 Entry-level: $25K – $35K
-🔸 Mid-range (most popular): $40K – $70K
-💎 High-end: $75K – $120K+
+Compact Culver City kitchen? A smaller footprint means a smaller budget. 2026 prices:
+1️⃣ Entry-level: from $25K
+2️⃣ Mid-range: $40K – $70K (most popular)
+3️⃣ High-end: $75K – $120K+
 💰 Up to $60,000 less to start than other local remodelers' published prices
 
-🛠️ Need a kitchen remodel? Give New Kitchens of Culver City a shout
+🛠️ Planning a Culver City kitchen remodel? Give New Kitchens of Culver City a shout
 🔗 https://kitchenremodelingculvercity.com/culver-city-kitchen-remodeling-pricing-comparison
 
-#shorts #CulverCity #KitchenRemodel #HomeRenovation #KitchenDesign
+#shorts #CulverCity #SunkistPark #KitchenRemodel #HomeRenovation

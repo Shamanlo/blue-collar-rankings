@@ -81,17 +81,17 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What a Kitchen Remodel Costs in Westlake (2026) 🍳 #shorts
+Westlake Kitchen Remodel Cost (2026) ✨ #shorts
 
 ### Caption
 
-What does a kitchen remodel cost in Westlake in 2026?
+A 1970s kitchen by the lake or a bigger North Ranch kitchen? Westlake remodel prices for 2026:
 🔹 Entry-level: $25K – $35K
 🔸 Mid-range (most popular): $40K – $70K
 💎 High-end: $75K – $120K+
-💰 Up to $10,000 less to start than other local remodelers' published prices
+💰 Lower than every Westlake remodeler they compared, by up to $10,000
 
-🛠️ Need a kitchen remodel? Give New Kitchens of Westlake a shout
+🛠️ Remodeling in Westlake Village? Give New Kitchens of Westlake a shout
 🔗 https://kitchenremodelingwestlake.com/westlake-kitchen-remodeling-pricing-comparison
 
-#shorts #Westlake #KitchenRemodel #HomeRenovation #KitchenDesign
+#shorts #Westlake #NorthRanch #KitchenRemodel #HomeRenovation

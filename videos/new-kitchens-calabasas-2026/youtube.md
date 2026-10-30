@@ -82,17 +82,17 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What a Kitchen Remodel Costs in Calabasas (2026) 🍳 #shorts
+Calabasas Kitchen Remodel Prices for 2026 🏡 #shorts
 
 ### Caption
 
-What does a kitchen remodel cost in Calabasas in 2026?
-🔹 Entry-level: $25K – $35K
-🔸 Mid-range (most popular): $40K – $70K
-💎 High-end: $75K – $120K+
-💰 Up to $69,000 less to start than other local remodelers' published prices
+Most Calabasas kitchens from the '80s and '90s don't need a full gut. Here's what a remodel costs in 2026:
+• Entry-level remodel: $25,000 – $35,000
+• Mid-range (most popular): $40,000 – $70,000
+• High-end: $75,000 – $120,000+
+💰 Up to $69,000 less than what other Calabasas-area remodelers publish
 
-🛠️ Need a kitchen remodel? Give New Kitchens of Calabasas a shout
+🛠️ Ready to redo your Calabasas kitchen? Give New Kitchens of Calabasas a shout
 🔗 https://kitchenremodelingcalabasas.com/calabasas-kitchen-remodeling-pricing-comparison
 
-#shorts #Calabasas #KitchenRemodel #HomeRenovation #KitchenDesign
+#shorts #Calabasas #TheOaks #KitchenRemodel #HomeRenovation

@@ -81,17 +81,17 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What a Kitchen Remodel Costs in Pacific Palisades (2026) 🍳 #shorts
+What a Pacific Palisades Kitchen Remodel Costs (2026) #shorts
 
 ### Caption
 
-What does a kitchen remodel cost in Pacific Palisades in 2026?
-🔹 Entry-level: $25K – $35K
-🔸 Mid-range (most popular): $40K – $70K
-💎 High-end: $75K – $120K+
+Rebuilding or updating in the Palisades? Here's a straight answer on 2026 kitchen remodel costs:
+1️⃣ Entry-level: from $25K
+2️⃣ Mid-range: $40K – $70K (most popular)
+3️⃣ High-end: $75K – $120K+
 💰 Up to $75,000 less to start than other local remodelers' published prices
 
-🛠️ Need a kitchen remodel? Give New Kitchens of Pacific Palisades a shout
+🛠️ Need a kitchen remodel in Pacific Palisades? Give New Kitchens of Pacific Palisades a shout
 🔗 https://kitchenremodelingpacificpalisades.com/pacific-palisades-kitchen-remodeling-pricing-comparison
 
-#shorts #PacificPalisades #KitchenRemodel #HomeRenovation #KitchenDesign
+#shorts #PacificPalisades #TheHighlands #KitchenRemodel #HomeRenovation

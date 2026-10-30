@@ -83,17 +83,17 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What a Kitchen Remodel Costs in Santa Clarita (2026) 🍳 #shorts
+Santa Clarita Kitchen Remodel Cost: 2026 Prices 🔨 #shorts
 
 ### Caption
 
-What does a kitchen remodel cost in Santa Clarita in 2026?
+Keep your Valencia or Saugus layout and upgrade everything else. 2026 kitchen remodel prices in Santa Clarita:
 🔹 Entry-level: $25K – $35K
 🔸 Mid-range (most popular): $40K – $70K
 💎 High-end: $75K – $120K+
-💰 Up to $30,000 less to start than other local remodelers' published prices
+💰 Lower than every Santa Clarita remodeler they compared, by up to $30,000
 
-🛠️ Need a kitchen remodel? Give New Kitchens of Santa Clarita a shout
+🛠️ Ready for a new Santa Clarita kitchen? Give New Kitchens of Santa Clarita a shout
 🔗 https://kitchenremodelingsantaclarita.org/santa-clarita-kitchen-remodeling-pricing-comparison
 
-#shorts #SantaClarita #KitchenRemodel #HomeRenovation #KitchenDesign
+#shorts #SantaClarita #Valencia #KitchenRemodel #HomeRenovation

@@ -81,17 +81,17 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What a Kitchen Remodel Costs in Los Angeles (2026) 🍳 #shorts
+Los Angeles Kitchen Remodel Cost in 2026 💰 #shorts
 
 ### Caption
 
-What does a kitchen remodel cost in Los Angeles in 2026?
+From Los Feliz duplexes to Sherman Oaks ranches, here's what an LA kitchen remodel costs in 2026:
 🔹 Entry-level: $25K – $35K
 🔸 Mid-range (most popular): $40K – $70K
 💎 High-end: $75K – $120K+
-💰 Up to $25,000 less to start than other local remodelers' published prices
+💰 Lower than every Los Angeles remodeler they compared, by up to $25,000
 
-🛠️ Need a kitchen remodel? Give New Kitchens of Los Angeles a shout
+🛠️ Need a kitchen remodel in LA? Give New Kitchens of Los Angeles a shout
 🔗 https://kitchenremodelinglosangeles.org/los-angeles-kitchen-remodeling-pricing-comparison
 
-#shorts #LosAngeles #KitchenRemodel #HomeRenovation #KitchenDesign
+#shorts #LosAngeles #SilverLake #KitchenRemodel #HomeRenovation

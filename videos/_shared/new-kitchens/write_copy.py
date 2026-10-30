@@ -46,6 +46,51 @@ STYLE = [
 ]
 
 
+# Reel titles stay close to each other; captions open with each city's own hook.
+REEL = {
+    "Beverly Hills": ("What a Kitchen Remodel Costs in Beverly Hills (2026) 🍳 #shorts",
+                      "Beverly Hills kitchen quotes often run well into six figures. Here's what a remodel really costs in 2026 👇",
+                      "Need a kitchen remodel in Beverly Hills? Give New Kitchens of Beverly Hills a shout"),
+    "Calabasas": ("Calabasas Kitchen Remodel Prices for 2026 🏡 #shorts",
+                  "Most Calabasas kitchens from the '80s and '90s don't need a full gut. Here's what a remodel costs in 2026:",
+                  "Ready to redo your Calabasas kitchen? Give New Kitchens of Calabasas a shout"),
+    "Culver City": ("How Much Is a Kitchen Remodel in Culver City? (2026) #shorts",
+                    "Compact Culver City kitchen? A smaller footprint means a smaller budget. 2026 prices:",
+                    "Planning a Culver City kitchen remodel? Give New Kitchens of Culver City a shout"),
+    "Los Angeles": ("Los Angeles Kitchen Remodel Cost in 2026 💰 #shorts",
+                    "From Los Feliz duplexes to Sherman Oaks ranches, here's what an LA kitchen remodel costs in 2026:",
+                    "Need a kitchen remodel in LA? Give New Kitchens of Los Angeles a shout"),
+    "Malibu": ("Malibu Kitchen Remodel Prices (2026) 🌊 #shorts",
+               "Salt air, ocean views and a brand-new kitchen. Here's what a Malibu kitchen remodel costs in 2026:",
+               "Remodeling a Malibu kitchen? Give New Kitchens of Malibu a shout"),
+    "Pacific Palisades": ("What a Pacific Palisades Kitchen Remodel Costs (2026) #shorts",
+                          "Rebuilding or updating in the Palisades? Here's a straight answer on 2026 kitchen remodel costs:",
+                          "Need a kitchen remodel in Pacific Palisades? Give New Kitchens of Pacific Palisades a shout"),
+    "Santa Clarita": ("Santa Clarita Kitchen Remodel Cost: 2026 Prices 🔨 #shorts",
+                      "Keep your Valencia or Saugus layout and upgrade everything else. 2026 kitchen remodel prices in Santa Clarita:",
+                      "Ready for a new Santa Clarita kitchen? Give New Kitchens of Santa Clarita a shout"),
+    "Santa Monica": ("How Much Does a Santa Monica Kitchen Remodel Cost? (2026) #shorts",
+                     "Ocean Park cottage or North of Montana family home? Here's what a Santa Monica kitchen remodel costs in 2026:",
+                     "Planning a Santa Monica kitchen remodel? Give New Kitchens of Santa Monica a shout"),
+    "Thousand Oaks": ("Thousand Oaks Kitchen Remodel Prices in 2026 🍳 #shorts",
+                      "Dated kitchen in a '60s to '80s Thousand Oaks ranch? Here's what it costs to update it in 2026:",
+                      "Need a kitchen remodel in Thousand Oaks or Newbury Park? Give New Kitchens of Thousand Oaks a shout"),
+    "Westlake": ("Westlake Kitchen Remodel Cost (2026) ✨ #shorts",
+                 "A 1970s kitchen by the lake or a bigger North Ranch kitchen? Westlake remodel prices for 2026:",
+                 "Remodeling in Westlake Village? Give New Kitchens of Westlake a shout"),
+}
+REEL_TIERS = [
+    "🔹 Entry-level: $25K – $35K\n🔸 Mid-range (most popular): $40K – $70K\n💎 High-end: $75K – $120K+",
+    "• Entry-level remodel: $25,000 – $35,000\n• Mid-range (most popular): $40,000 – $70,000\n• High-end: $75,000 – $120,000+",
+    "1️⃣ Entry-level: from $25K\n2️⃣ Mid-range: $40K – $70K (most popular)\n3️⃣ High-end: $75K – $120K+",
+]
+REEL_SAVE = [
+    "💰 Up to {most} less to start than other local remodelers' published prices",
+    "💰 Lower than every {city} remodeler they compared, by up to {most}",
+    "💰 Up to {most} less than what other {city}-area remodelers publish",
+]
+
+
 def money(s):
     return int(s.replace("$", "").replace(",", "").split()[0])
 
@@ -67,6 +112,7 @@ def main():
         compare = "\n".join(f"• {who}: {theirs} (New Kitchens: {ours}, {diff} to start)" for who, theirs, ours, diff in spec["table"]["rows"])
         tag = city.replace(" ", "")
         st = {k: v.format(city=city, co=co) for k, v in STYLE[n % len(STYLE)].items()}
+        reel_title, reel_hook, reel_shout = REEL[city]
         hoods = spec["landscape"][9]["where"].split(" · ", 1)[1]
         who, theirs, ours, diff = max(spec["table"]["rows"], key=lambda r: money(r[3]))
         who, scope = who.split(" · ")
@@ -143,20 +189,18 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What a Kitchen Remodel Costs in {city} (2026) 🍳 #shorts
+{reel_title}
 
 ### Caption
 
-What does a kitchen remodel cost in {city} in 2026?
-🔹 Entry-level: $25K – $35K
-🔸 Mid-range (most popular): $40K – $70K
-💎 High-end: $75K – $120K+
-💰 Up to {most} less to start than other local remodelers' published prices
+{reel_hook}
+{REEL_TIERS[n % 3]}
+{REEL_SAVE[(n + 1) % 3].format(most=most, city=city)}
 
-🛠️ Need a kitchen remodel? Give {co} a shout
+🛠️ {reel_shout}
 🔗 {url}
 
-#shorts #{tag} #KitchenRemodel #HomeRenovation #KitchenDesign
+#shorts #{tag} {hood_tags.split()[0]} #KitchenRemodel #HomeRenovation
 """
         (proj / "youtube.md").write_text(md)
         (proj / "README.md").write_text(f"""# Kitchen Remodeling Pricing Guide, {city} (2026): Local Vibe Check

@@ -81,17 +81,17 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What a Kitchen Remodel Costs in Santa Monica (2026) 🍳 #shorts
+How Much Does a Santa Monica Kitchen Remodel Cost? (2026) #shorts
 
 ### Caption
 
-What does a kitchen remodel cost in Santa Monica in 2026?
-🔹 Entry-level: $25K – $35K
-🔸 Mid-range (most popular): $40K – $70K
-💎 High-end: $75K – $120K+
-💰 Up to $73,000 less to start than other local remodelers' published prices
+Ocean Park cottage or North of Montana family home? Here's what a Santa Monica kitchen remodel costs in 2026:
+• Entry-level remodel: $25,000 – $35,000
+• Mid-range (most popular): $40,000 – $70,000
+• High-end: $75,000 – $120,000+
+💰 Up to $73,000 less than what other Santa Monica-area remodelers publish
 
-🛠️ Need a kitchen remodel? Give New Kitchens of Santa Monica a shout
+🛠️ Planning a Santa Monica kitchen remodel? Give New Kitchens of Santa Monica a shout
 🔗 https://kitchenremodelingsantamonica.com/santa-monica-kitchen-remodeling-pricing-comparison
 
-#shorts #SantaMonica #KitchenRemodel #HomeRenovation #KitchenDesign
+#shorts #SantaMonica #OceanPark #KitchenRemodel #HomeRenovation

@@ -82,17 +82,17 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What a Kitchen Remodel Costs in Thousand Oaks (2026) 🍳 #shorts
+Thousand Oaks Kitchen Remodel Prices in 2026 🍳 #shorts
 
 ### Caption
 
-What does a kitchen remodel cost in Thousand Oaks in 2026?
-🔹 Entry-level: $25K – $35K
-🔸 Mid-range (most popular): $40K – $70K
-💎 High-end: $75K – $120K+
+Dated kitchen in a '60s to '80s Thousand Oaks ranch? Here's what it costs to update it in 2026:
+1️⃣ Entry-level: from $25K
+2️⃣ Mid-range: $40K – $70K (most popular)
+3️⃣ High-end: $75K – $120K+
 💰 Up to $38,000 less to start than other local remodelers' published prices
 
-🛠️ Need a kitchen remodel? Give New Kitchens of Thousand Oaks a shout
+🛠️ Need a kitchen remodel in Thousand Oaks or Newbury Park? Give New Kitchens of Thousand Oaks a shout
 🔗 https://kitchenremodelingthousandoaks.com/thousand-oaks-kitchen-remodeling-pricing-comparison
 
-#shorts #ThousandOaks #KitchenRemodel #HomeRenovation #KitchenDesign
+#shorts #ThousandOaks #NewburyPark #KitchenRemodel #HomeRenovation
