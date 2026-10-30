@@ -831,3 +831,18 @@ export const about = {
     { t: "You own everything", d: "Your domain, website, content, Google Business Profile and ad accounts stay yours. Month-to-month after setup." },
   ],
 };
+
+// Homepage reel (video/reel.html renders it; static/video/ holds the web copy and poster)
+export const reel = {
+  title: "Your next $20,000 job is searching right now",
+  duration: 38,
+  uploaded: "2026-10-30",
+  lead: "Buyers look up window film on Google Maps, search engines and AI assistants every day, and the top 3 on the map get the calls. One commercial lead can be a $20,000+ job. We get you found, organically.",
+  alt: "Reel: one window film lead could be a $20,000+ job",
+  points: [
+    ["Google Maps", "Into the top 3 of the map pack for the films you install"],
+    ["AI search", "Named by ChatGPT, Gemini, Perplexity and Google's AI Overviews"],
+    ["Search engines", "Ranking on Google and Bing for every film type and city you serve"],
+    ["Everywhere else", "Apple Maps, Yelp, directories and manufacturer dealer locators"],
+  ],
+};

@@ -137,4 +137,18 @@
       }
     });
   });
+  // Homepage reel: swap the poster for the video on tap, with sound
+  document.querySelectorAll("[data-reel]").forEach((box) => {
+    const btn = box.querySelector(".reel-play");
+    btn.addEventListener("click", () => {
+      const v = document.createElement("video");
+      v.src = btn.dataset.src;
+      v.poster = box.querySelector("img").src;
+      v.controls = true;
+      v.playsInline = true;
+      v.setAttribute("playsinline", "");
+      box.replaceChildren(v);
+      v.play().catch(() => {});
+    });
+  });
 })();

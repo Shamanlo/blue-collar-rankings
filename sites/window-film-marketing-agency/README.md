@@ -21,6 +21,25 @@ All copy is in `scripts/content.mjs`. Styles: `static/css/site.css`. Behavior: `
 (sign up with the inbox that should receive leads). Until then the form opens the visitor's email app
 addressed to `site.email`.
 
+## Homepage reel
+
+`video/` holds the 38-second 9:16 reel shown on the homepage. It is code, not a timeline file:
+
+- `video/reel.html` is the animation. Every frame is `window.render(t)`; edit copy, timing and layout there
+  and preview by opening it in a browser and calling `render(12.5)` in the console.
+- `video/render.mjs` renders it with Playwright and ffmpeg (`--stills dir 1,5,9` for test frames,
+  `--cues cues.json` for the sound cue list, or `out.mp4` for the full silent video).
+- `video/audio.py cues.json outdir/` synthesizes the music and sound effects on those cues (numpy + scipy).
+
+```sh
+node video/render.mjs --cues /tmp/cues.json
+node video/render.mjs /tmp/reel-video.mp4 --workers 3
+python3 video/audio.py /tmp/cues.json /tmp/audio
+ffmpeg -i /tmp/reel-video.mp4 -i /tmp/audio/mix.wav -map 0:v -map 1:a -c:v libx264 -crf 19 -c:a aac -b:a 192k -t 38 -movflags +faststart reel.mp4
+```
+
+The site serves a 720p copy at `static/video/reel.mp4` with `static/video/reel-poster.jpg`.
+
 ## Build
 
 ```sh

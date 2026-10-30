@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { site, services, webDesignIndex, webDesign, specialties, home, about } from "./content.mjs";
+import { site, services, webDesignIndex, webDesign, specialties, home, about, reel } from "./content.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "public");
@@ -230,7 +230,23 @@ const addPage = (p, opts) => {
   <h1>${esc(home.h1[0])}<span class="hl">${esc(home.h1[1])}</span></h1>
   <p class="lead">${esc(home.lead)}</p>
   ${ctaButtons()}
-  <div class="hero-glass" aria-hidden="true"><div class="pane p1"></div><div class="pane p2"></div><div class="pane p3"></div><div class="pane p4"></div><div class="sunline"></div></div>
+</div></section>
+
+<section class="reel-sec" id="reel"><div class="wrap reel-grid">
+  <div class="reel-copy">
+    <p class="eyebrow">Watch · ${reel.duration} seconds</p>
+    <h2>Your next <span class="hl">$20,000 job</span> is searching right now</h2>
+    <p class="lead-sm">${esc(reel.lead)}</p>
+    <ul class="ticks">${reel.points.map(([b, d]) => `<li>${icon("check", 18)}<span><b>${esc(b)}.</b> ${esc(d)}</span></li>`).join("")}</ul>
+    <div class="hero-ctas"><a class="btn btn-primary" href="/contact/#form">Get a Free Marketing Audit ${icon("arrow", 18)}</a></div>
+  </div>
+  <div class="reel-phone">
+    <div class="phone" data-reel>
+      <img src="/video/reel-poster.jpg" width="540" height="960" alt="${esc(reel.alt)}">
+      <button class="reel-play" type="button" data-src="/video/reel.mp4" aria-label="Play the ${reel.duration}-second video with sound"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg></button>
+      <span class="reel-sound">Tap for sound</span>
+    </div>
+  </div>
 </div></section>
 
 <section class="sec sim-sec" id="try-it"><div class="wrap">
@@ -296,7 +312,8 @@ const addPage = (p, opts) => {
 
 ${faqSection(home.faq)}
 ${ctaSection()}`;
-  addPage("/", { title: home.metaTitle, desc: home.metaDesc, active: "home", body, ld: [faqLd(home.faq), { "@type": "WebSite", "@id": site.url + "/#site", url: site.url + "/", name: site.name, publisher: { "@id": site.url + "/#org" } }] });
+  const videoLd = { "@type": "VideoObject", name: reel.title, description: reel.lead, thumbnailUrl: site.url + "/video/reel-poster.jpg", contentUrl: site.url + "/video/reel.mp4", uploadDate: reel.uploaded, duration: `PT${reel.duration}S`, publisher: { "@id": site.url + "/#org" } };
+  addPage("/", { title: home.metaTitle, desc: home.metaDesc, active: "home", body, ld: [faqLd(home.faq), videoLd, { "@type": "WebSite", "@id": site.url + "/#site", url: site.url + "/", name: site.name, publisher: { "@id": site.url + "/#org" } }] });
 }
 
 function browserMock() {
