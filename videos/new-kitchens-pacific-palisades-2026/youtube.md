@@ -68,7 +68,7 @@ Prices are 2026 ranges from the New Kitchens of Pacific Palisades pricing page a
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 
-#PacificPalisades #Highlands #HuntingtonPalisades #KitchenRemodel #KitchenRemodeling #HomeRenovation #KitchenDesign #RemodelCost
+#PacificPalisades #TheHighlands #HuntingtonPalisades #KitchenRemodel #KitchenRemodeling #HomeRenovation #KitchenDesign #RemodelCost
 
 ### Tags
 

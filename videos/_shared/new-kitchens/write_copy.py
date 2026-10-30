@@ -72,7 +72,7 @@ def main():
         who, scope = who.split(" · ")
         scope = scope.replace(" (", ", ").replace(")", "")
         gap = f"Biggest gap: {who} · {scope}: {theirs}, against {ours} for the matching New Kitchens tier ({diff} to start)."
-        hood_tags = " ".join("#" + h.replace("The ", "").replace(" ", "").replace("'", "") for h in hoods.split(", ")[:2])
+        hood_tags = " ".join("#" + "".join(w[0].upper() + w[1:] for w in h.replace("'", "").split()) for h in hoods.split(", ")[:2])
         name = proj.name
         md = f"""# Local Vibe Check: Kitchen Remodeling Pricing Guide, {city} (2026)
 

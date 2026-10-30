@@ -69,7 +69,7 @@ Prices are 2026 ranges from the New Kitchens of Beverly Hills pricing page and a
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 
-#BeverlyHills #TrousdaleEstates #theFlats #KitchenRemodel #KitchenRemodeling #HomeRenovation #KitchenDesign #RemodelCost
+#BeverlyHills #TrousdaleEstates #TheFlats #KitchenRemodel #KitchenRemodeling #HomeRenovation #KitchenDesign #RemodelCost
 
 ### Tags
 

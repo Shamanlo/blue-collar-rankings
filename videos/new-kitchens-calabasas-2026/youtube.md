@@ -69,7 +69,7 @@ Prices are 2026 ranges from the New Kitchens of Calabasas pricing page and are b
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 
-#Calabasas #Oaks #CalabasasHills #KitchenRemodel #KitchenRemodeling #HomeRenovation #KitchenDesign #RemodelCost
+#Calabasas #TheOaks #CalabasasHills #KitchenRemodel #KitchenRemodeling #HomeRenovation #KitchenDesign #RemodelCost
 
 ### Tags
 
