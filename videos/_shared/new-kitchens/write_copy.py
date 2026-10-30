@@ -70,7 +70,8 @@ def main():
         hoods = spec["landscape"][9]["where"].split(" · ", 1)[1]
         who, theirs, ours, diff = max(spec["table"]["rows"], key=lambda r: money(r[3]))
         who, scope = who.split(" · ")
-        gap = f"The biggest gap: a {who[0].lower() + who[1:]} publishes {theirs} for a {scope[0].lower() + scope[1:]}; {co}'s matching tier is {ours}, {diff} to start."
+        scope = scope.replace(" (", ", ").replace(")", "")
+        gap = f"Biggest gap: {who} · {scope}: {theirs}, against {ours} for the matching New Kitchens tier ({diff} to start)."
         hood_tags = " ".join("#" + h.replace("The ", "").replace(" ", "").replace("'", "") for h in hoods.split(", ")[:2])
         name = proj.name
         md = f"""# Local Vibe Check: Kitchen Remodeling Pricing Guide, {city} (2026)
@@ -125,7 +126,7 @@ Prices published up front · free in-home assessment & written, line-item quote 
 Chapters:
 {chapters}
 
-Prices are 2026 ranges from {co}'s pricing page and are ballpark only. Comparison prices are as published on each company's own website. Get a written quote for your kitchen.
+Prices are 2026 ranges from the {co} pricing page and are ballpark only. Comparison prices are as published on each company's own website. Get a written quote for your kitchen.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 
