@@ -47,6 +47,8 @@ const ICONS = {
   grid: '<rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 12h17M12 3.5v17"/><path d="M14 6.5l4 4M14 9.5l1.5 1.5" />',
   sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/>',
   car: '<path d="M5 16.5h14M3.5 16.5v-4l2-5h13l2 5v4h-2M5.5 16.5H3.5M6.5 12h11"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/>',
+  video: '<rect x="2.5" y="6" width="13" height="12" rx="2.5"/><path d="m15.5 10.5 6-3.5v10l-6-3.5"/>',
+  social: '<path d="M20.5 11.5a8 8 0 0 1-11.9 7l-5.1 1.5 1.5-4.9a8 8 0 1 1 15.5-3.6z"/><path d="M8.5 11.5h.01M12.5 11.5h.01M16.5 11.5h.01"/>',
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   check: '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
   calendar: '<rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/>',
@@ -105,7 +107,7 @@ function footer() {
 
 function layout({ path: p, title, desc, active, body, ld = [] }) {
   const canonical = site.url + p;
-  const org = { "@type": "ProfessionalService", "@id": site.url + "/#org", name: site.name, url: site.url + "/", email: site.email, description: site.tagline, logo: site.url + "/img/icon-512.png", areaServed: "US", knowsAbout: ["Window film marketing", "Window tinting SEO", "Answer engine optimization", "Web design for window film companies"] };
+  const org = { "@type": "ProfessionalService", "@id": site.url + "/#org", name: site.name, url: site.url + "/", email: site.email, description: site.tagline, logo: site.url + "/img/icon-512.png", areaServed: "US", knowsAbout: ["Window film marketing", "Window tinting SEO", "Answer engine optimization", "Web design for window film companies", "Video editing for window film companies", "Social media management for window film companies"] };
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -183,7 +185,8 @@ function leadForm() {
       <option value="Book a call">Book a call</option>
       <option value="New website">New website or redesign</option>
       <option value="Local SEO / AI search">Local SEO / AI search</option>
-      <option value="Google Ads">Google Ads</option>
+      <option value="Video editing">Video editing</option>
+      <option value="Social media management">Social media management</option>
     </select></label>
   </div>
   <fieldset class="chips"><legend>Films you install</legend>
@@ -221,7 +224,7 @@ const addPage = (p, opts) => {
 
 // Home
 {
-  const svcCards = services.map((p) => card(groups[0], p)).join("") + `<a class="card svc-card svc-card-alt" href="/web-design/"><span class="svc-ic">${icon("layout", 24)}</span><h3>Web Design</h3><p>${esc(webDesignIndex.lead)}</p><span class="more">See web design ${icon("arrow", 16)}</span></a>`;
+  const svcCards = services.map((p) => card(groups[0], p)).join("");
   const s = home.sim;
   const simData = { questions: s.questions, signals: s.signals.map((x) => x.key) };
   const body = `
@@ -341,7 +344,7 @@ function detailPage(g, p) {
   <div class="grid-3">${p.points.items.map((x, i) => `<div class="card pt-card"><span class="step-n">${String(i + 1).padStart(2, "0")}</span><h3>${esc(x.t)}</h3><p>${esc(x.d)}</p></div>`).join("")}</div></div></section>`);
   if (p.sitemap) parts.push(`<section class="sec"><div class="wrap"><div class="sec-head"><p class="eyebrow">Site structure</p><h2>${esc(p.sitemap.h)}</h2><p>Modeled on how buyers actually shop for film: by property type, then by film, then by proof.</p></div>
   <div class="sitemap"><div class="sm-root">${icon("home", 18)} Home</div><div class="sm-cols">${p.sitemap.groups.map((x) => `<div class="card sm-col"><h3>${esc(x.t)}</h3><ul>${x.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("")}</div></div></div></section>`);
-  if (p.asks) parts.push(`<section class="sec sec-dark"><div class="wrap split split-top"><div><p class="eyebrow">Search demand</p><h2>${esc(p.asks.h)}</h2><p class="lead-sm">We build pages, profiles and reviews that answer these exact questions, so Google and AI assistants send the buyer to you.</p></div>
+  if (p.asks) parts.push(`<section class="sec sec-dark"><div class="wrap split split-top"><div><p class="eyebrow">${esc(p.asks.eyebrow || "Search demand")}</p><h2>${esc(p.asks.h)}</h2><p class="lead-sm">${esc(p.asks.sub || "We build pages, profiles and reviews that answer these exact questions, so Google and AI assistants send the buyer to you.")}</p></div>
   <ul class="asks">${p.asks.items.map((x) => `<li>${icon("spark", 18)}<span>${esc(x)}</span></li>`).join("")}</ul></div></section>`);
   if (p.jargon) parts.push(`<section class="sec"><div class="wrap"><div class="sec-head"><p class="eyebrow">We speak film</p><h2>The terms your buyers compare</h2><p>We write your pages with the specs and vocabulary buyers use when comparing installers, explained in plain English.</p></div>
   <dl class="gloss">${p.jargon.map((x) => `<div class="card"><dt>${esc(x.t)}</dt><dd>${esc(x.d)}</dd></div>`).join("")}</dl></div></section>`);
@@ -363,7 +366,7 @@ ${ctaSection()}`;
   addPage(g.base, { title: meta.metaTitle, desc: meta.metaDesc, active: g.key, body, ld: [crumbLd(trail)] });
 }
 
-indexPage(groups[0], { eyebrow: "Marketing services", title: "Marketing Services for Window Film Companies", metaTitle: "Marketing Services for Window Film Companies", metaDesc: "Local SEO, AI search optimization, Google Business Profile, Google Ads and review generation for window tinting and window film companies.", lead: "Every service is built around how residential, commercial and security film buyers search, compare and book." });
+indexPage(groups[0], { eyebrow: "Marketing services", title: "Marketing Services for Window Film Companies", metaTitle: "Marketing Services for Window Film Companies", metaDesc: "Local SEO, AI search optimization, Google Business Profile, video editing, social media management and review generation for window tinting and window film companies.", lead: "Every service is built around how residential, commercial and security film buyers search, compare and book." });
 indexPage(groups[1], webDesignIndex, `<section class="sec sec-dark"><div class="wrap split"><div><p class="eyebrow">What you get</p><h2>Every site, <span class="hl">built to book estimates</span></h2>
 <ul class="ticks">${webDesign[0].points.items.map((x) => `<li>${icon("check", 18)}<span><b>${esc(x.t)}.</b> ${esc(x.d)}</span></li>`).join("")}</ul></div>${browserMock()}</div></section>
 <section class="sec"><div class="wrap"><div class="sec-head"><p class="eyebrow">Site structure</p><h2>${esc(webDesign[0].sitemap.h)}</h2></div>

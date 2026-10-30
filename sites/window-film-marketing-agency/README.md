@@ -8,7 +8,7 @@ anti-graffiti film, solar film, frosted privacy glass, skylight tinting, home wi
 ## Pages
 
 - `/` home
-- `/services/` + 5 marketing pages (AI search, local SEO, Google Business Profile, Google Ads, reviews)
+- `/services/` + 6 marketing pages (AI search, local SEO, Google Business Profile, video editing, social media management, reviews)
 - `/web-design/` + 6 web design pages (custom sites, redesign, service-area pages, galleries, estimate forms, hosting)
 - `/specialties/` + 7 film specialty pages (residential, commercial, security, anti-graffiti, decorative, solar/skylight, auto/PPF)
 - `/about/`, `/contact/`, `/privacy/`, `404.html`, `sitemap.xml`, `robots.txt`, `llms.txt`

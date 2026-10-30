@@ -9,7 +9,7 @@ export const site = {
   // Left empty, the forms open the visitor's email app addressed to site.email instead.
   web3formsKey: "2e86fdf3-c02f-4b53-a2ba-1447b92b6347",
   year: 2026,
-  tagline: "Marketing, AI search and web design built only for window film companies.",
+  tagline: "Marketing, AI search, web design, video and social media built only for window film companies.",
 };
 
 // ---------- Marketing services ----------
@@ -137,36 +137,97 @@ export const services = [
     ],
   },
   {
-    slug: "google-ads",
-    nav: "Google Ads",
-    icon: "target",
-    card: "Search campaigns split by film type and buyer, with call tracking, so you pay for commercial and security film leads, not DIY tint kit shoppers.",
-    title: "Google Ads for Window Film Companies",
-    metaTitle: "Google Ads and PPC for Window Tinting Companies",
-    metaDesc: "Google Ads for window film installers: campaigns by film type, negative keywords that block DIY and auto searches, landing pages and tracking by booked estimate.",
-    eyebrow: "Paid search",
-    lead: "Window film ads burn money fast when \"window tint\" matches car tint, DIY film kits and tint law questions. We build campaigns that only pay for the buyers you want.",
+    slug: "video-editing",
+    nav: "Video Editing",
+    icon: "video",
+    card: "Install videos, before-and-afters, reels and motion graphics, edited from your job-site footage and ready to post.",
+    title: "Video Editing for Window Film Companies",
+    metaTitle: "Video Editing for Window Tinting and Film Companies",
+    metaDesc: "Video editing for window film installers: before-and-after reels, install time-lapses, security film demos, testimonials and motion graphics, edited from your job-site footage.",
+    eyebrow: "Video editing",
+    lead: "Window film is hard to sell in a photo and easy to sell in a video. Send us the raw clips from the job site and we turn them into reels, before-and-afters and explainers that show the result.",
     intro: {
-      h: "\"Window tint\" is three different markets in one keyword",
+      h: "Film is invisible until you show what it does",
       p: [
-        "A homeowner with a hot bonus room, a facilities manager with a glass curtain wall and a teenager looking up legal tint for a Civic all type almost the same words. Broad campaigns pay for all three.",
-        "We split campaigns by film type and buyer, send each to a matching landing page, and judge everything by booked estimates instead of clicks.",
+        "A still photo of tinted glass looks like glass. A 15-second clip of the glare disappearing off a TV, a frosted conference room reveal or a security film door holding after a hit does the selling for you.",
+        "Most installers already have the footage sitting on their crew's phones. We edit it into short, captioned videos for Instagram, TikTok, YouTube, Facebook, your Google Business Profile and your website.",
       ],
     },
     points: {
-      h: "How we run it",
+      h: "What we edit",
       items: [
-        { t: "Campaigns by film type", d: "Residential, commercial solar, security and safety, anti-graffiti, decorative. Separate budgets so the high-value work isn't starved." },
-        { t: "Negative keyword lists", d: "Built from years of tint search terms: DIY, Amazon, static cling, car tint laws, tint percentage charts, jobs and careers." },
-        { t: "Dedicated landing pages", d: "One page per campaign with the film, the benefit, photos of real installs and a short estimate form." },
-        { t: "Local Services Ads where eligible", d: "We check whether your category and market qualify and set up Google Guaranteed when it makes sense." },
-        { t: "Call tracking and recordings", d: "Know which keyword produced the 6,000 sq ft office building call, and which produced a wrong number." },
-        { t: "Monthly report by booked job", d: "Spend, leads, estimates booked and jobs won, by film type. Not a 30-page click report." },
+        { t: "Reels, Shorts and TikToks", d: "Vertical edits with a hook in the first second, captions burned in for silent viewing and your brand at the end." },
+        { t: "Before-and-after reveals", d: "Glare, heat, privacy and fading, shown side by side or with a wipe across the glass." },
+        { t: "Install time-lapses", d: "A full storefront, office floor or home install compressed into seconds, with your crew's craftsmanship front and center." },
+        { t: "Security and safety film demos", d: "Break tests and attack demos cut for impact, with honest captions about what film does and doesn't do." },
+        { t: "Testimonials and case studies", d: "Short customer interviews and project stories for commercial buyers who want proof before they call." },
+        { t: "Motion graphics and explainers", d: "Animated explainers for heat rejection, VLT and how film works, plus branded intros, outros and lower thirds." },
+      ],
+    },
+    asks: {
+      eyebrow: "Video ideas",
+      h: "Videos that sell window film",
+      sub: "Each one starts with footage your crew can shoot on a phone. We handle the edit, captions and every format the platforms need.",
+      items: [
+        "Glare on the TV, then gone after the install",
+        "Heat lamp test: bare glass vs. film",
+        "Frosted conference room reveal",
+        "Security film break test on a storefront door",
+        "Tagged anti-graffiti film peeled off clean glass",
+        "Time-lapse of a full office floor install",
       ],
     },
     faq: [
-      { q: "What should we budget?", a: "It depends on the market and the film types. We'll give you a number after looking at search volume and cost per click in your service area. We'd rather start focused on your best-margin film than spread thin." },
-      { q: "Do you mark up ad spend?", a: "No. Ad spend is billed by Google to your card. Our management fee is separate and flat." },
+      { q: "Do we need a professional camera?", a: "No. A recent phone, held steady, is plenty. We send your crew a short shot list so every job comes back with usable before, during and after clips." },
+      { q: "How do we send you footage?", a: "Drop clips in a shared folder from the job site. We edit, caption and export every size you need and send them back ready to post, or post them for you with social media management." },
+      { q: "Can you make motion graphics like the reel on our homepage?", a: "Yes. Explainers, animated stats, branded intros and full motion pieces like the reel on our homepage are part of what we do." },
+    ],
+  },
+  {
+    slug: "social-media-management",
+    nav: "Social Media Management",
+    icon: "social",
+    card: "Instagram, Facebook, TikTok, LinkedIn and YouTube run for you: posts, captions, replies and DMs turned into estimate requests.",
+    title: "Social Media Management for Window Film Companies",
+    metaTitle: "Social Media Management for Window Tinting Companies",
+    metaDesc: "Social media management for window film installers: a steady posting schedule, captions, comment and DM replies, and reporting across Instagram, Facebook, TikTok, LinkedIn and YouTube.",
+    eyebrow: "Social media",
+    lead: "Buyers check your social before they call. Homeowners scroll your Instagram, designers save frosted glass ideas on Pinterest and facilities managers look you up on LinkedIn. We keep every profile active, on-brand and answering.",
+    intro: {
+      h: "A quiet feed makes buyers wonder",
+      p: [
+        "When a profile's last post is from two summers ago, buyers wonder if you're still in business. When it shows last week's installs, real reviews and quick replies, they call.",
+        "We plan, edit, post and reply for you, using your real projects instead of stock photos, so your feed works as proof of the work you do.",
+      ],
+    },
+    points: {
+      h: "What we manage",
+      items: [
+        { t: "Content calendar", d: "A month of posts planned around your films, your season and your best jobs: installs, before-and-afters, tips and reviews." },
+        { t: "Posting on every platform", d: "Instagram, Facebook, TikTok, LinkedIn, YouTube Shorts and Pinterest, each in the right format." },
+        { t: "Captions that sell", d: "Plain-English captions that name the film, the problem it solved and the city, with a clear way to request an estimate." },
+        { t: "Comments and DMs", d: "Fast, friendly replies, with price and availability questions passed to you as estimate requests." },
+        { t: "Seasonal pushes", d: "Summer heat, winter glare, holiday break-in season and new-construction privacy, timed to your climate." },
+        { t: "Monthly report", d: "Reach, followers, messages and estimate requests from social in one short report." },
+      ],
+    },
+    asks: {
+      eyebrow: "Platforms",
+      h: "Where window film gets discovered",
+      sub: "Each platform reaches a different buyer, so each one gets its own kind of post.",
+      items: [
+        "Instagram and Facebook: homeowners saving before-and-afters",
+        "TikTok and YouTube Shorts: install videos and heat tests",
+        "Pinterest: designers collecting frosted and decorative glass ideas",
+        "LinkedIn: property managers vetting commercial installers",
+        "Nextdoor and local groups: neighbors asking who to call",
+        "Google Business Profile posts: fresh activity buyers and AI both see",
+      ],
+    },
+    faq: [
+      { q: "Which platforms should we be on?", a: "Usually Instagram and Facebook for residential work, LinkedIn for commercial, and TikTok or YouTube Shorts if your crew will film installs. We recommend a short list based on the films you sell instead of spreading thin." },
+      { q: "Who creates the content?", a: "Your crew shoots quick clips and photos on the job, and we turn them into finished posts and videos. On a quiet week we fall back on tips, reviews and past projects." },
+      { q: "Do we get to approve posts?", a: "Yes. You see the month's calendar before anything goes out and can change whatever you like." },
     ],
   },
   {
@@ -442,7 +503,7 @@ export const specialties = [
         { t: "Objection answers", d: "Neutral and spectrally selective films that keep the view, dual-pane and low-e glass compatibility, manufacturer warranty that covers seal failure, HOA approval." },
         { t: "Seasonal campaigns", d: "Heat in summer, glare in winter when the sun sits low, privacy for new construction." },
         { t: "Neighborhood proof", d: "Project photos and reviews from the subdivisions you work in most." },
-        { t: "Showroom and sample visits", d: "Pages and ads that book in-home film sample consultations, not just phone quotes." },
+        { t: "Showroom and sample visits", d: "Pages, posts and videos that book in-home film sample consultations, not just phone quotes." },
         { t: "Referral and builder programs", d: "Landing pages for realtors, builders and interior designers who send you work." },
       ],
     },
@@ -541,8 +602,8 @@ export const specialties = [
         { t: "Pages by threat and property", d: "Retail and storefront break-ins, schools and churches, homes and glass doors, government and healthcare, hurricane and storm-prone areas." },
         { t: "Honest explanations", d: "Delay versus prevent, why attachment systems matter, why thickness alone isn't the spec. This builds trust and filters bad-fit leads." },
         { t: "Certifications and dealer status", d: "Armorcoat, 3M Safety & Security, LLumar and other certified dealer credentials front and center." },
-        { t: "Demo video content", d: "Break tests and attack demos are some of the most shared content in the industry. We help you use them on your site and YouTube." },
-        { t: "Urgent-response campaigns", d: "Ads and landing pages that capture searches after local break-ins, with fast-response messaging." },
+        { t: "Demo video content", d: "Break tests and attack demos are some of the most shared content in the industry. We edit them for your site, YouTube and social." },
+        { t: "Urgent-response content", d: "Pages, Google posts and social videos ready to go when local break-ins spike, with fast-response messaging." },
         { t: "School and municipal outreach", d: "Content and pages built for safety committees, grants and procurement teams." },
       ],
     },
@@ -691,7 +752,7 @@ export const specialties = [
         { t: "Energy savings calculators", d: "Simple estimates of heat reduction and payback to move commercial buyers forward." },
         { t: "Rebate and incentive content", d: "Utility rebates and incentives in your area, where they exist." },
         { t: "Film comparison guides", d: "Ceramic vs. dyed vs. reflective, light vs. dark, interior vs. exterior film." },
-        { t: "Seasonal ad timing", d: "Budgets that ramp with the heat in your climate." },
+        { t: "Seasonal timing", d: "Posts, videos and pages that ramp up with the heat in your climate." },
       ],
     },
     asks: {
@@ -724,11 +785,11 @@ export const specialties = [
     metaTitle: "Marketing for Auto Tint and PPF Shops",
     metaDesc: "Marketing for automotive tint and PPF shops: rank for ceramic tint, paint protection film and ceramic coating, and keep architectural leads separate.",
     eyebrow: "Auto tint & PPF",
-    lead: "Many window film companies run an auto bay too. Auto tint and PPF searches are a different market, so we keep them on their own pages, ads and budget.",
+    lead: "Many window film companies run an auto bay too. Auto tint and PPF searches are a different market, so we keep them on their own pages and social channels.",
     intro: {
       h: "Keep auto and architectural leads from cannibalizing each other",
       p: [
-        "If \"window tinting near me\" sends a homeowner to your car tint page, or a Tesla owner to your commercial page, both bounce. We separate the two divisions on your site and in your ads so each lands where it should.",
+        "If \"window tinting near me\" sends a homeowner to your car tint page, or a Tesla owner to your commercial page, both bounce. We separate the two divisions on your site and on social so each lands where it should.",
       ],
     },
     points: {
@@ -767,16 +828,16 @@ export const specialties = [
 // ---------- Home page ----------
 export const home = {
   metaTitle: "Window Film Marketing Agency | Marketing & Web Design for Window Tinting Companies",
-  metaDesc: "Marketing, AI search optimization and web design built only for window film companies. Get found for residential, commercial, security and decorative film.",
-  badge: "Local SEO · AEO · Web Design · Google Ads",
+  metaDesc: "Local SEO, AI search, web design, video editing and social media management built only for window film companies. Get found for residential, commercial, security and decorative film.",
+  badge: "Local SEO · AEO · Web Design · Video · Social",
   h1: ["Marketing Agency for ", "Window Film Companies"],
-  lead: "We help window tinting and window film installers get found on Google, recommended by AI and booked for more residential, commercial and security film jobs. Websites included.",
-  platforms: ["Google Maps", "Google AI Overviews", "ChatGPT", "Gemini", "Perplexity", "Bing & Copilot", "Apple Maps", "Yelp"],
+  lead: "We help window tinting and window film installers get found on Google, recommended by AI and booked for more residential, commercial and security film jobs, with the websites, videos and social media to back it up.",
+  platforms: ["Google Maps", "Google AI Overviews", "ChatGPT", "Gemini", "Perplexity", "Bing & Copilot", "Apple Maps", "Yelp", "Instagram", "Facebook", "TikTok", "YouTube"],
   steps: [
     { t: "Audit", d: "We search your market the way buyers do, on Google and five AI assistants, for every film type you install, and record who shows up." },
     { t: "Fix the foundation", d: "Website, Google Business Profile, listings and schema cleaned up so every source tells the same, accurate story." },
     { t: "Build film-specific pages", d: "A page for every film and every core city, with real projects, specs and answers." },
-    { t: "Grow and track", d: "Reviews, links, ads where they make sense, and a monthly report by booked estimate." },
+    { t: "Grow and track", d: "Reviews, links, video and social, and a monthly report by booked estimate." },
   ],
   compare: {
     rows: [
@@ -785,6 +846,7 @@ export const home = {
       ["Keywords", "\"window tint\", which matches car tint and DIY kits", "Split by buyer: residential, commercial, security, decorative, auto"],
       ["Reviews", "Ask for stars", "Ask for the film and the result, which AI quotes back"],
       ["AI search", "Not on the radar", "Tested monthly across ChatGPT, Gemini, Perplexity, Claude and AI Overviews"],
+      ["Video and social", "Stock photos and generic posts", "Edited install videos and posts that show your real work"],
       ["Reporting", "Clicks and impressions", "Calls, estimate requests and booked jobs by film type"],
     ],
   },
@@ -793,8 +855,8 @@ export const home = {
     { q: "Do you work with more than one company in the same market?", a: "We limit how many competing companies we work with in a market, so we're never splitting the same searches between clients. Ask us whether your area is open." },
     { q: "Do I need a new website?", a: "Not always. If your site is fast and well structured, we'll build on it. If it's slow, thin or built on a template that fights you, a rebuild is usually cheaper than patching it." },
     { q: "What is AI search optimization (AEO)?", a: "Making your business easy for AI assistants like ChatGPT, Gemini and Google's AI Overviews to understand and recommend: accurate listings, clear service pages, structured data and specific reviews." },
-    { q: "How long until we see more leads?", a: "Fixes to your Google Business Profile and listings can help within weeks. New service pages and rankings usually build over three to six months. Ads can produce calls in days." },
-    { q: "Are we locked into a long contract?", a: "No. Month-to-month after the initial setup. You own your website, content, listings and ad accounts." },
+    { q: "How long until we see more leads?", a: "Fixes to your Google Business Profile and listings can help within weeks. New service pages and rankings usually build over three to six months, while video and social keep you in front of buyers from the first month." },
+    { q: "Are we locked into a long contract?", a: "No. Month-to-month after the initial setup. You own your website, content, listings and social accounts." },
     { q: "Do you work with manufacturer dealers?", a: "Yes. We work with certified dealers of 3M, LLumar, Solar Gard, Armorcoat, Madico, Huper Optik, XPEL and other brands, and make sure your dealer status helps your marketing instead of sending traffic to the manufacturer." },
   ],
   sim: {
@@ -822,13 +884,13 @@ export const about = {
   why: [
     "Most marketing agencies treat a window film company like any other contractor. They build a five-page site, target \"window tint\" and wonder why the leads are car owners and DIY shoppers.",
     "Window film doesn't work that way. A homeowner worried about fading, a facilities manager fighting glare and heat, a retailer hit by a smash-and-grab and an interior designer specifying frosted glass are four completely different buyers. Each needs different pages, different words and different proof.",
-    "Window Film Marketing Agency exists to market that difference. We build websites, local SEO, AI search visibility, ads and review systems for window film companies, and nothing else.",
+    "Window Film Marketing Agency exists to market that difference. We build websites, local SEO, AI search visibility, video, social media and review systems for window film companies, and nothing else.",
   ],
   values: [
     { t: "We speak film", d: "VLT, TSER, SHGC, mil thickness, attachment systems, low-e compatibility, sacrificial film. You won't have to explain your product to us." },
     { t: "Booked jobs, not vanity metrics", d: "We report on calls, estimate requests and won jobs by film type. Traffic is only useful if it books." },
     { t: "Honest claims", d: "No overpromising on security film, no fake reviews, no spammy tactics that put your Google profile at risk." },
-    { t: "You own everything", d: "Your domain, website, content, Google Business Profile and ad accounts stay yours. Month-to-month after setup." },
+    { t: "You own everything", d: "Your domain, website, content, Google Business Profile and social accounts stay yours. Month-to-month after setup." },
   ],
 };
 

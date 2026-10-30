@@ -9,5 +9,9 @@ export async function onRequest({ request, next }) {
     url.port = "";
     return Response.redirect(url.toString(), 301);
   }
+  // The agency does not offer Google Ads; send the retired page to the services list.
+  if (url.pathname.startsWith("/services/google-ads")) {
+    return Response.redirect(new URL("/services/", url).toString(), 301);
+  }
   return next();
 }
