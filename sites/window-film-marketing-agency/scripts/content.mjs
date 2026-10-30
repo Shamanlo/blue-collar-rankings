@@ -182,6 +182,11 @@ export const services = [
       { q: "How do we send you footage?", a: "Drop clips in a shared folder from the job site. We edit, caption and export every size you need and send them back ready to post, or post them for you with social media management." },
       { q: "Can you make motion graphics like the reel on our homepage?", a: "Yes. Explainers, animated stats, branded intros and full motion pieces like the reel on our homepage are part of what we do." },
     ],
+    work: {
+      h: 'Recent edit for <span class="hl">MD Window Films</span>',
+      lead: "Shot on site and edited for silent scrolling, with bold burned-in captions and the brand on screen.",
+      cta: ["Get video for your company", "/contact/#form"],
+    },
   },
   {
     slug: "social-media-management",
@@ -628,6 +633,11 @@ export const specialties = [
     faq: [
       { q: "Can you market our security film without overpromising?", a: "That's the only way we'll do it. Clear, honest claims rank well, convert better and protect you from unhappy customers." },
     ],
+    work: {
+      eyebrow: "Example",
+      h: 'Security film, <span class="hl">explained on video</span>',
+      lead: "Security film is easier to sell when buyers see and hear it explained. Here's a Short we made for MD Window Films.",
+    },
   },
   {
     slug: "anti-graffiti-film",
@@ -908,3 +918,15 @@ export const reel = {
     ["Everywhere else", "Apple Maps, Yelp, directories and manufacturer dealer locators"],
   ],
 };
+
+// Client work. Each video plays from YouTube only after a tap; the poster image is hosted here.
+export const work = [
+  {
+    youtube: "hqRM23la9k0",
+    client: "MD Window Films",
+    title: "Break-ins are rising: secure your home with security film",
+    kind: "YouTube Short · Residential security film",
+    desc: "A talking-head Short for MD Window Films: a break-in hook, security film explained on camera in front of a home's sliding glass doors, bold burned-in captions and their logo on screen.",
+    poster: "/work/md-window-films-security-film.jpg",
+  },
+];

@@ -151,4 +151,15 @@
       v.play().catch(() => {});
     });
   });
+  // Client videos: load the YouTube player only when someone taps play
+  document.querySelectorAll("[data-yt]").forEach((box) => {
+    box.querySelector(".reel-play").addEventListener("click", () => {
+      const f = document.createElement("iframe");
+      f.src = `https://www.youtube-nocookie.com/embed/${box.dataset.yt}?autoplay=1&playsinline=1&rel=0`;
+      f.title = box.dataset.title;
+      f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      f.allowFullscreen = true;
+      box.replaceChildren(f);
+    });
+  });
 })();

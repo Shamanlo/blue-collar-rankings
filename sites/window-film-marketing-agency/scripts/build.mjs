@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { site, services, webDesignIndex, webDesign, specialties, home, about, reel } from "./content.mjs";
+import { site, services, webDesignIndex, webDesign, specialties, home, about, reel, work } from "./content.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "public");
@@ -198,6 +198,29 @@ function leadForm() {
 </form>`;
 }
 
+// Client work: a phone-framed YouTube Short that loads the player only on tap
+function ytPhone(w) {
+  return `<div class="reel-phone"><div class="phone" data-yt="${w.youtube}" data-title="${esc(w.client + ": " + w.title)}">
+      <img src="${w.poster}" width="540" height="960" alt="${esc(w.client + " video: " + w.title)}" loading="lazy">
+      <button class="reel-play" type="button" aria-label="Play the ${esc(w.client)} video"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg></button>
+      <span class="reel-sound">YouTube Short</span>
+    </div></div>`;
+}
+function workSection(head = {}) {
+  const [w, ...more] = work;
+  const [ctaT, ctaU] = head.cta || ["See video editing", "/services/video-editing/"];
+  return `<section class="sec${head.cls === undefined ? " sec-tint" : head.cls}" id="work"><div class="wrap split">
+  <div>
+    <p class="eyebrow">${esc(head.eyebrow || "Client work")}</p>
+    <h2>${head.h || 'Short-form video for <span class="hl">window film installers</span>'}</h2>
+    <p class="lead-sm">${esc(head.lead || "We edit Shorts, Reels and TikToks for film companies from footage their teams shoot on the job. Here's one we made for MD Window Films.")}</p>
+    <div class="card work-card"><p class="work-kind">${esc(w.kind)}</p><h3>${esc(w.client)}</h3><p>${esc(w.desc)}</p></div>
+    <div class="hero-ctas"><a class="btn btn-primary" href="${ctaU}">${esc(ctaT)} ${icon("arrow", 18)}</a><a class="btn btn-ghost" href="https://www.youtube.com/shorts/${w.youtube}" target="_blank" rel="noopener">Watch on YouTube</a></div>
+  </div>
+  ${ytPhone(w)}
+</div>${more.length ? `<div class="wrap work-grid">${more.map(ytPhone).join("")}</div>` : ""}</section>`;
+}
+
 function ctaSection(h = ["Are buyers finding you, ", "or your competitors?"]) {
   return `<section class="sec cta-dark" id="form"><div class="wrap cta-grid">
   <div class="cta-copy">
@@ -283,6 +306,8 @@ const addPage = (p, opts) => {
   <div class="center-btn"><a class="btn btn-primary" href="/contact/#form">Get a Free Marketing Audit ${icon("arrow", 18)}</a></div>
 </div></section>
 
+${workSection()}
+
 <section class="sec sec-dark" id="web-design"><div class="wrap split">
   <div>
     <p class="eyebrow">Web design</p>
@@ -342,6 +367,7 @@ function detailPage(g, p) {
   parts.push(`<section class="sec"><div class="wrap split split-top"><div><p class="eyebrow">Why it matters</p><h2>${esc(p.intro.h)}</h2></div><div class="prose">${p.intro.p.map((x) => `<p>${esc(x)}</p>`).join("")}</div></div></section>`);
   parts.push(`<section class="sec sec-tint"><div class="wrap"><div class="sec-head"><p class="eyebrow">${esc(p.nav)}</p><h2>${esc(p.points.h)}</h2></div>
   <div class="grid-3">${p.points.items.map((x, i) => `<div class="card pt-card"><span class="step-n">${String(i + 1).padStart(2, "0")}</span><h3>${esc(x.t)}</h3><p>${esc(x.d)}</p></div>`).join("")}</div></div></section>`);
+  if (p.work) parts.push(workSection({ cls: "", ...p.work }));
   if (p.sitemap) parts.push(`<section class="sec"><div class="wrap"><div class="sec-head"><p class="eyebrow">Site structure</p><h2>${esc(p.sitemap.h)}</h2><p>Modeled on how buyers actually shop for film: by property type, then by film, then by proof.</p></div>
   <div class="sitemap"><div class="sm-root">${icon("home", 18)} Home</div><div class="sm-cols">${p.sitemap.groups.map((x) => `<div class="card sm-col"><h3>${esc(x.t)}</h3><ul>${x.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("")}</div></div></div></section>`);
   if (p.asks) parts.push(`<section class="sec sec-dark"><div class="wrap split split-top"><div><p class="eyebrow">${esc(p.asks.eyebrow || "Search demand")}</p><h2>${esc(p.asks.h)}</h2><p class="lead-sm">${esc(p.asks.sub || "We build pages, profiles and reviews that answer these exact questions, so Google and AI assistants send the buyer to you.")}</p></div>
@@ -407,6 +433,7 @@ ${ctaSection(["Tell us about ", "your film company"])}`;
 <section class="sec"><div class="wrap narrow prose">
 <p>${esc(site.name)} ("we") runs ${site.domain}. This page explains what we collect and why.</p>
 <h2>What we collect</h2><p>When you send a form, we receive the details you enter (name, company, email, phone, website and message). Forms are delivered to our inbox by Web3Forms. We use this information only to respond to you and prepare your audit or proposal.</p>
+<h2>Videos</h2><p>Client videos on this site come from YouTube and only load when you press play. After that, YouTube's privacy policy applies to that video.</p>
 <h2>Analytics</h2><p>We may use privacy-friendly, cookie-free analytics (Cloudflare Web Analytics) to count visits. It does not track you across sites.</p>
 <h2>Sharing</h2><p>We don't sell your information. We share it only with services that help us run this site and deliver our work, or when required by law.</p>
 <h2>Your choices</h2><p>Email <a href="mailto:${site.email}">${site.email}</a> to see, correct or delete what we have about you.</p>
