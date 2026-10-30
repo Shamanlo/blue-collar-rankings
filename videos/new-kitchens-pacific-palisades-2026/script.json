@@ -1,9 +1,6 @@
 {
- "tts": "gemini",
- "gemini": {
-  "model": "gemini-3.8-flash-tts",
-  "voice": "Charon"
- },
+ "voice": "en-US-AndrewNeural",
+ "rate": "+6%",
  "assetsDir": "../_shared/new-kitchens",
  "header": "Pacific Palisades, CA · Kitchen Remodel Prices · 2026",
  "source": "Prices from kitchenremodelingpacificpalisades.com, Oct 2026. Comparison prices as published on each company's own website. Ballpark only.",

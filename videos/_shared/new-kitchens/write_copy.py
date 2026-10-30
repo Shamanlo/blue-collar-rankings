@@ -22,13 +22,41 @@ CHAPTERS = {
 }
 
 
+# Each city's opening, from the local paragraph on its own pricing page (rewritten in third person).
+OPENING = {
+    "Beverly Hills": "Beverly Hills kitchens are often large, and remodel quotes here regularly run well into six figures. So what does a kitchen remodel actually cost in Beverly Hills in 2026? This guide uses real published prices, from a condo kitchen refresh south of Wilshire to a fully custom kitchen in the Flats or Trousdale Estates.",
+    "Calabasas": "Thinking about remodeling your kitchen in Calabasas? A lot of homes in The Oaks and Calabasas Hills were built in the 1980s and '90s with builder-grade kitchens, and most of them don't need to be gutted to the studs. Here's what a Calabasas kitchen remodel costs in 2026, with real published prices.",
+    "Culver City": "Culver City's bungalows and post-war homes in Sunkist Park, Carlson Park and Fox Hills tend to have compact kitchens, and a smaller footprint means fewer cabinets and less countertop. Here's what a kitchen remodel costs in Culver City in 2026.",
+    "Los Angeles": "Kitchen remodel quotes in Los Angeles vary as widely as the kitchens themselves, from a 1920s Spanish-style duplex in Los Feliz to a mid-century ranch in Sherman Oaks. This 2026 pricing guide puts real, published numbers on it.",
+    "Malibu": "Remodeling a kitchen in Malibu means planning for salt air and humidity. From Point Dume to Big Rock, here's what a Malibu kitchen remodel costs in 2026, with cabinets, hardware and finishes made for the coast built into the price.",
+    "Pacific Palisades": "Whether you're rebuilding after the January 2025 fire or updating a home in The Highlands or Huntington Palisades that came through it, you deserve a straight answer on cost before you commit. Here's what a kitchen remodel costs in Pacific Palisades in 2026.",
+    "Santa Clarita": "Most homes in Valencia, Saugus, Newhall and Canyon Country were built between the 1970s and 2000s with practical, standard kitchen layouts, and keeping that layout while upgrading everything else is the fastest way to a new kitchen. Here's what a Santa Clarita kitchen remodel costs in 2026.",
+    "Santa Monica": "From Ocean Park cottages and Sunset Park bungalows to larger family homes North of Montana, Santa Monica kitchens come in every size. Here's a clear 2026 starting number for every kind of kitchen remodel, before you book a single appointment.",
+    "Thousand Oaks": "Many homes in Thousand Oaks and Newbury Park are 1960s to 1980s ranch and tract houses with solid bones and dated kitchens. Here's what it costs to update one in 2026, and why most Conejo Valley kitchen projects don't need a single wall moved.",
+    "Westlake": "Westlake Village homes around the lake and in Three Springs often have kitchens from the 1970s and '80s, while North Ranch homes tend to be larger. Here's what a Westlake kitchen remodel costs in 2026, from a cabinet-and-counter refresh to a full custom kitchen.",
+}
+# Rotating wording so the ten descriptions don't read as copies of each other.
+STYLE = [
+    {"tiers": "2026 kitchen remodel prices in {city}:", "compare": "How {city} prices compare (other remodelers' own published prices, Oct 2026):",
+     "shout": "🛠️ Need a kitchen remodel in {city}? Give {co} a shout."},
+    {"tiers": "What a {city} kitchen remodel costs in 2026:", "compare": "Side by side with other {city}-area remodelers (prices from their own websites, Oct 2026):",
+     "shout": "🛠️ Ready to start your {city} kitchen? Give {co} a shout for a free written quote."},
+    {"tiers": "The three {city} price tiers (2026):", "compare": "{city} price comparison (published prices, Oct 2026):",
+     "shout": "🛠️ Planning a kitchen remodel? Give {co} a shout."},
+]
+
+
+def money(s):
+    return int(s.replace("$", "").replace(",", "").split()[0])
+
+
 def mmss(t):
     t = int(round(t))
     return f"{t // 60}:{t % 60:02d}"
 
 
 def main():
-    for proj in sorted(VIDEOS.glob("new-kitchens-*-2026")):
+    for n, proj in enumerate(sorted(VIDEOS.glob("new-kitchens-*-2026"))):
         spec = json.loads((proj / "script.json").read_text())
         timings = json.loads((proj / "out" / "timings.json").read_text())
         city, co, url = spec["landscape"][0]["kicker"].replace(", California", ""), spec["company"], spec["pageUrl"]
@@ -38,6 +66,12 @@ def main():
         chapters = "\n".join(f"{mmss(s['start'])} {CHAPTERS[s['id']].format(city=city, co=co)}" for s in timings["landscape"])
         compare = "\n".join(f"• {who}: {theirs} (New Kitchens: {ours}, {diff} to start)" for who, theirs, ours, diff in spec["table"]["rows"])
         tag = city.replace(" ", "")
+        st = {k: v.format(city=city, co=co) for k, v in STYLE[n % len(STYLE)].items()}
+        hoods = spec["landscape"][9]["where"].split(" · ", 1)[1]
+        who, theirs, ours, diff = max(spec["table"]["rows"], key=lambda r: money(r[3]))
+        who, scope = who.split(" · ")
+        gap = f"The biggest gap: a {who[0].lower() + who[1:]} publishes {theirs} for a {scope[0].lower() + scope[1:]}; {co}'s matching tier is {ours}, {diff} to start."
+        hood_tags = " ".join("#" + h.replace("The ", "").replace(" ", "").replace("'", "") for h in hoods.split(", ")[:2])
         name = proj.name
         md = f"""# Local Vibe Check: Kitchen Remodeling Pricing Guide, {city} (2026)
 
@@ -56,19 +90,21 @@ Shorter alternatives:
 
 ### Description
 
-How much does a kitchen remodel cost in {city}, California in 2026? Most remodelers won't give you a number until they've been in your house for an hour. This pricing guide uses real published prices: the three price tiers, what each one includes, how they compare with other local remodelers, permit costs, and the choices that move your budget.
+{OPENING[city]}
+
+In this video: the three price tiers and what each includes, how {city} prices compare with other local remodelers, permit costs, what moves your budget, and optional upgrades.
 
 🔗 {city} kitchen remodeling pricing comparison:
 {url}
 
-2026 kitchen remodel prices in {city}:
+{st['tiers']}
 • Entry-level remodel: $25,000 – $35,000 (keep your layout; refaced or stock cabinets; laminate or quartz counters; new lighting, backsplash, paint & flooring)
 • Mid-range remodel (most popular): $40,000 – $70,000 (semi-custom cabinets; quartz, granite or butcher block; updated layout; plumbing or electrical relocations)
 • High-end remodel: $75,000 – $120,000+ (layout redesign; custom cabinetry; full-slab quartz or granite; commercial-grade appliances; custom island)
 
-How {city} prices compare (prices other remodelers publish on their own websites, Oct 2026):
+{st['compare']}
 {compare}
-Up to {most} less to start.
+{gap}
 
 Typical permit costs (2026): $500 – $1,500
 • Minor remodel, no layout changes: $400 – $700
@@ -79,7 +115,8 @@ What moves your price: layout changes, cabinets, countertops, and appliances. Tw
 
 Optional upgrades that add cost: panel-ready appliances, radiant heated floors, skylights or bigger windows, pot fillers and beverage stations, smart lighting, and walk-in pantries or custom storage.
 
-🛠️ Need a kitchen remodel in {city}? Give {co} a shout.
+{st['shout']}
+Serving {city}, including {hoods}.
 Prices published up front · free in-home assessment & written, line-item quote · one team for design, permits, demo & install · licensed & insured
 🌐 {url}
 ✉️ {email}
@@ -92,7 +129,7 @@ Prices are 2026 ranges from {co}'s pricing page and are ballpark only. Compariso
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 
-#{tag} #KitchenRemodel #KitchenRemodeling #HomeRenovation #LosAngelesHomes #KitchenDesign #RemodelCost
+#{tag} {hood_tags} #KitchenRemodel #KitchenRemodeling #HomeRenovation #KitchenDesign #RemodelCost
 
 ### Tags
 
@@ -131,7 +168,7 @@ Generated by `../_shared/new-kitchens/build_scripts.py` (script.json) and `write
 and youtube.md); photos are the site's gallery images in `../_shared/new-kitchens/`. The site lists no
 real phone number, so the video points to the website and {email}.
 
-Voice: Google Gemini TTS (`gemini-3.8-flash-tts`, voice Charon), prices read spelled out.
+Voice: Microsoft neural TTS (en-US-AndrewNeural) via edge-tts.
 
 - `youtube.md`: titles, description, chapters, tags and the reel caption
 - `out/{name}.mp4`: main video, 1920x1080, {dur['landscape']}

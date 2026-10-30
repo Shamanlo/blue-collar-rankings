@@ -213,8 +213,8 @@ def main():
         (proj / "out").mkdir(parents=True, exist_ok=True)
         landscape, reel = scenes(c)
         spec = {
-            "tts": "gemini",
-            "gemini": {"model": "gemini-3.8-flash-tts", "voice": "Charon"},
+            # Microsoft neural voice: Gemini's free tier caps TTS at 100 requests a day.
+            "voice": "en-US-AndrewNeural", "rate": "+6%",
             "assetsDir": "../_shared/new-kitchens",
             "header": f"{c['city']}, CA · Kitchen Remodel Prices · 2026",
             "source": f"Prices from {c['domain']}, Oct 2026. Comparison prices as published on each company's own website. Ballpark only.",
