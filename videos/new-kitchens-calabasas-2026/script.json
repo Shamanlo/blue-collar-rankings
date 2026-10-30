@@ -1,0 +1,529 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "assetsDir": "../_shared/new-kitchens",
+ "header": "Calabasas, CA · Kitchen Remodel Prices · 2026",
+ "source": "Prices from kitchenremodelingcalabasas.com, Oct 2026. Comparison prices as published on each company's own website. Ballpark only.",
+ "sourceKinds": [
+  "ranges",
+  "price",
+  "table"
+ ],
+ "company": "New Kitchens of Calabasas",
+ "pageUrl": "https://kitchenremodelingcalabasas.com/calabasas-kitchen-remodeling-pricing-comparison",
+ "table": {
+  "corner": "Published by",
+  "highlight": 1,
+  "cols": [
+   "Their published price",
+   "New Kitchens",
+   "Difference"
+  ],
+  "rows": [
+   [
+    "Calabasas custom builder & remodeler · Kitchen remodel",
+    "Starting at $40,000",
+    "$25,000–$35,000",
+    "$15,000 less"
+   ],
+   [
+    "Ventura County remodeling contractor · Cosmetic kitchen refresh",
+    "$40,000–$55,000",
+    "$25,000–$35,000",
+    "$15,000 less"
+   ],
+   [
+    "Los Angeles remodeling contractor · Common-scope kitchen remodel",
+    "$75K–$150K",
+    "$40,000–$70,000",
+    "$35,000 less"
+   ],
+   [
+    "Valley general contractor · Mid-range full remodel",
+    "$72,000–$144,000",
+    "$40,000–$70,000",
+    "$32,000 less"
+   ],
+   [
+    "Valley general contractor · High-end / custom kitchen",
+    "$144,000–$204,000",
+    "$75,000–$120,000+",
+    "$69,000 less"
+   ]
+  ]
+ },
+ "thumbs": {
+  "image": "kitchen-01.jpg",
+  "landscapePos": "40% 50%",
+  "reelPos": "40% 50%",
+  "lines": [
+   "Kitchen",
+   "Prices"
+  ],
+  "sub": "Calabasas, CA",
+  "tag": "$25K – $120K+",
+  "year": "2026",
+  "subPx": 66,
+  "reelSubPx": 86,
+  "stamp": [
+   "3",
+   [
+    "PRICE",
+    "TIERS"
+   ]
+  ],
+  "reelStamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "kitchen-01.jpg",
+   "imgPos": "45% 50%",
+   "kicker": "Calabasas, California",
+   "titlePx": 128,
+   "title": [
+    "Kitchen Remodel",
+    "Pricing Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "Entry-level",
+    "Mid-range",
+    "High-end",
+    "Permits",
+    "Upgrades"
+   ],
+   "say": "How much does a kitchen remodel cost in Calabasas in 2026? Most remodelers won't give you a number until they've been in your house for an hour. Here's the pricing guide, with real published prices."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Tiers",
+   "title": "What a Calabasas kitchen remodel costs",
+   "sub": "2026 ranges · most projects land in one of three",
+   "max": 125,
+   "ticks": [
+    0,
+    40,
+    80,
+    120
+   ],
+   "rows": [
+    {
+     "name": "Entry-level",
+     "note": "Quick refresh",
+     "lo": 25,
+     "hi": 35,
+     "cue": "entry-level"
+    },
+    {
+     "name": "Mid-range",
+     "note": "Most popular",
+     "lo": 40,
+     "hi": 70,
+     "cue": "mid-range"
+    },
+    {
+     "name": "High-end",
+     "note": "Custom, chef-grade",
+     "lo": 75,
+     "hi": 120,
+     "plus": true,
+     "cue": "high-end"
+    }
+   ],
+   "say": "Most Calabasas kitchen projects land in one of three ranges. An entry-level remodel starts at about $25,000 to $35,000. A mid-range remodel, the most popular, typically runs $40,000 to $70,000. And a high-end remodel runs $75,000 to $120,000 and up.",
+   "speak": "Most Calabasas kitchen projects land in one of three ranges. An entry-level remodel starts at about twenty-five thousand dollars to thirty-five thousand dollars. A mid-range remodel, the most popular, typically runs forty thousand dollars to seventy thousand dollars. And a high-end remodel runs seventy-five thousand dollars to one hundred twenty thousand dollars and up."
+  },
+  {
+   "id": "entry",
+   "kind": "price",
+   "label": "Tier 1 of 3",
+   "image": "kitchen-11.jpg",
+   "kicker": "Tier 1 of 3",
+   "name": "Entry-level remodel",
+   "lo": 25,
+   "hi": 35,
+   "priceCue": "$25,000",
+   "desc": "Quick refreshes, rentals & first-time buyers.",
+   "bullets": [
+    {
+     "t": "Keep the existing layout & appliances",
+     "cue": "keep"
+    },
+    {
+     "t": "Cabinet refacing or new stock cabinets",
+     "cue": "refacing"
+    },
+    {
+     "t": "Laminate or quartz countertops",
+     "cue": "laminate"
+    },
+    {
+     "t": "New lighting, backsplash, paint & flooring",
+     "cue": "lighting"
+    }
+   ],
+   "say": "An entry-level remodel, at $25,000 to $35,000, is for quick refreshes, rentals, and first-time buyers. You keep the existing layout and appliances, with cabinet refacing or new stock cabinets, laminate or quartz countertops, and new lighting, backsplash, paint, and flooring.",
+   "speak": "An entry-level remodel, at twenty-five thousand dollars to thirty-five thousand dollars, is for quick refreshes, rentals, and first-time buyers. You keep the existing layout and appliances, with cabinet refacing or new stock cabinets, laminate or quartz countertops, and new lighting, backsplash, paint, and flooring."
+  },
+  {
+   "id": "mid",
+   "kind": "price",
+   "label": "Tier 2 of 3",
+   "image": "kitchen-08.jpg",
+   "kicker": "Tier 2 of 3 · Most popular",
+   "name": "Mid-range remodel",
+   "lo": 40,
+   "hi": 70,
+   "priceCue": "$40,000",
+   "desc": "The full upgrade most Calabasas families choose.",
+   "bullets": [
+    {
+     "t": "New semi-custom cabinets",
+     "cue": "semi-custom"
+    },
+    {
+     "t": "Quartz, granite or butcher block counters",
+     "cue": "quartz"
+    },
+    {
+     "t": "Updated layout, sink, faucet & tile backsplash",
+     "cue": "updated"
+    },
+    {
+     "t": "Plumbing or electrical relocations",
+     "cue": "plumbing"
+    }
+   ],
+   "say": "A mid-range remodel, $40,000 to $70,000, is the full upgrade most Calabasas families choose: new semi-custom cabinets, quartz, granite, or butcher block counters, an updated layout with a new sink, faucet, and tile backsplash, and plumbing or electrical relocations.",
+   "speak": "A mid-range remodel, forty thousand dollars to seventy thousand dollars, is the full upgrade most Calabasas families choose: new semi-custom cabinets, quartz, granite, or butcher block counters, an updated layout with a new sink, faucet, and tile backsplash, and plumbing or electrical relocations."
+  },
+  {
+   "id": "high",
+   "kind": "price",
+   "label": "Tier 3 of 3",
+   "image": "kitchen-03.jpg",
+   "kicker": "Tier 3 of 3",
+   "name": "High-end remodel",
+   "lo": 75,
+   "hi": 120,
+   "plus": true,
+   "priceCue": "$75,000",
+   "desc": "Custom, chef-grade kitchens.",
+   "bullets": [
+    {
+     "t": "Layout redesign & wall reconfiguration",
+     "cue": "layout"
+    },
+    {
+     "t": "Custom cabinetry with built-in organizers",
+     "cue": "custom"
+    },
+    {
+     "t": "Full-slab quartz or granite",
+     "cue": "full-slab"
+    },
+    {
+     "t": "Commercial-grade appliances & custom island",
+     "cue": "commercial-grade"
+    }
+   ],
+   "say": "A high-end remodel, $75,000 to $120,000 and up, is a custom, chef-grade kitchen: a layout redesign and wall reconfiguration, custom cabinetry with built-in organizers, full-slab quartz or granite, commercial-grade appliances, and a custom island or built-in seating.",
+   "speak": "A high-end remodel, seventy-five thousand dollars to one hundred twenty thousand dollars and up, is a custom, chef-grade kitchen: a layout redesign and wall reconfiguration, custom cabinetry with built-in organizers, full-slab quartz or granite, commercial-grade appliances, and a custom island or built-in seating."
+  },
+  {
+   "id": "compare",
+   "kind": "table",
+   "label": "Price Comparison",
+   "title": "How Calabasas prices compare",
+   "callout": "Up to <b>$69,000 less</b> to start",
+   "calloutCue": "$69,000",
+   "say": "How do those prices compare? New Kitchens of Calabasas lined up the prices other Calabasas-area remodelers publish on their own websites for the same scope of work. Their starting price came in lower every time, by as much as $69,000.",
+   "speak": "How do those prices compare? New Kitchens of Calabasas lined up the prices other Calabasas-area remodelers publish on their own websites for the same scope of work. Their starting price came in lower every time, by as much as sixty-nine thousand dollars."
+  },
+  {
+   "id": "permits",
+   "kind": "stats",
+   "label": "Permit Costs",
+   "source": true,
+   "title": "Typical permit costs (2026)",
+   "tvPx": 80,
+   "tiles": [
+    {
+     "v": "$400–$700",
+     "n": "Minor remodel",
+     "s": "No layout changes",
+     "cue": "minor"
+    },
+    {
+     "v": "$800–$1,200",
+     "n": "Walls, plumbing, electrical",
+     "s": "Wall removal or system upgrades",
+     "cue": "removing"
+    },
+    {
+     "v": "$1,200–$1,500+",
+     "n": "Major remodel",
+     "s": "Structural changes or additions",
+     "cue": "major"
+    }
+   ],
+   "note": "Set by the city and based on your project's valuation. Shown as its own line on your quote.",
+   "noteCue": "set",
+   "say": "Budget for permits too. They typically run $500 to $1,500. A minor remodel with no layout changes, about $400 to $700. Removing walls or upgrading plumbing or electrical, about $800 to $1,200. And major structural changes, $1,200 to $1,500 and up. The fee is set by the city, based on your project's value.",
+   "speak": "Budget for permits too. They typically run five hundred dollars to fifteen hundred dollars. A minor remodel with no layout changes, about four hundred dollars to seven hundred dollars. Removing walls or upgrading plumbing or electrical, about eight hundred dollars to twelve hundred dollars. And major structural changes, twelve hundred dollars to fifteen hundred dollars and up. The fee is set by the city, based on your project's value."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "cols": 4,
+   "title": "What moves your price",
+   "cards": [
+    {
+     "name": "Layout changes",
+     "desc": "Keeping the sink, range & fridge in place saves the most",
+     "image": "kitchen-04.jpg",
+     "cue": "layout"
+    },
+    {
+     "name": "Cabinets",
+     "desc": "Refacing or stock vs. semi-custom or custom",
+     "image": "kitchen-09.jpg",
+     "cue": "cabinets"
+    },
+    {
+     "name": "Countertops",
+     "desc": "Laminate & quartz vs. full slab or waterfall",
+     "image": "kitchen-02.jpg",
+     "cue": "countertops"
+    },
+    {
+     "name": "Appliances",
+     "desc": "Reusing saves thousands; commercial ranges need venting",
+     "image": "kitchen-10.jpg",
+     "imgPos": "60% 50%",
+     "cue": "appliances"
+    }
+   ],
+   "say": "Two kitchens the same size can come in $30,000 apart. What makes the difference? Layout changes: keeping your sink, range, and fridge where they are is the single biggest way to save. Then cabinets, countertops, and appliances, where reusing what you have saves thousands.",
+   "speak": "Two kitchens the same size can come in thirty thousand dollars apart. What makes the difference? Layout changes: keeping your sink, range, and fridge where they are is the single biggest way to save. Then cabinets, countertops, and appliances, where reusing what you have saves thousands."
+  },
+  {
+   "id": "upgrades",
+   "kind": "list",
+   "label": "Optional Upgrades",
+   "title": "Upgrades that add cost",
+   "items": [
+    "Panel-ready or built-in appliances",
+    "Radiant heated floors",
+    "Skylights or enlarged windows",
+    "Pot fillers, second sinks & beverage stations",
+    "Smart & under-cabinet lighting",
+    "Walk-in pantries & custom storage"
+   ],
+   "note": "None are required for a beautiful kitchen. Price them separately and decide.",
+   "say": "Optional upgrades add to the total: panel-ready appliances, radiant heated floors, skylights or bigger windows, pot fillers and beverage stations, smart lighting, and walk-in pantries or custom storage. None of them are required for a beautiful kitchen."
+  },
+  {
+   "id": "shout",
+   "kind": "winner",
+   "label": "Need a Kitchen Remodel?",
+   "image": "kitchen-05.jpg",
+   "stamp": "Give them a shout",
+   "name": "New Kitchens of Calabasas",
+   "nameCue": "New",
+   "where": "Serving Calabasas · The Oaks, Calabasas Hills, Mountain View Estates",
+   "logo": "new-kitchens-icon.png",
+   "logoBg": "#1c1c1c",
+   "points": [
+    "Prices published up front",
+    "Free in-home assessment & written quote",
+    "Line-item quotes: cabinets, counters, labor & permits",
+    "One team for design, permits, demo & install",
+    "Licensed & insured"
+   ],
+   "say": "Need a kitchen remodel in Calabasas? Give New Kitchens of Calabasas a shout. They publish their prices up front, give you a free in-home assessment and a written, line-item quote, and one team handles design, permits, demolition, and installation."
+  },
+  {
+   "id": "gallery",
+   "kind": "steps",
+   "label": "Kitchen Gallery",
+   "plain": true,
+   "hold": 1.5,
+   "title": "Kitchens from their gallery",
+   "sub": "New Kitchens of Calabasas",
+   "steps": [
+    {
+     "image": "kitchen-01.jpg"
+    },
+    {
+     "image": "kitchen-06.jpg"
+    },
+    {
+     "image": "kitchen-09.jpg"
+    },
+    {
+     "image": "kitchen-03.jpg"
+    },
+    {
+     "image": "kitchen-08.jpg"
+    },
+    {
+     "image": "kitchen-05.jpg"
+    },
+    {
+     "image": "kitchen-11.jpg"
+    },
+    {
+     "image": "kitchen-02.jpg"
+    },
+    {
+     "image": "kitchen-12.jpg"
+    },
+    {
+     "image": "kitchen-07.jpg"
+    }
+   ],
+   "say": "Here are a few kitchens from their gallery."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Written Quote",
+   "image": "kitchen-07.jpg",
+   "logo": "new-kitchens-icon.png",
+   "name": "New Kitchens of Calabasas",
+   "phone": "Free written quote",
+   "phoneCue": "free",
+   "address": "info@kitchenremodelingcalabasas.com",
+   "hours": "Mon–Sat · 8 AM – 6 PM · Licensed & insured",
+   "url": "kitchenremodelingcalabasas.com/\ncalabasas-kitchen-remodeling-pricing-comparison",
+   "urlCue": "link",
+   "tip": "Get your quote, then compare it line by line.",
+   "say": "Need a kitchen remodel? Give New Kitchens of Calabasas a shout for a free written quote, at the link in the description. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "kitchen-01.jpg",
+   "imgPos": "45% 50%",
+   "kicker": "Calabasas, CA",
+   "title": [
+    "Kitchen",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Entry",
+    "Mid-range",
+    "High-end"
+   ],
+   "say": "What does a kitchen remodel cost in Calabasas in 2026?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Price Tiers",
+   "title": "Kitchen remodel prices",
+   "sub": "Calabasas · 2026",
+   "max": 125,
+   "ticks": [
+    0,
+    60,
+    120
+   ],
+   "rows": [
+    {
+     "name": "Entry-level",
+     "note": "Quick refresh",
+     "lo": 25,
+     "hi": 35,
+     "cue": "entry-level"
+    },
+    {
+     "name": "Mid-range",
+     "note": "Most popular",
+     "lo": 40,
+     "hi": 70,
+     "cue": "mid-range"
+    },
+    {
+     "name": "High-end",
+     "note": "Custom",
+     "lo": 75,
+     "hi": 120,
+     "plus": true,
+     "cue": "high-end"
+    }
+   ],
+   "say": "Entry-level: $25,000 to $35,000. Mid-range, the most popular: $40,000 to $70,000. High-end: $75,000 to $120,000 and up.",
+   "speak": "Entry-level: twenty-five thousand dollars to thirty-five thousand dollars. Mid-range, the most popular: forty thousand dollars to seventy thousand dollars. High-end: seventy-five thousand dollars to one hundred twenty thousand dollars and up."
+  },
+  {
+   "id": "r-compare",
+   "kind": "stats",
+   "label": "Price Comparison",
+   "title": "Vs. other local remodelers",
+   "tiles": [
+    {
+     "v": "$69,000",
+     "n": "less to start",
+     "s": "vs. prices other Calabasas remodelers publish",
+     "cue": "$69,000"
+    }
+   ],
+   "say": "New Kitchens of Calabasas compared their prices with what other local remodelers publish, and came in lower every time, by as much as $69,000.",
+   "speak": "New Kitchens of Calabasas compared their prices with what other local remodelers publish, and came in lower every time, by as much as sixty-nine thousand dollars."
+  },
+  {
+   "id": "r-shout",
+   "kind": "winner",
+   "label": "Need a Kitchen Remodel?",
+   "image": "kitchen-05.jpg",
+   "stamp": "Give them a shout",
+   "name": "New Kitchens of Calabasas",
+   "nameCue": "New",
+   "where": "Serving Calabasas",
+   "logo": "new-kitchens-icon.png",
+   "logoBg": "#1c1c1c",
+   "points": [
+    "Prices published up front",
+    "Free written quote",
+    "Licensed & insured"
+   ],
+   "say": "Need a kitchen remodel? Give New Kitchens of Calabasas a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Written Quote",
+   "image": "kitchen-07.jpg",
+   "logo": "new-kitchens-icon.png",
+   "name": "New Kitchens of Calabasas",
+   "phone": "Free quote",
+   "phoneCue": "free",
+   "address": "info@kitchenremodelingcalabasas.com",
+   "hours": "Mon–Sat · 8 AM – 6 PM",
+   "url": "Link in description",
+   "urlCue": "link",
+   "tip": "Follow Local Vibe Check for more local price guides.",
+   "say": "Get a free written quote at the link in the description. Follow for more."
+  }
+ ]
+}

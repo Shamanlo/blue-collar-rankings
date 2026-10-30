@@ -1,0 +1,7 @@
+# Keep only the deliverables and timings from out/
+out/*
+!out/timings.json
+!out/new-kitchens-pacific-palisades-2026.mp4
+!out/new-kitchens-pacific-palisades-2026-reel.mp4
+!out/thumbnail-youtube.jpg
+!out/thumbnail-reel.jpg

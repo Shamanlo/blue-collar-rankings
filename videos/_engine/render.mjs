@@ -29,7 +29,9 @@ const total = scenes.reduce((a, s) => a + s.dur, 0);
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const rel = (p) => path.relative(OUT, p).split(path.sep).join("/");
-const img = (f) => rel(path.join(PROJECT, "assets", f));
+// "assetsDir" in script.json lets several projects share one folder of photos.
+const ASSETS = path.resolve(PROJECT, spec.assetsDir || "assets");
+const img = (f) => rel(path.join(ASSETS, f));
 const engineAsset = (f) => rel(path.join(ENGINE, "assets", f));
 const money = (n) => "$" + n.toLocaleString("en-US");
 const kfmt = (n) => (n >= 1000 ? "$" + n / 1000 + "M" : "$" + n + "K");

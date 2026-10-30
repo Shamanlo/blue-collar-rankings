@@ -61,7 +61,7 @@ body { font-family: var(--body); color: var(--navy); background: var(--cream); -
 .h2 { font: 400 84px/1 var(--display); text-transform: uppercase; color: var(--navy); }
 .reel .h2 { font-size: 92px; text-align: center; }
 .kicker { font: 700 24px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--teal); margin-bottom: 22px; }
-.bar-accent { height: 9px; border-radius: 9px; background: var(--grad); width: 100%; margin: 26px 0; position: relative; }
+.bar-accent { flex: none; height: 9px; border-radius: 9px; background: var(--grad); width: 100%; margin: 26px 0; position: relative; }
 .bar-accent::after { content: ""; position: absolute; right: -24px; top: -3px; width: 15px; height: 15px; border-radius: 50%; background: var(--orange); }
 .orange { color: var(--orange); }
 .teal { color: var(--teal); }

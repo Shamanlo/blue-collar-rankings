@@ -13,7 +13,8 @@ const OUT = path.join(PROJECT, "out");
 const T = JSON.parse(readFileSync(path.join(PROJECT, "script.json"), "utf8")).thumbs;
 const rel = (p) => path.relative(OUT, p).split(path.sep).join("/");
 const A = (f) => rel(path.join(ENGINE, "assets", f));
-const P = (f) => rel(path.join(PROJECT, "assets", f));
+const SPEC = JSON.parse(readFileSync(path.join(PROJECT, "script.json"), "utf8"));
+const P = (f) => rel(path.join(path.resolve(PROJECT, SPEC.assetsDir || "assets"), f));
 const lines = T.lines.join("<br>");
 const stamp = ([big, small], bigPx, smallPx) =>
   `<div style="font:400 ${bigPx}px/1 Anton">${big}</div><div style="font:800 ${smallPx}px/1.1 Poppins;letter-spacing:.06em">${small.join("<br>")}</div>`;
