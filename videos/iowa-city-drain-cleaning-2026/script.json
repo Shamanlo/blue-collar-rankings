@@ -1,0 +1,192 @@
+{
+  "tts": "gemini",
+  "gemini": {"model": "gemini-3.8-flash-tts", "voice": "Charon"},
+  "header": "Iowa City, IA · Drain Cleaning Prices · 2026",
+  "source": "National averages from Cottrell Plumbing's drain cleaning cost guide. Ballpark only: your price depends on the job and access.",
+  "sourceKinds": ["ranges", "table"],
+  "table": {
+    "corner": "Drain", "highlight": 0,
+    "cols": ["Typical cost", "What you're paying for"],
+    "rows": [
+      ["Kitchen sink", "$100 – $250", "Grease, food & soap buildup"],
+      ["Bathroom sink / shower", "$100 – $225", "Hair & soap scum"],
+      ["Toilet", "$125 – $300", "Waste & non-flushables"],
+      ["Floor / laundry drain", "$150 – $350", "Sediment, lint & debris"],
+      ["Main sewer line", "$250 – $600+", "Roots & heavy buildup"]
+    ]
+  },
+  "thumbs": {
+    "image": "drain-snaking.jpg", "landscapePos": "50% 60%", "reelPos": "50% 65%",
+    "lines": ["Drain", "Cleaning"], "sub": "Iowa City, IA", "tag": "From $120", "year": "2026",
+    "stamp": ["$250", ["BASIC", "SNAKING"]], "reelStamp": ["2026", ["PRICE", "GUIDE"]]
+  },
+  "landscape": [
+    {
+      "id": "hook", "kind": "title", "label": "2026 Price Guide",
+      "image": "drain-snaking.jpg", "imgPos": "50% 60%",
+      "kicker": "Iowa City, Iowa", "titlePx": 128,
+      "title": ["Drain Cleaning", "Pricing Guide"], "year": "2026",
+      "chips": ["Kitchen sink", "Floor drain", "Main line", "Hydro jetting", "Camera"],
+      "speak": "How much does drain cleaning cost in Iowa City in 2026? A basic drain snaking starts at one hundred twenty dollars and runs up to about two hundred fifty dollars. Here's what moves that number, and what other drain services cost.",
+      "say": "How much does drain cleaning cost in Iowa City in 2026? A basic drain snaking starts at $120 and runs up to about $250. Here's what moves that number, and what other drain services cost."
+    },
+    {
+      "id": "local", "kind": "stats", "label": "Iowa City Price", "source": false,
+      "title": "Basic drain snaking in Iowa City",
+      "tiles": [
+        {"v": "$120", "n": "Starting price", "s": "The bottom of the range, no matter what", "cue": "$120"},
+        {"v": "$250", "n": "Basic snaking, up to", "s": "For a standard clogged drain", "cue": "$250"},
+        {"v": "Free", "n": "Upfront estimate", "s": "Know the price before work starts", "cue": "estimate"}
+      ],
+      "note": "Where you land depends on what has to be done and how easy the drain is to get to.", "noteCue": "depends",
+      "speak": "In Iowa City, basic drain snaking has a bottom price of one hundred twenty dollars, no matter what, and goes up to about two hundred fifty dollars. Where you land depends on what has to be done, and how easy the drain is to get to. Ask for a free, upfront estimate.",
+      "say": "In Iowa City, basic drain snaking has a bottom price of $120, no matter what, and goes up to about $250. Where you land depends on what has to be done, and how easy the drain is to get to. Ask for a free, upfront estimate."
+    },
+    {
+      "id": "services", "kind": "ranges", "label": "Cost by Service",
+      "title": "What other drain services cost", "sub": "National averages · per visit",
+      "dollars": true, "max": 650, "ticks": [0, 200, 400, 600],
+      "rows": [
+        {"name": "Basic snaking", "note": "Most household clogs", "lo": 100, "hi": 250, "cue": "basic"},
+        {"name": "Camera inspection", "note": "Find the problem", "lo": 150, "hi": 400, "cue": "camera"},
+        {"name": "After-hours call", "note": "Nights & holidays", "lo": 150, "hi": 500, "plus": true, "cue": "after-hours"},
+        {"name": "Motorized auger", "note": "Tougher clogs", "lo": 200, "hi": 350, "cue": "motorized"},
+        {"name": "Hydro jetting", "note": "Grease & roots", "lo": 300, "hi": 600, "cue": "hydro"}
+      ],
+      "speak": "Nationally, here's what other drain services run. Basic snaking, one hundred dollars to two hundred fifty dollars. A video camera inspection, one hundred fifty dollars to four hundred dollars. An after-hours emergency call, one hundred fifty dollars to five hundred dollars and up. A motorized auger, two hundred dollars to three hundred fifty dollars. And hydro jetting, three hundred dollars to six hundred dollars.",
+      "say": "Nationally, here's what other drain services run. Basic snaking, $100 to $250. A video camera inspection, $150 to $400. An after-hours emergency call, $150 to $500 and up. A motorized auger, $200 to $350. And hydro jetting, $300 to $600."
+    },
+    {
+      "id": "bytype", "kind": "table", "label": "Cost by Drain",
+      "title": "Cost by drain type",
+      "callout": "Main sewer line: <b>$250 – $600+</b>", "calloutCue": "main",
+      "speak": "It also depends on which drain. A kitchen sink runs about one hundred dollars to two hundred fifty dollars, a bathroom sink or shower one hundred dollars to two hundred twenty-five dollars, a toilet one hundred twenty-five dollars to three hundred dollars, a floor or laundry drain one hundred fifty dollars to three hundred fifty dollars, and a main sewer line two hundred fifty dollars to six hundred dollars and up.",
+      "say": "It also depends on which drain. A kitchen sink runs about $100 to $250, a bathroom sink or shower $100 to $225, a toilet $125 to $300, a floor or laundry drain $150 to $350, and a main sewer line $250 to $600 and up."
+    },
+    {
+      "id": "drivers", "kind": "factors", "label": "What Moves the Price", "cols": 4,
+      "title": "What moves your price",
+      "cards": [
+        {"name": "How bad the clog is", "desc": "A slow sink vs. a fully blocked main line", "image": "roots-removed.jpg", "cue": "bad"},
+        {"name": "Location & access", "desc": "Cleanouts, crawl spaces & buried lines", "image": "sewer-trench.jpg", "cue": "where"},
+        {"name": "Method", "desc": "Hand snake, cable machine, camera or jetting", "image": "drain-snaking.jpg", "imgPos": "50% 75%", "cue": "method"},
+        {"name": "After hours", "desc": "Many companies charge 1.5x to 2x", "icon": "clock", "cue": "after"}
+      ],
+      "say": "What moves your price? How bad the clog is. Where it is, and how easy it is to reach. The method it takes, from a hand snake to a cable machine, a camera, or hydro jetting. And timing: many companies charge one and a half to two times the normal rate after hours."
+    },
+    {
+      "id": "diy", "kind": "versus", "label": "DIY vs. Pro",
+      "title": "DIY vs. calling a pro", "left": "DIY", "right": "Pro",
+      "rows": [
+        {"label": "Small clogs", "a": "Plunger · $5 – $15", "b": "Standard snaking · $100 – $250", "cue": "plunger"},
+        {"label": "Deeper clogs", "a": "Hand auger · $20 – $50", "b": "Cable machine clears it back to the main", "cue": "auger"},
+        {"label": "Chemicals", "a": "$8 – $25 · hard on older pipes", "b": "Mechanical cleaning removes the clog", "cue": "chemical"},
+        {"label": "Grease & roots", "a": "Won't remove them", "b": "Hydro jetting · $300 – $600+", "cue": "grease"},
+        {"label": "Keeps coming back", "a": "Guesswork", "b": "Camera shows what's in the line", "cue": "keeps"}
+      ],
+      "speak": "Should you try it yourself first? A plunger costs five dollars to fifteen dollars, and a hand auger twenty dollars to fifty dollars. They're fine for shallow clogs. Chemical drain cleaners can open a small clog, but they're hard on older pipes. For grease and roots, you need a cable machine or hydro jetting. And if a clog keeps coming back, a camera shows what's really in the line.",
+      "say": "Should you try it yourself first? A plunger costs $5 to $15, and a hand auger $20 to $50. They're fine for shallow clogs. Chemical drain cleaners can open a small clog, but they're hard on older pipes. For grease and roots, you need a cable machine or hydro jetting. And if a clog keeps coming back, a camera shows what's really in the line."
+    },
+    {
+      "id": "signs", "kind": "list", "label": "Signs of Trouble",
+      "title": "Signs a drain needs cleaning",
+      "items": ["Water drains slowly", "Sink fills while the dishwasher runs", "Toilet or tub gurgles", "Sewer smell near a floor drain", "Water comes up during a storm", "Clog is back a week after plunging"],
+      "note": "One slow fixture usually means a local clog. Several at once usually means the main line.", "noteCue": "one",
+      "say": "Watch for the warning signs: water draining slowly, the sink filling while the dishwasher runs, a gurgling toilet or tub, a sewer smell near a floor drain, water coming up during a storm, or a clog that's back a week after you plunged it. One slow fixture usually means a local clog. Several at once usually means the main line."
+    },
+    {
+      "id": "recommend", "kind": "winner", "label": "Need Your Drain Cleaned?",
+      "image": "a1-truck.jpg", "imgPos": "35% 50%",
+      "stamp": "Give them a call", "name": "A-1 Sewer Service", "nameCue": "A-1",
+      "where": "Drain cleaning · Iowa City & the Corridor",
+      "logo": "a1-logo.jpg", "logoBg": "#fff",
+      "points": ["Main lines, kitchen sinks, floor & bathroom drains", "Open 24/7 · no after-hours fees until 8 PM, weekends too", "Free, upfront estimates", "Camera look before anyone talks about digging", "5.0★ · 40 reviews · 8+ years in Eastern Iowa"],
+      "say": "If you need your drain cleaned, give A-1 Sewer Service a call. They clear main sewer lines, kitchen sinks, floor drains, and bathroom drains around Iowa City and the Corridor. They're open 24/7, with no after-hours fees until 8 p.m., weekends included, and estimates are free and upfront."
+    },
+    {
+      "id": "reviews", "kind": "reviews", "label": "What Customers Say",
+      "title": "What customers say", "sub": "5.0 ★ · 40 Google reviews",
+      "cards": [
+        {"text": "Andy came within the hour that I called to unclog a basement floor drain. Reasonable charges for good work and an honest pleasant person.", "name": "Dennis Harnack", "meta": "Basement floor drain", "cue": "Andy"},
+        {"text": "Andy at A1 Sewer Services was the first one to do a more thorough inspection rather than just clearing out the line.", "name": "Nic Huette", "meta": "Recurring floor drain backup", "cue": "first"},
+        {"text": "Answered the phone 8am first try, flexible to when I needed, arrived within hours of first contact. More than reasonable price.", "name": "Joshua Nimmo", "meta": "Plumbing repair", "cue": "answered"}
+      ],
+      "say": "Here's what customers say: \"Andy came within the hour that I called to unclog a basement floor drain.\" \"He was the first one to do a more thorough inspection, rather than just clearing out the line.\" And: \"Answered the phone first try, and arrived within hours.\""
+    },
+    {
+      "id": "cta", "kind": "cta", "label": "Free Estimate",
+      "image": "kitchen-sink.jpg", "imgPos": "50% 50%",
+      "logo": "a1-logo.jpg",
+      "name": "A-1 Sewer Service",
+      "phone": "(319) 600-4224",
+      "address": "738 Bay Ridge Dr, Iowa City, IA 52246",
+      "hours": "Open 24/7 · No after-hours fees until 8 PM",
+      "url": "a1seweriowacity.com/drain-cleaning",
+      "urlCue": "link",
+      "tip": "Ask for Andy. Free, upfront estimates.",
+      "say": "Need your drain cleaned? Call A-1 Sewer Service at (319) 600-4224 for a free estimate, or visit the link in the description. This has been Local Vibe Check."
+    }
+  ],
+  "reel": [
+    {
+      "id": "r-hook", "kind": "title", "label": "2026 Price Guide",
+      "image": "drain-snaking.jpg", "imgPos": "50% 65%",
+      "kicker": "Iowa City, IA", "titlePx": 150,
+      "title": ["Drain", "Cleaning"], "year": "2026",
+      "chips": ["Sinks", "Floor drains", "Main line"],
+      "say": "What does drain cleaning cost in Iowa City in 2026?"
+    },
+    {
+      "id": "r-local", "kind": "stats", "label": "Iowa City Price",
+      "title": "Basic drain snaking",
+      "tiles": [
+        {"v": "$120", "n": "Starting price", "s": "No matter what", "cue": "$120"},
+        {"v": "$250", "n": "Up to", "s": "Depends on the job & access", "cue": "$250"}
+      ],
+      "speak": "Basic drain snaking starts at one hundred twenty dollars, no matter what, and runs up to about two hundred fifty dollars, depending on the job and access.",
+      "say": "Basic drain snaking starts at $120, no matter what, and runs up to about $250, depending on the job and access."
+    },
+    {
+      "id": "r-services", "kind": "ranges", "label": "Bigger Jobs",
+      "title": "Bigger jobs", "sub": "National averages",
+      "dollars": true, "max": 650, "ticks": [0, 300, 600],
+      "rows": [
+        {"name": "Camera inspection", "note": "", "lo": 150, "hi": 400, "cue": "camera"},
+        {"name": "Hydro jetting", "note": "", "lo": 300, "hi": 600, "cue": "hydro"},
+        {"name": "Main sewer line", "note": "", "lo": 250, "hi": 600, "plus": true, "cue": "main"}
+      ],
+      "speak": "Bigger jobs cost more: a camera inspection, one hundred fifty dollars to four hundred dollars. Hydro jetting, three hundred dollars to six hundred dollars. A main sewer line, two hundred fifty dollars to six hundred dollars and up.",
+      "say": "Bigger jobs cost more: a camera inspection, $150 to $400. Hydro jetting, $300 to $600. A main sewer line, $250 to $600 and up."
+    },
+    {
+      "id": "r-recommend", "kind": "winner", "label": "Need Your Drain Cleaned?",
+      "image": "a1-truck.jpg", "imgPos": "35% 50%",
+      "stamp": "Give them a call", "name": "A-1 Sewer Service", "nameCue": "A-1",
+      "where": "Iowa City & the Corridor",
+      "logo": "a1-logo.jpg", "logoBg": "#fff",
+      "points": ["Open 24/7", "No after-hours fees until 8 PM", "5.0★ · 40 reviews"],
+      "say": "Need your drain cleaned? Call A-1 Sewer Service: open 24/7, no after-hours fees until 8 p.m."
+    },
+    {
+      "id": "r-reviews", "kind": "reviews", "label": "What Customers Say",
+      "title": "Customer review",
+      "cards": [
+        {"text": "Andy came within the hour that I called to unclog a basement floor drain.", "name": "Dennis Harnack", "meta": "Basement floor drain", "cue": "Andy"}
+      ],
+      "say": "\"Andy came within the hour that I called to unclog a basement floor drain.\""
+    },
+    {
+      "id": "r-cta", "kind": "cta", "label": "Free Estimate",
+      "image": "kitchen-sink.jpg",
+      "logo": "a1-logo.jpg",
+      "name": "A-1 Sewer Service",
+      "phone": "(319) 600-4224",
+      "address": "Iowa City & the Corridor",
+      "hours": "Open 24/7",
+      "url": "Link in description",
+      "urlCue": "link",
+      "tip": "Follow Local Vibe Check for more local price guides.",
+      "say": "Call (319) 600-4224 for a free estimate. Link in the description. Follow for more."
+    }
+  ]
+}
