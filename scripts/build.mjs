@@ -28,6 +28,8 @@ const YEAR = site.year;
 
 // ---------- helpers ----------
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+// Lowercase a trade name for running text, keeping acronyms like "ADU" intact.
+const lowerTrade = (s) => s.replace(/\b(?![A-Z]{2,}\b)[A-Za-z]+/g, (w) => w.toLowerCase());
 const slugify = (s) => s.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const fmtDate = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
 const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
@@ -332,7 +334,7 @@ function statePage(s) {
   ${cards(list)}
 </div></section>
 ${band}`;
-  return layout({ title: `Best Local Contractors in ${s.state} (${YEAR}) | ${site.name}`, description: `Blue Collar Rankings for ${s.state}: ${list.map((r) => `${r.tradePlural.toLowerCase()} in ${r.city}`).join(", ")}.`, canonical: s.url, body, jsonld: [crumbsLd(trail)] });
+  return layout({ title: `Best Local Contractors in ${s.state} (${YEAR}) | ${site.name}`, description: `Blue Collar Rankings for ${s.state}: ${list.map((r) => `${lowerTrade(r.tradePlural)} in ${r.city}`).join(", ")}.`, canonical: s.url, body, jsonld: [crumbsLd(trail)] });
 }
 
 function cityPage(c) {
@@ -342,14 +344,14 @@ function cityPage(c) {
   ${crumbsHtml(trail)}
   <span class="eyebrow">${YEAR} Rankings · ${esc(c.city)}, ${c.stateAbbr}</span>
   <h1>Best of ${esc(c.city)}</h1>
-  <p class="lede">${c.rankings.length === 1 ? "Our ranking" : `Our ${words[c.rankings.length]} rankings`} for ${esc(c.city)}: ${listJoin(c.rankings.map((r) => r.tradePlural.toLowerCase()))}. Each one names a top-rated pick and the businesses that earned a Best in ${esc(c.city)} badge.</p>
+  <p class="lede">${c.rankings.length === 1 ? "Our ranking" : `Our ${words[c.rankings.length]} rankings`} for ${esc(c.city)}: ${listJoin(c.rankings.map((r) => lowerTrade(r.tradePlural)))}. Each one names a top-rated pick and the businesses that earned a Best in ${esc(c.city)} badge.</p>
 </div></section>
 <section class="section"><div class="wrap">
   ${cards(c.rankings)}
   <div class="cat-list" style="margin-top:48px">${c.rankings.map((r) => `<div class="cat"><h3><a href="${r.url}">${esc(r.tradePlural)}</a></h3><p><span class="pill-1">#1</span> <b>${esc(r.winner)}</b></p><p>Also ranked: ${esc(r.contenders.join(", "))}.</p></div>`).join("")}</div>
 </div></section>
 ${band}`;
-  return layout({ title: `Best Contractors in ${c.city}, ${c.stateAbbr} (${YEAR}) | ${site.name}`, description: `Top-rated ${c.rankings.map((r) => r.tradePlural.toLowerCase()).join(", ")} in ${c.city}, ${c.state}, ranked by Blue Collar Rankings.`, canonical: c.url, body, jsonld: [crumbsLd(trail)] });
+  return layout({ title: `Best Contractors in ${c.city}, ${c.stateAbbr} (${YEAR}) | ${site.name}`, description: `Top-rated ${c.rankings.map((r) => lowerTrade(r.tradePlural)).join(", ")} in ${c.city}, ${c.state}, ranked by Blue Collar Rankings.`, canonical: c.url, body, jsonld: [crumbsLd(trail)] });
 }
 
 function embedBlock(id, heading, text, png, alt, url) {
@@ -390,6 +392,8 @@ function rankingPage(r) {
   if (w.phone) links.push(["Phone", `<a href="${telHref(w.phone)}">${esc(w.phone)}</a>`]);
 
   const contendersWord = words[r.contenders.length] || r.contenders.length;
+  // Optional per-ranking notice (e.g. "not financial advice"), shown at the top and again after the tips.
+  const notice = r.disclaimer ? `<div class="notice" role="note"><b>Disclaimer:</b> ${esc(r.disclaimer)}</div>` : "";
   const ytUrl = `https://www.youtube.com/watch?v=${r.videoId}`;
 
   const ld = [
@@ -430,10 +434,11 @@ function rankingPage(r) {
 <section class="section">
   <div class="wrap layout">
     <article class="prose">
+      ${notice}
       <p style="font-size:1.2rem;color:var(--navy);font-weight:500">${esc(r.hook)}</p>
       <p>${esc(r.intro)} The ${contendersWord} contenders are listed alphabetically, just like in the video, and our top-rated pick gets its own write-up below.</p>
       ${r.method ? `<p>${esc(r.method)}</p>` : ""}
-      <p>If you're a homeowner in ${esc(listJoin(r.areas))}, this is a starting point before you request quotes.</p>
+      <p>If you're ${esc(r.audience || "a homeowner")} in ${esc(listJoin(r.areas))}, this is a starting point before you ${esc(r.nextStep || "request quotes")}.</p>
 
       <div class="video" id="video"><iframe src="https://www.youtube-nocookie.com/embed/${r.videoId}?rel=0" title="${esc(r.title)} | Blue Collar Rankings" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
       <p class="chapters">Jump to: ${r.chapters.map(([t, l]) => `<a href="${ytUrl}&amp;t=${toSec(t)}s" rel="noopener" target="_blank">${t} ${esc(l)}</a>`).join(" · ")}</p>
@@ -455,7 +460,7 @@ function rankingPage(r) {
       </section>
 
       <h2>The rest of the field</h2>
-      <p>Listed alphabetically, as in the video. Every company here made the cut and earned a <b>Best in ${esc(r.city)}</b> badge for ${esc(r.tradePlural.toLowerCase())}.</p>
+      <p>Listed alphabetically, as in the video. Every company here made the cut and earned a <b>Best in ${esc(r.city)}</b> badge for ${esc(lowerTrade(r.tradePlural))}.</p>
       <ul class="field">
 ${field}
       </ul>
@@ -463,8 +468,9 @@ ${field}
       <div class="tips">
         <h2>Before you hire</h2>
         <ul>${r.tips.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
-        <p style="margin:12px 0 0">Compare at least two or three companies. The right fit is usually the one that explains the job, the schedule and the price clearly before work starts.</p>
+        <p style="margin:12px 0 0">${esc(r.tipsNote || "Compare at least two or three companies. The right fit is usually the one that explains the job, the schedule and the price clearly before work starts.")}</p>
       </div>
+      ${notice}
 
       <h2 id="badges">Display the badges</h2>
       <p>Businesses in this ranking may display their badge on their website, social profiles and printed materials. Copy the embed code, or download the PNG.</p>
@@ -489,7 +495,7 @@ ${band}`;
 
   return layout({
     title: `${r.title} (${YEAR}) | ${site.name}`,
-    description: `We ranked ${r.count} ${r.tradePlural.toLowerCase()} in ${r.area}. Our #1 top-rated pick: ${r.winner}. Watch the video and read about every company that made the list.`,
+    description: `We ranked ${r.count} ${lowerTrade(r.tradePlural)} in ${r.area}. Our #1 top-rated pick: ${r.winner}. Watch the video and read about every company that made the list.`,
     canonical: r.url,
     body,
     ogImage: `https://i.ytimg.com/vi/${r.videoId}/hqdefault.jpg`,

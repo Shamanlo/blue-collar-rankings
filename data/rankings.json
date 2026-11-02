@@ -8,6 +8,172 @@
   },
   "rankings": [
     {
+      "slug": "financial-advisors",
+      "videoId": "vAAXLeaMO8s",
+      "published": "2026-10-29",
+      "trade": "Financial Advising",
+      "tradePlural": "Financial Advisors",
+      "badgeTrade": "Financial Advisors",
+      "city": "Iowa City",
+      "citySlug": "iowa-city",
+      "state": "Iowa",
+      "stateSlug": "iowa",
+      "stateAbbr": "IA",
+      "count": 5,
+      "areas": [
+        "North Liberty",
+        "Iowa City",
+        "Coralville",
+        "the rest of Johnson County"
+      ],
+      "audience": "an individual or family",
+      "nextStep": "book a consultation",
+      "disclaimer": "This ranking is for general information only. It is not financial, investment, tax or legal advice, and it is not a recommendation to buy or sell any security. Talk with a licensed professional about your own situation. All investing involves risk. No firm paid to be included or ranked.",
+      "hook": "Retirement, investing, taxes, and a plan for your family.",
+      "intro": "We looked at five financial advisors serving North Liberty and Iowa City, what each one offers and how each firm describes its work. Each firm is described from its own website, or from its Google listing where the website wasn't available. We don't show star ratings or client testimonials for financial advisors.",
+      "winner": "Charipar Wealth Management",
+      "winnerContact": "Andrew",
+      "winnerWhy": [
+        "Charipar Wealth Management is an independent firm in North Liberty founded by Andrew Charipar, a University of Iowa economics graduate who spent nearly a decade at a local registered investment advisory firm before starting his own. The firm works with clients across Iowa and virtually nationwide.",
+        "Financial and retirement planning is included in every client relationship rather than sold as an add-on. Andrew's plans use conservative numbers, with lower-than-average return assumptions and higher-than-expected inflation, and portfolios are built mainly with low-cost, broadly diversified ETFs. Their stated approach comes down to two rules: know what you own, and know why you own it.",
+        "Per its website, securities are offered through Cabin Securities, Inc., member FINRA/SIPC, and investment advisor representative services through Cabin Advisors, LLC, an SEC registered investment advisor."
+      ],
+      "contenders": [
+        "Bradley L. Shelman, Ameriprise Financial Services",
+        "Creative Planning",
+        "Edward Jones: Peggy Grimmer, CFP®",
+        "Experience Wealth, Ameriprise Financial Services"
+      ],
+      "tips": [
+        "Ask whether they act as a fiduciary for all of your accounts.",
+        "Ask exactly how they're paid: flat fee, percentage of assets, commissions, or a mix.",
+        "Look the advisor and firm up on FINRA BrokerCheck (brokercheck.finra.org)."
+      ],
+      "tipsNote": "Meet with at least two or three advisors. The right fit is usually the one who explains clearly how they're paid, what they'll do for you, and how they make decisions with your money.",
+      "chapters": [
+        [
+          "0:00",
+          "Disclaimer: not financial advice"
+        ],
+        [
+          "0:09",
+          "Why the right advisor matters"
+        ],
+        [
+          "0:19",
+          "Bradley L. Shelman, Ameriprise"
+        ],
+        [
+          "0:26",
+          "Creative Planning"
+        ],
+        [
+          "0:38",
+          "Edward Jones, Peggy Grimmer, CFP®"
+        ],
+        [
+          "0:49",
+          "Experience Wealth, Ameriprise"
+        ],
+        [
+          "0:54",
+          "#1 Top-rated pick: Charipar Wealth Management"
+        ],
+        [
+          "1:26",
+          "Their investing approach"
+        ],
+        [
+          "1:31",
+          "Before you hire anyone"
+        ],
+        [
+          "1:45",
+          "Disclaimer"
+        ]
+      ],
+      "asOf": "October 2026"
+    },
+    {
+      "slug": "adu-builders",
+      "videoId": "BbIiBJJVPO4",
+      "published": "2026-10-27",
+      "trade": "ADU Construction",
+      "tradePlural": "ADU Builders",
+      "badgeTrade": "ADU Builders",
+      "city": "Santa Monica",
+      "citySlug": "santa-monica",
+      "state": "California",
+      "stateSlug": "california",
+      "stateAbbr": "CA",
+      "count": 6,
+      "areas": [
+        "Santa Monica",
+        "Ocean Park",
+        "Sunset Park",
+        "North of Montana",
+        "the rest of the Westside"
+      ],
+      "hook": "Adding an ADU in Santa Monica means design, permits, the city, and a build that has to pass every inspection.",
+      "intro": "We looked at six ADU contractors serving Santa Monica and the Westside, what each one offers and where their experience holds up. Each company is described from its own website, or from its Google listing where a website wasn't available.",
+      "winner": "All Exclusive Construction",
+      "winnerWhy": [
+        "All Exclusive Construction is CA licensed and insured (Lic. #1120170), keeps an office on Arizona Avenue in Santa Monica, and runs every step of an ADU with one team: a free on-site feasibility review, design and engineering, City of Santa Monica permits (including Coastal Commission review when a lot needs it), construction with a dedicated project manager, and every inspection through final.",
+        "They build garage conversions, detached backyard homes, attached ADUs and junior ADUs, and their Santa Monica ADU page walks through a real garage-to-ADU conversion from demolition to the finished kitchen. One ADU client wrote that Jacob came in very close to budget and helped solve the problems inspectors threw at them. For a Santa Monica homeowner, having design, permits and the build under one licensed roof is what put them at the top of this list."
+      ],
+      "contenders": [
+        "ADU Conversion",
+        "ADU Powerhouse",
+        "M.E. Development, Inc.",
+        "SAMS Construction Group",
+        "Silver Moccasin Builders"
+      ],
+      "tips": [
+        "Ask who handles the plans, engineering and city permits, and who deals with plan check corrections.",
+        "Ask whether your lot is in Santa Monica's coastal zone, since that adds a Coastal Development Permit.",
+        "Get a written estimate that spells out what's included, from design through final inspection."
+      ],
+      "chapters": [
+        [
+          "0:00",
+          "Why an ADU has to be done right"
+        ],
+        [
+          "0:14",
+          "ADU Conversion"
+        ],
+        [
+          "0:26",
+          "ADU Powerhouse"
+        ],
+        [
+          "0:35",
+          "M.E. Development, Inc."
+        ],
+        [
+          "0:42",
+          "SAMS Construction Group"
+        ],
+        [
+          "0:50",
+          "Silver Moccasin Builders"
+        ],
+        [
+          "0:58",
+          "#1 Top-rated pick: All Exclusive Construction"
+        ],
+        [
+          "1:28",
+          "What a customer says"
+        ],
+        [
+          "1:34",
+          "Before you hire"
+        ]
+      ],
+      "asOf": "October 2026"
+    },
+    {
       "slug": "painters",
       "videoId": "v0m5e1qtVYs",
       "published": "2026-10-22",

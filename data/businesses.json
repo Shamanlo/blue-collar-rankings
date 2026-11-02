@@ -328,12 +328,16 @@
     "phone": "(818) 836-1722",
     "gbp": "https://maps.app.goo.gl/iC3B9pi65jSKe4YJ7",
     "rating": 5.0,
-    "reviews": 42,
+    "reviews": 82,
     "summary": "All Exclusive Construction, Inc. is a licensed remodeling and construction company (CA Lic. #1120170) whose Malibu page covers kitchen remodeling for coastal and hillside homes, including material selection for salt air and coordination with City of Malibu permits and, when needed, the California Coastal Commission. The company also does bathroom remodeling, home additions, ADUs and commercial remodeling, and lists offices in Santa Monica and Westlake Village. Its Malibu page gives kitchen price tiers from $45k for a basic remodel to $75k-$150k+ for a luxury kitchen and offers free in-home consultations.",
     "servicePage": {
-      "kitchen-remodelers": "https://www.allexclusivepro.com/malibu/"
+      "kitchen-remodelers": "https://www.allexclusivepro.com/malibu/",
+      "adu-builders": "https://www.allexclusivepro.com/adu-builder-santa-monica/"
     },
-    "ratingAsOf": "Oct 2026"
+    "ratingAsOf": "Oct 27, 2026",
+    "summaries": {
+      "adu-builders": "All Exclusive Construction builds ADUs in Santa Monica and across the Westside, handling feasibility, design, engineering, City of Santa Monica permits, coastal review and construction with one licensed team."
+    }
   },
   "LA Home Contractor": {
     "website": "https://www.lahomecontractor.com/",
@@ -502,5 +506,81 @@
     "gbp": "https://www.google.com/maps?cid=8507748034919379092",
     "rating": 4.9,
     "reviews": 42
+  },
+  "ADU Conversion": {
+    "website": "https://aduconversion.com/",
+    "city": "Southern California",
+    "phone": "(818) 621-1508",
+    "gbp": "https://www.google.com/maps?cid=7277292396093830581",
+    "summary": "ADU Conversion describes itself as Southern California's ADU specialists, with more than 100 ADUs built. It handles design, permits and construction for garage conversions, detached backyard units, attached ADUs and junior ADUs, rental units and permit-ready ADU plans, and offers free estimates."
+  },
+  "ADU Powerhouse": {
+    "website": "https://adupowerhouse.com/",
+    "city": "Los Angeles, CA",
+    "address": "5007 W Adams Blvd, Los Angeles, CA 90016",
+    "phone": "(310) 894-6293",
+    "gbp": "https://www.google.com/maps?cid=1271941784555919443",
+    "summary": "ADU Powerhouse is a Los Angeles construction company on West Adams Boulevard that focuses on ADUs and offers a free property evaluation for homeowners thinking about one. Described here from its Google listing, since its website wasn't reachable when we researched this ranking."
+  },
+  "M.E. Development, Inc.": {
+    "website": "https://www.medevelopmentinc.com/",
+    "city": "Culver City, CA",
+    "address": "6015 Washington Blvd, Culver City, CA 90232",
+    "phone": "(310) 231-5260",
+    "gbp": "https://www.google.com/maps?cid=11701080646142359806",
+    "summary": "M.E. Development, Inc. (CA Lic. #992342) is a Los Angeles design-build firm that builds ADUs, new homes and remodels and renovates multifamily properties, and is part of rebuilding in Pacific Palisades. It says its projects have been featured on Netflix, Hulu and YouTube."
+  },
+  "SAMS Construction Group": {
+    "website": "https://samsconstructiongroup.com/",
+    "city": "Los Angeles, CA",
+    "address": "1100 S Robertson Blvd, Unit 1A, Los Angeles, CA 90035",
+    "phone": "(424) 777-0979",
+    "gbp": "https://www.google.com/maps?cid=5277153788576944944",
+    "summary": "SAMS Construction Group is a family-owned Los Angeles company with more than 30 years of experience. It helps homeowners plan kitchen and bathroom remodels, ADUs, garage conversions and whole-home renovations, and arranges appointments with Builders, the licensed contractor (CSLB #1078391) responsible for the construction contract and the work."
+  },
+  "Silver Moccasin Builders": {
+    "website": "https://www.silvermoccasin.us/",
+    "city": "Los Angeles, CA",
+    "address": "2613 Pasadena Ave, Los Angeles, CA 90031",
+    "phone": "(626) 654-1124",
+    "gbp": "https://www.google.com/maps?cid=81400447236023541",
+    "summary": "Silver Moccasin Builders is a licensed and insured Los Angeles design-build firm with plans and permits handled in-house. Its work ranges from ADUs and garage conversions to kitchen, bathroom and full-home remodels, foundations and structural repair, and fire damage rebuilds."
+  },
+  "Charipar Wealth Management": {
+    "website": "https://chariparwealth.com/",
+    "city": "North Liberty, IA",
+    "address": "6 Hawkeye Dr #102, North Liberty, IA 52317",
+    "phone": "(319) 521-6774",
+    "gbp": "https://www.google.com/maps?cid=9654398032097775889",
+    "summary": "Charipar Wealth Management is an independent financial planning and investment management firm in North Liberty, founded by Andrew Charipar. Planning is included for every client, and portfolios are built mainly with low-cost, broadly diversified ETFs."
+  },
+  "Bradley L. Shelman, Ameriprise Financial Services": {
+    "city": "Iowa City, IA",
+    "address": "1580 Mall Dr, Iowa City, IA 52240",
+    "phone": "(319) 337-9620",
+    "gbp": "https://www.google.com/maps?cid=12678548639307981308",
+    "summary": "Bradley L. Shelman is a private wealth advisor with Ameriprise Financial Services, LLC, with an office on Mall Drive in Iowa City. Described here from his Google listing, since the Ameriprise advisor site wasn't reachable when we researched this ranking."
+  },
+  "Creative Planning": {
+    "website": "https://www.creativeplanning.com/",
+    "city": "Coralville, IA",
+    "address": "2451 Oakdale Blvd #204, Coralville, IA 52241",
+    "phone": "(319) 354-3000",
+    "gbp": "https://www.google.com/maps?cid=12521186018119611641",
+    "summary": "Creative Planning is a national fiduciary wealth management firm that says it serves clients in all 50 states, with a local office in Coralville. Its services include investment management, tax planning, estate and legacy planning and risk management, plus family office and 401(k) services."
+  },
+  "Edward Jones: Peggy Grimmer, CFP®": {
+    "website": "https://www.edwardjones.com/us-en/financial-advisor/peggy-grimmer",
+    "city": "Iowa City, IA",
+    "address": "2650 Mormon Trek Blvd Ste 200, Iowa City, IA 52240",
+    "phone": "(319) 354-4007",
+    "gbp": "https://www.google.com/maps?cid=6982796111281942109",
+    "summary": "Peggy Grimmer is an Edward Jones financial advisor in Iowa City and a CERTIFIED FINANCIAL PLANNER® and Chartered Financial Consultant® professional. Her Edward Jones page lists retirement income, estate and legacy strategies, intergenerational planning, women investors, and entrepreneurs and business owners among her focus areas."
+  },
+  "Experience Wealth, Ameriprise Financial Services": {
+    "city": "Iowa City, IA",
+    "address": "1580 Mall Dr, Iowa City, IA 52240",
+    "phone": "(319) 337-9620",
+    "summary": "Experience Wealth is an Ameriprise Financial Services practice on Mall Drive in Iowa City, at the same office and phone number as Bradley L. Shelman. Described here from its Google listing."
   }
 }
