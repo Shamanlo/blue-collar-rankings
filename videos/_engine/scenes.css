@@ -426,3 +426,5 @@ blockquote { font: 400 76px/1.12 var(--display); text-transform: uppercase; colo
 .rangebox.compact .rtrack { height: 66px; }
 .rangebox.compact .rname { font-size: 40px; }
 .rangebox.compact .rfill b { font-size: 36px; }
+.bigprice.dollars { font-size: 104px; }
+.reel .bigprice.dollars { font-size: 120px; }

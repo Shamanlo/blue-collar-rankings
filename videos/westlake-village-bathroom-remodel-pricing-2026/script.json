@@ -1,0 +1,514 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "header": "Westlake Village, CA · Bathroom Remodel Prices · 2026",
+ "source": "Based on All Exclusive Construction's 2026 bathroom pricing guide, adjusted +5% for Westlake Village. Ballpark only.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "bath-blue-marble.jpg",
+  "landscapePos": "30% 50%",
+  "reelPos": "35% 50%",
+  "lines": [
+   "Bathroom",
+   "Remodel"
+  ],
+  "sub": "Westlake Village, CA",
+  "tag": "From $5,250",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 190,
+  "subPx": 52,
+  "reelSubPx": 72,
+  "stamp": [
+   "3",
+   [
+    "PRICE",
+    "TIERS"
+   ]
+  ],
+  "reelStamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "bath-master-arch.jpg",
+   "kicker": "Westlake Village, California",
+   "titlePx": 124,
+   "title": [
+    "Bathroom Remodel",
+    "Pricing Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "Powder room",
+    "Hall bath",
+    "Master bath",
+    "Tub-to-shower",
+    "Permits"
+   ],
+   "say": "How much does a bathroom remodel cost in Westlake Village in 2026? Here's the pricing guide: three price tiers, what each type of bathroom costs, what moves your budget, and the permits and HOA rules to plan for."
+  },
+  {
+   "id": "tiers",
+   "kind": "ranges",
+   "label": "2026 Price Tiers",
+   "title": "What a Westlake Village bathroom costs",
+   "sub": "2026 ranges · depending on size and scope",
+   "dollars": true,
+   "max": 55000,
+   "ticks": [
+    0,
+    20000,
+    40000
+   ],
+   "rows": [
+    {
+     "name": "Basic update",
+     "note": "Powder rooms & hall baths",
+     "lo": 5250,
+     "hi": 15750,
+     "cue": "basic"
+    },
+    {
+     "name": "Mid-range remodel",
+     "note": "Tub-to-shower & new tile",
+     "lo": 15750,
+     "hi": 26250,
+     "cue": "mid-range"
+    },
+    {
+     "name": "High-end remodel",
+     "note": "Full master bath",
+     "lo": 31500,
+     "cue": "high-end"
+    }
+   ],
+   "speak": "In Westlake Village, a basic bathroom update runs about five thousand two hundred fifty dollars to fifteen thousand seven hundred fifty dollars. A mid-range remodel runs fifteen thousand seven hundred fifty dollars to twenty-six thousand two hundred fifty dollars. And a high-end remodel starts around thirty-one thousand five hundred dollars and goes up from there.",
+   "say": "In Westlake Village, a basic bathroom update runs about $5,250 to $15,750. A mid-range remodel runs $15,750 to $26,250. And a high-end remodel starts around $31,500 and goes up from there."
+  },
+  {
+   "id": "basic",
+   "kind": "price",
+   "label": "Tier 1 of 3",
+   "dollars": true,
+   "image": "bath-white-shower.jpg",
+   "kicker": "Tier 1 of 3",
+   "name": "Basic bathroom update",
+   "lo": 5250,
+   "hi": 15750,
+   "priceCue": "$5,250",
+   "desc": "Ideal for small hall baths and powder rooms.",
+   "bullets": [
+    {
+     "t": "New vanity, toilet, faucet & lights",
+     "cue": "vanity"
+    },
+    {
+     "t": "Simple tile or vinyl flooring",
+     "cue": "simple"
+    },
+    {
+     "t": "No major layout or plumbing changes",
+     "cue": "layout"
+    }
+   ],
+   "speak": "A basic bathroom update, at five thousand two hundred fifty dollars to fifteen thousand seven hundred fifty dollars, is ideal for small hall baths and powder rooms: a new vanity, toilet, faucet, and light fixtures, with simple tile or vinyl flooring, and no major layout or plumbing changes.",
+   "say": "A basic bathroom update, at $5,250 to $15,750, is ideal for small hall baths and powder rooms: a new vanity, toilet, faucet, and light fixtures, with simple tile or vinyl flooring, and no major layout or plumbing changes."
+  },
+  {
+   "id": "mid",
+   "kind": "price",
+   "label": "Tier 2 of 3",
+   "dollars": true,
+   "image": "bath-glass-door-shower.jpg",
+   "kicker": "Tier 2 of 3",
+   "name": "Mid-range remodel",
+   "lo": 15750,
+   "hi": 26250,
+   "priceCue": "$15,750",
+   "desc": "The most common Westlake Village bathroom project.",
+   "bullets": [
+    {
+     "t": "Convert a tub to a shower",
+     "cue": "tub"
+    },
+    {
+     "t": "New tile throughout",
+     "cue": "tile"
+    },
+    {
+     "t": "Upgraded vanity with stone countertop",
+     "cue": "vanity"
+    },
+    {
+     "t": "Minor layout changes possible",
+     "cue": "minor"
+    }
+   ],
+   "speak": "A mid-range remodel, fifteen thousand seven hundred fifty dollars to twenty-six thousand two hundred fifty dollars, can convert a tub to a shower, with new tile throughout, an upgraded vanity with a stone countertop, new lighting, mirror, and plumbing updates, and minor layout changes.",
+   "say": "A mid-range remodel, $15,750 to $26,250, can convert a tub to a shower, with new tile throughout, an upgraded vanity with a stone countertop, new lighting, mirror, and plumbing updates, and minor layout changes."
+  },
+  {
+   "id": "high",
+   "kind": "price",
+   "label": "Tier 3 of 3",
+   "dollars": true,
+   "image": "bath-blue-marble.jpg",
+   "kicker": "Tier 3 of 3",
+   "name": "High-end remodel",
+   "lo": 31500,
+   "priceCue": "$31,500",
+   "desc": "A full master bathroom, finished like a private retreat.",
+   "bullets": [
+    {
+     "t": "Custom walk-in shower or freestanding tub",
+     "cue": "walk-in"
+    },
+    {
+     "t": "Double vanity with premium materials",
+     "cue": "double"
+    },
+    {
+     "t": "Built-in storage & high-end finishes",
+     "cue": "built-in"
+    },
+    {
+     "t": "Layout redesign & radiant heated floors",
+     "cue": "radiant"
+    }
+   ],
+   "speak": "A high-end remodel starts around thirty-one thousand five hundred dollars. That's a full master bathroom: a custom walk-in shower or freestanding tub, a double vanity with premium materials, built-in storage and high-end finishes, a layout redesign, and radiant heated floors.",
+   "say": "A high-end remodel starts around $31,500. That's a full master bathroom: a custom walk-in shower or freestanding tub, a double vanity with premium materials, built-in storage and high-end finishes, a layout redesign, and radiant heated floors.",
+   "imgPos": "30% 50%"
+  },
+  {
+   "id": "rooms",
+   "kind": "ranges",
+   "label": "Cost by Room",
+   "title": "Cost by type of bathroom",
+   "sub": "Powder room vs. hall bath vs. master",
+   "dollars": true,
+   "max": 60000,
+   "ticks": [
+    0,
+    20000,
+    40000,
+    60000
+   ],
+   "rows": [
+    {
+     "name": "Powder room",
+     "note": "Toilet & sink",
+     "lo": 5250,
+     "hi": 12600,
+     "cue": "powder"
+    },
+    {
+     "name": "Hall bathroom",
+     "note": "Most common remodel",
+     "lo": 15750,
+     "hi": 26250,
+     "cue": "hall"
+    },
+    {
+     "name": "Master bathroom",
+     "note": "Largest & most luxurious",
+     "lo": 26250,
+     "hi": 52500,
+     "plus": true,
+     "cue": "master"
+    }
+   ],
+   "speak": "By type of bathroom: a powder room runs about five thousand two hundred fifty dollars to twelve thousand six hundred dollars. A hall bathroom, the most common remodel, runs fifteen thousand seven hundred fifty dollars to twenty-six thousand two hundred fifty dollars. And a master bathroom runs twenty-six thousand two hundred fifty dollars to fifty-two thousand five hundred dollars and up, with walk-in showers, freestanding tubs, and luxury finishes.",
+   "say": "By type of bathroom: a powder room runs about $5,250 to $12,600. A hall bathroom, the most common remodel, runs $15,750 to $26,250. And a master bathroom runs $26,250 to $52,500 and up, with walk-in showers, freestanding tubs, and luxury finishes."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "title": "What moves your bathroom budget",
+   "cards": [
+    {
+     "name": "Size & layout",
+     "desc": "A powder room vs. a large master bath",
+     "image": "bath-white-walkin.jpg",
+     "cue": "size"
+    },
+    {
+     "name": "Scope of work",
+     "desc": "Cosmetic upgrades vs. a full gut remodel",
+     "image": "bath-in-progress.jpg",
+     "imgPos": "50% 40%",
+     "cue": "scope"
+    },
+    {
+     "name": "Plumbing & electrical",
+     "desc": "Keeping fixtures in place saves the most",
+     "image": "bath-marble-shower.jpg",
+     "cue": "plumbing"
+    },
+    {
+     "name": "Materials",
+     "desc": "Tile, vanities & fixtures, budget to luxury",
+     "image": "bath-wood-vanity-tub.jpg",
+     "cue": "materials"
+    },
+    {
+     "name": "Permits",
+     "desc": "Required for most bathroom remodels",
+     "icon": "page",
+     "cue": "permits"
+    },
+    {
+     "name": "Location & access",
+     "desc": "Second-floor & tight-access bathrooms",
+     "image": "bath-modern-shower.jpg",
+     "cue": "location"
+    }
+   ],
+   "say": "What moves your budget? The size and layout of the room, the scope of work, plumbing and electrical changes, where keeping fixtures in place is the single biggest way to save, your material choices, permits, and the bathroom's location and access, like a second-floor bath."
+  },
+  {
+   "id": "local",
+   "kind": "factors",
+   "label": "Westlake Village Notes",
+   "cols": 3,
+   "title": "Westlake Village notes",
+   "cards": [
+    {
+     "name": "Permits: ~$525 – $2,100",
+     "desc": "Fees scale with your project's value",
+     "icon": "page",
+     "cue": "permits"
+    },
+    {
+     "name": "HOA rules",
+     "desc": "Interior remodels usually don't need approval; structural or exterior changes may",
+     "icon": "shield",
+     "cue": "HOA"
+    },
+    {
+     "name": "20 neighborhoods",
+     "desc": "North Ranch, Lake Sherwood, Foxmoor, Three Springs & more",
+     "icon": "map",
+     "cue": "twenty"
+    }
+   ],
+   "speak": "A few Westlake Village notes. Budget roughly five hundred twenty-five dollars to twenty-one hundred dollars for permits, since fees scale with your project's value. Westlake Village has twenty neighborhoods with active HOAs. Interior remodels usually don't need HOA approval, but structural or exterior changes may.",
+   "say": "A few Westlake Village notes. Budget roughly $525 to $2,100 for permits, since fees scale with your project's value. Westlake Village has twenty neighborhoods with active HOAs. Interior remodels usually don't need HOA approval, but structural or exterior changes may."
+  },
+  {
+   "id": "recommend",
+   "kind": "winner",
+   "label": "Our Recommendation",
+   "image": "bath-double-vanity.jpg",
+   "stamp": "Give them a call",
+   "name": "All Exclusive Construction, Inc.",
+   "nameCue": "All",
+   "where": "Based on Townsgate Rd · Westlake Village",
+   "logo": "ae-logo.png",
+   "logoBg": "#fff",
+   "points": [
+    "Local office in Westlake Village",
+    "CA licensed & insured · Lic. #1120170",
+    "5-star rated · 50+ reviews · 7+ years",
+    "Handles permits & HOA architectural submissions",
+    "Free consultations & detailed written estimates"
+   ],
+   "say": "Planning a bathroom remodel? Give All Exclusive Construction, Inc. a call. Their office is right in Westlake Village on Townsgate Road. They're licensed and insured, 5-star rated, and they handle all permits and HOA architectural submissions, with free consultations and detailed written estimates."
+  },
+  {
+   "id": "gallery",
+   "kind": "steps",
+   "label": "Recent Bathrooms",
+   "plain": true,
+   "hold": 1.5,
+   "title": "Recent bathroom remodels",
+   "sub": "By All Exclusive Construction",
+   "steps": [
+    {
+     "image": "bath-master-arch.jpg"
+    },
+    {
+     "image": "bath-blue-marble.jpg",
+     "imgPos": "30% 50%"
+    },
+    {
+     "image": "bath-freestanding-tub.jpg"
+    },
+    {
+     "image": "bath-white-walkin.jpg"
+    },
+    {
+     "image": "bath-tile-shower.jpg"
+    },
+    {
+     "image": "bath-double-vanity.jpg"
+    },
+    {
+     "image": "bath-wood-vanity-tub.jpg"
+    },
+    {
+     "image": "bath-glass-door-shower.jpg"
+    },
+    {
+     "image": "bath-white-glass-shower.jpg"
+    },
+    {
+     "image": "bath-marble-shower.jpg"
+    }
+   ],
+   "say": "Here are a few of their recent bathroom remodels."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Estimate",
+   "image": "bath-white-glass-shower.jpg",
+   "logo": "ae-logo.png",
+   "name": "All Exclusive Construction, Inc.",
+   "phone": "(818) 836-1722",
+   "address": "2945 Townsgate Rd Ste 200, Westlake Village, CA 91361",
+   "hours": "Mon–Fri · 8 AM – 4:30 PM · CA Lic. #1120170",
+   "url": "allexclusivepro.com/westlake-village",
+   "urlCue": "link",
+   "tip": "Free consultation and a written estimate.",
+   "say": "Need a bathroom remodel? Call All Exclusive Construction at (818) 836-1722 for a free consultation, or visit the link in the description. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "bath-master-arch.jpg",
+   "kicker": "Westlake Village, CA",
+   "titlePx": 150,
+   "title": [
+    "Bathroom",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Powder",
+    "Hall bath",
+    "Master"
+   ],
+   "say": "What does a bathroom remodel cost in Westlake Village in 2026?"
+  },
+  {
+   "id": "r-tiers",
+   "kind": "ranges",
+   "label": "2026 Price Tiers",
+   "title": "Bathroom remodel prices",
+   "sub": "Westlake Village · 2026",
+   "dollars": true,
+   "max": 55000,
+   "ticks": [
+    0,
+    25000,
+    50000
+   ],
+   "rows": [
+    {
+     "name": "Basic update",
+     "note": "Powder & hall",
+     "lo": 5250,
+     "hi": 15750,
+     "cue": "basic"
+    },
+    {
+     "name": "Mid-range",
+     "note": "Tub-to-shower",
+     "lo": 15750,
+     "hi": 26250,
+     "cue": "mid-range"
+    },
+    {
+     "name": "High-end",
+     "note": "Full master",
+     "lo": 31500,
+     "cue": "high-end"
+    }
+   ],
+   "speak": "A basic update: five thousand two hundred fifty dollars to fifteen thousand seven hundred fifty dollars. Mid-range: fifteen thousand seven hundred fifty dollars to twenty-six thousand two hundred fifty dollars. A high-end master bath: thirty-one thousand five hundred dollars and up.",
+   "say": "A basic update: $5,250 to $15,750. Mid-range: $15,750 to $26,250. A high-end master bath: $31,500 and up."
+  },
+  {
+   "id": "r-recommend",
+   "kind": "winner",
+   "label": "Our Recommendation",
+   "image": "bath-double-vanity.jpg",
+   "stamp": "Give them a call",
+   "name": "All Exclusive Construction, Inc.",
+   "nameCue": "All",
+   "where": "Office in Westlake Village",
+   "logo": "ae-logo.png",
+   "logoBg": "#fff",
+   "points": [
+    "Licensed & insured",
+    "Handles permits & HOA",
+    "Free written estimates"
+   ],
+   "say": "Planning a remodel? Call All Exclusive Construction, based right in Westlake Village."
+  },
+  {
+   "id": "r-build",
+   "kind": "steps",
+   "label": "Recent Bathrooms",
+   "plain": true,
+   "hold": 1.2,
+   "title": "Recent bathrooms",
+   "steps": [
+    {
+     "image": "bath-blue-marble.jpg"
+    },
+    {
+     "image": "bath-master-arch.jpg"
+    },
+    {
+     "image": "bath-freestanding-tub.jpg"
+    },
+    {
+     "image": "bath-tile-shower.jpg"
+    },
+    {
+     "image": "bath-wood-vanity-tub.jpg"
+    },
+    {
+     "image": "bath-white-walkin.jpg"
+    }
+   ],
+   "say": "Here are a few of their recent bathrooms."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Estimate",
+   "image": "bath-white-glass-shower.jpg",
+   "logo": "ae-logo.png",
+   "name": "All Exclusive Construction",
+   "phone": "(818) 836-1722",
+   "address": "Townsgate Rd, Westlake Village",
+   "hours": "Mon–Fri · 8 AM – 4:30 PM",
+   "url": "Link in description",
+   "urlCue": "link",
+   "tip": "Follow Local Vibe Check for more local price guides.",
+   "say": "Call (818) 836-1722 for a free consultation. Link in the description. Follow for more."
+  }
+ ]
+}

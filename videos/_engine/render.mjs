@@ -85,6 +85,9 @@ const icons = {
   wave: `<svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"><path d="M8 30c10-10 20-10 30 0s20 10 30 0 20-10 30 0 16 8 16 8"/><path d="M8 54c10-10 20-10 30 0s20 10 30 0 20-10 30 0 16 8 16 8"/></svg>`,
 };
 
+// One counting price figure: thousands ("$45K") by default, whole dollars with "dollars".
+const priceSpan = (s, v, lag) => `<span data-count="${v}"${s.dollars ? "" : ' data-fmt="k"'} data-cd="${(s.priceAt ?? 0.8) + lag}">${s.dollars ? money(v) : kfmt(v)}</span>`;
+
 const build = {
   title: (s) => `
     <div class="col">
@@ -176,11 +179,13 @@ const build = {
     <div class="rangebox${s.rows.length > 4 ? " compact" : ""}">
       <div class="axis">${ticks.map((t) => `<span style="left:${(t / max) * 100}%">${t ? rf(t) : "$0"}${t === max ? "+" : ""}</span>`).join("")}</div>
       ${s.rows.map((r, i) => {
-        const l = (r.lo / max) * 100, w = ((r.hi - r.lo) / max) * 100;
+        // A row with no "hi" is open-ended ("$31,500+") and runs to the end of the axis.
+        const hi = r.hi ?? max;
+        const l = (r.lo / max) * 100, w = ((hi - r.lo) / max) * 100;
         return `<div class="rrow"${cueAttr(r.cue)} data-cuegroup>
           <div class="a left rname" style="--d:${0.6 + i * 0.3}">${esc(r.name)}<small>${esc(r.note || "")}</small></div>
           <div class="rtrack">${ticks.map((t) => `<i style="left:${(t / max) * 100}%"></i>`).join("")}
-            <div class="a grow rfill c${i}${r.hi / max > 0.75 ? " inside" : ""}" style="left:${l}%;width:${w}%;--d:${0.6 + i * 0.3}"><b>${rf(r.lo)} – ${rf(r.hi)}${r.plus ? "+" : ""}</b></div>
+            <div class="a grow rfill c${i}${hi / max > 0.75 ? " inside" : ""}" style="left:${l}%;width:${w}%;--d:${0.6 + i * 0.3}"><b>${rf(r.lo)}${r.hi == null ? "+" : ` – ${rf(r.hi)}${r.plus ? "+" : ""}`}</b></div>
           </div></div>`;
       }).join("")}
     </div>`;
@@ -192,8 +197,8 @@ const build = {
     <div class="col">
       <div ${a("up kicker", 0.1)}>${esc(s.kicker || "")}</div>
       <div ${a("up h2", 0.2)}>${esc(s.name)}</div>
-      <div class="bigprice a pop" style="--d:${s.priceAt ?? 0.8}"${cueAttr(s.priceCue)}>
-        <span data-count="${s.lo}" data-fmt="k" data-cd="${s.priceAt ?? 0.8}">${kfmt(s.lo)}</span> – <span data-count="${s.hi}" data-fmt="k" data-cd="${(s.priceAt ?? 0.8) + 0.2}">${kfmt(s.hi)}</span>${s.plus ? "+" : ""}</div>
+      <div class="bigprice a pop${s.dollars ? " dollars" : ""}" style="--d:${s.priceAt ?? 0.8}"${cueAttr(s.priceCue)}>
+        ${priceSpan(s, s.lo, 0)}${s.hi == null ? "+" : ` – ${priceSpan(s, s.hi, 0.2)}${s.plus ? "+" : ""}`}</div>
       <div ${a("up desc", 0.5)}>${esc(s.desc)}</div>
       <ul class="points">${s.bullets.map((p, i) => `<li class="a left"${cueAttr(p.cue)} data-at="${p.cue ? "" : 0.25 + (i * 0.55) / s.bullets.length}" style="--d:2"><i></i>${esc(p.t || p)}</li>`).join("")}</ul>
     </div>`,
