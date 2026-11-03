@@ -1,0 +1,555 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "header": "Window Film Companies · SEO & Marketing Prices · 2026",
+ "source": "Tier ranges are typical 2026 agency pricing for window film companies. Ballpark only; quotes vary by market and scope.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "wf-hook.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Window Film",
+   "SEO Prices"
+  ],
+  "sub": "Marketing agency costs",
+  "tag": "From $300/mo",
+  "year": "2026",
+  "bigPx": 116,
+  "reelBigPx": 170,
+  "subPx": 50,
+  "reelSubPx": 66,
+  "stamp": [
+   "4",
+   [
+    "PRICE",
+    "TIERS"
+   ]
+  ],
+  "reelStamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "wf-hook.jpg",
+   "kicker": "For window tinting & window film companies",
+   "titlePx": 112,
+   "title": [
+    "Window Film SEO",
+    "& Marketing Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Google Business Profile",
+    "Local SEO",
+    "Citations",
+    "Backlinks",
+    "Lead gen"
+   ],
+   "say": "How much does SEO and marketing cost for a window film company in 2026? Here's the pricing guide: the four price tiers agencies charge, what you get at each level, what moves your price, and the questions to ask before you sign.",
+   "imgPos": "40% 50%"
+  },
+  {
+   "id": "tiers",
+   "kind": "ranges",
+   "label": "2026 Price Tiers",
+   "title": "What window film SEO costs per month",
+   "sub": "2026 monthly ranges · depending on your market and scope",
+   "dollars": true,
+   "max": 5000,
+   "ticks": [
+    0,
+    1000,
+    2000,
+    3000,
+    4000,
+    5000
+   ],
+   "rows": [
+    {
+     "name": "Starter",
+     "note": "Google Business Profile & on-site basics",
+     "lo": 300,
+     "hi": 500,
+     "cue": "starter"
+    },
+    {
+     "name": "Growth",
+     "note": "Adds citations, reporting & backlinks",
+     "lo": 500,
+     "hi": 1000,
+     "cue": "growth"
+    },
+    {
+     "name": "Multi-city",
+     "note": "More pages, links & reviews",
+     "lo": 1000,
+     "hi": 2000,
+     "cue": "multi-city"
+    },
+    {
+     "name": "Competitive market",
+     "note": "Full lead generation",
+     "lo": 2000,
+     "hi": 5000,
+     "cue": "competitive"
+    }
+   ],
+   "speak": "Most window film companies land in one of four tiers. A starter plan runs about three hundred to five hundred dollars a month. A growth plan runs five hundred to one thousand dollars a month. A multi-city plan runs one thousand to two thousand dollars a month. And in a competitive market, expect two thousand to five thousand dollars a month.",
+   "say": "Most window film companies land in one of four tiers. A starter plan runs about $300 to $500 a month. A growth plan runs $500 to $1,000 a month. A multi-city plan runs $1,000 to $2,000 a month. And in a competitive market, expect $2,000 to $5,000 a month."
+  },
+  {
+   "id": "t1",
+   "kind": "price",
+   "label": "Tier 1 of 4",
+   "dollars": true,
+   "image": "wf-gbp.jpg",
+   "imgPos": "50% 45%",
+   "kicker": "Tier 1 of 4 · per month",
+   "name": "Starter",
+   "lo": 300,
+   "hi": 500,
+   "priceCue": "$300",
+   "desc": "The foundation: get found on Google Maps.",
+   "bullets": [
+    {
+     "t": "Google Business Profile management",
+     "cue": "google"
+    },
+    {
+     "t": "Categories, services, photos & posts",
+     "cue": "categories"
+    },
+    {
+     "t": "Some on-site optimization",
+     "cue": "on-site"
+    },
+    {
+     "t": "Best for one location in a smaller market",
+     "cue": "best"
+    }
+   ],
+   "speak": "The starter tier, three hundred to five hundred dollars a month, is the foundation. You get Google Business Profile management: the right categories, services, photos, and posts, so you show up on Google Maps. Plus some on-site optimization of your website. It's best for one location in a smaller market.",
+   "say": "The starter tier, $300 to $500 a month, is the foundation. You get Google Business Profile management: the right categories, services, photos, and posts, so you show up on Google Maps. Plus some on-site optimization of your website. It's best for one location in a smaller market."
+  },
+  {
+   "id": "t2",
+   "kind": "price",
+   "label": "Tier 2 of 4",
+   "dollars": true,
+   "image": "wf-citations.jpg",
+   "imgPos": "50% 50%",
+   "kicker": "Tier 2 of 4 · per month",
+   "name": "Growth",
+   "lo": 500,
+   "hi": 1000,
+   "priceCue": "$500",
+   "desc": "Everything in Starter, plus:",
+   "bullets": [
+    {
+     "t": "Citations: Yelp, Apple Maps, Bing & directories",
+     "cue": "citations"
+    },
+    {
+     "t": "Analytics reporting",
+     "cue": "analytics"
+    },
+    {
+     "t": "Some backlinks",
+     "cue": "backlinks"
+    }
+   ],
+   "speak": "The growth tier, five hundred to one thousand dollars a month, includes everything in the starter plan, plus citations, so your business name, address, and phone match on Yelp, Apple Maps, Bing, and the directories. You also get analytics reporting, and some backlinks.",
+   "say": "The growth tier, $500 to $1,000 a month, includes everything in the starter plan, plus citations, so your business name, address, and phone match on Yelp, Apple Maps, Bing, and the directories. You also get analytics reporting, and some backlinks."
+  },
+  {
+   "id": "t3",
+   "kind": "price",
+   "label": "Tier 3 of 4",
+   "dollars": true,
+   "image": "wf-pages.jpg",
+   "imgPos": "50% 40%",
+   "kicker": "Tier 3 of 4 · per month",
+   "name": "Multi-city",
+   "lo": 1000,
+   "hi": 2000,
+   "priceCue": "$1,000",
+   "desc": "More of everything, for more cities and film types.",
+   "bullets": [
+    {
+     "t": "A page for every film type & service city",
+     "cue": "page"
+    },
+    {
+     "t": "Steady citations & backlinks each month",
+     "cue": "steady"
+    },
+    {
+     "t": "Review system that names the film",
+     "cue": "reviews"
+    },
+    {
+     "t": "Monthly reports on calls & estimate requests",
+     "cue": "monthly"
+    }
+   ],
+   "speak": "The multi-city tier, one thousand to two thousand dollars a month, is more of everything. You get a page for every film type and every city you serve, steady citations and backlinks each month, a system to get reviews that name the film you installed, and monthly reports on calls and estimate requests.",
+   "say": "The multi-city tier, $1,000 to $2,000 a month, is more of everything. You get a page for every film type and every city you serve, steady citations and backlinks each month, a system to get reviews that name the film you installed, and monthly reports on calls and estimate requests."
+  },
+  {
+   "id": "t4",
+   "kind": "price",
+   "label": "Tier 4 of 4",
+   "dollars": true,
+   "image": "wf-report.jpg",
+   "imgPos": "50% 50%",
+   "kicker": "Tier 4 of 4 · per month",
+   "name": "Competitive market",
+   "lo": 2000,
+   "hi": 5000,
+   "priceCue": "$2,000",
+   "desc": "For big, crowded markets where every map spot is a fight.",
+   "bullets": [
+    {
+     "t": "Aggressive backlink building",
+     "cue": "aggressive"
+    },
+    {
+     "t": "Citations everywhere buyers look",
+     "cue": "citations"
+    },
+    {
+     "t": "Custom reporting by booked job",
+     "cue": "custom"
+    },
+    {
+     "t": "Lead generation",
+     "cue": "lead"
+    }
+   ],
+   "speak": "And the competitive market tier, two thousand to five thousand dollars a month, is for big, crowded markets, where every spot on the map is a fight. You get aggressive backlink building, citations everywhere buyers look, custom reporting by booked job, and lead generation.",
+   "say": "And the competitive market tier, $2,000 to $5,000 a month, is for big, crowded markets, where every spot on the map is a fight. You get aggressive backlink building, citations everywhere buyers look, custom reporting by booked job, and lead generation."
+  },
+  {
+   "id": "bench",
+   "kind": "stats",
+   "label": "Industry Benchmarks",
+   "source": true,
+   "tvPx": 60,
+   "title": "What SEO costs across all industries",
+   "tiles": [
+    {
+     "v": "$500–$2,500",
+     "n": "Local SEO",
+     "s": "per month",
+     "cue": "local"
+    },
+    {
+     "v": "$1,500–$5,000",
+     "n": "Traditional SEO",
+     "s": "per month",
+     "cue": "traditional"
+    },
+    {
+     "v": "$75–$200",
+     "n": "Hourly SEO work",
+     "s": "per hour",
+     "cue": "hourly"
+    },
+    {
+     "v": "$1,000–$30,000",
+     "n": "One-time projects",
+     "s": "per project",
+     "cue": "one-time"
+    }
+   ],
+   "note": "Source: SEO.com, How Much Does SEO Cost? (2026)",
+   "noteCue": "according",
+   "speak": "How does that compare? According to SEO dot com, local SEO across all industries runs five hundred to twenty-five hundred dollars a month, and traditional SEO runs fifteen hundred to five thousand dollars a month. Hourly SEO work is seventy-five to two hundred dollars an hour, and one-time projects run one thousand to thirty thousand dollars.",
+   "say": "How does that compare? According to SEO.com, local SEO across all industries runs $500 to $2,500 a month, and traditional SEO runs $1,500 to $5,000 a month. Hourly SEO work is $75 to $200 an hour, and one-time projects run $1,000 to $30,000."
+  },
+  {
+   "id": "factors",
+   "kind": "factors",
+   "label": "What Moves Your Price",
+   "cols": 3,
+   "title": "What moves your price",
+   "cards": [
+    {
+     "name": "Your market",
+     "desc": "A big metro costs more than a small town",
+     "icon": "map",
+     "cue": "market"
+    },
+    {
+     "name": "Cities you serve",
+     "desc": "Every city needs its own pages & listings",
+     "icon": "pin",
+     "cue": "cities"
+    },
+    {
+     "name": "Film types you sell",
+     "desc": "Residential, commercial, security, decorative, auto",
+     "icon": "page",
+     "cue": "film"
+    },
+    {
+     "name": "Website health",
+     "desc": "A slow, broken site costs more to fix",
+     "icon": "code",
+     "cue": "website"
+    },
+    {
+     "name": "AI search",
+     "desc": "ChatGPT & AI Overviews: often its own line item",
+     "icon": "search",
+     "cue": "AI"
+    },
+    {
+     "name": "Video & social",
+     "desc": "Install videos, reels & posts",
+     "icon": "mega",
+     "cue": "video"
+    }
+   ],
+   "say": "What moves your price? Your market: a big metro costs more than a small town. How many cities you serve. Which film types you sell, from residential and commercial to security, decorative, and auto. Your website's health. AI search, which is often its own line item. And whether you add video and social media."
+  },
+  {
+   "id": "worth",
+   "kind": "stats",
+   "label": "Is It Worth It?",
+   "title": "Is it worth it?",
+   "tiles": [
+    {
+     "v": "$20K+",
+     "n": "One commercial job",
+     "s": "A single lead can pay for a year of SEO",
+     "cue": "single"
+    },
+    {
+     "v": "Top 3",
+     "n": "The map pack",
+     "s": "The top 3 on Google Maps get the calls",
+     "cue": "top"
+    },
+    {
+     "v": "3–6 mo",
+     "n": "To build rankings",
+     "s": "Profile fixes can help within weeks",
+     "cue": "rankings"
+    }
+   ],
+   "speak": "Is it worth it? A single commercial window film lead can be a twenty thousand dollar job, which can pay for a year of SEO. The top three on Google Maps get the calls. And while profile fixes can help within weeks, rankings usually build over three to six months.",
+   "say": "Is it worth it? A single commercial window film lead can be a $20,000 job, which can pay for a year of SEO. The top three on Google Maps get the calls. And while profile fixes can help within weeks, rankings usually build over three to six months."
+  },
+  {
+   "id": "ask",
+   "kind": "list",
+   "label": "Before You Sign",
+   "title": "6 questions to ask before you sign",
+   "items": [
+    "Does it cover AI search like ChatGPT?",
+    "Is software billed on top?",
+    "Do reports show calls & booked jobs?",
+    "Is it month-to-month?",
+    "Do I own my site & listings?",
+    "Do you work with my competitors?"
+   ],
+   "note": "Compare quotes on the same deliverables, not just the price.",
+   "noteCue": "compare",
+   "say": "Before you sign, ask six questions. Does it cover AI search like ChatGPT? Is software billed on top? Do reports show calls and booked jobs? Is it month-to-month? Do I own my site and listings? And do you work with my competitors? Then compare quotes on the same deliverables, not just the price."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "The Go-To Agency",
+   "image": "wf-og.png",
+   "fit": "#0C1B2A",
+   "stamp": "The go-to agency",
+   "name": "Window Film Marketing Agency",
+   "nameCue": "Window",
+   "where": "Marketing built only for window film companies",
+   "logo": "wf-logo.png",
+   "logoBg": "#0C1B2A",
+   "points": [
+    "$100,000+ in leads for a Santa Monica film installer",
+    "Local SEO, Google Business Profile & AI search",
+    "A page for every film type & city",
+    "Reviews that name the film",
+    "Monthly reports by booked estimate"
+   ],
+   "speak": "So who should you call? The go-to is Window Film Marketing Agency. They market only window film companies, and they're working with a Santa Monica window film installation contractor, getting them over one hundred thousand dollars in leads. They handle local SEO, your Google Business Profile, and AI search, build a page for every film type and city, get reviews that name the film, and report monthly by booked estimate.",
+   "say": "So who should you call? The go-to is Window Film Marketing Agency. They market only window film companies, and they're working with a Santa Monica window film installation contractor, getting them over $100,000 in leads. They handle local SEO, your Google Business Profile, and AI search, build a page for every film type and city, get reviews that name the film, and report monthly by booked estimate."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How They Work",
+   "title": "From hard to find to fully booked",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Audit",
+     "s": "Your market on Google & 5 AI assistants",
+     "cue": "audit"
+    },
+    {
+     "v": "02",
+     "n": "Fix the foundation",
+     "s": "Website, profile, listings & schema",
+     "cue": "fix"
+    },
+    {
+     "v": "03",
+     "n": "Film-specific pages",
+     "s": "Every film & every core city",
+     "cue": "build"
+    },
+    {
+     "v": "04",
+     "n": "Grow & track",
+     "s": "Reviews, links, video & social",
+     "cue": "grow"
+    }
+   ],
+   "note": "Month-to-month after setup · you own your site, content & listings",
+   "noteCue": "month-to-month",
+   "say": "Their process: audit your market, fix the foundation, build film-specific pages, then grow and track. It's month-to-month after setup, and you own your site, content, and listings."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Marketing Audit",
+   "image": "wf-analytics.jpg",
+   "imgPos": "45% 40%",
+   "logo": "wf-logo.png",
+   "name": "Window Film Marketing Agency",
+   "phone": "Free Marketing Audit",
+   "phoneCue": "free",
+   "address": "info@windowfilmmarketingagency.com",
+   "hours": "No cost, no obligation · month-to-month",
+   "url": "windowfilmmarketingagency.com",
+   "urlCue": "visit",
+   "tip": "See who shows up on Google & AI for the films you sell.",
+   "say": "If you run a window film company, give Window Film Marketing Agency a shout. Get a free marketing audit, with no cost and no obligation. Visit windowfilmmarketingagency.com. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "wf-hook.jpg",
+   "kicker": "Window film companies · 2026",
+   "title": [
+    "Window Film",
+    "SEO Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Google Maps",
+    "Citations",
+    "Backlinks",
+    "Lead gen"
+   ],
+   "say": "What does SEO cost for a window film company? Here are the 2026 prices.",
+   "imgPos": "40% 50%"
+  },
+  {
+   "id": "r-tiers",
+   "kind": "ranges",
+   "label": "Per Month",
+   "title": "Window film SEO, per month",
+   "dollars": true,
+   "max": 5000,
+   "ticks": [
+    0,
+    2500,
+    5000
+   ],
+   "rows": [
+    {
+     "name": "Starter",
+     "note": "Google profile & on-site",
+     "lo": 300,
+     "hi": 500,
+     "cue": "starter"
+    },
+    {
+     "name": "Growth",
+     "note": "+ citations, reports, links",
+     "lo": 500,
+     "hi": 1000,
+     "cue": "growth"
+    },
+    {
+     "name": "Multi-city",
+     "note": "More pages & reviews",
+     "lo": 1000,
+     "hi": 2000,
+     "cue": "multi-city"
+    },
+    {
+     "name": "Competitive",
+     "note": "Full lead gen",
+     "lo": 2000,
+     "hi": 5000,
+     "cue": "competitive"
+    }
+   ],
+   "speak": "Starter: three to five hundred dollars a month for your Google profile. Growth: five hundred to one thousand dollars, adding citations, reports, and backlinks. Multi-city: one to two thousand dollars. Competitive markets: two to five thousand dollars a month.",
+   "say": "Starter: $300 to $500 a month for your Google profile. Growth: $500 to $1,000, adding citations, reports, and backlinks. Multi-city: $1,000 to $2,000. Competitive markets: $2,000 to $5,000 a month."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "The Go-To Agency",
+   "image": "wf-og.png",
+   "fit": "#0C1B2A",
+   "stamp": "The go-to agency",
+   "name": "Window Film Marketing Agency",
+   "nameCue": "Window",
+   "where": "Only window film companies",
+   "logo": "wf-logo.png",
+   "logoBg": "#0C1B2A",
+   "points": [
+    "$100K+ in leads for a Santa Monica installer",
+    "Local SEO & AI search",
+    "Month-to-month"
+   ],
+   "speak": "The go-to? Window Film Marketing Agency. They're getting a Santa Monica window film installer over one hundred thousand dollars in leads.",
+   "say": "The go-to? Window Film Marketing Agency. They're getting a Santa Monica window film installer over $100,000 in leads."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Marketing Audit",
+   "image": "wf-analytics.jpg",
+   "imgPos": "45% 40%",
+   "logo": "wf-logo.png",
+   "name": "Window Film Marketing Agency",
+   "phone": "Free Audit",
+   "phoneCue": "free",
+   "address": "No cost, no obligation",
+   "hours": "Month-to-month",
+   "url": "windowfilmmarketingagency.com",
+   "urlCue": "windowfilmmarketingagency.com",
+   "tip": "Follow Local Vibe Check for more.",
+   "say": "Give them a shout for a free marketing audit at windowfilmmarketingagency.com."
+  }
+ ]
+}
