@@ -10,6 +10,7 @@ export const site = {
   web3formsKey: "2e86fdf3-c02f-4b53-a2ba-1447b92b6347",
   year: 2026,
   tagline: "Marketing, AI search, web design, video and social media built only for window film companies.",
+  usa: "Proud to be based in the USA & serving USA companies",
 };
 
 // ---------- Marketing services ----------
@@ -862,6 +863,7 @@ export const home = {
   },
   faq: [
     { q: "Do you only work with window film companies?", a: "Yes. Window tinting and film installers (residential, commercial, security, decorative and auto) are the only businesses we market. That focus is the whole point." },
+    { q: "Where are you based?", a: "We're proud to be based in the USA, and we serve window film companies across the United States." },
     { q: "Do you work with more than one company in the same market?", a: "We limit how many competing companies we work with in a market, so we're never splitting the same searches between clients. Ask us whether your area is open." },
     { q: "Do I need a new website?", a: "Not always. If your site is fast and well structured, we'll build on it. If it's slow, thin or built on a template that fights you, a rebuild is usually cheaper than patching it." },
     { q: "What is AI search optimization (AEO)?", a: "Making your business easy for AI assistants like ChatGPT, Gemini and Google's AI Overviews to understand and recommend: accurate listings, clear service pages, structured data and specific reviews." },
@@ -894,6 +896,7 @@ export const about = {
   why: [
     "Most marketing agencies treat a window film company like any other contractor. They build a five-page site, target \"window tint\" and wonder why the leads are car owners and DIY shoppers.",
     "Window film doesn't work that way. A homeowner worried about fading, a facilities manager fighting glare and heat, a retailer hit by a smash-and-grab and an interior designer specifying frosted glass are four completely different buyers. Each needs different pages, different words and different proof.",
+    "We're proud to be based in the USA and to serve U.S. window film companies, from residential installers to commercial dealers across the country.",
     "Window Film Marketing Agency exists to market that difference. We build websites, local SEO, AI search visibility, video, social media and review systems for window film companies, and nothing else.",
   ],
   values: [

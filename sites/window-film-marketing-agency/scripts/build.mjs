@@ -64,6 +64,9 @@ const icon = (name, size = 22) =>
 const LOGO_MARK = `<svg class="logo-mark" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg-tint" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFC94D"/><stop offset="1" stop-color="#F08A00"/></linearGradient></defs><rect x="2" y="2" width="36" height="36" rx="9" fill="#0C1B2A"/><rect x="8" y="8" width="11" height="11" rx="2" fill="url(#lg-tint)"/><rect x="21" y="8" width="11" height="11" rx="2" fill="#2A4A63"/><rect x="8" y="21" width="11" height="11" rx="2" fill="#2A4A63"/><rect x="21" y="21" width="11" height="11" rx="2" fill="url(#lg-tint)" opacity=".55"/></svg>`;
 const LOGO = `<a class="logo" href="/" aria-label="${esc(site.name)} home">${LOGO_MARK}<span class="logo-txt"><b>Window Film</b><small>Marketing Agency</small></span></a>`;
 
+const FLAG = `<svg class="flag" viewBox="0 0 19 10" width="26" height="14" aria-hidden="true"><rect width="19" height="10" fill="#B22234"/><path d="M0 1.15h19M0 2.69h19M0 4.23h19M0 5.77h19M0 7.31h19M0 8.85h19" stroke="#fff" stroke-width=".77"/><rect width="7.6" height="5.38" fill="#3C3B6E"/><g fill="#fff">${[0.9, 2.0, 3.1, 4.2].flatMap((y, r) => [0.9, 2.2, 3.5, 4.8, 6.1].slice(0, r % 2 ? 4 : 5).map((x) => `<circle cx="${(x + (r % 2 ? 0.65 : 0)).toFixed(2)}" cy="${y}" r=".32"/>`)).join("")}</g></svg>`;
+const USA = `<span class="usa">${FLAG}${esc(site.usa)}</span>`;
+
 // ---------- sections ----------
 const groups = [
   { key: "services", label: "Marketing", base: "/services/", items: services, all: "All marketing services" },
@@ -101,13 +104,13 @@ function footer() {
     ${groups.map(col).join("")}
     <div><h4>Company</h4><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/contact/?topic=call#form">Book a call</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
   </div>
-  <div class="ftr-bottom"><span>© ${site.year} ${esc(site.name)}</span><span>Marketing and web design for window film companies.</span></div>
+  <div class="ftr-bottom"><span>© ${site.year} ${esc(site.name)}</span>${USA}</div>
 </div></footer>`;
 }
 
 function layout({ path: p, title, desc, active, body, ld = [] }) {
   const canonical = site.url + p;
-  const org = { "@type": "ProfessionalService", "@id": site.url + "/#org", name: site.name, url: site.url + "/", email: site.email, description: site.tagline, logo: site.url + "/img/icon-512.png", areaServed: "US", knowsAbout: ["Window film marketing", "Window tinting SEO", "Answer engine optimization", "Web design for window film companies", "Video editing for window film companies", "Social media management for window film companies"] };
+  const org = { "@type": "ProfessionalService", "@id": site.url + "/#org", name: site.name, url: site.url + "/", email: site.email, description: `${site.tagline} ${site.usa}.`, address: { "@type": "PostalAddress", addressCountry: "US" }, logo: site.url + "/img/icon-512.png", areaServed: "US", knowsAbout: ["Window film marketing", "Window tinting SEO", "Answer engine optimization", "Web design for window film companies", "Video editing for window film companies", "Social media management for window film companies"] };
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -256,6 +259,7 @@ const addPage = (p, opts) => {
   <h1>${esc(home.h1[0])}<span class="hl">${esc(home.h1[1])}</span></h1>
   <p class="lead">${esc(home.lead)}</p>
   ${ctaButtons()}
+  <div class="usa-row">${USA}</div>
 </div></section>
 
 <section class="reel-sec" id="reel"><div class="wrap reel-grid">
@@ -406,7 +410,7 @@ for (const g of groups) for (const p of g.items) detailPage(g, p);
 {
   const trail = [["Home", "/"], ["About", "/about/"]];
   const body = `<section class="hero hero-sub"><div class="wrap">${crumbs(trail)}
-  <p class="eyebrow">About us</p><h1>Marketing built only for <span class="hl">window film companies</span></h1><p class="lead">${esc(about.lead)}</p>${ctaButtons()}</div></section>
+  <p class="eyebrow">About us</p><h1>Marketing built only for <span class="hl">window film companies</span></h1><p class="lead">${esc(about.lead)}</p>${ctaButtons()}<div class="usa-row">${USA}</div></div></section>
 <section class="sec"><div class="wrap split split-top"><div><p class="eyebrow">Why we exist</p><h2>Window film isn't a generic trade. Its marketing shouldn't be either.</h2></div><div class="prose">${about.why.map((x) => `<p>${esc(x)}</p>`).join("")}</div></div></section>
 <section class="sec sec-tint"><div class="wrap"><div class="sec-head"><p class="eyebrow">How we work</p><h2>What you can count on</h2></div>
 <div class="grid-2">${about.values.map((x) => `<div class="card pt-card"><h3>${esc(x.t)}</h3><p>${esc(x.d)}</p></div>`).join("")}</div></div></section>
@@ -454,7 +458,7 @@ ${pages.map((p) => `  <url><loc>${site.url}${p}</loc><lastmod>${today}</lastmod>
 write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);
 write("llms.txt", `# ${site.name}
 
-> ${site.tagline} We work only with window tinting and window film companies: residential, commercial, security and safety, anti-graffiti, decorative and privacy, solar and skylight, and auto tint and PPF.
+> ${site.tagline} ${site.usa}. We work only with window tinting and window film companies: residential, commercial, security and safety, anti-graffiti, decorative and privacy, solar and skylight, and auto tint and PPF.
 
 Contact: ${site.email} or ${site.url}/contact/
 
