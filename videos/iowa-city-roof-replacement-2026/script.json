@@ -1,0 +1,639 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "header": "Iowa City, IA · Roof Replacement Prices · 2026",
+ "source": "Iowa averages: This Old House roof replacement cost guide (RSMeans data). Iowa City range: Michel Cuevas Home Improvement. Ballpark only.",
+ "sourceKinds": [
+  "ranges",
+  "bars",
+  "table",
+  "price"
+ ],
+ "featuredCue": "asphalt",
+ "table": {
+  "corner": "Home size",
+  "cols": [
+   "Stories",
+   "Average roof cost"
+  ],
+  "highlight": 1,
+  "rows": [
+   [
+    "1,000 sq ft",
+    "1",
+    "$7,226"
+   ],
+   [
+    "1,500 sq ft",
+    "1",
+    "$8,755"
+   ],
+   [
+    "2,000 sq ft",
+    "2",
+    "$8,927"
+   ],
+   [
+    "2,500 sq ft",
+    "2",
+    "$9,984"
+   ],
+   [
+    "3,000 sq ft",
+    "2",
+    "$11,496"
+   ]
+  ]
+ },
+ "thumbs": {
+  "image": "cherry-aerial-2.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Roof",
+   "Replacement"
+  ],
+  "sub": "Iowa City, IA",
+  "tag": "$7,840 – $19,600",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 180,
+  "subPx": 52,
+  "reelSubPx": 70,
+  "stamp": [
+   "5",
+   [
+    "ROOF",
+    "TYPES"
+   ]
+  ],
+  "reelStamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "cherry-aerial-2.jpg",
+   "imgPos": "50% 50%",
+   "kicker": "Iowa City, Iowa",
+   "titlePx": 124,
+   "title": [
+    "Roof Replacement",
+    "Pricing Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "Asphalt",
+    "Metal",
+    "Wood",
+    "Clay & slate",
+    "Hail & ice dams"
+   ],
+   "say": "How much does a new roof cost in Iowa City in 2026? Here's the pricing guide: the price ranges, what each type of roof costs, how Iowa weather affects your roof and your budget, and the extra costs to plan for."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What a new roof costs in Iowa City",
+   "sub": "2026 ranges · full replacement, tear-off included",
+   "dollars": true,
+   "max": 20000,
+   "ticks": [
+    0,
+    5000,
+    10000,
+    15000,
+    20000
+   ],
+   "rows": [
+    {
+     "name": "Iowa statewide",
+     "note": "Average $6,160",
+     "lo": 4794,
+     "hi": 15779,
+     "cue": "statewide"
+    },
+    {
+     "name": "Iowa City area",
+     "note": "Full residential replacement",
+     "lo": 7840,
+     "hi": 19600,
+     "cue": "Iowa"
+    },
+    {
+     "name": "Most Iowa City homes",
+     "note": "Standard-sized homes",
+     "lo": 9800,
+     "hi": 14700,
+     "cue": "most"
+    }
+   ],
+   "speak": "Statewide, the average Iowa roof replacement costs about six thousand one hundred sixty dollars, with most homeowners spending four thousand seven hundred ninety-four dollars to fifteen thousand seven hundred seventy-nine dollars. In the Iowa City area, a full residential replacement typically runs about seven thousand eight hundred forty dollars to nineteen thousand six hundred dollars. And most standard-sized homes land between nine thousand eight hundred dollars and fourteen thousand seven hundred dollars.",
+   "say": "Statewide, the average Iowa roof replacement costs about $6,160, with most homeowners spending $4,794 to $15,779. In the Iowa City area, a full residential replacement typically runs about $7,840 to $19,600. And most standard-sized homes land between $9,800 and $14,700."
+  },
+  {
+   "id": "size",
+   "kind": "table",
+   "label": "Cost by Home Size",
+   "title": "Iowa roof cost by home size",
+   "callout": "The median Iowa home is <b>1,623 sq ft</b>, much smaller than the 2,411 sq ft national average.",
+   "calloutCue": "median",
+   "speak": "Your home's size sets the baseline. In Iowa, a one-story, one thousand square foot home averages about seven thousand two hundred twenty-six dollars for a new roof. A fifteen hundred square foot home, about eight thousand seven hundred fifty-five dollars. A two-story, two thousand square foot home, about eight thousand nine hundred twenty-seven dollars. And a three thousand square foot home, about eleven thousand four hundred ninety-six dollars. The median Iowa home is just sixteen hundred twenty-three square feet.",
+   "say": "Your home's size sets the baseline. In Iowa, a one-story, 1,000 square foot home averages about $7,226 for a new roof. A 1,500 square foot home, about $8,755. A two-story, 2,000 square foot home, about $8,927. And a 3,000 square foot home, about $11,496. The median Iowa home is just 1,623 square feet."
+  },
+  {
+   "id": "materials",
+   "kind": "bars",
+   "label": "Cost by Roof Type",
+   "image": "shingle-detail.jpg",
+   "imgPos": "50% 50%",
+   "title": "Iowa roof cost by type",
+   "range": "$4.65 – $15.30 per sq ft",
+   "max": 16000,
+   "rows": [
+    [
+     "Asphalt shingles",
+     4794
+    ],
+    [
+     "Metal",
+     8911
+    ],
+    [
+     "Wood shingles & shakes",
+     11401
+    ],
+    [
+     "Clay tile",
+     15703
+    ],
+    [
+     "Slate",
+     15779
+    ]
+   ],
+   "speak": "The type of roof you choose matters most. On a median-sized Iowa home, asphalt shingles cost about four thousand seven hundred ninety-four dollars, at four dollars sixty-five cents a square foot. Metal runs about eight thousand nine hundred eleven dollars. Wood shingles and shakes, about eleven thousand four hundred one dollars. Clay tile, about fifteen thousand seven hundred three dollars. And slate, the most expensive, about fifteen thousand seven hundred seventy-nine dollars, at fifteen dollars thirty cents a square foot.",
+   "say": "The type of roof you choose matters most. On a median-sized Iowa home, asphalt shingles cost about $4,794, at $4.65 a square foot. Metal runs about $8,911. Wood shingles and shakes, about $11,401. Clay tile, about $15,703. And slate, the most expensive, about $15,779, at $15.30 a square foot."
+  },
+  {
+   "id": "types",
+   "kind": "factors",
+   "label": "Roof Types Compared",
+   "cols": 3,
+   "title": "Which roof type fits Iowa?",
+   "cards": [
+    {
+     "name": "Asphalt · $4.65/sq ft",
+     "desc": "Most popular & most affordable. Lasts about 20–25 years",
+     "icon": "roof",
+     "cue": "asphalt"
+    },
+    {
+     "name": "Class 4 asphalt",
+     "desc": "Impact-resistant, rated for hail up to 2 inches",
+     "icon": "shield",
+     "cue": "class"
+    },
+    {
+     "name": "Metal · $8.64/sq ft",
+     "desc": "Handles hail, wind & heavy snow. Lasts 40+ years",
+     "icon": "bolt",
+     "cue": "metal"
+    },
+    {
+     "name": "Wood · $11.06/sq ft",
+     "desc": "Classic look, but humid summers can cause rot & mold",
+     "icon": "drop",
+     "cue": "wood"
+    },
+    {
+     "name": "Clay · $15.23/sq ft",
+     "desc": "Long-lasting, but heavy & needs a specialist",
+     "icon": "flame",
+     "cue": "clay"
+    },
+    {
+     "name": "Slate · $15.30/sq ft",
+     "desc": "Top-of-the-line, very heavy & the priciest",
+     "icon": "star",
+     "cue": "slate"
+    }
+   ],
+   "speak": "Which type fits Iowa? Asphalt shingles are the most popular and most affordable, and last about twenty to twenty-five years. Class four impact-resistant shingles are rated for hail up to two inches. Metal handles hail, wind, and heavy snow, and can last forty years or more. Wood looks classic, but Iowa's humid summers can cause rot and mold. Clay and slate last a long time, but they're heavy, need a specialist, and cost the most.",
+   "say": "Which type fits Iowa? Asphalt shingles are the most popular and most affordable, and last about 20 to 25 years. Class 4 impact-resistant shingles are rated for hail up to two inches. Metal handles hail, wind, and heavy snow, and can last 40 years or more. Wood looks classic, but Iowa's humid summers can cause rot and mold. Clay and slate last a long time, but they're heavy, need a specialist, and cost the most."
+  },
+  {
+   "id": "weather",
+   "kind": "factors",
+   "label": "Iowa Weather Factors",
+   "cols": 3,
+   "title": "How Iowa weather hits your roof",
+   "cards": [
+    {
+     "name": "Spring hail",
+     "desc": "Cracks shingles. Class 4 shingles can lower insurance premiums",
+     "icon": "hail",
+     "cue": "hail"
+    },
+    {
+     "name": "Straight-line winds",
+     "desc": "Lift shingles. Metal & wind-rated shingles hold on",
+     "icon": "wind",
+     "cue": "straight-line"
+    },
+    {
+     "name": "Ice dams",
+     "desc": "Back water under the eaves. Ice-and-water shield stops it",
+     "icon": "snow",
+     "cue": "ice"
+    },
+    {
+     "name": "Heavy snow",
+     "desc": "Adds weight. Metal sheds snow & handles the load",
+     "icon": "roof",
+     "cue": "snow"
+    },
+    {
+     "name": "Freeze-thaw cycles",
+     "desc": "Damage roof decking, which can add repair costs",
+     "icon": "clock",
+     "cue": "freeze-thaw"
+    },
+    {
+     "name": "Humid summers",
+     "desc": "Promote rot & mold. Good ventilation is a must",
+     "icon": "sun",
+     "cue": "humid"
+    }
+   ],
+   "speak": "Iowa weather is a big part of the story. Spring hail cracks shingles, and class four shingles can even lower your insurance premiums. Straight-line winds in summer lift shingles, so metal and wind-rated shingles hold on better. Ice dams in winter back water up under the eaves, which is why you want ice-and-water shield along the eaves and valleys. Heavy snow adds weight, and metal sheds it. Freeze-thaw cycles damage roof decking, which can add repair costs. And humid summers promote rot and mold, so good ventilation is a must.",
+   "say": "Iowa weather is a big part of the story. Spring hail cracks shingles, and Class 4 shingles can even lower your insurance premiums. Straight-line winds in summer lift shingles, so metal and wind-rated shingles hold on better. Ice dams in winter back water up under the eaves, which is why you want ice-and-water shield along the eaves and valleys. Heavy snow adds weight, and metal sheds it. Freeze-thaw cycles damage roof decking, which can add repair costs. And humid summers promote rot and mold, so good ventilation is a must."
+  },
+  {
+   "id": "storm",
+   "kind": "price",
+   "label": "Storm Damage & Insurance",
+   "dollars": true,
+   "image": "restoration-trucks.jpg",
+   "imgPos": "60% 50%",
+   "kicker": "Hail & wind damage",
+   "name": "Storm damage replacement",
+   "lo": 7840,
+   "hi": 19600,
+   "priceCue": "insurance",
+   "desc": "Often covered by homeowners insurance, minus your deductible.",
+   "bullets": [
+    {
+     "t": "Get the damage documented with photos",
+     "cue": "documented"
+    },
+    {
+     "t": "Have your roofer meet the adjuster on-site",
+     "cue": "adjuster"
+    },
+    {
+     "t": "Ask about Class 4 shingles for a premium discount",
+     "cue": "ask"
+    }
+   ],
+   "speak": "If hail or wind took out your roof, homeowners insurance often covers the replacement, minus your deductible. Get the damage documented with photos, have your roofer meet the adjuster on-site, and ask about class four shingles, which can qualify for an insurance premium discount.",
+   "say": "If hail or wind took out your roof, homeowners insurance often covers the replacement, minus your deductible. Get the damage documented with photos, have your roofer meet the adjuster on-site, and ask about Class 4 shingles, which can qualify for an insurance premium discount."
+  },
+  {
+   "id": "extras",
+   "kind": "factors",
+   "label": "Other Costs",
+   "cols": 4,
+   "title": "Other costs to plan for",
+   "cards": [
+    {
+     "name": "Tear-off",
+     "desc": "About 1.5 hours of labor per 100 sq ft of old roof",
+     "icon": "tool",
+     "cue": "tear-off"
+    },
+    {
+     "name": "Permits",
+     "desc": "Most Iowa cities require one for a full replacement",
+     "icon": "page",
+     "cue": "permits"
+    },
+    {
+     "name": "Rotted decking",
+     "desc": "Bad wood found under the old roof gets replaced",
+     "icon": "roof",
+     "cue": "rotted"
+    },
+    {
+     "name": "Hidden damage",
+     "desc": "14% of homeowners paid more than their estimate",
+     "icon": "search",
+     "cue": "hidden"
+    }
+   ],
+   "speak": "Plan for a few extra costs. Tear-off takes about an hour and a half of labor per hundred square feet of old roof. Most Iowa cities require a permit for a full replacement. Rotted decking found under the old roof gets replaced. And hidden damage is the big one: about fourteen percent of homeowners said their final bill came in higher than their estimate.",
+   "say": "Plan for a few extra costs. Tear-off takes about an hour and a half of labor per hundred square feet of old roof. Most Iowa cities require a permit for a full replacement. Rotted decking found under the old roof gets replaced. And hidden damage is the big one: about 14% of homeowners said their final bill came in higher than their estimate."
+  },
+  {
+   "id": "timing",
+   "kind": "stats",
+   "label": "Timing & Lifespan",
+   "title": "When to replace, and how long it lasts",
+   "tiles": [
+    {
+     "v": "May–Sept",
+     "n": "Best time to reroof",
+     "s": "Avoids snow, ice & freezing temps",
+     "cue": "May"
+    },
+    {
+     "v": "20–30 yrs",
+     "n": "Average Iowa roof",
+     "s": "Asphalt: about 20–25 years",
+     "cue": "average"
+    },
+    {
+     "v": "40+ yrs",
+     "n": "Metal & tile",
+     "s": "Longest-lasting options",
+     "cue": "metal"
+    },
+    {
+     "v": "1–2%",
+     "n": "Cheaper than nearby",
+     "s": "Iowa vs. Illinois & Wisconsin",
+     "cue": "cheaper"
+    }
+   ],
+   "tvPx": 62,
+   "speak": "The best time to replace a roof in Iowa is May through September, before snow and ice. The average Iowa roof lasts twenty to thirty years, while metal and tile can last forty or more. And good news: Iowa roofing prices run about one to two percent cheaper than Illinois and Wisconsin, and about twelve percent cheaper than Minnesota.",
+   "say": "The best time to replace a roof in Iowa is May through September, before snow and ice. The average Iowa roof lasts 20 to 30 years, while metal and tile can last 40 or more. And good news: Iowa roofing prices run about 1 to 2% cheaper than Illinois and Wisconsin, and about 12% cheaper than Minnesota."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Iowa City Contractor",
+   "image": "adrian-brad-iowa-city.jpg",
+   "imgPos": "50% 45%",
+   "stamp": "Iowa City roofer",
+   "name": "Michel Cuevas Home Improvement",
+   "nameCue": "Michel",
+   "where": "Iowa City · Coralville · North Liberty · Cedar Rapids",
+   "logo": "cuevas-logo.png",
+   "logoBg": "#111",
+   "points": [
+    "Family-owned in Iowa City since 1997",
+    "Own crews, no subcontractors",
+    "Full tear-off & deck inspection on every reroof",
+    "Ice-and-water shield & impact-resistant shingles",
+    "Hail & wind insurance claim help",
+    "0% financing, no payments for 30 days"
+   ],
+   "say": "If you're looking for a roofing contractor in the Iowa City area, give Michel Cuevas Home Improvement a call. They're family-owned and have worked out of Iowa City since 1997, with their own crews and no subcontractors. Every reroof starts with a full tear-off and deck inspection, with ice-and-water shield and impact-resistant shingle options. They help with hail and wind insurance claims, and offer zero percent financing, with no payments for 30 days."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "Recent Roofs",
+   "plain": true,
+   "title": "Recent roofs around the Corridor",
+   "sub": "Roof replacement · North Liberty & Iowa City",
+   "steps": [
+    {
+     "image": "cherry-aerial-3.jpg",
+     "name": "Tear-off in progress",
+     "cue": "tear-off"
+    },
+    {
+     "image": "reroof-crew-1.jpg",
+     "name": "Iowa City reroof",
+     "cue": "Iowa"
+    },
+    {
+     "image": "roof-gable-finished.jpg",
+     "name": "Finished roof",
+     "cue": "finished"
+    }
+   ],
+   "say": "Here's some of their recent work: a tear-off in progress, an Iowa City reroof, and a finished roof in North Liberty. The number on the estimate is the number on the invoice."
+  },
+  {
+   "id": "reviews",
+   "kind": "reviews",
+   "label": "What Customers Say",
+   "title": "What customers say",
+   "sub": "Google reviews",
+   "cards": [
+    {
+     "text": "Very professional with excellent work. They worked in a timely manner with great respect for our time.",
+     "name": "Nicolas D.",
+     "meta": "Google review",
+     "cue": "very"
+    },
+    {
+     "text": "Amazing price.",
+     "name": "Camilla M.",
+     "meta": "Google review",
+     "cue": "amazing"
+    },
+    {
+     "text": "Super nice & knowledgeable in the roofing & home building industry. Highly recommend.",
+     "name": "Logan C.",
+     "meta": "Local Guide · Google review",
+     "cue": "super"
+    }
+   ],
+   "say": "Customers say: \"Very professional with excellent work.\" \"Amazing price.\" And: \"Super nice and knowledgeable in the roofing industry. Highly recommend.\""
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Estimate",
+   "image": "house-finished-3.jpg",
+   "imgPos": "50% 50%",
+   "logo": "cuevas-logo.png",
+   "name": "Michel Cuevas Home Improvement",
+   "phone": "(319) 333-5046",
+   "address": "1570 1st Ave, Unit M · Iowa City, IA 52240",
+   "hours": "Mon–Sat 7 AM – 6 PM · Free written estimates",
+   "url": "michelcuevashome.com",
+   "urlCue": "visit",
+   "tip": "Licensed, insured & bonded · Iowa City since 1997",
+   "speak": "For a free, written roof estimate in Iowa City, call Michel Cuevas Home Improvement at (319) 333-5046, or visit michel cuevas home dot com. This has been Local Vibe Check.",
+   "say": "For a free, written roof estimate in Iowa City, call Michel Cuevas Home Improvement at (319) 333-5046, or visit michelcuevashome.com. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "cherry-aerial-2.jpg",
+   "imgPos": "50% 50%",
+   "kicker": "Iowa City, Iowa · 2026",
+   "title": [
+    "New Roof",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Asphalt",
+    "Metal",
+    "Hail",
+    "Ice dams"
+   ],
+   "say": "What does a new roof cost in Iowa City in 2026?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "Iowa City Prices",
+   "title": "New roof, Iowa City",
+   "dollars": true,
+   "max": 20000,
+   "ticks": [
+    0,
+    10000,
+    20000
+   ],
+   "rows": [
+    {
+     "name": "Iowa average",
+     "note": "Statewide",
+     "lo": 4794,
+     "hi": 15779,
+     "cue": "statewide"
+    },
+    {
+     "name": "Iowa City",
+     "note": "Full replacement",
+     "lo": 7840,
+     "hi": 19600,
+     "cue": "Iowa"
+    },
+    {
+     "name": "Most homes",
+     "note": "Standard size",
+     "lo": 9800,
+     "hi": 14700,
+     "cue": "most"
+    }
+   ],
+   "speak": "Statewide, most Iowans spend about forty-eight hundred to fifteen thousand eight hundred dollars. In Iowa City, a full replacement runs about seventy-eight hundred to nineteen thousand six hundred dollars, and most homes land between ninety-eight hundred and fourteen thousand seven hundred dollars.",
+   "say": "Statewide, most Iowans spend about $4,800 to $15,800. In Iowa City, a full replacement runs about $7,800 to $19,600, and most homes land between $9,800 and $14,700."
+  },
+  {
+   "id": "r-materials",
+   "kind": "bars",
+   "label": "By Roof Type",
+   "image": "shingle-detail.jpg",
+   "title": "By roof type",
+   "range": "$4.65 – $15.30 / sq ft",
+   "max": 16000,
+   "rows": [
+    [
+     "Asphalt",
+     4794
+    ],
+    [
+     "Metal",
+     8911
+    ],
+    [
+     "Wood",
+     11401
+    ],
+    [
+     "Clay",
+     15703
+    ],
+    [
+     "Slate",
+     15779
+    ]
+   ],
+   "speak": "Asphalt is the cheapest, about forty-eight hundred dollars on a typical Iowa home. Metal, about eighty-nine hundred. Slate tops out near fifteen thousand eight hundred.",
+   "say": "Asphalt is the cheapest, about $4,800 on a typical Iowa home. Metal, about $8,900. Slate tops out near $15,800."
+  },
+  {
+   "id": "r-weather",
+   "kind": "factors",
+   "label": "Iowa Weather",
+   "cols": 2,
+   "title": "Built for Iowa weather",
+   "cards": [
+    {
+     "name": "Hail",
+     "desc": "Class 4 shingles",
+     "icon": "hail",
+     "cue": "hail"
+    },
+    {
+     "name": "Wind",
+     "desc": "Wind-rated or metal",
+     "icon": "wind",
+     "cue": "wind"
+    },
+    {
+     "name": "Ice dams",
+     "desc": "Ice-and-water shield",
+     "icon": "snow",
+     "cue": "ice"
+    },
+    {
+     "name": "Humidity",
+     "desc": "Good ventilation",
+     "icon": "sun",
+     "cue": "ventilation"
+    }
+   ],
+   "say": "And build for Iowa weather: Class 4 shingles for hail, wind-rated shingles or metal for wind, ice-and-water shield for ice dams, and good ventilation."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Iowa City Contractor",
+   "image": "adrian-brad-iowa-city.jpg",
+   "imgPos": "50% 40%",
+   "stamp": "Iowa City roofer",
+   "name": "Michel Cuevas Home Improvement",
+   "nameCue": "Michel",
+   "where": "Iowa City since 1997",
+   "logo": "cuevas-logo.png",
+   "logoBg": "#111",
+   "points": [
+    "Own crews, no subcontractors",
+    "Insurance claim help",
+    "0% financing"
+   ],
+   "say": "Need a roofer in the Iowa City area? Give Michel Cuevas Home Improvement a call."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Estimate",
+   "image": "house-finished-3.jpg",
+   "logo": "cuevas-logo.png",
+   "name": "Michel Cuevas Home Improvement",
+   "phone": "(319) 333-5046",
+   "address": "Free written estimates",
+   "hours": "Mon–Sat 7 AM – 6 PM",
+   "url": "michelcuevashome.com",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Call (319) 333-5046 or visit michel cuevas home dot com for a free estimate.",
+   "say": "Call (319) 333-5046 or visit michelcuevashome.com for a free estimate."
+  }
+ ]
+}

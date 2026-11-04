@@ -82,6 +82,11 @@ const icons = {
   shield: ic(`<path d="M24 5l16 6v11c0 10-7 17.5-16 21-9-3.5-16-11-16-21V11z"/><path d="M17 24l5 5 9-10"/>`),
   search: ic(`<circle cx="21" cy="21" r="12"/><path d="M30 30l11 11"/>`),
   chart: ic(`<path d="M7 41h34M12 34V24M20 34V16M28 34V21M36 34V10"/>`),
+  snow: ic(`<path d="M24 5v38M7.5 14.5l33 19M7.5 33.5l33-19M19 8l5 5 5-5M19 40l5-5 5 5"/>`),
+  wind: ic(`<path d="M5 18h24a6 6 0 1 0-6-6M5 26h32a6 6 0 1 1-6 6M5 34h14"/>`),
+  hail: ic(`<path d="M14 26a9 9 0 0 1 1-18 12 12 0 0 1 23 4 7 7 0 0 1-1 14z"/><circle cx="16" cy="35" r="3"/><circle cx="26" cy="40" r="3"/><circle cx="35" cy="34" r="3"/>`),
+  sun: ic(`<circle cx="24" cy="24" r="8"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6M10 10l4 4M34 34l4 4M10 38l4-4M34 14l4-4"/>`),
+  tool: ic(`<path d="M30 6a10 10 0 0 0-9 14L7 34l7 7 14-14a10 10 0 0 0 14-9l-6 6-6-2-2-6z"/>`),
   wave: `<svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"><path d="M8 30c10-10 20-10 30 0s20 10 30 0 20-10 30 0 16 8 16 8"/><path d="M8 54c10-10 20-10 30 0s20 10 30 0 20-10 30 0 16 8 16 8"/></svg>`,
 };
 
