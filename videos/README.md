@@ -37,3 +37,8 @@ node _engine/thumbs.mjs $P                 # out/thumbnail-youtube.jpg, out/thum
 `factors`, `steps`, `quote`, `winner`, `hunts`, `chat`, `versus`, `cta`. See the two existing `script.json`
 files for the fields each one takes. `data-cue`-style fields (`cue`, `priceCue`, `urlCue`,
 `nameCue`) time an element to the first spoken word that starts with that text.
+
+`table` takes `"big": true` for larger rows when the table is short. `factors` cards take an `icon`:
+`pin`, `star`, `page`, `code`, `mega`, `drop`, `flame`, `roof`, `bolt`, `clock`, `map`, `shield`,
+`search`, `chart`, `snow`, `wind`, `hail`, `sun`, `tool`. In `ranges`, a price label sits inside its
+bar when the bar is wide enough to hold it.

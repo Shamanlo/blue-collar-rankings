@@ -155,7 +155,7 @@ const build = {
     const hl = t.highlight ?? 0; // index of the featured column
     return `
     <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
-    <table class="a fade" style="--d:.35">
+    <table class="a fade${s.big ? " big" : ""}" style="--d:.35">
       <tr><th>${esc(t.corner || "")}</th>${t.cols.map((c, i) => `<th class="${i === hl ? "ivo" : ""}">${esc(c)}</th>`).join("")}</tr>
       ${t.rows.map((r, ri) => `<tr class="a fade" style="--d:${0.5 + ri * 0.1}">${r.map((c, i) => `<td class="${i === hl + 1 ? "ivo" : ""}${c === "—" || c === "n/a" ? " dash" : ""}">${esc(c)}</td>`).join("")}</tr>`).join("")}
     </table>
@@ -190,7 +190,7 @@ const build = {
         return `<div class="rrow"${cueAttr(r.cue)} data-cuegroup>
           <div class="a left rname" style="--d:${0.6 + i * 0.3}">${esc(r.name)}<small>${esc(r.note || "")}</small></div>
           <div class="rtrack">${ticks.map((t) => `<i style="left:${(t / max) * 100}%"></i>`).join("")}
-            <div class="a grow rfill c${i}${hi / max > 0.75 ? " inside" : ""}" style="left:${l}%;width:${w}%;--d:${0.6 + i * 0.3}"><b>${rf(r.lo)}${r.hi == null ? "+" : ` – ${rf(r.hi)}${r.plus ? "+" : ""}`}</b></div>
+            <div class="a grow rfill c${i}${hi / max > 0.75 || w > 40 ? " inside" : ""}" style="left:${l}%;width:${w}%;--d:${0.6 + i * 0.3}"><b>${rf(r.lo)}${r.hi == null ? "+" : ` – ${rf(r.hi)}${r.plus ? "+" : ""}`}</b></div>
           </div></div>`;
       }).join("")}
     </div>`;

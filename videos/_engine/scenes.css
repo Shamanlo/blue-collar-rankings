@@ -161,6 +161,9 @@ tr:last-child td { border-bottom: 0; }
 td.ivo { background: #fff3e3; color: var(--orange-2); font-weight: 800; }
 th.ivo { background: var(--orange); }
 td.dash { color: #a6b0c2; }
+table.big { font-size: 40px; }
+table.big th { font-size: 30px; }
+table.big th, table.big td { padding: 16px 30px; }
 .callout { margin-top: 22px; align-self: center; font: 400 54px/1 var(--display); text-transform: uppercase; color: #fff; background: linear-gradient(90deg, var(--navy), var(--navy-2)); padding: 16px 34px; border-radius: 18px; box-shadow: var(--shadow); }
 .callout b { font-weight: 400; color: var(--orange); }
 

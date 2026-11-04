@@ -147,10 +147,11 @@
    "kind": "table",
    "label": "Cost by Home Size",
    "title": "Iowa roof cost by home size",
-   "callout": "The median Iowa home is <b>1,623 sq ft</b>, much smaller than the 2,411 sq ft national average.",
+   "callout": "Median Iowa home: <b>1,623 sq ft</b>",
    "calloutCue": "median",
    "speak": "Your home's size sets the baseline. In Iowa, a one-story, one thousand square foot home averages about seven thousand two hundred twenty-six dollars for a new roof. A fifteen hundred square foot home, about eight thousand seven hundred fifty-five dollars. A two-story, two thousand square foot home, about eight thousand nine hundred twenty-seven dollars. And a three thousand square foot home, about eleven thousand four hundred ninety-six dollars. The median Iowa home is just sixteen hundred twenty-three square feet.",
-   "say": "Your home's size sets the baseline. In Iowa, a one-story, 1,000 square foot home averages about $7,226 for a new roof. A 1,500 square foot home, about $8,755. A two-story, 2,000 square foot home, about $8,927. And a 3,000 square foot home, about $11,496. The median Iowa home is just 1,623 square feet."
+   "say": "Your home's size sets the baseline. In Iowa, a one-story, 1,000 square foot home averages about $7,226 for a new roof. A 1,500 square foot home, about $8,755. A two-story, 2,000 square foot home, about $8,927. And a 3,000 square foot home, about $11,496. The median Iowa home is just 1,623 square feet.",
+   "big": true
   },
   {
    "id": "materials",
@@ -501,7 +502,7 @@
    "label": "Iowa City Prices",
    "title": "New roof, Iowa City",
    "dollars": true,
-   "max": 20000,
+   "max": 22000,
    "ticks": [
     0,
     10000,
