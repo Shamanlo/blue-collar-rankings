@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Anton;src:url(../_engine/assets/anton.woff2)}
+@font-face{font-family:Poppins;font-weight:700;src:url(../_engine/assets/poppins-700.woff2)}
+@font-face{font-family:Poppins;font-weight:800;src:url(../_engine/assets/poppins-800.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1000px;height:1000px;overflow:hidden;position:relative;font-family:Poppins;
+ background:radial-gradient(circle at 25% 15%,#e3f6f4 0,#fbf8ef 45%,#ffe9cf 100%)}
+.wave{position:absolute;left:0;right:0;bottom:0;height:300px}
+.wave svg{width:100%;height:100%;display:block}
+.dots{position:absolute;right:70px;top:70px;width:170px;height:110px;background-image:radial-gradient(#ffb562 3.5px,transparent 4px);background-size:28px 28px;opacity:.8}
+.dots.l{left:70px;right:auto;top:auto;bottom:330px;background-image:radial-gradient(#7fd6cc 3.5px,transparent 4px)}
+.pin{position:absolute;left:50%;top:66px;width:250px;transform:translateX(-50%);filter:drop-shadow(0 22px 30px rgba(11,37,69,.28))}
+.t{position:absolute;left:0;right:0;top:405px;text-align:center;font-family:Anton;color:#0b2545;line-height:.92;letter-spacing:2px}
+.t .a{font-size:150px}.t .b{font-size:212px}
+.pill{position:absolute;left:50%;top:812px;transform:translateX(-50%);display:flex;align-items:center;gap:18px;background:#0b2545;color:#fff;font:800 40px/1 Poppins;letter-spacing:10px;padding:20px 40px 20px 32px;border-radius:999px;box-shadow:0 14px 30px rgba(11,37,69,.3)}
+.pill svg{width:46px;height:46px}
+.bar{position:absolute;left:310px;right:310px;top:790px;height:0}
+</style></head><body>
+<div class="wave"><svg viewBox="0 0 1200 300" preserveAspectRatio="none">
+<path d="M0 120 C 200 60, 380 200, 640 170 S 1000 90, 1200 150 L1200 300 L0 300Z" fill="#ffd3a1" opacity=".55"/>
+<path d="M0 170 C 160 120, 330 250, 560 240 S 760 260, 820 300 L0 300Z" fill="#7fd6cc" opacity=".55"/>
+<path d="M520 300 C 760 230, 960 160, 1200 120 L1200 300Z" fill="#ffb562" opacity=".5"/>
+<path d="M0 230 C 150 200, 300 270, 470 300 L0 300Z" fill="#2cb6bd" opacity=".45"/></svg></div>
+<div class="dots"></div><div class="dots l"></div>
+<img class="pin" src="../_engine/assets/pin.svg">
+<div class="t"><div class="a">LOCAL VIBE</div><div class="b">CHECK</div></div>
+<div class="pill"><svg viewBox="0 0 48 48" fill="none" stroke="#ff8e0a" stroke-width="4" stroke-linecap="round"><rect x="17" y="5" width="14" height="24" rx="7"/><path d="M10 22a14 14 0 0 0 28 0M24 36v7M16 43h16"/></svg>PODCAST</div>
+</body></html>
