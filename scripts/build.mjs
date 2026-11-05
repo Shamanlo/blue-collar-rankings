@@ -35,6 +35,9 @@ const fmtDate = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US"
 const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
 const toSec = (t) => t.split(":").reduce((a, b) => a * 60 + +b, 0);
 const naked = (url) => `<a href="${esc(url)}" rel="noopener" target="_blank">${esc(url)}</a>`;
+const episodePlayer = (e) => (e.spotifyId
+  ? spotifyEmbed("episode", e.spotifyId, e.title, 152)
+  : `<audio class="audio" controls preload="none" src="${esc(e.audio)}" title="${esc(e.title)}"></audio>`);
 const spotifyEmbed = (kind, id, title, height) =>
   `<iframe class="spotify" src="https://open.spotify.com/embed/${kind}/${id}?utm_source=generator" title="${esc(title)} on Spotify" height="${height}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
 const telHref = (p) => "tel:+1" + String(p).replace(/\D/g, "").replace(/^1(?=\d{10}$)/, "");
@@ -68,7 +71,7 @@ const rankings = data.rankings
       areaPng: `/badges/${badgeBase}-best-in-${r.citySlug}.png`,
       thumb: `/img/thumbs/${r.videoId}.jpg`,
       w: biz[r.winner] || {},
-      episodes: podcast.episodes.filter((e) => e.ranking === `${r.citySlug}/${r.slug}`),
+      episodes: [],
     };
   })
   .sort((a, b) => b.published.localeCompare(a.published) || a.city.localeCompare(b.city));
@@ -84,12 +87,66 @@ const states = [...new Set(cities.map((c) => c.stateSlug))].map((s) => {
   const cs = cities.filter((c) => c.stateSlug === s);
   return { state: cs[0].state, stateSlug: s, url: `/rankings/${s}/`, cities: cs, count: cs.reduce((n, c) => n + c.rankings.length, 0) };
 }).sort((a, b) => a.state.localeCompare(b.state));
-for (const e of podcast.episodes) {
-  if (e.ranking && !rankings.some((r) => `${r.citySlug}/${r.slug}` === e.ranking)) throw new Error(`podcast.json: unknown ranking "${e.ranking}"`);
-  e.url = `https://open.spotify.com/episode/${e.spotifyId}`;
-  e.rankingPage = rankings.find((r) => `${r.citySlug}/${r.slug}` === e.ranking);
+// ---------- podcast ----------
+// Episodes come from the show's RSS feed, read at build time, so new ones appear without
+// editing anything. data/podcast.json pins a Spotify ID (nicer player) or a ranking for
+// specific episodes; feed episodes are matched to a ranking by city and trade in the title.
+const norm = (t) => t.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, " ").trim();
+const decode = (t) => t.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").trim();
+
+async function loadFeed(url) {
+  if (!url || process.env.SKIP_PODCAST_FEED) return [];
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(20000), headers: { "user-agent": "BlueCollarRankingsSite/1.0" } });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const xml = await res.text();
+    return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(([, it]) => {
+      const tag = (t) => decode((it.match(new RegExp(`<${t}[^>]*>([\\s\\S]*?)</${t}>`)) || [, ""])[1]);
+      return {
+        title: tag("title"),
+        published: new Date(tag("pubDate")).toISOString().slice(0, 10),
+        audio: decode((it.match(/<enclosure[^>]*url="([^"]+)"/) || [, ""])[1]),
+        link: tag("link"),
+      };
+    }).filter((e) => e.title && e.audio);
+  } catch (err) {
+    console.warn(`Podcast feed unavailable (${err.message}); using data/podcast.json only.`);
+    return [];
+  }
 }
-podcast.episodes.sort((a, b) => b.published.localeCompare(a.published));
+
+const GENERIC = new Set(["companies", "company", "services", "service", "installers", "installer", "installation", "pros", "the", "and", "best", "guided"]);
+function matchRanking(title) {
+  const t = norm(title);
+  const stems = new Set(t.split(" ").map((w) => w.slice(0, 5)));
+  let best = null, bestScore = 0, tie = false;
+  for (const r of rankings) {
+    if (!t.includes(norm(r.city))) continue;
+    const need = [...new Set(norm(`${r.trade} ${r.tradePlural}`).split(" ").filter((w) => !GENERIC.has(w)).map((w) => w.slice(0, 5)))];
+    const hits = need.filter((w) => stems.has(w)).length;
+    if (hits < Math.min(2, need.length)) continue;
+    if (hits > bestScore) { best = r; bestScore = hits; tie = false; } else if (hits === bestScore) tie = true;
+  }
+  return tie ? null : best;
+}
+
+const rankingKey = (r) => `${r.citySlug}/${r.slug}`;
+for (const e of podcast.episodes) {
+  if (e.ranking && !rankings.some((r) => rankingKey(r) === e.ranking)) throw new Error(`podcast.json: unknown ranking "${e.ranking}"`);
+}
+const feed = await loadFeed(podcast.show.rss);
+for (const f of feed) {
+  const pinned = podcast.episodes.find((e) => norm(e.title) === norm(f.title));
+  if (pinned) Object.assign(pinned, { audio: f.audio, link: f.link });
+  else podcast.episodes.push({ ...f, ranking: matchRanking(f.title) && rankingKey(matchRanking(f.title)) });
+}
+for (const e of podcast.episodes) {
+  e.url = e.spotifyId ? `https://open.spotify.com/episode/${e.spotifyId}` : e.link || podcast.show.url;
+  e.rankingPage = rankings.find((r) => rankingKey(r) === e.ranking);
+  if (e.rankingPage) e.rankingPage.episodes.push(e);
+}
+podcast.episodes = podcast.episodes.filter((e) => e.spotifyId || e.audio).sort((a, b) => b.published.localeCompare(a.published));
+console.log(`Podcast: ${podcast.episodes.length} episodes (${feed.length} from RSS), ${podcast.episodes.filter((e) => e.rankingPage).length} matched to rankings`);
 const uniqueBiz = new Set(rankings.flatMap((r) => [r.winner, ...r.contenders]));
 
 // ---------- layout ----------
@@ -119,6 +176,7 @@ function layout({ title, description, canonical, body, active = "", ogImage = "/
 <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/fonts.css">
 <link rel="stylesheet" href="/css/styles.css">
+${podcast.show.rss ? `<link rel="alternate" type="application/rss+xml" title="${esc(site.name)} podcast" href="${podcast.show.rss}">` : ""}
 ${jsonld.map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</script>`).join("\n")}
 </head>
 <body>
@@ -444,7 +502,7 @@ function rankingPage(r) {
       <p class="chapters">Jump to: ${r.chapters.map(([t, l]) => `<a href="${ytUrl}&amp;t=${toSec(t)}s" rel="noopener" target="_blank">${t} ${esc(l)}</a>`).join(" · ")}</p>
       ${r.episodes.map((e) => `<div class="episode" id="podcast">
         <h3>Listen to the podcast episode</h3>
-        ${spotifyEmbed("episode", e.spotifyId, e.title, 152)}
+        ${episodePlayer(e)}
         <p class="muted" style="font-size:.9rem;margin-top:8px">Prefer audio? <a href="${e.url}" rel="noopener" target="_blank">Open “${esc(e.title)}” on Spotify</a> or <a href="${podcast.show.url}" rel="noopener" target="_blank">follow the Blue Collar Rankings podcast</a>.</p>
       </div>`).join("\n")}
 
@@ -540,7 +598,7 @@ function podcastPage() {
       <h3>${esc(e.title)}</h3>
       ${e.rankingPage ? `<p><a href="${e.rankingPage.url}">Read the ranking and watch the video</a> · #1 pick: <b>${esc(e.rankingPage.winner)}</b></p>` : ""}
     </div>
-    ${spotifyEmbed("episode", e.spotifyId, e.title, 152)}
+    ${episodePlayer(e)}
   </li>`).join("\n");
   const body = `
 <section class="hero hero-sub"><div class="wrap">
@@ -551,11 +609,11 @@ function podcastPage() {
   <div class="actions"><a class="btn btn-primary" href="${podcast.show.url}" rel="noopener" target="_blank">Follow on Spotify</a><a class="btn btn-ghost" href="/rankings/">Browse the rankings</a></div>
 </div></section>
 <section class="section"><div class="wrap">
-  <div class="section-head"><div><span class="eyebrow">${podcast.episodes.length} episode${podcast.episodes.length === 1 ? "" : "s"}</span><h2>Latest episodes</h2></div><p>Every episode goes with a ranking on this site: the full field, the #1 pick and how to reach them.</p></div>
+  <div class="section-head"><div><span class="eyebrow">${podcast.episodes.length} episode${podcast.episodes.length === 1 ? "" : "s"}</span><h2>Latest episodes</h2></div><p>Every episode goes with a ranking on this site: the full field, the #1 pick and how to reach them.${podcast.show.rss ? ` Use another podcast app? Subscribe with the RSS feed: ${naked(podcast.show.rss)}` : ""}</p></div>
   <ul class="eps">${eps}</ul>
 </div></section>
 ${band}`;
-  const ld = { "@context": "https://schema.org", "@type": "PodcastSeries", name: podcast.show.name, url: site.url + "/podcast/", sameAs: [podcast.show.url], description: podcast.show.description,
+  const ld = { "@context": "https://schema.org", "@type": "PodcastSeries", name: podcast.show.name, url: site.url + "/podcast/", sameAs: [podcast.show.url], ...(podcast.show.rss ? { webFeed: podcast.show.rss } : {}), description: podcast.show.description,
     episode: podcast.episodes.map((e) => ({ "@type": "PodcastEpisode", name: e.title, datePublished: e.published, url: e.url })) };
   return layout({ title: `Podcast | ${site.name}`, description: `Listen to the Blue Collar Rankings podcast on Spotify: ${podcast.episodes.map((e) => e.title).join("; ")}.`, canonical: "/podcast/", body, active: "/podcast/", jsonld: [crumbsLd(trail), ld] });
 }
