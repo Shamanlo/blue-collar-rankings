@@ -4,225 +4,252 @@
 <meta charset="utf-8">
 <title>Furnace Repair Near Me Carousel</title>
 <style>
-@font-face { font-family: "Oswald"; font-weight: 500 700; src: url("../../../static/fonts/oswald-latin.woff2") format("woff2"); }
+@font-face { font-family: "Heavy"; font-weight: 900; src: url("../fonts/InterDisplay-Black.otf") format("opentype"); }
+@font-face { font-family: "Heavy"; font-weight: 800; src: url("../fonts/InterDisplay-ExtraBold.otf") format("opentype"); }
 @font-face { font-family: "Inter"; font-weight: 400 700; src: url("../../../static/fonts/inter-latin.woff2") format("woff2"); }
-/* Charipar Web Services site palette */
+
+/* Charipar Web Services site palette, run high-contrast:
+   navy background, heavy white type, blue highlight boxes, red for money lost. */
 :root {
   --navy: #1a2535;
+  --navy-deep: #111926;
   --blue: #0071bc;
-  --blue-soft: #e8f2fa;
-  --slate: #5a6a7e;
-  --line: #dfe6ee;
-  --paper: #ffffff;
+  --blue-light: #5cb8ff;
+  --slate: #9fb0c4;
+  --red: #ff4b4b;
+  --white: #ffffff;
+  --line: rgba(255,255,255,.12);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: #888; font-family: "Inter", sans-serif; display: flex; flex-direction: column; gap: 40px; padding: 40px; align-items: center; }
+body { background: #555; font-family: "Inter", sans-serif; display: flex; flex-direction: column; gap: 40px; padding: 40px; align-items: center; }
 
 .slide {
   position: relative; width: 1080px; height: 1350px; overflow: hidden;
-  background:
-    radial-gradient(900px 700px at 100% -10%, rgba(0,113,188,.10), transparent 60%),
-    radial-gradient(800px 600px at -10% 110%, rgba(0,113,188,.07), transparent 60%),
-    var(--paper);
-  color: var(--navy);
-  padding: 90px 80px 0;
+  background: radial-gradient(1100px 900px at 50% 0%, var(--navy), var(--navy-deep) 75%);
+  color: var(--white);
+  padding: 96px 84px 0;
 }
 .slide.square { height: 1080px; }
-.slide::before { /* blue top bar */
-  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 14px; background: var(--blue); z-index: 1;
-}
-.slide::after { /* subtle grid texture */
-  content: ""; position: absolute; inset: 0; pointer-events: none;
-  background-image: linear-gradient(rgba(26,37,53,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(26,37,53,.04) 1px, transparent 1px);
-  background-size: 54px 54px;
-}
 .slide > * { position: relative; z-index: 1; }
 
-/* brand header */
-.brand { display: flex; align-items: center; gap: 16px; font-family: "Oswald"; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: 26px; color: var(--navy); }
-.brand .mark { width: 46px; height: 46px; border-radius: 8px; background: var(--blue); display: grid; place-items: center; }
-.brand .mark svg { width: 28px; height: 28px; }
-.counter { position: absolute; top: 96px; right: 80px; font-family: "Oswald"; font-size: 26px; color: var(--slate); letter-spacing: .08em; z-index: 1; }
+/* header */
+.brand { display: flex; align-items: center; gap: 14px; font-family: "Heavy"; font-weight: 800; font-size: 26px; letter-spacing: .02em; color: var(--white); }
+.brand .mark { width: 44px; height: 44px; border-radius: 8px; background: var(--blue); display: grid; place-items: center; }
+.brand .mark svg { width: 26px; height: 26px; }
+.counter { position: absolute; top: 104px; right: 84px; font-family: "Heavy"; font-weight: 800; font-size: 26px; color: var(--slate); z-index: 1; }
 
-.eyebrow { font-family: "Oswald"; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--blue); font-size: 30px; margin-top: 70px; }
-h1 { font-family: "Oswald"; font-weight: 700; text-transform: uppercase; line-height: .98; font-size: 112px; margin-top: 18px; letter-spacing: -.005em; }
-h2 { font-family: "Oswald"; font-weight: 700; text-transform: uppercase; line-height: 1; font-size: 88px; margin-top: 18px; }
-.accent { color: var(--blue); }
-.lede { font-size: 36px; line-height: 1.38; color: var(--slate); margin-top: 34px; max-width: 880px; }
-.lede b { color: var(--navy); font-weight: 700; }
+/* type */
+.kicker { display: inline-block; margin-top: 64px; font-family: "Heavy"; font-weight: 800; font-size: 30px; text-transform: uppercase; letter-spacing: .06em; color: var(--blue-light); }
+.h { font-family: "Heavy"; font-weight: 900; font-size: 100px; line-height: 1.1; letter-spacing: -.035em; margin-top: 22px; }
+.h.md { font-size: 84px; }
+.h.sm { font-size: 72px; }
+.hl { background: var(--blue); color: var(--white); padding: 0 .14em; border-radius: .08em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.red { color: var(--red); }
+.blue { color: var(--blue-light); }
+.u { text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: .09em; text-underline-offset: .12em; }
+.p { font-size: 38px; line-height: 1.36; color: var(--slate); margin-top: 34px; max-width: 860px; }
+.p b { color: var(--white); font-weight: 700; }
+.fine { position: absolute; left: 84px; bottom: 70px; font-size: 22px; color: #6f8197; max-width: 640px; line-height: 1.4; z-index: 2; }
 
 /* search bar */
 .search {
-  margin-top: 64px; background: var(--paper); color: #202124; border-radius: 999px;
-  height: 128px; display: flex; align-items: center; gap: 26px; padding: 0 44px;
-  box-shadow: 0 24px 60px rgba(26,37,53,.18), 0 0 0 5px var(--blue);
+  margin-top: 56px; background: var(--white); color: #202124; border-radius: 999px;
+  height: 124px; display: flex; align-items: center; gap: 26px; padding: 0 44px;
+  box-shadow: 0 0 0 6px var(--blue), 0 30px 80px rgba(0,0,0,.5);
   font-size: 48px; font-weight: 500;
 }
 .search svg { width: 50px; height: 50px; flex: none; }
 .search .caret { width: 4px; height: 58px; background: var(--blue); margin-left: -18px; }
 .search .mic { margin-left: auto; }
 
-/* headshot badge */
+/* headshot */
 .me { position: absolute; right: 64px; bottom: 64px; z-index: 2; }
-.me .ring { width: 210px; height: 210px; border-radius: 50%; padding: 8px; background: var(--blue); box-shadow: 0 18px 44px rgba(26,37,53,.28); }
-.me .ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; border: 6px solid var(--paper); }
+.me .ring { width: 210px; height: 210px; border-radius: 50%; padding: 8px; background: var(--blue); box-shadow: 0 18px 50px rgba(0,0,0,.55); }
+.me .ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; border: 6px solid var(--white); }
 
-.swipe { position: absolute; left: 80px; bottom: 120px; z-index: 2; font-family: "Oswald"; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; font-size: 32px; color: var(--blue); display: flex; align-items: center; gap: 14px; }
-.swipe svg { width: 44px; height: 44px; }
+.swipe { position: absolute; left: 84px; bottom: 120px; z-index: 2; font-family: "Heavy"; font-weight: 900; font-size: 36px; color: var(--white); display: flex; align-items: center; gap: 14px; }
+.swipe svg { width: 46px; height: 46px; }
 
 /* map pack */
-.pack { margin-top: 40px; background: var(--paper); color: #202124; border-radius: 28px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 24px 60px rgba(26,37,53,.16); width: 920px; }
-.map { height: 170px; position: relative; background: #e8eef3;
+.pack { margin-top: 44px; background: var(--white); color: #202124; border-radius: 26px; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,.5); width: 912px; }
+.map { height: 110px; position: relative; background: #e8eef3;
   background-image:
     linear-gradient(28deg, transparent 46%, #fff 46%, #fff 52%, transparent 52%),
     linear-gradient(-62deg, transparent 47%, #fff 47%, #fff 51%, transparent 51%),
     linear-gradient(90deg, transparent 70%, #d6e9d1 70%, #d6e9d1 84%, transparent 84%),
     linear-gradient(0deg, transparent 30%, #fff 30%, #fff 33%, transparent 33%);
 }
-.pin { position: absolute; width: 46px; height: 46px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #8a96a6; display: grid; place-items: center; box-shadow: 0 6px 14px rgba(0,0,0,.2); }
-.pin span { transform: rotate(45deg); color: #fff; font-weight: 700; font-size: 20px; }
-.pin.you { background: var(--blue); width: 60px; height: 60px; }
-.pin.you span { font-size: 26px; }
-.listing { display: flex; align-items: center; gap: 24px; padding: 20px 34px; border-top: 1px solid var(--line); }
-.listing .rank { font-family: "Oswald"; font-weight: 700; font-size: 44px; width: 40px; color: #9aa4b1; }
-.listing .name { font-size: 32px; font-weight: 700; color: var(--navy); }
-.listing .meta { font-size: 24px; color: var(--slate); margin-top: 6px; }
+.pin { position: absolute; width: 44px; height: 44px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #8a96a6; display: grid; place-items: center; }
+.pin span { transform: rotate(45deg); color: #fff; font-weight: 700; font-size: 19px; }
+.pin.you { background: var(--blue); width: 58px; height: 58px; }
+.pin.you span { font-size: 25px; }
+.listing { display: flex; align-items: center; gap: 22px; padding: 18px 32px; border-top: 1px solid #e3e8ee; }
+.listing .rank { font-family: "Heavy"; font-weight: 900; font-size: 40px; width: 36px; color: #9aa4b1; }
+.listing .name { font-size: 31px; font-weight: 700; color: var(--navy); }
+.listing .meta { font-size: 23px; color: #5a6a7e; margin-top: 4px; }
 .listing .stars { color: #f5b301; letter-spacing: 2px; }
-.listing .cta { margin-left: auto; font-size: 24px; font-weight: 600; color: var(--blue); border: 2px solid var(--line); border-radius: 999px; padding: 10px 24px; }
-.listing.you { background: var(--blue-soft); box-shadow: inset 10px 0 0 var(--blue); }
+.listing .cta { margin-left: auto; font-size: 23px; font-weight: 700; color: var(--blue); border: 2px solid #dfe6ee; border-radius: 999px; padding: 9px 24px; }
+.listing.you { background: #e8f2fa; box-shadow: inset 10px 0 0 var(--blue); }
 .listing.you .rank { color: var(--blue); }
 .listing.you .cta { background: var(--blue); color: #fff; border-color: var(--blue); }
-.listing.faded { opacity: .5; }
-.below { margin-top: 30px; font-family: "Oswald"; font-size: 34px; text-transform: uppercase; letter-spacing: .06em; color: var(--slate); }
-.below b { color: var(--navy); }
+.listing.you .name::after { content: "  ← you?"; color: var(--blue); }
+.listing.dead { background: #fafafa; }
+.listing.dead .name, .listing.dead .meta, .listing.dead .rank { color: #b9c0c8; }
+.listing.dead .cta { color: #c9cfd6; }
 
-/* checklist */
-.list { margin-top: 44px; display: grid; gap: 20px; max-width: 920px; }
-.item { display: flex; gap: 28px; align-items: flex-start; background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: 26px 34px; box-shadow: 0 10px 30px rgba(26,37,53,.07); }
-.item .num { flex: none; width: 66px; height: 66px; border-radius: 16px; background: var(--blue); color: #fff; font-family: "Oswald"; font-weight: 700; font-size: 38px; display: grid; place-items: center; }
-.item .t { font-family: "Oswald"; font-weight: 600; font-size: 40px; text-transform: uppercase; letter-spacing: .02em; color: var(--navy); }
-.item .d { font-size: 26px; max-width: 600px; color: var(--slate); margin-top: 6px; line-height: 1.38; }
-.item.bad .num { background: var(--paper); color: var(--navy); border: 3px solid var(--navy); }
+/* the math */
+.math { margin-top: 48px; width: 912px; border-top: 2px solid var(--line); }
+.row { display: flex; align-items: baseline; justify-content: space-between; padding: 26px 0; border-bottom: 2px solid var(--line); }
+.row .l { font-size: 38px; color: var(--slate); }
+.row .l b { color: var(--white); }
+.row .r { font-family: "Heavy"; font-weight: 900; font-size: 62px; letter-spacing: -.02em; }
+.total { margin-top: 34px; background: var(--red); color: var(--white); border-radius: 22px; padding: 30px 40px; width: 912px; display: flex; align-items: center; justify-content: space-between; }
+.total .l { font-family: "Heavy"; font-weight: 800; font-size: 34px; line-height: 1.15; }
+.total .r { font-family: "Heavy"; font-weight: 900; font-size: 104px; letter-spacing: -.04em; line-height: 1; }
 
-/* CTA */
-.cta-box { margin-top: 64px; background: var(--navy); color: #fff; border-radius: 28px; padding: 46px 52px; max-width: 920px; box-shadow: inset 12px 0 0 var(--blue); }
-.cta-box .big { font-family: "Oswald"; font-weight: 700; font-size: 62px; text-transform: uppercase; line-height: 1.02; }
-.cta-box .small { font-size: 30px; font-weight: 500; margin-top: 16px; line-height: 1.35; color: #d5dde7; }
-.url { margin-top: 40px; font-family: "Oswald"; font-weight: 600; font-size: 48px; color: var(--blue); letter-spacing: .02em; }
+/* value ladder */
+.ladder { margin-top: 40px; display: grid; gap: 14px; width: 912px; }
+.step { display: flex; align-items: center; gap: 26px; padding: 16px 30px; border-radius: 20px; background: rgba(255,255,255,.05); border: 2px solid var(--line); }
+.step .n { font-family: "Heavy"; font-weight: 900; font-size: 52px; letter-spacing: -.02em; width: 250px; flex: none; color: var(--blue-light); }
+.step .t { font-size: 34px; font-weight: 600; }
+.step.first { border-color: var(--blue); background: rgba(0,113,188,.18); }
+
+/* fix list */
+.fix { margin-top: 44px; display: grid; gap: 26px; width: 912px; }
+.fix .it { display: flex; gap: 24px; align-items: center; font-size: 38px; font-weight: 600; }
+.fix .ck { flex: none; width: 64px; height: 64px; border-radius: 14px; background: var(--blue); display: grid; place-items: center; }
+.fix .ck svg { width: 34px; height: 34px; }
+.fix .it span { color: var(--slate); font-weight: 400; }
+
+/* offer */
+.offer { margin-top: 46px; background: var(--white); color: var(--navy); border-radius: 26px; padding: 40px 46px; width: 912px; box-shadow: inset 14px 0 0 var(--blue); }
+.offer .big { font-family: "Heavy"; font-weight: 900; font-size: 58px; letter-spacing: -.03em; line-height: 1.05; }
+.offer ul { list-style: none; margin-top: 22px; display: grid; gap: 12px; }
+.offer li { font-size: 34px; font-weight: 600; color: #3b4a5e; }
+.offer li::before { content: "→ "; color: var(--blue); font-weight: 800; }
+.dm { margin-top: 40px; font-family: "Heavy"; font-weight: 900; font-size: 54px; letter-spacing: -.02em; }
+.url { margin-top: 10px; font-family: "Heavy"; font-weight: 800; font-size: 34px; color: var(--blue-light); }
 </style>
 </head>
 <body>
 
-<!-- reusable icons -->
 <svg width="0" height="0" style="position:absolute">
   <symbol id="globe" viewBox="0 0 24 24"><g fill="none" stroke="#ffffff" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></g></symbol>
   <symbol id="mag" viewBox="0 0 24 24"><g fill="none" stroke="#5f6368" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></g></symbol>
   <symbol id="mic" viewBox="0 0 24 24"><g fill="none" stroke="#5f6368" stroke-width="2.2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></g></symbol>
-  <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="#0071bc" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="#5cb8ff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 
-<!-- SLIDE 1: hook -->
+<!-- 1: HOOK -->
 <section class="slide" id="s1">
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
-  <div class="counter">1 / 5</div>
-  <div class="eyebrow">HVAC &amp; furnace companies</div>
-  <h1>It's 7°F.<br>The furnace<br>just died.<br><span class="accent">They search:</span></h1>
+  <div class="counter">1 / 6</div>
+  <div class="kicker">HVAC owners, read this</div>
+  <div class="h">Someone in your town is buying a <span class="hl">$6,000 furnace</span> tonight.</div>
   <div class="search">
     <svg><use href="#mag"/></svg>furnace repair near me<span class="caret"></span>
     <svg class="mic"><use href="#mic"/></svg>
   </div>
-  <p class="lede">Does <b>your</b> company come up, or does the guy down the road get the call?</p>
+  <p class="p">The only question is <b>who they call.</b><br>Right now, it probably isn't you.</p>
   <div class="swipe">Swipe <svg><use href="#arrow"/></svg></div>
   <div class="me"><div class="ring"><img src="../headshot-circle.jpg" alt=""></div></div>
 </section>
 
-<!-- SLIDE 2: map pack -->
+<!-- 2: TOP 3 -->
 <section class="slide" id="s2">
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
-  <div class="counter">2 / 5</div>
-  <h2>The top 3<br><span class="accent">get the calls.</span></h2>
-  <p class="lede" style="margin-top:22px">No heat means no scrolling. They tap <b>Call</b> on one of the first three on the map.</p>
+  <div class="counter">2 / 6</div>
+  <div class="h md" style="margin-top:60px">The top 3 get the call.<br><span class="red">#4 gets nothing.</span></div>
+  <p class="p" style="font-size:34px;margin-top:20px">No heat = no scrolling. They tap <b>Call.</b></p>
   <div class="pack">
     <div class="map">
-      <div class="pin you" style="left:330px;top:40px"><span>1</span></div>
-      <div class="pin" style="left:560px;top:90px"><span>2</span></div>
-      <div class="pin" style="left:180px;top:100px"><span>3</span></div>
-      <div class="pin" style="left:720px;top:30px"><span>4</span></div>
+      <div class="pin you" style="left:330px;top:18px"><span>1</span></div>
+      <div class="pin" style="left:560px;top:50px"><span>2</span></div>
+      <div class="pin" style="left:180px;top:54px"><span>3</span></div>
+      <div class="pin" style="left:720px;top:12px"><span>4</span></div>
     </div>
-    <div class="listing you">
-      <div class="rank">1</div>
-      <div><div class="name">Your Heating &amp; Air Co.</div><div class="meta"><span class="stars">★★★★★</span> 4.9 · Open 24 hours</div></div>
-      <div class="cta">Call</div>
-    </div>
-    <div class="listing">
-      <div class="rank">2</div>
-      <div><div class="name">Competitor HVAC</div><div class="meta"><span class="stars">★★★★☆</span> 4.6 · Open now</div></div>
-      <div class="cta">Call</div>
-    </div>
-    <div class="listing faded">
-      <div class="rank">3</div>
-      <div><div class="name">Another Furnace Co.</div><div class="meta"><span class="stars">★★★★☆</span> 4.4 · Closes 6 PM</div></div>
-      <div class="cta">Call</div>
-    </div>
+    <div class="listing you"><div class="rank">1</div><div><div class="name">Your Heating &amp; Air</div><div class="meta"><span class="stars">★★★★★</span> 4.9 · Open 24 hours</div></div><div class="cta">Call</div></div>
+    <div class="listing"><div class="rank">2</div><div><div class="name">Competitor HVAC</div><div class="meta"><span class="stars">★★★★☆</span> 4.6 · Open now</div></div><div class="cta">Call</div></div>
+    <div class="listing"><div class="rank">3</div><div><div class="name">Another Furnace Co.</div><div class="meta"><span class="stars">★★★★☆</span> 4.4 · Open now</div></div><div class="cta">Call</div></div>
+    <div class="listing dead"><div class="rank">4</div><div><div class="name">Everyone else</div><div class="meta">0 calls</div></div><div class="cta">Call</div></div>
   </div>
-  <div class="below">Everyone below #3? <b>Basically invisible.</b></div>
   <div class="me"><div class="ring"><img src="../headshot-circle.jpg" alt=""></div></div>
 </section>
 
-<!-- SLIDE 3: why you're not showing up -->
+<!-- 3: THE MATH -->
 <section class="slide" id="s3">
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
-  <div class="counter">3 / 5</div>
-  <h2>Why you're<br><span class="accent">not showing up</span></h2>
-  <div class="list">
-    <div class="item bad"><div class="num">✕</div><div><div class="t">Thin Google profile</div><div class="d">Wrong categories, no services, no photos.</div></div></div>
-    <div class="item bad"><div class="num">✕</div><div><div class="t">No furnace repair page</div><div class="d">No page that says <i>furnace repair</i> + your towns.</div></div></div>
-    <div class="item bad"><div class="num">✕</div><div><div class="t">Not enough reviews</div><div class="d">Happy customers never get asked.</div></div></div>
-    <div class="item bad"><div class="num">✕</div><div><div class="t">Slow site on phones</div><div class="d">If it drags, they hit back and call someone else.</div></div></div>
+  <div class="counter">3 / 6</div>
+  <div class="h md" style="margin-top:60px">Let's do <span class="hl">the math.</span></div>
+  <div class="math">
+    <div class="row"><div class="l">1 furnace replacement</div><div class="r">$6,000</div></div>
+    <div class="row"><div class="l">Miss just <b>2 a week</b></div><div class="r">$12,000</div></div>
+    <div class="row"><div class="l">× a <b>16-week</b> heating season</div><div class="r">× 16</div></div>
   </div>
+  <div class="total"><div class="l">Walking to<br>your competitor:</div><div class="r">$192,000</div></div>
+  <p class="p" style="font-size:34px;margin-top:30px">And that's <b>before</b> a single repair call.</p>
+  <div class="fine">Example math. Plug in your own average ticket and call volume.</div>
   <div class="me"><div class="ring"><img src="../headshot-circle.jpg" alt=""></div></div>
 </section>
 
-<!-- SLIDE 4: what we do -->
+<!-- 4: LIFETIME VALUE -->
 <section class="slide" id="s4">
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
-  <div class="counter">4 / 5</div>
-  <h2>How we get you<br><span class="accent">into the top 3</span></h2>
-  <div class="list">
-    <div class="item"><div class="num">1</div><div><div class="t">Google Business Profile</div><div class="d">Categories, services, photos, weekly posts.</div></div></div>
-    <div class="item"><div class="num">2</div><div><div class="t">Local service pages</div><div class="d">Furnace repair pages for every town you serve.</div></div></div>
-    <div class="item"><div class="num">3</div><div><div class="t">Review system</div><div class="d">Automatic follow-ups after every job.</div></div></div>
-    <div class="item"><div class="num">4</div><div><div class="t">Fast, call-first website</div><div class="d">Built for phones, tap-to-call on every page.</div></div></div>
+  <div class="counter">4 / 6</div>
+  <div class="h sm" style="margin-top:60px">You're not losing <span class="u">a job.</span><br>You're losing <span class="hl">a customer.</span></div>
+  <div class="ladder">
+    <div class="step first"><div class="n">$300</div><div class="t">The furnace repair call</div></div>
+    <div class="step"><div class="n">$6,000+</div><div class="t">The replacement when it dies</div></div>
+    <div class="step"><div class="n">+ AC</div><div class="t">The new AC next summer</div></div>
+    <div class="step"><div class="n">+ plan</div><div class="t">The yearly maintenance plan</div></div>
+    <div class="step"><div class="n">+ refs</div><div class="t">Every neighbor they send you</div></div>
   </div>
+  <p class="p" style="font-size:36px;margin-top:34px">Whoever gets the <b>first call</b><br>gets <b>all of it.</b></p>
   <div class="me"><div class="ring"><img src="../headshot-circle.jpg" alt=""></div></div>
 </section>
 
-<!-- SLIDE 5: CTA -->
+<!-- 5: THE FIX -->
 <section class="slide" id="s5">
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
-  <div class="counter">5 / 5</div>
-  <div class="eyebrow">Before the next cold snap</div>
-  <h1 style="font-size:104px">Own <span class="accent">"furnace<br>repair near me"</span><br>in your town.</h1>
-  <div class="cta-box">
-    <div class="big">Free local<br>ranking check</div>
-    <div class="small">I'll show you where you rank today, who's beating you, and exactly what it takes to pass them.</div>
+  <div class="counter">5 / 6</div>
+  <div class="h md" style="margin-top:60px">You're not losing to<br><span class="red">better techs.</span><br>You're losing to<br><span class="hl">better Google.</span></div>
+  <p class="p" style="font-size:34px;margin-top:26px">This is fixable. Here's what we do:</p>
+  <div class="fix">
+    <div class="it"><div class="ck"><svg><use href="#check"/></svg></div><div>Google Business Profile <span>built out</span></div></div>
+    <div class="it"><div class="ck"><svg><use href="#check"/></svg></div><div>Furnace pages <span>for every town you serve</span></div></div>
+    <div class="it"><div class="ck"><svg><use href="#check"/></svg></div><div>A review machine <span>after every job</span></div></div>
+    <div class="it"><div class="ck"><svg><use href="#check"/></svg></div><div>A fast site <span>that makes the phone ring</span></div></div>
   </div>
-  <div class="url">chariparwebservices.com</div>
-  <p class="lede" style="margin-top:10px;font-size:32px">Send me a message to get yours.</p>
   <div class="me"><div class="ring"><img src="../headshot-circle.jpg" alt=""></div></div>
 </section>
 
-<!-- SINGLE POST: square version of the hook -->
+<!-- 6: OFFER -->
+<section class="slide" id="s6">
+  <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
+  <div class="counter">6 / 6</div>
+  <div class="h md" style="margin-top:60px">Winter won't wait.<br><span class="blue">Neither will your competitors.</span></div>
+  <div class="offer">
+    <div class="big">Free Furnace Lead Audit</div>
+    <ul>
+      <li>Where you rank right now</li>
+      <li>Who's taking your calls</li>
+      <li>What it's costing you</li>
+      <li>The exact plan to pass them</li>
+    </ul>
+  </div>
+  <div class="dm">DM me <span class="hl">"FURNACE"</span></div>
+  <div class="url">chariparwebservices.com</div>
+  <div class="me"><div class="ring"><img src="../headshot-circle.jpg" alt=""></div></div>
+</section>
+
+<!-- SINGLE POST -->
 <section class="slide square" id="single">
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
-  <h1 style="font-size:100px;margin-top:70px">When the heat<br>goes out, <span class="accent">they<br>search this:</span></h1>
-  <div class="search" style="margin-top:56px">
-    <svg><use href="#mag"/></svg>furnace repair near me<span class="caret"></span>
-    <svg class="mic"><use href="#mic"/></svg>
-  </div>
-  <p class="lede" style="max-width:640px">Is your company in the <b>top 3</b>? Let's get you there.</p>
-  <div class="url" style="margin-top:22px;font-size:40px">chariparwebservices.com</div>
-  <div class="me"><div class="ring" style="width:210px;height:210px"><img src="../headshot-circle.jpg" alt=""></div></div>
+  <div class="h" style="font-size:96px;margin-top:70px">1 missed furnace replacement = <span class="red">$6,000.</span></div>
+  <div class="h sm" style="margin-top:34px">How many did you <span class="hl">miss last winter?</span></div>
+  <p class="p" style="font-size:34px;margin-top:34px;max-width:620px">DM me <b>"FURNACE"</b> for a free lead audit.</p>
+  <div class="me"><div class="ring" style="width:200px;height:200px"><img src="../headshot-circle.jpg" alt=""></div></div>
 </section>
 
 </body>

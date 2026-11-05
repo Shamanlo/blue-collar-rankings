@@ -8,7 +8,7 @@ let chromium;
 try { ({ chromium } = require("playwright")); } catch { ({ chromium } = require("/opt/node22/lib/node_modules/playwright")); }
 
 const dir = path.resolve(process.argv[2] || ".");
-const names = { s1: "01-hook", s2: "02-map-pack", s3: "03-why-not-showing", s4: "04-how-we-fix-it", s5: "05-cta", single: "single-post-square" };
+const names = { s1: "01-hook", s2: "02-top-3", s3: "03-the-math", s4: "04-lifetime-value", s5: "05-the-fix", s6: "06-offer", single: "single-post-square" };
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1200, height: 1500 }, deviceScaleFactor: 1 });
