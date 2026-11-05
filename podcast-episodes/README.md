@@ -4,13 +4,11 @@ Nine episodes, oldest first. Already on Spotify (skip): Iowa City Water Heater I
 
 For each one, in Spotify for Creators: **Create → New episode**, upload the audio, paste the **Title** and **Description** below, then publish. Spotify turns the timestamps into chapters.
 
-Audio status:
-- **Episode 5 (Iowa City Drain Cleaning):** `05-iowa-city-drain-cleaning.mp3` is in this folder, ready to upload.
-- **All others:** need the audio from your copy of the video (see the note at the bottom).
+Audio: every episode's MP3 is in this folder, numbered to match the list below (`01-…mp3` to `09-…mp3`). Click a file, then the download icon. All are 128 kbps, loudness-matched to the episodes already on Spotify (about -14.5 LUFS), and tagged Blue Collar Rankings.
 
 ---
 
-## 1. Malibu Kitchen Remodelers
+## 1. Malibu Kitchen Remodelers (audio: `01-malibu-kitchen-remodelers.mp3`)
 
 **Title**
 ```
@@ -48,7 +46,7 @@ Follow Blue Collar Rankings for more local contractor rankings and home service 
 
 ---
 
-## 2. Los Angeles Privacy Window Film Installers
+## 2. Los Angeles Privacy Window Film Installers (audio: `02-la-privacy-window-film.mp3`)
 
 **Title**
 ```
@@ -88,7 +86,7 @@ Follow Blue Collar Rankings for more local contractor rankings and home service 
 
 ---
 
-## 3. Denver Electricians
+## 3. Denver Electricians (audio: `03-denver-electricians.mp3`)
 
 **Title**
 ```
@@ -129,7 +127,7 @@ Follow Blue Collar Rankings for more local contractor rankings and home service 
 
 ---
 
-## 4. Monterey County Hunting Outfitters
+## 4. Monterey County Hunting Outfitters (audio: `04-monterey-county-hunting-outfitters.mp3`)
 
 **Title**
 ```
@@ -168,7 +166,7 @@ Follow Blue Collar Rankings for more local rankings and outdoor service breakdow
 
 ---
 
-## 5. Iowa City Drain Cleaning (audio ready: `05-iowa-city-drain-cleaning.mp3`)
+## 5. Iowa City Drain Cleaning (audio: `05-iowa-city-drain-cleaning.mp3`)
 
 **Title**
 ```
@@ -212,7 +210,7 @@ Follow Blue Collar Rankings for more local contractor rankings and home service 
 
 ---
 
-## 6. Vancouver, BC Painting Companies
+## 6. Vancouver, BC Painting Companies (audio: `06-vancouver-painting-companies.mp3`)
 
 **Title**
 ```
@@ -255,7 +253,7 @@ Follow Blue Collar Rankings for more local contractor rankings and home service 
 
 ---
 
-## 7. Santa Monica ADU Builders
+## 7. Santa Monica ADU Builders (audio: `07-santa-monica-adu-builders.mp3`)
 
 **Title**
 ```
@@ -297,7 +295,7 @@ Follow Blue Collar Rankings for more local contractor rankings and home service 
 
 ---
 
-## 8. Iowa City Financial Advisors
+## 8. Iowa City Financial Advisors (audio: `08-iowa-city-financial-advisors.mp3`)
 
 **Title**
 ```
@@ -340,7 +338,7 @@ Follow Blue Collar Rankings for more local rankings and service breakdowns.
 
 ---
 
-## 9. Marketing Agencies for Window Film Companies
+## 9. Marketing Agencies for Window Film Companies (audio: `09-window-film-marketing-agencies.mp3`)
 
 **Title**
 ```
@@ -375,13 +373,3 @@ Watch the video: https://youtu.be/0mo-np873Mc
 
 Follow Blue Collar Rankings for more rankings and trade business breakdowns.
 ```
-
----
-
-## Getting the audio for episodes 1–4 and 6–9
-
-YouTube blocks downloads from the cloud server I run on, so I couldn't pull the audio myself. Two ways to finish:
-
-**Option A: upload the video straight to Spotify (easiest).** In YouTube Studio → Content, hover each video → ⋮ → **Download** to get the MP4. Upload that MP4 as the episode in Spotify for Creators. Spotify keeps it as a video episode on Spotify and, with RSS distribution turned on, puts an audio version in your feed for Apple, Amazon and the rest. After you publish the first one, tell me and I'll check that its audio shows up in the feed before you do the others.
-
-**Option B: send me the MP4s.** Download them the same way and attach them in this chat. I'll turn each into a podcast MP3 (loudness-matched to your existing episodes) and put it in this folder.
