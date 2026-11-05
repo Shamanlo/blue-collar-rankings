@@ -6,119 +6,119 @@
 <style>
 @font-face { font-family: "Oswald"; font-weight: 500 700; src: url("../../../static/fonts/oswald-latin.woff2") format("woff2"); }
 @font-face { font-family: "Inter"; font-weight: 400 700; src: url("../../../static/fonts/inter-latin.woff2") format("woff2"); }
+/* Charipar Web Services site palette */
 :root {
-  --ink: #0d0d0d;
-  --ink-2: #1a1a1a;
-  --gold: #f4c430;
-  --gold-deep: #d9a514;
-  --flame: #ff6a1a;
+  --navy: #1a2535;
+  --blue: #0071bc;
+  --blue-soft: #e8f2fa;
+  --slate: #5a6a7e;
+  --line: #dfe6ee;
   --paper: #ffffff;
-  --muted: #b9b9b9;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: #444; font-family: "Inter", sans-serif; display: flex; flex-direction: column; gap: 40px; padding: 40px; align-items: center; }
+body { background: #888; font-family: "Inter", sans-serif; display: flex; flex-direction: column; gap: 40px; padding: 40px; align-items: center; }
 
 .slide {
   position: relative; width: 1080px; height: 1350px; overflow: hidden;
   background:
-    radial-gradient(900px 700px at 85% -10%, rgba(255,106,26,.22), transparent 60%),
-    radial-gradient(800px 600px at -10% 110%, rgba(244,196,48,.14), transparent 60%),
-    var(--ink);
-  color: var(--paper);
+    radial-gradient(900px 700px at 100% -10%, rgba(0,113,188,.10), transparent 60%),
+    radial-gradient(800px 600px at -10% 110%, rgba(0,113,188,.07), transparent 60%),
+    var(--paper);
+  color: var(--navy);
   padding: 90px 80px 0;
 }
 .slide.square { height: 1080px; }
+.slide::before { /* blue top bar */
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 14px; background: var(--blue); z-index: 1;
+}
 .slide::after { /* subtle grid texture */
   content: ""; position: absolute; inset: 0; pointer-events: none;
-  background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(26,37,53,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(26,37,53,.04) 1px, transparent 1px);
   background-size: 54px 54px;
 }
 .slide > * { position: relative; z-index: 1; }
 
 /* brand header */
-.brand { display: flex; align-items: center; gap: 16px; font-family: "Oswald"; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: 26px; color: var(--gold); }
-.brand .mark { width: 46px; height: 46px; border-radius: 8px; background: var(--gold); display: grid; place-items: center; }
+.brand { display: flex; align-items: center; gap: 16px; font-family: "Oswald"; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: 26px; color: var(--navy); }
+.brand .mark { width: 46px; height: 46px; border-radius: 8px; background: var(--blue); display: grid; place-items: center; }
 .brand .mark svg { width: 28px; height: 28px; }
-.counter { position: absolute; top: 96px; right: 80px; font-family: "Oswald"; font-size: 26px; color: var(--muted); letter-spacing: .08em; z-index: 1; }
+.counter { position: absolute; top: 96px; right: 80px; font-family: "Oswald"; font-size: 26px; color: var(--slate); letter-spacing: .08em; z-index: 1; }
 
-.eyebrow { font-family: "Oswald"; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--flame); font-size: 30px; margin-top: 70px; }
+.eyebrow { font-family: "Oswald"; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--blue); font-size: 30px; margin-top: 70px; }
 h1 { font-family: "Oswald"; font-weight: 700; text-transform: uppercase; line-height: .98; font-size: 112px; margin-top: 18px; letter-spacing: -.005em; }
-h1 .gold { color: var(--gold); }
 h2 { font-family: "Oswald"; font-weight: 700; text-transform: uppercase; line-height: 1; font-size: 88px; margin-top: 18px; }
-h2 .gold { color: var(--gold); }
-.lede { font-size: 36px; line-height: 1.38; color: #e6e6e6; margin-top: 34px; max-width: 880px; }
-.lede b { color: var(--gold); font-weight: 700; }
+.accent { color: var(--blue); }
+.lede { font-size: 36px; line-height: 1.38; color: var(--slate); margin-top: 34px; max-width: 880px; }
+.lede b { color: var(--navy); font-weight: 700; }
 
 /* search bar */
 .search {
   margin-top: 64px; background: var(--paper); color: #202124; border-radius: 999px;
   height: 128px; display: flex; align-items: center; gap: 26px; padding: 0 44px;
-  box-shadow: 0 30px 80px rgba(0,0,0,.55), 0 0 0 6px rgba(244,196,48,.9);
+  box-shadow: 0 24px 60px rgba(26,37,53,.18), 0 0 0 5px var(--blue);
   font-size: 48px; font-weight: 500;
 }
 .search svg { width: 50px; height: 50px; flex: none; }
-.search .caret { width: 4px; height: 58px; background: #1a73e8; margin-left: -18px; }
+.search .caret { width: 4px; height: 58px; background: var(--blue); margin-left: -18px; }
 .search .mic { margin-left: auto; }
 
 /* headshot badge */
-.me { position: absolute; right: 64px; bottom: 64px; z-index: 2; display: flex; align-items: center; gap: 22px; }
-.me .ring { width: 210px; height: 210px; border-radius: 50%; padding: 9px; background: conic-gradient(from 200deg, var(--gold), var(--flame), var(--gold)); box-shadow: 0 20px 50px rgba(0,0,0,.6); }
-.me .ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; border: 6px solid var(--ink); }
-.me .tag { text-align: right; }
-.me .tag .who { font-family: "Oswald"; font-weight: 600; font-size: 34px; text-transform: uppercase; color: var(--paper); letter-spacing: .04em; }
-.me .tag .site { font-size: 24px; color: var(--gold); margin-top: 4px; }
+.me { position: absolute; right: 64px; bottom: 64px; z-index: 2; }
+.me .ring { width: 210px; height: 210px; border-radius: 50%; padding: 8px; background: var(--blue); box-shadow: 0 18px 44px rgba(26,37,53,.28); }
+.me .ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; border: 6px solid var(--paper); }
 
-.swipe { position: absolute; left: 80px; bottom: 120px; z-index: 2; font-family: "Oswald"; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; font-size: 32px; color: var(--gold); display: flex; align-items: center; gap: 14px; }
+.swipe { position: absolute; left: 80px; bottom: 120px; z-index: 2; font-family: "Oswald"; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; font-size: 32px; color: var(--blue); display: flex; align-items: center; gap: 14px; }
 .swipe svg { width: 44px; height: 44px; }
 
 /* map pack */
-.pack { margin-top: 40px; background: var(--paper); color: #202124; border-radius: 28px; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,.55); width: 920px; }
+.pack { margin-top: 40px; background: var(--paper); color: #202124; border-radius: 28px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 24px 60px rgba(26,37,53,.16); width: 920px; }
 .map { height: 170px; position: relative; background: #e8eef3;
   background-image:
     linear-gradient(28deg, transparent 46%, #fff 46%, #fff 52%, transparent 52%),
     linear-gradient(-62deg, transparent 47%, #fff 47%, #fff 51%, transparent 51%),
-    linear-gradient(90deg, transparent 70%, #cfe6c9 70%, #cfe6c9 84%, transparent 84%),
+    linear-gradient(90deg, transparent 70%, #d6e9d1 70%, #d6e9d1 84%, transparent 84%),
     linear-gradient(0deg, transparent 30%, #fff 30%, #fff 33%, transparent 33%);
 }
-.pin { position: absolute; width: 46px; height: 46px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #ea4335; display: grid; place-items: center; box-shadow: 0 6px 14px rgba(0,0,0,.25); }
+.pin { position: absolute; width: 46px; height: 46px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #8a96a6; display: grid; place-items: center; box-shadow: 0 6px 14px rgba(0,0,0,.2); }
 .pin span { transform: rotate(45deg); color: #fff; font-weight: 700; font-size: 20px; }
-.pin.you { background: var(--gold-deep); width: 60px; height: 60px; }
-.pin.you span { font-size: 26px; color: var(--ink); }
-.listing { display: flex; align-items: center; gap: 24px; padding: 20px 34px; border-top: 1px solid #e3e3e3; }
-.listing .rank { font-family: "Oswald"; font-weight: 700; font-size: 44px; width: 40px; color: #9aa0a6; }
-.listing .name { font-size: 32px; font-weight: 700; }
-.listing .meta { font-size: 24px; color: #5f6368; margin-top: 6px; }
-.listing .stars { color: #fbbc04; letter-spacing: 2px; }
-.listing .cta { margin-left: auto; font-size: 24px; font-weight: 600; color: #1a73e8; border: 2px solid #dadce0; border-radius: 999px; padding: 10px 24px; }
-.listing.you { background: #fff8db; box-shadow: inset 10px 0 0 var(--gold-deep); }
-.listing.you .rank { color: var(--gold-deep); }
+.pin.you { background: var(--blue); width: 60px; height: 60px; }
+.pin.you span { font-size: 26px; }
+.listing { display: flex; align-items: center; gap: 24px; padding: 20px 34px; border-top: 1px solid var(--line); }
+.listing .rank { font-family: "Oswald"; font-weight: 700; font-size: 44px; width: 40px; color: #9aa4b1; }
+.listing .name { font-size: 32px; font-weight: 700; color: var(--navy); }
+.listing .meta { font-size: 24px; color: var(--slate); margin-top: 6px; }
+.listing .stars { color: #f5b301; letter-spacing: 2px; }
+.listing .cta { margin-left: auto; font-size: 24px; font-weight: 600; color: var(--blue); border: 2px solid var(--line); border-radius: 999px; padding: 10px 24px; }
+.listing.you { background: var(--blue-soft); box-shadow: inset 10px 0 0 var(--blue); }
+.listing.you .rank { color: var(--blue); }
+.listing.you .cta { background: var(--blue); color: #fff; border-color: var(--blue); }
 .listing.faded { opacity: .5; }
-.below { margin-top: 30px; font-family: "Oswald"; font-size: 34px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
-.below b { color: var(--flame); }
+.below { margin-top: 30px; font-family: "Oswald"; font-size: 34px; text-transform: uppercase; letter-spacing: .06em; color: var(--slate); }
+.below b { color: var(--navy); }
 
 /* checklist */
 .list { margin-top: 44px; display: grid; gap: 20px; max-width: 920px; }
-.item { display: flex; gap: 28px; align-items: flex-start; background: var(--ink-2); border: 1px solid #2c2c2c; border-radius: 22px; padding: 26px 34px; }
-.item .num { flex: none; width: 66px; height: 66px; border-radius: 16px; background: var(--gold); color: var(--ink); font-family: "Oswald"; font-weight: 700; font-size: 38px; display: grid; place-items: center; }
-.item .t { font-family: "Oswald"; font-weight: 600; font-size: 40px; text-transform: uppercase; letter-spacing: .02em; }
-.item .d { font-size: 26px; max-width: 600px; color: #cfcfcf; margin-top: 6px; line-height: 1.38; }
-.item.bad .num { background: #2a2a2a; color: var(--flame); border: 2px solid var(--flame); }
+.item { display: flex; gap: 28px; align-items: flex-start; background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: 26px 34px; box-shadow: 0 10px 30px rgba(26,37,53,.07); }
+.item .num { flex: none; width: 66px; height: 66px; border-radius: 16px; background: var(--blue); color: #fff; font-family: "Oswald"; font-weight: 700; font-size: 38px; display: grid; place-items: center; }
+.item .t { font-family: "Oswald"; font-weight: 600; font-size: 40px; text-transform: uppercase; letter-spacing: .02em; color: var(--navy); }
+.item .d { font-size: 26px; max-width: 600px; color: var(--slate); margin-top: 6px; line-height: 1.38; }
+.item.bad .num { background: var(--paper); color: var(--navy); border: 3px solid var(--navy); }
 
 /* CTA */
-.cta-box { margin-top: 64px; background: var(--gold); color: var(--ink); border-radius: 28px; padding: 46px 52px; max-width: 920px; }
+.cta-box { margin-top: 64px; background: var(--navy); color: #fff; border-radius: 28px; padding: 46px 52px; max-width: 920px; box-shadow: inset 12px 0 0 var(--blue); }
 .cta-box .big { font-family: "Oswald"; font-weight: 700; font-size: 62px; text-transform: uppercase; line-height: 1.02; }
-.cta-box .small { font-size: 30px; font-weight: 600; margin-top: 16px; line-height: 1.35; }
-.url { margin-top: 40px; font-family: "Oswald"; font-weight: 600; font-size: 48px; color: var(--gold); letter-spacing: .02em; }
+.cta-box .small { font-size: 30px; font-weight: 500; margin-top: 16px; line-height: 1.35; color: #d5dde7; }
+.url { margin-top: 40px; font-family: "Oswald"; font-weight: 600; font-size: 48px; color: var(--blue); letter-spacing: .02em; }
 </style>
 </head>
 <body>
 
 <!-- reusable icons -->
 <svg width="0" height="0" style="position:absolute">
-  <symbol id="globe" viewBox="0 0 24 24"><g fill="none" stroke="#0d0d0d" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></g></symbol>
+  <symbol id="globe" viewBox="0 0 24 24"><g fill="none" stroke="#ffffff" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></g></symbol>
   <symbol id="mag" viewBox="0 0 24 24"><g fill="none" stroke="#5f6368" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></g></symbol>
   <symbol id="mic" viewBox="0 0 24 24"><g fill="none" stroke="#5f6368" stroke-width="2.2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></g></symbol>
-  <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="#f4c430" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="#0071bc" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 
 <!-- SLIDE 1: hook -->
@@ -126,7 +126,7 @@ h2 .gold { color: var(--gold); }
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
   <div class="counter">1 / 5</div>
   <div class="eyebrow">HVAC &amp; furnace companies</div>
-  <h1>It's 7°F.<br>The furnace<br>just died.<br><span class="gold">They search:</span></h1>
+  <h1>It's 7°F.<br>The furnace<br>just died.<br><span class="accent">They search:</span></h1>
   <div class="search">
     <svg><use href="#mag"/></svg>furnace repair near me<span class="caret"></span>
     <svg class="mic"><use href="#mic"/></svg>
@@ -140,7 +140,7 @@ h2 .gold { color: var(--gold); }
 <section class="slide" id="s2">
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
   <div class="counter">2 / 5</div>
-  <h2>The top 3<br><span class="gold">get the calls.</span></h2>
+  <h2>The top 3<br><span class="accent">get the calls.</span></h2>
   <p class="lede" style="margin-top:22px">No heat means no scrolling. They tap <b>Call</b> on one of the first three on the map.</p>
   <div class="pack">
     <div class="map">
@@ -173,7 +173,7 @@ h2 .gold { color: var(--gold); }
 <section class="slide" id="s3">
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
   <div class="counter">3 / 5</div>
-  <h2>Why you're<br><span class="gold">not showing up</span></h2>
+  <h2>Why you're<br><span class="accent">not showing up</span></h2>
   <div class="list">
     <div class="item bad"><div class="num">✕</div><div><div class="t">Thin Google profile</div><div class="d">Wrong categories, no services, no photos.</div></div></div>
     <div class="item bad"><div class="num">✕</div><div><div class="t">No furnace repair page</div><div class="d">No page that says <i>furnace repair</i> + your towns.</div></div></div>
@@ -187,7 +187,7 @@ h2 .gold { color: var(--gold); }
 <section class="slide" id="s4">
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
   <div class="counter">4 / 5</div>
-  <h2>How we get you<br><span class="gold">into the top 3</span></h2>
+  <h2>How we get you<br><span class="accent">into the top 3</span></h2>
   <div class="list">
     <div class="item"><div class="num">1</div><div><div class="t">Google Business Profile</div><div class="d">Categories, services, photos, weekly posts.</div></div></div>
     <div class="item"><div class="num">2</div><div><div class="t">Local service pages</div><div class="d">Furnace repair pages for every town you serve.</div></div></div>
@@ -202,7 +202,7 @@ h2 .gold { color: var(--gold); }
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
   <div class="counter">5 / 5</div>
   <div class="eyebrow">Before the next cold snap</div>
-  <h1 style="font-size:104px">Own <span class="gold">"furnace<br>repair near me"</span><br>in your town.</h1>
+  <h1 style="font-size:104px">Own <span class="accent">"furnace<br>repair near me"</span><br>in your town.</h1>
   <div class="cta-box">
     <div class="big">Free local<br>ranking check</div>
     <div class="small">I'll show you where you rank today, who's beating you, and exactly what it takes to pass them.</div>
@@ -215,7 +215,7 @@ h2 .gold { color: var(--gold); }
 <!-- SINGLE POST: square version of the hook -->
 <section class="slide square" id="single">
   <div class="brand"><div class="mark"><svg><use href="#globe"/></svg></div>Charipar Web Services</div>
-  <h1 style="font-size:100px;margin-top:70px">When the heat<br>goes out, <span class="gold">they<br>search this:</span></h1>
+  <h1 style="font-size:100px;margin-top:70px">When the heat<br>goes out, <span class="accent">they<br>search this:</span></h1>
   <div class="search" style="margin-top:56px">
     <svg><use href="#mag"/></svg>furnace repair near me<span class="caret"></span>
     <svg class="mic"><use href="#mic"/></svg>
