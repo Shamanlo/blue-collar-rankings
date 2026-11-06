@@ -1,0 +1,549 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "header": "Santa Clarita, CA · Kitchen Remodeling Contractor · 2026",
+ "source": "Prices and details from All Exclusive Construction's kitchen remodeling page. Ballpark only; your price depends on size and scope.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "kitchen-open-luxury.jpg",
+  "landscapePos": "40% 50%",
+  "reelPos": "35% 50%",
+  "lines": [
+   "Kitchen",
+   "Remodeling"
+  ],
+  "sub": "Santa Clarita, CA",
+  "tag": "What to Know",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 180,
+  "subPx": 52,
+  "reelSubPx": 70,
+  "stamp": [
+   "4",
+   [
+    "THINGS",
+    "TO KNOW"
+   ]
+  ],
+  "reelStamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "What You Need to Know",
+   "image": "kitchen-open-luxury.jpg",
+   "imgPos": "40% 50%",
+   "kicker": "Santa Clarita, California",
+   "titlePx": 112,
+   "title": [
+    "Kitchen Remodeling",
+    "Contractor"
+   ],
+   "year": "2026",
+   "chips": [
+    "Layout",
+    "Plumbing",
+    "Lighting",
+    "Materials",
+    "Cost",
+    "Permits"
+   ],
+   "say": "Planning a kitchen remodel in Santa Clarita? Here's what you need to know before you hire a contractor: the four decisions that shape your project, what a kitchen remodel costs in 2026, the common questions homeowners ask, and how to pick the right contractor."
+  },
+  {
+   "id": "know",
+   "kind": "factors",
+   "label": "Before You Start",
+   "cols": 4,
+   "title": "4 things to know before you start",
+   "cards": [
+    {
+     "name": "Layout matters most",
+     "desc": "A poor layout makes even a brand-new kitchen frustrating",
+     "image": "kitchen-open-luxury.jpg",
+     "imgPos": "40% 50%",
+     "cue": "layout"
+    },
+    {
+     "name": "Moving plumbing costs more",
+     "desc": "Keep the sink & dishwasher where they are to control your budget",
+     "image": "sc-kitchen-2.jpg",
+     "imgPos": "50% 60%",
+     "cue": "moving"
+    },
+    {
+     "name": "Lighting changes everything",
+     "desc": "Under-cabinet, task & overhead lighting all play a role",
+     "image": "kitchen-pendants.jpg",
+     "imgPos": "50% 30%",
+     "cue": "lighting"
+    },
+    {
+     "name": "Materials drive the budget",
+     "desc": "Cabinets, counters, floors & finishes set the total cost",
+     "image": "calabasas-stone.jpg",
+     "imgPos": "50% 55%",
+     "cue": "materials"
+    }
+   ],
+   "say": "Four things to know before you start. First, layout matters more than anything: a poor layout can make even a brand-new kitchen frustrating to use. Second, moving plumbing increases cost, so keeping your sink and dishwasher where they are controls your budget. Third, lighting affects both function and appearance, from under-cabinet to overhead lights. And fourth, your materials drive the budget: cabinets, countertops, flooring, and finishes."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What a Santa Clarita kitchen remodel costs",
+   "sub": "2026 ranges · depending on size and scope",
+   "max": 150,
+   "ticks": [
+    0,
+    50,
+    100,
+    150
+   ],
+   "rows": [
+    {
+     "name": "Basic remodel",
+     "note": "Fresh, updated look",
+     "lo": 45,
+     "hi": 55,
+     "plus": true,
+     "cue": "basic"
+    },
+    {
+     "name": "In-depth makeover",
+     "note": "Most popular",
+     "lo": 55,
+     "hi": 75,
+     "plus": true,
+     "cue": "in-depth"
+    },
+    {
+     "name": "Luxury kitchen",
+     "note": "Custom everything",
+     "lo": 75,
+     "hi": 150,
+     "plus": true,
+     "cue": "luxury"
+    }
+   ],
+   "speak": "So what does it cost? A basic kitchen remodel runs about forty-five to fifty-five thousand dollars and up. An in-depth kitchen makeover runs about fifty-five to seventy-five thousand dollars and up. And a luxury kitchen runs seventy-five thousand to one hundred fifty thousand dollars and up, depending on size and scope.",
+   "say": "So what does it cost? A basic kitchen remodel runs about $45,000 to $55,000 and up. An in-depth kitchen makeover runs about $55,000 to $75,000 and up. And a luxury kitchen runs $75,000 to $150,000 and up, depending on size and scope."
+  },
+  {
+   "id": "basic",
+   "kind": "price",
+   "label": "Tier 1 of 3",
+   "image": "sc-kitchen-3.jpg",
+   "imgPos": "50% 50%",
+   "kicker": "Tier 1 of 3",
+   "name": "Basic kitchen remodel",
+   "lo": 45,
+   "hi": 55,
+   "plus": true,
+   "priceCue": "basic",
+   "desc": "A fresh, updated look using more affordable materials.",
+   "bullets": [
+    {
+     "t": "New paint",
+     "cue": "paint"
+    },
+    {
+     "t": "New flooring",
+     "cue": "flooring"
+    },
+    {
+     "t": "New countertops",
+     "cue": "countertops"
+    },
+    {
+     "t": "New kitchen lighting",
+     "cue": "lighting"
+    }
+   ],
+   "speak": "A basic kitchen remodel, forty-five to fifty-five thousand dollars and up, gets you new paint, new flooring, new countertops, and new kitchen lighting, using more affordable materials. It's great for a fresh, updated look.",
+   "say": "A basic kitchen remodel, $45,000 to $55,000 and up, gets you new paint, new flooring, new countertops, and new kitchen lighting, using more affordable materials. It's great for a fresh, updated look."
+  },
+  {
+   "id": "mid",
+   "kind": "price",
+   "label": "Tier 2 of 3",
+   "image": "sc-kitchen-1.jpg",
+   "imgPos": "50% 50%",
+   "kicker": "Tier 2 of 3 · Most popular",
+   "name": "In-depth kitchen makeover",
+   "lo": 55,
+   "hi": 75,
+   "plus": true,
+   "priceCue": "in-depth",
+   "desc": "The most popular scope.",
+   "bullets": [
+    {
+     "t": "Design & layout changes",
+     "cue": "design"
+    },
+    {
+     "t": "Higher-end materials",
+     "cue": "higher-end"
+    },
+    {
+     "t": "New cabinets & countertops",
+     "cue": "cabinets"
+    },
+    {
+     "t": "Flooring, lighting & paint",
+     "cue": "flooring"
+    }
+   ],
+   "speak": "An in-depth kitchen makeover, fifty-five to seventy-five thousand dollars and up, is the most popular scope. It includes design and layout changes, higher-end materials, new cabinets and countertops, plus flooring, lighting, and paint.",
+   "say": "An in-depth kitchen makeover, $55,000 to $75,000 and up, is the most popular scope. It includes design and layout changes, higher-end materials, new cabinets and countertops, plus flooring, lighting, and paint."
+  },
+  {
+   "id": "lux",
+   "kind": "price",
+   "label": "Tier 3 of 3",
+   "image": "kitchen-gray-modern.jpg",
+   "imgPos": "50% 50%",
+   "kicker": "Tier 3 of 3",
+   "name": "Luxury kitchen",
+   "lo": 75,
+   "hi": 150,
+   "plus": true,
+   "priceCue": "luxury",
+   "desc": "For a luxury home, or the home chef who wants the best.",
+   "bullets": [
+    {
+     "t": "Premium materials",
+     "cue": "premium"
+    },
+    {
+     "t": "Custom everything",
+     "cue": "custom"
+    },
+    {
+     "t": "Top-tier appliances",
+     "cue": "top-tier"
+    }
+   ],
+   "speak": "And a luxury kitchen, seventy-five thousand to one hundred fifty thousand dollars and up, is a high-end remodel for a luxury home, or the home chef who wants the best: premium materials, custom everything, and top-tier appliances.",
+   "say": "And a luxury kitchen, $75,000 to $150,000 and up, is a high-end remodel for a luxury home, or the home chef who wants the best: premium materials, custom everything, and top-tier appliances."
+  },
+  {
+   "id": "services",
+   "kind": "list",
+   "label": "What a Contractor Handles",
+   "title": "What a full-service contractor handles",
+   "items": [
+    "Layout & kitchen design",
+    "Open-concept kitchens",
+    "Quartz & granite countertops",
+    "New & custom cabinets",
+    "Storage solutions",
+    "New flooring",
+    "Kitchen islands",
+    "Bars & seating"
+   ],
+   "note": "Plus electrical & plumbing upgrades, tile backsplashes & under-cabinet lighting.",
+   "noteCue": "plus",
+   "say": "A full-service contractor should handle the whole job: layout and kitchen design, open-concept kitchens, quartz and granite countertops, new and custom cabinets, storage solutions, new flooring, kitchen islands, and bars and seating. Plus electrical and plumbing upgrades, tile backsplashes, and under-cabinet lighting."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "How long does it take?",
+     "desc": "A few weeks for a minor remodel; a few months for a full renovation",
+     "icon": "clock",
+     "cue": "how"
+    },
+    {
+     "name": "Do I need a permit?",
+     "desc": "Most major remodels do. Your contractor should pull it",
+     "icon": "page",
+     "cue": "permit"
+    },
+    {
+     "name": "Can I live at home?",
+     "desc": "Yes, often with a temporary setup for water & appliances",
+     "icon": "roof",
+     "cue": "live"
+    },
+    {
+     "name": "How can I save?",
+     "desc": "Budget-friendly materials & keeping your layout",
+     "icon": "chart",
+     "cue": "save"
+    }
+   ],
+   "say": "Here are the questions homeowners ask most. How long does it take? A minor remodel might take a few weeks, and a full renovation a few months. Do I need a permit? Most major kitchen remodels do, and your contractor should handle it. Can I live at home during the remodel? Yes, often with a temporary setup for water and appliances. And how can I save? Choose budget-friendly materials, and keep your layout."
+  },
+  {
+   "id": "choose",
+   "kind": "list",
+   "label": "How to Pick a Contractor",
+   "title": "How to pick a kitchen contractor",
+   "items": [
+    "CA license you can verify",
+    "Bonded & insured",
+    "Pulls permits & handles code",
+    "Written estimates & timelines",
+    "Designs and builds",
+    "Local to Santa Clarita"
+   ],
+   "note": "Settle layout changes early: changing it mid-project means change orders & delays.",
+   "noteCue": "settle",
+   "say": "When you pick a contractor, look for a California license you can verify, and make sure they're bonded and insured. They should pull permits and handle code compliance, give you written estimates and clear timelines, handle both design and build, and know Santa Clarita's building department. And settle any layout changes early, because changing it mid-project means change orders and delays."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Our Recommendation",
+   "image": "calabasas-cabinetry.jpg",
+   "imgPos": "50% 50%",
+   "stamp": "Our recommendation",
+   "name": "All Exclusive Construction, Inc.",
+   "nameCue": "All",
+   "where": "Santa Clarita · Southern California",
+   "logo": "ae-logo.png",
+   "logoBg": "#111",
+   "points": [
+    "Licensed, bonded & insured · CA Lic. #1120170",
+    "5.0★ Google rating",
+    "Design to build: layout, permits, demo & install",
+    "Written estimates & clear timelines",
+    "Free, no-pressure consultations",
+    "Santa Clarita Valley Chamber of Commerce member"
+   ],
+   "speak": "Looking for a kitchen remodeling contractor in Santa Clarita? Give All Exclusive Construction a call. They're licensed, bonded, and insured, with a five-point-oh rating on Google. They handle everything from design to build, including layout, permits, demolition, and installation, with written estimates, clear timelines, and free, no-pressure consultations. And they're a member of the Santa Clarita Valley Chamber of Commerce.",
+   "say": "Looking for a kitchen remodeling contractor in Santa Clarita? Give All Exclusive Construction a call. They're licensed, bonded, and insured, with a 5.0 rating on Google. They handle everything from design to build, including layout, permits, demolition, and installation, with written estimates, clear timelines, and free, no-pressure consultations. And they're a member of the Santa Clarita Valley Chamber of Commerce."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "Recent Kitchens",
+   "plain": true,
+   "title": "Recent kitchen remodels",
+   "sub": "Santa Clarita & Southern California · All Exclusive Construction",
+   "steps": [
+    {
+     "image": "sc-kitchen-1.jpg",
+     "name": "Santa Clarita"
+    },
+    {
+     "image": "calabasas-waterfall.jpg",
+     "name": "Waterfall island"
+    },
+    {
+     "image": "kitchen-navy-island.jpg",
+     "name": "Southern California"
+    },
+    {
+     "image": "calabasas-counters.jpg",
+     "name": "Stone counters"
+    },
+    {
+     "image": "kitchen-pendants.jpg",
+     "name": "Modern remodel"
+    }
+   ],
+   "say": "Here are a few of their recent kitchen remodels, from Santa Clarita across Southern California."
+  },
+  {
+   "id": "reviews",
+   "kind": "reviews",
+   "label": "What Clients Say",
+   "title": "What their clients say",
+   "sub": "5-star Google reviews",
+   "cards": [
+    {
+     "text": "Our kitchen and bathroom turned out even better than we imagined, and we couldn't be happier with the final results.",
+     "name": "Manuel Muniz",
+     "meta": "Kitchen & bathroom remodel",
+     "cue": "Our"
+    },
+    {
+     "text": "Not only did he complete the project in a timely manner but his pricing was very fair and reasonable.",
+     "name": "Dedra Sloan Whitesell",
+     "meta": "Full remodel",
+     "cue": "His"
+    },
+    {
+     "text": "They showed up when they said they would, kept the project moving, and went above and beyond.",
+     "name": "Melissa Banks",
+     "meta": "Home construction",
+     "cue": "They"
+    }
+   ],
+   "say": "And here's what their clients say: \"Our kitchen and bathroom turned out even better than we imagined.\" \"His pricing was very fair and reasonable.\" And: \"They showed up when they said they would, and kept the project moving.\""
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "calabasas-remodel.jpg",
+   "imgPos": "50% 50%",
+   "logo": "ae-logo.png",
+   "name": "All Exclusive Construction, Inc.",
+   "phone": "(818) 836-1722",
+   "address": "Santa Clarita, CA · Serving Southern California",
+   "hours": "Mon–Fri · 8 AM – 4:30 PM · CA Lic. #1120170",
+   "url": "allexclusivepro.com/kitchen-remodeling",
+   "urlCue": "visit",
+   "tip": "Free in-home consultations & written estimates",
+   "speak": "For a free kitchen remodeling consultation in Santa Clarita, call All Exclusive Construction at (818) 836-1722, or visit all exclusive pro dot com. This has been Local Vibe Check.",
+   "say": "For a free kitchen remodeling consultation in Santa Clarita, call All Exclusive Construction at (818) 836-1722, or visit allexclusivepro.com. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "What You Need to Know",
+   "image": "kitchen-open-luxury.jpg",
+   "imgPos": "40% 50%",
+   "kicker": "Santa Clarita, CA · 2026",
+   "title": [
+    "Kitchen",
+    "Remodel"
+   ],
+   "year": "2026",
+   "chips": [
+    "Layout",
+    "Plumbing",
+    "Lighting",
+    "Cost"
+   ],
+   "say": "Remodeling your kitchen in Santa Clarita? Know these four things first."
+  },
+  {
+   "id": "r-know",
+   "kind": "factors",
+   "label": "Before You Start",
+   "cols": 2,
+   "title": "4 things to know",
+   "cards": [
+    {
+     "name": "Layout matters most",
+     "desc": "Get it right first",
+     "image": "kitchen-open-luxury.jpg",
+     "imgPos": "40% 50%",
+     "cue": "layout"
+    },
+    {
+     "name": "Plumbing costs",
+     "desc": "Keep the sink in place",
+     "image": "sc-kitchen-2.jpg",
+     "imgPos": "50% 60%",
+     "cue": "moving"
+    },
+    {
+     "name": "Lighting",
+     "desc": "Task, under-cabinet & overhead",
+     "image": "kitchen-pendants.jpg",
+     "imgPos": "50% 30%",
+     "cue": "lighting"
+    },
+    {
+     "name": "Materials",
+     "desc": "They drive the budget",
+     "image": "calabasas-stone.jpg",
+     "imgPos": "50% 55%",
+     "cue": "materials"
+    }
+   ],
+   "say": "Layout matters most. Moving plumbing costs more. Lighting changes everything. And materials drive your budget."
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Prices",
+   "title": "What it costs",
+   "max": 150,
+   "ticks": [
+    0,
+    75,
+    150
+   ],
+   "rows": [
+    {
+     "name": "Basic",
+     "note": "Fresh look",
+     "lo": 45,
+     "hi": 55,
+     "plus": true,
+     "cue": "basic"
+    },
+    {
+     "name": "In-depth",
+     "note": "Most popular",
+     "lo": 55,
+     "hi": 75,
+     "plus": true,
+     "cue": "in-depth"
+    },
+    {
+     "name": "Luxury",
+     "note": "Custom everything",
+     "lo": 75,
+     "hi": 150,
+     "plus": true,
+     "cue": "luxury"
+    }
+   ],
+   "speak": "A basic remodel runs forty-five to fifty-five thousand dollars and up. An in-depth makeover, fifty-five to seventy-five thousand. And a luxury kitchen, seventy-five to one hundred fifty thousand and up.",
+   "say": "A basic remodel runs $45,000 to $55,000 and up. An in-depth makeover, $55,000 to $75,000. And a luxury kitchen, $75,000 to $150,000 and up."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Our Recommendation",
+   "image": "calabasas-cabinetry.jpg",
+   "stamp": "Our recommendation",
+   "name": "All Exclusive Construction, Inc.",
+   "nameCue": "All",
+   "where": "Santa Clarita, CA",
+   "logo": "ae-logo.png",
+   "logoBg": "#111",
+   "points": [
+    "Licensed, bonded & insured",
+    "5.0★ on Google",
+    "Design to build"
+   ],
+   "say": "Need a contractor? Give All Exclusive Construction a call. They're 5-star rated, and handle everything from design to build."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "calabasas-remodel.jpg",
+   "logo": "ae-logo.png",
+   "name": "All Exclusive Construction, Inc.",
+   "phone": "(818) 836-1722",
+   "address": "Free consultations",
+   "hours": "CA Lic. #1120170",
+   "url": "allexclusivepro.com",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "say": "Call (818) 836-1722 or visit allexclusivepro.com for a free consultation.",
+   "speak": "Call (818) 836-1722 or visit all exclusive pro dot com for a free consultation."
+  }
+ ]
+}
