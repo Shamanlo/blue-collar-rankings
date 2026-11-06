@@ -252,14 +252,12 @@
     "Open-concept kitchens",
     "Quartz & granite countertops",
     "New & custom cabinets",
-    "Storage solutions",
     "New flooring",
-    "Kitchen islands",
-    "Bars & seating"
+    "Kitchen islands & seating"
    ],
-   "note": "Plus electrical & plumbing upgrades, tile backsplashes & under-cabinet lighting.",
+   "note": "Plus storage, electrical & plumbing upgrades, backsplashes & lighting.",
    "noteCue": "plus",
-   "say": "A full-service contractor should handle the whole job: layout and kitchen design, open-concept kitchens, quartz and granite countertops, new and custom cabinets, storage solutions, new flooring, kitchen islands, and bars and seating. Plus electrical and plumbing upgrades, tile backsplashes, and under-cabinet lighting."
+   "say": "A full-service contractor should handle the whole job: layout and kitchen design, open-concept kitchens, quartz and granite countertops, new and custom cabinets, new flooring, and kitchen islands and seating. Plus storage solutions, electrical and plumbing upgrades, tile backsplashes, and under-cabinet lighting."
   },
   {
    "id": "faq",
@@ -316,7 +314,7 @@
    "id": "pick",
    "kind": "winner",
    "label": "Our Recommendation",
-   "image": "calabasas-cabinetry.jpg",
+   "image": "sc-kitchen-2.jpg",
    "imgPos": "50% 50%",
    "stamp": "Our recommendation",
    "name": "All Exclusive Construction, Inc.",
@@ -398,8 +396,8 @@
    "id": "cta",
    "kind": "cta",
    "label": "Free Consultation",
-   "image": "calabasas-remodel.jpg",
-   "imgPos": "50% 50%",
+   "image": "calabasas-waterfall.jpg",
+   "imgPos": "50% 60%",
    "logo": "ae-logo.png",
    "name": "All Exclusive Construction, Inc.",
    "phone": "(818) 836-1722",
