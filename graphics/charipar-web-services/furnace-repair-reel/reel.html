@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Furnace Repair Reel</title>
+<style>
+@font-face { font-family: "Heavy"; font-weight: 900; src: url("../fonts/InterDisplay-Black.otf") format("opentype"); }
+@font-face { font-family: "Heavy"; font-weight: 800; src: url("../fonts/InterDisplay-ExtraBold.otf") format("opentype"); }
+@font-face { font-family: "Inter"; font-weight: 400 700; src: url("../../../static/fonts/inter-latin.woff2") format("woff2"); }
+:root {
+  --navy: #1a2535; --navy-deep: #0f1622; --blue: #0071bc; --blue-light: #5cb8ff;
+  --slate: #9fb0c4; --red: #ff4b4b; --white: #ffffff; --line: rgba(255,255,255,.12);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--navy-deep); }
+body { font-family: "Inter", sans-serif; color: var(--white); }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden;
+  background: radial-gradient(1300px 1100px at 50% 18%, #22324a, var(--navy) 45%, var(--navy-deep) 85%); }
+.abs { position: absolute; }
+.scene { position: absolute; left: 0; right: 0; top: 380px; height: 840px; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; }
+
+/* header */
+#header { left: 60px; top: 150px; display: flex; align-items: center; gap: 24px; }
+.ring { border-radius: 50%; padding: 7px; background: var(--blue); box-shadow: 0 16px 40px rgba(0,0,0,.5); }
+.ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; border: 5px solid var(--white); }
+#header .ring { width: 150px; height: 150px; }
+#header .name { font-family: "Heavy"; font-weight: 900; font-size: 40px; letter-spacing: -.01em; line-height: 1.05; }
+#header .name small { display: block; font-family: "Inter"; font-weight: 600; font-size: 26px; color: var(--blue-light); letter-spacing: 0; margin-top: 6px; }
+
+/* captions */
+#cap { left: 60px; right: 60px; top: 1270px; height: 260px; display: flex; flex-wrap: wrap; justify-content: center; align-content: center; gap: 6px 22px; }
+#cap .w { font-family: "Heavy"; font-weight: 900; font-size: 96px; line-height: 1.12; letter-spacing: -.03em; text-transform: uppercase;
+  padding: 0 .12em; border-radius: .1em; -webkit-text-stroke: 0; text-shadow: 0 6px 0 rgba(0,0,0,.35), 0 0 30px rgba(0,0,0,.35); }
+#cap .w.on { background: var(--blue); text-shadow: none; }
+#cap .w.money { color: var(--red); }
+#cap .w.money.on { color: var(--white); background: var(--red); }
+
+/* shared */
+.kick { font-family: "Heavy"; font-weight: 800; font-size: 34px; letter-spacing: .08em; text-transform: uppercase; color: var(--blue-light); }
+.big { font-family: "Heavy"; font-weight: 900; letter-spacing: -.04em; line-height: 1; }
+
+/* search */
+.search { width: 940px; height: 140px; background: var(--white); color: #202124; border-radius: 999px; display: flex; align-items: center; gap: 28px; padding: 0 48px;
+  box-shadow: 0 0 0 7px var(--blue), 0 40px 90px rgba(0,0,0,.55); font-size: 56px; font-weight: 500; margin-top: 40px; }
+.search svg { width: 56px; height: 56px; flex: none; }
+.search .caret { width: 4px; height: 64px; background: var(--blue); margin-left: -22px; }
+.temp { display: flex; align-items: center; gap: 18px; font-family: "Heavy"; font-weight: 900; font-size: 64px; }
+.temp .chip { background: rgba(255,255,255,.08); border: 2px solid var(--line); border-radius: 999px; padding: 14px 34px; }
+
+/* money */
+.money-n { font-size: 260px; }
+.money-n .box { background: var(--blue); padding: 0 .1em; border-radius: .06em; }
+.arrow-line { margin-top: 50px; font-family: "Heavy"; font-weight: 800; font-size: 54px; color: var(--slate); }
+.arrow-line b { color: var(--white); }
+
+/* map pack */
+.pack { width: 940px; background: var(--white); color: #202124; border-radius: 30px; overflow: hidden; box-shadow: 0 40px 90px rgba(0,0,0,.5); }
+.map { height: 170px; position: relative; background: #e8eef3;
+  background-image: linear-gradient(28deg, transparent 46%, #fff 46%, #fff 52%, transparent 52%),
+    linear-gradient(-62deg, transparent 47%, #fff 47%, #fff 51%, transparent 51%),
+    linear-gradient(90deg, transparent 70%, #d6e9d1 70%, #d6e9d1 84%, transparent 84%),
+    linear-gradient(0deg, transparent 30%, #fff 30%, #fff 33%, transparent 33%); }
+.pin { position: absolute; width: 50px; height: 50px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #8a96a6; display: grid; place-items: center; }
+.pin span { transform: rotate(45deg); color: #fff; font-weight: 700; font-size: 22px; }
+.pin.you { background: var(--blue); width: 64px; height: 64px; }
+.listing { display: flex; align-items: center; gap: 24px; padding: 24px 36px; border-top: 1px solid #e3e8ee; }
+.listing .rank { font-family: "Heavy"; font-weight: 900; font-size: 48px; width: 40px; color: #9aa4b1; }
+.listing .nm { font-size: 36px; font-weight: 700; color: var(--navy); }
+.listing .meta { font-size: 26px; color: #5a6a7e; margin-top: 4px; }
+.listing .stars { color: #f5b301; letter-spacing: 2px; }
+.listing .cta { margin-left: auto; font-size: 26px; font-weight: 700; color: var(--blue); border: 2px solid #dfe6ee; border-radius: 999px; padding: 10px 28px; }
+.listing.you { background: #e8f2fa; box-shadow: inset 12px 0 0 var(--blue); }
+.listing.you .rank { color: var(--blue); }
+.listing.you .cta { background: var(--blue); color: #fff; border-color: var(--blue); }
+.listing.dead { background: #f6f7f9; position: relative; }
+.listing.dead .nm, .listing.dead .rank { color: #b2bac4; }
+.listing.dead .meta { color: var(--red); font-weight: 700; }
+.listing.dead .cta { color: #c9cfd6; }
+.stamp { position: absolute; right: 150px; top: 50%; transform: translateY(-50%) rotate(-10deg); font-family: "Heavy"; font-weight: 900; font-size: 44px; color: var(--red);
+  border: 6px solid var(--red); border-radius: 12px; padding: 4px 18px; letter-spacing: .04em; }
+
+/* math */
+.math { width: 940px; }
+.mrow { display: flex; justify-content: space-between; align-items: baseline; padding: 30px 0; border-bottom: 2px solid var(--line); }
+.mrow .l { font-size: 46px; color: var(--slate); }
+.mrow .l b { color: var(--white); }
+.mrow .r { font-family: "Heavy"; font-weight: 900; font-size: 92px; letter-spacing: -.03em; }
+
+/* total */
+.total { width: 940px; background: var(--red); border-radius: 36px; padding: 50px 40px 60px; text-align: center; box-shadow: 0 40px 100px rgba(255,75,75,.35); }
+.total .l { font-family: "Heavy"; font-weight: 800; font-size: 46px; }
+.total .n { font-size: 200px; margin-top: 14px; }
+
+/* ladder */
+.ladder { width: 940px; display: grid; gap: 18px; }
+.step { display: flex; align-items: center; gap: 30px; padding: 26px 36px; border-radius: 24px; background: rgba(255,255,255,.06); border: 2px solid var(--line); }
+.step .n { font-family: "Heavy"; font-weight: 900; font-size: 66px; letter-spacing: -.03em; width: 300px; flex: none; color: var(--blue-light); }
+.step .t { font-size: 40px; font-weight: 600; }
+.ladder-sum { margin-top: 30px; font-family: "Heavy"; font-weight: 900; font-size: 58px; letter-spacing: -.02em; text-align: center; }
+
+/* google */
+.vs { width: 940px; display: grid; gap: 30px; }
+.card { position: relative; border-radius: 30px; padding: 46px 50px; display: flex; align-items: center; gap: 34px; font-family: "Heavy"; font-weight: 900; font-size: 84px; letter-spacing: -.03em; }
+.card .ic { width: 110px; height: 110px; border-radius: 26px; display: grid; place-items: center; flex: none; }
+.card .ic svg { width: 66px; height: 66px; }
+.card.bad { background: rgba(255,255,255,.06); border: 2px solid var(--line); color: var(--slate); }
+.card.bad .ic { background: rgba(255,75,75,.15); }
+.card.good { background: var(--blue); box-shadow: 0 30px 80px rgba(0,113,188,.45); }
+.card.good .ic { background: var(--white); }
+.strike { position: absolute; left: 190px; top: 50%; height: 10px; background: var(--red); border-radius: 6px; transform-origin: left center; }
+
+/* cta */
+.offer { width: 940px; background: var(--white); color: var(--navy); border-radius: 34px; padding: 50px 56px; box-shadow: inset 16px 0 0 var(--blue), 0 40px 90px rgba(0,0,0,.45); }
+.offer .h { font-family: "Heavy"; font-weight: 900; font-size: 76px; letter-spacing: -.03em; line-height: 1.02; }
+.offer ul { list-style: none; margin-top: 24px; display: grid; gap: 12px; }
+.offer li { font-size: 38px; font-weight: 600; color: #3b4a5e; }
+.offer li::before { content: "→ "; color: var(--blue); font-weight: 800; }
+.dm { margin-top: 50px; background: var(--blue); border-radius: 999px; padding: 30px 70px; font-family: "Heavy"; font-weight: 900; font-size: 84px; letter-spacing: -.02em; box-shadow: 0 0 0 0 rgba(92,184,255,.6); }
+
+/* outro */
+#outro { position: absolute; inset: 0; opacity: 0; display: flex; flex-direction: column; align-items: center; padding-top: 250px; }
+#outro .ring { width: 300px; height: 300px; }
+#outro .brand { margin-top: 40px; font-family: "Heavy"; font-weight: 900; font-size: 76px; letter-spacing: -.03em; text-align: center; }
+#outro .tag { margin-top: 16px; font-family: "Heavy"; font-weight: 900; font-size: 50px; letter-spacing: -.02em; text-align: center; line-height: 1.1; text-transform: uppercase; }
+#outro .tag .b { color: var(--blue-light); }
+.revs { margin-top: 50px; width: 940px; display: grid; gap: 22px; }
+.rev { background: var(--white); color: var(--navy); border-radius: 26px; padding: 30px 36px; box-shadow: 0 24px 60px rgba(0,0,0,.4); }
+.rev .st { color: #f5b301; font-size: 36px; letter-spacing: 4px; }
+.rev .tx { font-size: 32px; line-height: 1.35; margin-top: 8px; font-weight: 500; }
+.rev .by { font-size: 26px; color: #5a6a7e; margin-top: 10px; font-weight: 700; }
+.feats { margin-top: 56px; width: 940px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.feat { background: rgba(255,255,255,.06); border: 2px solid var(--line); border-radius: 22px; padding: 26px 30px; font-family: "Heavy"; font-weight: 800; font-size: 36px; display: flex; gap: 18px; align-items: center; }
+.feat svg { width: 44px; height: 44px; flex: none; }
+.contact { position: absolute; left: 70px; right: 70px; bottom: 330px; display: grid; gap: 18px; }
+.contact .row { display: flex; align-items: center; gap: 26px; font-family: "Heavy"; font-weight: 900; font-size: 64px; letter-spacing: -.02em; }
+.contact .row .ic { width: 96px; height: 96px; border-radius: 24px; background: var(--blue); display: grid; place-items: center; flex: none; }
+.contact .row .ic svg { width: 54px; height: 54px; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="mag" viewBox="0 0 24 24"><g fill="none" stroke="#5f6368" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></g></symbol>
+  <symbol id="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="#ff4b4b" stroke-width="3.2" stroke-linecap="round"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#0071bc" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="checkw" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#5cb8ff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="globe" viewBox="0 0 24 24"><g fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></g></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="M6.6 3.5h3l1.5 4-2 1.3a11 11 0 0 0 6.1 6.1l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="therm" viewBox="0 0 24 24"><g fill="none" stroke="#5cb8ff" stroke-width="2.2" stroke-linecap="round"><path d="M10 14.5V5a2 2 0 1 1 4 0v9.5a4 4 0 1 1-4 0z"/><path d="M12 17v-5"/></g></symbol>
+</svg>
+
+<div id="stage">
+  <div id="header" class="abs">
+    <div class="ring"><img src="../headshot-circle.jpg" alt=""></div>
+    <div class="name">Charipar<br>Web Services<small>chariparwebservices.com</small></div>
+  </div>
+
+  <!-- l1 search -->
+  <div class="scene" id="sc-search">
+    <div class="temp" id="temp"><div class="chip"><svg style="width:60px;height:60px;vertical-align:-10px"><use href="#therm"/></svg> 7°F outside</div></div>
+    <div class="search"><svg><use href="#mag"/></svg><span id="typed"></span><span class="caret" id="caret"></span></div>
+  </div>
+
+  <!-- l2 money -->
+  <div class="scene" id="sc-money">
+    <div class="kick">1 furnace replacement</div>
+    <div class="big money-n" style="margin-top:30px"><span class="box" id="money-n">$0</span></div>
+    <div class="arrow-line" id="money-to">→ to <b>whoever shows up first</b></div>
+  </div>
+
+  <!-- l3 top 3 -->
+  <div class="scene" id="sc-top3">
+    <div class="pack">
+      <div class="map">
+        <div class="pin you" style="left:340px;top:36px"><span>1</span></div>
+        <div class="pin" style="left:570px;top:86px"><span>2</span></div>
+        <div class="pin" style="left:190px;top:92px"><span>3</span></div>
+        <div class="pin" style="left:740px;top:28px"><span>4</span></div>
+      </div>
+      <div class="listing you" id="r1"><div class="rank">1</div><div><div class="nm">Your Heating &amp; Air</div><div class="meta"><span class="stars">★★★★★</span> 4.9 · Open 24 hours</div></div><div class="cta">Call</div></div>
+      <div class="listing" id="r2"><div class="rank">2</div><div><div class="nm">Competitor HVAC</div><div class="meta"><span class="stars">★★★★☆</span> 4.6 · Open now</div></div><div class="cta">Call</div></div>
+      <div class="listing" id="r3"><div class="rank">3</div><div><div class="nm">Another Furnace Co.</div><div class="meta"><span class="stars">★★★★☆</span> 4.4 · Open now</div></div><div class="cta">Call</div></div>
+      <div class="listing dead" id="r4"><div class="rank">4</div><div><div class="nm">Everyone else</div><div class="meta">0 calls</div></div><div class="cta">Call</div><div class="stamp" id="stamp">NOTHING</div></div>
+    </div>
+  </div>
+
+  <!-- l4 math -->
+  <div class="scene" id="sc-math">
+    <div class="kick" style="margin-bottom:20px">The math</div>
+    <div class="math">
+      <div class="mrow" id="m1"><div class="l">1 replacement</div><div class="r">$5,000</div></div>
+      <div class="mrow" id="m2"><div class="l">Miss just <b>2 a week</b></div><div class="r">× 2</div></div>
+      <div class="mrow" id="m3"><div class="l"><b>16-week</b> heating season</div><div class="r">× 16</div></div>
+    </div>
+  </div>
+
+  <!-- l5 total -->
+  <div class="scene" id="sc-total">
+    <div class="total" id="total-box">
+      <div class="l">Walking to your competitor</div>
+      <div class="big n" id="total-n">$0</div>
+    </div>
+  </div>
+
+  <!-- l6 ladder -->
+  <div class="scene" id="sc-ladder">
+    <div class="kick" style="margin-bottom:26px">1 customer =</div>
+    <div class="ladder">
+      <div class="step" id="s1"><div class="n">$300</div><div class="t">The repair</div></div>
+      <div class="step" id="s2"><div class="n">$5,000+</div><div class="t">The replacement</div></div>
+      <div class="step" id="s3"><div class="n">+ AC</div><div class="t">The new AC</div></div>
+      <div class="step" id="s4"><div class="n">+ refs</div><div class="t">Every neighbor they send</div></div>
+    </div>
+  </div>
+
+  <!-- l7 google -->
+  <div class="scene" id="sc-google">
+    <div class="vs">
+      <div class="card bad" id="c-bad"><div class="ic"><svg><use href="#x"/></svg></div>Better techs<div class="strike" id="strike"></div></div>
+      <div class="card good" id="c-good"><div class="ic"><svg><use href="#check"/></svg></div>Better Google</div>
+    </div>
+  </div>
+
+  <!-- l8 cta -->
+  <div class="scene" id="sc-cta">
+    <div class="offer" id="offer">
+      <div class="h">Free Furnace<br>Lead Audit</div>
+      <ul><li>Where you rank right now</li><li>Who's taking your calls</li><li>What it's costing you</li></ul>
+    </div>
+    <div class="dm" id="dm">DM "FURNACE"</div>
+  </div>
+
+  <!-- outro (no voice) -->
+  <div id="outro">
+    <div class="ring" id="o-ring"><img src="../headshot-circle.jpg" alt=""></div>
+    <div class="brand" id="o-brand">Charipar Web Services</div>
+    <div class="tag" id="o-tag">Websites that work<br><span class="b">as hard as you do</span></div>
+    <div class="revs" id="o-revs"></div>
+    <div class="feats" id="o-feats">
+      <div class="feat"><svg><use href="#checkw"/></svg>100% USA based</div>
+      <div class="feat"><svg><use href="#checkw"/></svg>Custom designed</div>
+      <div class="feat"><svg><use href="#checkw"/></svg>Local SEO</div>
+      <div class="feat"><svg><use href="#checkw"/></svg>Built for blue collar</div>
+    </div>
+    <div class="contact" id="o-contact">
+      <div class="row"><div class="ic"><svg><use href="#globe"/></svg></div>chariparwebservices.com</div>
+      <div class="row"><div class="ic"><svg><use href="#phone"/></svg></div>319-202-8277</div>
+    </div>
+  </div>
+
+  <div id="cap" class="abs"></div>
+</div>
+
+<script>
+let TL = null, REVIEWS = [];
+const $ = id => document.getElementById(id);
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const easeOut = x => 1 - Math.pow(1 - clamp(x), 3);
+const easeBack = x => { x = clamp(x); const c = 1.70158; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const prog = (t, t0, d) => clamp((t - t0) / d);
+
+function wt(line, re, nth = 0, which = "s") {
+  const ws = TL.words.filter(w => w.line === line && new RegExp(re, "i").test(w.w));
+  const w = ws[Math.min(nth, ws.length - 1)];
+  return w ? w[which] : TL.scenes.find(s => s.id === line).start;
+}
+function sceneOf(id) { return TL.scenes.find(s => s.id === id); }
+
+// pop-in: opacity + translate/scale from a start time
+function pop(el, t, t0, d = 0.35, dy = 40) {
+  const p = easeBack(prog(t, t0, d)), o = prog(t, t0, d * 0.6);
+  el.style.opacity = o;
+  el.style.transform = `translateY(${(1 - p) * dy}px) scale(${0.92 + 0.08 * p})`;
+}
+function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+let chunks = [];
+function buildChunks() {
+  const ws = TL.words; let cur = [];
+  ws.forEach((w, i) => {
+    cur.push(w);
+    const brk = /[.,?!]$/.test(w.w) || cur.length >= 3 || (ws[i + 1] && ws[i + 1].line !== w.line);
+    if (brk) { chunks.push(cur); cur = []; }
+  });
+  if (cur.length) chunks.push(cur);
+}
+
+function captions(t) {
+  const cap = $("cap");
+  if (t >= TL.voiceEnd - 0.05) { cap.innerHTML = ""; return; }
+  let ci = -1;
+  for (let i = 0; i < chunks.length; i++) if (t >= chunks[i][0].s - 0.06) ci = i;
+  if (ci < 0) { cap.innerHTML = ""; return; }
+  const ch = chunks[ci], next = chunks[ci + 1];
+  const endT = next ? next[0].s - 0.06 : ch[ch.length - 1].e + 0.4;
+  if (t > endT + 0.3 && (!next || next[0].line !== ch[0].line)) { cap.innerHTML = ""; return; }
+  const key = ci + ":" + ch.findIndex((w, j) => t >= w.s && (j === ch.length - 1 || t < ch[j + 1].s));
+  const p = easeBack(prog(t, ch[0].s - 0.06, 0.16));
+  cap.style.transform = `scale(${0.85 + 0.15 * p})`;
+  if (cap.dataset.key === key) return;
+  cap.dataset.key = key;
+  const act = Number(key.split(":")[1]);
+  cap.innerHTML = ch.map((w, j) => {
+    const txt = w.w.replace(/[.,?!]+$/, "");
+    const cls = ["w"]; if (j === act) cls.push("on"); if (/^\$/.test(txt)) cls.push("money");
+    return `<span class="${cls.join(" ")}">${txt}</span>`;
+  }).join("");
+}
+
+function sceneVis(id, t) {
+  const s = sceneOf(id), i = TL.scenes.indexOf(s), nx = TL.scenes[i + 1];
+  const start = s.start - 0.12, end = nx ? nx.start - 0.08 : TL.duration;
+  const el = $("sc-" + s.scene);
+  if (t < start || t > end + 0.2) { el.style.opacity = 0; return false; }
+  const pin = easeOut(prog(t, start, 0.3)), pout = prog(t, end, 0.2);
+  el.style.opacity = pin * (1 - pout);
+  el.style.transform = `translateY(${(1 - pin) * 60 - pout * 40}px) scale(${0.96 + 0.04 * pin})`;
+  return true;
+}
+
+window.setTime = function (t) {
+  // header visible until outro
+  const outroT = sceneOf("outro").start;
+  const hp = prog(t, outroT - 0.1, 0.3);
+  $("header").style.opacity = easeOut(prog(t, 0, 0.4)) * (1 - hp);
+
+  if (sceneVis("l1", t)) {
+    const q = "furnace repair near me", t0 = wt("l1", "^furnace"), t1 = wt("l1", "^me", 0, "e");
+    const n = Math.round(clamp((t - t0) / (t1 - t0)) * q.length);
+    $("typed").textContent = q.slice(0, n);
+    $("caret").style.opacity = (Math.floor(t * 2.5) % 2 === 0 || (t > t0 && t < t1)) ? 1 : 0;
+    pop($("temp"), t, sceneOf("l1").start, 0.4);
+  }
+  if (sceneVis("l2", t)) {
+    const t0 = wt("l2", "5,000|five"), p = easeOut(prog(t, t0 - 0.1, 0.8));
+    $("money-n").textContent = money(5000 * p);
+    pop($("money-to"), t, wt("l2", "^whoever"));
+  }
+  if (sceneVis("l3", t)) {
+    const s = sceneOf("l3").start;
+    pop($("r1"), t, s + 0.05, 0.35, 30); pop($("r2"), t, s + 0.25, 0.35, 30); pop($("r3"), t, s + 0.45, 0.35, 30);
+    pop($("r4"), t, wt("l3", "^number"), 0.35, 30);
+    const st = prog(t, wt("l3", "^nothing"), 0.25);
+    $("stamp").style.opacity = st; $("stamp").style.transform = `translateY(-50%) rotate(-10deg) scale(${1.8 - 0.8 * easeOut(st)})`;
+  }
+  if (sceneVis("l4", t)) {
+    pop($("m1"), t, wt("l4", "^math")); pop($("m2"), t, wt("l4", "^two|^2")); pop($("m3"), t, wt("l4", "16|sixteen"));
+  }
+  if (sceneVis("l5", t)) {
+    const t0 = wt("l5", "160|hundred"), p = easeOut(prog(t, t0 - 0.15, 1.1));
+    $("total-n").textContent = money(160000 * p);
+    const shake = p >= 1 ? Math.sin((t - t0) * 60) * 8 * Math.max(0, 1 - (t - t0 - 1.1) / 0.35) : 0;
+    $("total-box").style.transform = `translateX(${shake}px) scale(${0.9 + 0.1 * easeBack(prog(t, sceneOf("l5").start, 0.4))})`;
+  }
+  if (sceneVis("l6", t)) {
+    pop($("s1"), t, wt("l6", "^repair")); pop($("s2"), t, wt("l6", "^replacement"));
+    pop($("s3"), t, wt("l6", "^AC")); pop($("s4"), t, wt("l6", "^neighbor"));
+  }
+  if (sceneVis("l7", t)) {
+    pop($("c-bad"), t, sceneOf("l7").start);
+    const sp = easeOut(prog(t, wt("l7", "^techs"), 0.3));
+    $("strike").style.width = "560px"; $("strike").style.transform = `scaleX(${sp})`;
+    pop($("c-good"), t, wt("l7", "^google", 0) - 0.15, 0.4, 60);
+  }
+  if (sceneVis("l8", t)) {
+    pop($("offer"), t, sceneOf("l8").start);
+    const d0 = wt("l8", "^DM"); pop($("dm"), t, d0 - 0.1, 0.4, 50);
+    const pulse = t > d0 + 0.4 ? (Math.sin((t - d0) * 6) + 1) / 2 : 0;
+    $("dm").style.boxShadow = `0 0 0 ${pulse * 24}px rgba(92,184,255,${0.45 * (1 - pulse)})`;
+  }
+  // outro
+  const o = $("outro");
+  if (t >= outroT - 0.1) {
+    o.style.opacity = easeOut(prog(t, outroT - 0.1, 0.35));
+    pop($("o-ring"), t, outroT, 0.5, 60); pop($("o-brand"), t, outroT + 0.2, 0.45); pop($("o-tag"), t, outroT + 0.4, 0.45);
+    const revs = [...document.querySelectorAll("#o-revs .rev")];
+    revs.forEach((r, i) => pop(r, t, outroT + 1.2 + i * 0.6, 0.45));
+    const featT = outroT + (revs.length ? 1.2 + revs.length * 0.6 : 1.0);
+    [...document.querySelectorAll("#o-feats .feat")].forEach((f, i) => pop(f, t, featT + i * 0.15, 0.4));
+    pop($("o-contact"), t, featT + 0.9, 0.5);
+  } else o.style.opacity = 0;
+
+  captions(t);
+};
+
+window.init = function (tl, reviews) {
+  TL = tl; REVIEWS = reviews || []; buildChunks();
+  if (REVIEWS.length) {
+    $("o-feats").style.display = "none";
+    $("o-revs").innerHTML = REVIEWS.map(r => `<div class="rev"><div class="st">${"★".repeat(r.stars || 5)}</div>
+      <div class="tx">"${r.text}"</div><div class="by">${r.name}</div></div>`).join("");
+  }
+};
+</script>
+</body>
+</html>

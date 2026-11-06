@@ -1,0 +1,47 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Kore",
+  "style": "[confident and punchy]",
+  "lines": [
+    {
+      "id": "l1",
+      "scene": "search",
+      "text": "Someone in your town just searched... furnace repair near me."
+    },
+    {
+      "id": "l2",
+      "scene": "money",
+      "text": "They're about to spend five thousand dollars with whoever shows up first."
+    },
+    {
+      "id": "l3",
+      "scene": "top3",
+      "text": "The top three on Google get the call. Number four? Gets nothing."
+    },
+    {
+      "id": "l4",
+      "scene": "math",
+      "text": "Let's do the math. Miss just two replacements a week, over a sixteen-week heating season."
+    },
+    {
+      "id": "l5",
+      "scene": "total",
+      "text": "that's one hundred sixty thousand dollars walking straight to your competitor."
+    },
+    {
+      "id": "l6",
+      "scene": "ladder",
+      "text": "And you're not losing one job. You're losing the repair, the replacement, the AC, and every neighbor they send you."
+    },
+    {
+      "id": "l7",
+      "scene": "google",
+      "text": "You're not losing to better techs. You're losing to better Google."
+    },
+    {
+      "id": "l8",
+      "scene": "cta",
+      "text": "That's exactly what we fix. DM the word furnace for a free lead audit."
+    }
+  ]
+}
