@@ -602,5 +602,60 @@
     "city": "Fairfax, IA",
     "address": "518 Linn St, Fairfax, IA",
     "summary": "Superior Drywall & Painting is a drywall crew based in Fairfax that says it serves the Iowa City area. It lists remodels, repairs, popcorn ceiling removal and retexturing."
+  },
+  "Blum Remodeling": {
+    "website": "https://www.blumremodeling.com/",
+    "city": "Westlake Village, CA",
+    "address": "705 Lakefield Rd Unit A, Westlake Village, CA 91361",
+    "phone": "(805) 367-6330",
+    "summary": "Blum Remodeling is a family-owned design-build firm serving Ventura and Los Angeles counties, founded by Oscar Vasquez. Its bathroom remodeling service covers design, engineering, permitting and construction under one team, from layout changes to finishes, with a final walk-through before completion. Its process includes preparing documentation for HOA or city permitting."
+  },
+  "Boutique Construction": {
+    "website": "https://boutique-construction.com/",
+    "city": "Westlake Village, CA",
+    "address": "32820 Barrett Dr, Westlake Village, CA 91361",
+    "phone": "(855) 434-0655",
+    "summary": "Boutique Construction is a remodeling and construction company led by founder Shai, who the site says has over 14 years of building experience. Its bathroom service covers consultation, design and fixture selection, permits and inspections, and installation including demolition, plumbing, electrical, tile and fixtures, finishing with a final walk-through."
+  },
+  "Polar Kitchen & Bathroom Remodeling": {
+    "summary": "Polar Kitchen & Bathroom Remodeling made our Westlake Village bathroom breakdown. We couldn't find a website or public listing for them in the Conejo Valley, so ask for their license number and recent bathroom work when you call."
+  },
+  "UP Bathroom Remodeling & Tile": {
+    "website": "https://upbathroomremodeling.com/",
+    "city": "Thousand Oaks, CA",
+    "address": "223 E Thousand Oaks Blvd, Thousand Oaks, CA 91360",
+    "phone": "(805) 909-5691",
+    "summary": "UP Bathroom Remodeling & Tile is a Thousand Oaks remodeling team focused on bathroom renovations and tile installation. Its site describes walk-in showers, tile work, custom vanities and spa-style finishes, and it also lists kitchen and home remodeling."
+  },
+  "ValleyBuild Kitchen & Bathroom Remodeling": {
+    "website": "https://valleybuild.com/",
+    "city": "Simi Valley, CA",
+    "address": "1720 E Los Angeles Ave #227, Simi Valley, CA 93065",
+    "phone": "(818) 858-0746",
+    "summary": "ValleyBuild is a Simi Valley general contractor (VALLEYBUILD LLC) owned by Rani Sikolsky and Guy Azulay that handles complete bathroom and kitchen remodels. Its bathroom work covers demolition, plumbing, electrical, tub or shower installation, tile, vanities, lighting and fixtures, starting with a 3D design and line-item quote. The site says most bathroom remodels take about 4 to 5 weeks and that it pulls permits."
+  },
+  "Bird Marketing": {
+    "website": "https://bird.marketing/",
+    "city": "London, UK (registered office); US offices listed in New York, Los Angeles and Austin",
+    "summary": "Bird Marketing is a full-service digital agency offering web design and development, SEO, PPC, social media and creative work. Its site lists industry pages for home services such as HVAC, plumbing and roofing, among many other sectors. It does not list window film or tint as an industry it serves."
+  },
+  "ECHVO": {
+    "website": "https://echvo.com/",
+    "city": "McLean, VA",
+    "summary": "ECHVO is a marketing agency for contractors and home service businesses, offering SEO, Google Ads, websites, social media, answer engine optimization and CRM setup. It lists kitchen and bath remodelers, roofers, HVAC companies, window treatment dealers and general contractors as its industries. Its window treatment page is aimed at blinds, shades and shutters dealers rather than window film installers."
+  },
+  "Lessing-Flynn": {
+    "website": "https://www.lessingflynn.com/",
+    "city": "Des Moines, IA",
+    "summary": "Lessing-Flynn is an independent advertising and marketing agency in Des Moines, Iowa, founded in 1907. It offers branding, digital marketing, public relations and media work for clients in sectors such as manufacturing, agribusiness and technology. It does not present a window film or tint specialty."
+  },
+  "Rewired Technologies": {
+    "website": "https://rewiredtech.io/",
+    "city": "Sarasota, FL",
+    "summary": "Rewired Technologies is a marketing agency that works with window tint and film businesses, including flat glass installers, auto tint shops and PPF companies. Its services center on paid advertising on Google, Meta and TikTok, CRM and follow-up systems through its FilmFlow AI platform, and sales support. Its site says it serves 150+ dealers across the U.S."
+  },
+  "Window Film Marketing Agency": {
+    "website": "https://windowfilmmarketingagency.com/",
+    "summary": "Window Film Marketing Agency markets only window film and tint companies, with film-type and city pages, Google Maps and AI search visibility, and install videos edited from job-site footage."
   }
 }

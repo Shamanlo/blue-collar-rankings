@@ -8,6 +8,102 @@
   },
   "rankings": [
     {
+      "slug": "bathroom-remodelers",
+      "videoId": "qKwa-lm4z8g",
+      "published": "2026-11-09",
+      "trade": "Bathroom Remodeling",
+      "tradePlural": "Bathroom Remodelers",
+      "badgeTrade": "Bathroom Remodelers",
+      "city": "Westlake Village",
+      "citySlug": "westlake-village",
+      "state": "California",
+      "stateSlug": "california",
+      "stateAbbr": "CA",
+      "count": 6,
+      "areas": [
+        "Westlake Village",
+        "North Ranch",
+        "Lake Sherwood",
+        "Thousand Oaks",
+        "Agoura Hills",
+        "Oak Park"
+      ],
+      "nextStep": "request estimates",
+      "hook": "Remodeling a bathroom in Westlake Village means tile, plumbing, glass, and often an HOA sign-off, and the contractor you pick makes all the difference.",
+      "intro": "We looked at six bathroom remodeling contractors serving Westlake Village and the Conejo Valley, what each one offers and where their experience holds up. Each company is described from its own website, or from its Google listing where there is no website.",
+      "winner": "All Exclusive Construction",
+      "winnerWhy": [
+        "All Exclusive Construction keeps an office on Townsgate Road in Westlake Village and is licensed, bonded and insured (CA Lic. #1120170), with a 5.0 rating on Google. They build spa-inspired bathrooms: walk-in showers with custom tile and frameless glass, heated tile floors, custom vanities and full master bathroom renovations, along with accessible, aging-in-place designs.",
+        "In HOA communities like North Ranch and Lake Sherwood, they review your HOA's guidelines before work begins and handle the architectural committee submissions for you. They also publish their bathroom pricing: about $15,000 to $30,000+ for a small bathroom, $30,000 to $45,000+ for a medium bathroom, and $45,000 to $75,000+ for a luxury makeover, depending on size and scope."
+      ],
+      "contenders": [
+        "Blum Remodeling",
+        "Boutique Construction",
+        "Polar Kitchen & Bathroom Remodeling",
+        "UP Bathroom Remodeling & Tile",
+        "ValleyBuild Kitchen & Bathroom Remodeling"
+      ],
+      "tips": [
+        "Ask who handles the HOA approval.",
+        "Ask if permits are included in the price.",
+        "Get the estimate in writing."
+      ],
+      "chapters": [
+        [
+          "0:00",
+          "Why a bathroom remodel has to be done right"
+        ],
+        [
+          "0:14",
+          "Blum Remodeling"
+        ],
+        [
+          "0:20",
+          "Boutique Construction"
+        ],
+        [
+          "0:28",
+          "Polar Kitchen & Bathroom Remodeling"
+        ],
+        [
+          "0:35",
+          "UP Bathroom Remodeling & Tile"
+        ],
+        [
+          "0:43",
+          "ValleyBuild Kitchen & Bathroom Remodeling"
+        ],
+        [
+          "0:54",
+          "#1 Top-rated pick: All Exclusive Construction"
+        ],
+        [
+          "1:27",
+          "What a customer says"
+        ],
+        [
+          "1:35",
+          "Before you hire"
+        ],
+        [
+          "1:42",
+          "Where to start"
+        ]
+      ],
+      "winnerDetails": {
+        "city": "Westlake Village, CA",
+        "address": "2945 Townsgate Rd Ste 200, Westlake Village, CA 91361",
+        "gbp": "https://www.google.com/maps?cid=13692790209865606513",
+        "rating": 5.0,
+        "reviews": 23,
+        "ratingAsOf": "Nov 6, 2026",
+        "servicePage": {
+          "bathroom-remodelers": "https://www.allexclusivepro.com/bathroom-remodeling/"
+        }
+      },
+      "asOf": "November 2026"
+    },
+    {
       "slug": "drywall-contractors",
       "videoId": "HASbukarwhM",
       "published": "2026-11-09",
@@ -900,6 +996,87 @@
         ]
       ],
       "asOf": "October 2026"
+    },
+    {
+      "slug": "window-film-marketing-agencies",
+      "videoId": "0mo-np873Mc",
+      "published": "2026-11-04",
+      "national": true,
+      "title": "The 5 Best Marketing Agencies for Window Film Companies",
+      "areaLabel": "Nationwide",
+      "badgeArea": "the U.S.",
+      "trade": "Window Film Marketing",
+      "tradePlural": "Marketing Agencies for Window Film Companies",
+      "badgeTrade": "Window Film Marketing",
+      "city": "Nationwide",
+      "citySlug": "nationwide",
+      "state": "United States",
+      "stateSlug": "united-states",
+      "stateAbbr": "US",
+      "count": 5,
+      "audience": "a window film or tint company owner",
+      "areas": [
+        "any U.S. market"
+      ],
+      "nextStep": "sign with an agency",
+      "hook": "Your next $20,000 window film job is searching right now, on Google Maps and in ChatGPT. The question is whether they find you.",
+      "intro": "We looked at five marketing agencies that window film and tint companies can work with, what each one offers and who each one is built for. Each agency is described from its own website.",
+      "winner": "Window Film Marketing Agency",
+      "winnerWhy": [
+        "Window Film Marketing Agency works only with window film and tint companies, and it knows the product: VLT, mil thickness, security film versus solar film. It builds a page for every film type and every core city you serve, works to get you into the top 3 on Google Maps, and aims to get you named when buyers ask ChatGPT, Gemini and Google's AI Overviews.",
+        "It also edits your job-site footage into install videos, before-and-afters and reels, and its case studies include a Los Angeles window film company's website with a page for each film and 14 city pages. You own your website, content and accounts, it's month-to-month after setup, and the monthly report counts booked estimates, not just traffic. Start with its free marketing audit."
+      ],
+      "contenders": [
+        "Bird Marketing",
+        "ECHVO",
+        "Lessing-Flynn",
+        "Rewired Technologies"
+      ],
+      "tips": [
+        "Ask if they know your films: VLT, mil thickness, security versus solar.",
+        "Ask who owns your website and accounts.",
+        "Ask them to report on booked jobs, not traffic."
+      ],
+      "tipsNote": "Talk to at least two or three agencies. The right fit is usually the one that explains what they'll do, what you'll own, and how they'll measure booked jobs before you sign.",
+      "chapters": [
+        [
+          "0:00",
+          "Your next $20,000 job is searching right now"
+        ],
+        [
+          "0:17",
+          "Bird Marketing"
+        ],
+        [
+          "0:28",
+          "ECHVO"
+        ],
+        [
+          "0:39",
+          "Lessing-Flynn"
+        ],
+        [
+          "0:48",
+          "Rewired Technologies"
+        ],
+        [
+          "0:59",
+          "#1 Top-rated pick: Window Film Marketing Agency"
+        ],
+        [
+          "1:22",
+          "Client work: install videos & reels"
+        ],
+        [
+          "1:40",
+          "Before you hire an agency"
+        ],
+        [
+          "1:49",
+          "Where to start"
+        ]
+      ],
+      "asOf": "November 2026"
     }
   ]
 }
