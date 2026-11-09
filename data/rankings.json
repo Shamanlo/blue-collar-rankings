@@ -8,6 +8,85 @@
   },
   "rankings": [
     {
+      "slug": "drywall-contractors",
+      "videoId": "HASbukarwhM",
+      "published": "2026-11-09",
+      "trade": "Drywall Installation & Repair",
+      "tradePlural": "Drywall Contractors",
+      "badgeTrade": "Drywall Contractors",
+      "city": "Iowa City",
+      "citySlug": "iowa-city",
+      "state": "Iowa",
+      "stateSlug": "iowa",
+      "stateAbbr": "IA",
+      "count": 5,
+      "areas": [
+        "Iowa City",
+        "Coralville",
+        "North Liberty",
+        "the rest of the Corridor"
+      ],
+      "nextStep": "request estimates",
+      "hook": "A water stain, a crack over the door, or a whole basement to finish: drywall looks simple, until the seams show through the paint.",
+      "intro": "We looked at five drywall installation and repair contractors serving Iowa City, what each one offers and where their experience holds up. Each company is described from its own website, or from its Google listing where there is no website.",
+      "winner": "Michel Cuevas Home Improvement",
+      "winnerWhy": [
+        "Michel Cuevas Home Improvement has been family-owned in Iowa City since 1997. They're licensed, insured and bonded, and you get proof of insurance before they ever set a ladder against your house.",
+        "They hang, tape and finish drywall for additions, remodels, finished basements and new construction, with fire-rated and moisture-resistant board where code calls for it and texture matched to your existing walls. Every job starts with a walkthrough and a written estimate, the number on the estimate is the number on the invoice, and you get a written warranty at the final walkthrough."
+      ],
+      "contenders": [
+        "Drywall Doctor",
+        "Edward Drywall LLC",
+        "Helpful Handyman LLC",
+        "Superior Drywall"
+      ],
+      "tips": [
+        "Ask if texture matching is included.",
+        "Ask whether the finish will be ready to paint.",
+        "Get the estimate in writing."
+      ],
+      "chapters": [
+        [
+          "0:00",
+          "Why drywall has to be done right"
+        ],
+        [
+          "0:14",
+          "Drywall Doctor"
+        ],
+        [
+          "0:20",
+          "Edward Drywall LLC"
+        ],
+        [
+          "0:24",
+          "Helpful Handyman LLC"
+        ],
+        [
+          "0:43",
+          "Superior Drywall"
+        ],
+        [
+          "0:49",
+          "#1 Top-rated pick: Michel Cuevas Home Improvement"
+        ],
+        [
+          "1:20",
+          "Before you hire"
+        ],
+        [
+          "1:26",
+          "Where to start"
+        ]
+      ],
+      "winnerDetails": {
+        "servicePage": {
+          "drywall-contractors": "https://www.michelcuevashome.com/drywall-installation"
+        }
+      },
+      "asOf": "November 2026"
+    },
+    {
       "slug": "financial-advisors",
       "videoId": "vAAXLeaMO8s",
       "published": "2026-10-29",
