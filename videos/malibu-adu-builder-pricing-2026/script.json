@@ -1,9 +1,4 @@
 {
- "tts": "gemini",
- "gemini": {
-  "model": "gemini-3.8-flash-tts",
-  "voice": "Charon"
- },
  "assetsDir": "../_shared/adu-builders",
  "header": "Malibu, CA · ADU Prices · 2026",
  "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Malibu conditions. Ballpark only; get an on-site estimate.",
@@ -473,5 +468,7 @@
    "speak": "Visit adu builders malibu dot pro for a free consultation.",
    "say": "Visit adubuildersmalibu.pro for a free consultation."
   }
- ]
+ ],
+ "voice": "en-US-AndrewNeural",
+ "rate": "+6%"
 }

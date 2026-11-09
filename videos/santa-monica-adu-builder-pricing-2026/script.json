@@ -1,9 +1,4 @@
 {
- "tts": "gemini",
- "gemini": {
-  "model": "gemini-3.8-flash-tts",
-  "voice": "Charon"
- },
  "assetsDir": "../_shared/adu-builders",
  "header": "Santa Monica, CA · ADU Prices · 2026",
  "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Santa Monica conditions. Ballpark only; get an on-site estimate.",
@@ -475,5 +470,7 @@
    "speak": "Visit adu builders santa monica dot pro for a free consultation.",
    "say": "Visit adubuilderssantamonica.pro for a free consultation."
   }
- ]
+ ],
+ "voice": "en-US-AndrewNeural",
+ "rate": "+6%"
 }
