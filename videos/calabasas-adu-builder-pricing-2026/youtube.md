@@ -7,11 +7,11 @@ Thumbnail: `out/thumbnail-youtube.jpg` (1280x720)
 
 ### Title
 
-Calabasas ADU Cost (2026): Pricing Guide for Every Type of ADU
+Calabasas ADU Prices 2026: Junior ADU vs. Garage Conversion vs. Detached
 
 Shorter alternatives:
-- How Much Does It Cost to Build an ADU in Calabasas? (2026)
-- Calabasas ADU Builder Pricing Guide (2026)
+- What an ADU Costs in Calabasas (2026)
+- Calabasas ADU Pricing Guide 2026: Costs, Rules & Builders
 
 ### Description
 
@@ -76,11 +76,11 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What an ADU Costs in Calabasas (2026) 🏡 #shorts
+How Much Is an ADU in Calabasas? (2026) 🔨 #shorts
 
 ### Caption
 
-Thinking about an ADU in Calabasas? 2026 prices 👇
+Backyard home, garage conversion or junior ADU? Calabasas prices for 2026 👇
 🏠 Junior ADU: from $75,000
 🚗 Garage conversion: from $120,000
 🧱 Attached ADU: from $195,000

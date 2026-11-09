@@ -7,11 +7,11 @@ Thumbnail: `out/thumbnail-youtube.jpg` (1280x720)
 
 ### Title
 
-Culver City ADU Cost (2026): Pricing Guide for Every Type of ADU
+Culver City ADU Prices 2026: Junior ADU vs. Garage Conversion vs. Detached
 
 Shorter alternatives:
-- How Much Does It Cost to Build an ADU in Culver City? (2026)
-- Culver City ADU Builder Pricing Guide (2026)
+- What an ADU Costs in Culver City (2026)
+- Culver City ADU Pricing Guide 2026: Costs, Rules & Builders
 
 ### Description
 
@@ -76,11 +76,11 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What an ADU Costs in Culver City (2026) 🏡 #shorts
+How Much Is an ADU in Culver City? (2026) 🔨 #shorts
 
 ### Caption
 
-Thinking about an ADU in Culver City? 2026 prices 👇
+Backyard home, garage conversion or junior ADU? Culver City prices for 2026 👇
 🏠 Junior ADU: from $70,000
 🚗 Garage conversion: from $115,000
 🧱 Attached ADU: from $185,000

@@ -7,11 +7,11 @@ Thumbnail: `out/thumbnail-youtube.jpg` (1280x720)
 
 ### Title
 
-Thousand Oaks ADU Cost (2026): Pricing Guide for Every Type of ADU
+How Much Does an ADU Cost in Thousand Oaks? (2026 Pricing Guide)
 
 Shorter alternatives:
-- How Much Does It Cost to Build an ADU in Thousand Oaks? (2026)
-- Thousand Oaks ADU Builder Pricing Guide (2026)
+- Thousand Oaks ADU Cost 2026: What Each Type of ADU Really Costs
+- ADU Prices in Thousand Oaks, CA (2026): Garage Conversions to Backyard Homes
 
 ### Description
 
@@ -76,11 +76,11 @@ Cover: `out/thumbnail-reel.jpg` (1080x1920)
 
 ### Title
 
-What an ADU Costs in Thousand Oaks (2026) 🏡 #shorts
+Thousand Oaks ADU Prices in 60 Seconds (2026) 🏠 #shorts
 
 ### Caption
 
-Thinking about an ADU in Thousand Oaks? 2026 prices 👇
+What does an ADU cost in Thousand Oaks? Here's the 2026 breakdown 👇
 🏠 Junior ADU: from $65,000
 🚗 Garage conversion: from $105,000
 🧱 Attached ADU: from $170,000
