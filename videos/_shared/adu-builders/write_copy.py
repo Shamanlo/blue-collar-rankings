@@ -95,12 +95,12 @@ def main():
             f"• {f[1]}: {f[2]} ({k(pr[f[0]][0])} – {k(pr[f[0]][1])}+). {f[5]}" for f in c["feats"])
         price_lines = "\n".join(
             f"• {TYPE[t][0]} ({TYPE[t][1].lower()}): {k(pr[t][0])} – {k(pr[t][1])}+" for t in ("jadu", "garage", "attached", "detached"))
-        drivers = ", ".join(f"{d_[0].lower()} ({d_[1][0].lower() + d_[1][1:]})" for d_ in c["drivers"])
+        drivers = "; ".join(f"{d_[0].lower()} ({d_[1]})" for d_ in c["drivers"])
         faq = "\n".join(f"• {q} {a}." for q, a, _ in c["faq"])
         rules = by_id["rules"]["say"].replace("A few rules to know. ", "")
         title = TITLES[i % 3].format(city=city)
         alts = "\n".join(f"- {a.format(city=city)}" for a in ALTS[i % 3])
-        hood_str = ", ".join(c["hoods"][:3])
+        hood_str = ", ".join(f[1] for f in c["feats"][:2]) + " and " + c["feats"][2][1]
         md = f"""# Local Vibe Check: ADU Pricing Guide, {city} (2026)
 
 ## Main video (16:9)
