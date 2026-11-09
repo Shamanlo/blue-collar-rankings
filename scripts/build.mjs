@@ -60,17 +60,20 @@ function copyDir(src, dst) {
 const rankings = data.rankings
   .map((r) => {
     const url = `/rankings/${r.stateSlug}/${r.citySlug}/${r.slug}/`;
-    const area = `${r.city}, ${r.stateAbbr}`;
-    const title = `The ${r.count} Best ${r.tradePlural} in ${r.city}`;
+    // National rankings (not tied to one town) set national: true, plus title, areaLabel and badgeArea.
+    const area = r.areaLabel || `${r.city}, ${r.stateAbbr}`;
+    const where = r.national ? "nationwide" : `in ${area}`;
+    const bestIn = r.badgeArea || r.city;
+    const title = r.title || `The ${r.count} Best ${r.tradePlural} in ${r.city}`;
     const badgeBase = `${r.citySlug}-${r.slug}-${YEAR}`;
     return {
-      ...r, url, area, title,
-      topTitle: `#1 Top Ranked ${r.tradePlural.replace(/ies$/, "y").replace(/s$/, "")} in ${area}, ${YEAR}: ${r.winner}`,
-      areaTitle: `Best in ${r.city}: ${r.tradePlural}, ranked ${YEAR} by Blue Collar Rankings`,
+      ...r, url, area, where, bestIn, title,
+      topTitle: `#1 Top Ranked ${r.tradePlural.replace(/ies$/, "y").replace(/s$/, "")} ${where}, ${YEAR}: ${r.winner}`,
+      areaTitle: `Best in ${bestIn}: ${r.tradePlural}, ranked ${YEAR} by Blue Collar Rankings`,
       topPng: `/badges/${badgeBase}-top-ranked.png`,
       areaPng: `/badges/${badgeBase}-best-in-${r.citySlug}.png`,
       thumb: `/img/thumbs/${r.videoId}.jpg`,
-      w: biz[r.winner] || {},
+      w: { ...(biz[r.winner] || {}), ...(r.winnerDetails || {}) },
       episodes: [],
     };
   })
@@ -79,13 +82,13 @@ const rankings = data.rankings
 const cities = [];
 for (const r of rankings) {
   let c = cities.find((x) => x.citySlug === r.citySlug && x.stateSlug === r.stateSlug);
-  if (!c) cities.push((c = { city: r.city, citySlug: r.citySlug, state: r.state, stateSlug: r.stateSlug, stateAbbr: r.stateAbbr, url: `/rankings/${r.stateSlug}/${r.citySlug}/`, rankings: [] }));
+  if (!c) cities.push((c = { city: r.city, citySlug: r.citySlug, state: r.state, stateSlug: r.stateSlug, stateAbbr: r.stateAbbr, national: !!r.national, url: `/rankings/${r.stateSlug}/${r.citySlug}/`, rankings: [] }));
   c.rankings.push(r);
 }
 cities.sort((a, b) => a.city.localeCompare(b.city));
 const states = [...new Set(cities.map((c) => c.stateSlug))].map((s) => {
   const cs = cities.filter((c) => c.stateSlug === s);
-  return { state: cs[0].state, stateSlug: s, url: `/rankings/${s}/`, cities: cs, count: cs.reduce((n, c) => n + c.rankings.length, 0) };
+  return { state: cs[0].state, stateSlug: s, national: cs.every((c) => c.national), url: `/rankings/${s}/`, cities: cs, count: cs.reduce((n, c) => n + c.rankings.length, 0) };
 }).sort((a, b) => a.state.localeCompare(b.state));
 // ---------- podcast ----------
 // Episodes come from the show's RSS feed, read at build time, so new ones appear without
@@ -121,7 +124,7 @@ function matchRanking(title) {
   const stems = new Set(t.split(" ").map((w) => w.slice(0, 5)));
   let best = null, bestScore = 0, tie = false;
   for (const r of rankings) {
-    if (!t.includes(norm(r.city))) continue;
+    if (!r.national && !t.includes(norm(r.city))) continue;
     const need = [...new Set(norm(`${r.trade} ${r.tradePlural}`).split(" ").filter((w) => !GENERIC.has(w)).map((w) => w.slice(0, 5)))];
     const hits = need.filter((w) => stems.has(w)).length;
     if (hits < Math.min(2, need.length)) continue;
@@ -384,7 +387,7 @@ function statePage(s) {
 <section class="hero hero-sub"><div class="wrap">
   ${crumbsHtml(trail)}
   <span class="eyebrow">${YEAR} Rankings · ${esc(s.state)}</span>
-  <h1>Top-rated pros in ${esc(s.state)}</h1>
+  <h1>${s.national ? "Nationwide rankings" : `Top-rated pros in ${esc(s.state)}`}</h1>
   <p class="lede">${s.count} ranking${s.count > 1 ? "s" : ""} across ${listJoin(s.cities.map((c) => c.city))}.</p>
 </div></section>
 <section class="section"><div class="wrap">
@@ -392,7 +395,7 @@ function statePage(s) {
   ${cards(list)}
 </div></section>
 ${band}`;
-  return layout({ title: `Best Local Contractors in ${s.state} (${YEAR}) | ${site.name}`, description: `Blue Collar Rankings for ${s.state}: ${list.map((r) => `${lowerTrade(r.tradePlural)} in ${r.city}`).join(", ")}.`, canonical: s.url, body, jsonld: [crumbsLd(trail)] });
+  return layout({ title: `${s.national ? "Nationwide Rankings" : `Best Local Contractors in ${s.state}`} (${YEAR}) | ${site.name}`, description: `Blue Collar Rankings ${s.national ? "nationwide" : `for ${s.state}`}: ${list.map((r) => `${lowerTrade(r.tradePlural)} ${r.national ? "" : `in ${r.city}`}`.trim()).join(", ")}.`, canonical: s.url, body, jsonld: [crumbsLd(trail)] });
 }
 
 function cityPage(c) {
@@ -400,16 +403,18 @@ function cityPage(c) {
   const body = `
 <section class="hero hero-sub"><div class="wrap">
   ${crumbsHtml(trail)}
-  <span class="eyebrow">${YEAR} Rankings · ${esc(c.city)}, ${c.stateAbbr}</span>
-  <h1>Best of ${esc(c.city)}</h1>
-  <p class="lede">${c.rankings.length === 1 ? "Our ranking" : `Our ${words[c.rankings.length]} rankings`} for ${esc(c.city)}: ${listJoin(c.rankings.map((r) => lowerTrade(r.tradePlural)))}. Each one names a top-rated pick and the businesses that earned a Best in ${esc(c.city)} badge.</p>
+  <span class="eyebrow">${YEAR} Rankings · ${c.national ? "Nationwide" : `${esc(c.city)}, ${c.stateAbbr}`}</span>
+  <h1>${c.national ? "Nationwide rankings" : `Best of ${esc(c.city)}`}</h1>
+  <p class="lede">${c.national
+    ? `Rankings that aren't tied to one town: ${listJoin(c.rankings.map((r) => lowerTrade(r.tradePlural)))}. Each one names a top-rated pick.`
+    : `${c.rankings.length === 1 ? "Our ranking" : `Our ${words[c.rankings.length]} rankings`} for ${esc(c.city)}: ${listJoin(c.rankings.map((r) => lowerTrade(r.tradePlural)))}. Each one names a top-rated pick and the businesses that earned a Best in ${esc(c.city)} badge.`}</p>
 </div></section>
 <section class="section"><div class="wrap">
   ${cards(c.rankings)}
   <div class="cat-list" style="margin-top:48px">${c.rankings.map((r) => `<div class="cat"><h3><a href="${r.url}">${esc(r.tradePlural)}</a></h3><p><span class="pill-1">#1</span> <b>${esc(r.winner)}</b></p><p>Also ranked: ${esc(r.contenders.join(", "))}.</p></div>`).join("")}</div>
 </div></section>
 ${band}`;
-  return layout({ title: `Best Contractors in ${c.city}, ${c.stateAbbr} (${YEAR}) | ${site.name}`, description: `Top-rated ${c.rankings.map((r) => lowerTrade(r.tradePlural)).join(", ")} in ${c.city}, ${c.state}, ranked by Blue Collar Rankings.`, canonical: c.url, body, jsonld: [crumbsLd(trail)] });
+  return layout({ title: `${c.national ? "Nationwide Rankings" : `Best Contractors in ${c.city}, ${c.stateAbbr}`} (${YEAR}) | ${site.name}`, description: `Top-rated ${c.rankings.map((r) => lowerTrade(r.tradePlural)).join(", ")} ${c.national ? "nationwide" : `in ${c.city}, ${c.state}`}, ranked by Blue Collar Rankings.`, canonical: c.url, body, jsonld: [crumbsLd(trail)] });
 }
 
 function embedBlock(id, heading, text, png, alt, url) {
@@ -436,7 +441,7 @@ function rankingPage(r) {
     const b = biz[name] || {};
     const loc = b.city ? `<p class="muted" style="font-size:.88rem">${esc(b.city)}</p>` : "";
     return `<li id="${slugify(name)}">
-      <div class="mini">${areaBadge({ id: `m-${slugify(name)}`, area: r.city, trade: r.badgeTrade, year: YEAR, title: `Best in ${r.city} badge` })}</div>
+      <div class="mini">${areaBadge({ id: `m-${slugify(name)}`, area: r.bestIn, trade: r.badgeTrade, year: YEAR, title: `Best in ${r.bestIn} badge` })}</div>
       <div><h3>${esc(name)}</h3>${loc}<p>${esc(summaryFor(name))}</p></div>
     </li>`;
   }).join("\n");
@@ -518,7 +523,7 @@ function rankingPage(r) {
       </section>
 
       <h2>The rest of the field</h2>
-      <p>Listed alphabetically, as in the video. Every company here made the cut and earned a <b>Best in ${esc(r.city)}</b> badge for ${esc(lowerTrade(r.tradePlural))}.</p>
+      <p>Listed alphabetically, as in the video. Every company here made the cut and earned a <b>Best in ${esc(r.bestIn)}</b> badge for ${esc(lowerTrade(r.tradePlural))}.</p>
       <ul class="field">
 ${field}
       </ul>
@@ -533,7 +538,7 @@ ${field}
       <h2 id="badges">Display the badges</h2>
       <p>Businesses in this ranking may display their badge on their website, social profiles and printed materials. Copy the embed code, or download the PNG.</p>
       ${embedBlock("code-top", "#1 Top Ranked", `For ${esc(r.winner)} only.`, r.topPng, r.topTitle, r.url)}
-      ${embedBlock("code-area", `Best in ${esc(r.city)}`, `For every business in this ranking, including ${esc(r.winner)}.`, r.areaPng, r.areaTitle, r.url)}
+      ${embedBlock("code-area", `Best in ${esc(r.bestIn)}`, `For every business in this ranking, including ${esc(r.winner)}.`, r.areaPng, r.areaTitle, r.url)}
     </article>
 
     <aside class="facts" aria-label="Ranking facts">
@@ -553,7 +558,7 @@ ${band}`;
 
   return layout({
     title: `${r.title} (${YEAR}) | ${site.name}`,
-    description: `We ranked ${r.count} ${lowerTrade(r.tradePlural)} in ${r.area}. Our #1 top-rated pick: ${r.winner}. Watch the video and read about every company that made the list.`,
+    description: `We ranked ${r.count} ${lowerTrade(r.tradePlural)} ${r.where}. Our #1 top-rated pick: ${r.winner}. Watch the video and read about every company that made the list.`,
     canonical: r.url,
     body,
     ogImage: `https://i.ytimg.com/vi/${r.videoId}/hqdefault.jpg`,
@@ -564,8 +569,8 @@ ${band}`;
 function badgesPage() {
   const trail = [["Home", "/"], ["Badges", "/badges/"]];
   const rows = rankings.map((r) => `<div class="cat"><h3><a href="${r.url}#badges">${esc(r.tradePlural)} · ${esc(r.area)}</a></h3>
-    <p><span class="pill-1">#1</span> <b>${esc(r.winner)}</b> (Top Ranked + Best in ${esc(r.city)})</p>
-    <p>Best in ${esc(r.city)}: ${esc(r.contenders.join(", "))}</p></div>`).join("");
+    <p><span class="pill-1">#1</span> <b>${esc(r.winner)}</b> (Top Ranked + Best in ${esc(r.bestIn)})</p>
+    <p>Best in ${esc(r.bestIn)}: ${esc(r.contenders.join(", "))}</p></div>`).join("");
   const body = `
 <section class="hero hero-sub"><div class="wrap">
   ${crumbsHtml(trail)}
@@ -739,7 +744,7 @@ write("_headers", `/fonts/*\n  Cache-Control: public, max-age=31536000, immutabl
 // badge sources for the PNG renderer
 const badgeJobs = rankings.flatMap((r) => [
   { out: r.topPng, svg: topBadge({ id: "x", area: r.area, trade: r.badgeTrade, year: YEAR, title: r.topTitle }) },
-  { out: r.areaPng, svg: areaBadge({ id: "x", area: r.city, trade: r.badgeTrade, year: YEAR, title: r.areaTitle }) },
+  { out: r.areaPng, svg: areaBadge({ id: "x", area: r.bestIn, trade: r.badgeTrade, year: YEAR, title: r.areaTitle }) },
 ]);
 fs.writeFileSync(path.join(ROOT, "scripts/.badge-jobs.json"), JSON.stringify(badgeJobs));
 
