@@ -395,13 +395,14 @@ export const webDesign = [
     card: "Before-and-after galleries and short case studies that show the building, the film and the result.",
     title: "Project Galleries and Case Studies for Window Film Companies",
     metaTitle: "Window Film Project Galleries and Case Studies",
-    metaDesc: "Project pages and case studies for window tinting companies: before-and-after photos, film used, square footage and results. Proof that sells commercial jobs.",
+    metaDesc: "Project pages and case studies for window tinting companies, with real examples from MD Window Films: the building, the problem, the film used and the square footage. Proof that sells commercial jobs.",
     eyebrow: "Proof",
     lead: "Commercial buyers want to see that you've done a building like theirs. A good project page answers that in thirty seconds.",
     intro: {
       h: "Every install is a sales page waiting to be written",
       p: [
-        "A college classroom that needed solar film to cut glare on projectors. A downtown storefront that kept getting tagged. A dental office that wanted frosted glass without losing daylight. Each of those is a page that ranks and closes the next similar job.",
+        "A college arts classroom where glare washed out the editing screens. A downtown Los Angeles building that kept getting tagged. A Beverly Hills hotel that couldn't afford to replace 3,500 square feet of glass. Those are real installs we turned into project pages for MD Window Films.",
+        "Each one is its own page that can be found in search and shown to the next buyer with a building like it: a school, a hotel, a storefront.",
       ],
     },
     points: {
@@ -418,6 +419,31 @@ export const webDesign = [
     faq: [
       { q: "We don't have great photos. Is that a problem?", a: "We'll show your crew how to shoot before-and-after on a phone in two minutes per job. Real, slightly imperfect photos beat stock images every time." },
     ],
+    example: {
+      client: "MD Window Films",
+      caseStudy: "/case-studies/md-window-films/",
+      liveUrl: "https://www.mdwindowfilms.com/projects/",
+      lead: "MD Window Films' projects section turns real installs into pages: a gallery of every job, then a full write-up for each one.",
+      shots: [
+        ["/work/mdwindowfilms-projects-gallery.jpg", 1200, 1117, "mdwindowfilms.com/projects/", "The gallery: every install as a card"],
+        ["/work/mdwindowfilms-project-page.jpg", 1200, 1367, "mdwindowfilms.com/projects/cameo-beverly-hills-hotel-solar-film-installation/", "A project page: Cameo Beverly Hills Hotel"],
+      ],
+      anatomy: [
+        { t: "The building and the problem", d: "The Cameo Beverly Hills Hotel was renovating its penthouse floor, and quotes to replace about 3,500 sq ft of glass came in over budget." },
+        { t: "The film and the spec", d: "Sunlight 70 solar film at the hotel, TrueVue 5% in college editing and music classrooms, clear 6 mil anti-graffiti film downtown, each with a Materials Used list." },
+        { t: "The scope", d: "Roughly 3,500 sq ft across a penthouse level, or every first-floor window on a downtown commercial building." },
+        { t: "A clear next step", d: "A Consultation button at the top of every project and a Request Your Window Film Consultation section at the bottom." },
+      ],
+      projects: [
+        ["Beverly Hills Hotel Solar Window Film Installation", "Solar film", "cameo-beverly-hills-hotel-solar-film-installation"],
+        ["College Arts Classroom Solar Film Installation", "Solar film", "college-arts-classroom-solar-film-installation"],
+        ["Downtown Los Angeles Anti-Graffiti Film Installation", "Anti-graffiti film", "downtown-la-anti-graffiti-film-installation"],
+        ["Storefront Anti-Graffiti Film Installation", "Anti-graffiti film", "storefront-anti-graffiti-film-installation"],
+        ["Pregnancy Center Security Film Installation", "Security film", "christian-pregnancy-center-security-film-installation"],
+        ["Entry Security Film Installation", "Security film", "private-school-entry-security-film-installation"],
+        ["Private School Security Film Installation", "Security film", "private-christian-school-security-film-installation"],
+      ],
+    },
   },
   {
     slug: "estimate-forms",

@@ -382,6 +382,18 @@ function detailPage(g, p) {
   <div class="grid-3">${p.points.items.map((x, i) => `<div class="card pt-card"><span class="step-n">${String(i + 1).padStart(2, "0")}</span><h3>${esc(x.t)}</h3><p>${esc(x.d)}</p></div>`).join("")}</div></div></section>`);
   if (p.work) parts.push(workSection({ cls: "", ...p.work }));
   if (p.caseStudy) parts.push(caseSection(caseStudies[0], ""));
+  if (p.example) {
+    const x = p.example;
+    parts.push(`<section class="sec" id="example"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">Real example · ${esc(x.client)}</p><h2>A project gallery <span class="hl">we built</span></h2><p>${esc(x.lead)}</p></div>
+  <div class="grid-2 ex-shots">${x.shots.map(([src, w, h, label, cap]) => browserShot(src, w, h, label, `${x.client}: ${cap}`, cap)).join("")}</div>
+  <h3 class="cs-sub">Anatomy of one of their project pages</h3>
+  <div class="grid-2 ex-anatomy">${x.anatomy.map((a, i) => `<div class="card pt-card"><span class="step-n">${String(i + 1).padStart(2, "0")}</span><h3>${esc(a.t)}</h3><p>${esc(a.d)}</p></div>`).join("")}</div>
+  <h3 class="cs-sub">${x.projects.length} project pages on their site</h3>
+  <ul class="proj-list">${x.projects.map(([t, film, slug]) => `<li><a href="${x.liveUrl}${slug}/" target="_blank" rel="noopener"><span class="pl-film">${esc(film)}</span><span class="pl-t">${esc(t)}</span>${icon("arrow", 16)}</a></li>`).join("")}</ul>
+  <div class="hero-ctas ex-ctas"><a class="btn btn-primary" href="${x.caseStudy}">Read the full case study ${icon("arrow", 18)}</a><a class="btn btn-ghost" href="${x.liveUrl}" target="_blank" rel="noopener">See their projects page</a></div>
+</div></section>`);
+  }
   if (p.sitemap) parts.push(`<section class="sec"><div class="wrap"><div class="sec-head"><p class="eyebrow">Site structure</p><h2>${esc(p.sitemap.h)}</h2><p>Modeled on how buyers actually shop for film: by property type, then by film, then by proof.</p></div>
   <div class="sitemap"><div class="sm-root">${icon("home", 18)} Home</div><div class="sm-cols">${p.sitemap.groups.map((x) => `<div class="card sm-col"><h3>${esc(x.t)}</h3><ul>${x.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("")}</div></div></div></section>`);
   if (p.asks) parts.push(`<section class="sec sec-dark"><div class="wrap split split-top"><div><p class="eyebrow">${esc(p.asks.eyebrow || "Search demand")}</p><h2>${esc(p.asks.h)}</h2><p class="lead-sm">${esc(p.asks.sub || "We build pages, profiles and reviews that answer these exact questions, so Google and AI assistants send the buyer to you.")}</p></div>
