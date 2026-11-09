@@ -323,6 +323,7 @@ export const webDesign = [
       { q: "Can we keep our current domain and rankings?", a: "Yes. We map every old URL to its new page with 301 redirects so you keep the rankings and links you've already earned." },
       { q: "Do you write the content?", a: "Yes. We interview you about your films, crews, warranties and best jobs, then write it. You approve everything before launch." },
     ],
+    caseStudy: true,
   },
   {
     slug: "website-redesign",
@@ -931,5 +932,42 @@ export const work = [
     kind: "YouTube Short · Residential security film",
     desc: "A talking-head Short for MD Window Films: a break-in hook, security film explained on camera in front of a home's sliding glass doors, bold burned-in captions and their logo on screen.",
     poster: "/work/md-window-films-security-film.jpg",
+  },
+];
+
+// Web design case studies (screenshots live in static/work/)
+export const caseStudies = [
+  {
+    slug: "md-window-films",
+    client: "MD Window Films",
+    where: "Santa Monica & Greater Los Angeles, CA",
+    site: "https://www.mdwindowfilms.com/",
+    siteLabel: "mdwindowfilms.com",
+    kind: "Website · Commercial & residential window film",
+    headline: "a page for every film and every city",
+    metaTitle: "MD Window Films Website | Window Film Web Design Case Study",
+    metaDesc: "How we built mdwindowfilms.com for a Los Angeles window film installer: commercial and residential divisions, a page for every film, 14 city pages, project case studies and an estimate-first layout.",
+    lead: "MD Window Films installs security, solar, anti-graffiti and privacy film for homes and businesses across Greater Los Angeles. We built them a site that gives each of those films, and each city they serve, its own page.",
+    stats: [["50", "pages & articles"], ["8", "film service pages"], ["14", "city pages"], ["7", "project case studies"], ["12", "blog articles"]],
+    built: [
+      { t: "Commercial and residential divisions", d: "Separate menus and hub pages, so a facilities manager and a homeowner each land on pages written for them." },
+      { t: "A page for every film", d: "Commercial security film, anti-graffiti film, commercial tinting, solar film, frosted privacy glass and skylight tinting, plus residential security film and home tinting." },
+      { t: "Service-area pages", d: "Fourteen city pages, from Santa Monica and Beverly Hills to Pasadena, Long Beach and Thousand Oaks, under one service-area hub." },
+      { t: "Proof above the fold", d: "License number, years in business, Armorcoat certified dealer status, Google rating and Yelp, all before a visitor scrolls." },
+      { t: "Project case studies", d: "Real installs written up as projects: a Beverly Hills hotel, private schools, a pregnancy center, a college classroom and Los Angeles storefronts." },
+      { t: "Estimate-first layout", d: "Get An Estimate in the header on every page, a Call Now button on mobile, and a dedicated estimates page with its own thank-you page." },
+      { t: "Structured data", d: "Local business markup with address, map coordinates, hours and a service catalog, so search engines and AI assistants read the business correctly." },
+      { t: "Answers buyers look for", d: "A blog and on-page FAQs covering what people ask before they call: cost, install time, how long film lasts and whether it darkens a room." },
+    ],
+    cities: ["Santa Monica", "Los Angeles", "Beverly Hills", "Culver City", "Glendale", "Pasadena", "Long Beach", "Montebello", "Monterey Park", "San Fernando Valley", "Santa Clarita", "Simi Valley", "Thousand Oaks", "Palmdale"],
+    shots: {
+      desktop: "/work/mdwindowfilms-home-desktop.jpg",
+      mobile: "/work/mdwindowfilms-home-mobile.jpg",
+      projects: "/work/mdwindowfilms-projects.jpg",
+      pages: [
+        ["/work/mdwindowfilms-service-area.jpg", "City page: Santa Monica", "mdwindowfilms.com/service-area/santa-monica/"],
+        ["/work/mdwindowfilms-security-film.jpg", "Film page: commercial window security film", "mdwindowfilms.com/commercial-window-security-film/"],
+      ],
+    },
   },
 ];

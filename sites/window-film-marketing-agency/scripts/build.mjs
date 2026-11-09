@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { site, services, webDesignIndex, webDesign, specialties, home, about, reel, work } from "./content.mjs";
+import { site, services, webDesignIndex, webDesign, specialties, home, about, reel, work, caseStudies } from "./content.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "public");
@@ -70,7 +70,7 @@ const USA = `<span class="usa">${FLAG}${esc(site.usa)}</span>`;
 // ---------- sections ----------
 const groups = [
   { key: "services", label: "Marketing", base: "/services/", items: services, all: "All marketing services" },
-  { key: "web-design", label: "Web Design", base: "/web-design/", items: webDesign, all: "Web design overview" },
+  { key: "web-design", label: "Web Design", base: "/web-design/", items: webDesign, all: "Web design overview", extra: caseStudies.map((c) => ({ icon: "star", nav: `Case study: ${c.client}`, url: `/case-studies/${c.slug}/` })) },
   { key: "specialties", label: "Who We Serve", base: "/specialties/", items: specialties, all: "All film specialties" },
 ];
 const url = (g, p) => `${g.base}${p.slug}/`;
@@ -78,7 +78,7 @@ const url = (g, p) => `${g.base}${p.slug}/`;
 function header(active) {
   const drop = (g) => `<li class="has-drop${active === g.key ? " is-active" : ""}">
       <button class="nav-top" aria-expanded="false">${esc(g.label)}${icon("chev", 16)}</button>
-      <div class="drop"><ul>${g.items.map((p) => `<li><a href="${url(g, p)}">${icon(p.icon, 18)}<span>${esc(p.nav)}</span></a></li>`).join("")}</ul>
+      <div class="drop"><ul>${g.items.map((p) => `<li><a href="${url(g, p)}">${icon(p.icon, 18)}<span>${esc(p.nav)}</span></a></li>`).join("")}${(g.extra || []).map((x) => `<li><a href="${x.url}">${icon(x.icon, 18)}<span>${esc(x.nav)}</span></a></li>`).join("")}</ul>
       <a class="drop-all" href="${g.base}">${esc(g.all)} ${icon("arrow", 16)}</a></div></li>`;
   return `<a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap hdr">
@@ -102,7 +102,7 @@ function footer() {
     <div class="ftr-brand">${LOGO}<p>${esc(site.tagline)}</p>
       <p><a class="ftr-mail" href="mailto:${site.email}">${icon("mail", 18)}${site.email}</a></p></div>
     ${groups.map(col).join("")}
-    <div><h4>Company</h4><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/contact/?topic=call#form">Book a call</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li><li><a href="/contact/">Contact</a></li><li><a href="/contact/?topic=call#form">Book a call</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
   </div>
   <div class="ftr-bottom"><span>© ${site.year} ${esc(site.name)}</span>${USA}</div>
 </div></footer>`;
@@ -248,6 +248,26 @@ const addPage = (p, opts) => {
   write(p === "/" ? "index.html" : p.slice(1) + "index.html", layout({ path: p, ...opts }));
 };
 
+// ---------- case studies ----------
+const browserShot = (src, w, h, label, alt, caption = "") => `<figure class="bshot"><div class="mock-bar"><i></i><i></i><i></i><span>${esc(label)}</span></div><img src="${src}" width="${w}" height="${h}" alt="${esc(alt)}" loading="lazy">${caption ? `<figcaption>${esc(caption)}</figcaption>` : ""}</figure>`;
+const caseVisual = (cs) => `<div class="cs-visual">
+    ${browserShot(cs.shots.desktop, 1440, 900, cs.siteLabel, `${cs.client} website homepage on desktop`)}
+    <figure class="pshot"><img src="${cs.shots.mobile}" width="780" height="1688" alt="${esc(cs.client)} website on a phone" loading="lazy"></figure>
+  </div>`;
+const csStats = (cs, n = cs.stats.length) => `<div class="cs-stats${n < 5 ? " cs-stats-3" : ""}">${cs.stats.slice(n < 5 ? 1 : 0, n < 5 ? 1 + n : n).map(([v, l]) => `<div class="cs-stat"><b>${esc(v)}</b><small>${esc(l)}</small></div>`).join("")}</div>`;
+function caseSection(cs, cls = " sec-tint") {
+  return `<section class="sec${cls}" id="case-study"><div class="wrap split">
+  <div>
+    <p class="eyebrow">Case study · ${esc(cs.client)}</p>
+    <h2>${esc(cs.client)}: <span class="hl">${esc(cs.headline)}</span></h2>
+    <p class="lead-sm">${esc(cs.lead)}</p>
+    ${csStats(cs, 3)}
+    <div class="hero-ctas"><a class="btn btn-primary" href="/case-studies/${cs.slug}/">Read the case study ${icon("arrow", 18)}</a><a class="btn btn-ghost" href="${cs.site}" target="_blank" rel="noopener">Visit the live site</a></div>
+  </div>
+  ${caseVisual(cs)}
+</div></section>`;
+}
+
 // Home
 {
   const svcCards = services.map((p) => card(groups[0], p)).join("");
@@ -318,9 +338,9 @@ ${workSection()}
     <h2>Websites built to <span class="hl">sell window film</span></h2>
     <p class="lead-sm">A page for every film type, proof for every buyer and an estimate form that collects what you need to quote.</p>
     <ul class="ticks">${webDesign[0].points.items.map((x) => `<li>${icon("check", 18)}<span><b>${esc(x.t)}.</b> ${esc(x.d)}</span></li>`).join("")}</ul>
-    <div class="hero-ctas"><a class="btn btn-primary" href="/web-design/">See web design ${icon("arrow", 18)}</a></div>
+    <div class="hero-ctas"><a class="btn btn-primary" href="/web-design/">See web design ${icon("arrow", 18)}</a><a class="btn btn-ghost" href="/case-studies/${caseStudies[0].slug}/">Case study: ${esc(caseStudies[0].client)}</a></div>
   </div>
-  ${browserMock()}
+  ${caseVisual(caseStudies[0])}
 </div></section>
 
 <section class="sec" id="how"><div class="wrap">
@@ -348,17 +368,6 @@ ${ctaSection()}`;
   addPage("/", { title: home.metaTitle, desc: home.metaDesc, active: "home", body, ld: [faqLd(home.faq), videoLd, { "@type": "WebSite", "@id": site.url + "/#site", url: site.url + "/", name: site.name, publisher: { "@id": site.url + "/#org" } }] });
 }
 
-function browserMock() {
-  return `<div class="mock" aria-hidden="true">
-    <div class="mock-bar"><i></i><i></i><i></i><span>yourtintcompany.com/commercial-window-film/</span></div>
-    <div class="mock-body">
-      <div class="mock-nav"><b></b><span></span><span></span><span></span><em>Free Estimate</em></div>
-      <div class="mock-hero"><small>COMMERCIAL WINDOW FILM</small><strong>Cut heat and glare without losing the view</strong><div class="mock-btns"><em>Request a site survey</em><span>View projects</span></div></div>
-      <div class="mock-specs"><div><b>99%</b><small>UV rejected</small></div><div><b>60%+</b><small>Solar heat cut</small></div><div><b>8–14 mil</b><small>Security film</small></div></div>
-      <div class="mock-cards"><div><i class="sw1"></i><small>Solar film</small></div><div><i class="sw2"></i><small>Security film</small></div><div><i class="sw3"></i><small>Frosted privacy</small></div></div>
-    </div>
-  </div>`;
-}
 
 // Detail page (services, web design, specialties)
 function detailPage(g, p) {
@@ -372,6 +381,7 @@ function detailPage(g, p) {
   parts.push(`<section class="sec sec-tint"><div class="wrap"><div class="sec-head"><p class="eyebrow">${esc(p.nav)}</p><h2>${esc(p.points.h)}</h2></div>
   <div class="grid-3">${p.points.items.map((x, i) => `<div class="card pt-card"><span class="step-n">${String(i + 1).padStart(2, "0")}</span><h3>${esc(x.t)}</h3><p>${esc(x.d)}</p></div>`).join("")}</div></div></section>`);
   if (p.work) parts.push(workSection({ cls: "", ...p.work }));
+  if (p.caseStudy) parts.push(caseSection(caseStudies[0], ""));
   if (p.sitemap) parts.push(`<section class="sec"><div class="wrap"><div class="sec-head"><p class="eyebrow">Site structure</p><h2>${esc(p.sitemap.h)}</h2><p>Modeled on how buyers actually shop for film: by property type, then by film, then by proof.</p></div>
   <div class="sitemap"><div class="sm-root">${icon("home", 18)} Home</div><div class="sm-cols">${p.sitemap.groups.map((x) => `<div class="card sm-col"><h3>${esc(x.t)}</h3><ul>${x.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("")}</div></div></div></section>`);
   if (p.asks) parts.push(`<section class="sec sec-dark"><div class="wrap split split-top"><div><p class="eyebrow">${esc(p.asks.eyebrow || "Search demand")}</p><h2>${esc(p.asks.h)}</h2><p class="lead-sm">${esc(p.asks.sub || "We build pages, profiles and reviews that answer these exact questions, so Google and AI assistants send the buyer to you.")}</p></div>
@@ -398,13 +408,49 @@ ${ctaSection()}`;
 
 indexPage(groups[0], { eyebrow: "Marketing services", title: "Marketing Services for Window Film Companies", metaTitle: "Marketing Services for Window Film Companies", metaDesc: "Local SEO, AI search optimization, Google Business Profile, video editing, social media management and review generation for window tinting and window film companies.", lead: "Every service is built around how residential, commercial and security film buyers search, compare and book." });
 indexPage(groups[1], webDesignIndex, `<section class="sec sec-dark"><div class="wrap split"><div><p class="eyebrow">What you get</p><h2>Every site, <span class="hl">built to book estimates</span></h2>
-<ul class="ticks">${webDesign[0].points.items.map((x) => `<li>${icon("check", 18)}<span><b>${esc(x.t)}.</b> ${esc(x.d)}</span></li>`).join("")}</ul></div>${browserMock()}</div></section>
+<ul class="ticks">${webDesign[0].points.items.map((x) => `<li>${icon("check", 18)}<span><b>${esc(x.t)}.</b> ${esc(x.d)}</span></li>`).join("")}</ul></div>${caseVisual(caseStudies[0])}</div></section>
+${caseSection(caseStudies[0])}
 <section class="sec"><div class="wrap"><div class="sec-head"><p class="eyebrow">Site structure</p><h2>${esc(webDesign[0].sitemap.h)}</h2></div>
 <div class="sitemap"><div class="sm-root">${icon("home", 18)} Home</div><div class="sm-cols">${webDesign[0].sitemap.groups.map((x) => `<div class="card sm-col"><h3>${esc(x.t)}</h3><ul>${x.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("")}</div></div></div></section>
 ${faqSection(webDesign[0].faq, "Web design questions")}`);
 indexPage(groups[2], { eyebrow: "Who we serve", title: "Marketing for Every Kind of Window Film Company", metaTitle: "Who We Serve | Marketing for Window Film Companies", metaDesc: "Marketing for residential tint, commercial window film, security film, anti-graffiti, decorative, solar and skylight film, and auto tint and PPF shops.", lead: "Each film type has its own buyers, searches and proof. Pick yours to see how we market it." });
 
 for (const g of groups) for (const p of g.items) detailPage(g, p);
+
+// Case study pages
+for (const cs of caseStudies) {
+  const u = `/case-studies/${cs.slug}/`;
+  const trail = [["Home", "/"], ["Case Studies", "/case-studies/"], [cs.client, u]];
+  const body = `<section class="hero hero-sub"><div class="wrap">${crumbs(trail)}
+  <p class="eyebrow">${esc(cs.kind)}</p><h1>${esc(cs.client)}: <span class="hl">${esc(cs.headline)}</span></h1>
+  <p class="lead">${esc(cs.lead)}</p>
+  <div class="hero-ctas"><a class="btn btn-primary" href="${cs.site}" target="_blank" rel="noopener">Visit ${esc(cs.siteLabel)} ${icon("arrow", 18)}</a><a class="btn btn-ghost" href="/contact/#form">Get a site like this</a></div></div></section>
+<section class="sec cs-top"><div class="wrap">${caseVisual(cs)}${csStats(cs)}</div></section>
+<section class="sec sec-tint"><div class="wrap"><div class="sec-head"><p class="eyebrow">What we built</p><h2>Built the way <span class="hl">their buyers shop</span></h2>
+  <p>${esc(cs.client)} sells to homeowners, property managers, schools and businesses, for very different films. The site gives each of them a clear path to the right page and a fast way to ask for an estimate.</p></div>
+  <div class="grid-2">${cs.built.map((x, i) => `<div class="card pt-card"><span class="step-n">${String(i + 1).padStart(2, "0")}</span><h3>${esc(x.t)}</h3><p>${esc(x.d)}</p></div>`).join("")}</div></div></section>
+<section class="sec"><div class="wrap"><div class="sec-head"><p class="eyebrow">Inside the site</p><h2>A page for every film <span class="hl">and every city</span></h2>
+  <p>Each film and each city gets its own page with its own headline, proof and estimate button, so each one can be found on its own in search across ${esc(cs.where.replace(/^.*& /, ""))}.</p></div>
+  <div class="grid-2">${cs.shots.pages.map(([src, cap, label]) => browserShot(src, 1200, 750, label, `${cs.client}: ${cap}`, cap)).join("")}</div>
+  <h3 class="cs-sub">${cs.cities.length} service-area pages</h3>
+  <ul class="city-list">${cs.cities.map((c) => `<li>${icon("pin", 16)}${esc(c)}</li>`).join("")}</ul></div></section>
+<section class="sec sec-dark"><div class="wrap split"><div><p class="eyebrow">Proof</p><h2>Real projects, <span class="hl">written up</span></h2>
+  <p class="lead-sm">Every install is a chance to show the next buyer a building like theirs. The projects section turns jobs into pages with photos, the film used and where it went.</p>
+  <div class="hero-ctas"><a class="btn btn-primary" href="/web-design/project-galleries/">Project galleries ${icon("arrow", 18)}</a></div></div>
+  ${browserShot(cs.shots.projects, 1360, 650, cs.siteLabel + "/projects/", `${cs.client} project case studies`)}</div></section>
+${workSection({ cls: "", eyebrow: "Video too", h: 'We make their <span class="hl">video</span> too', lead: `Alongside the website, we edit short-form video for ${cs.client}. Here's one of their Shorts.`, cta: ["See video editing", "/services/video-editing/"] })}
+${ctaSection(["Want a site ", "like this one?"])}`;
+  addPage(u, { title: cs.metaTitle, desc: cs.metaDesc, active: "web-design", body, ld: [crumbLd(trail), { "@type": "CreativeWork", name: `${cs.client} website`, url: site.url + u, about: { "@type": "Organization", name: cs.client, url: cs.site }, creator: { "@id": site.url + "/#org" }, image: site.url + cs.shots.desktop }] });
+}
+{
+  const trail = [["Home", "/"], ["Case Studies", "/case-studies/"]];
+  const body = `<section class="hero hero-sub"><div class="wrap">${crumbs(trail)}
+  <p class="eyebrow">Case studies</p><h1>Websites we've built for <span class="hl">window film companies</span></h1>
+  <p class="lead">Real sites for real installers: built around the films they sell, the cities they serve and the estimate button.</p>${ctaButtons()}</div></section>
+<section class="sec"><div class="wrap"><div class="grid-2">${caseStudies.map((cs) => `<a class="card cs-card" href="/case-studies/${cs.slug}/"><img src="${cs.shots.desktop}" width="1440" height="900" alt="${esc(cs.client)} website" loading="lazy"><div><p class="work-kind">${esc(cs.kind)}</p><h3>${esc(cs.client)}</h3><p>${esc(cs.lead)}</p><span class="more">Read the case study ${icon("arrow", 16)}</span></div></a>`).join("")}</div></div></section>
+${ctaSection(["Your site could be ", "the next one"])}`;
+  addPage("/case-studies/", { title: "Case Studies | Window Film Marketing Agency", desc: "Websites we've built for window film companies, including MD Window Films in Los Angeles.", active: "web-design", body, ld: [crumbLd(trail)] });
+}
 
 // About
 {
@@ -467,6 +513,9 @@ ${services.map((p) => `- [${p.nav}](${site.url}${url(groups[0], p)}): ${p.card}`
 
 ## Web design
 ${webDesign.map((p) => `- [${p.nav}](${site.url}${url(groups[1], p)}): ${p.card}`).join("\n")}
+
+## Case studies
+${caseStudies.map((c) => `- [${c.client}](${site.url}/case-studies/${c.slug}/): ${c.metaDesc}`).join("\n")}
 
 ## Who we serve
 ${specialties.map((p) => `- [${p.nav}](${site.url}${url(groups[2], p)}): ${p.card}`).join("\n")}
