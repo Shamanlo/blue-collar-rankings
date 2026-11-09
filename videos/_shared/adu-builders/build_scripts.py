@@ -145,7 +145,7 @@ CITIES = [
             ("Can my HOA stop it?", "No, but it can apply reasonable design rules", "page"),
             ("Can I rent it out?", "Yes, for terms longer than 30 days", "roof"),
         ],
-        "steps": [36, 41, 3, 33], "pick_img": 9, "cta_img": 32, "thumb": (32, ["ADU", "Cost"]),
+        "steps": [36, 41, 3, 33], "pick_img": 9, "cta_img": 32, "thumb": (36, ["ADU", "Cost"]),
     },
     {
         "key": "calabasas", "city": "Calabasas", "mult": 0.97,
@@ -179,7 +179,7 @@ CITIES = [
             ("Need a parking space?", "Often not; garage spaces needn't be replaced", "map"),
             ("Can I rent it out?", "Yes, to long-term tenants over 30 days", "roof"),
         ],
-        "steps": [7, 29, 21, 40], "pick_img": 30, "cta_img": 24, "thumb": (9, ["ADU", "Pricing"]),
+        "steps": [7, 29, 21, 40], "pick_img": 30, "cta_img": 24, "thumb": (7, ["ADU", "Pricing"]),
     },
     {
         "key": "westlakevillage", "city": "Westlake Village", "mult": 0.87,
@@ -281,7 +281,7 @@ CITIES = [
             ("Short-term rental?", "No. Rentals must be over 30 days", "roof"),
             ("ADU with a fire rebuild?", "Often yes, sharing septic & foundation work", "flame"),
         ],
-        "steps": [36, 33, 3, 38], "pick_img": 9, "cta_img": 30, "thumb": (20, ["ADU", "Prices"]),
+        "steps": [36, 33, 3, 38], "pick_img": 9, "cta_img": 30, "thumb": (9, ["ADU", "Prices"]),
     },
     {
         "key": "santamonica", "city": "Santa Monica", "mult": 1.00,
@@ -315,7 +315,7 @@ CITIES = [
             ("Need parking?", "No on-site parking required", "map"),
             ("Sell it separately?", "Yes, through the city's condo ordinance", "page"),
         ],
-        "steps": [29, 39, 16, 44], "pick_img": 7, "cta_img": 20, "thumb": (9, ["ADU", "Cost"]),
+        "steps": [29, 39, 16, 44], "pick_img": 7, "cta_img": 20, "thumb": (47, ["ADU", "Cost"]),
     },
     {
         "key": "pacificpalisades", "city": "Pacific Palisades", "mult": 1.10,
@@ -417,7 +417,7 @@ CITIES = [
             ("Does my HOA approve?", "It can review design, but can't block it", "page"),
             ("Can I rent it out?", "Yes, long-term only, over 30 days", "roof"),
         ],
-        "steps": [30, 19, 28, 40], "pick_img": 42, "cta_img": 20, "thumb": (9, ["ADU", "Cost"]),
+        "steps": [30, 19, 28, 40], "pick_img": 42, "cta_img": 20, "thumb": (29, ["ADU", "Cost"]),
     },
 ]
 
