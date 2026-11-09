@@ -1,0 +1,479 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "assetsDir": "../_shared/adu-builders",
+ "header": "Agoura Hills, CA · ADU Prices · 2026",
+ "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Agoura Hills conditions. Ballpark only; get an on-site estimate.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "p09-backyard-cottage-adu.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "ADU",
+   "Cost"
+  ],
+  "sub": "Agoura Hills, CA",
+  "tag": "From $70K",
+  "year": "2026",
+  "bigPx": 150,
+  "reelBigPx": 210,
+  "subPx": 52,
+  "reelSubPx": 68,
+  "stamp": [
+   "4",
+   [
+    "ADU",
+    "TYPES"
+   ]
+  ],
+  "reelStamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "Agoura Hills, California",
+   "titlePx": 124,
+   "title": [
+    "ADU Pricing",
+    "Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "Old Agoura",
+    "Lake Lindero",
+    "Morrison Ranch",
+    "Indian Hills",
+    "Liberty Canyon"
+   ],
+   "say": "How much does it cost to build an ADU in Agoura Hills in 2026? Here's the pricing guide: what each type of ADU costs, real examples from Lake Lindero, Old Agoura and Liberty Canyon, what drives the price, and the local rules to know."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What an ADU costs in Agoura Hills",
+   "sub": "2026 ranges · design, permits & construction",
+   "max": 500,
+   "ticks": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft, inside the house",
+     "lo": 70,
+     "hi": 135,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 110,
+     "hi": 225,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 180,
+     "hi": 340,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 225,
+     "hi": 450,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "In Agoura Hills, a junior ADU runs about seventy thousand dollars to one hundred thirty-five thousand dollars and up. A garage conversion, about one hundred ten thousand dollars to two hundred twenty-five thousand dollars. An attached ADU, about one hundred eighty thousand dollars to three hundred forty thousand dollars. And a brand-new detached ADU runs about two hundred twenty-five thousand dollars to four hundred fifty thousand dollars and up.",
+   "say": "In Agoura Hills, a junior ADU runs about $70,000 to $135,000 and up. A garage conversion, about $110,000 to $225,000. An attached ADU, about $180,000 to $340,000. And a brand-new detached ADU runs about $225,000 to $450,000 and up."
+  },
+  {
+   "id": "f1",
+   "kind": "price",
+   "label": "Lake Lindero",
+   "image": "p38-studio-adu-wall-bed.jpg",
+   "kicker": "Lake Lindero · Junior ADU",
+   "name": "Junior ADU inside a tract home",
+   "lo": 70,
+   "hi": 135,
+   "plus": true,
+   "priceCue": "Lake",
+   "desc": "Homes in the original tract with a spare wing.",
+   "bullets": [
+    {
+     "t": "Uses a bedroom wing or attached garage",
+     "cue": "uses"
+    },
+    {
+     "t": "Under 500 sq ft, no added floor area",
+     "cue": "under"
+    },
+    {
+     "t": "Leaves the yard untouched",
+     "cue": "leaves"
+    }
+   ],
+   "speak": "In Lake Lindero, a common fit is a junior ADU inside a tract home, at about seventy thousand dollars to one hundred thirty-five thousand dollars and up. Homes in the original tract with a spare wing. Uses a bedroom wing or attached garage. Under 500 sq ft, no added floor area. Leaves the yard untouched.",
+   "say": "In Lake Lindero, a common fit is a junior ADU inside a tract home, at about $70,000 to $135,000 and up. Homes in the original tract with a spare wing. Uses a bedroom wing or attached garage. Under 500 sq ft, no added floor area. Leaves the yard untouched."
+  },
+  {
+   "id": "f2",
+   "kind": "price",
+   "label": "Old Agoura",
+   "image": "p20-detached-adu-backyard.jpg",
+   "kicker": "Old Agoura · Detached ADU",
+   "name": "Detached cottage on an estate lot",
+   "lo": 225,
+   "hi": 450,
+   "plus": true,
+   "priceCue": "Old",
+   "desc": "Room for a cottage set well back from the main house.",
+   "bullets": [
+    {
+     "t": "Half-acre and larger parcels",
+     "cue": "half-acre"
+    },
+    {
+     "t": "Septic capacity needs Public Health sign-off",
+     "cue": "septic"
+    },
+    {
+     "t": "Keeps the equestrian area",
+     "cue": "keeps"
+    }
+   ],
+   "speak": "In Old Agoura, a common fit is a detached cottage on an estate lot, at about two hundred twenty-five thousand dollars to four hundred fifty thousand dollars and up. Room for a cottage set well back from the main house. Half-acre and larger parcels. Septic capacity needs Public Health sign-off. Keeps the equestrian area.",
+   "say": "In Old Agoura, a common fit is a detached cottage on an estate lot, at about $225,000 to $450,000 and up. Room for a cottage set well back from the main house. Half-acre and larger parcels. Septic capacity needs Public Health sign-off. Keeps the equestrian area."
+  },
+  {
+   "id": "f3",
+   "kind": "price",
+   "label": "Liberty Canyon",
+   "image": "p24-garage-conversion-adu-exterior.jpg",
+   "kicker": "Liberty Canyon · Garage conversion",
+   "name": "Garage conversion on a level lot",
+   "lo": 110,
+   "hi": 225,
+   "plus": true,
+   "priceCue": "Liberty",
+   "desc": "Modest, mostly level lots in the original tracts.",
+   "bullets": [
+    {
+     "t": "Reuses the slab, walls & roof",
+     "cue": "reuses"
+    },
+    {
+     "t": "Lowest-cost path to a full unit",
+     "cue": "lowest-cost"
+    },
+    {
+     "t": "No replacement parking",
+     "cue": "no"
+    }
+   ],
+   "speak": "In Liberty Canyon, a common fit is a garage conversion on a level lot, at about one hundred ten thousand dollars to two hundred twenty-five thousand dollars and up. Modest, mostly level lots in the original tracts. Reuses the slab, walls and roof. Lowest-cost path to a full unit. No replacement parking.",
+   "say": "In Liberty Canyon, a common fit is a garage conversion on a level lot, at about $110,000 to $225,000 and up. Modest, mostly level lots in the original tracts. Reuses the slab, walls and roof. Lowest-cost path to a full unit. No replacement parking."
+  },
+  {
+   "id": "rules",
+   "kind": "stats",
+   "label": "Rules to Know",
+   "title": "Agoura Hills ADU rules to know",
+   "tiles": [
+    {
+     "v": "4 ft",
+     "n": "Side & rear setbacks",
+     "s": "The most a city can require",
+     "cue": "4-foot"
+    },
+    {
+     "v": "60",
+     "n": "Days to decide",
+     "s": "On a complete application",
+     "cue": "60"
+    },
+    {
+     "v": "500",
+     "n": "Sq ft JADU cap",
+     "s": "Junior ADUs stay inside the house",
+     "cue": "500"
+    },
+    {
+     "v": "Oaks",
+     "n": "On every site plan",
+     "s": "Root zones drawn in; permit to dig inside",
+     "cue": "oak"
+    }
+   ],
+   "tvPx": 64,
+   "speak": "A few rules to know. A city can require no more than four-foot side and rear setbacks. A city has sixty days to act on a complete application. A junior ADU tops out at five hundred square feet. And in Agoura Hills, every ADU site plan has to show the oak trees and their root zones.",
+   "say": "A few rules to know. A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. And in Agoura Hills, every ADU site plan has to show the oak trees and their root zones."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "cols": 3,
+   "title": "What drives ADU cost in Agoura Hills",
+   "cards": [
+    {
+     "name": "Oak tree zones",
+     "desc": "The site plan must show oaks & root zones",
+     "image": "p09-backyard-cottage-adu.jpg",
+     "cue": "oak"
+    },
+    {
+     "name": "Fire zone",
+     "desc": "Most of the city, including all south of the 101",
+     "image": "p04-adu-roof-sheathing.jpg",
+     "cue": "fire"
+    },
+    {
+     "name": "Septic",
+     "desc": "Old Agoura parcels need Public Health sign-off",
+     "image": "p01-adu-framing-plumbing-rough-in.jpg",
+     "cue": "septic"
+    },
+    {
+     "name": "Slopes",
+     "desc": "Grading & retaining walls in Indian Hills",
+     "image": "p26-garage-to-adu-conversion-site.jpg",
+     "cue": "slopes"
+    },
+    {
+     "name": "HOA review",
+     "desc": "Morrison Ranch & Chateau Park CC&Rs",
+     "image": "p32-new-adu-stucco-exterior.jpg",
+     "cue": "hoa"
+    },
+    {
+     "name": "Long utility runs",
+     "desc": "Big lots mean longer trenches",
+     "image": "p00-adu-framing-electrical-rough-in.jpg",
+     "cue": "long"
+    }
+   ],
+   "say": "What drives the price in Agoura Hills? Oak tree zones: the site plan must show oaks & root zones. Fire zone: most of the city, including all south of the 101. Septic: old Agoura parcels need Public Health sign-off. Slopes: grading & retaining walls in Indian Hills. HOA review: morrison Ranch & Chateau Park CC&Rs. Long utility runs: big lots mean longer trenches."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Oak trees on my lot?",
+     "desc": "Place the ADU outside protection zones",
+     "icon": "shield",
+     "cue": "oak"
+    },
+    {
+     "name": "In a fire zone?",
+     "desc": "Quite possibly: most of the city is Very High",
+     "icon": "flame",
+     "cue": "in"
+    },
+    {
+     "name": "Does my HOA approve?",
+     "desc": "It can review design, but can't block it",
+     "icon": "page",
+     "cue": "does"
+    },
+    {
+     "name": "Can I rent it out?",
+     "desc": "Yes, long-term only, over 30 days",
+     "icon": "roof",
+     "cue": "can"
+    }
+   ],
+   "say": "Common questions: Oak trees on my lot? Place the ADU outside protection zones. In a fire zone? Quite possibly: most of the city is Very High. Does my HOA approve? It can review design, but can't block it. Can I rent it out? Yes, long-term only, over 30 days."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p42-two-story-open-living.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Agoura Hills ADU Builder Pros",
+   "nameCue": "Agoura",
+   "where": "Old Agoura · Lake Lindero · Morrison Ranch · Indian Hills",
+   "points": [
+    "Site review & ADU design",
+    "Permits & plan check, city or county",
+    "Foundations, utilities & construction",
+    "Garage conversions to new backyard homes",
+    "Reply within 24 hours"
+   ],
+   "say": "If you need an ADU builder or contractor in Agoura Hills, give Agoura Hills ADU Builder Pros a shout. They handle the whole path, from site review and design to permits, construction and final inspection."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "ADU Interiors",
+   "plain": true,
+   "title": "Inside a finished ADU",
+   "sub": "Kitchens, baths & living space",
+   "steps": [
+    {
+     "image": "p30-living-room-fireplace.jpg"
+    },
+    {
+     "image": "p19-corner-shower-pebble-floor.jpg"
+    },
+    {
+     "image": "p28-kitchen-cabinetry-install.jpg"
+    },
+    {
+     "image": "p40-tub-shower-black-fixtures.jpg"
+    }
+   ],
+   "say": "A finished ADU is a full home, with its own kitchen, bathroom and living space."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p20-detached-adu-backyard.jpg",
+   "name": "Agoura Hills ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuildersagourahills.pro",
+   "urlCue": "visit",
+   "tip": "Serving Old Agoura, Lake Lindero, Morrison Ranch & more",
+   "speak": "For a free ADU consultation in Agoura Hills, visit adu builders agoura hills dot pro. This has been Local Vibe Check.",
+   "say": "For a free ADU consultation in Agoura Hills, visit adubuildersagourahills.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "Agoura Hills, CA · 2026",
+   "title": [
+    "ADU",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Old Agoura",
+    "Lake Lindero",
+    "Morrison Ranch",
+    "Indian Hills"
+   ],
+   "say": "What does an ADU cost in Agoura Hills?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Prices",
+   "title": "ADU prices, Agoura Hills",
+   "max": 500,
+   "ticks": [
+    0,
+    250,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft",
+     "lo": 70,
+     "hi": 135,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 110,
+     "hi": 225,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 180,
+     "hi": 340,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 225,
+     "hi": 450,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "A junior ADU in Agoura Hills starts around seventy thousand dollars. A garage conversion, about one hundred ten thousand dollars. An attached ADU, about one hundred eighty thousand dollars. And a new detached ADU runs about two hundred twenty-five thousand dollars to four hundred fifty thousand dollars and up.",
+   "say": "A junior ADU in Agoura Hills starts around $70,000. A garage conversion, about $110,000. An attached ADU, about $180,000. And a new detached ADU runs about $225,000 to $450,000 and up."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p42-two-story-open-living.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Agoura Hills ADU Builder Pros",
+   "nameCue": "Agoura",
+   "where": "Old Agoura, Lake Lindero, Morrison Ranch",
+   "points": [
+    "Design & permits",
+    "Construction",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder or contractor? Give Agoura Hills ADU Builder Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p20-detached-adu-backyard.jpg",
+   "name": "Agoura Hills ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuildersagourahills.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Visit adu builders agoura hills dot pro for a free consultation.",
+   "say": "Visit adubuildersagourahills.pro for a free consultation."
+  }
+ ]
+}

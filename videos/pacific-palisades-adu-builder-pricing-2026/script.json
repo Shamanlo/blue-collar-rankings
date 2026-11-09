@@ -1,0 +1,477 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "assetsDir": "../_shared/adu-builders",
+ "header": "Pacific Palisades, CA · ADU Prices · 2026",
+ "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Pacific Palisades conditions. Ballpark only; get an on-site estimate.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "p32-new-adu-stucco-exterior.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "ADU",
+   "Pricing"
+  ],
+  "sub": "Pacific Palisades, CA",
+  "tag": "From $80K",
+  "year": "2026",
+  "bigPx": 150,
+  "reelBigPx": 210,
+  "subPx": 52,
+  "reelSubPx": 68,
+  "stamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ],
+  "reelStamp": [
+   "4",
+   [
+    "PRICE",
+    "RANGES"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "kicker": "Pacific Palisades, California",
+   "titlePx": 124,
+   "title": [
+    "ADU Pricing",
+    "Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "Alphabet Streets",
+    "Palisades Highlands",
+    "Huntington Palisades",
+    "Rustic Canyon",
+    "The Riviera"
+   ],
+   "say": "Thinking about adding an ADU in Pacific Palisades? Here's what it costs in 2026, from a junior ADU to a brand-new backyard home, plus the local cost drivers and rules that shape your project."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What an ADU costs in Pacific Palisades",
+   "sub": "2026 ranges · design, permits & construction",
+   "max": 600,
+   "ticks": [
+    0,
+    200,
+    400,
+    600
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft, inside the house",
+     "lo": 80,
+     "hi": 165,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 140,
+     "hi": 275,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 220,
+     "hi": 415,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 275,
+     "hi": 550,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "In Pacific Palisades, a junior ADU runs about eighty thousand dollars to one hundred sixty-five thousand dollars and up. A garage conversion, about one hundred forty thousand dollars to two hundred seventy-five thousand dollars. An attached ADU, about two hundred twenty thousand dollars to four hundred fifteen thousand dollars. And a brand-new detached ADU runs about two hundred seventy-five thousand dollars to five hundred fifty thousand dollars and up.",
+   "say": "In Pacific Palisades, a junior ADU runs about $80,000 to $165,000 and up. A garage conversion, about $140,000 to $275,000. An attached ADU, about $220,000 to $415,000. And a brand-new detached ADU runs about $275,000 to $550,000 and up."
+  },
+  {
+   "id": "f1",
+   "kind": "price",
+   "label": "Alphabet Streets",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "Alphabet Streets · Detached ADU",
+   "name": "Detached ADU on a compact flat lot",
+   "lo": 275,
+   "hi": 550,
+   "plus": true,
+   "priceCue": "Alphabet",
+   "desc": "Some of the smallest, flattest parcels near the Village.",
+   "bullets": [
+    {
+     "t": "Uses the 4-foot side & rear setbacks",
+     "cue": "uses"
+    },
+    {
+     "t": "Usable yard between buildings",
+     "cue": "usable"
+    },
+    {
+     "t": "LADBS permit & LADWP service",
+     "cue": "ladbs"
+    }
+   ],
+   "speak": "In Alphabet Streets, a common fit is a detached ADU on a compact flat lot, at about two hundred seventy-five thousand dollars to five hundred fifty thousand dollars and up. Some of the smallest, flattest parcels near the Village. Uses the 4-foot side and rear setbacks. Usable yard between buildings. LADBS permit and LADWP service.",
+   "say": "In Alphabet Streets, a common fit is a detached ADU on a compact flat lot, at about $275,000 to $550,000 and up. Some of the smallest, flattest parcels near the Village. Uses the 4-foot side and rear setbacks. Usable yard between buildings. LADBS permit and LADWP service."
+  },
+  {
+   "id": "f2",
+   "kind": "price",
+   "label": "Huntington Palisades",
+   "image": "p42-two-story-open-living.jpg",
+   "kicker": "Huntington Palisades · Attached ADU",
+   "name": "Attached ADU set back from a bluff",
+   "lo": 220,
+   "hi": 415,
+   "plus": true,
+   "priceCue": "Huntington",
+   "desc": "Bluff-top parcels where distance from the edge sets the buildable area.",
+   "bullets": [
+    {
+     "t": "25 ft from a coastal bluff, 10 ft from a canyon",
+     "cue": "25"
+    },
+    {
+     "t": "Skips Coastal & CEQA review on fire lots",
+     "cue": "skips"
+    },
+    {
+     "t": "Built with or before the new house",
+     "cue": "built"
+    }
+   ],
+   "speak": "In Huntington Palisades, a common fit is an attached ADU set back from a bluff, at about two hundred twenty thousand dollars to four hundred fifteen thousand dollars and up. Bluff-top parcels where distance from the edge sets the buildable area. 25 ft from a coastal bluff, 10 ft from a canyon. Skips Coastal and CEQA review on fire lots. Built with or before the new house.",
+   "say": "In Huntington Palisades, a common fit is an attached ADU set back from a bluff, at about $220,000 to $415,000 and up. Bluff-top parcels where distance from the edge sets the buildable area. 25 ft from a coastal bluff, 10 ft from a canyon. Skips Coastal and CEQA review on fire lots. Built with or before the new house."
+  },
+  {
+   "id": "f3",
+   "kind": "price",
+   "label": "Rustic Canyon",
+   "image": "p24-garage-conversion-adu-exterior.jpg",
+   "kicker": "Rustic Canyon · Garage conversion",
+   "name": "Garage conversion on a narrow canyon street",
+   "lo": 140,
+   "hi": 275,
+   "plus": true,
+   "priceCue": "Rustic",
+   "desc": "Canyon streets with little room to stage a new build.",
+   "bullets": [
+    {
+     "t": "Work stays inside an existing structure",
+     "cue": "work"
+    },
+    {
+     "t": "Fewer deliveries & haul trips",
+     "cue": "fewer"
+    },
+    {
+     "t": "Covered parking needn't be replaced",
+     "cue": "covered"
+    }
+   ],
+   "speak": "In Rustic Canyon, a common fit is a garage conversion on a narrow canyon street, at about one hundred forty thousand dollars to two hundred seventy-five thousand dollars and up. Canyon streets with little room to stage a new build. Work stays inside an existing structure. Fewer deliveries and haul trips. Covered parking needn't be replaced.",
+   "say": "In Rustic Canyon, a common fit is a garage conversion on a narrow canyon street, at about $140,000 to $275,000 and up. Canyon streets with little room to stage a new build. Work stays inside an existing structure. Fewer deliveries and haul trips. Covered parking needn't be replaced."
+  },
+  {
+   "id": "rules",
+   "kind": "stats",
+   "label": "Rules to Know",
+   "title": "Pacific Palisades ADU rules to know",
+   "tiles": [
+    {
+     "v": "60",
+     "n": "Days to decide",
+     "s": "On a complete application",
+     "cue": "60"
+    },
+    {
+     "v": "500",
+     "n": "Sq ft JADU cap",
+     "s": "Junior ADUs stay inside the house",
+     "cue": "500"
+    },
+    {
+     "v": "≤750",
+     "n": "Sq ft, no impact fees",
+     "s": "Smaller units skip impact fees",
+     "cue": "750"
+    },
+    {
+     "v": "EO 1",
+     "n": "Fire-lot fast track",
+     "s": "No Coastal or CEQA review for many rebuild ADUs",
+     "cue": "executive"
+    }
+   ],
+   "tvPx": 64,
+   "speak": "A few rules to know. A city has sixty days to act on a complete application. A junior ADU tops out at five hundred square feet. ADUs of seven hundred fifty square feet or less skip impact fees. And on fire-damaged lots, the Mayor's executive order lets many rebuild ADUs skip Coastal and CEQA review.",
+   "say": "A few rules to know. A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. ADUs of 750 square feet or less skip impact fees. And on fire-damaged lots, the Mayor's executive order lets many rebuild ADUs skip Coastal and CEQA review."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "cols": 3,
+   "title": "What drives ADU cost in Pacific Palisades",
+   "cards": [
+    {
+     "name": "Fire rebuild timing",
+     "desc": "Build the ADU with or before the new home",
+     "image": "p04-adu-roof-sheathing.jpg",
+     "cue": "fire"
+    },
+    {
+     "name": "Bluffs & hillsides",
+     "desc": "Deeper foundations & setbacks from the edge",
+     "image": "p26-garage-to-adu-conversion-site.jpg",
+     "cue": "bluffs"
+    },
+    {
+     "name": "Narrow streets",
+     "desc": "Staging, deliveries & haul trips",
+     "image": "p25-garage-conversion-wall-infill.jpg",
+     "cue": "narrow"
+    },
+    {
+     "name": "Fire-zone materials",
+     "desc": "Ignition-resistant construction",
+     "image": "p08-adu-wood-framing.jpg",
+     "cue": "fire-zone"
+    },
+    {
+     "name": "LADWP service",
+     "desc": "A separate meter means a bigger panel",
+     "image": "p00-adu-framing-electrical-rough-in.jpg",
+     "cue": "ladwp"
+    },
+    {
+     "name": "HOA guidelines",
+     "desc": "Many Palisades HOAs regulate design",
+     "image": "p32-new-adu-stucco-exterior.jpg",
+     "cue": "hoa"
+    }
+   ],
+   "say": "What drives the price in Pacific Palisades? Fire rebuild timing: build the ADU with or before the new home. Bluffs & hillsides: deeper foundations & setbacks from the edge. Narrow streets: staging, deliveries & haul trips. Fire-zone materials: ignition-resistant construction. LADWP service: a separate meter means a bigger panel. HOA guidelines: many Palisades HOAs regulate design."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "ADU before the house?",
+     "desc": "Yes, and it doesn't count against floor area",
+     "icon": "roof",
+     "cue": "adu"
+    },
+    {
+     "name": "Can I rent it out?",
+     "desc": "Yes, on leases longer than 30 days",
+     "icon": "page",
+     "cue": "can"
+    },
+    {
+     "name": "Do HOAs get a say?",
+     "desc": "Many regulate design, so plan for review",
+     "icon": "shield",
+     "cue": "do"
+    },
+    {
+     "name": "Its own LADWP meter?",
+     "desc": "Often yes, with a larger service",
+     "icon": "bolt",
+     "cue": "its"
+    }
+   ],
+   "say": "Common questions: ADU before the house? Yes, and it doesn't count against floor area. Can I rent it out? Yes, on leases longer than 30 days. Do HOAs get a say? Many regulate design, so plan for review. Its own LADWP meter? Often yes, with a larger service."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p20-detached-adu-backyard.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Pacific Palisades ADU Builder Pros",
+   "nameCue": "Pacific",
+   "where": "Alphabet Streets · Palisades Highlands · Huntington Palisades · Rustic Canyon",
+   "points": [
+    "Site review & ADU design",
+    "Permits & plan check, city or county",
+    "Foundations, utilities & construction",
+    "Garage conversions to new backyard homes",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder in Pacific Palisades? Give Pacific Palisades ADU Builder Pros a shout. They design, permit and build ADUs across Alphabet Streets, Palisades Highlands, Huntington Palisades, from garage conversions to brand-new backyard homes."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "ADU Interiors",
+   "plain": true,
+   "title": "Inside a finished ADU",
+   "sub": "Kitchens, baths & living space",
+   "steps": [
+    {
+     "image": "p41-twin-vessel-sinks.jpg"
+    },
+    {
+     "image": "p47-white-shaker-kitchen.jpg"
+    },
+    {
+     "image": "p34-shower-sliding-door-bench.jpg"
+    },
+    {
+     "image": "p37-two-story-stair-hallway.jpg"
+    }
+   ],
+   "say": "A finished ADU is a full home, with its own kitchen, bathroom and living space."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p03-adu-open-plan-flooring.jpg",
+   "name": "Pacific Palisades ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuilderspacificpalisades.pro",
+   "urlCue": "visit",
+   "tip": "Serving Alphabet Streets, Palisades Highlands, Huntington Palisades & more",
+   "speak": "For a free ADU consultation in Pacific Palisades, visit adu builders pacific palisades dot pro. This has been Local Vibe Check.",
+   "say": "For a free ADU consultation in Pacific Palisades, visit adubuilderspacificpalisades.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "kicker": "Pacific Palisades, CA · 2026",
+   "title": [
+    "ADU",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Alphabet Streets",
+    "Palisades Highlands",
+    "Huntington Palisades",
+    "Rustic Canyon"
+   ],
+   "say": "What does an ADU cost in Pacific Palisades?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Prices",
+   "title": "ADU prices, Pacific Palisades",
+   "max": 600,
+   "ticks": [
+    0,
+    300,
+    600
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft",
+     "lo": 80,
+     "hi": 165,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 140,
+     "hi": 275,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 220,
+     "hi": 415,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 275,
+     "hi": 550,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "A junior ADU in Pacific Palisades starts around eighty thousand dollars. A garage conversion, about one hundred forty thousand dollars. An attached ADU, about two hundred twenty thousand dollars. And a new detached ADU runs about two hundred seventy-five thousand dollars to five hundred fifty thousand dollars and up.",
+   "say": "A junior ADU in Pacific Palisades starts around $80,000. A garage conversion, about $140,000. An attached ADU, about $220,000. And a new detached ADU runs about $275,000 to $550,000 and up."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p20-detached-adu-backyard.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Pacific Palisades ADU Builder Pros",
+   "nameCue": "Pacific",
+   "where": "Alphabet Streets, Palisades Highlands, Huntington Palisades",
+   "points": [
+    "Design & permits",
+    "Construction",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder or contractor? Give Pacific Palisades ADU Builder Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p03-adu-open-plan-flooring.jpg",
+   "name": "Pacific Palisades ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuilderspacificpalisades.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Visit adu builders pacific palisades dot pro for a free consultation.",
+   "say": "Visit adubuilderspacificpalisades.pro for a free consultation."
+  }
+ ]
+}

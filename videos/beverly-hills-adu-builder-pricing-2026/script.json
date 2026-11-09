@@ -1,0 +1,476 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "assetsDir": "../_shared/adu-builders",
+ "header": "Beverly Hills, CA · ADU Prices · 2026",
+ "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Beverly Hills conditions. Ballpark only; get an on-site estimate.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "p30-living-room-fireplace.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "ADU",
+   "Cost"
+  ],
+  "sub": "Beverly Hills, CA",
+  "tag": "From $85K",
+  "year": "2026",
+  "bigPx": 150,
+  "reelBigPx": 210,
+  "subPx": 52,
+  "reelSubPx": 68,
+  "stamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ],
+  "reelStamp": [
+   "4",
+   [
+    "PRICE",
+    "RANGES"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "Beverly Hills, California",
+   "titlePx": 124,
+   "title": [
+    "ADU Pricing",
+    "Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "The Flats",
+    "Trousdale Estates",
+    "Southwest BH",
+    "Beverly Crest"
+   ],
+   "say": "Thinking about adding an ADU in Beverly Hills? Here's what it costs in 2026, from a junior ADU to a brand-new backyard home, plus the local cost drivers and rules that shape your project."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What an ADU costs in Beverly Hills",
+   "sub": "2026 ranges · design, permits & construction",
+   "max": 600,
+   "ticks": [
+    0,
+    200,
+    400,
+    600
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft, inside the house",
+     "lo": 85,
+     "hi": 170,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 145,
+     "hi": 290,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 230,
+     "hi": 430,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 290,
+     "hi": 575,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "In Beverly Hills, a junior ADU runs about eighty-five thousand dollars to one hundred seventy thousand dollars and up. A garage conversion, about one hundred forty-five thousand dollars to two hundred ninety thousand dollars. An attached ADU, about two hundred thirty thousand dollars to four hundred thirty thousand dollars. And a brand-new detached ADU runs about two hundred ninety thousand dollars to five hundred seventy-five thousand dollars and up.",
+   "say": "In Beverly Hills, a junior ADU runs about $85,000 to $170,000 and up. A garage conversion, about $145,000 to $290,000. An attached ADU, about $230,000 to $430,000. And a brand-new detached ADU runs about $290,000 to $575,000 and up."
+  },
+  {
+   "id": "f1",
+   "kind": "price",
+   "label": "The Flats",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "The Flats · Detached ADU",
+   "name": "Detached guest house on a deep lot",
+   "lo": 290,
+   "hi": 575,
+   "plus": true,
+   "priceCue": "The",
+   "desc": "Lots between Sunset and Santa Monica Boulevard.",
+   "bullets": [
+    {
+     "t": "Up to 1,400 sq ft & 25 ft tall",
+     "cue": "up"
+    },
+    {
+     "t": "Often replaces an old rear garage",
+     "cue": "often"
+    },
+    {
+     "t": "Long, level lots",
+     "cue": "long"
+    }
+   ],
+   "speak": "In The Flats, a common fit is a detached guest house on a deep lot, at about two hundred ninety thousand dollars to five hundred seventy-five thousand dollars and up. Lots between Sunset and Santa Monica Boulevard. Up to 1,400 sq ft and 25 ft tall. Often replaces an old rear garage. Long, level lots.",
+   "say": "In The Flats, a common fit is a detached guest house on a deep lot, at about $290,000 to $575,000 and up. Lots between Sunset and Santa Monica Boulevard. Up to 1,400 sq ft and 25 ft tall. Often replaces an old rear garage. Long, level lots."
+  },
+  {
+   "id": "f2",
+   "kind": "price",
+   "label": "Beverly Crest",
+   "image": "p24-garage-conversion-adu-exterior.jpg",
+   "kicker": "Beverly Crest · Garage conversion",
+   "name": "Garage conversion on a hillside lot",
+   "lo": 145,
+   "hi": 290,
+   "plus": true,
+   "priceCue": "Beverly",
+   "desc": "Steep lots on the LA side of the 90210.",
+   "bullets": [
+    {
+     "t": "City of LA: LADBS reviews it",
+     "cue": "city"
+    },
+    {
+     "t": "No new grading on the slope",
+     "cue": "no"
+    },
+    {
+     "t": "Avoids fire-zone access issues",
+     "cue": "avoids"
+    }
+   ],
+   "speak": "In Beverly Crest, a common fit is a garage conversion on a hillside lot, at about one hundred forty-five thousand dollars to two hundred ninety thousand dollars and up. Steep lots on the LA side of the 90210. City of LA: LADBS reviews it. No new grading on the slope. Avoids fire-zone access issues.",
+   "say": "In Beverly Crest, a common fit is a garage conversion on a hillside lot, at about $145,000 to $290,000 and up. Steep lots on the LA side of the 90210. City of LA: LADBS reviews it. No new grading on the slope. Avoids fire-zone access issues."
+  },
+  {
+   "id": "f3",
+   "kind": "price",
+   "label": "Southwest Beverly Hills",
+   "image": "p42-two-story-open-living.jpg",
+   "kicker": "Southwest Beverly Hills · Attached ADU",
+   "name": "Attached ADU on a rectangular lot",
+   "lo": 230,
+   "hi": 430,
+   "plus": true,
+   "priceCue": "Southwest",
+   "desc": "More rectangular lots south of Wilshire.",
+   "bullets": [
+    {
+     "t": "Shares a wall, keeps its own entrance",
+     "cue": "shares"
+    },
+    {
+     "t": "Fits narrower side yards",
+     "cue": "fits"
+    },
+    {
+     "t": "Objective standards skip extra review",
+     "cue": "objective"
+    }
+   ],
+   "speak": "In Southwest Beverly Hills, a common fit is an attached ADU on a rectangular lot, at about two hundred thirty thousand dollars to four hundred thirty thousand dollars and up. More rectangular lots south of Wilshire. Shares a wall, keeps its own entrance. Fits narrower side yards. Objective standards skip extra review.",
+   "say": "In Southwest Beverly Hills, a common fit is an attached ADU on a rectangular lot, at about $230,000 to $430,000 and up. More rectangular lots south of Wilshire. Shares a wall, keeps its own entrance. Fits narrower side yards. Objective standards skip extra review."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "cols": 3,
+   "title": "What drives ADU cost in Beverly Hills",
+   "cards": [
+    {
+     "name": "Finish level",
+     "desc": "High-end kitchens, baths & materials",
+     "image": "p41-twin-vessel-sinks.jpg",
+     "cue": "finish"
+    },
+    {
+     "name": "Size & height",
+     "desc": "Guest houses up to 1,400 sq ft",
+     "image": "p42-two-story-open-living.jpg",
+     "cue": "size"
+    },
+    {
+     "name": "Fire zone",
+     "desc": "North of Sunset: ignition-resistant build",
+     "image": "p04-adu-roof-sheathing.jpg",
+     "cue": "fire"
+    },
+    {
+     "name": "City of LA lots",
+     "desc": "Beverly Crest & Benedict Canyon follow LADBS",
+     "image": "p02-adu-interior-entry-door.jpg",
+     "cue": "city"
+    },
+    {
+     "name": "Extra review",
+     "desc": "Minor Accommodation Permit if you exceed standards",
+     "image": "p32-new-adu-stucco-exterior.jpg",
+     "cue": "extra"
+    },
+    {
+     "name": "Utilities",
+     "desc": "Panel upgrades & sewer runs",
+     "image": "p00-adu-framing-electrical-rough-in.jpg",
+     "cue": "utilities"
+    }
+   ],
+   "say": "What drives the price in Beverly Hills? Finish level: high-end kitchens, baths & materials. Size & height: guest houses up to 1,400 sq ft. Fire zone: north of Sunset: ignition-resistant build. City of LA lots: beverly Crest & Benedict Canyon follow LADBS. Extra review: minor Accommodation Permit if you exceed standards. Utilities: panel upgrades & sewer runs."
+  },
+  {
+   "id": "rules",
+   "kind": "stats",
+   "label": "Rules to Know",
+   "title": "Beverly Hills ADU rules to know",
+   "tiles": [
+    {
+     "v": "60",
+     "n": "Days to decide",
+     "s": "On a complete application",
+     "cue": "60"
+    },
+    {
+     "v": "500",
+     "n": "Sq ft JADU cap",
+     "s": "Junior ADUs stay inside the house",
+     "cue": "500"
+    },
+    {
+     "v": "≤750",
+     "n": "Sq ft, no impact fees",
+     "s": "Smaller units skip impact fees",
+     "cue": "750"
+    },
+    {
+     "v": "4",
+     "n": "Units per lot",
+     "s": "JADU, conversion, detached & one more",
+     "cue": "four"
+    }
+   ],
+   "tvPx": 64,
+   "speak": "A few rules to know. A city has sixty days to act on a complete application. A junior ADU tops out at five hundred square feet. ADUs of seven hundred fifty square feet or less skip impact fees. And Beverly Hills allows up to four units on a single-family lot.",
+   "say": "A few rules to know. A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. ADUs of 750 square feet or less skip impact fees. And Beverly Hills allows up to four units on a single-family lot."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "How many ADUs?",
+     "desc": "Up to four on a single-family lot",
+     "icon": "roof",
+     "cue": "how"
+    },
+    {
+     "name": "Is 90210 in the city?",
+     "desc": "Not always: Beverly Crest is City of LA",
+     "icon": "map",
+     "cue": "is"
+    },
+    {
+     "name": "Need parking?",
+     "desc": "Often not near transit, like the new Metro stop",
+     "icon": "pin",
+     "cue": "need"
+    },
+    {
+     "name": "Can I rent it out?",
+     "desc": "Yes, for 31 days or longer",
+     "icon": "page",
+     "cue": "can"
+    }
+   ],
+   "say": "Common questions: How many ADUs? Up to four on a single-family lot. Is 90210 in the city? Not always: Beverly Crest is City of LA. Need parking? Often not near transit, like the new Metro stop. Can I rent it out? Yes, for 31 days or longer."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p30-living-room-fireplace.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Beverly Hills ADU Builder Pros",
+   "nameCue": "Beverly",
+   "where": "The Flats · Trousdale Estates · Southwest BH · Beverly Crest",
+   "points": [
+    "Site review & ADU design",
+    "Permits & plan check, city or county",
+    "Foundations, utilities & construction",
+    "Garage conversions to new backyard homes",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder in Beverly Hills? Give Beverly Hills ADU Builder Pros a shout. They design, permit and build ADUs across The Flats, Trousdale Estates, Southwest BH, from garage conversions to brand-new backyard homes."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "ADU Interiors",
+   "plain": true,
+   "title": "Inside a finished ADU",
+   "sub": "Kitchens, baths & living space",
+   "steps": [
+    {
+     "image": "p31-mosaic-floor-glass-shower.jpg"
+    },
+    {
+     "image": "p43-navy-vanity-bathroom.jpg"
+    },
+    {
+     "image": "p37-two-story-stair-hallway.jpg"
+    },
+    {
+     "image": "p22-floating-wood-vanity.jpg"
+    }
+   ],
+   "say": "A finished ADU is a full home, with its own kitchen, bathroom and living space."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p42-two-story-open-living.jpg",
+   "name": "Beverly Hills ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuildersbeverlyhills.pro",
+   "urlCue": "visit",
+   "tip": "Serving The Flats, Trousdale Estates, Southwest BH & more",
+   "speak": "For a free ADU consultation in Beverly Hills, visit adu builders beverly hills dot pro. This has been Local Vibe Check.",
+   "say": "For a free ADU consultation in Beverly Hills, visit adubuildersbeverlyhills.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "Beverly Hills, CA · 2026",
+   "title": [
+    "ADU",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "The Flats",
+    "Trousdale Estates",
+    "Southwest BH",
+    "Beverly Crest"
+   ],
+   "say": "What does an ADU cost in Beverly Hills?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Prices",
+   "title": "ADU prices, Beverly Hills",
+   "max": 600,
+   "ticks": [
+    0,
+    300,
+    600
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft",
+     "lo": 85,
+     "hi": 170,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 145,
+     "hi": 290,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 230,
+     "hi": 430,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 290,
+     "hi": 575,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "A junior ADU in Beverly Hills starts around eighty-five thousand dollars. A garage conversion, about one hundred forty-five thousand dollars. An attached ADU, about two hundred thirty thousand dollars. And a new detached ADU runs about two hundred ninety thousand dollars to five hundred seventy-five thousand dollars and up.",
+   "say": "A junior ADU in Beverly Hills starts around $85,000. A garage conversion, about $145,000. An attached ADU, about $230,000. And a new detached ADU runs about $290,000 to $575,000 and up."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p30-living-room-fireplace.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Beverly Hills ADU Builder Pros",
+   "nameCue": "Beverly",
+   "where": "The Flats, Trousdale Estates, Southwest BH",
+   "points": [
+    "Design & permits",
+    "Construction",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder or contractor? Give Beverly Hills ADU Builder Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p42-two-story-open-living.jpg",
+   "name": "Beverly Hills ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuildersbeverlyhills.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Visit adu builders beverly hills dot pro for a free consultation.",
+   "say": "Visit adubuildersbeverlyhills.pro for a free consultation."
+  }
+ ]
+}

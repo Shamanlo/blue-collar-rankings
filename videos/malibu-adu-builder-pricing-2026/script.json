@@ -1,0 +1,477 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "assetsDir": "../_shared/adu-builders",
+ "header": "Malibu, CA · ADU Prices · 2026",
+ "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Malibu conditions. Ballpark only; get an on-site estimate.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "p20-detached-adu-backyard.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "ADU",
+   "Prices"
+  ],
+  "sub": "Malibu, CA",
+  "tag": "From $90K",
+  "year": "2026",
+  "bigPx": 150,
+  "reelBigPx": 210,
+  "subPx": 52,
+  "reelSubPx": 68,
+  "stamp": [
+   "4",
+   [
+    "PRICE",
+    "RANGES"
+   ]
+  ],
+  "reelStamp": [
+   "4",
+   [
+    "ADU",
+    "TYPES"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p20-detached-adu-backyard.jpg",
+   "kicker": "Malibu, California",
+   "titlePx": 124,
+   "title": [
+    "ADU Pricing",
+    "Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "Point Dume",
+    "Las Flores",
+    "Carbon Beach",
+    "Malibu Park",
+    "Topanga"
+   ],
+   "say": "What does an accessory dwelling unit really cost in Malibu? We break down 2026 prices for every type of ADU, the neighborhood examples, and what moves the price up or down."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What an ADU costs in Malibu",
+   "sub": "2026 ranges · design, permits & construction",
+   "max": 600,
+   "ticks": [
+    0,
+    200,
+    400,
+    600
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft, inside the house",
+     "lo": 90,
+     "hi": 180,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 150,
+     "hi": 300,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 240,
+     "hi": 450,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 300,
+     "hi": 600,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "In Malibu, a junior ADU runs about ninety thousand dollars to one hundred eighty thousand dollars and up. A garage conversion, about one hundred fifty thousand dollars to three hundred thousand dollars. An attached ADU, about two hundred forty thousand dollars to four hundred fifty thousand dollars. And a brand-new detached ADU runs about three hundred thousand dollars to six hundred thousand dollars and up.",
+   "say": "In Malibu, a junior ADU runs about $90,000 to $180,000 and up. A garage conversion, about $150,000 to $300,000. An attached ADU, about $240,000 to $450,000. And a brand-new detached ADU runs about $300,000 to $600,000 and up."
+  },
+  {
+   "id": "f1",
+   "kind": "price",
+   "label": "Point Dume",
+   "image": "p20-detached-adu-backyard.jpg",
+   "kicker": "Point Dume · Detached ADU",
+   "name": "Detached ADU on a fire-rebuild lot",
+   "lo": 300,
+   "hi": 600,
+   "plus": true,
+   "priceCue": "Point",
+   "desc": "Some of Malibu's flattest land, where many homes were lost in the Woolsey Fire.",
+   "bullets": [
+    {
+     "t": "Planned with the main rebuild",
+     "cue": "planned"
+    },
+    {
+     "t": "Shares septic, utilities & foundation work",
+     "cue": "shares"
+    },
+    {
+     "t": "Single-story on flat land",
+     "cue": "single-story"
+    }
+   ],
+   "speak": "In Point Dume, a common fit is a detached ADU on a fire-rebuild lot, at about three hundred thousand dollars to six hundred thousand dollars and up. Some of Malibu's flattest land, where many homes were lost in the Woolsey Fire. Planned with the main rebuild. Shares septic, utilities and foundation work. Single-story on flat land.",
+   "say": "In Point Dume, a common fit is a detached ADU on a fire-rebuild lot, at about $300,000 to $600,000 and up. Some of Malibu's flattest land, where many homes were lost in the Woolsey Fire. Planned with the main rebuild. Shares septic, utilities and foundation work. Single-story on flat land."
+  },
+  {
+   "id": "f2",
+   "kind": "price",
+   "label": "Malibu Park",
+   "image": "p24-garage-conversion-adu-exterior.jpg",
+   "kicker": "Malibu Park · Garage conversion",
+   "name": "Garage conversion on an existing pad",
+   "lo": 150,
+   "hi": 300,
+   "plus": true,
+   "priceCue": "Malibu",
+   "desc": "Canyon and hillside lots often have one level pad: the garage.",
+   "bullets": [
+    {
+     "t": "Uses the level pad you already have",
+     "cue": "uses"
+    },
+    {
+     "t": "No new grading or retaining walls",
+     "cue": "no"
+    },
+    {
+     "t": "Septic capacity checked first",
+     "cue": "septic"
+    }
+   ],
+   "speak": "In Malibu Park, a common fit is a garage conversion on an existing pad, at about one hundred fifty thousand dollars to three hundred thousand dollars and up. Canyon and hillside lots often have one level pad: the garage. Uses the level pad you already have. No new grading or retaining walls. Septic capacity checked first.",
+   "say": "In Malibu Park, a common fit is a garage conversion on an existing pad, at about $150,000 to $300,000 and up. Canyon and hillside lots often have one level pad: the garage. Uses the level pad you already have. No new grading or retaining walls. Septic capacity checked first."
+  },
+  {
+   "id": "f3",
+   "kind": "price",
+   "label": "Carbon Beach",
+   "image": "p38-studio-adu-wall-bed.jpg",
+   "kicker": "Carbon Beach · Junior ADU",
+   "name": "Junior ADU inside a beach house",
+   "lo": 90,
+   "hi": 180,
+   "plus": true,
+   "priceCue": "Carbon",
+   "desc": "Tight beachfront lots where the buildable area is small.",
+   "bullets": [
+    {
+     "t": "Up to 500 sq ft within the walls",
+     "cue": "up"
+    },
+    {
+     "t": "No new footprint near the sand",
+     "cue": "no"
+    },
+    {
+     "t": "Its own exterior door",
+     "cue": "its"
+    }
+   ],
+   "speak": "In Carbon Beach, a common fit is a junior ADU inside a beach house, at about ninety thousand dollars to one hundred eighty thousand dollars and up. Tight beachfront lots where the buildable area is small. Up to 500 sq ft within the walls. No new footprint near the sand. Its own exterior door.",
+   "say": "In Carbon Beach, a common fit is a junior ADU inside a beach house, at about $90,000 to $180,000 and up. Tight beachfront lots where the buildable area is small. Up to 500 sq ft within the walls. No new footprint near the sand. Its own exterior door."
+  },
+  {
+   "id": "rules",
+   "kind": "stats",
+   "label": "Rules to Know",
+   "title": "Malibu ADU rules to know",
+   "tiles": [
+    {
+     "v": "4 ft",
+     "n": "Side & rear setbacks",
+     "s": "The most a city can require",
+     "cue": "4-foot"
+    },
+    {
+     "v": "60",
+     "n": "Days to decide",
+     "s": "On a complete application",
+     "cue": "60"
+    },
+    {
+     "v": "500",
+     "n": "Sq ft JADU cap",
+     "s": "Junior ADUs stay inside the house",
+     "cue": "500"
+    },
+    {
+     "v": "100%",
+     "n": "Coastal Zone",
+     "s": "Coastal review comes first",
+     "cue": "coastal"
+    }
+   ],
+   "tvPx": 64,
+   "speak": "A few rules to know. A city can require no more than four-foot side and rear setbacks. A city has sixty days to act on a complete application. A junior ADU tops out at five hundred square feet. And because all of Malibu is in the Coastal Zone, coastal review comes first.",
+   "say": "A few rules to know. A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. And because all of Malibu is in the Coastal Zone, coastal review comes first."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "cols": 3,
+   "title": "What drives ADU cost in Malibu",
+   "cards": [
+    {
+     "name": "Coastal review",
+     "desc": "Every Malibu ADU is checked for coastal compliance",
+     "image": "p09-backyard-cottage-adu.jpg",
+     "cue": "coastal"
+    },
+    {
+     "name": "Foundations",
+     "desc": "Slabs, caissons or deep piles near the waves",
+     "image": "p26-garage-to-adu-conversion-site.jpg",
+     "cue": "foundations"
+    },
+    {
+     "name": "Septic",
+     "desc": "An upgrade can change budget and placement",
+     "image": "p01-adu-framing-plumbing-rough-in.jpg",
+     "cue": "septic"
+    },
+    {
+     "name": "Hillside & bluffs",
+     "desc": "Retaining walls, drainage & bluff setbacks",
+     "image": "p08-adu-wood-framing.jpg",
+     "cue": "hillside"
+    },
+    {
+     "name": "Fire rebuilds",
+     "desc": "Plan the ADU with the new house to share costs",
+     "image": "p04-adu-roof-sheathing.jpg",
+     "cue": "fire"
+    },
+    {
+     "name": "Geology reports",
+     "desc": "Common on canyon & bluff parcels",
+     "image": "p02-adu-interior-entry-door.jpg",
+     "cue": "geology"
+    }
+   ],
+   "say": "What drives the price in Malibu? Coastal review: every Malibu ADU is checked for coastal compliance. Foundations: slabs, caissons or deep piles near the waves. Septic: an upgrade can change budget and placement. Hillside & bluffs: retaining walls, drainage & bluff setbacks. Fire rebuilds: plan the ADU with the new house to share costs. Geology reports: common on canyon & bluff parcels."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Coastal approval?",
+     "desc": "Yes: all of Malibu is in the Coastal Zone",
+     "icon": "drop",
+     "cue": "coastal"
+    },
+    {
+     "name": "Will my septic work?",
+     "desc": "Depends on capacity; checked early",
+     "icon": "search",
+     "cue": "will"
+    },
+    {
+     "name": "Short-term rental?",
+     "desc": "No. Rentals must be over 30 days",
+     "icon": "roof",
+     "cue": "short-term"
+    },
+    {
+     "name": "ADU with a fire rebuild?",
+     "desc": "Often yes, sharing septic & foundation work",
+     "icon": "flame",
+     "cue": "adu"
+    }
+   ],
+   "say": "Common questions: Coastal approval? Yes: all of Malibu is in the Coastal Zone. Will my septic work? Depends on capacity; checked early. Short-term rental? No. Rentals must be over 30 days. ADU with a fire rebuild? Often yes, sharing septic & foundation work."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Malibu ADU Builder Pros",
+   "nameCue": "Malibu",
+   "where": "Point Dume · Las Flores · Carbon Beach · Malibu Park",
+   "points": [
+    "Site review & ADU design",
+    "Permits & plan check, city or county",
+    "Foundations, utilities & construction",
+    "Garage conversions to new backyard homes",
+    "Reply within 24 hours"
+   ],
+   "say": "Looking for an ADU contractor in Malibu? Give Malibu ADU Builder Pros a shout. One team handles your design, your permit file and the build, all the way to the final inspection."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "ADU Interiors",
+   "plain": true,
+   "title": "Inside a finished ADU",
+   "sub": "Kitchens, baths & living space",
+   "steps": [
+    {
+     "image": "p36-small-kitchen-blue-cabinets.jpg"
+    },
+    {
+     "image": "p33-tiled-shower-niche.jpg"
+    },
+    {
+     "image": "p03-adu-open-plan-flooring.jpg"
+    },
+    {
+     "image": "p38-studio-adu-wall-bed.jpg"
+    }
+   ],
+   "say": "A finished ADU is a full home, with its own kitchen, bathroom and living space."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p30-living-room-fireplace.jpg",
+   "name": "Malibu ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuildersmalibu.pro",
+   "urlCue": "visit",
+   "tip": "Serving Point Dume, Las Flores, Carbon Beach & more",
+   "speak": "For a free ADU consultation in Malibu, visit adu builders malibu dot pro. This has been Local Vibe Check.",
+   "say": "For a free ADU consultation in Malibu, visit adubuildersmalibu.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p20-detached-adu-backyard.jpg",
+   "kicker": "Malibu, CA · 2026",
+   "title": [
+    "ADU",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Point Dume",
+    "Las Flores",
+    "Carbon Beach",
+    "Malibu Park"
+   ],
+   "say": "What does an ADU cost in Malibu?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Prices",
+   "title": "ADU prices, Malibu",
+   "max": 600,
+   "ticks": [
+    0,
+    300,
+    600
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft",
+     "lo": 90,
+     "hi": 180,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 150,
+     "hi": 300,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 240,
+     "hi": 450,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 300,
+     "hi": 600,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "A junior ADU in Malibu starts around ninety thousand dollars. A garage conversion, about one hundred fifty thousand dollars. An attached ADU, about two hundred forty thousand dollars. And a new detached ADU runs about three hundred thousand dollars to six hundred thousand dollars and up.",
+   "say": "A junior ADU in Malibu starts around $90,000. A garage conversion, about $150,000. An attached ADU, about $240,000. And a new detached ADU runs about $300,000 to $600,000 and up."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Malibu ADU Builder Pros",
+   "nameCue": "Malibu",
+   "where": "Point Dume, Las Flores, Carbon Beach",
+   "points": [
+    "Design & permits",
+    "Construction",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder or contractor? Give Malibu ADU Builder Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p30-living-room-fireplace.jpg",
+   "name": "Malibu ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuildersmalibu.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Visit adu builders malibu dot pro for a free consultation.",
+   "say": "Visit adubuildersmalibu.pro for a free consultation."
+  }
+ ]
+}

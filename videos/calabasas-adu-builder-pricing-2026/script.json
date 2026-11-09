@@ -1,0 +1,479 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "assetsDir": "../_shared/adu-builders",
+ "header": "Calabasas, CA · ADU Prices · 2026",
+ "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Calabasas conditions. Ballpark only; get an on-site estimate.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "p09-backyard-cottage-adu.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "ADU",
+   "Pricing"
+  ],
+  "sub": "Calabasas, CA",
+  "tag": "From $75K",
+  "year": "2026",
+  "bigPx": 150,
+  "reelBigPx": 210,
+  "subPx": 52,
+  "reelSubPx": 68,
+  "stamp": [
+   "4",
+   [
+    "PRICE",
+    "RANGES"
+   ]
+  ],
+  "reelStamp": [
+   "4",
+   [
+    "ADU",
+    "TYPES"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "Calabasas, California",
+   "titlePx": 124,
+   "title": [
+    "ADU Pricing",
+    "Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "Calabasas Highlands",
+    "Mont Calabasas",
+    "Park Moderne",
+    "The Oaks",
+    "Hidden Hills"
+   ],
+   "say": "What does an accessory dwelling unit really cost in Calabasas? We break down 2026 prices for every type of ADU, the neighborhood examples, and what moves the price up or down."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What an ADU costs in Calabasas",
+   "sub": "2026 ranges · design, permits & construction",
+   "max": 500,
+   "ticks": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft, inside the house",
+     "lo": 75,
+     "hi": 145,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 120,
+     "hi": 240,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 195,
+     "hi": 365,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 240,
+     "hi": 485,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "In Calabasas, a junior ADU runs about seventy-five thousand dollars to one hundred forty-five thousand dollars and up. A garage conversion, about one hundred twenty thousand dollars to two hundred forty thousand dollars. An attached ADU, about one hundred ninety-five thousand dollars to three hundred sixty-five thousand dollars. And a brand-new detached ADU runs about two hundred forty thousand dollars to four hundred eighty-five thousand dollars and up.",
+   "say": "In Calabasas, a junior ADU runs about $75,000 to $145,000 and up. A garage conversion, about $120,000 to $240,000. An attached ADU, about $195,000 to $365,000. And a brand-new detached ADU runs about $240,000 to $485,000 and up."
+  },
+  {
+   "id": "f1",
+   "kind": "price",
+   "label": "Mont Calabasas",
+   "image": "p24-garage-conversion-adu-exterior.jpg",
+   "kicker": "Mont Calabasas · Garage conversion",
+   "name": "Garage conversion in a planned tract home",
+   "lo": 120,
+   "hi": 240,
+   "plus": true,
+   "priceCue": "Mont",
+   "desc": "Attached garages built to tract standards make conversion straightforward.",
+   "bullets": [
+    {
+     "t": "Slab, roof & walls stay",
+     "cue": "slab"
+    },
+    {
+     "t": "Kitchenette & bathroom added",
+     "cue": "kitchenette"
+    },
+    {
+     "t": "No replacement parking",
+     "cue": "no"
+    }
+   ],
+   "speak": "In Mont Calabasas, a common fit is a garage conversion in a planned tract home, at about one hundred twenty thousand dollars to two hundred forty thousand dollars and up. Attached garages built to tract standards make conversion straightforward. Slab, roof and walls stay. Kitchenette and bathroom added. No replacement parking.",
+   "say": "In Mont Calabasas, a common fit is a garage conversion in a planned tract home, at about $120,000 to $240,000 and up. Attached garages built to tract standards make conversion straightforward. Slab, roof and walls stay. Kitchenette and bathroom added. No replacement parking."
+  },
+  {
+   "id": "f2",
+   "kind": "price",
+   "label": "Calabasas Highlands",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "kicker": "Calabasas Highlands · Attached ADU",
+   "name": "Attached ADU on a sloped hillside lot",
+   "lo": 195,
+   "hi": 365,
+   "plus": true,
+   "priceCue": "Calabasas",
+   "desc": "Steep rear yards make a freestanding pad costly.",
+   "bullets": [
+    {
+     "t": "Reuses the existing grade & foundation line",
+     "cue": "reuses"
+    },
+    {
+     "t": "Shorter utility runs",
+     "cue": "shorter"
+    },
+    {
+     "t": "Very High fire zone construction",
+     "cue": "very"
+    }
+   ],
+   "speak": "In Calabasas Highlands, a common fit is an attached ADU on a sloped hillside lot, at about one hundred ninety-five thousand dollars to three hundred sixty-five thousand dollars and up. Steep rear yards make a freestanding pad costly. Reuses the existing grade and foundation line. Shorter utility runs. Very High fire zone construction.",
+   "say": "In Calabasas Highlands, a common fit is an attached ADU on a sloped hillside lot, at about $195,000 to $365,000 and up. Steep rear yards make a freestanding pad costly. Reuses the existing grade and foundation line. Shorter utility runs. Very High fire zone construction."
+  },
+  {
+   "id": "f3",
+   "kind": "price",
+   "label": "Park Moderne",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "Park Moderne · Detached ADU",
+   "name": "Compact detached ADU on a 5,000 sq ft lot",
+   "lo": 240,
+   "hi": 485,
+   "plus": true,
+   "priceCue": "Park",
+   "desc": "The original 1920s lots leave little rear yard.",
+   "bullets": [
+    {
+     "t": "One-story unit at the 4-foot setbacks",
+     "cue": "one-story"
+    },
+    {
+     "t": "Bedroom, bath & kitchen",
+     "cue": "bedroom"
+    },
+    {
+     "t": "Windows placed for privacy",
+     "cue": "windows"
+    }
+   ],
+   "speak": "In Park Moderne, a common fit is a compact detached ADU on a 5,000 sq ft lot, at about two hundred forty thousand dollars to four hundred eighty-five thousand dollars and up. The original 1920s lots leave little rear yard. One-story unit at the 4-foot setbacks. Bedroom, bath and kitchen. Windows placed for privacy.",
+   "say": "In Park Moderne, a common fit is a compact detached ADU on a 5,000 sq ft lot, at about $240,000 to $485,000 and up. The original 1920s lots leave little rear yard. One-story unit at the 4-foot setbacks. Bedroom, bath and kitchen. Windows placed for privacy."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "cols": 3,
+   "title": "What drives ADU cost in Calabasas",
+   "cards": [
+    {
+     "name": "Hillside foundations",
+     "desc": "Can add a large share to any project",
+     "image": "p26-garage-to-adu-conversion-site.jpg",
+     "cue": "hillside"
+    },
+    {
+     "name": "Fire zone",
+     "desc": "Wildland-urban interface standards & brush clearance",
+     "image": "p04-adu-roof-sheathing.jpg",
+     "cue": "fire"
+    },
+    {
+     "name": "HOA design rules",
+     "desc": "Master-planned tracts off Parkway Calabasas",
+     "image": "p32-new-adu-stucco-exterior.jpg",
+     "cue": "hoa"
+    },
+    {
+     "name": "Utility runs",
+     "desc": "How far water, sewer & power must go",
+     "image": "p01-adu-framing-plumbing-rough-in.jpg",
+     "cue": "utility"
+    },
+    {
+     "name": "Small lots",
+     "desc": "Park Moderne's 5,000 sq ft parcels",
+     "image": "p09-backyard-cottage-adu.jpg",
+     "cue": "small"
+    },
+    {
+     "name": "Kitchens & baths",
+     "desc": "Same cost whether the unit is big or small",
+     "image": "p18-compact-adu-kitchen.jpg",
+     "cue": "kitchens"
+    }
+   ],
+   "say": "What drives the price in Calabasas? Hillside foundations: can add a large share to any project. Fire zone: wildland-urban interface standards & brush clearance. HOA design rules: master-planned tracts off Parkway Calabasas. Utility runs: how far water, sewer & power must go. Small lots: park Moderne's 5,000 sq ft parcels. Kitchens & baths: same cost whether the unit is big or small."
+  },
+  {
+   "id": "rules",
+   "kind": "stats",
+   "label": "Rules to Know",
+   "title": "Calabasas ADU rules to know",
+   "tiles": [
+    {
+     "v": "4 ft",
+     "n": "Side & rear setbacks",
+     "s": "The most a city can require",
+     "cue": "4-foot"
+    },
+    {
+     "v": "60",
+     "n": "Days to decide",
+     "s": "On a complete application",
+     "cue": "60"
+    },
+    {
+     "v": "≤750",
+     "n": "Sq ft, no impact fees",
+     "s": "Smaller units skip impact fees",
+     "cue": "750"
+    },
+    {
+     "v": "2026",
+     "n": "Ordinance under state review",
+     "s": "State law controls if they conflict",
+     "cue": "state"
+    }
+   ],
+   "tvPx": 64,
+   "speak": "A few rules to know. A city can require no more than four-foot side and rear setbacks. A city has sixty days to act on a complete application. ADUs of seven hundred fifty square feet or less skip impact fees. And Calabasas's ADU ordinance is under state review, so state law controls where they conflict.",
+   "say": "A few rules to know. A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. ADUs of 750 square feet or less skip impact fees. And Calabasas's ADU ordinance is under state review, so state law controls where they conflict."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Can my HOA stop it?",
+     "desc": "No. State law voids CC&Rs that block ADUs",
+     "icon": "page",
+     "cue": "can"
+    },
+    {
+     "name": "Fire-resistant build?",
+     "desc": "Yes, in a Very High fire zone",
+     "icon": "flame",
+     "cue": "fire-resistant"
+    },
+    {
+     "name": "Need a parking space?",
+     "desc": "Often not; garage spaces needn't be replaced",
+     "icon": "map",
+     "cue": "need"
+    },
+    {
+     "name": "Can I rent it out?",
+     "desc": "Yes, to long-term tenants over 30 days",
+     "icon": "roof",
+     "cue": "can"
+    }
+   ],
+   "say": "Common questions: Can my HOA stop it? No. State law voids CC&Rs that block ADUs. Fire-resistant build? Yes, in a Very High fire zone. Need a parking space? Often not; garage spaces needn't be replaced. Can I rent it out? Yes, to long-term tenants over 30 days."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p30-living-room-fireplace.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Calabasas ADU Builder Pros",
+   "nameCue": "Calabasas",
+   "where": "Calabasas Highlands · Mont Calabasas · Park Moderne · The Oaks",
+   "points": [
+    "Site review & ADU design",
+    "Permits & plan check, city or county",
+    "Foundations, utilities & construction",
+    "Garage conversions to new backyard homes",
+    "Reply within 24 hours"
+   ],
+   "say": "Looking for an ADU contractor in Calabasas? Give Calabasas ADU Builder Pros a shout. One team handles your design, your permit file and the build, all the way to the final inspection."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "ADU Interiors",
+   "plain": true,
+   "title": "Inside a finished ADU",
+   "sub": "Kitchens, baths & living space",
+   "steps": [
+    {
+     "image": "p07-adu-vaulted-living-space.jpg"
+    },
+    {
+     "image": "p29-adu-kitchen-from-entry.jpg"
+    },
+    {
+     "image": "p21-double-vanity-bathroom.jpg"
+    },
+    {
+     "image": "p40-tub-shower-black-fixtures.jpg"
+    }
+   ],
+   "say": "A finished ADU is a full home, with its own kitchen, bathroom and living space."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p24-garage-conversion-adu-exterior.jpg",
+   "name": "Calabasas ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuilderscalabasas.pro",
+   "urlCue": "visit",
+   "tip": "Serving Calabasas Highlands, Mont Calabasas, Park Moderne & more",
+   "speak": "For a free ADU consultation in Calabasas, visit adu builders calabasas dot pro. This has been Local Vibe Check.",
+   "say": "For a free ADU consultation in Calabasas, visit adubuilderscalabasas.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "Calabasas, CA · 2026",
+   "title": [
+    "ADU",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Calabasas Highlands",
+    "Mont Calabasas",
+    "Park Moderne",
+    "The Oaks"
+   ],
+   "say": "What does an ADU cost in Calabasas?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Prices",
+   "title": "ADU prices, Calabasas",
+   "max": 500,
+   "ticks": [
+    0,
+    250,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft",
+     "lo": 75,
+     "hi": 145,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 120,
+     "hi": 240,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 195,
+     "hi": 365,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 240,
+     "hi": 485,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "A junior ADU in Calabasas starts around seventy-five thousand dollars. A garage conversion, about one hundred twenty thousand dollars. An attached ADU, about one hundred ninety-five thousand dollars. And a new detached ADU runs about two hundred forty thousand dollars to four hundred eighty-five thousand dollars and up.",
+   "say": "A junior ADU in Calabasas starts around $75,000. A garage conversion, about $120,000. An attached ADU, about $195,000. And a new detached ADU runs about $240,000 to $485,000 and up."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p30-living-room-fireplace.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Calabasas ADU Builder Pros",
+   "nameCue": "Calabasas",
+   "where": "Calabasas Highlands, Mont Calabasas, Park Moderne",
+   "points": [
+    "Design & permits",
+    "Construction",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder or contractor? Give Calabasas ADU Builder Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p24-garage-conversion-adu-exterior.jpg",
+   "name": "Calabasas ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuilderscalabasas.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Visit adu builders calabasas dot pro for a free consultation.",
+   "say": "Visit adubuilderscalabasas.pro for a free consultation."
+  }
+ ]
+}

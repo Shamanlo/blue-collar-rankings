@@ -1,0 +1,479 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "assetsDir": "../_shared/adu-builders",
+ "header": "Thousand Oaks, CA · ADU Prices · 2026",
+ "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Thousand Oaks conditions. Ballpark only; get an on-site estimate.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "p32-new-adu-stucco-exterior.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "ADU",
+   "Cost"
+  ],
+  "sub": "Thousand Oaks, CA",
+  "tag": "From $65K",
+  "year": "2026",
+  "bigPx": 150,
+  "reelBigPx": 210,
+  "subPx": 52,
+  "reelSubPx": 68,
+  "stamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ],
+  "reelStamp": [
+   "4",
+   [
+    "PRICE",
+    "RANGES"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "kicker": "Thousand Oaks, California",
+   "titlePx": 124,
+   "title": [
+    "ADU Pricing",
+    "Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "Newbury Park",
+    "Dos Vientos",
+    "Lang Ranch",
+    "Wildwood",
+    "Casa Conejo"
+   ],
+   "say": "Thinking about adding an ADU in Thousand Oaks? Here's what it costs in 2026, from a junior ADU to a brand-new backyard home, plus the local cost drivers and rules that shape your project."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What an ADU costs in Thousand Oaks",
+   "sub": "2026 ranges · design, permits & construction",
+   "max": 500,
+   "ticks": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft, inside the house",
+     "lo": 65,
+     "hi": 130,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 105,
+     "hi": 210,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 170,
+     "hi": 320,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 210,
+     "hi": 425,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "In Thousand Oaks, a junior ADU runs about sixty-five thousand dollars to one hundred thirty thousand dollars and up. A garage conversion, about one hundred five thousand dollars to two hundred ten thousand dollars. An attached ADU, about one hundred seventy thousand dollars to three hundred twenty thousand dollars. And a brand-new detached ADU runs about two hundred ten thousand dollars to four hundred twenty-five thousand dollars and up.",
+   "say": "In Thousand Oaks, a junior ADU runs about $65,000 to $130,000 and up. A garage conversion, about $105,000 to $210,000. An attached ADU, about $170,000 to $320,000. And a brand-new detached ADU runs about $210,000 to $425,000 and up."
+  },
+  {
+   "id": "f1",
+   "kind": "price",
+   "label": "Casa Conejo",
+   "image": "p25-garage-conversion-wall-infill.jpg",
+   "kicker": "Casa Conejo · Garage conversion",
+   "name": "Garage conversion on an early-1960s tract lot",
+   "lo": 105,
+   "hi": 210,
+   "plus": true,
+   "priceCue": "Casa",
+   "desc": "Newbury Park's first planned community, with attached two-car garages.",
+   "bullets": [
+    {
+     "t": "Reuses the slab & roof",
+     "cue": "reuses"
+    },
+    {
+     "t": "County island: Ventura County reviews it",
+     "cue": "county"
+    },
+    {
+     "t": "Keeps the yard open",
+     "cue": "keeps"
+    }
+   ],
+   "speak": "In Casa Conejo, a common fit is a garage conversion on an early-1960s tract lot, at about one hundred five thousand dollars to two hundred ten thousand dollars and up. Newbury Park's first planned community, with attached two-car garages. Reuses the slab and roof. County island: Ventura County reviews it. Keeps the yard open.",
+   "say": "In Casa Conejo, a common fit is a garage conversion on an early-1960s tract lot, at about $105,000 to $210,000 and up. Newbury Park's first planned community, with attached two-car garages. Reuses the slab and roof. County island: Ventura County reviews it. Keeps the yard open."
+  },
+  {
+   "id": "f2",
+   "kind": "price",
+   "label": "Dos Vientos",
+   "image": "p16-bedroom-built-in-cabinets.jpg",
+   "kicker": "Dos Vientos · Junior ADU",
+   "name": "Junior ADU inside an HOA home",
+   "lo": 65,
+   "hi": 130,
+   "plus": true,
+   "priceCue": "Dos",
+   "desc": "Compact lots with HOA design rules and little spare yard.",
+   "bullets": [
+    {
+     "t": "Up to 500 sq ft inside the house",
+     "cue": "up"
+    },
+    {
+     "t": "Its own entrance",
+     "cue": "its"
+    },
+    {
+     "t": "Simple HOA review",
+     "cue": "simple"
+    }
+   ],
+   "speak": "In Dos Vientos, a common fit is a junior ADU inside an HOA home, at about sixty-five thousand dollars to one hundred thirty thousand dollars and up. Compact lots with HOA design rules and little spare yard. Up to 500 sq ft inside the house. Its own entrance. Simple HOA review.",
+   "say": "In Dos Vientos, a common fit is a junior ADU inside an HOA home, at about $65,000 to $130,000 and up. Compact lots with HOA design rules and little spare yard. Up to 500 sq ft inside the house. Its own entrance. Simple HOA review."
+  },
+  {
+   "id": "f3",
+   "kind": "price",
+   "label": "Wildwood",
+   "image": "p20-detached-adu-backyard.jpg",
+   "kicker": "Wildwood · Detached ADU",
+   "name": "Detached ADU on a sloped lot near open space",
+   "lo": 210,
+   "hi": 425,
+   "plus": true,
+   "priceCue": "Wildwood",
+   "desc": "Lots that slope toward canyon edges and carry mature oaks.",
+   "bullets": [
+    {
+     "t": "Soils report & stepped foundation",
+     "cue": "soils"
+    },
+    {
+     "t": "Oak root zones respected",
+     "cue": "oak"
+    },
+    {
+     "t": "Ignition-resistant construction",
+     "cue": "ignition-resistant"
+    }
+   ],
+   "speak": "In Wildwood, a common fit is a detached ADU on a sloped lot near open space, at about two hundred ten thousand dollars to four hundred twenty-five thousand dollars and up. Lots that slope toward canyon edges and carry mature oaks. Soils report and stepped foundation. Oak root zones respected. Ignition-resistant construction.",
+   "say": "In Wildwood, a common fit is a detached ADU on a sloped lot near open space, at about $210,000 to $425,000 and up. Lots that slope toward canyon edges and carry mature oaks. Soils report and stepped foundation. Oak root zones respected. Ignition-resistant construction."
+  },
+  {
+   "id": "rules",
+   "kind": "stats",
+   "label": "Rules to Know",
+   "title": "Thousand Oaks ADU rules to know",
+   "tiles": [
+    {
+     "v": "60",
+     "n": "Days to decide",
+     "s": "On a complete application",
+     "cue": "60"
+    },
+    {
+     "v": "500",
+     "n": "Sq ft JADU cap",
+     "s": "Junior ADUs stay inside the house",
+     "cue": "500"
+    },
+    {
+     "v": "≤750",
+     "n": "Sq ft, no impact fees",
+     "s": "Smaller units skip impact fees",
+     "cue": "750"
+    },
+    {
+     "v": "2026",
+     "n": "New city ordinance",
+     "s": "State law still sets the floor",
+     "cue": "ordinance"
+    }
+   ],
+   "tvPx": 64,
+   "speak": "A few rules to know. A city has sixty days to act on a complete application. A junior ADU tops out at five hundred square feet. ADUs of seven hundred fifty square feet or less skip impact fees. And Thousand Oaks adopted a new ADU ordinance in 2026, but state law still sets the floor.",
+   "say": "A few rules to know. A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. ADUs of 750 square feet or less skip impact fees. And Thousand Oaks adopted a new ADU ordinance in 2026, but state law still sets the floor."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "cols": 3,
+   "title": "What drives ADU cost in Thousand Oaks",
+   "cards": [
+    {
+     "name": "City or Ventura County",
+     "desc": "County islands like Casa Conejo & Lynn Ranch",
+     "image": "p02-adu-interior-entry-door.jpg",
+     "cue": "city"
+    },
+    {
+     "name": "Oak trees",
+     "desc": "Work in a root zone can need an oak permit",
+     "image": "p09-backyard-cottage-adu.jpg",
+     "cue": "oak"
+    },
+    {
+     "name": "Slopes & canyon edges",
+     "desc": "Retaining walls & stepped foundations",
+     "image": "p08-adu-wood-framing.jpg",
+     "cue": "slopes"
+    },
+    {
+     "name": "Wildland edge",
+     "desc": "Ignition-resistant materials near open space",
+     "image": "p04-adu-roof-sheathing.jpg",
+     "cue": "wildland"
+    },
+    {
+     "name": "Utilities",
+     "desc": "Panel upgrades & long trench runs",
+     "image": "p00-adu-framing-electrical-rough-in.jpg",
+     "cue": "utilities"
+    },
+    {
+     "name": "HOA review",
+     "desc": "Dos Vientos & Lang Ranch design standards",
+     "image": "p47-white-shaker-kitchen.jpg",
+     "cue": "hoa"
+    }
+   ],
+   "say": "What drives the price in Thousand Oaks? City or Ventura County: county islands like Casa Conejo & Lynn Ranch. Oak trees: work in a root zone can need an oak permit. Slopes & canyon edges: retaining walls & stepped foundations. Wildland edge: ignition-resistant materials near open space. Utilities: panel upgrades & long trench runs. HOA review: dos Vientos & Lang Ranch design standards."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "City or county?",
+     "desc": "A Thousand Oaks address isn't always city-permitted",
+     "icon": "map",
+     "cue": "city"
+    },
+    {
+     "name": "Near an oak tree?",
+     "desc": "Often yes, but root-zone work can need a permit",
+     "icon": "shield",
+     "cue": "near"
+    },
+    {
+     "name": "Can my HOA stop it?",
+     "desc": "No, but it can apply reasonable design rules",
+     "icon": "page",
+     "cue": "can"
+    },
+    {
+     "name": "Can I rent it out?",
+     "desc": "Yes, for terms longer than 30 days",
+     "icon": "roof",
+     "cue": "can"
+    }
+   ],
+   "say": "Common questions: City or county? A Thousand Oaks address isn't always city-permitted. Near an oak tree? Often yes, but root-zone work can need a permit. Can my HOA stop it? No, but it can apply reasonable design rules. Can I rent it out? Yes, for terms longer than 30 days."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Thousand Oaks ADU Builder Pros",
+   "nameCue": "Thousand",
+   "where": "Newbury Park · Dos Vientos · Lang Ranch · Wildwood",
+   "points": [
+    "Site review & ADU design",
+    "Permits & plan check, city or county",
+    "Foundations, utilities & construction",
+    "Garage conversions to new backyard homes",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder in Thousand Oaks? Give Thousand Oaks ADU Builder Pros a shout. They design, permit and build ADUs across Newbury Park, Dos Vientos, Lang Ranch, from garage conversions to brand-new backyard homes."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "ADU Interiors",
+   "plain": true,
+   "title": "Inside a finished ADU",
+   "sub": "Kitchens, baths & living space",
+   "steps": [
+    {
+     "image": "p36-small-kitchen-blue-cabinets.jpg"
+    },
+    {
+     "image": "p41-twin-vessel-sinks.jpg"
+    },
+    {
+     "image": "p03-adu-open-plan-flooring.jpg"
+    },
+    {
+     "image": "p33-tiled-shower-niche.jpg"
+    }
+   ],
+   "say": "A finished ADU is a full home, with its own kitchen, bathroom and living space."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "name": "Thousand Oaks ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuildersthousandoaks.pro",
+   "urlCue": "visit",
+   "tip": "Serving Newbury Park, Dos Vientos, Lang Ranch & more",
+   "speak": "For a free ADU consultation in Thousand Oaks, visit adu builders thousand oaks dot pro. This has been Local Vibe Check.",
+   "say": "For a free ADU consultation in Thousand Oaks, visit adubuildersthousandoaks.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "kicker": "Thousand Oaks, CA · 2026",
+   "title": [
+    "ADU",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Newbury Park",
+    "Dos Vientos",
+    "Lang Ranch",
+    "Wildwood"
+   ],
+   "say": "What does an ADU cost in Thousand Oaks?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Prices",
+   "title": "ADU prices, Thousand Oaks",
+   "max": 500,
+   "ticks": [
+    0,
+    250,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft",
+     "lo": 65,
+     "hi": 130,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 105,
+     "hi": 210,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 170,
+     "hi": 320,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 210,
+     "hi": 425,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "A junior ADU in Thousand Oaks starts around sixty-five thousand dollars. A garage conversion, about one hundred five thousand dollars. An attached ADU, about one hundred seventy thousand dollars. And a new detached ADU runs about two hundred ten thousand dollars to four hundred twenty-five thousand dollars and up.",
+   "say": "A junior ADU in Thousand Oaks starts around $65,000. A garage conversion, about $105,000. An attached ADU, about $170,000. And a new detached ADU runs about $210,000 to $425,000 and up."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Thousand Oaks ADU Builder Pros",
+   "nameCue": "Thousand",
+   "where": "Newbury Park, Dos Vientos, Lang Ranch",
+   "points": [
+    "Design & permits",
+    "Construction",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder or contractor? Give Thousand Oaks ADU Builder Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "name": "Thousand Oaks ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuildersthousandoaks.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Visit adu builders thousand oaks dot pro for a free consultation.",
+   "say": "Visit adubuildersthousandoaks.pro for a free consultation."
+  }
+ ]
+}

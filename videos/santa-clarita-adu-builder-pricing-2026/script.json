@@ -1,0 +1,479 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "assetsDir": "../_shared/adu-builders",
+ "header": "Santa Clarita, CA · ADU Prices · 2026",
+ "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Santa Clarita conditions. Ballpark only; get an on-site estimate.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "p20-detached-adu-backyard.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "ADU",
+   "Prices"
+  ],
+  "sub": "Santa Clarita, CA",
+  "tag": "From $60K",
+  "year": "2026",
+  "bigPx": 150,
+  "reelBigPx": 210,
+  "subPx": 52,
+  "reelSubPx": 68,
+  "stamp": [
+   "4",
+   [
+    "ADU",
+    "TYPES"
+   ]
+  ],
+  "reelStamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p20-detached-adu-backyard.jpg",
+   "kicker": "Santa Clarita, California",
+   "titlePx": 124,
+   "title": [
+    "ADU Pricing",
+    "Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "Valencia",
+    "Saugus",
+    "Newhall",
+    "Canyon Country",
+    "Stevenson Ranch"
+   ],
+   "say": "How much does it cost to build an ADU in Santa Clarita in 2026? Here's the pricing guide: what each type of ADU costs, real examples from Saugus, Bridgeport and Stevenson Ranch, what drives the price, and the local rules to know."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What an ADU costs in Santa Clarita",
+   "sub": "2026 ranges · design, permits & construction",
+   "max": 500,
+   "ticks": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft, inside the house",
+     "lo": 60,
+     "hi": 120,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 100,
+     "hi": 200,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 160,
+     "hi": 300,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 200,
+     "hi": 400,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "In Santa Clarita, a junior ADU runs about sixty thousand dollars to one hundred twenty thousand dollars and up. A garage conversion, about one hundred thousand dollars to two hundred thousand dollars. An attached ADU, about one hundred sixty thousand dollars to three hundred thousand dollars. And a brand-new detached ADU runs about two hundred thousand dollars to four hundred thousand dollars and up.",
+   "say": "In Santa Clarita, a junior ADU runs about $60,000 to $120,000 and up. A garage conversion, about $100,000 to $200,000. An attached ADU, about $160,000 to $300,000. And a brand-new detached ADU runs about $200,000 to $400,000 and up."
+  },
+  {
+   "id": "f1",
+   "kind": "price",
+   "label": "Saugus",
+   "image": "p24-garage-conversion-adu-exterior.jpg",
+   "kicker": "Saugus · Garage conversion",
+   "name": "Garage conversion on an older tract lot",
+   "lo": 100,
+   "hi": 200,
+   "plus": true,
+   "priceCue": "Saugus",
+   "desc": "Many older Saugus homes have an attached two-car garage facing the street.",
+   "bullets": [
+    {
+     "t": "Keeps the backyard open",
+     "cue": "keeps"
+    },
+    {
+     "t": "Reuses the slab, walls & roof",
+     "cue": "reuses"
+    },
+    {
+     "t": "No replacement parking required",
+     "cue": "no"
+    }
+   ],
+   "speak": "In Saugus, a common fit is a garage conversion on an older tract lot, at about one hundred thousand dollars to two hundred thousand dollars and up. Many older Saugus homes have an attached two-car garage facing the street. Keeps the backyard open. Reuses the slab, walls and roof. No replacement parking required.",
+   "say": "In Saugus, a common fit is a garage conversion on an older tract lot, at about $100,000 to $200,000 and up. Many older Saugus homes have an attached two-car garage facing the street. Keeps the backyard open. Reuses the slab, walls and roof. No replacement parking required."
+  },
+  {
+   "id": "f2",
+   "kind": "price",
+   "label": "Bridgeport",
+   "image": "p38-studio-adu-wall-bed.jpg",
+   "kicker": "Bridgeport · Junior ADU",
+   "name": "Junior ADU inside a Cape Cod home",
+   "lo": 60,
+   "hi": 120,
+   "plus": true,
+   "priceCue": "Bridgeport",
+   "desc": "Compact Valencia lots where a backyard unit may not fit.",
+   "bullets": [
+    {
+     "t": "Up to 500 sq ft within the existing walls",
+     "cue": "up"
+    },
+    {
+     "t": "Separate outside door",
+     "cue": "separate"
+    },
+    {
+     "t": "Efficiency kitchen",
+     "cue": "efficiency"
+    }
+   ],
+   "speak": "In Bridgeport, a common fit is a junior ADU inside a Cape Cod home, at about sixty thousand dollars to one hundred twenty thousand dollars and up. Compact Valencia lots where a backyard unit may not fit. Up to 500 sq ft within the existing walls. Separate outside door. Efficiency kitchen.",
+   "say": "In Bridgeport, a common fit is a junior ADU inside a Cape Cod home, at about $60,000 to $120,000 and up. Compact Valencia lots where a backyard unit may not fit. Up to 500 sq ft within the existing walls. Separate outside door. Efficiency kitchen."
+  },
+  {
+   "id": "f3",
+   "kind": "price",
+   "label": "Stevenson Ranch",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "Stevenson Ranch · Detached ADU",
+   "name": "Detached ADU on a hillside lot",
+   "lo": 200,
+   "hi": 400,
+   "plus": true,
+   "priceCue": "Stevenson",
+   "desc": "Sloped rear yards in the Santa Susana foothills.",
+   "bullets": [
+    {
+     "t": "Permitted by LA County, not the city",
+     "cue": "permitted"
+    },
+    {
+     "t": "Stepped or engineered foundation",
+     "cue": "stepped"
+    },
+    {
+     "t": "Soils report & drainage",
+     "cue": "soils"
+    }
+   ],
+   "speak": "In Stevenson Ranch, a common fit is a detached ADU on a hillside lot, at about two hundred thousand dollars to four hundred thousand dollars and up. Sloped rear yards in the Santa Susana foothills. Permitted by LA County, not the city. Stepped or engineered foundation. Soils report and drainage.",
+   "say": "In Stevenson Ranch, a common fit is a detached ADU on a hillside lot, at about $200,000 to $400,000 and up. Sloped rear yards in the Santa Susana foothills. Permitted by LA County, not the city. Stepped or engineered foundation. Soils report and drainage."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "cols": 3,
+   "title": "What drives ADU cost in Santa Clarita",
+   "cards": [
+    {
+     "name": "City or county permit",
+     "desc": "Stevenson Ranch & Castaic go through LA County",
+     "image": "p02-adu-interior-entry-door.jpg",
+     "cue": "city"
+    },
+    {
+     "name": "Hillside lots",
+     "desc": "Grading, retaining walls & soils reports",
+     "image": "p26-garage-to-adu-conversion-site.jpg",
+     "cue": "hillside"
+    },
+    {
+     "name": "Oak trees",
+     "desc": "Protected oaks change where the ADU can go",
+     "image": "p09-backyard-cottage-adu.jpg",
+     "cue": "oak"
+    },
+    {
+     "name": "Fire zones",
+     "desc": "2025 maps grew the Very High zones",
+     "image": "p04-adu-roof-sheathing.jpg",
+     "cue": "fire"
+    },
+    {
+     "name": "Utility runs",
+     "desc": "Sewer laterals, trenching & panel upgrades",
+     "image": "p01-adu-framing-plumbing-rough-in.jpg",
+     "cue": "utility"
+    },
+    {
+     "name": "Kitchens & baths",
+     "desc": "Finishes move the total most",
+     "image": "p23-galley-adu-kitchen.jpg",
+     "cue": "kitchens"
+    }
+   ],
+   "say": "What drives the price in Santa Clarita? City or county permit: stevenson Ranch & Castaic go through LA County. Hillside lots: grading, retaining walls & soils reports. Oak trees: protected oaks change where the ADU can go. Fire zones: 2025 maps grew the Very High zones. Utility runs: sewer laterals, trenching & panel upgrades. Kitchens & baths: finishes move the total most."
+  },
+  {
+   "id": "rules",
+   "kind": "stats",
+   "label": "Rules to Know",
+   "title": "Santa Clarita ADU rules to know",
+   "tiles": [
+    {
+     "v": "4 ft",
+     "n": "Side & rear setbacks",
+     "s": "The most a city can require",
+     "cue": "4-foot"
+    },
+    {
+     "v": "60",
+     "n": "Days to decide",
+     "s": "On a complete application",
+     "cue": "60"
+    },
+    {
+     "v": "≤750",
+     "n": "Sq ft, no impact fees",
+     "s": "Smaller units skip impact fees",
+     "cue": "750"
+    },
+    {
+     "v": "0",
+     "n": "Parking spaces",
+     "s": "City's 2026 ADU handout",
+     "cue": "parking"
+    }
+   ],
+   "tvPx": 64,
+   "speak": "A few rules to know. A city can require no more than four-foot side and rear setbacks. A city has sixty days to act on a complete application. ADUs of seven hundred fifty square feet or less skip impact fees. And in Santa Clarita, the city's 2026 handout requires zero parking spaces for ADUs.",
+   "say": "A few rules to know. A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. ADUs of 750 square feet or less skip impact fees. And in Santa Clarita, the city's 2026 handout requires 0 parking spaces for ADUs."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Can I rent it out?",
+     "desc": "Yes, for 30 days or longer. No vacation rentals",
+     "icon": "roof",
+     "cue": "can"
+    },
+    {
+     "name": "Do I need parking?",
+     "desc": "No parking required for ADUs or JADUs in the city",
+     "icon": "map",
+     "cue": "do"
+    },
+    {
+     "name": "Must I live on site?",
+     "desc": "No, except a JADU sharing a bath with the house",
+     "icon": "pin",
+     "cue": "must"
+    },
+    {
+     "name": "Property taxes?",
+     "desc": "Only the ADU's value is added; the house isn't reassessed",
+     "icon": "chart",
+     "cue": "property"
+    }
+   ],
+   "say": "Common questions: Can I rent it out? Yes, for 30 days or longer. No vacation rentals. Do I need parking? No parking required for ADUs or JADUs in the city. Must I live on site? No, except a JADU sharing a bath with the house. Property taxes? Only the ADU's value is added; the house isn't reassessed."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Santa Clarita ADU Builder Pros",
+   "nameCue": "Santa",
+   "where": "Valencia · Saugus · Newhall · Canyon Country",
+   "points": [
+    "Site review & ADU design",
+    "Permits & plan check, city or county",
+    "Foundations, utilities & construction",
+    "Garage conversions to new backyard homes",
+    "Reply within 24 hours"
+   ],
+   "say": "If you need an ADU builder or contractor in Santa Clarita, give Santa Clarita ADU Builder Pros a shout. They handle the whole path, from site review and design to permits, construction and final inspection."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "ADU Interiors",
+   "plain": true,
+   "title": "Inside a finished ADU",
+   "sub": "Kitchens, baths & living space",
+   "steps": [
+    {
+     "image": "p16-bedroom-built-in-cabinets.jpg"
+    },
+    {
+     "image": "p30-living-room-fireplace.jpg"
+    },
+    {
+     "image": "p47-white-shaker-kitchen.jpg"
+    },
+    {
+     "image": "p46-walk-in-shower-sliding-glass.jpg"
+    }
+   ],
+   "say": "A finished ADU is a full home, with its own kitchen, bathroom and living space."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p20-detached-adu-backyard.jpg",
+   "name": "Santa Clarita ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuilderssantaclarita.pro",
+   "urlCue": "visit",
+   "tip": "Serving Valencia, Saugus, Newhall & more",
+   "speak": "For a free ADU consultation in Santa Clarita, visit adu builders santa clarita dot pro. This has been Local Vibe Check.",
+   "say": "For a free ADU consultation in Santa Clarita, visit adubuilderssantaclarita.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p20-detached-adu-backyard.jpg",
+   "kicker": "Santa Clarita, CA · 2026",
+   "title": [
+    "ADU",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Valencia",
+    "Saugus",
+    "Newhall",
+    "Canyon Country"
+   ],
+   "say": "What does an ADU cost in Santa Clarita?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Prices",
+   "title": "ADU prices, Santa Clarita",
+   "max": 500,
+   "ticks": [
+    0,
+    250,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft",
+     "lo": 60,
+     "hi": 120,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 100,
+     "hi": 200,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 160,
+     "hi": 300,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 200,
+     "hi": 400,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "A junior ADU in Santa Clarita starts around sixty thousand dollars. A garage conversion, about one hundred thousand dollars. An attached ADU, about one hundred sixty thousand dollars. And a new detached ADU runs about two hundred thousand dollars to four hundred thousand dollars and up.",
+   "say": "A junior ADU in Santa Clarita starts around $60,000. A garage conversion, about $100,000. An attached ADU, about $160,000. And a new detached ADU runs about $200,000 to $400,000 and up."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Santa Clarita ADU Builder Pros",
+   "nameCue": "Santa",
+   "where": "Valencia, Saugus, Newhall",
+   "points": [
+    "Design & permits",
+    "Construction",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder or contractor? Give Santa Clarita ADU Builder Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p20-detached-adu-backyard.jpg",
+   "name": "Santa Clarita ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuilderssantaclarita.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Visit adu builders santa clarita dot pro for a free consultation.",
+   "say": "Visit adubuilderssantaclarita.pro for a free consultation."
+  }
+ ]
+}

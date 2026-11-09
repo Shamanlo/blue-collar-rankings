@@ -1,0 +1,222 @@
+[
+ [
+  "santa-clarita-adu-builder-pricing-2026",
+  "Santa Clarita",
+  {
+   "jadu": [
+    60,
+    120
+   ],
+   "garage": [
+    100,
+    200
+   ],
+   "attached": [
+    160,
+    300
+   ],
+   "detached": [
+    200,
+    400
+   ]
+  }
+ ],
+ [
+  "thousand-oaks-adu-builder-pricing-2026",
+  "Thousand Oaks",
+  {
+   "jadu": [
+    65,
+    130
+   ],
+   "garage": [
+    105,
+    210
+   ],
+   "attached": [
+    170,
+    320
+   ],
+   "detached": [
+    210,
+    425
+   ]
+  }
+ ],
+ [
+  "calabasas-adu-builder-pricing-2026",
+  "Calabasas",
+  {
+   "jadu": [
+    75,
+    145
+   ],
+   "garage": [
+    120,
+    240
+   ],
+   "attached": [
+    195,
+    365
+   ],
+   "detached": [
+    240,
+    485
+   ]
+  }
+ ],
+ [
+  "westlake-village-adu-builder-pricing-2026",
+  "Westlake Village",
+  {
+   "jadu": [
+    65,
+    130
+   ],
+   "garage": [
+    110,
+    220
+   ],
+   "attached": [
+    175,
+    325
+   ],
+   "detached": [
+    220,
+    435
+   ]
+  }
+ ],
+ [
+  "beverly-hills-adu-builder-pricing-2026",
+  "Beverly Hills",
+  {
+   "jadu": [
+    85,
+    170
+   ],
+   "garage": [
+    145,
+    290
+   ],
+   "attached": [
+    230,
+    430
+   ],
+   "detached": [
+    290,
+    575
+   ]
+  }
+ ],
+ [
+  "malibu-adu-builder-pricing-2026",
+  "Malibu",
+  {
+   "jadu": [
+    90,
+    180
+   ],
+   "garage": [
+    150,
+    300
+   ],
+   "attached": [
+    240,
+    450
+   ],
+   "detached": [
+    300,
+    600
+   ]
+  }
+ ],
+ [
+  "santa-monica-adu-builder-pricing-2026",
+  "Santa Monica",
+  {
+   "jadu": [
+    75,
+    150
+   ],
+   "garage": [
+    125,
+    250
+   ],
+   "attached": [
+    200,
+    375
+   ],
+   "detached": [
+    250,
+    500
+   ]
+  }
+ ],
+ [
+  "pacific-palisades-adu-builder-pricing-2026",
+  "Pacific Palisades",
+  {
+   "jadu": [
+    80,
+    165
+   ],
+   "garage": [
+    140,
+    275
+   ],
+   "attached": [
+    220,
+    415
+   ],
+   "detached": [
+    275,
+    550
+   ]
+  }
+ ],
+ [
+  "culver-city-adu-builder-pricing-2026",
+  "Culver City",
+  {
+   "jadu": [
+    70,
+    140
+   ],
+   "garage": [
+    115,
+    230
+   ],
+   "attached": [
+    185,
+    350
+   ],
+   "detached": [
+    230,
+    465
+   ]
+  }
+ ],
+ [
+  "agoura-hills-adu-builder-pricing-2026",
+  "Agoura Hills",
+  {
+   "jadu": [
+    70,
+    135
+   ],
+   "garage": [
+    110,
+    225
+   ],
+   "attached": [
+    180,
+    340
+   ],
+   "detached": [
+    225,
+    450
+   ]
+  }
+ ]
+]

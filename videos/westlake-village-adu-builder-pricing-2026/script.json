@@ -1,0 +1,479 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "assetsDir": "../_shared/adu-builders",
+ "header": "Westlake Village, CA · ADU Prices · 2026",
+ "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Westlake Village conditions. Ballpark only; get an on-site estimate.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "p42-two-story-open-living.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "ADU",
+   "Prices"
+  ],
+  "sub": "Westlake Village, CA",
+  "tag": "From $65K",
+  "year": "2026",
+  "bigPx": 150,
+  "reelBigPx": 210,
+  "subPx": 52,
+  "reelSubPx": 68,
+  "stamp": [
+   "4",
+   [
+    "ADU",
+    "TYPES"
+   ]
+  ],
+  "reelStamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "kicker": "Westlake Village, California",
+   "titlePx": 124,
+   "title": [
+    "ADU Pricing",
+    "Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "First Neighborhood",
+    "North Ranch",
+    "Southshore Hills",
+    "Lake Sherwood",
+    "Hidden Valley"
+   ],
+   "say": "How much does it cost to build an ADU in Westlake Village in 2026? Here's the pricing guide: what each type of ADU costs, real examples from First Neighborhood, Southshore Hills and North Ranch, what drives the price, and the local rules to know."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What an ADU costs in Westlake Village",
+   "sub": "2026 ranges · design, permits & construction",
+   "max": 500,
+   "ticks": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft, inside the house",
+     "lo": 65,
+     "hi": 130,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 110,
+     "hi": 220,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 175,
+     "hi": 325,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 220,
+     "hi": 435,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "In Westlake Village, a junior ADU runs about sixty-five thousand dollars to one hundred thirty thousand dollars and up. A garage conversion, about one hundred ten thousand dollars to two hundred twenty thousand dollars. An attached ADU, about one hundred seventy-five thousand dollars to three hundred twenty-five thousand dollars. And a brand-new detached ADU runs about two hundred twenty thousand dollars to four hundred thirty-five thousand dollars and up.",
+   "say": "In Westlake Village, a junior ADU runs about $65,000 to $130,000 and up. A garage conversion, about $110,000 to $220,000. An attached ADU, about $175,000 to $325,000. And a brand-new detached ADU runs about $220,000 to $435,000 and up."
+  },
+  {
+   "id": "f1",
+   "kind": "price",
+   "label": "First Neighborhood",
+   "image": "p24-garage-conversion-adu-exterior.jpg",
+   "kicker": "First Neighborhood · Garage conversion",
+   "name": "Garage conversion on an original tract lot",
+   "lo": 110,
+   "hi": 220,
+   "plus": true,
+   "priceCue": "First",
+   "desc": "The earliest Westlake streets, with attached garages on level lots.",
+   "bullets": [
+    {
+     "t": "Can start from LA County's pre-approved plan",
+     "cue": "can"
+    },
+    {
+     "t": "City Zoning Clearance",
+     "cue": "city"
+    },
+    {
+     "t": "Egress windows & insulation",
+     "cue": "egress"
+    }
+   ],
+   "speak": "In First Neighborhood, a common fit is a garage conversion on an original tract lot, at about one hundred ten thousand dollars to two hundred twenty thousand dollars and up. The earliest Westlake streets, with attached garages on level lots. Can start from LA County's pre-approved plan. City Zoning Clearance. Egress windows and insulation.",
+   "say": "In First Neighborhood, a common fit is a garage conversion on an original tract lot, at about $110,000 to $220,000 and up. The earliest Westlake streets, with attached garages on level lots. Can start from LA County's pre-approved plan. City Zoning Clearance. Egress windows and insulation."
+  },
+  {
+   "id": "f2",
+   "kind": "price",
+   "label": "Southshore Hills",
+   "image": "p42-two-story-open-living.jpg",
+   "kicker": "Southshore Hills · Attached ADU",
+   "name": "Attached ADU on a sloped hillside lot",
+   "lo": 175,
+   "hi": 325,
+   "plus": true,
+   "priceCue": "Southshore",
+   "desc": "Homes that step down the hillsides south of the lake.",
+   "bullets": [
+    {
+     "t": "Builds on the existing pad",
+     "cue": "builds"
+    },
+    {
+     "t": "Structural review & soils report",
+     "cue": "structural"
+    },
+    {
+     "t": "Fire-rated materials",
+     "cue": "fire-rated"
+    }
+   ],
+   "speak": "In Southshore Hills, a common fit is an attached ADU on a sloped hillside lot, at about one hundred seventy-five thousand dollars to three hundred twenty-five thousand dollars and up. Homes that step down the hillsides south of the lake. Builds on the existing pad. Structural review and soils report. Fire-rated materials.",
+   "say": "In Southshore Hills, a common fit is an attached ADU on a sloped hillside lot, at about $175,000 to $325,000 and up. Homes that step down the hillsides south of the lake. Builds on the existing pad. Structural review and soils report. Fire-rated materials."
+  },
+  {
+   "id": "f3",
+   "kind": "price",
+   "label": "North Ranch",
+   "image": "p20-detached-adu-backyard.jpg",
+   "kicker": "North Ranch · Detached ADU",
+   "name": "Detached ADU among the oaks",
+   "lo": 220,
+   "hi": 435,
+   "plus": true,
+   "priceCue": "North",
+   "desc": "Larger lots around the country club.",
+   "bullets": [
+    {
+     "t": "Sited outside oak root zones",
+     "cue": "sited"
+    },
+    {
+     "t": "Utility trenching planned around trees",
+     "cue": "utility"
+    },
+    {
+     "t": "HOA architectural review",
+     "cue": "hoa"
+    }
+   ],
+   "speak": "In North Ranch, a common fit is a detached ADU among the oaks, at about two hundred twenty thousand dollars to four hundred thirty-five thousand dollars and up. Larger lots around the country club. Sited outside oak root zones. Utility trenching planned around trees. HOA architectural review.",
+   "say": "In North Ranch, a common fit is a detached ADU among the oaks, at about $220,000 to $435,000 and up. Larger lots around the country club. Sited outside oak root zones. Utility trenching planned around trees. HOA architectural review."
+  },
+  {
+   "id": "rules",
+   "kind": "stats",
+   "label": "Rules to Know",
+   "title": "Westlake Village ADU rules to know",
+   "tiles": [
+    {
+     "v": "4 ft",
+     "n": "Side & rear setbacks",
+     "s": "The most a city can require",
+     "cue": "4-foot"
+    },
+    {
+     "v": "60",
+     "n": "Days to decide",
+     "s": "On a complete application",
+     "cue": "60"
+    },
+    {
+     "v": "500",
+     "n": "Sq ft JADU cap",
+     "s": "Junior ADUs stay inside the house",
+     "cue": "500"
+    },
+    {
+     "v": "2",
+     "n": "Approvals in a row",
+     "s": "City Zoning Clearance, then LA County permit",
+     "cue": "two"
+    }
+   ],
+   "tvPx": 64,
+   "speak": "A few rules to know. A city can require no more than four-foot side and rear setbacks. A city has sixty days to act on a complete application. A junior ADU tops out at five hundred square feet. And in Westlake Village, you need two approvals in a row: a city Zoning Clearance, then an LA County building permit.",
+   "say": "A few rules to know. A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. And in Westlake Village, you need two approvals in a row: a city Zoning Clearance, then an LA County building permit."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "cols": 3,
+   "title": "What drives ADU cost in Westlake Village",
+   "cards": [
+    {
+     "name": "Which agency permits it",
+     "desc": "City + LA County, Thousand Oaks or Ventura County",
+     "image": "p02-adu-interior-entry-door.jpg",
+     "cue": "which"
+    },
+    {
+     "name": "Oak trees",
+     "desc": "Protected oaks shape the footprint",
+     "image": "p09-backyard-cottage-adu.jpg",
+     "cue": "oak"
+    },
+    {
+     "name": "Hillside pads",
+     "desc": "Structural work instead of cutting into slopes",
+     "image": "p08-adu-wood-framing.jpg",
+     "cue": "hillside"
+    },
+    {
+     "name": "Well & septic",
+     "desc": "Hidden Valley ranch parcels",
+     "image": "p01-adu-framing-plumbing-rough-in.jpg",
+     "cue": "well"
+    },
+    {
+     "name": "HOA review",
+     "desc": "Colors, materials & roof style",
+     "image": "p32-new-adu-stucco-exterior.jpg",
+     "cue": "hoa"
+    },
+    {
+     "name": "Finishes",
+     "desc": "Kitchens & baths concentrate cost",
+     "image": "p47-white-shaker-kitchen.jpg",
+     "cue": "finishes"
+    }
+   ],
+   "say": "What drives the price in Westlake Village? Which agency permits it: city + LA County, Thousand Oaks or Ventura County. Oak trees: protected oaks shape the footprint. Hillside pads: structural work instead of cutting into slopes. Well & septic: hidden Valley ranch parcels. HOA review: colors, materials & roof style. Finishes: kitchens & baths concentrate cost."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Which city permits it?",
+     "desc": "Many Westlake addresses are in Thousand Oaks",
+     "icon": "map",
+     "cue": "which"
+    },
+    {
+     "name": "Can my HOA stop it?",
+     "desc": "No, but reasonable design rules apply",
+     "icon": "page",
+     "cue": "can"
+    },
+    {
+     "name": "How close to the line?",
+     "desc": "4-foot side & rear setbacks under state law",
+     "icon": "roof",
+     "cue": "how"
+    },
+    {
+     "name": "Need parking?",
+     "desc": "Not for conversions; max one space otherwise",
+     "icon": "pin",
+     "cue": "need"
+    }
+   ],
+   "say": "Common questions: Which city permits it? Many Westlake addresses are in Thousand Oaks. Can my HOA stop it? No, but reasonable design rules apply. How close to the line? 4-foot side & rear setbacks under state law. Need parking? Not for conversions; max one space otherwise."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p03-adu-open-plan-flooring.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Westlake Village ADU Builder Pros",
+   "nameCue": "Westlake",
+   "where": "First Neighborhood · North Ranch · Southshore Hills · Lake Sherwood",
+   "points": [
+    "Site review & ADU design",
+    "Permits & plan check, city or county",
+    "Foundations, utilities & construction",
+    "Garage conversions to new backyard homes",
+    "Reply within 24 hours"
+   ],
+   "say": "If you need an ADU builder or contractor in Westlake Village, give Westlake Village ADU Builder Pros a shout. They handle the whole path, from site review and design to permits, construction and final inspection."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "ADU Interiors",
+   "plain": true,
+   "title": "Inside a finished ADU",
+   "sub": "Kitchens, baths & living space",
+   "steps": [
+    {
+     "image": "p42-two-story-open-living.jpg"
+    },
+    {
+     "image": "p31-mosaic-floor-glass-shower.jpg"
+    },
+    {
+     "image": "p23-galley-adu-kitchen.jpg"
+    },
+    {
+     "image": "p15-bathroom-white-vanity-arched-mirror.jpg"
+    }
+   ],
+   "say": "A finished ADU is a full home, with its own kitchen, bathroom and living space."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "name": "Westlake Village ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuilderswestlakevillage.pro",
+   "urlCue": "visit",
+   "tip": "Serving First Neighborhood, North Ranch, Southshore Hills & more",
+   "speak": "For a free ADU consultation in Westlake Village, visit adu builders westlake village dot pro. This has been Local Vibe Check.",
+   "say": "For a free ADU consultation in Westlake Village, visit adubuilderswestlakevillage.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "kicker": "Westlake Village, CA · 2026",
+   "title": [
+    "ADU",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "First Neighborhood",
+    "North Ranch",
+    "Southshore Hills",
+    "Lake Sherwood"
+   ],
+   "say": "What does an ADU cost in Westlake Village?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Prices",
+   "title": "ADU prices, Westlake Village",
+   "max": 500,
+   "ticks": [
+    0,
+    250,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft",
+     "lo": 65,
+     "hi": 130,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 110,
+     "hi": 220,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 175,
+     "hi": 325,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 220,
+     "hi": 435,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "A junior ADU in Westlake Village starts around sixty-five thousand dollars. A garage conversion, about one hundred ten thousand dollars. An attached ADU, about one hundred seventy-five thousand dollars. And a new detached ADU runs about two hundred twenty thousand dollars to four hundred thirty-five thousand dollars and up.",
+   "say": "A junior ADU in Westlake Village starts around $65,000. A garage conversion, about $110,000. An attached ADU, about $175,000. And a new detached ADU runs about $220,000 to $435,000 and up."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p03-adu-open-plan-flooring.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Westlake Village ADU Builder Pros",
+   "nameCue": "Westlake",
+   "where": "First Neighborhood, North Ranch, Southshore Hills",
+   "points": [
+    "Design & permits",
+    "Construction",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder or contractor? Give Westlake Village ADU Builder Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "name": "Westlake Village ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuilderswestlakevillage.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Visit adu builders westlake village dot pro for a free consultation.",
+   "say": "Visit adubuilderswestlakevillage.pro for a free consultation."
+  }
+ ]
+}

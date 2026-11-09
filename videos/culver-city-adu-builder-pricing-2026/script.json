@@ -1,0 +1,479 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "assetsDir": "../_shared/adu-builders",
+ "header": "Culver City, CA · ADU Prices · 2026",
+ "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Culver City conditions. Ballpark only; get an on-site estimate.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "p24-garage-conversion-adu-exterior.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "ADU",
+   "Prices"
+  ],
+  "sub": "Culver City, CA",
+  "tag": "From $70K",
+  "year": "2026",
+  "bigPx": 150,
+  "reelBigPx": 210,
+  "subPx": 52,
+  "reelSubPx": 68,
+  "stamp": [
+   "4",
+   [
+    "PRICE",
+    "RANGES"
+   ]
+  ],
+  "reelStamp": [
+   "4",
+   [
+    "ADU",
+    "TYPES"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p24-garage-conversion-adu-exterior.jpg",
+   "kicker": "Culver City, California",
+   "titlePx": 124,
+   "title": [
+    "ADU Pricing",
+    "Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "Carlson Park",
+    "Sunkist Park",
+    "Blair Hills",
+    "Fox Hills",
+    "Culver West"
+   ],
+   "say": "What does an accessory dwelling unit really cost in Culver City? We break down 2026 prices for every type of ADU, the neighborhood examples, and what moves the price up or down."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What an ADU costs in Culver City",
+   "sub": "2026 ranges · design, permits & construction",
+   "max": 500,
+   "ticks": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft, inside the house",
+     "lo": 70,
+     "hi": 140,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 115,
+     "hi": 230,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 185,
+     "hi": 350,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 230,
+     "hi": 465,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "In Culver City, a junior ADU runs about seventy thousand dollars to one hundred forty thousand dollars and up. A garage conversion, about one hundred fifteen thousand dollars to two hundred thirty thousand dollars. An attached ADU, about one hundred eighty-five thousand dollars to three hundred fifty thousand dollars. And a brand-new detached ADU runs about two hundred thirty thousand dollars to four hundred sixty-five thousand dollars and up.",
+   "say": "In Culver City, a junior ADU runs about $70,000 to $140,000 and up. A garage conversion, about $115,000 to $230,000. An attached ADU, about $185,000 to $350,000. And a brand-new detached ADU runs about $230,000 to $465,000 and up."
+  },
+  {
+   "id": "f1",
+   "kind": "price",
+   "label": "Carlson Park",
+   "image": "p25-garage-conversion-wall-infill.jpg",
+   "kicker": "Carlson Park · Garage conversion",
+   "name": "Garage conversion behind a bungalow",
+   "lo": 115,
+   "hi": 230,
+   "plus": true,
+   "priceCue": "Carlson",
+   "desc": "Older bungalows and Spanish revival homes with a rear garage.",
+   "bullets": [
+    {
+     "t": "Detached garage at the back of the lot",
+     "cue": "detached"
+    },
+    {
+     "t": "Keeps the yard intact",
+     "cue": "keeps"
+    },
+    {
+     "t": "No replacement parking",
+     "cue": "no"
+    }
+   ],
+   "speak": "In Carlson Park, a common fit is a garage conversion behind a bungalow, at about one hundred fifteen thousand dollars to two hundred thirty thousand dollars and up. Older bungalows and Spanish revival homes with a rear garage. Detached garage at the back of the lot. Keeps the yard intact. No replacement parking.",
+   "say": "In Carlson Park, a common fit is a garage conversion behind a bungalow, at about $115,000 to $230,000 and up. Older bungalows and Spanish revival homes with a rear garage. Detached garage at the back of the lot. Keeps the yard intact. No replacement parking."
+  },
+  {
+   "id": "f2",
+   "kind": "price",
+   "label": "Blair Hills",
+   "image": "p20-detached-adu-backyard.jpg",
+   "kicker": "Blair Hills · Detached ADU",
+   "name": "Detached ADU on a fire-zone hillside",
+   "lo": 230,
+   "hi": 465,
+   "plus": true,
+   "priceCue": "Blair",
+   "desc": "Very High fire zone on the slopes of the Baldwin Hills.",
+   "bullets": [
+    {
+     "t": "Stepped or deeper footings",
+     "cue": "stepped"
+    },
+    {
+     "t": "Soils report",
+     "cue": "soils"
+    },
+    {
+     "t": "Ignition-resistant siding & roofing",
+     "cue": "ignition-resistant"
+    }
+   ],
+   "speak": "In Blair Hills, a common fit is a detached ADU on a fire-zone hillside, at about two hundred thirty thousand dollars to four hundred sixty-five thousand dollars and up. Very High fire zone on the slopes of the Baldwin Hills. Stepped or deeper footings. Soils report. Ignition-resistant siding and roofing.",
+   "say": "In Blair Hills, a common fit is a detached ADU on a fire-zone hillside, at about $230,000 to $465,000 and up. Very High fire zone on the slopes of the Baldwin Hills. Stepped or deeper footings. Soils report. Ignition-resistant siding and roofing."
+  },
+  {
+   "id": "f3",
+   "kind": "price",
+   "label": "Sunkist Park",
+   "image": "p16-bedroom-built-in-cabinets.jpg",
+   "kicker": "Sunkist Park · Junior ADU",
+   "name": "Junior ADU inside a post-war home",
+   "lo": 70,
+   "hi": 140,
+   "plus": true,
+   "priceCue": "Sunkist",
+   "desc": "Compact post-war homes on modest lots.",
+   "bullets": [
+    {
+     "t": "Up to 500 sq ft within the walls",
+     "cue": "up"
+    },
+    {
+     "t": "Its own exterior door",
+     "cue": "its"
+    },
+    {
+     "t": "Keeps the backyard",
+     "cue": "keeps"
+    }
+   ],
+   "speak": "In Sunkist Park, a common fit is a junior ADU inside a post-war home, at about seventy thousand dollars to one hundred forty thousand dollars and up. Compact post-war homes on modest lots. Up to 500 sq ft within the walls. Its own exterior door. Keeps the backyard.",
+   "say": "In Sunkist Park, a common fit is a junior ADU inside a post-war home, at about $70,000 to $140,000 and up. Compact post-war homes on modest lots. Up to 500 sq ft within the walls. Its own exterior door. Keeps the backyard."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "cols": 3,
+   "title": "What drives ADU cost in Culver City",
+   "cards": [
+    {
+     "name": "Pre-approved plans",
+     "desc": "468, 637 or 806 sq ft new-build layouts",
+     "image": "p32-new-adu-stucco-exterior.jpg",
+     "cue": "pre-approved"
+    },
+    {
+     "name": "Baldwin Hills slopes",
+     "desc": "Retaining walls & longer utility runs",
+     "image": "p26-garage-to-adu-conversion-site.jpg",
+     "cue": "baldwin"
+    },
+    {
+     "name": "Fire zone",
+     "desc": "Blair Hills & Culver Crest",
+     "image": "p04-adu-roof-sheathing.jpg",
+     "cue": "fire"
+    },
+    {
+     "name": "Water provider",
+     "desc": "LADWP or Golden State Water",
+     "image": "p01-adu-framing-plumbing-rough-in.jpg",
+     "cue": "water"
+    },
+    {
+     "name": "Older garages",
+     "desc": "Foundation & framing checks",
+     "image": "p25-garage-conversion-wall-infill.jpg",
+     "cue": "older"
+    },
+    {
+     "name": "Finishes",
+     "desc": "Kitchens & baths move the total",
+     "image": "p36-small-kitchen-blue-cabinets.jpg",
+     "cue": "finishes"
+    }
+   ],
+   "say": "What drives the price in Culver City? Pre-approved plans: 468, 637 or 806 sq ft new-build layouts. Baldwin Hills slopes: retaining walls & longer utility runs. Fire zone: blair Hills & Culver Crest. Water provider: lADWP or Golden State Water. Older garages: foundation & framing checks. Finishes: kitchens & baths move the total."
+  },
+  {
+   "id": "rules",
+   "kind": "stats",
+   "label": "Rules to Know",
+   "title": "Culver City ADU rules to know",
+   "tiles": [
+    {
+     "v": "4 ft",
+     "n": "Side & rear setbacks",
+     "s": "The most a city can require",
+     "cue": "4-foot"
+    },
+    {
+     "v": "60",
+     "n": "Days to decide",
+     "s": "On a complete application",
+     "cue": "60"
+    },
+    {
+     "v": "≤750",
+     "n": "Sq ft, no impact fees",
+     "s": "Smaller units skip impact fees",
+     "cue": "750"
+    },
+    {
+     "v": "3",
+     "n": "Pre-approved plans",
+     "s": "Studio, 1-bed & 2-bed layouts",
+     "cue": "pre-approved"
+    }
+   ],
+   "tvPx": 64,
+   "speak": "A few rules to know. A city can require no more than four-foot side and rear setbacks. A city has sixty days to act on a complete application. ADUs of seven hundred fifty square feet or less skip impact fees. And Culver City offers three pre-approved ADU plans for new builds.",
+   "say": "A few rules to know. A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. ADUs of 750 square feet or less skip impact fees. And Culver City offers three pre-approved ADU plans for new builds."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Who issues the permit?",
+     "desc": "Culver City inside city limits; LA for Palms",
+     "icon": "page",
+     "cue": "who"
+    },
+    {
+     "name": "Need parking?",
+     "desc": "Often not near E Line stations or bus routes",
+     "icon": "map",
+     "cue": "need"
+    },
+    {
+     "name": "Pre-approved plans?",
+     "desc": "New builds only, not garage conversions",
+     "icon": "search",
+     "cue": "pre-approved"
+    },
+    {
+     "name": "Legalize an old unit?",
+     "desc": "Possibly, with the Safe ADU checklist",
+     "icon": "shield",
+     "cue": "legalize"
+    }
+   ],
+   "say": "Common questions: Who issues the permit? Culver City inside city limits; LA for Palms. Need parking? Often not near E Line stations or bus routes. Pre-approved plans? New builds only, not garage conversions. Legalize an old unit? Possibly, with the Safe ADU checklist."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Culver City ADU Builder Pros",
+   "nameCue": "Culver",
+   "where": "Carlson Park · Sunkist Park · Blair Hills · Fox Hills",
+   "points": [
+    "Site review & ADU design",
+    "Permits & plan check, city or county",
+    "Foundations, utilities & construction",
+    "Garage conversions to new backyard homes",
+    "Reply within 24 hours"
+   ],
+   "say": "Looking for an ADU contractor in Culver City? Give Culver City ADU Builder Pros a shout. One team handles your design, your permit file and the build, all the way to the final inspection."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "ADU Interiors",
+   "plain": true,
+   "title": "Inside a finished ADU",
+   "sub": "Kitchens, baths & living space",
+   "steps": [
+    {
+     "image": "p18-compact-adu-kitchen.jpg"
+    },
+    {
+     "image": "p45-walk-in-shower-blue-accents.jpg"
+    },
+    {
+     "image": "p07-adu-vaulted-living-space.jpg"
+    },
+    {
+     "image": "p10-bathroom-backlit-mirror.jpg"
+    }
+   ],
+   "say": "A finished ADU is a full home, with its own kitchen, bathroom and living space."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "name": "Culver City ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuildersculvercity.pro",
+   "urlCue": "visit",
+   "tip": "Serving Carlson Park, Sunkist Park, Blair Hills & more",
+   "speak": "For a free ADU consultation in Culver City, visit adu builders culver city dot pro. This has been Local Vibe Check.",
+   "say": "For a free ADU consultation in Culver City, visit adubuildersculvercity.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p24-garage-conversion-adu-exterior.jpg",
+   "kicker": "Culver City, CA · 2026",
+   "title": [
+    "ADU",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "Carlson Park",
+    "Sunkist Park",
+    "Blair Hills",
+    "Fox Hills"
+   ],
+   "say": "What does an ADU cost in Culver City?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Prices",
+   "title": "ADU prices, Culver City",
+   "max": 500,
+   "ticks": [
+    0,
+    250,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft",
+     "lo": 70,
+     "hi": 140,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 115,
+     "hi": 230,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 185,
+     "hi": 350,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 230,
+     "hi": 465,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "A junior ADU in Culver City starts around seventy thousand dollars. A garage conversion, about one hundred fifteen thousand dollars. An attached ADU, about one hundred eighty-five thousand dollars. And a new detached ADU runs about two hundred thirty thousand dollars to four hundred sixty-five thousand dollars and up.",
+   "say": "A junior ADU in Culver City starts around $70,000. A garage conversion, about $115,000. An attached ADU, about $185,000. And a new detached ADU runs about $230,000 to $465,000 and up."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p32-new-adu-stucco-exterior.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Culver City ADU Builder Pros",
+   "nameCue": "Culver",
+   "where": "Carlson Park, Sunkist Park, Blair Hills",
+   "points": [
+    "Design & permits",
+    "Construction",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder or contractor? Give Culver City ADU Builder Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "name": "Culver City ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuildersculvercity.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Visit adu builders culver city dot pro for a free consultation.",
+   "say": "Visit adubuildersculvercity.pro for a free consultation."
+  }
+ ]
+}

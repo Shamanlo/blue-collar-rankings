@@ -1,0 +1,479 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "assetsDir": "../_shared/adu-builders",
+ "header": "Santa Monica, CA · ADU Prices · 2026",
+ "source": "Estimated 2026 ranges: a Westside design/build ADU baseline adjusted for Santa Monica conditions. Ballpark only; get an on-site estimate.",
+ "sourceKinds": [
+  "ranges",
+  "price"
+ ],
+ "thumbs": {
+  "image": "p09-backyard-cottage-adu.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "ADU",
+   "Cost"
+  ],
+  "sub": "Santa Monica, CA",
+  "tag": "From $75K",
+  "year": "2026",
+  "bigPx": 150,
+  "reelBigPx": 210,
+  "subPx": 52,
+  "reelSubPx": 68,
+  "stamp": [
+   "4",
+   [
+    "ADU",
+    "TYPES"
+   ]
+  ],
+  "reelStamp": [
+   "2026",
+   [
+    "PRICE",
+    "GUIDE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "Santa Monica, California",
+   "titlePx": 124,
+   "title": [
+    "ADU Pricing",
+    "Guide"
+   ],
+   "year": "2026",
+   "chips": [
+    "North of Montana",
+    "Ocean Park",
+    "Sunset Park",
+    "Mid-City",
+    "Sawtelle"
+   ],
+   "say": "How much does it cost to build an ADU in Santa Monica in 2026? Here's the pricing guide: what each type of ADU costs, real examples from North of Montana, Sunset Park and Mid-City, what drives the price, and the local rules to know."
+  },
+  {
+   "id": "ranges",
+   "kind": "ranges",
+   "label": "2026 Price Ranges",
+   "title": "What an ADU costs in Santa Monica",
+   "sub": "2026 ranges · design, permits & construction",
+   "max": 500,
+   "ticks": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft, inside the house",
+     "lo": 75,
+     "hi": 150,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 125,
+     "hi": 250,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 200,
+     "hi": 375,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 250,
+     "hi": 500,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "In Santa Monica, a junior ADU runs about seventy-five thousand dollars to one hundred fifty thousand dollars and up. A garage conversion, about one hundred twenty-five thousand dollars to two hundred fifty thousand dollars. An attached ADU, about two hundred thousand dollars to three hundred seventy-five thousand dollars. And a brand-new detached ADU runs about two hundred fifty thousand dollars to five hundred thousand dollars and up.",
+   "say": "In Santa Monica, a junior ADU runs about $75,000 to $150,000 and up. A garage conversion, about $125,000 to $250,000. An attached ADU, about $200,000 to $375,000. And a brand-new detached ADU runs about $250,000 to $500,000 and up."
+  },
+  {
+   "id": "f1",
+   "kind": "price",
+   "label": "North of Montana",
+   "image": "p20-detached-adu-backyard.jpg",
+   "kicker": "North of Montana · Detached ADU",
+   "name": "Two-bedroom detached ADU on a 50x150 lot",
+   "lo": 250,
+   "hi": 500,
+   "plus": true,
+   "priceCue": "North",
+   "desc": "Long, flat parcels with space near the rear line.",
+   "bullets": [
+    {
+     "t": "Room for a two-story cottage",
+     "cue": "room"
+    },
+    {
+     "t": "A real garden between the buildings",
+     "cue": "a"
+    },
+    {
+     "t": "Family-sized ADUs most realistic here",
+     "cue": "family-sized"
+    }
+   ],
+   "speak": "In North of Montana, a common fit is a two-bedroom detached ADU on a 50x150 lot, at about two hundred fifty thousand dollars to five hundred thousand dollars and up. Long, flat parcels with space near the rear line. Room for a two-story cottage. A real garden between the buildings. Family-sized ADUs most realistic here.",
+   "say": "In North of Montana, a common fit is a two-bedroom detached ADU on a 50x150 lot, at about $250,000 to $500,000 and up. Long, flat parcels with space near the rear line. Room for a two-story cottage. A real garden between the buildings. Family-sized ADUs most realistic here."
+  },
+  {
+   "id": "f2",
+   "kind": "price",
+   "label": "Sunset Park",
+   "image": "p25-garage-conversion-wall-infill.jpg",
+   "kicker": "Sunset Park · Garage conversion",
+   "name": "Garage conversion behind a 1940s cottage",
+   "lo": 125,
+   "hi": 250,
+   "plus": true,
+   "priceCue": "Sunset",
+   "desc": "Small postwar homes with a detached garage at the back.",
+   "bullets": [
+    {
+     "t": "Reuses the footprint, keeps the yard",
+     "cue": "reuses"
+    },
+    {
+     "t": "Foundation check & structural review",
+     "cue": "foundation"
+    },
+    {
+     "t": "Insulation, windows & panel upgrade",
+     "cue": "insulation"
+    }
+   ],
+   "speak": "In Sunset Park, a common fit is a garage conversion behind a 1940s cottage, at about one hundred twenty-five thousand dollars to two hundred fifty thousand dollars and up. Small postwar homes with a detached garage at the back. Reuses the footprint, keeps the yard. Foundation check and structural review. Insulation, windows and panel upgrade.",
+   "say": "In Sunset Park, a common fit is a garage conversion behind a 1940s cottage, at about $125,000 to $250,000 and up. Small postwar homes with a detached garage at the back. Reuses the footprint, keeps the yard. Foundation check and structural review. Insulation, windows and panel upgrade."
+  },
+  {
+   "id": "f3",
+   "kind": "price",
+   "label": "Mid-City",
+   "image": "p02-adu-interior-entry-door.jpg",
+   "kicker": "Mid-City · Junior ADU",
+   "name": "Junior ADU with alley access",
+   "lo": 75,
+   "hi": 150,
+   "plus": true,
+   "priceCue": "Mid-City",
+   "desc": "Grid blocks where a rear alley is the most useful thing on the lot.",
+   "bullets": [
+    {
+     "t": "Up to 500 sq ft inside the house",
+     "cue": "up"
+    },
+    {
+     "t": "Its own exterior door",
+     "cue": "its"
+    },
+    {
+     "t": "Alley makes deliveries easier",
+     "cue": "alley"
+    }
+   ],
+   "speak": "In Mid-City, a common fit is a junior ADU with alley access, at about seventy-five thousand dollars to one hundred fifty thousand dollars and up. Grid blocks where a rear alley is the most useful thing on the lot. Up to 500 sq ft inside the house. Its own exterior door. Alley makes deliveries easier.",
+   "say": "In Mid-City, a common fit is a junior ADU with alley access, at about $75,000 to $150,000 and up. Grid blocks where a rear alley is the most useful thing on the lot. Up to 500 sq ft inside the house. Its own exterior door. Alley makes deliveries easier."
+  },
+  {
+   "id": "drivers",
+   "kind": "factors",
+   "label": "What Drives the Price",
+   "cols": 3,
+   "title": "What drives ADU cost in Santa Monica",
+   "cards": [
+    {
+     "name": "Alley access",
+     "desc": "Utilities, deliveries & a separate front door",
+     "image": "p26-garage-to-adu-conversion-site.jpg",
+     "cue": "alley"
+    },
+    {
+     "name": "Coastal Zone lots",
+     "desc": "Some parcels need a Coastal Commission permit",
+     "image": "p09-backyard-cottage-adu.jpg",
+     "cue": "coastal"
+    },
+    {
+     "name": "Two-story units",
+     "desc": "Structure, stairs & fire separation",
+     "image": "p37-two-story-stair-hallway.jpg",
+     "cue": "two-story"
+    },
+    {
+     "name": "Older slabs",
+     "desc": "Postwar garages often need upgrades",
+     "image": "p25-garage-conversion-wall-infill.jpg",
+     "cue": "older"
+    },
+    {
+     "name": "Panel upgrades",
+     "desc": "A second kitchen needs more power",
+     "image": "p00-adu-framing-electrical-rough-in.jpg",
+     "cue": "panel"
+    },
+    {
+     "name": "Finishes",
+     "desc": "Kitchens & baths set the total",
+     "image": "p18-compact-adu-kitchen.jpg",
+     "cue": "finishes"
+    }
+   ],
+   "say": "What drives the price in Santa Monica? Alley access: utilities, deliveries & a separate front door. Coastal Zone lots: some parcels need a Coastal Commission permit. Two-story units: structure, stairs & fire separation. Older slabs: postwar garages often need upgrades. Panel upgrades: a second kitchen needs more power. Finishes: kitchens & baths set the total."
+  },
+  {
+   "id": "rules",
+   "kind": "stats",
+   "label": "Rules to Know",
+   "title": "Santa Monica ADU rules to know",
+   "tiles": [
+    {
+     "v": "4 ft",
+     "n": "Side & rear setbacks",
+     "s": "The most a city can require",
+     "cue": "4-foot"
+    },
+    {
+     "v": "60",
+     "n": "Days to decide",
+     "s": "On a complete application",
+     "cue": "60"
+    },
+    {
+     "v": "≤750",
+     "n": "Sq ft, no impact fees",
+     "s": "Smaller units skip impact fees",
+     "cue": "750"
+    },
+    {
+     "v": "Condo",
+     "n": "ADUs can be sold",
+     "s": "Santa Monica's condo ordinance",
+     "cue": "sold"
+    }
+   ],
+   "tvPx": 64,
+   "speak": "A few rules to know. A city can require no more than four-foot side and rear setbacks. A city has sixty days to act on a complete application. ADUs of seven hundred fifty square feet or less skip impact fees. And Santa Monica is one of the few cities where an ADU can be sold separately, as a condo.",
+   "say": "A few rules to know. A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. ADUs of 750 square feet or less skip impact fees. And Santa Monica is one of the few cities where an ADU can be sold separately, as a condo."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Must I live on site?",
+     "desc": "No owner occupancy required",
+     "icon": "pin",
+     "cue": "must"
+    },
+    {
+     "name": "Vacation rental?",
+     "desc": "No. Rentals must be over 30 days",
+     "icon": "roof",
+     "cue": "vacation"
+    },
+    {
+     "name": "Need parking?",
+     "desc": "No on-site parking required",
+     "icon": "map",
+     "cue": "need"
+    },
+    {
+     "name": "Sell it separately?",
+     "desc": "Yes, through the city's condo ordinance",
+     "icon": "page",
+     "cue": "sell"
+    }
+   ],
+   "say": "Common questions: Must I live on site? No owner occupancy required. Vacation rental? No. Rentals must be over 30 days. Need parking? No on-site parking required. Sell it separately? Yes, through the city's condo ordinance."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p07-adu-vaulted-living-space.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Santa Monica ADU Builder Pros",
+   "nameCue": "Santa",
+   "where": "North of Montana · Ocean Park · Sunset Park · Mid-City",
+   "points": [
+    "Site review & ADU design",
+    "Permits & plan check, city or county",
+    "Foundations, utilities & construction",
+    "Garage conversions to new backyard homes",
+    "Reply within 24 hours"
+   ],
+   "say": "If you need an ADU builder or contractor in Santa Monica, give Santa Monica ADU Builder Pros a shout. They handle the whole path, from site review and design to permits, construction and final inspection."
+  },
+  {
+   "id": "work",
+   "kind": "steps",
+   "label": "ADU Interiors",
+   "plain": true,
+   "title": "Inside a finished ADU",
+   "sub": "Kitchens, baths & living space",
+   "steps": [
+    {
+     "image": "p29-adu-kitchen-from-entry.jpg"
+    },
+    {
+     "image": "p39-tub-garden-window.jpg"
+    },
+    {
+     "image": "p16-bedroom-built-in-cabinets.jpg"
+    },
+    {
+     "image": "p44-vanity-led-mirror.jpg"
+    }
+   ],
+   "say": "A finished ADU is a full home, with its own kitchen, bathroom and living space."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p20-detached-adu-backyard.jpg",
+   "name": "Santa Monica ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuilderssantamonica.pro",
+   "urlCue": "visit",
+   "tip": "Serving North of Montana, Ocean Park, Sunset Park & more",
+   "speak": "For a free ADU consultation in Santa Monica, visit adu builders santa monica dot pro. This has been Local Vibe Check.",
+   "say": "For a free ADU consultation in Santa Monica, visit adubuilderssantamonica.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "2026 Price Guide",
+   "image": "p09-backyard-cottage-adu.jpg",
+   "kicker": "Santa Monica, CA · 2026",
+   "title": [
+    "ADU",
+    "Prices"
+   ],
+   "year": "2026",
+   "chips": [
+    "North of Montana",
+    "Ocean Park",
+    "Sunset Park",
+    "Mid-City"
+   ],
+   "say": "What does an ADU cost in Santa Monica?"
+  },
+  {
+   "id": "r-ranges",
+   "kind": "ranges",
+   "label": "2026 Prices",
+   "title": "ADU prices, Santa Monica",
+   "max": 500,
+   "ticks": [
+    0,
+    250,
+    500
+   ],
+   "rows": [
+    {
+     "name": "Junior ADU",
+     "note": "Up to 500 sq ft",
+     "lo": 75,
+     "hi": 150,
+     "plus": true,
+     "cue": "junior"
+    },
+    {
+     "name": "Garage conversion",
+     "note": "Studio or 1-bedroom",
+     "lo": 125,
+     "hi": 250,
+     "plus": true,
+     "cue": "garage"
+    },
+    {
+     "name": "Attached ADU",
+     "note": "New addition to the house",
+     "lo": 200,
+     "hi": 375,
+     "plus": true,
+     "cue": "attached"
+    },
+    {
+     "name": "Detached ADU",
+     "note": "New backyard home",
+     "lo": 250,
+     "hi": 500,
+     "plus": true,
+     "cue": "detached"
+    }
+   ],
+   "speak": "A junior ADU in Santa Monica starts around seventy-five thousand dollars. A garage conversion, about one hundred twenty-five thousand dollars. An attached ADU, about two hundred thousand dollars. And a new detached ADU runs about two hundred fifty thousand dollars to five hundred thousand dollars and up.",
+   "say": "A junior ADU in Santa Monica starts around $75,000. A garage conversion, about $125,000. An attached ADU, about $200,000. And a new detached ADU runs about $250,000 to $500,000 and up."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Need an ADU Builder?",
+   "image": "p07-adu-vaulted-living-space.jpg",
+   "stamp": "Need an ADU builder?",
+   "name": "Santa Monica ADU Builder Pros",
+   "nameCue": "Santa",
+   "where": "North of Montana, Ocean Park, Sunset Park",
+   "points": [
+    "Design & permits",
+    "Construction",
+    "Reply within 24 hours"
+   ],
+   "say": "Need an ADU builder or contractor? Give Santa Monica ADU Builder Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Consultation",
+   "image": "p20-detached-adu-backyard.jpg",
+   "name": "Santa Monica ADU Builder Pros",
+   "phone": "Free Consultation",
+   "phoneCue": "free",
+   "address": "Design · Permits · Construction",
+   "hours": "Reply within 24 hours",
+   "url": "adubuilderssantamonica.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Visit adu builders santa monica dot pro for a free consultation.",
+   "say": "Visit adubuilderssantamonica.pro for a free consultation."
+  }
+ ]
+}
