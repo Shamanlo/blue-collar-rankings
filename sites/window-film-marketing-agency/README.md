@@ -46,6 +46,25 @@ ffmpeg -i /tmp/reel-video.mp4 -i /tmp/audio/mix.wav -map 0:v -map 1:a -c:v libx2
 
 The site serves a 720p copy at `static/video/reel.mp4` with `static/video/reel-poster.jpg`.
 
+### "5 Videos Every Window Film Company Should Post"
+
+A second piece built from real client footage, in two cuts: a 9:16 reel (about 50 s) and a 16:9 video (about 2 min).
+
+- `video/five_build.py <assets>` speaks the script with Gemini TTS (needs `GEMINI_API_KEY`; never commit it),
+  times captions to the voice, and writes `plan-reel.json` / `plan-wide.json`. Script lines, footage cuts and
+  on-screen text are at the top of that file.
+- `video/five-videos.html` draws a plan (`?format=reel` or `?format=wide`); `video/five_audio.py <assets> reel|wide`
+  mixes the voice, the footage's own audio, music and effects.
+- `<assets>` is not in the repo (client footage): `src/owner.mp4`, `src/temp.mp4`, `stills/before.jpg`,
+  `stills/after.jpg`, and `frames/<owner|reviews|temp|timelapse>/00001.jpg…` cut at 30 fps.
+
+```sh
+GEMINI_API_KEY=... python3 video/five_build.py /path/to/assets
+node video/render.mjs /tmp/reel.mp4 --page five-videos.html --assets /path/to/assets
+node video/render.mjs /tmp/wide.mp4 --page five-videos.html --query format=wide --size 1920x1080 --assets /path/to/assets
+python3 video/five_audio.py /path/to/assets reel   # then mux /tmp/reel.mp4 with audio/reel-mix.wav
+```
+
 ## Build
 
 ```sh

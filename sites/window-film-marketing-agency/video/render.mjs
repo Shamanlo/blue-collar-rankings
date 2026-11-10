@@ -1,7 +1,8 @@
-// Renders reel.html to video with Playwright + ffmpeg.
+// Renders a video page (reel.html by default) to video with Playwright + ffmpeg.
 //   node video/render.mjs out.mp4 [--workers 3] [--fps 30]   full render (silent video)
 //   node video/render.mjs --stills dir 0.5,3,9.2              PNG stills at given times
 //   node video/render.mjs --cues cues.json                    sound cue list for audio.py
+// Options: --range 32,43 (render only these seconds)  --page five-videos.html  --query format=wide  --size 1920x1080  --assets <dir served at /assets/>
 import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
@@ -18,23 +19,31 @@ const args = process.argv.slice(2);
 const opt = (name, def) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : def; };
 const FPS = +opt("--fps", 30);
 const WORKERS = +opt("--workers", 3);
+const PAGE = opt("--page", "reel.html");
+const QUERY = opt("--query", "");
+const [WIDTH, HEIGHT] = opt("--size", "1080x1920").split("x").map(Number);
+const ASSETS = opt("--assets") ? path.resolve(opt("--assets")) : null;
 
-const TYPES = { ".html": "text/html", ".woff2": "font/woff2", ".js": "text/javascript" };
+const TYPES = { ".html": "text/html", ".woff2": "font/woff2", ".js": "text/javascript", ".jpg": "image/jpeg", ".png": "image/png", ".json": "application/json" };
 const server = http.createServer((req, res) => {
-  const file = path.join(DIR, decodeURIComponent(new URL(req.url, "http://x").pathname));
-  if (!file.startsWith(DIR) || !fs.existsSync(file)) { res.writeHead(404); return res.end(); }
+  const name = decodeURIComponent(new URL(req.url, "http://x").pathname);
+  const root = ASSETS && name.startsWith("/assets/") ? ASSETS : DIR;
+  const file = path.join(root, root === ASSETS ? name.slice("/assets".length) : name);
+  if (!file.startsWith(root) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) { res.writeHead(404); return res.end(); }
   res.writeHead(200, { "Content-Type": TYPES[path.extname(file)] || "application/octet-stream" });
   fs.createReadStream(file).pipe(res);
 });
 await new Promise((r) => server.listen(0, "127.0.0.1", r));
-const URL_ = `http://127.0.0.1:${server.address().port}/reel.html`;
+const URL_ = `http://127.0.0.1:${server.address().port}/${PAGE}${QUERY ? "?" + QUERY : ""}`;
+// A page's render(t) may be async (it resolves once that frame's footage has decoded).
+const renderFrame = (page, t) => page.evaluate(async (t) => { await window.render(t); if (window.renderError) throw new Error(window.renderError); }, t);
 
 const browser = await chromium.launch();
 async function openPage() {
-  const page = await browser.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 });
+  const page = await browser.newPage({ viewport: { width: WIDTH, height: HEIGHT }, deviceScaleFactor: 1 });
   page.on("pageerror", (e) => { console.error("page error:", e.message); process.exitCode = 1; });
   await page.goto(URL_, { waitUntil: "load" });
-  await page.evaluate(async () => { await document.fonts.ready; await Promise.all([...document.fonts].map((f) => f.load())); });
+  await page.evaluate(async () => { await window.ready; await document.fonts.ready; await Promise.all([...document.fonts].map((f) => f.load())); });
   return page;
 }
 
@@ -49,20 +58,21 @@ try {
     const times = args[args.indexOf("--stills") + 2].split(",").map(Number);
     const page = await openPage();
     for (const t of times) {
-      await page.evaluate((t) => window.render(t), t);
-      await page.screenshot({ path: path.join(dir, `t${t.toFixed(2).padStart(5, "0")}.png`) });
+      await renderFrame(page, t);
+      await page.screenshot({ path: path.join(dir, `t${t.toFixed(2).padStart(6, "0")}.png`) });
     }
     console.log(`Wrote ${times.length} stills to ${dir}`);
   } else {
     const out = path.resolve(args[0]);
     const duration = await (await openPage()).evaluate(() => window.DURATION);
-    const total = Math.round(duration * FPS);
+    const [r0, r1] = opt("--range", `0,${duration}`).split(",").map(Number);
+    const first = Math.round(r0 * FPS), total = Math.round(Math.min(r1, duration) * FPS) - first;
     const per = Math.ceil(total / WORKERS);
     const tmp = fs.mkdtempSync(path.join(path.dirname(out), ".segs-"));
     const started = Date.now();
     let done = 0;
     await Promise.all(Array.from({ length: WORKERS }, async (_, w) => {
-      const from = w * per, to = Math.min(total, from + per);
+      const from = first + w * per, to = Math.min(first + total, from + per);
       if (from >= to) return;
       const page = await openPage();
       const seg = path.join(tmp, `seg${w}.mp4`);
@@ -71,7 +81,7 @@ try {
         "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", "-r", String(FPS), seg], { stdio: ["pipe", "inherit", "inherit"] });
       const closed = new Promise((r, j) => ff.on("close", (c) => (c === 0 ? r() : j(new Error("ffmpeg exited " + c)))));
       for (let f = from; f < to; f++) {
-        await page.evaluate((t) => window.render(t), f / FPS);
+        await renderFrame(page, f / FPS);
         const buf = await page.screenshot({ type: "jpeg", quality: 96 });
         if (!ff.stdin.write(buf)) await new Promise((r) => ff.stdin.once("drain", r));
         if (++done % 60 === 0) console.log(`${done}/${total} frames (${((Date.now() - started) / 1000).toFixed(0)}s)`);

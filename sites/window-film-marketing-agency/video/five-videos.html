@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>5 Videos Every Window Film Company Should Post</title>
+<!--
+  Draws an edit plan written by five_build.py: ?format=reel (1080x1920) or ?format=wide (1920x1080).
+  Footage is served from /assets/ (frames/<clip>/00001.jpg at 30 fps, stills/). Every frame is
+  window.render(t), which resolves once that frame's footage has decoded; render.mjs steps it.
+-->
+<style>
+@font-face{font-family:"Bricolage";src:url(fonts/BricolageGrotesque.woff2) format("woff2");font-weight:200 800;font-display:block}
+@font-face{font-family:"DM Sans";src:url(fonts/DMSans.woff2) format("woff2");font-weight:100 1000;font-display:block}
+@font-face{font-family:"DM Mono";src:url(fonts/DMMono-500.woff2) format("woff2");font-weight:500;font-display:block}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#07121D;overflow:hidden}
+#stage{position:relative;overflow:hidden;background:linear-gradient(180deg,#0E2133 0%,#07121D 100%);color:#fff;font-family:"DM Sans",sans-serif;-webkit-font-smoothing:antialiased}
+#stage.reel{width:1080px;height:1920px}
+#stage.wide{width:1920px;height:1080px}
+.full{position:absolute;inset:0}
+.layer{position:absolute;inset:0;display:none}
+.disp{font-family:"Bricolage",sans-serif;font-weight:800;letter-spacing:-.045em;line-height:1;white-space:nowrap}
+.ln{display:block;overflow:hidden;padding:.03em .08em .14em;margin:-.03em -.08em -.14em}
+.ln>span{display:inline-block}
+.mono{font-family:"DM Mono",monospace;font-weight:500;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap}
+mark{position:relative;display:inline-block;background:none;color:#FFB21E;padding:0 .09em;margin:0 -.03em;z-index:0}
+mark::before{content:"";position:absolute;left:0;right:0;top:.13em;bottom:.03em;background:#FFB21E;border-radius:.09em;z-index:-1;transform-origin:0 50%;transform:scaleX(var(--hl,0))}
+
+/* background */
+.glow{position:absolute;left:0;top:0;width:1500px;height:1500px;margin:-750px 0 0 -750px;border-radius:50%}
+#glowA{background:radial-gradient(circle,rgba(255,178,30,.42) 0%,rgba(255,178,30,.13) 30%,rgba(255,178,30,0) 64%)}
+#glowB{background:radial-gradient(circle,rgba(95,185,225,.4) 0%,rgba(95,185,225,.12) 32%,rgba(95,185,225,0) 64%)}
+#mullions{position:absolute;left:0;top:-400px;right:0;height:2720px;background-image:linear-gradient(90deg,rgba(255,255,255,.045) 0 3px,transparent 3px),linear-gradient(0deg,rgba(255,255,255,.045) 0 3px,transparent 3px);background-size:360px 100%,100% 384px}
+#grain{position:absolute;left:-40px;top:-40px;right:-40px;bottom:-40px;opacity:.07;mix-blend-mode:overlay}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse 80% 70% at 50% 46%,rgba(0,0,0,0) 55%,rgba(0,0,0,.5) 100%)}
+#flash{position:absolute;inset:0;background:#FFF6E2;opacity:0}
+
+/* hook */
+#five{position:absolute;color:#FFB21E;font-size:470px;line-height:.8;letter-spacing:-.06em;transform-origin:30% 60%}
+#vid{position:absolute;font-size:168px}
+#rest{position:absolute;font-size:104px;line-height:1.02}
+.reel #five{left:66px;top:236px}.reel #vid{left:372px;top:340px}.reel #rest{left:84px;top:650px}
+.wide #five{left:96px;top:92px;font-size:520px}.wide #vid{left:446px;top:214px;font-size:186px}.wide #rest{left:110px;top:570px;font-size:100px}
+.thumb{position:absolute;border-radius:26px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55),0 0 0 3px rgba(255,255,255,.1);background:#03040c}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb b{position:absolute;left:10px;top:10px;width:46px;height:46px;border-radius:50%;background:#FFB21E;color:#0B1622;display:grid;place-items:center;font:800 26px/1 "DM Sans"}
+.reel .thumb{width:168px;height:250px;top:1070px}
+.wide .thumb{width:262px;height:262px}
+#shot{position:absolute;font-size:26px;color:#8FD3E8}
+.reel #shot{left:0;width:100%;text-align:center;top:1372px}.wide #shot{left:1010px;width:834px;text-align:center;top:838px}
+
+/* item */
+#pips{position:absolute;display:flex;gap:12px}
+#pips i{display:block;height:10px;border-radius:5px;background:rgba(255,255,255,.16);overflow:hidden}
+#pips b{display:block;height:100%;width:0;background:#FFB21E;border-radius:5px}
+.reel #pips{left:84px;top:232px}.reel #pips i{width:172.8px}
+.wide #pips{left:990px;top:128px}.wide #pips i{width:157.6px}
+#num{position:absolute;font-size:118px;color:#FFB21E;transform-origin:0 70%}
+#of{position:absolute;font-size:26px;color:#8FD3E8}
+#title{position:absolute;font-size:92px;line-height:1.02}
+#kick{position:absolute;font-size:25px;color:#8FD3E8;letter-spacing:.14em}
+.reel #num{left:80px;top:268px}.reel #of{left:252px;top:336px}.reel #title{left:82px;top:396px}.reel #kick{display:none}
+.wide #num{left:986px;top:164px;font-size:128px}.wide #of{left:1172px;top:238px}.wide #title{left:988px;top:304px;font-size:92px}.wide #kick{left:992px;top:420px}
+#tips{position:absolute;left:990px;top:500px;width:880px;display:none}
+.wide #tips{display:block}
+.tip{display:flex;align-items:center;gap:24px;height:112px;font:700 47px/1.15 "DM Sans";letter-spacing:-.015em;white-space:nowrap}
+.tip i{flex:none;width:60px;height:60px;border-radius:50%;background:#FFB21E;color:#0B1622;display:grid;place-items:center}
+.tip svg{width:30px;height:30px}
+#cardWrap{position:absolute;width:900px;height:900px;transform-origin:0 0}
+.reel #cardWrap{left:90px;top:520px}
+.wide #cardWrap{left:96px;top:104px;transform:scale(.8889)}
+#card{position:absolute;inset:0;border-radius:44px;overflow:hidden;background:#03040c;box-shadow:0 50px 120px rgba(0,0,0,.6),0 0 0 3px rgba(255,255,255,.09)}
+#card img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;transform-origin:50% 30%}
+#card img.contain{object-fit:contain}
+#ba{position:absolute;inset:0;display:none}
+#baLine{position:absolute;top:0;bottom:0;width:8px;margin-left:-4px;background:#fff;box-shadow:0 0 24px rgba(0,0,0,.5)}
+#baLine::after{content:"";position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+#baLine svg{position:absolute;left:50%;top:50%;width:44px;height:44px;margin:-22px 0 0 -22px;z-index:1;color:#0B1622}
+#shade{position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(180deg,rgba(3,6,12,0),rgba(3,6,12,.88))}
+#prog{position:absolute;left:0;bottom:0;height:12px;background:#FFB21E}
+#cut{position:absolute;inset:0;background:#fff;opacity:0}
+.chip{position:absolute;display:inline-flex;align-items:center;gap:12px;height:68px;padding:0 28px;border-radius:34px;font:800 30px/1 "DM Sans";letter-spacing:.06em;white-space:nowrap;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.chip.sm{height:58px;font-size:25px;letter-spacing:0;font-weight:700;padding:0 24px}
+.chip.dark{background:rgba(7,18,29,.86);color:#fff}
+.chip.amber{background:#FFB21E;color:#0B1622}
+.chip.tl{left:30px;top:30px;transform-origin:0 50%}.chip.tr{right:30px;top:30px;transform-origin:100% 50%}.chip.bl{left:30px;bottom:34px;transform-origin:0 50%}
+.chip svg{width:30px;height:30px}
+.lower{position:absolute;left:34px;bottom:40px;padding:6px 0 6px 24px;border-left:8px solid #FFB21E;transform-origin:0 100%}
+.lower b{display:block;font:800 52px/1 "Bricolage";letter-spacing:-.03em}
+.lower span{display:block;margin-top:8px;font:500 24px/1 "DM Mono";letter-spacing:.14em;text-transform:uppercase;color:#C4D0DB}
+.big{position:absolute;left:40px;bottom:38px;transform-origin:0 100%}
+.big b{display:block;font:800 168px/.9 "Bricolage";letter-spacing:-.05em}
+.big span{display:block;margin-top:10px;font:700 38px/1 "DM Sans";letter-spacing:-.01em}
+.big.cool b{color:#8FD3E8}.big.hot b{color:#FF5A4D}
+.badge{position:absolute;left:0;right:0;bottom:44px;text-align:center;transform-origin:50% 100%}
+.badge b{display:inline-block;font:800 124px/1 "Bricolage";letter-spacing:-.045em;color:#0B1622;background:#FFB21E;border-radius:26px;padding:6px 34px 14px;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.badge span{display:block;margin-top:16px;font:700 40px/1 "DM Sans"}
+#credit{position:absolute;font-size:19px;letter-spacing:.16em;color:#7E8E9D}
+.reel #credit{left:98px;top:1440px}.wide #credit{left:102px;top:924px}
+
+/* captions */
+#cap{position:absolute;left:0;width:100%;text-align:center}
+.reel #cap{top:1482px}.wide #cap{top:962px}
+.cap{display:inline-block;padding:16px 30px 19px;border-radius:24px;background:rgba(5,12,20,.88);font:800 56px/1.1 "DM Sans";letter-spacing:-.015em;box-shadow:0 14px 40px rgba(0,0,0,.4);white-space:nowrap}
+.wide .cap{padding:11px 24px 14px;border-radius:18px}
+.cap .w{display:inline-block;margin:0 .13em;opacity:.5}
+.cap .w.past{opacity:1}.cap .w.on{opacity:1;color:#FFB21E}
+.cap.clip{background:#fff;color:#0B1622}.cap.clip .w.on{color:#C47B00}
+
+/* outro */
+#logo{position:absolute;width:260px;height:260px}
+.lg-frame{position:absolute;inset:0;border-radius:60px;background:#0C1B2A;box-shadow:inset 0 0 0 4px #2A4A63,0 40px 100px rgba(0,0,0,.5),0 0 120px rgba(255,178,30,.18)}
+.lg-p{position:absolute;left:0;top:0;width:94px;height:94px;border-radius:18px}
+.lg-sweep{position:absolute;inset:0;border-radius:60px;overflow:hidden}
+.lg-sweep i{position:absolute;top:-100px;bottom:-100px;width:120px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.45),rgba(255,255,255,0))}
+.oc{position:absolute;left:0;width:100%;text-align:center}
+#oWord{font-size:116px}#oSub{font-size:36px;color:#A9B8C6}#oHead{font-size:96px;line-height:1.04}
+#oBtnW{display:flex;justify-content:center}
+#oBtn{display:inline-flex;align-items:center;height:124px;padding:0 58px;border-radius:62px;background:#FFB21E;color:#0B1622;font:700 46px "DM Sans";letter-spacing:-.01em;white-space:nowrap}
+#oBtn svg{width:44px;height:44px;margin-left:18px}
+#oUrl{font-size:38px;letter-spacing:.04em;text-transform:none}
+.caret{display:inline-block;width:4px;height:40px;background:#FFB21E;margin-left:4px;border-radius:2px;vertical-align:-6px}
+.reel #logo{left:410px;top:330px}.reel #oWord{top:650px}.reel #oSub{top:790px}.reel #oHead{top:920px}.reel #oBtnW{top:1180px}.reel #oUrl{top:1360px}
+.wide #logo{left:870px;top:84px;transform-origin:50% 0;width:180px;height:180px}
+.wide .lg-frame,.wide .lg-sweep{border-radius:42px}.wide .lg-p{width:65px;height:65px;border-radius:13px}
+.wide #oWord{top:296px;font-size:92px}.wide #oSub{top:404px;font-size:30px}.wide #oHead{top:486px;font-size:86px}.wide #oBtnW{top:650px}.wide #oUrl{top:842px}
+.wide #oBtn{height:108px;font-size:42px}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="full"><div id="glowB" class="glow"></div><div id="glowA" class="glow"></div><div id="mullions"></div></div>
+
+  <div class="layer" id="hook">
+    <div class="disp" id="five">5</div>
+    <div class="disp" id="vid"><span class="ln"><span>videos</span></span></div>
+    <div class="disp" id="rest"></div>
+    <div id="thumbs"></div>
+    <div class="mono" id="shot">All shot on a phone</div>
+  </div>
+
+  <div class="layer" id="item">
+    <div id="pips"><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i></div>
+    <div class="disp" id="num">01</div>
+    <div class="mono" id="of">of 5</div>
+    <div class="disp" id="title"><span class="ln"><span id="titleT"></span></span></div>
+    <div class="mono" id="kick"></div>
+    <div id="tips"></div>
+    <div id="cardWrap"><div id="card">
+      <img id="fA" alt=""><img id="fB" alt="">
+      <div id="ba"><img id="baB" src="/assets/stills/before.jpg" alt=""><img id="baA" src="/assets/stills/after.jpg" alt="">
+        <div id="baLine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></div></div>
+      <div id="shade"></div><div id="prog"></div><div id="cut"></div>
+      <div id="ov"></div>
+    </div></div>
+    <div class="mono" id="credit">Footage: MD Window Films</div>
+  </div>
+
+  <div class="layer" id="outro">
+    <div id="logo">
+      <div class="lg-frame" id="lgFrame"></div>
+      <div class="lg-p" id="lp0" style="background:linear-gradient(135deg,#FFC94D,#F08A00)"></div>
+      <div class="lg-p" id="lp1" style="background:#2A4A63"></div>
+      <div class="lg-p" id="lp2" style="background:#2A4A63"></div>
+      <div class="lg-p" id="lp3" style="background:linear-gradient(135deg,#FFC94D,#F08A00);opacity:.55"></div>
+      <div class="lg-sweep"><i id="lgSweep"></i></div>
+    </div>
+    <div class="disp oc" id="oWord"><span class="ln"><span>Window Film</span></span></div>
+    <div class="mono oc" id="oSub">Marketing Agency</div>
+    <div class="disp oc" id="oHead"></div>
+    <div class="oc" id="oBtnW"><div id="oBtn">Get your free audit<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    <div class="mono oc" id="oUrl"><span id="oUrlT"></span><i class="caret" id="oCaret"></i></div>
+  </div>
+
+  <div id="cap"></div>
+  <div id="grain"></div><div id="vig"></div><div id="flash"></div>
+</div>
+
+<script>
+const FMT = new URLSearchParams(location.search).get("format") === "wide" ? "wide" : "reel";
+const wide = FMT === "wide";
+const $ = (id) => document.getElementById(id);
+$("stage").className = FMT;
+
+// ---------- math ----------
+const cl = (x, a = 0, b = 1) => (x < a ? a : x > b ? b : x);
+const P = (t, a, d) => cl((t - a) / d);
+const mix = (a, b, x) => a + (b - a) * x;
+const E = {
+  outC: (x) => 1 - Math.pow(1 - x, 3), inC: (x) => x * x * x,
+  ioC: (x) => (x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2),
+  outX: (x) => (x >= 1 ? 1 : 1 - Math.pow(2, -10 * x)),
+  outB: (x) => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); },
+};
+function rng(seed) { return function () { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let r = Math.imul(seed ^ seed >>> 15, 1 | seed); r = r + Math.imul(r ^ r >>> 7, 61 | r) ^ r; return ((r ^ r >>> 14) >>> 0) / 4294967296; }; }
+const bump = (t, t0, len = .25) => (t < t0 || t - t0 > len * 3 ? 0 : Math.exp(-(t - t0) / len * 3));
+const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+function T(el, { x = 0, y = 0, s = 1, r = 0, o = null, b = null } = {}) {
+  el.style.transform = `translate3d(${x.toFixed(2)}px,${y.toFixed(2)}px,0) rotate(${r.toFixed(3)}deg) scale(${s.toFixed(4)})`;
+  if (o !== null) el.style.opacity = cl(o).toFixed(3);
+  if (b !== null) el.style.filter = b > .1 ? `blur(${b.toFixed(2)}px)` : "none";
+}
+function lines(el, t, ins, dur = .7) {
+  el.querySelectorAll(".ln>span").forEach((s, i) => { s.style.transform = `translate3d(0,${((1 - E.outX(P(t, ins[i], dur))) * 118).toFixed(2)}%,0)`; });
+}
+function mk(el, t, a, d = .35) {
+  const x = E.outC(P(t, a, d));
+  el.style.setProperty("--hl", x.toFixed(3));
+  el.style.color = x > .5 ? "#0B1622" : "#FFB21E";
+}
+
+const ICON = {
+  check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
+  ff: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5v13l8.5-6.5zM12.5 5.5v13L21 12z"/></svg>',
+};
+const COUNT = { owner: 1290, reviews: 244, temp: 1050, timelapse: 925 };
+const THUMBS = ["/assets/stills/after.jpg", "/assets/frames/timelapse/00560.jpg", "/assets/frames/reviews/00100.jpg", "/assets/frames/owner/00700.jpg", "/assets/frames/temp/00661.jpg"];
+const URL_TXT = "windowfilmmarketingagency.com";
+const LP = wide ? [[21, 21, -660, -420, -120], [94, 21, 720, -400, 140], [21, 94, -740, 480, 90], [94, 94, 680, 500, -160]]
+                : [[30, 30, -660, -820, -120], [136, 30, 720, -760, 140], [30, 136, -740, 880, 90], [136, 136, 680, 920, -160]];
+let PLAN, W, H, pending = [];
+
+function setImg(img, url) {
+  if (img.dataset.u === url) return;
+  img.dataset.u = url;
+  img.src = url;
+  pending.push(img.decode().catch(() => { window.renderError = "could not load " + url; }));
+}
+
+function build() {
+  [W, H] = PLAN.size;
+  $("rest").innerHTML = wide
+    ? '<span class="ln"><span>every window film</span></span><span class="ln"><span>company</span></span><span class="ln"><span><mark id="hMark">should post.</mark></span></span>'
+    : '<span class="ln"><span>every window film</span></span><span class="ln"><span>company</span></span><span class="ln"><span><mark id="hMark">should post.</mark></span></span>';
+  $("thumbs").innerHTML = THUMBS.map((u, i) => {
+    const pos = wide ? `left:${1010 + (i < 3 ? i * 286 : 143 + (i - 3) * 286)}px;top:${i < 3 ? 236 : 522}px` : `left:${84 + i * 186}px`;
+    return `<div class="thumb" style="${pos}"><img src="${u}" alt=""><b>${i + 1}</b></div>`;
+  }).join("");
+  $("oHead").innerHTML = wide
+    ? '<span class="ln"><span>You film it. <mark id="oMark">We edit &amp; post it.</mark></span></span>'
+    : '<span class="ln"><span>You film it.</span></span><span class="ln"><span><mark id="oMark">We edit &amp; post it.</mark></span></span>';
+  const c = document.createElement("canvas"); c.width = c.height = 256;
+  const g = c.getContext("2d"), img = g.createImageData(256, 256), r = rng(9);
+  for (let i = 0; i < img.data.length; i += 4) { const v = r() * 255; img.data[i] = img.data[i + 1] = img.data[i + 2] = v; img.data[i + 3] = 255; }
+  g.putImageData(img, 0, 0);
+  $("grain").style.backgroundImage = `url(${c.toDataURL()})`;
+}
+
+// ---------- scenes ----------
+function bg(t, seg) {
+  const k = seg.kind === "item" ? seg.n : seg.kind === "outro" ? 6 : 0;
+  T($("glowA"), { x: W * (k % 2 ? .82 : .2) + Math.sin(t * .4) * 40, y: H * (seg.kind === "outro" ? .28 : .16) + Math.cos(t * .33) * 40, o: seg.kind === "outro" ? 1 : .75 });
+  T($("glowB"), { x: W * (k % 2 ? .12 : .86) + Math.sin(t * .3) * 60, y: H * .82 + Math.cos(t * .27) * 60, o: .85 });
+  $("mullions").style.transform = `translate3d(0,${(-((t * 18) % 384)).toFixed(1)}px,0)`;
+  const r = rng(Math.floor(t * 30) * 7919 + 13);
+  $("grain").style.backgroundPosition = `${Math.floor(r() * 256)}px ${Math.floor(r() * 256)}px`;
+  const first = PLAN.segments[1].t0;
+  $("flash").style.opacity = (t < first ? Math.pow(P(t, first - .15, .15), 2) : 1 - E.outC(P(t, first, .4))) * .9;
+}
+
+function sHook(t, seg) {
+  const out = E.inC(P(t, seg.t1 - .25, .25));
+  const p5 = P(t, .1, .5);
+  T($("five"), { s: mix(2.2, 1, E.outB(p5)) * (1 + out * .4), o: cl(p5 / .15) * (1 - out) });
+  lines($("vid"), t, [.3], .6);
+  lines($("rest"), t, [.5, .68, .86], .65);
+  mk($("hMark"), t, 1.3, .4);
+  $("vid").style.opacity = $("rest").style.opacity = (1 - out).toFixed(3);
+  $("thumbs").querySelectorAll(".thumb").forEach((el, i) => {
+    const p = P(t, seg.thumbs[i], .45);
+    T(el, { y: mix(120, 0, E.outX(p)) - out * 200, s: mix(.5, 1, E.outB(p)), r: (i - 2) * (wide ? 1.2 : 2.2) * (1 - 0), o: cl(p / .15) * (1 - out) });
+  });
+  $("shot").style.opacity = (P(t, seg.thumbs[4] + .3, .4) * (1 - out)).toFixed(3);
+}
+
+function overlays(t, seg) {
+  const list = seg.overlays.slice();
+  if (!wide && seg.n <= 3) list.push({ type: "chip", text: seg.kicker, pos: "bl", style: "dark", small: 1, t0: seg.t0 + .9, t1: seg.t1 });
+  let h = "", shade = 0;
+  for (const o of list) {
+    if (t < o.t0 || t >= o.t1 + .2) continue;
+    const pop = mix(.6, 1, E.outB(P(t, o.t0, .38))), op = (cl(P(t, o.t0, .12)) * (1 - P(t, o.t1, .2))).toFixed(3);
+    const st = `opacity:${op};transform:scale(${pop.toFixed(4)})`;
+    if (o.type === "chip") h += `<div class="chip ${o.pos} ${o.style}${o.small ? " sm" : ""}" style="${st}">${o.icon ? ICON[o.icon] : ""}${esc(o.text)}</div>`;
+    else if (o.type === "lower") { h += `<div class="lower" style="${st}"><b>${esc(o.text)}</b><span>${esc(o.sub)}</span></div>`; shade = Math.max(shade, +op); }
+    else if (o.type === "big") { h += `<div class="big ${o.color}" style="${st}"><b>${esc(o.value)}</b><span>${esc(o.label)}</span></div>`; shade = Math.max(shade, +op); }
+    else if (o.type === "badge") { h += `<div class="badge" style="${st}"><b>${esc(o.value)}</b><span>${esc(o.label)}</span></div>`; shade = Math.max(shade, +op); }
+  }
+  $("ov").innerHTML = h;
+  $("shade").style.opacity = shade;
+}
+
+function sItem(t, seg) {
+  const u = t - seg.t0, out = cl(1 - (seg.t1 - t) / .22), inP = E.outX(P(u, 0, .55));
+  $("pips").querySelectorAll("b").forEach((b, i) => { b.style.width = (i + 1 < seg.n ? 100 : i + 1 === seg.n ? cl(u / (seg.t1 - seg.t0)) * 100 : 0).toFixed(2) + "%"; });
+  $("num").textContent = "0" + seg.n;
+  const np = P(u, .08, .42);
+  T($("num"), { s: mix(1.9, 1, E.outB(np)), x: -out * 90, o: cl(np / .12) * (1 - out) });
+  T($("of"), { x: mix(-30, 0, E.outX(P(u, .3, .5))) - out * 90, o: P(u, .3, .3) * (1 - out) });
+  $("titleT").textContent = seg.title;
+  lines($("title"), u, [.18], .6);
+  T($("title"), { x: -out * 90, o: 1 - out });
+  $("kick").textContent = seg.kicker;
+  T($("kick"), { x: -out * 90, o: P(u, .45, .35) * (1 - out) });
+  if (wide) {
+    $("tips").innerHTML = seg.tips.map((tp) => {
+      const p = P(t, tp.t, .45);
+      return `<div class="tip" style="opacity:${(cl(p / .25) * (1 - out)).toFixed(3)};transform:translate3d(${(mix(60, 0, E.outX(p)) - out * 90).toFixed(1)}px,0,0)"><i style="transform:scale(${E.outB(P(t, tp.t + .08, .4)).toFixed(3)})">${ICON.check}</i>${esc(tp.text)}</div>`;
+    }).join("");
+  }
+  T($("card"), { y: (1 - inP) * 170, x: -out * 140, s: mix(.92, 1, inP), o: cl(u / .18) * (1 - out), b: out * 8 });
+  T($("credit"), { o: P(u, .6, .4) * (1 - out) });
+
+  // footage
+  const isBA = seg.media && seg.media.type === "ba";
+  $("ba").style.display = isBA ? "block" : "none";
+  $("fA").style.display = $("fB").style.display = isBA ? "none" : "block";
+  $("prog").style.width = "0";
+  let cutFlash = 0;
+  if (isBA) {
+    const m = seg.media, z = 1 + .05 * P(t, seg.t0, seg.t1 - seg.t0);
+    let p = 100 - 100 * E.ioC(P(t, m.wipe[0], m.wipe[1] - m.wipe[0]));
+    if (m.split != null && t > m.split) p = 50 * E.ioC(P(t, m.split, .8));
+    $("baB").style.transform = $("baA").style.transform = `scale(${z.toFixed(4)})`;
+    $("baA").style.clipPath = `inset(0 0 0 ${p.toFixed(3)}%)`;
+    $("baLine").style.left = p.toFixed(3) + "%";
+    $("baLine").style.opacity = p > .4 && p < 99.6 ? 1 : 0;
+  } else {
+    const ci = Math.max(0, seg.clips.findIndex((c) => t >= c.t0 && t < c.t1)), c = seg.clips[ci];
+    const speed = (c.s1 - c.s0) / (c.t1 - c.t0), f = (c.s0 + (t - c.t0) * speed) * 30;
+    const idx = (k) => `/assets/frames/${c.src}/${String(cl(k, 1, COUNT[c.src])).padStart(5, "0")}.jpg`;
+    const fit = c.src === "reviews" ? "contain" : "";
+    $("fA").className = $("fB").className = fit;
+    setImg($("fA"), idx(Math.floor(f) + 1));
+    const blend = speed < .95 ? f - Math.floor(f) : 0;   // slow motion: cross-fade neighbouring frames
+    if (blend > 0) setImg($("fB"), idx(Math.floor(f) + 2));
+    $("fB").style.opacity = blend.toFixed(3);
+    $("fA").style.transform = $("fB").style.transform = `scale(${c.zoom})`;
+    if (ci > 0) cutFlash = (1 - P(t, c.t0, .14)) * .28;
+    if (seg.progress) $("prog").style.width = (cl((t - c.t0) / (c.t1 - c.t0)) * 100).toFixed(2) + "%";
+  }
+  $("cut").style.opacity = cutFlash.toFixed(3);
+  overlays(t, seg);
+}
+
+function sOutro(t, seg) {
+  const u = t - seg.t0, hit = bump(t, seg.hit, .3);
+  LP.forEach(([tx, ty, dx, dy, rot], i) => {
+    const p = E.outX(P(u, .1 + i * .07, .75));
+    T($("lp" + i), { x: tx + dx * (1 - p), y: ty + dy * (1 - p), r: rot * (1 - p), s: mix(1.7, 1, p) });
+    $("lp" + i).style.opacity = (cl(P(u, .1 + i * .07, .15)) * (i === 3 ? .55 : 1)).toFixed(3);
+  });
+  const fp = P(u, .55, .55);
+  T($("lgFrame"), { s: mix(.3, 1, E.outB(fp)), o: cl(fp / .2) });
+  const ls = P(t, seg.hit - .1, .65);
+  $("lgSweep").style.transform = `translate3d(${mix(-160, 300, E.ioC(ls)).toFixed(1)}px,0,0) rotate(20deg)`;
+  $("lgSweep").style.opacity = ls > 0 && ls < 1 ? 1 : 0;
+  T($("logo"), { s: 1 + hit * .05 });
+  lines($("oWord"), u, [.95], .7);
+  const sub = P(u, 1.1, .7), lsp = mix(.7, .32, E.outX(sub)).toFixed(3) + "em";
+  $("oSub").style.opacity = E.outC(sub).toFixed(3);
+  $("oSub").style.letterSpacing = lsp; $("oSub").style.paddingLeft = lsp;
+  lines($("oHead"), u, wide ? [1.55] : [1.55, 1.75], .65);
+  mk($("oMark"), u, wide ? 2.0 : 2.1, .35);
+  const bp = P(u, 2.3, .5);
+  T($("oBtn"), { s: mix(.4, 1, E.outB(bp)) * (1 + hit * .07), o: cl(bp / .15) });
+  $("oBtn").style.boxShadow = `0 10px 0 #D48700, 0 30px ${(80 + hit * 80).toFixed(0)}px rgba(255,178,30,${(.35 + hit * .5).toFixed(3)})`;
+  const n = cl(Math.floor((t - seg.url) / .034) + 1, 0, URL_TXT.length);
+  $("oUrlT").textContent = t >= seg.url ? URL_TXT.slice(0, n) : "";
+  $("oCaret").style.opacity = t > seg.url - .2 && (n < URL_TXT.length || Math.floor(t * 2.4) % 2 === 0) ? 1 : 0;
+}
+
+function captions(t) {
+  const c = PLAN.captions.find((x) => t >= x.t0 && t < x.t1);
+  if (!c) { $("cap").innerHTML = ""; return; }
+  const chars = c.words.reduce((a, w) => a + w[0].length + 1, 0), base = wide ? 46 : 56, max = wide ? 60 : 27;
+  const size = Math.min(base, base * max / chars), pop = mix(.9, 1, E.outB(P(t, c.t0, .16)));
+  $("cap").innerHTML = `<div class="cap${c.who === "clip" ? " clip" : ""}" style="font-size:${size.toFixed(1)}px;transform:scale(${pop.toFixed(4)});opacity:${cl(P(t, c.t0, .06)).toFixed(3)}">${
+    c.words.map(([w, a, b]) => `<span class="w${t >= b ? " past" : t >= a - .03 ? " on" : ""}">${esc(w)}</span>`).join("")}</div>`;
+}
+
+window.render = async function (t) {
+  pending = [];
+  const seg = PLAN.segments.find((s) => t >= s.t0 && t < s.t1) || PLAN.segments[PLAN.segments.length - 1];
+  for (const k of ["hook", "item", "outro"]) $(k).style.display = seg.kind === k ? "block" : "none";
+  bg(t, seg);
+  if (seg.kind === "hook") sHook(t, seg); else if (seg.kind === "item") sItem(t, seg); else sOutro(t, seg);
+  captions(t);
+  await Promise.all(pending);
+};
+
+window.ready = (async () => {
+  PLAN = await (await fetch(`/assets/plan-${FMT}.json`)).json();
+  window.DURATION = PLAN.duration;
+  build();
+  await document.fonts.ready;
+  await Promise.all([...document.fonts].map((f) => f.load()));
+  await Promise.all([...document.images].filter((i) => i.src).map((i) => i.decode().catch(() => {})));
+  await window.render(0);
+})();
+</script>
+</body>
+</html>
