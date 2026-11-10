@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>YouTube thumbnails</title>
+<!-- 1280x720 thumbnails for the reel, two variants for YouTube's Test & Compare. Rendered by brand/render.mjs. -->
+<style>
+@font-face{font-family:"Anton";src:url(/brand/fonts/Anton-Regular.woff2) format("woff2");font-display:block}
+@font-face{font-family:"DM Sans";src:url(/video/fonts/DMSans.woff2) format("woff2");font-weight:100 1000;font-display:block}
+@font-face{font-family:"DM Mono";src:url(/video/fonts/DMMono-500.woff2) format("woff2");font-weight:500;font-display:block}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#333}
+.thumb{position:relative;width:1280px;height:720px;overflow:hidden;background:#0A0B0D;color:#fff;font-family:"DM Sans",sans-serif;margin-bottom:20px}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 30% 50%,rgba(255,255,255,.06),rgba(0,0,0,0) 60%),radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.65) 100%)}
+.glow{position:absolute;border-radius:50%}
+.h{position:absolute;font-family:"Anton",sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.005em}
+.y{color:#FFD400}
+.r{color:#FF3B30}
+.shadow{text-shadow:0 6px 0 rgba(0,0,0,.55),0 14px 40px rgba(0,0,0,.6)}
+.tag{position:absolute;display:inline-flex;align-items:center;gap:12px;font:800 30px/1 "DM Sans";letter-spacing:-.01em;text-transform:uppercase;padding:14px 22px;border-radius:12px;white-space:nowrap}
+.brand{position:absolute;left:60px;bottom:42px;display:flex;align-items:center;gap:12px;font:500 18px/1 "DM Mono";letter-spacing:.2em;text-transform:uppercase;color:#9AA7B4}
+.brand i{display:grid;grid-template-columns:1fr 1fr;gap:3px;width:30px;height:30px;padding:4px;border-radius:7px;background:#0C1B2A;box-shadow:inset 0 0 0 1.5px #2A4A63}
+.brand i b{border-radius:2px;background:#2A4A63}.brand i b:nth-child(1),.brand i b:nth-child(4){background:#FFB21E}
+
+/* phone */
+.phone{position:absolute;width:330px;height:640px;border-radius:52px;background:#05070A;padding:14px;box-shadow:0 0 0 3px #2B3440,0 40px 90px rgba(0,0,0,.7)}
+.scr{position:relative;width:100%;height:100%;border-radius:40px;overflow:hidden}
+/* A: incoming call */
+.call{background:linear-gradient(180deg,#1B3A55 0%,#0D1E2E 100%);display:flex;flex-direction:column;align-items:center;padding-top:62px;color:#fff}
+.call .lbl{font:500 15px/1 "DM Mono";letter-spacing:.22em;text-transform:uppercase;color:#A9B8C6}
+.call .av{position:relative;width:118px;height:118px;border-radius:50%;background:#3CCB7F;margin:30px 0 22px;display:grid;place-items:center;box-shadow:0 0 0 14px rgba(60,203,127,.18),0 0 0 30px rgba(60,203,127,.08)}
+.call .av svg{width:56px;height:56px;color:#fff}
+.call .nm{font:800 34px/1.05 "DM Sans";letter-spacing:-.02em;text-align:center}
+.call .sub{font:500 19px/1.35 "DM Sans";color:#C4D0DB;text-align:center;margin-top:10px;padding:0 22px}
+.call .val{margin-top:18px;font:800 26px/1 "DM Sans";color:#FFD400}
+.call .btns{position:absolute;bottom:52px;left:0;right:0;display:flex;justify-content:space-around}
+.call .btns span{width:76px;height:76px;border-radius:50%;display:grid;place-items:center}
+.call .btns svg{width:36px;height:36px;color:#fff}
+.missed{position:absolute;left:50%;top:50%;font-family:"Anton";font-size:84px;line-height:1;color:#FF3B30;border:10px solid #FF3B30;border-radius:18px;padding:6px 26px 10px;background:rgba(10,11,13,.86);transform:translate(-50%,-50%) rotate(-14deg);letter-spacing:.02em;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+/* B: maps list */
+.maps{background:#fff;color:#0B1622}
+.maps .bar{height:62px;margin:16px;border-radius:31px;background:#F0F3F6;display:flex;align-items:center;gap:10px;padding:0 18px;font:600 16px/1 "DM Sans";color:#3A4655;white-space:nowrap}
+.maps .bar svg{width:22px;height:22px;color:#5D6876}
+.maps .map{height:150px;background:linear-gradient(160deg,#E7ECEF,#DCE3E8);position:relative;overflow:hidden}
+.maps .map::before{content:"";position:absolute;inset:0;background:linear-gradient(10deg,transparent 46%,#fff 46%,#fff 54%,transparent 54%),linear-gradient(100deg,transparent 46%,#fff 46%,#fff 52%,transparent 52%),linear-gradient(80deg,transparent 70%,#fff 70%,#fff 74%,transparent 74%)}
+.maps .pin{position:absolute;width:26px;height:26px;border-radius:50% 50% 50% 0;background:#E2564B;transform:rotate(-45deg);border:3px solid #fff}
+.row{display:flex;align-items:center;gap:14px;padding:16px 18px;border-bottom:2px solid #EEF1F4}
+.row .n{width:40px;height:40px;border-radius:50%;background:#0C1B2A;color:#fff;display:grid;place-items:center;font:800 18px/1 "DM Sans";flex:none}
+.row .t{font:800 20px/1.1 "DM Sans";letter-spacing:-.01em}
+.row .s{font:500 15px/1 "DM Sans";color:#F5B400;margin-top:5px;letter-spacing:1px}
+.row.dots{justify-content:center;color:#9AA5B1;font:800 30px/1 "DM Sans";letter-spacing:6px;padding:4px 0 10px}
+.row.you{background:#FFE9E7;border:4px solid #FF3B30;border-radius:14px;margin:4px 10px;padding:14px}
+.row.you .n{background:#FF3B30}
+.row.you .s{color:#B4BEC8}
+.arrow{position:absolute}
+</style>
+</head>
+<body>
+
+<!-- A: this call = $20,000 -->
+<div class="thumb" data-out="thumbnail-a-this-call-20k.png">
+  <div class="glow" style="left:620px;top:-120px;width:900px;height:900px;background:radial-gradient(circle,rgba(255,59,48,.30),rgba(255,59,48,0) 62%)"></div>
+  <div class="vig"></div>
+  <div class="h shadow" style="left:58px;top:70px;font-size:128px">This call</div>
+  <div class="h y shadow" style="left:52px;top:196px;font-size:236px">= $20K</div>
+  <div class="tag" style="left:60px;top:448px;background:#FF3B30;color:#fff;box-shadow:0 10px 30px rgba(255,59,48,.35)">…and it went to your competitor</div>
+  <div class="tag" style="left:60px;top:530px;background:#fff;color:#0A0B0D">Window film contractors</div>
+  <div class="phone" style="left:860px;top:46px;transform:rotate(7deg)">
+    <div class="scr call">
+      <div class="lbl">Incoming call</div>
+      <div class="av"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></div>
+      <div class="nm">Commercial<br>lead</div>
+      <div class="sub">Office building · solar film<br>calling <b style="color:#fff">Rival Tint Co.</b></div>
+      <div class="val">$20,000+ job</div>
+      <div class="btns"><span style="background:#FF3B30"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span style="background:#3CCB7F"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span></div>
+    </div>
+  </div>
+  <div class="missed" style="left:1010px;top:500px">MISSED</div>
+  <div class="brand"><i><b></b><b></b><b></b><b></b></i>Window Film Marketing Agency</div>
+</div>
+
+<!-- B: you're #14 on Google Maps -->
+<div class="thumb" data-out="thumbnail-b-youre-14-on-maps.png">
+  <div class="glow" style="left:560px;top:-160px;width:960px;height:960px;background:radial-gradient(circle,rgba(255,212,0,.20),rgba(255,212,0,0) 62%)"></div>
+  <div class="vig"></div>
+  <div class="h shadow" style="left:58px;top:64px;font-size:150px">You're <span class="r">#14</span></div>
+  <div class="h y shadow" style="left:56px;top:212px;font-size:150px">on Google</div>
+  <div class="h y shadow" style="left:56px;top:350px;font-size:150px">Maps</div>
+  <div class="tag" style="left:60px;top:516px;background:#fff;color:#0A0B0D">Top 3 get the $20K jobs</div>
+  <div class="phone" style="left:870px;top:40px;transform:rotate(-6deg)">
+    <div class="scr maps">
+      <div class="bar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>window tinting near me</div>
+      <div class="map"><i class="pin" style="left:80px;top:46px"></i><i class="pin" style="left:150px;top:80px"></i><i class="pin" style="left:210px;top:36px"></i></div>
+      <div class="row"><span class="n">1</span><div><div class="t">Rival Tint Co.</div><div class="s">★★★★★</div></div></div>
+      <div class="row"><span class="n">2</span><div><div class="t">Competitor Film</div><div class="s">★★★★★</div></div></div>
+      <div class="row"><span class="n">3</span><div><div class="t">Other Guys Tint</div><div class="s">★★★★☆</div></div></div>
+      <div class="row dots">• • •</div>
+      <div class="row you"><span class="n">14</span><div><div class="t">Your Company</div><div class="s">☆☆☆☆☆</div></div></div>
+    </div>
+  </div>
+  <svg class="arrow" style="left:600px;top:470px" width="300" height="200" viewBox="0 0 300 200"><path d="M14 40 C 90 10, 190 30, 250 150" fill="none" stroke="#FF3B30" stroke-width="18" stroke-linecap="round"/><path d="M212 140 L 262 168 L 268 108" fill="none" stroke="#FF3B30" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="brand"><i><b></b><b></b><b></b><b></b></i>Window Film Marketing Agency</div>
+</div>
+</body>
+</html>
