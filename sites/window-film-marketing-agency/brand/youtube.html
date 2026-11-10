@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>YouTube channel art</title>
+<!-- Rendered by brand/render.mjs: #avatar is 800x800, #banner is 2560x1440 (safe area 1546x423 centered). -->
+<style>
+@font-face{font-family:"Bricolage";src:url(/video/fonts/BricolageGrotesque.woff2) format("woff2");font-weight:200 800;font-display:block}
+@font-face{font-family:"DM Sans";src:url(/video/fonts/DMSans.woff2) format("woff2");font-weight:100 1000;font-display:block}
+@font-face{font-family:"DM Mono";src:url(/video/fonts/DMMono-500.woff2) format("woff2");font-weight:500;font-display:block}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000}
+.art{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 40%,#14304A 0%,#0C1B2A 45%,#07121D 100%);color:#fff;font-family:"DM Sans",sans-serif}
+.grid{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(255,255,255,.05) 0 4px,transparent 4px),linear-gradient(0deg,rgba(255,255,255,.05) 0 4px,transparent 4px)}
+.glow{position:absolute;border-radius:50%}
+.pane-a{background:linear-gradient(135deg,#FFC94D,#F08A00)}
+.pane-b{background:#2A4A63}
+.mark{position:relative;display:grid;grid-template-columns:1fr 1fr;border-radius:22%;background:#0C1B2A;box-shadow:inset 0 0 0 4px #2A4A63,0 30px 80px rgba(0,0,0,.45)}
+.mark i{display:block;border-radius:16%}
+.mark i:nth-child(4){opacity:.55}
+
+/* avatar */
+#avatar{width:800px;height:800px;display:flex;align-items:center;justify-content:center}
+#avatar .grid{background-size:200px 100%,100% 200px;background-position:-2px 0,0 -2px}
+#avatar .glow{width:900px;height:900px;left:-50px;top:-120px;background:radial-gradient(circle,rgba(255,178,30,.35) 0%,rgba(255,178,30,.08) 35%,rgba(255,178,30,0) 62%)}
+#avatar .mark{width:470px;height:470px;padding:56px;gap:24px}
+#avatar .sheen{position:absolute;inset:0;background:linear-gradient(120deg,transparent 40%,rgba(255,255,255,.07) 50%,transparent 60%)}
+
+/* banner */
+#banner{width:2560px;height:1440px}
+#banner .grid{background-size:320px 100%,100% 360px;background-position:0 0,0 0}
+#banner .glowA{width:1800px;height:1800px;left:1500px;top:-500px;background:radial-gradient(circle,rgba(255,178,30,.42) 0%,rgba(255,178,30,.12) 30%,rgba(255,178,30,0) 62%)}
+#banner .glowB{width:1800px;height:1800px;left:-700px;top:300px;background:radial-gradient(circle,rgba(95,185,225,.35) 0%,rgba(95,185,225,.1) 32%,rgba(95,185,225,0) 62%)}
+.wall{position:absolute;display:grid;gap:14px;padding:14px;border-radius:20px;background:#081521;box-shadow:inset 0 0 0 3px #1E3A52,0 40px 100px rgba(0,0,0,.5)}
+.wall b{display:block;border-radius:6px;position:relative;overflow:hidden}
+.wall b::after{content:"";position:absolute;inset:-40% -70%;background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.28) 49%,transparent 56%)}
+.g1{background:linear-gradient(160deg,#D8F2FA,#8FCFE3)} .g2{background:linear-gradient(160deg,#9AD5E7,#5F9FBA)}
+.g3{background:linear-gradient(160deg,#4E86A3,#2B5A76)} .g4{background:linear-gradient(200deg,rgba(255,190,60,.4),rgba(255,190,60,0) 40%),linear-gradient(160deg,#2F5A74,#0E2234)}
+.chip{position:absolute;display:flex;align-items:center;gap:16px;height:84px;padding:0 36px 0 28px;border-radius:42px;background:#fff;color:#0B1622;font-size:34px;font-weight:500;white-space:nowrap;box-shadow:0 24px 60px rgba(0,0,0,.4)}
+.chip svg{width:32px;height:32px;color:#7A8594}
+.safe{position:absolute;left:507px;top:508px;width:1546px;height:424px;display:flex;align-items:center;justify-content:center;gap:56px}
+.safe .mark{width:270px;height:270px;padding:32px;gap:14px;flex:none}
+.copy{display:flex;flex-direction:column}
+.eyebrow{font:500 24px/1 "DM Mono";letter-spacing:.26em;text-transform:uppercase;color:#8FD3E8}
+.name{font:800 120px/.98 "Bricolage";letter-spacing:-.045em;margin-top:20px;white-space:nowrap}
+.name em{display:inline-block;font-style:normal;color:#0B1622;background:#FFB21E;border-radius:14px;padding:0 .1em .04em;margin:6px 0 0 -.05em}
+.pills{display:flex;gap:12px;margin-top:26px}
+.pills span{font:600 26px/1 "DM Sans";padding:13px 20px;border-radius:999px;border:2px solid #2A4A63;background:rgba(255,255,255,.04);color:#DCE6EE;white-space:nowrap}
+.pills span.hot{border-color:#FFB21E;color:#FFB21E;background:rgba(255,178,30,.08)}
+#guide{position:absolute;left:0;top:0;width:2560px;height:1440px;pointer-events:none;display:none}
+</style>
+</head>
+<body>
+<div id="avatar" class="art">
+  <div class="grid"></div><div class="glow"></div>
+  <div class="mark"><i class="pane-a"></i><i class="pane-b"></i><i class="pane-b"></i><i class="pane-a"></i></div>
+  <div class="sheen"></div>
+</div>
+
+<div id="banner" class="art">
+  <div class="grid"></div><div class="glow glowB"></div><div class="glow glowA"></div>
+  <!-- decoration outside the safe area: glass walls being tinted and buyer searches -->
+  <div class="wall" style="left:-60px;top:330px;width:420px;height:760px;grid-template-columns:repeat(3,1fr);transform:rotate(-4deg)">
+    <b class="g1"></b><b class="g2"></b><b class="g3"></b><b class="g2"></b><b class="g3"></b><b class="g4"></b><b class="g3"></b><b class="g4"></b><b class="g4"></b><b class="g4"></b><b class="g4"></b><b class="g4"></b>
+  </div>
+  <div class="wall" style="left:2190px;top:300px;width:440px;height:820px;grid-template-columns:repeat(3,1fr);transform:rotate(5deg)">
+    <b class="g4"></b><b class="g4"></b><b class="g3"></b><b class="g4"></b><b class="g3"></b><b class="g2"></b><b class="g3"></b><b class="g2"></b><b class="g1"></b><b class="g2"></b><b class="g1"></b><b class="g1"></b>
+  </div>
+  <div class="chip" style="left:180px;top:150px;transform:scale(.9)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>window tinting near me</div>
+  <div class="chip" style="left:1700px;top:170px;transform:scale(.8);opacity:.85"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>security window film</div>
+  <div class="chip" style="left:520px;top:1180px;transform:scale(.8);opacity:.85"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>commercial window tinting</div>
+  <div class="chip" style="left:1560px;top:1200px;transform:scale(.9)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>frosted privacy film</div>
+
+  <div class="safe">
+    <div class="mark"><i class="pane-a"></i><i class="pane-b"></i><i class="pane-b"></i><i class="pane-a"></i></div>
+    <div class="copy">
+      <div class="eyebrow">For window film companies</div>
+      <div class="name">Window Film<br><em>Marketing Agency</em></div>
+      <div class="pills"><span class="hot">Google Maps</span><span>AI Search</span><span>Web Design</span><span>Video</span><span>Social</span></div>
+    </div>
+  </div>
+  <svg id="guide" viewBox="0 0 2560 1440"><rect x="507" y="508" width="1546" height="424" fill="none" stroke="#3CCB7F" stroke-width="4" stroke-dasharray="16 10"/><rect x="0" y="508" width="2560" height="424" fill="none" stroke="#FF5A5A" stroke-width="4" stroke-dasharray="16 10"/></svg>
+</div>
+</body>
+</html>
