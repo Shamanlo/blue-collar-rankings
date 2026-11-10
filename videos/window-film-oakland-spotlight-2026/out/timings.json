@@ -2107,7 +2107,7 @@
   {
    "id": "areas",
    "start": 192.888,
-   "dur": 10.14,
+   "dur": 9.54,
    "audio": "out/vo/areas.wav",
    "words": [
     [
@@ -2119,74 +2119,74 @@
      "cover"
     ],
     [
-     0.904,
+     0.916,
      "Oakland"
     ],
     [
-     1.223,
+     1.246,
      "neighborhoods"
     ],
     [
-     1.706,
+     1.741,
      "including"
     ],
     [
-     2.178,
+     2.213,
      "Rockridge"
     ],
     [
-     2.933,
+     2.98,
      "Temescal"
     ],
     [
-     3.841,
+     3.864,
      "Montclair"
     ],
     [
-     4.607,
+     4.654,
      "Piedmont Avenue"
     ],
     [
-     5.786,
+     5.845,
      "Lake"
     ],
     [
-     5.951,
+     6.01,
      "Merritt"
     ],
     [
-     6.612,
-     "Grand"
-    ],
-    [
-     6.942,
-     "Lake"
-    ],
-    [
-     7.461,
-     "Adams"
-    ],
-    [
-     7.732,
-     "Point"
-    ],
-    [
-     8.31,
+     6.659,
      "and"
     ],
     [
-     8.392,
-     "Downtown"
+     6.73,
+     "Grand"
     ],
     [
-     8.864,
-     "Oakland"
+     7.083,
+     "Lake"
+    ],
+    [
+     7.65,
+     "20"
+    ],
+    [
+     7.956,
+     "areas"
+    ],
+    [
+     8.286,
+     "in"
+    ],
+    [
+     8.392,
+     "all"
     ]
    ]
   },
   {
    "id": "pick",
-   "start": 203.028,
+   "start": 202.428,
    "dur": 10.716,
    "audio": "out/vo/pick.wav",
    "words": [
@@ -2326,7 +2326,7 @@
   },
   {
    "id": "cta",
-   "start": 213.744,
+   "start": 213.144,
    "dur": 6.78,
    "audio": "out/vo/cta.wav",
    "words": [

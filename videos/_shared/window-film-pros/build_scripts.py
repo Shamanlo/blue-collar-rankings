@@ -314,8 +314,10 @@ def ts(sec):
     return f"{s // 60}:{s % 60:02d}"
 
 
-def write_copy():
+def write_copy(only=None):
     for i, key in enumerate(ORDER):
+        if only and key not in only:
+            continue
         d = C[key]
         city, co = CITY[key], d["company"]
         url = f"https://windowfilm{key}.pro/"
@@ -349,7 +351,7 @@ Thumbnail: `out/thumbnail-youtube.jpg` (1280x720)
 
 ### Description
 
-{they(d['hero'])}
+{re.sub(r'^They ', co + ' ', they(d['hero']))}
 
 🔗 {co}:
 {url}
@@ -424,4 +426,7 @@ Voice: Microsoft edge-tts ({spec['voice']}). Scene order, wording, photos and vo
 
 
 if __name__ == "__main__":
-    write_copy() if sys.argv[1:] == ["copy"] else write_scripts()
+    if sys.argv[1:2] == ["copy"]:
+        write_copy(sys.argv[2:] or None)
+    else:
+        write_scripts()
