@@ -4,3 +4,8 @@ scripts/.badge-jobs.json
 .DS_Store
 __pycache__/
 .wrangler/
+
+# Client footage and finished videos live in GitLab (channel/ is pushed there with Git LFS), not here
+channel/videos/*/*.mp4
+channel/videos/*/*.png
+channel/videos/*/*.jpg
