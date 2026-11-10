@@ -7,7 +7,7 @@ Thumbnail: `out/thumbnail-youtube.jpg` (1280x720)
 
 ### Title
 
-Philadelphia Window Film Pros: Window Film & Window Tinting in Philadelphia (Local Business Spotlight)
+Philadelphia Window Film Pros: Window Film & Tinting in Philadelphia (Local Spotlight)
 
 ### Description
 

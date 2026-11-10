@@ -7,7 +7,7 @@ Thumbnail: `out/thumbnail-youtube.jpg` (1280x720)
 
 ### Title
 
-Atlanta Window Film Pros: Window Film & Window Tinting in Atlanta (Local Business Spotlight)
+Atlanta Window Film Pros: Window Film & Tinting in Atlanta (Local Spotlight)
 
 ### Description
 

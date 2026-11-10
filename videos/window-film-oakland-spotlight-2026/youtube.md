@@ -7,7 +7,7 @@ Thumbnail: `out/thumbnail-youtube.jpg` (1280x720)
 
 ### Title
 
-Oakland Window Film Pros: Window Film & Window Tinting in Oakland (Local Business Spotlight)
+Oakland Window Film Pros: Window Film & Tinting in Oakland (Local Spotlight)
 
 ### Description
 

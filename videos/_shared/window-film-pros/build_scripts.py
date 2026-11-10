@@ -299,7 +299,7 @@ def write_scripts():
 
 
 TITLES = [
-    "{co}: Window Film & Window Tinting in {city} (Local Business Spotlight)",
+    "{co}: Window Film & Tinting in {city} (Local Spotlight)",
     "Best Window Film in {city}? Meet {co} (2026)",
     "{city} Window Tinting for Homes & Businesses | {co} Spotlight",
     "Window Film in {city}: Heat, Glare & UV Control | {co}",

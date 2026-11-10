@@ -7,7 +7,7 @@ Thumbnail: `out/thumbnail-youtube.jpg` (1280x720)
 
 ### Title
 
-NYC Window Film Pros: Window Film & Window Tinting in New York City (Local Business Spotlight)
+NYC Window Film Pros: Window Film & Tinting in New York City (Local Spotlight)
 
 ### Description
 
