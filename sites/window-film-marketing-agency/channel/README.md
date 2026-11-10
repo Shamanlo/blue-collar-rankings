@@ -10,7 +10,8 @@ videos/2026-11-5-videos/
 ```
 
 Pushing to the default branch, or the hourly pipeline schedule, runs `publish.py`. It uploads every video
-whose `publish_at` time has passed and that isn't on the channel yet. Videos are matched by a hidden
+whose `publish_at` time has passed and that isn't on the channel yet, one per run and never
+within 20 hours of the previous post (`MIN_GAP_HOURS`), so a backlog still goes out a day apart. Videos are matched by a hidden
 `wfma-<slug>` tag, so nothing is ever uploaded twice. To post a video, add its folder and push.
 
 ## meta.json

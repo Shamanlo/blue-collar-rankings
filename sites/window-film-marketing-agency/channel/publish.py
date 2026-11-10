@@ -25,6 +25,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 API = os.environ.get("YT_API_BASE", "https://www.googleapis.com")
 TOKEN_URL = os.environ.get("YT_TOKEN_URL", "https://oauth2.googleapis.com/token")
 CHUNK = 8 * 1024 * 1024
+MIN_GAP_HOURS = float(os.environ.get("MIN_GAP_HOURS", 20))  # keeps posts about a day apart even if a run is late
 REQUIRED = ("title", "description", "file", "publish_at")
 
 
@@ -154,7 +155,7 @@ def posted_slugs(token):
         for v in vs.get("items", []):
             for t in v["snippet"].get("tags", []):
                 if t.startswith("wfma-"):
-                    found[t[5:]] = v["id"]
+                    found[t[5:]] = (v["id"], parse_time(v["snippet"].get("publishedAt", "1970-01-01T00:00:00Z")))
     return found
 
 
@@ -224,10 +225,20 @@ def main():
     done = posted_slugs(token)
     for m in videos:
         if m["slug"] in done:
-            print(f"posted  {m['slug']}: https://youtu.be/{done[m['slug']]}")
+            print(f"posted  {m['slug']}: https://youtu.be/{done[m['slug']][0]}")
         elif m not in due:
             print(f"waiting {m['slug']}: posts at {m['publish_at']}")
-    for m in [m for m in due if m["slug"] not in done]:
+    todo = [m for m in due if m["slug"] not in done]
+    if not todo:
+        return
+    if not only:  # one video per run, and not within MIN_GAP_HOURS of the last post
+        last = max((p for _, p in done.values()), default=None)
+        if last and (now() - last).total_seconds() < MIN_GAP_HOURS * 3600:
+            nxt = last + dt.timedelta(hours=MIN_GAP_HOURS)
+            print(f"spacing: last post was {last:%b %d %H:%M} UTC; next one goes out after {nxt:%b %d %H:%M} UTC")
+            return
+        todo = todo[:1]
+    for m in todo:
         print(f"posting {m['slug']}: {m['title']}")
         upload(token, m)
 
