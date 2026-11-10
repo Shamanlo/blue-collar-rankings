@@ -18,8 +18,8 @@
   "sub": "Atlanta Window Film Pros",
   "tag": "Local Spotlight",
   "year": "2026",
-  "bigPx": 120,
-  "reelBigPx": 174,
+  "bigPx": 100,
+  "reelBigPx": 145,
   "subPx": 44,
   "reelSubPx": 60,
   "stamp": [
@@ -42,7 +42,7 @@
    "id": "hook",
    "kind": "title",
    "label": "Local Business Spotlight",
-   "image": "w04-decorative-storefront-window-graphics.jpg",
+   "image": "w15-residential-window-tinting.jpg",
    "kicker": "Atlanta · Local business spotlight",
    "titlePx": 128,
    "title": [
@@ -274,13 +274,11 @@
     "West Midtown",
     "Grant Park",
     "Ansley Park",
-    "Sandy Springs",
-    "Dunwoody",
-    "Brookhaven"
+    "Sandy Springs"
    ],
    "note": "20 neighborhoods & nearby cities served",
    "noteCue": "20",
-   "say": "They cover Atlanta neighborhoods including Inman Park, Virginia-Highland, West Midtown, Grant Park, Ansley Park, Sandy Springs, Dunwoody, and Brookhaven."
+   "say": "They cover Atlanta neighborhoods including Inman Park, Virginia-Highland, West Midtown, Grant Park, Ansley Park, and Sandy Springs, 20 areas in all."
   },
   {
    "id": "pick",
@@ -325,7 +323,7 @@
    "id": "r-hook",
    "kind": "title",
    "label": "Local Business Spotlight",
-   "image": "w04-decorative-storefront-window-graphics.jpg",
+   "image": "w15-residential-window-tinting.jpg",
    "kicker": "Atlanta · Local business spotlight",
    "titlePx": 128,
    "title": [

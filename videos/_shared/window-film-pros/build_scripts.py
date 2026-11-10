@@ -40,10 +40,14 @@ def W(i):
     return next(f.name for f in HERE.glob(f"w{i:02d}-*.jpg"))
 
 
-def own_photos(key):
+BRANDED = {4, 18, 19}  # another business's storefront signage: fine in the body, not on thumbnails or the opener
+
+
+def own_photos(key, plain=False):
     """Pool ids that appear on this city's own site."""
     pool = json.loads((HERE / "pool.json").read_text())
-    return [p["id"] for p in pool if key in p["cities"]]
+    ids = [p["id"] for p in pool if key in p["cities"]]
+    return [x for x in ids if x not in BRANDED] if plain else ids
 
 
 def they(t):
@@ -159,7 +163,8 @@ def scenes(key, i):
     ]
     tp = hook_titles[i % 4]
     sc = {}
-    sc["hook"] = {"id": "hook", "kind": "title", "label": "Local Business Spotlight", "image": W(own[i % len(own)] if own else com_pool[0]),
+    plain = own_photos(key, True)
+    sc["hook"] = {"id": "hook", "kind": "title", "label": "Local Business Spotlight", "image": W(plain[i % len(plain)]),
                   "kicker": f"{city} · Local business spotlight", "titlePx": 112 if max(len(x) for x in tp) > 14 else 128,
                   "title": tp, "year": "2026", "chips": rot(areas, i * 3)[:5], "say": hooks[i % 4]}
     sc["weather"] = {"id": "weather", "kind": "steps", "label": "Why Window Film Here", "plain": True,
@@ -208,9 +213,9 @@ def scenes(key, i):
                  "say": "Common questions: " + " ".join(f"{q} {sentences(a, 1)}" for q, a in faqs[:3])}
     sc["areas"] = {"id": "areas", "kind": "list", "label": "Service Areas",
                    "title": f"Where they work in {SHORT.get(key, city)}",
-                   "items": rot(areas, i * 2)[:8],
+                   "items": rot(areas, i * 2)[:6],
                    "note": f"{len(areas)} neighborhoods & nearby cities served", "noteCue": str(len(areas)),
-                   "say": f"They cover {city} neighborhoods including " + ", ".join(rot(areas, i * 2)[:7]) + f", and {rot(areas, i * 2)[7]}."}
+                   "say": f"They cover {city} neighborhoods including " + ", ".join(rot(areas, i * 2)[:5]) + f", and {rot(areas, i * 2)[5]}, {len(areas)} areas in all."}
     pts = [
         ["Residential & commercial window film", "Film matched to your glass & orientation", "Samples shown on your own windows", "After-hours installs for offices & shops", "Reply within 24 hours"],
         ["Heat, glare, UV & privacy film", "Security & anti-graffiti film", "Glass checked before anything is installed", "Quotes by online request", "Reply within 24 hours"],
@@ -254,22 +259,24 @@ def scenes(key, i):
     return land, reel
 
 
+THUMB = {"atlanta": 10, "chicago": 15, "dfw": 7, "houston": 14, "miami": 5, "nyc": 17, "oakland": 11, "philly": 1,
+         "phoenix": 6, "riverside": 9, "sandiego": 12, "sanfrancisco": 13, "seattle": 20, "dc": 21}  # one photo per city
 STAMPS = [["99%", ["UV", "BLOCKED"]], ["80%", ["LESS", "HEAT"]], ["90%", ["LESS", "GLARE"]], ["LOCAL", ["SPOT", "LIGHT"]]]
 
 
 def build(key, i):
     land, reel = scenes(key, i)
-    own = own_photos(key)
+    own = own_photos(key, True)
     city = CITY[key]
     lines = [["Window Film", SHORT.get(key, city)], ["Window", "Tinting"], [SHORT.get(key, city), "Window Film"]][i % 3]
-    big = 120 if max(len(x) for x in lines) <= 11 else 100
+    big = 100 if max(len(x) for x in lines) <= 11 else 84
     return {
         "voice": VOICES[i % len(VOICES)], "rate": "+6%",
         "assetsDir": "../_shared/window-film-pros",
         "header": f"{city} · Local Business Spotlight · 2026",
         "source": f"Business details from windowfilm{key}.pro. Film figures are typical upper ranges.",
         "sourceKinds": ["stats"],
-        "thumbs": {"image": W(own[(i * 2 + 1) % len(own)]), "landscapePos": "50% 50%", "reelPos": "50% 50%",
+        "thumbs": {"image": W(THUMB[key]), "landscapePos": "50% 50%", "reelPos": "50% 50%",
                    "lines": lines, "sub": C[key]["company"], "tag": "Local Spotlight", "year": "2026",
                    "bigPx": big, "reelBigPx": int(big * 1.45), "subPx": 44, "reelSubPx": 60,
                    "stamp": STAMPS[i % 4], "reelStamp": STAMPS[(i + 1) % 4]},

@@ -8,7 +8,7 @@
   "stats"
  ],
  "thumbs": {
-  "image": "w04-decorative-storefront-window-graphics.jpg",
+  "image": "w11-glass-facade-solar-film.jpg",
   "landscapePos": "50% 50%",
   "reelPos": "50% 50%",
   "lines": [
@@ -18,8 +18,8 @@
   "sub": "Oakland Window Film Pros",
   "tag": "Local Spotlight",
   "year": "2026",
-  "bigPx": 120,
-  "reelBigPx": 174,
+  "bigPx": 100,
+  "reelBigPx": 145,
   "subPx": 44,
   "reelSubPx": 60,
   "stamp": [
@@ -274,13 +274,11 @@
     "Montclair",
     "Piedmont Avenue",
     "Lake Merritt",
-    "Grand Lake",
-    "Adams Point",
-    "Downtown Oakland"
+    "Grand Lake"
    ],
    "note": "20 neighborhoods & nearby cities served",
    "noteCue": "20",
-   "say": "They cover Oakland neighborhoods including Rockridge, Temescal, Montclair, Piedmont Avenue, Lake Merritt, Grand Lake, Adams Point, and Downtown Oakland."
+   "say": "They cover Oakland neighborhoods including Rockridge, Temescal, Montclair, Piedmont Avenue, Lake Merritt, and Grand Lake, 20 areas in all."
   },
   {
    "id": "pick",

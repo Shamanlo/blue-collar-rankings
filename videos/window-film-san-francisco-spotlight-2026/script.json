@@ -18,8 +18,8 @@
   "sub": "San Francisco Window Film Pros",
   "tag": "Local Spotlight",
   "year": "2026",
-  "bigPx": 120,
-  "reelBigPx": 174,
+  "bigPx": 100,
+  "reelBigPx": 145,
   "subPx": 44,
   "reelSubPx": 60,
   "stamp": [
@@ -274,13 +274,11 @@
     "SoMa",
     "Financial District",
     "Nob Hill",
-    "Russian Hill",
-    "North Beach",
-    "Hayes Valley"
+    "Russian Hill"
    ],
    "note": "20 neighborhoods & nearby cities served",
    "noteCue": "20",
-   "say": "They cover San Francisco neighborhoods including Noe Valley, Mission District, SoMa, Financial District, Nob Hill, Russian Hill, North Beach, and Hayes Valley."
+   "say": "They cover San Francisco neighborhoods including Noe Valley, Mission District, SoMa, Financial District, Nob Hill, and Russian Hill, 20 areas in all."
   },
   {
    "id": "pick",

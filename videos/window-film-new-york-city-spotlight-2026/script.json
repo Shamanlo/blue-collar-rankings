@@ -8,7 +8,7 @@
   "stats"
  ],
  "thumbs": {
-  "image": "w15-residential-window-tinting.jpg",
+  "image": "w17-solar-control-storefront-film.jpg",
   "landscapePos": "50% 50%",
   "reelPos": "50% 50%",
   "lines": [
@@ -18,8 +18,8 @@
   "sub": "NYC Window Film Pros",
   "tag": "Local Spotlight",
   "year": "2026",
-  "bigPx": 120,
-  "reelBigPx": 174,
+  "bigPx": 100,
+  "reelBigPx": 145,
   "subPx": 44,
   "reelSubPx": 60,
   "stamp": [
@@ -274,13 +274,11 @@
     "Hudson Yards",
     "Long Island City",
     "Astoria",
-    "Williamsburg",
-    "DUMBO",
-    "Brooklyn Heights"
+    "Williamsburg"
    ],
    "note": "20 neighborhoods & nearby cities served",
    "noteCue": "20",
-   "say": "They cover New York City neighborhoods including Harlem, Battery Park City, Hudson Yards, Long Island City, Astoria, Williamsburg, DUMBO, and Brooklyn Heights."
+   "say": "They cover New York City neighborhoods including Harlem, Battery Park City, Hudson Yards, Long Island City, Astoria, and Williamsburg, 20 areas in all."
   },
   {
    "id": "pick",

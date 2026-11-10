@@ -8,7 +8,7 @@
   "stats"
  ],
  "thumbs": {
-  "image": "w18-tinted-window-film.jpg",
+  "image": "w14-home-window-tinting-living-room.jpg",
   "landscapePos": "50% 50%",
   "reelPos": "50% 50%",
   "lines": [
@@ -18,8 +18,8 @@
   "sub": "Houston Window Film Pros",
   "tag": "Local Spotlight",
   "year": "2026",
-  "bigPx": 120,
-  "reelBigPx": 174,
+  "bigPx": 100,
+  "reelBigPx": 145,
   "subPx": 44,
   "reelSubPx": 60,
   "stamp": [
@@ -42,7 +42,7 @@
    "id": "hook",
    "kind": "title",
    "label": "Local Business Spotlight",
-   "image": "w07-living-room-heat-control-film.jpg",
+   "image": "w12-graffiti-etched-storefront-glass.jpg",
    "kicker": "Houston · Local business spotlight",
    "titlePx": 112,
    "title": [
@@ -240,13 +240,11 @@
     "Museum District",
     "Rice Military",
     "Energy Corridor",
-    "Spring Branch",
-    "Meyerland",
-    "Garden Oaks"
+    "Spring Branch"
    ],
    "note": "20 neighborhoods & nearby cities served",
    "noteCue": "20",
-   "say": "They cover Houston neighborhoods including Downtown Houston, Memorial, Museum District, Rice Military, Energy Corridor, Spring Branch, Meyerland, and Garden Oaks."
+   "say": "They cover Houston neighborhoods including Downtown Houston, Memorial, Museum District, Rice Military, Energy Corridor, and Spring Branch, 20 areas in all."
   },
   {
    "id": "faq",
@@ -325,7 +323,7 @@
    "id": "r-hook",
    "kind": "title",
    "label": "Local Business Spotlight",
-   "image": "w07-living-room-heat-control-film.jpg",
+   "image": "w12-graffiti-etched-storefront-glass.jpg",
    "kicker": "Houston · Local business spotlight",
    "titlePx": 112,
    "title": [

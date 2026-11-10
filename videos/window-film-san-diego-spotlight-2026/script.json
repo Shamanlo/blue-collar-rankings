@@ -18,8 +18,8 @@
   "sub": "San Diego Window Film Pros",
   "tag": "Local Spotlight",
   "year": "2026",
-  "bigPx": 120,
-  "reelBigPx": 174,
+  "bigPx": 100,
+  "reelBigPx": 145,
   "subPx": 44,
   "reelSubPx": 60,
   "stamp": [
@@ -241,13 +241,11 @@
     "Coronado",
     "Del Mar",
     "Chula Vista",
-    "Carlsbad",
-    "La Jolla",
-    "Pacific Beach"
+    "Carlsbad"
    ],
    "note": "20 neighborhoods & nearby cities served",
    "noteCue": "20",
-   "say": "They cover San Diego neighborhoods including Clairemont, University City, Coronado, Del Mar, Chula Vista, Carlsbad, La Jolla, and Pacific Beach."
+   "say": "They cover San Diego neighborhoods including Clairemont, University City, Coronado, Del Mar, Chula Vista, and Carlsbad, 20 areas in all."
   },
   {
    "id": "process",

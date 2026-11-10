@@ -8,7 +8,7 @@
   "stats"
  ],
  "thumbs": {
-  "image": "w19-storefront-window-film-crew.jpg",
+  "image": "w15-residential-window-tinting.jpg",
   "landscapePos": "50% 50%",
   "reelPos": "50% 50%",
   "lines": [
@@ -18,8 +18,8 @@
   "sub": "Chicago Window Film Pros",
   "tag": "Local Spotlight",
   "year": "2026",
-  "bigPx": 120,
-  "reelBigPx": 174,
+  "bigPx": 100,
+  "reelBigPx": 145,
   "subPx": 44,
   "reelSubPx": 60,
   "stamp": [
@@ -42,7 +42,7 @@
    "id": "hook",
    "kind": "title",
    "label": "Local Business Spotlight",
-   "image": "w19-storefront-window-film-crew.jpg",
+   "image": "w05-floor-to-ceiling-glass-film-install.jpg",
    "kicker": "Chicago · Local business spotlight",
    "titlePx": 112,
    "title": [
@@ -274,13 +274,11 @@
     "Andersonville",
     "Hyde Park",
     "Edgewater",
-    "Rogers Park",
-    "Ravenswood",
-    "Pilsen"
+    "Rogers Park"
    ],
    "note": "20 neighborhoods & nearby cities served",
    "noteCue": "20",
-   "say": "They cover Chicago neighborhoods including Logan Square, Old Town, Andersonville, Hyde Park, Edgewater, Rogers Park, Ravenswood, and Pilsen."
+   "say": "They cover Chicago neighborhoods including Logan Square, Old Town, Andersonville, Hyde Park, Edgewater, and Rogers Park, 20 areas in all."
   },
   {
    "id": "pick",
@@ -325,7 +323,7 @@
    "id": "r-hook",
    "kind": "title",
    "label": "Local Business Spotlight",
-   "image": "w19-storefront-window-film-crew.jpg",
+   "image": "w05-floor-to-ceiling-glass-film-install.jpg",
    "kicker": "Chicago · Local business spotlight",
    "titlePx": 112,
    "title": [

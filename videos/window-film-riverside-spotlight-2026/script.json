@@ -8,7 +8,7 @@
   "stats"
  ],
  "thumbs": {
-  "image": "w04-decorative-storefront-window-graphics.jpg",
+  "image": "w09-frosted-glass-window-film.jpg",
   "landscapePos": "50% 50%",
   "reelPos": "50% 50%",
   "lines": [
@@ -18,8 +18,8 @@
   "sub": "Riverside Window Film Pros",
   "tag": "Local Spotlight",
   "year": "2026",
-  "bigPx": 120,
-  "reelBigPx": 174,
+  "bigPx": 100,
+  "reelBigPx": 145,
   "subPx": 44,
   "reelSubPx": 60,
   "stamp": [
@@ -42,7 +42,7 @@
    "id": "hook",
    "kind": "title",
    "label": "Local Business Spotlight",
-   "image": "w13-home-window-film-installation.jpg",
+   "image": "w21-skylight-solar-control-film.jpg",
    "kicker": "Riverside · Local business spotlight",
    "titlePx": 112,
    "title": [
@@ -274,13 +274,11 @@
     "Downtown Riverside",
     "Wood Streets",
     "Canyon Crest",
-    "Orangecrest",
-    "Mission Grove",
-    "Arlington"
+    "Orangecrest"
    ],
    "note": "20 neighborhoods & nearby cities served",
    "noteCue": "20",
-   "say": "They cover Riverside neighborhoods including Murrieta, Redlands, Downtown Riverside, Wood Streets, Canyon Crest, Orangecrest, Mission Grove, and Arlington."
+   "say": "They cover Riverside neighborhoods including Murrieta, Redlands, Downtown Riverside, Wood Streets, Canyon Crest, and Orangecrest, 20 areas in all."
   },
   {
    "id": "pick",
@@ -325,7 +323,7 @@
    "id": "r-hook",
    "kind": "title",
    "label": "Local Business Spotlight",
-   "image": "w13-home-window-film-installation.jpg",
+   "image": "w21-skylight-solar-control-film.jpg",
    "kicker": "Riverside · Local business spotlight",
    "titlePx": 112,
    "title": [

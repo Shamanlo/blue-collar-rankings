@@ -8,7 +8,7 @@
   "stats"
  ],
  "thumbs": {
-  "image": "w19-storefront-window-film-crew.jpg",
+  "image": "w05-floor-to-ceiling-glass-film-install.jpg",
   "landscapePos": "50% 50%",
   "reelPos": "50% 50%",
   "lines": [
@@ -18,8 +18,8 @@
   "sub": "Miami Window Film Pros",
   "tag": "Local Spotlight",
   "year": "2026",
-  "bigPx": 120,
-  "reelBigPx": 174,
+  "bigPx": 100,
+  "reelBigPx": 145,
   "subPx": 44,
   "reelSubPx": 60,
   "stamp": [
@@ -42,7 +42,7 @@
    "id": "hook",
    "kind": "title",
    "label": "Local Business Spotlight",
-   "image": "w19-storefront-window-film-crew.jpg",
+   "image": "w02-street-view-through-window-glass.jpg",
    "kicker": "Miami · Local business spotlight",
    "titlePx": 112,
    "title": [
@@ -241,13 +241,11 @@
     "Edgewater",
     "Miami Design District",
     "Coconut Grove",
-    "Little Havana",
-    "Allapattah",
-    "Miami Beach"
+    "Little Havana"
    ],
    "note": "20 neighborhoods & nearby cities served",
    "noteCue": "20",
-   "say": "They cover Miami neighborhoods including Wynwood, Midtown Miami, Edgewater, Miami Design District, Coconut Grove, Little Havana, Allapattah, and Miami Beach."
+   "say": "They cover Miami neighborhoods including Wynwood, Midtown Miami, Edgewater, Miami Design District, Coconut Grove, and Little Havana, 20 areas in all."
   },
   {
    "id": "process",
@@ -325,7 +323,7 @@
    "id": "r-hook",
    "kind": "title",
    "label": "Local Business Spotlight",
-   "image": "w19-storefront-window-film-crew.jpg",
+   "image": "w02-street-view-through-window-glass.jpg",
    "kicker": "Miami · Local business spotlight",
    "titlePx": 112,
    "title": [
