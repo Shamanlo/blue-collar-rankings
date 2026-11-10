@@ -1,0 +1,307 @@
+[
+{
+"id": 0,
+"file": "chicago/chicago-anti-graffiti-film-tag-removal.webp",
+"cities": [
+"chicago",
+"miami",
+"riverside"
+],
+"names": [
+"anti-graffiti-film-tag-removal"
+]
+},
+{
+"id": 1,
+"file": "dc/washington-dc-conference-room-frosted-film.webp",
+"cities": [
+"dc",
+"nyc",
+"phoenix",
+"seattle"
+],
+"names": [
+"conference-room-frosted-film",
+"new-york-city-conference-room-frosted-film"
+]
+},
+{
+"id": 2,
+"file": "dc/washington-dc-street-view-through-window-glass.webp",
+"cities": [
+"dc",
+"dfw",
+"houston",
+"miami"
+],
+"names": [
+"dallas-fort-worth-street-view-through-window-glass",
+"street-view-through-window-glass"
+]
+},
+{
+"id": 3,
+"file": "dc/washington-dc-uv-protection-window-film-home.webp",
+"cities": [
+"dc",
+"miami",
+"nyc",
+"oakland",
+"seattle"
+],
+"names": [
+"new-york-city-uv-protection-window-film-home",
+"uv-protection-window-film-home"
+]
+},
+{
+"id": 4,
+"file": "atlanta/atlanta-decorative-storefront-window-graphics.webp",
+"cities": [
+"atlanta",
+"chicago",
+"dfw",
+"houston",
+"oakland",
+"riverside"
+],
+"names": [
+"dallas-fort-worth-decorative-storefront-window-graphics",
+"storefront-window-graphics"
+]
+},
+{
+"id": 5,
+"file": "chicago/chicago-floor-to-ceiling-glass-film-install.webp",
+"cities": [
+"chicago",
+"miami",
+"nyc",
+"oakland",
+"philly",
+"sandiego"
+],
+"names": [
+"floor-to-ceiling-glass-film-install",
+"new-york-city-floor-to-ceiling-glass-film-install"
+]
+},
+{
+"id": 6,
+"file": "dfw/dallas-fort-worth-commercial-window-tinting.webp",
+"cities": [
+"dfw",
+"oakland",
+"phoenix"
+],
+"names": [
+"dallas-fort-worth-commercial-window-tinting",
+"window-tinting"
+]
+},
+{
+"id": 7,
+"file": "dfw/dallas-fort-worth-living-room-heat-control-film.webp",
+"cities": [
+"dfw",
+"houston",
+"oakland",
+"sandiego"
+],
+"names": [
+"dallas-fort-worth-living-room-heat-control-film",
+"living-room-heat-control-film"
+]
+},
+{
+"id": 8,
+"file": "dfw/dallas-fort-worth-retail-display-window-film.webp",
+"cities": [
+"dfw",
+"philly",
+"sanfrancisco"
+],
+"names": [
+"dallas-fort-worth-retail-display-window-film",
+"philadelphia-retail-display-window-film",
+"san-francisco-retail-display-window-film"
+]
+},
+{
+"id": 9,
+"file": "phoenix/phoenix-frosted-glass-window-film.webp",
+"cities": [
+"phoenix",
+"riverside",
+"sandiego",
+"sanfrancisco"
+],
+"names": [
+"frosted-glass-window-film",
+"glass-window-film"
+]
+},
+{
+"id": 10,
+"file": "atlanta/atlanta-frosted-privacy-window-film.webp",
+"cities": [
+"atlanta",
+"dc",
+"philly",
+"phoenix",
+"seattle"
+],
+"names": [
+"frosted-privacy-window-film",
+"privacy-window-film"
+]
+},
+{
+"id": 11,
+"file": "atlanta/atlanta-glass-facade-solar-film.webp",
+"cities": [
+"atlanta",
+"philly",
+"sanfrancisco"
+],
+"names": [
+"glass-facade-solar-film"
+]
+},
+{
+"id": 12,
+"file": "houston/houston-graffiti-etched-storefront-glass.webp",
+"cities": [
+"houston",
+"phoenix",
+"sandiego"
+],
+"names": [
+"houston-graffiti-etched-storefront-glass",
+"phoenix-graffiti-etched-storefront-glass",
+"san-diego-graffiti-etched-storefront-glass"
+]
+},
+{
+"id": 13,
+"file": "riverside/riverside-home-window-film-installation.webp",
+"cities": [
+"riverside",
+"sanfrancisco"
+],
+"names": [
+"home-window-film-installation",
+"window-film-installation"
+]
+},
+{
+"id": 14,
+"file": "chicago/chicago-home-window-tinting-living-room.webp",
+"cities": [
+"chicago",
+"dc",
+"dfw",
+"houston"
+],
+"names": [
+"dallas-fort-worth-home-window-tinting-living-room",
+"home-window-tinting-living-room",
+"window-tinting-living-room"
+]
+},
+{
+"id": 15,
+"file": "atlanta/atlanta-residential-window-tinting.webp",
+"cities": [
+"atlanta",
+"chicago",
+"miami",
+"nyc",
+"sandiego"
+],
+"names": [
+"new-york-city-residential-window-tinting",
+"residential-window-tinting",
+"window-tinting"
+]
+},
+{
+"id": 16,
+"file": "atlanta/atlanta-scratched-glass-anti-graffiti-film.webp",
+"cities": [
+"atlanta",
+"nyc",
+"philly",
+"riverside"
+],
+"names": [
+"glass-anti-graffiti-film",
+"new-york-city-scratched-glass-anti-graffiti-film"
+]
+},
+{
+"id": 17,
+"file": "atlanta/atlanta-solar-control-storefront-film.webp",
+"cities": [
+"atlanta",
+"sanfrancisco"
+],
+"names": [
+"solar-control-storefront-film"
+]
+},
+{
+"id": 18,
+"file": "houston/houston-storefront-tinted-window-film.webp",
+"cities": [
+"houston",
+"oakland",
+"phoenix"
+],
+"names": [
+"tinted-window-film"
+]
+},
+{
+"id": 19,
+"file": "chicago/chicago-storefront-window-film-crew.webp",
+"cities": [
+"chicago",
+"dc",
+"miami",
+"philly",
+"seattle"
+],
+"names": [
+"storefront-window-film-crew",
+"window-film-crew"
+]
+},
+{
+"id": 20,
+"file": "seattle/seattle-storefront-window-film-installation.webp",
+"cities": [
+"seattle"
+],
+"names": [
+"window-film-installation"
+]
+},
+{
+"id": 21,
+"file": "nyc/new-york-city-skylight-solar-control-film.webp",
+"cities": [
+"nyc",
+"riverside",
+"sandiego",
+"sanfrancisco",
+"seattle"
+],
+"names": [
+"new-york-city-skylight-solar-control-film",
+"san-diego-skylight-solar-control-film",
+"san-francisco-skylight-solar-control-film",
+"solar-control-film"
+]
+}
+]

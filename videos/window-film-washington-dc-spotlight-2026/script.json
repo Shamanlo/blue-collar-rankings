@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-BrianNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "Washington, DC · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmdc.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w10-frosted-privacy-window-film.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Window",
+   "Tinting"
+  ],
+  "sub": "DC Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "80%",
+   [
+    "LESS",
+    "HEAT"
+   ]
+  ],
+  "reelStamp": [
+   "90%",
+   [
+    "LESS",
+    "GLARE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w02-street-view-through-window-glass.jpg",
+   "kicker": "Washington, DC · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "DC",
+    "Window Film Pros"
+   ],
+   "year": "2026",
+   "chips": [
+    "Chevy Chase",
+    "Capitol Hill",
+    "Georgetown",
+    "Dupont Circle",
+    "Logan Circle"
+   ],
+   "say": "Is your Washington, DC home or office too hot, too bright, or too exposed? Meet DC Window Film Pros, the local window film and window tinting installers."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "The numbers: up to 99 percent of UV, up to 80 percent of solar heat, and up to 90 percent of glare, depending on the film and your glass."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Conference Room Privacy",
+     "desc": "Visual privacy for glass meeting rooms and partner offices",
+     "icon": "search",
+     "cue": "conference"
+    },
+    {
+     "name": "Low-E",
+     "desc": "For older single-pane offices",
+     "icon": "pin",
+     "cue": "low-e"
+    },
+    {
+     "name": "Office",
+     "desc": "Heat and glare control for perimeter offices from K Street to Tysons",
+     "icon": "clock",
+     "cue": "office"
+    },
+    {
+     "name": "Storefront",
+     "desc": "Display windows on corridors like M Street",
+     "icon": "page",
+     "cue": "storefront"
+    }
+   ],
+   "say": "For businesses: Conference Room Privacy: Visual privacy for glass meeting rooms and partner offices, blocking sightlines to screens and whiteboards while daylight still reaches the room. Low-E: For older single-pane offices, schools and churches, a low-emissivity layer trimming summer heat gain and holding more heat indoors through DC winters. Office: Heat and glare control for perimeter offices from K Street to Tysons, installed after hours and floor by floor with landlord paperwork handled up front. Storefront: Display windows on corridors like M Street, Barracks Row and Bethesda Row stay visible to shoppers and run cooler under a light solar and UV film."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in DC",
+   "cards": [
+    {
+     "name": "Security",
+     "desc": "Clear safety film for ground-floor windows",
+     "image": "w14-home-window-tinting-living-room.jpg",
+     "cue": "security"
+    },
+    {
+     "name": "Glare Reduction",
+     "desc": "Film that tones down harsh light on home office monitors and TVs",
+     "image": "w13-home-window-film-installation.jpg",
+     "cue": "glare"
+    },
+    {
+     "name": "Energy-Saving",
+     "desc": "Solar and low-E films that trim summer cooling",
+     "image": "w15-residential-window-tinting.jpg",
+     "cue": "energy-saving"
+    },
+    {
+     "name": "Home Tinting",
+     "desc": "Window tinting for rowhouses",
+     "image": "w09-frosted-glass-window-film.jpg",
+     "cue": "home"
+    }
+   ],
+   "say": "For homes: Security: Clear safety film for ground-floor windows, alley doors and basement units that holds broken glass in the frame and slows anyone trying to climb through. Glare Reduction: Film that tones down harsh light on home office monitors and TVs, including the glare bouncing off the Potomac and Anacostia into waterfront condos. Energy-Saving: Solar and low-E films that trim summer cooling and winter heating on older windows, a reversible upgrade where replacing historic sashes is difficult. Home Tinting: Window tinting for rowhouses, condos and suburban homes, planned room by room around front and rear exposures, with a clear, low-reflectance look that keeps historic district reviewers comfortable."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Summer Heat, Humidity and Sun on Washington DC Glass",
+   "sub": "Washington, DC, DC",
+   "steps": [
+    {
+     "image": "w10-frosted-privacy-window-film.jpg"
+    },
+    {
+     "image": "w19-storefront-window-film-crew.jpg"
+    },
+    {
+     "image": "w03-uv-protection-window-film-home.jpg"
+    }
+   ],
+   "say": "Washington summers are long, hot and sticky. Heat builds from late May, humid stretches keep the nights warm, and the downtown blocks hold heat well into the evening. Winters are cold enough to matter, with freezing nights and the occasional snowstorm, so the glass is a heat problem for half the year and a heat loss problem for much of the other half."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Rowhouses, Historic Districts and Home Window Tinting in DC",
+   "sub": "McLean · Bethesda · Silver Spring",
+   "steps": [
+    {
+     "image": "w04-decorative-storefront-window-graphics.jpg"
+    },
+    {
+     "image": "w13-home-window-film-installation.jpg"
+    },
+    {
+     "image": "w06-commercial-window-tinting.jpg"
+    }
+   ],
+   "say": "Residential work here usually means a rowhouse. Federal-era houses in Georgetown, Victorian bay fronts on Capitol Hill and around Logan Circle, and converted townhouse condos in Dupont Circle all have the same quirks: windows only at the front and back, tall sashes, old glass that owners want to keep, and English basement units with windows at sidewalk level."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Does film affect the warranty on my windows?",
+     "desc": "Certain manufacturers of insulated glass restrict coverage once",
+     "icon": "clock",
+     "cue": "does"
+    },
+    {
+     "name": "What drives the price of window film?",
+     "desc": "Four things: the film you pick",
+     "icon": "shield",
+     "cue": "what"
+    },
+    {
+     "name": "Do I need historic district approval to tint windows in Georgetown?",
+     "desc": "Interior film that keeps the glass looking clear is generally treated",
+     "icon": "page",
+     "cue": "do"
+    },
+    {
+     "name": "Is security window film the same as blast mitigation?",
+     "desc": "No",
+     "icon": "roof",
+     "cue": "is"
+    }
+   ],
+   "say": "Common questions: Does film affect the warranty on my windows? Certain manufacturers of insulated glass restrict coverage once aftermarket film goes on. What drives the price of window film in DC? Four things: the film you pick, total square feet, the count of individual panes, and whether they need ladders, lifts or after-hours access. Do I need historic district approval to tint windows in Georgetown or on Capitol Hill? Interior film that keeps the glass looking clear is generally treated as a minor matter, but rules differ between Georgetown, which falls under the Commission of Fine Arts, and districts reviewed by the DC Historic Preservation Office."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "Start with the quote form: the address",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "They confirm measurements, identify single-pane, insulated",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "Homes are usually done in a day",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Film needs time to dry fully",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, start with the quote form: the address, approximate window sizes and the problem you want solved. Then, they confirm measurements, identify single-pane, insulated or low-E glass, and tape samples to the windows at the time of day the problem is worst. On install day, homes are usually done in a day. Finally, film needs time to dry fully, longer in humid summer weeks and cold winter months."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in DC",
+   "items": [
+    "NoMa",
+    "Penn Quarter",
+    "Adams Morgan",
+    "The Wharf",
+    "Downtown DC",
+    "Arlington",
+    "Alexandria",
+    "Tysons"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover Washington, DC neighborhoods including NoMa, Penn Quarter, Adams Morgan, The Wharf, Downtown DC, Arlington, Alexandria, and Tysons."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w10-frosted-privacy-window-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "DC Window Film Pros",
+   "nameCue": "DC",
+   "where": "Tysons · Reston · McLean · Bethesda",
+   "logo": "logo-dc.png",
+   "logoBg": "#fff",
+   "points": [
+    "Heat, glare, UV & privacy film",
+    "Security & anti-graffiti film",
+    "Glass checked before anything is installed",
+    "Quotes by online request",
+    "Reply within 24 hours"
+   ],
+   "say": "So if your Washington, DC windows are too hot, too bright or too exposed, give DC Window Film Pros a shout for a quote."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w19-storefront-window-film-crew.jpg",
+   "logo": "logo-dc.png",
+   "name": "DC Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmdc.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film D C dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmdc.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w02-street-view-through-window-glass.jpg",
+   "kicker": "Washington, DC · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "DC",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Tysons",
+    "Reston",
+    "McLean",
+    "Bethesda"
+   ],
+   "say": "Meet DC Window Film Pros."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w10-frosted-privacy-window-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "DC Window Film Pros",
+   "nameCue": "DC",
+   "where": "Tysons · Reston · McLean",
+   "logo": "logo-dc.png",
+   "logoBg": "#fff",
+   "points": [
+    "Heat, glare, UV & privacy film",
+    "Security & anti-graffiti film",
+    "Glass checked before anything is installed"
+   ],
+   "say": "For homes and businesses across Washington, DC, give DC Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w19-storefront-window-film-crew.jpg",
+   "logo": "logo-dc.png",
+   "name": "DC Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmdc.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film D C dot pro.",
+   "say": "For a free window film quote, visit windowfilmdc.pro."
+  }
+ ]
+}

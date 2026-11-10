@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-GuyNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "Miami · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmmiami.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w19-storefront-window-film-crew.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Miami",
+   "Window Film"
+  ],
+  "sub": "Miami Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "LOCAL",
+   [
+    "SPOT",
+    "LIGHT"
+   ]
+  ],
+  "reelStamp": [
+   "99%",
+   [
+    "UV",
+    "BLOCKED"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w19-storefront-window-film-crew.jpg",
+   "kicker": "Miami · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Local Spotlight:",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Aventura",
+    "Sunny Isles Beach",
+    "Hialeah",
+    "Kendall",
+    "Pinecrest"
+   ],
+   "say": "Thinking about window tinting in Miami? Here's a look at Miami Window Film Pros, what they install, and why window film makes sense here."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Why Window Film Matters in Miami's Year-Round Sun",
+   "sub": "Miami, FL",
+   "steps": [
+    {
+     "image": "w02-street-view-through-window-glass.jpg"
+    },
+    {
+     "image": "w05-floor-to-ceiling-glass-film-install.jpg"
+    },
+    {
+     "image": "w03-uv-protection-window-film-home.jpg"
+    }
+   ],
+   "say": "Most American cities get a break from cooling for part of the year. Miami barely does. The dry season from roughly November to April is milder and less humid, but sunny afternoons still push indoor temperatures up on any glass that faces the sun."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in Miami",
+   "cards": [
+    {
+     "name": "Privacy",
+     "desc": "Frosted, mirrored and gradient finishes for bathrooms",
+     "image": "w09-frosted-glass-window-film.jpg",
+     "cue": "privacy"
+    },
+    {
+     "name": "Decorative",
+     "desc": "Etched, striped and patterned films for front-door glass",
+     "image": "w10-frosted-privacy-window-film.jpg",
+     "cue": "decorative"
+    },
+    {
+     "name": "Security",
+     "desc": "Heavy clear film that holds a cracked pane together",
+     "image": "w07-living-room-heat-control-film.jpg",
+     "cue": "security"
+    },
+    {
+     "name": "Glare Reduction",
+     "desc": "Takes the edge off reflections on TVs",
+     "image": "w13-home-window-film-installation.jpg",
+     "cue": "glare"
+    }
+   ],
+   "say": "For homes: Privacy: Frosted, mirrored and gradient finishes for bathrooms, ground-floor bedrooms and condos that face straight into the next tower. Decorative: Etched, striped and patterned films for front-door glass, sidelights, shower enclosures and interior partitions. Security: Heavy clear film that holds a cracked pane together and makes it slower to push through sliders, French doors and ground-floor windows. Glare Reduction: Takes the edge off reflections on TVs, monitors and tile floors in rooms facing the water or a bright street, without closing the blinds on the view you paid for."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Decorative & Frosted Glass",
+     "desc": "Frosted bands, full frost, cut-out logos",
+     "icon": "chart",
+     "cue": "decorative"
+    },
+    {
+     "name": "Solar Control",
+     "desc": "Heat and glare rejection on big commercial glass",
+     "icon": "bolt",
+     "cue": "solar"
+    },
+    {
+     "name": "Conference Room Privacy",
+     "desc": "Frosted or patterned film on glass meeting rooms",
+     "icon": "search",
+     "cue": "conference"
+    },
+    {
+     "name": "Low-E",
+     "desc": "For older Miami buildings with single-pane glass",
+     "icon": "pin",
+     "cue": "low-e"
+    }
+   ],
+   "say": "For businesses: Decorative & Frosted Glass: Frosted bands, full frost, cut-out logos and patterns for clinic windows, glass office fronts and suite doors, with crisp edges and clean removal when the lease is up. Solar Control: Heat and glare rejection on big commercial glass, from curtain-wall towers to warehouse offices in Doral, selected after they know what glazing is already in the frames. Conference Room Privacy: Frosted or patterned film on glass meeting rooms so slides, whiteboards and faces are hidden from the hallway. Low-E: For older Miami buildings with single-pane glass, low-emissivity film trims solar heat and helps hold conditioned air indoors, at a fraction of the disruption of new windows."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "On the glass you already have, film can block up to 99 percent of UV rays, up to 80 percent of solar heat, and up to 90 percent of glare."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Will my condo association allow window film?",
+     "desc": "Most Miami associations accept interior film",
+     "icon": "chart",
+     "cue": "will"
+    },
+    {
+     "name": "How long does window film last in Miami sun?",
+     "desc": "Interior film on home and office glass usually lasts many years",
+     "icon": "search",
+     "cue": "how"
+    },
+    {
+     "name": "How many days does new film need to cure?",
+     "desc": "Usually several days to a few weeks",
+     "icon": "clock",
+     "cue": "how"
+    },
+    {
+     "name": "What does window tinting cost for a Miami condo or office?",
+     "desc": "The number comes from the film you pick",
+     "icon": "shield",
+     "cue": "what"
+    }
+   ],
+   "say": "Common questions: Will my condo association allow window film? Most Miami associations accept interior film that leaves the facade looking unchanged, though nearly all want to see it first. How long does window film last in Miami sun? Interior film on home and office glass usually lasts many years, and the film maker's warranty states the term. How many days does new film need to cure in Miami? Usually several days to a few weeks."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Hurricane Season and Security Window Film in Miami",
+   "sub": "Aventura · Sunny Isles Beach · Hialeah",
+   "steps": [
+    {
+     "image": "w01-conference-room-frosted-film.jpg"
+    },
+    {
+     "image": "w10-frosted-privacy-window-film.jpg"
+    },
+    {
+     "image": "w12-graffiti-etched-storefront-glass.jpg"
+    }
+   ],
+   "say": "Hurricane season runs from June 1 to November 30, and after Hurricane Andrew in 1992 Miami-Dade adopted some of the strictest building requirements in the country. Openings in the county's High-Velocity Hurricane Zone are protected with impact windows or shutters that carry product approval. Window film is not part of that system."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in Miami",
+   "items": [
+    "Wynwood",
+    "Midtown Miami",
+    "Edgewater",
+    "Miami Design District",
+    "Coconut Grove",
+    "Little Havana",
+    "Allapattah",
+    "Miami Beach"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover Miami neighborhoods including Wynwood, Midtown Miami, Edgewater, Miami Design District, Coconut Grove, Little Havana, Allapattah, and Miami Beach."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "List the windows, rough sizes",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "On site they identify the glazing",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "Floors and sills get covered",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Leftover moisture under the film has to escape before it",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, list the windows, rough sizes and the direction each one faces on the quote form, and note whether any of them sit above the ground floor. Then, on site they identify the glazing (single-pane, insulated, laminated or impact), look for failing seals, and put samples on the real glass. On install day, floors and sills get covered, every pane is cleaned, and the film is trimmed to the frame edge and pressed flat with a squeegee. Finally, leftover moisture under the film has to escape before it reaches full clarity."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w02-street-view-through-window-glass.jpg",
+   "stamp": "Local spotlight",
+   "name": "Miami Window Film Pros",
+   "nameCue": "Miami",
+   "where": "Doral · Key Biscayne · Aventura · Sunny Isles Beach",
+   "logo": "logo-miami.png",
+   "logoBg": "#fff",
+   "points": [
+    "Homes, condos, offices & storefronts",
+    "Most houses done in a day or less",
+    "Honest advice on which windows need film",
+    "Decorative & frosted glass film",
+    "Reply within 24 hours"
+   ],
+   "say": "Need window tinting in Miami? Miami Window Film Pros is worth a call. They'll tell you which windows need film, and which should be left alone."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w05-floor-to-ceiling-glass-film-install.jpg",
+   "logo": "logo-miami.png",
+   "name": "Miami Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmmiami.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film miami dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmmiami.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w19-storefront-window-film-crew.jpg",
+   "kicker": "Miami · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Miami",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Doral",
+    "Key Biscayne",
+    "Aventura",
+    "Sunny Isles Beach"
+   ],
+   "say": "Window tinting in Miami? Watch this."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w02-street-view-through-window-glass.jpg",
+   "stamp": "Local spotlight",
+   "name": "Miami Window Film Pros",
+   "nameCue": "Miami",
+   "where": "Doral · Key Biscayne · Aventura",
+   "logo": "logo-miami.png",
+   "logoBg": "#fff",
+   "points": [
+    "Homes, condos, offices & storefronts",
+    "Most houses done in a day or less",
+    "Honest advice on which windows need film"
+   ],
+   "say": "For homes and businesses across Miami, give Miami Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w05-floor-to-ceiling-glass-film-install.jpg",
+   "logo": "logo-miami.png",
+   "name": "Miami Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmmiami.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film miami dot pro.",
+   "say": "For a free window film quote, visit windowfilmmiami.pro."
+  }
+ ]
+}

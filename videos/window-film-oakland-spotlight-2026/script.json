@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-AndrewNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "Oakland · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmoakland.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w04-decorative-storefront-window-graphics.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Window Film",
+   "Oakland"
+  ],
+  "sub": "Oakland Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "99%",
+   [
+    "UV",
+    "BLOCKED"
+   ]
+  ],
+  "reelStamp": [
+   "80%",
+   [
+    "LESS",
+    "HEAT"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w03-uv-protection-window-film-home.jpg",
+   "kicker": "Oakland · Local business spotlight",
+   "titlePx": 128,
+   "title": [
+    "Window Film",
+    "in Oakland"
+   ],
+   "year": "2026",
+   "chips": [
+    "Rockridge",
+    "Temescal",
+    "Montclair",
+    "Piedmont Avenue",
+    "Lake Merritt"
+   ],
+   "say": "Local business spotlight: Oakland Window Film Pros. They install window film for homes and businesses across Oakland, cutting heat, glare and UV on the glass you already have."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "How Oakland Weather Decides Which Window Film You Need",
+   "sub": "Oakland, CA",
+   "steps": [
+    {
+     "image": "w07-living-room-heat-control-film.jpg"
+    },
+    {
+     "image": "w05-floor-to-ceiling-glass-film-install.jpg"
+    },
+    {
+     "image": "w13-home-window-film-installation.jpg"
+    }
+   ],
+   "say": "Oakland does not have one climate. It has a gradient. On a July morning the marine layer can sit over West Oakland and Jack London Square while Montclair is already in full sun, and by mid-afternoon the fog has usually pulled back toward the Golden Gate."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "Window film blocks up to 99 percent of UV rays, up to 80 percent of solar heat, and up to 90 percent of glare. Your numbers depend on the film and the glass, and they spec that before install."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in Oakland",
+   "cards": [
+    {
+     "name": "Home Tinting",
+     "desc": "Whole-house window tinting matched room by room",
+     "image": "w14-home-window-tinting-living-room.jpg",
+     "cue": "home"
+    },
+    {
+     "name": "Heat Control",
+     "desc": "Film that rejects solar heat on the windows that overheat after 3 p.m.",
+     "image": "w15-residential-window-tinting.jpg",
+     "cue": "heat"
+    },
+    {
+     "name": "UV Protection",
+     "desc": "Nearly clear film that blocks about 99 percent of ultraviolet light",
+     "image": "w02-street-view-through-window-glass.jpg",
+     "cue": "uv"
+    },
+    {
+     "name": "Privacy",
+     "desc": "Frosted, reflective and gradient films for bathrooms",
+     "image": "w09-frosted-glass-window-film.jpg",
+     "cue": "privacy"
+    }
+   ],
+   "say": "For homes: Home Tinting: Whole-house window tinting matched room by room, with stronger film on west-facing glass and clear or light film where you want the view and daylight left untouched. Heat Control: Film that rejects solar heat on the windows that overheat after 3 p.m., the ones facing west over the flats or out toward the bay from the hills. UV Protection: Nearly clear film that blocks about 99 percent of ultraviolet light, slowing the fading of fir floors, rugs, art and upholstery without changing how the glass looks. Privacy: Frosted, reflective and gradient films for bathrooms, street-facing bedrooms and ground-floor units where houses sit close together and sidewalks run right past the glass."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Storefront",
+     "desc": "High-visibility film for shop windows that cuts heat",
+     "icon": "page",
+     "cue": "storefront"
+    },
+    {
+     "name": "Commercial Security",
+     "desc": "Safety and security film for storefronts and offices",
+     "icon": "shield",
+     "cue": "commercial"
+    },
+    {
+     "name": "Anti-Graffiti",
+     "desc": "Clear sacrificial film that takes tags, scratches and acid etching",
+     "icon": "star",
+     "cue": "anti-graffiti"
+    },
+    {
+     "name": "Decorative & Frosted Glass",
+     "desc": "Frosted and decorative glass film for offices",
+     "icon": "chart",
+     "cue": "decorative"
+    }
+   ],
+   "say": "For businesses: Storefront: High-visibility film for shop windows that cuts heat and fading while keeping displays easy to see from the sidewalk on Telegraph, Grand Avenue and beyond. Commercial Security: Safety and security film for storefronts and offices, with optional attachment systems that anchor the film to the frame and slow smash-and-grab entry. Anti-Graffiti: Clear sacrificial film that takes tags, scratches and acid etching so the glass underneath does not. Decorative & Frosted Glass: Frosted and decorative glass film for offices, clinics, restaurants and lobbies, including cut logos, stripes and full-height privacy panels."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Window Film for Oakland's Older Houses and Newer Glass",
+   "sub": "Montclair · Piedmont Avenue · Lake Merritt",
+   "steps": [
+    {
+     "image": "w04-decorative-storefront-window-graphics.jpg"
+    },
+    {
+     "image": "w15-residential-window-tinting.jpg"
+    },
+    {
+     "image": "w08-retail-display-window-film.jpg"
+    }
+   ],
+   "say": "Oakland's housing stock is a big reason film makes sense here. West Oakland still has rows of Victorians with tall double-hung sashes. Rockridge, Temescal and Glenview are full of Craftsman bungalows and brown-shingle houses, many with their original wavy glass."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "Use the quote form to tell them the address",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "They confirm glass type, frame condition and orientation",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "Installers clean each pane",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Film needs time to cure, longer in Oakland's cool",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, use the quote form to tell them the address, roughly how many windows, which way they face and what is bothering you. Then, they confirm glass type, frame condition and orientation, then show you film samples against your actual windows. On install day, installers clean each pane, cut film to the glass edge and squeegee out the mounting solution. Finally, film needs time to cure, longer in Oakland's cool, damp months than in September heat."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "How much does window film cost?",
+     "desc": "Price depends on the type of film",
+     "icon": "search",
+     "cue": "how"
+    },
+    {
+     "name": "Will window tinting make my house dark?",
+     "desc": "Not unless you choose a dark film",
+     "icon": "clock",
+     "cue": "will"
+    },
+    {
+     "name": "Can I put window film on a historic Oakland home?",
+     "desc": "Film is applied to the inside of the glass and can be removed",
+     "icon": "shield",
+     "cue": "can"
+    },
+    {
+     "name": "Does window film void my window warranty?",
+     "desc": "Some window manufacturers limit coverage when film is applied",
+     "icon": "page",
+     "cue": "does"
+    }
+   ],
+   "say": "Common questions: How much does window film cost in Oakland? Price depends on the type of film, the total square footage, how many separate panes there are, and access. Will window tinting make my Oakland house dark? Not unless you choose a dark film. Can I put window film on a historic Oakland home? Film is applied to the inside of the glass and can be removed, so it usually leaves original sashes and trim untouched."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in Oakland",
+   "items": [
+    "Rockridge",
+    "Temescal",
+    "Montclair",
+    "Piedmont Avenue",
+    "Lake Merritt",
+    "Grand Lake",
+    "Adams Point",
+    "Downtown Oakland"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover Oakland neighborhoods including Rockridge, Temescal, Montclair, Piedmont Avenue, Lake Merritt, Grand Lake, Adams Point, and Downtown Oakland."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w05-floor-to-ceiling-glass-film-install.jpg",
+   "stamp": "Local spotlight",
+   "name": "Oakland Window Film Pros",
+   "nameCue": "Oakland",
+   "where": "Rockridge · Temescal · Montclair · Piedmont Avenue",
+   "logo": "logo-oakland.png",
+   "logoBg": "#fff",
+   "points": [
+    "Residential & commercial window film",
+    "Film matched to your glass & orientation",
+    "Samples shown on your own windows",
+    "After-hours installs for offices & shops",
+    "Reply within 24 hours"
+   ],
+   "say": "If you need window film or window tinting in Oakland, give Oakland Window Film Pros a shout. They handle homes and businesses, and they match the film to your glass, not a catalog."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w07-living-room-heat-control-film.jpg",
+   "logo": "logo-oakland.png",
+   "name": "Oakland Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmoakland.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film oakland dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmoakland.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w03-uv-protection-window-film-home.jpg",
+   "kicker": "Oakland · Local business spotlight",
+   "titlePx": 128,
+   "title": [
+    "Oakland",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Rockridge",
+    "Temescal",
+    "Montclair",
+    "Piedmont Avenue"
+   ],
+   "say": "Too much sun in Oakland? Here's a local fix."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w05-floor-to-ceiling-glass-film-install.jpg",
+   "stamp": "Local spotlight",
+   "name": "Oakland Window Film Pros",
+   "nameCue": "Oakland",
+   "where": "Rockridge · Temescal · Montclair",
+   "logo": "logo-oakland.png",
+   "logoBg": "#fff",
+   "points": [
+    "Residential & commercial window film",
+    "Film matched to your glass & orientation",
+    "Samples shown on your own windows"
+   ],
+   "say": "For homes and businesses across Oakland, give Oakland Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w07-living-room-heat-control-film.jpg",
+   "logo": "logo-oakland.png",
+   "name": "Oakland Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmoakland.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film oakland dot pro.",
+   "say": "For a free window film quote, visit windowfilmoakland.pro."
+  }
+ ]
+}

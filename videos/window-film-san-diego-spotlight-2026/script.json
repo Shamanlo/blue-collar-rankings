@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-GuyNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "San Diego · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmsandiego.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w12-graffiti-etched-storefront-glass.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Window",
+   "Tinting"
+  ],
+  "sub": "San Diego Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "LOCAL",
+   [
+    "SPOT",
+    "LIGHT"
+   ]
+  ],
+  "reelStamp": [
+   "99%",
+   [
+    "UV",
+    "BLOCKED"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w07-living-room-heat-control-film.jpg",
+   "kicker": "San Diego · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Local Spotlight:",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Pacific Beach",
+    "Mission Beach",
+    "Point Loma",
+    "Ocean Beach",
+    "Downtown San Diego"
+   ],
+   "say": "Thinking about window tinting in San Diego? Here's a look at San Diego Window Film Pros, what they install, and why window film makes sense here."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Why Window Film Works Differently Across San Diego",
+   "sub": "San Diego, CA",
+   "steps": [
+    {
+     "image": "w15-residential-window-tinting.jpg"
+    },
+    {
+     "image": "w21-skylight-solar-control-film.jpg"
+    },
+    {
+     "image": "w09-frosted-glass-window-film.jpg"
+    }
+   ],
+   "say": "A few miles of distance changes the job here. On the coast, the marine layer keeps many late spring and early summer mornings grey, the stretch locals call May Gray and June Gloom, and the hard sun arrives later in the day. Ten or fifteen miles inland, in places like Rancho Bernardo or Scripps Ranch, summer afternoons run much hotter and the sun shows up early and stays."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in San Diego",
+   "cards": [
+    {
+     "name": "Energy-Saving",
+     "desc": "Solar control film aimed at reducing AC run time during SDG&E's costly",
+     "image": "w10-frosted-privacy-window-film.jpg",
+     "cue": "energy-saving"
+    },
+    {
+     "name": "Home Tinting",
+     "desc": "Clear-looking or lightly shaded tint for San Diego houses and condos",
+     "image": "w03-uv-protection-window-film-home.jpg",
+     "cue": "home"
+    },
+    {
+     "name": "Heat Control",
+     "desc": "Film that rejects solar heat on the west",
+     "image": "w13-home-window-film-installation.jpg",
+     "cue": "heat"
+    },
+    {
+     "name": "UV Protection",
+     "desc": "A near-invisible film that screens out the ultraviolet behind most fading",
+     "image": "w14-home-window-tinting-living-room.jpg",
+     "cue": "uv"
+    }
+   ],
+   "say": "For homes: Energy-Saving: Solar control film aimed at reducing AC run time during SDG&E's costly late-day hours, applied first to the glass that takes the most sun. Home Tinting: Clear-looking or lightly shaded tint for San Diego houses and condos, chosen to cut heat and fading without making rooms feel dim on overcast coastal mornings. Heat Control: Film that rejects solar heat on the west and south windows that overheat inland homes in summer and coastal homes during fall Santa Ana weather. UV Protection: A near-invisible film that screens out the ultraviolet behind most fading, protecting oak floors, rugs, prints and sofa fabric in bright San Diego rooms."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Office",
+     "desc": "Film for San Diego office suites that cuts heat",
+     "icon": "clock",
+     "cue": "office"
+    },
+    {
+     "name": "Storefront",
+     "desc": "UV and heat film that protects displayed merchandise",
+     "icon": "page",
+     "cue": "storefront"
+    },
+    {
+     "name": "Commercial Security",
+     "desc": "Safety and security film for retail entries",
+     "icon": "shield",
+     "cue": "commercial"
+    },
+    {
+     "name": "Anti-Graffiti",
+     "desc": "Clear sacrificial film that takes scratches",
+     "icon": "star",
+     "cue": "anti-graffiti"
+    }
+   ],
+   "say": "For businesses: Office: Film for San Diego office suites that cuts heat, glare and sightlines, from downtown towers to business parks in Sorrento Valley and Kearny Mesa. Storefront: UV and heat film that protects displayed merchandise and keeps shops comfortable, with options that keep storefront glass clear from the sidewalk. Commercial Security: Safety and security film for retail entries, clinics and offices, with optional frame attachment for added hold on large panes. Anti-Graffiti: Clear sacrificial film that takes scratches and etching instead of your glass, then gets peeled off and replaced when tagged."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "The numbers: up to 99 percent of UV, up to 80 percent of solar heat, and up to 90 percent of glare, depending on the film and your glass."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "What sets the price of a window film job?",
+     "desc": "Mostly three things: which film you pick",
+     "icon": "clock",
+     "cue": "what"
+    },
+    {
+     "name": "Will window film make my home too dark?",
+     "desc": "Only if you ask for a dark shade",
+     "icon": "shield",
+     "cue": "will"
+    },
+    {
+     "name": "Is window film worth it near the beach or only inland?",
+     "desc": "Both, for different reasons",
+     "icon": "page",
+     "cue": "is"
+    },
+    {
+     "name": "Can window film go on dual-pane or low-E windows?",
+     "desc": "Yes, with the right film",
+     "icon": "roof",
+     "cue": "can"
+    }
+   ],
+   "say": "Common questions: What sets the price of a window film job in San Diego? Mostly three things: which film you pick, how many square feet of glass they cover, and how the glass is split up. Will window film make my San Diego home too dark? Only if you ask for a dark shade. Is window film worth it near the beach or only inland? Both, for different reasons."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Window Tinting and SDG&E Costs in San Diego",
+   "sub": "North Park · Mission Hills · Carmel Valley",
+   "steps": [
+    {
+     "image": "w00-anti-graffiti-film-tag-removal.jpg"
+    },
+    {
+     "image": "w03-uv-protection-window-film-home.jpg"
+    },
+    {
+     "image": "w20-window-film-installation.jpg"
+    }
+   ],
+   "say": "SDG&E's residential rates rank among the highest in the country, and most customers are on time-of-use pricing where late afternoon and evening hours cost the most. Those are the same hours when west-facing glass pulls in the most solar heat. If your air conditioner runs hard from four o'clock on, the windows taking that low sun are a big part of why."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in San Diego",
+   "items": [
+    "Clairemont",
+    "University City",
+    "Coronado",
+    "Del Mar",
+    "Chula Vista",
+    "Carlsbad",
+    "La Jolla",
+    "Pacific Beach"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover San Diego neighborhoods including Clairemont, University City, Coronado, Del Mar, Chula Vista, Carlsbad, La Jolla, and Pacific Beach."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "Fill in the quote form with your neighborhood",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "They look at the glass type",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "Glass is cleaned and the edges detailed",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Expect small water pockets or a light haze for a few days",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, fill in the quote form with your neighborhood, the rooms that bother you and a rough window count. Then, they look at the glass type, any existing coatings, seals and frame condition, and the direction each window faces. On install day, glass is cleaned and the edges detailed, then film is cut and applied wet and squeegeed out. Finally, expect small water pockets or a light haze for a few days to a few weeks, depending on the film and the weather."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w12-graffiti-etched-storefront-glass.jpg",
+   "stamp": "Local spotlight",
+   "name": "San Diego Window Film Pros",
+   "nameCue": "San",
+   "where": "Little Italy · Hillcrest · North Park · Mission Hills",
+   "logo": "logo-sandiego.png",
+   "logoBg": "#fff",
+   "points": [
+    "Heat, glare, UV & privacy film",
+    "Security & anti-graffiti film",
+    "Glass checked before anything is installed",
+    "Quotes by online request",
+    "Reply within 24 hours"
+   ],
+   "say": "So if your San Diego windows are too hot, too bright or too exposed, give San Diego Window Film Pros a shout for a quote."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w21-skylight-solar-control-film.jpg",
+   "logo": "logo-sandiego.png",
+   "name": "San Diego Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmsandiego.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film sandiego dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmsandiego.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w07-living-room-heat-control-film.jpg",
+   "kicker": "San Diego · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "San Diego",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Little Italy",
+    "Hillcrest",
+    "North Park",
+    "Mission Hills"
+   ],
+   "say": "Meet San Diego Window Film Pros."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w12-graffiti-etched-storefront-glass.jpg",
+   "stamp": "Local spotlight",
+   "name": "San Diego Window Film Pros",
+   "nameCue": "San",
+   "where": "Little Italy · Hillcrest · North Park",
+   "logo": "logo-sandiego.png",
+   "logoBg": "#fff",
+   "points": [
+    "Heat, glare, UV & privacy film",
+    "Security & anti-graffiti film",
+    "Glass checked before anything is installed"
+   ],
+   "say": "For homes and businesses across San Diego, give San Diego Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w21-skylight-solar-control-film.jpg",
+   "logo": "logo-sandiego.png",
+   "name": "San Diego Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmsandiego.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film sandiego dot pro.",
+   "say": "For a free window film quote, visit windowfilmsandiego.pro."
+  }
+ ]
+}

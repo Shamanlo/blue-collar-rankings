@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-AndrewNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "Atlanta · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmatlanta.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w10-frosted-privacy-window-film.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Window Film",
+   "Atlanta"
+  ],
+  "sub": "Atlanta Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "99%",
+   [
+    "UV",
+    "BLOCKED"
+   ]
+  ],
+  "reelStamp": [
+   "80%",
+   [
+    "LESS",
+    "HEAT"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w04-decorative-storefront-window-graphics.jpg",
+   "kicker": "Atlanta · Local business spotlight",
+   "titlePx": 128,
+   "title": [
+    "Window Film",
+    "in Atlanta"
+   ],
+   "year": "2026",
+   "chips": [
+    "Smyrna",
+    "Johns Creek",
+    "Peachtree Corners",
+    "Kennesaw",
+    "Buckhead"
+   ],
+   "say": "Local business spotlight: Atlanta Window Film Pros. They install window film for homes and businesses across Atlanta, cutting heat, glare and UV on the glass you already have."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Why Atlanta Buildings Need Window Film",
+   "sub": "Atlanta, GA",
+   "steps": [
+    {
+     "image": "w10-frosted-privacy-window-film.jpg"
+    },
+    {
+     "image": "w11-glass-facade-solar-film.jpg"
+    },
+    {
+     "image": "w03-uv-protection-window-film-home.jpg"
+    }
+   ],
+   "say": "Atlanta sits on the Piedmont plateau at roughly a thousand feet, which takes a little of the edge off compared with coastal Georgia, but the summers are still long, hot and sticky. The air conditioning season usually runs from late spring well into October. Humid nights keep buildings from cooling off, so the heat a west wall of glass collects at 5 p.m. is still in the room the next morning."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "Window film blocks up to 99 percent of UV rays, up to 80 percent of solar heat, and up to 90 percent of glare. Your numbers depend on the film and the glass, and they spec that before install."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in Atlanta",
+   "cards": [
+    {
+     "name": "Decorative",
+     "desc": "Reeded, etched-look and geometric patterns",
+     "image": "w07-living-room-heat-control-film.jpg",
+     "cue": "decorative"
+    },
+    {
+     "name": "Security",
+     "desc": "Thick clear safety film that keeps broken glass bonded",
+     "image": "w13-home-window-film-installation.jpg",
+     "cue": "security"
+    },
+    {
+     "name": "Glare Reduction",
+     "desc": "Takes the washout off TV and laptop screens in home offices",
+     "image": "w14-home-window-tinting-living-room.jpg",
+     "cue": "glare"
+    },
+    {
+     "name": "Energy-Saving",
+     "desc": "Cuts the solar heat entering through problem windows",
+     "image": "w02-street-view-through-window-glass.jpg",
+     "cue": "energy-saving"
+    }
+   ],
+   "say": "For homes: Decorative: Reeded, etched-look and geometric patterns that dress up a front door sidelight, a transom over the porch or a glassed-in shower. Security: Thick clear safety film that keeps broken glass bonded and slows someone trying to get through a back door, sidelight or ground-floor window. Glare Reduction: Takes the washout off TV and laptop screens in home offices and media rooms, while the room still feels bright and the yard is still visible through the glass. Energy-Saving: Cuts the solar heat entering through problem windows, which trims the cooling load your Georgia Power bill reflects through a long summer, and keeps rooms more even."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Solar Control",
+     "desc": "Commercial-grade film for curtain walls",
+     "icon": "bolt",
+     "cue": "solar"
+    },
+    {
+     "name": "Conference Room Privacy",
+     "desc": "Meeting rooms with glass fronts get a band of obscuring film",
+     "icon": "search",
+     "cue": "conference"
+    },
+    {
+     "name": "Low-E",
+     "desc": "A coated film that trims summer solar gain and",
+     "icon": "pin",
+     "cue": "low-e"
+    },
+    {
+     "name": "Office",
+     "desc": "Film for the sunny sides of Atlanta office floors",
+     "icon": "clock",
+     "cue": "office"
+    }
+   ],
+   "say": "For businesses: Solar Control: Commercial-grade film for curtain walls, ribbon windows and old warehouse sash, picked to suit what is already in the frame once they confirm the glass can safely take it. Conference Room Privacy: Meeting rooms with glass fronts get a band of obscuring film that hides screens and whiteboards from people walking the hall, yet the room keeps its light. Low-E: A coated film that trims summer solar gain and, on cold nights, reflects radiant room heat back indoors. Office: Film for the sunny sides of Atlanta office floors, from Midtown towers to Perimeter office parks."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Commercial Window Tinting From Downtown to the Perimeter",
+   "sub": "Alpharetta · Roswell · Smyrna",
+   "steps": [
+    {
+     "image": "w17-solar-control-storefront-film.jpg"
+    },
+    {
+     "image": "w13-home-window-film-installation.jpg"
+    },
+    {
+     "image": "w00-anti-graffiti-film-tag-removal.jpg"
+    }
+   ],
+   "say": "Most of their work is commercial. Office towers in Downtown, Midtown and Buckhead stack floor after floor of glass along Peachtree Street and Peachtree Road, and the Perimeter Center market around I-285 and GA-400 in Sandy Springs and Dunwoody adds mid-rise towers and suburban office parks. Further out, the GA-400 corridor in Alpharetta and the office and flex buildings in Peachtree Corners and Johns Creek bring long ribbon windows and big parking lots that bounce heat back at the glass."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "List the windows on the quote form with their rough sizes",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "On site they identify single-pane",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "Floors and sills are covered",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Water trapped under the film evaporates over the following",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, list the windows on the quote form with their rough sizes and which way they face, plus the frame type if you know it. Then, on site they identify single-pane, dual-pane or low-E glass, note any fogged or failed seals, and stick sample swatches on the actual panes. On install day, floors and sills are covered, each pane is cleaned, and film is cut and squeegeed flat against the glass. Finally, water trapped under the film evaporates over the following days or weeks."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Does window film help in an Atlanta winter?",
+     "desc": "A low-E film bounces a portion of the room's warmth back inside",
+     "icon": "search",
+     "cue": "does"
+    },
+    {
+     "name": "How long does window film last on Atlanta glass?",
+     "desc": "Interior film on homes and offices commonly lasts many years",
+     "icon": "clock",
+     "cue": "how"
+    },
+    {
+     "name": "How is window film priced for an Atlanta building?",
+     "desc": "The film you choose sets the base rate",
+     "icon": "shield",
+     "cue": "how"
+    },
+    {
+     "name": "Will window tinting make my office or home darker?",
+     "desc": "Not necessarily",
+     "icon": "page",
+     "cue": "will"
+    }
+   ],
+   "say": "Common questions: Does window film help in an Atlanta winter? A low-E film bounces a portion of the room's warmth back inside, which helps on cold nights in older single-pane buildings. How long does window film last on Atlanta glass? Interior film on homes and offices commonly lasts many years, with the exact warranty set by the film manufacturer. How is window film priced for an Atlanta building? The film you choose sets the base rate."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in Atlanta",
+   "items": [
+    "Inman Park",
+    "Virginia-Highland",
+    "West Midtown",
+    "Grant Park",
+    "Ansley Park",
+    "Sandy Springs",
+    "Dunwoody",
+    "Brookhaven"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover Atlanta neighborhoods including Inman Park, Virginia-Highland, West Midtown, Grant Park, Ansley Park, Sandy Springs, Dunwoody, and Brookhaven."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w11-glass-facade-solar-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "Atlanta Window Film Pros",
+   "nameCue": "Atlanta",
+   "where": "Decatur · Marietta · Alpharetta · Roswell",
+   "logo": "logo-atlanta.png",
+   "logoBg": "#fff",
+   "points": [
+    "Residential & commercial window film",
+    "Film matched to your glass & orientation",
+    "Samples shown on your own windows",
+    "After-hours installs for offices & shops",
+    "Reply within 24 hours"
+   ],
+   "say": "If you need window film or window tinting in Atlanta, give Atlanta Window Film Pros a shout. They handle homes and businesses, and they match the film to your glass, not a catalog."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w16-glass-anti-graffiti-film.jpg",
+   "logo": "logo-atlanta.png",
+   "name": "Atlanta Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmatlanta.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film atlanta dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmatlanta.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w04-decorative-storefront-window-graphics.jpg",
+   "kicker": "Atlanta · Local business spotlight",
+   "titlePx": 128,
+   "title": [
+    "Atlanta",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Decatur",
+    "Marietta",
+    "Alpharetta",
+    "Roswell"
+   ],
+   "say": "Too much sun in Atlanta? Here's a local fix."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w11-glass-facade-solar-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "Atlanta Window Film Pros",
+   "nameCue": "Atlanta",
+   "where": "Decatur · Marietta · Alpharetta",
+   "logo": "logo-atlanta.png",
+   "logoBg": "#fff",
+   "points": [
+    "Residential & commercial window film",
+    "Film matched to your glass & orientation",
+    "Samples shown on your own windows"
+   ],
+   "say": "For homes and businesses across Atlanta, give Atlanta Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w16-glass-anti-graffiti-film.jpg",
+   "logo": "logo-atlanta.png",
+   "name": "Atlanta Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmatlanta.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film atlanta dot pro.",
+   "say": "For a free window film quote, visit windowfilmatlanta.pro."
+  }
+ ]
+}

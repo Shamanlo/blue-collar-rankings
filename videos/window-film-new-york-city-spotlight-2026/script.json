@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-AndrewNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "New York City · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmnyc.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w15-residential-window-tinting.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Window",
+   "Tinting"
+  ],
+  "sub": "NYC Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "99%",
+   [
+    "UV",
+    "BLOCKED"
+   ]
+  ],
+  "reelStamp": [
+   "80%",
+   [
+    "LESS",
+    "HEAT"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w16-glass-anti-graffiti-film.jpg",
+   "kicker": "New York City · Local business spotlight",
+   "titlePx": 128,
+   "title": [
+    "Window Film",
+    "in NYC"
+   ],
+   "year": "2026",
+   "chips": [
+    "Astoria",
+    "Williamsburg",
+    "DUMBO",
+    "Brooklyn Heights",
+    "Park Slope"
+   ],
+   "say": "Local business spotlight: NYC Window Film Pros. They install window film for homes and businesses across New York City, cutting heat, glare and UV on the glass you already have."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Why Window Film Makes Sense in New York City Buildings",
+   "sub": "New York City, NY",
+   "steps": [
+    {
+     "image": "w03-uv-protection-window-film-home.jpg"
+    },
+    {
+     "image": "w05-floor-to-ceiling-glass-film-install.jpg"
+    },
+    {
+     "image": "w07-living-room-heat-control-film.jpg"
+    }
+   ],
+   "say": "Most New Yorkers cannot replace their windows. In a co-op or condo the windows often belong to the building, replacement needs board approval and an architect, and in a landmarked building the Landmarks Preservation Commission may have a say about anything that changes the facade. Window film goes on the inside face of the glass you already have."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "The numbers: up to 99 percent of UV, up to 80 percent of solar heat, and up to 90 percent of glare, depending on the film and your glass."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in NYC",
+   "cards": [
+    {
+     "name": "Decorative",
+     "desc": "Etched, patterned and textured films for brownstone doors",
+     "image": "w13-home-window-film-installation.jpg",
+     "cue": "decorative"
+    },
+    {
+     "name": "Security",
+     "desc": "Thick safety film that holds shattered glass together",
+     "image": "w14-home-window-tinting-living-room.jpg",
+     "cue": "security"
+    },
+    {
+     "name": "Glare Reduction",
+     "desc": "Reduce screen glare and squinting from river views",
+     "image": "w02-street-view-through-window-glass.jpg",
+     "cue": "glare"
+    },
+    {
+     "name": "Energy-Saving",
+     "desc": "Cuts the solar gain that drives summer cooling",
+     "image": "w09-frosted-glass-window-film.jpg",
+     "cue": "energy-saving"
+    }
+   ],
+   "say": "For homes: Decorative: Etched, patterned and textured films for brownstone doors, transoms, interior glass partitions and bathroom windows. Security: Thick safety film that holds shattered glass together and slows a break-in on garden apartments, ground-floor windows and townhouse doors across the city. Glare Reduction: Reduce screen glare and squinting from river views, open sky and sunlight reflected off the glass building across the street, without making rooms gloomy. Energy-Saving: Cuts the solar gain that drives summer cooling, and low-E versions also hold heat indoors in January, so apartments and houses depend less on the AC and the radiators."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Solar Control",
+     "desc": "Solar control film for commercial buildings with large glass exposures",
+     "icon": "bolt",
+     "cue": "solar"
+    },
+    {
+     "name": "Conference Room Privacy",
+     "desc": "Frosted and patterned film for glass-walled conference rooms and offices",
+     "icon": "search",
+     "cue": "conference"
+    },
+    {
+     "name": "Low-E",
+     "desc": "Low-emissivity film that reflects room heat back inside in winter",
+     "icon": "pin",
+     "cue": "low-e"
+    },
+    {
+     "name": "Office",
+     "desc": "Glare control, heat rejection and privacy for Manhattan",
+     "icon": "clock",
+     "cue": "office"
+    }
+   ],
+   "say": "For businesses: Solar Control: Solar control film for commercial buildings with large glass exposures, reducing cooling load and hot zones near the curtain wall in summer. Conference Room Privacy: Frosted and patterned film for glass-walled conference rooms and offices, giving teams visual privacy without losing the open look of the floor. Low-E: Low-emissivity film that reflects room heat back inside in winter and rejects solar heat in summer, a lower-cost glazing upgrade for older NYC buildings. Office: Glare control, heat rejection and privacy for Manhattan, Brooklyn and Queens offices, installed after hours to work around tenants and building rules."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Prewar Co-ops, Brownstones and Glass Condo Towers",
+   "sub": "Chelsea · Greenwich Village · Harlem",
+   "steps": [
+    {
+     "image": "w16-glass-anti-graffiti-film.jpg"
+    },
+    {
+     "image": "w14-home-window-tinting-living-room.jpg"
+    },
+    {
+     "image": "w18-tinted-window-film.jpg"
+    }
+   ],
+   "say": "The housing stock here ranges from 1900s walk-ups with wood double-hung sashes to 2010s condo towers with floor-to-ceiling insulated glass. Those are very different jobs. Old single-pane sashes accept almost any film, while large insulated units in newer towers need a film matched to the glass so the inner pane does not absorb too much heat and stress the seal or the glass edge."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "Start with the online form: give them the address",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "They confirm whether the glass is single-pane",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "Many NYC buildings want a certificate of insurance",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Installers protect sills and floors",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, start with the online form: give them the address, the floor, the direction the windows face and the problem you want gone. Then, they confirm whether the glass is single-pane, insulated or laminated, look at frame condition and show film samples on your actual windows. On install day, many NYC buildings want a certificate of insurance, a scope of work and a booked service elevator before any contractor arrives. Finally, installers protect sills and floors, clean each pane, apply the film and squeegee it out."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Is window film allowed on rental apartments?",
+     "desc": "Many landlords allow it because quality film can be removed cleanly",
+     "icon": "roof",
+     "cue": "is"
+    },
+    {
+     "name": "Can window film be installed on floor-to-ceiling glass in condo towers?",
+     "desc": "Yes, but large insulated glass units need a compatible film",
+     "icon": "chart",
+     "cue": "can"
+    },
+    {
+     "name": "How long does window film last in New York?",
+     "desc": "Interior residential and commercial films typically last many years",
+     "icon": "search",
+     "cue": "how"
+    },
+    {
+     "name": "Do I need co-op or condo board approval for window film?",
+     "desc": "Often, yes",
+     "icon": "clock",
+     "cue": "do"
+    }
+   ],
+   "say": "Common questions: Is window film allowed on rental apartments? Many landlords allow it because quality film can be removed cleanly. Can window film be installed on floor-to-ceiling glass in condo towers? Yes, but large insulated glass units need a compatible film. How long does window film last in New York? Interior residential and commercial films typically last many years when installed on the inside surface and cleaned gently."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in NYC",
+   "items": [
+    "Harlem",
+    "Battery Park City",
+    "Hudson Yards",
+    "Long Island City",
+    "Astoria",
+    "Williamsburg",
+    "DUMBO",
+    "Brooklyn Heights"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover New York City neighborhoods including Harlem, Battery Park City, Hudson Yards, Long Island City, Astoria, Williamsburg, DUMBO, and Brooklyn Heights."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w01-conference-room-frosted-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "NYC Window Film Pros",
+   "nameCue": "NYC",
+   "where": "Tribeca · SoHo · Chelsea · Greenwich Village",
+   "logo": "logo-nyc.png",
+   "logoBg": "#fff",
+   "points": [
+    "Heat, glare, UV & privacy film",
+    "Security & anti-graffiti film",
+    "Glass checked before anything is installed",
+    "Quotes by online request",
+    "Reply within 24 hours"
+   ],
+   "say": "So if your New York City windows are too hot, too bright or too exposed, give NYC Window Film Pros a shout for a quote."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w05-floor-to-ceiling-glass-film-install.jpg",
+   "logo": "logo-nyc.png",
+   "name": "NYC Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmnyc.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film N Y C dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmnyc.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w16-glass-anti-graffiti-film.jpg",
+   "kicker": "New York City · Local business spotlight",
+   "titlePx": 128,
+   "title": [
+    "NYC",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Tribeca",
+    "SoHo",
+    "Chelsea",
+    "Greenwich Village"
+   ],
+   "say": "Meet NYC Window Film Pros."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w01-conference-room-frosted-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "NYC Window Film Pros",
+   "nameCue": "NYC",
+   "where": "Tribeca · SoHo · Chelsea",
+   "logo": "logo-nyc.png",
+   "logoBg": "#fff",
+   "points": [
+    "Heat, glare, UV & privacy film",
+    "Security & anti-graffiti film",
+    "Glass checked before anything is installed"
+   ],
+   "say": "For homes and businesses across New York City, give NYC Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w05-floor-to-ceiling-glass-film-install.jpg",
+   "logo": "logo-nyc.png",
+   "name": "NYC Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmnyc.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film N Y C dot pro.",
+   "say": "For a free window film quote, visit windowfilmnyc.pro."
+  }
+ ]
+}

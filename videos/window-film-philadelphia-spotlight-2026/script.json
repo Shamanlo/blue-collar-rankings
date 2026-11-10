@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-AndrewNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "Philadelphia · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmphilly.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w19-storefront-window-film-crew.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Philadelphia",
+   "Window Film"
+  ],
+  "sub": "Philadelphia Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 100,
+  "reelBigPx": 145,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "99%",
+   [
+    "UV",
+    "BLOCKED"
+   ]
+  ],
+  "reelStamp": [
+   "80%",
+   [
+    "LESS",
+    "HEAT"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w10-frosted-privacy-window-film.jpg",
+   "kicker": "Philadelphia · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Window Film",
+    "in Philadelphia"
+   ],
+   "year": "2026",
+   "chips": [
+    "Queen Village",
+    "Fishtown",
+    "Northern Liberties",
+    "Manayunk",
+    "Chestnut Hill"
+   ],
+   "say": "Local business spotlight: Philadelphia Window Film Pros. They install window film for homes and businesses across Philadelphia, cutting heat, glare and UV on the glass you already have."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Why Window Film Makes Sense in Philadelphia's Climate",
+   "sub": "Philadelphia, PA",
+   "steps": [
+    {
+     "image": "w03-uv-protection-window-film-home.jpg"
+    },
+    {
+     "image": "w08-retail-display-window-film.jpg"
+    },
+    {
+     "image": "w07-living-room-heat-control-film.jpg"
+    }
+   ],
+   "say": "Philadelphia gets both ends of the weather. July and August bring sticky, humid heat, with afternoons that sit in the 90s and nights that barely cool off. Then January turns raw and grey, with wind coming down the long straight streets of the grid."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "On the glass you already have, film can block up to 99 percent of UV rays, up to 80 percent of solar heat, and up to 90 percent of glare."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in Philadelphia",
+   "cards": [
+    {
+     "name": "Home Tinting",
+     "desc": "General home window tinting for Philly houses and condos",
+     "image": "w13-home-window-film-installation.jpg",
+     "cue": "home"
+    },
+    {
+     "name": "Heat Control",
+     "desc": "Film that rejects a share of summer solar heat on south and west glass",
+     "image": "w14-home-window-tinting-living-room.jpg",
+     "cue": "heat"
+    },
+    {
+     "name": "UV Protection",
+     "desc": "Clear film that screens out almost all ultraviolet rays",
+     "image": "w15-residential-window-tinting.jpg",
+     "cue": "uv"
+    },
+    {
+     "name": "Privacy",
+     "desc": "Frosted, gradient and daytime one-way films for street-level rowhome",
+     "image": "w02-street-view-through-window-glass.jpg",
+     "cue": "privacy"
+    }
+   ],
+   "say": "For homes: Home Tinting: General home window tinting for Philly houses and condos, picked by which way each window faces and what the room is used for, from a sunny front parlor to a top-floor bedroom. Heat Control: Film that rejects a share of summer solar heat on south and west glass, so rooms in rowhomes, twins and glassy new builds stay closer to the temperature you set. UV Protection: Clear film that screens out almost all ultraviolet rays, so hardwood, rugs, art and upholstery in sun-struck rooms keep their color for longer. Privacy: Frosted, gradient and daytime one-way films for street-level rowhome windows, bathrooms and side windows that face a neighbor a few feet away."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Storefront",
+     "desc": "Clear UV and heat film for retail glass on Philly shopping corridors",
+     "icon": "page",
+     "cue": "storefront"
+    },
+    {
+     "name": "Commercial Security",
+     "desc": "Shatter-resistant film for storefronts",
+     "icon": "shield",
+     "cue": "commercial"
+    },
+    {
+     "name": "Anti-Graffiti",
+     "desc": "Replaceable clear film that takes the scratches",
+     "icon": "star",
+     "cue": "anti-graffiti"
+    },
+    {
+     "name": "Decorative & Frosted Glass",
+     "desc": "Frosted, etched-look and printed films for glass partitions",
+     "icon": "chart",
+     "cue": "decorative"
+    }
+   ],
+   "say": "For businesses: Storefront: Clear UV and heat film for retail glass on Philly shopping corridors, keeping displays visible while slowing fading and cutting afternoon heat in the shop. Commercial Security: Shatter-resistant film for storefronts, offices, clinics and schools, often paired with attachment systems that anchor the film to the window frame. Anti-Graffiti: Replaceable clear film that takes the scratches, acid etching and marker tags instead of the glass, so damaged storefront panes do not need replacing. Decorative & Frosted Glass: Frosted, etched-look and printed films for glass partitions, entry doors and lobbies, including logos and bands at eye level on office glass."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Window Film for Philadelphia Rowhomes, Twins and Stone Houses",
+   "sub": "University City · Graduate Hospital · Fairmount",
+   "steps": [
+    {
+     "image": "w16-glass-anti-graffiti-film.jpg"
+    },
+    {
+     "image": "w14-home-window-tinting-living-room.jpg"
+    },
+    {
+     "image": "w05-floor-to-ceiling-glass-film-install.jpg"
+    }
+   ],
+   "say": "The city's housing stock shapes what film people ask for. In a typical rowhouse in South Philly, Point Breeze or Brewerytown, the front window sits right on the sidewalk, so anyone walking by can see straight into the living room. Privacy film and daytime one-way films are the most common requests on these blocks, along with a little extra security for basement and rear windows facing an alley."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "Start with the address, a rough count of windows",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "They confirm the glass type",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "They clean the glass thoroughly",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Film needs time to dry fully",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, start with the address, a rough count of windows, which way they face and the problem you have in mind. Then, they confirm the glass type, look at frame and seal condition and note any historic district or condo association concerns. On install day, they clean the glass thoroughly, cut film to each pane and squeegee out the water and air. Finally, film needs time to dry fully, and cold Philadelphia winters slow that down."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Will window film make my rooms dark?",
+     "desc": "Not unless you choose a dark film",
+     "icon": "shield",
+     "cue": "will"
+    },
+    {
+     "name": "Do I need Historical Commission approval for window film?",
+     "desc": "It depends on whether your property is designated",
+     "icon": "page",
+     "cue": "do"
+    },
+    {
+     "name": "Does window film help during a Philadelphia winter?",
+     "desc": "Standard solar films are mainly a summer tool",
+     "icon": "roof",
+     "cue": "does"
+    },
+    {
+     "name": "Could adding film affect the warranty on my double-pane windows?",
+     "desc": "Some window manufacturers restrict coverage once film is applied",
+     "icon": "chart",
+     "cue": "could"
+    }
+   ],
+   "say": "Common questions: Will window film make my rooms dark? Not unless you choose a dark film. Do I need Historical Commission approval for window film in Philadelphia? It depends on whether your property is designated and how much the film changes the exterior look. Does window film help during a Philadelphia winter? Standard solar films are mainly a summer tool."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in Philadelphia",
+   "items": [
+    "Germantown",
+    "Brewerytown",
+    "Point Breeze",
+    "Main Line",
+    "Center City",
+    "Rittenhouse Square",
+    "Old City",
+    "Society Hill"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover Philadelphia neighborhoods including Germantown, Brewerytown, Point Breeze, Main Line, Center City, Rittenhouse Square, Old City, and Society Hill."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w16-glass-anti-graffiti-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "Philadelphia Window Film Pros",
+   "nameCue": "Philadelphia",
+   "where": "Chestnut Hill · Mount Airy · University City · Graduate Hospital",
+   "logo": "logo-philly.png",
+   "logoBg": "#fff",
+   "points": [
+    "Homes, condos, offices & storefronts",
+    "Most houses done in a day or less",
+    "Honest advice on which windows need film",
+    "Decorative & frosted glass film",
+    "Reply within 24 hours"
+   ],
+   "say": "Need window tinting in Philadelphia? Philadelphia Window Film Pros is worth a call. They'll tell you which windows need film, and which should be left alone."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w05-floor-to-ceiling-glass-film-install.jpg",
+   "logo": "logo-philly.png",
+   "name": "Philadelphia Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmphilly.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film philly dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmphilly.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w10-frosted-privacy-window-film.jpg",
+   "kicker": "Philadelphia · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Philadelphia",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Chestnut Hill",
+    "Mount Airy",
+    "University City",
+    "Graduate Hospital"
+   ],
+   "say": "Window tinting in Philadelphia? Watch this."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w16-glass-anti-graffiti-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "Philadelphia Window Film Pros",
+   "nameCue": "Philadelphia",
+   "where": "Chestnut Hill · Mount Airy · University City",
+   "logo": "logo-philly.png",
+   "logoBg": "#fff",
+   "points": [
+    "Homes, condos, offices & storefronts",
+    "Most houses done in a day or less",
+    "Honest advice on which windows need film"
+   ],
+   "say": "For homes and businesses across Philadelphia, give Philadelphia Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w05-floor-to-ceiling-glass-film-install.jpg",
+   "logo": "logo-philly.png",
+   "name": "Philadelphia Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmphilly.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film philly dot pro.",
+   "say": "For a free window film quote, visit windowfilmphilly.pro."
+  }
+ ]
+}

@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-BrianNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "Riverside · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmriverside.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w04-decorative-storefront-window-graphics.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Window Film",
+   "Riverside"
+  ],
+  "sub": "Riverside Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "80%",
+   [
+    "LESS",
+    "HEAT"
+   ]
+  ],
+  "reelStamp": [
+   "90%",
+   [
+    "LESS",
+    "GLARE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w13-home-window-film-installation.jpg",
+   "kicker": "Riverside · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Riverside",
+    "Window Film Pros"
+   ],
+   "year": "2026",
+   "chips": [
+    "Magnolia Center",
+    "Victoria",
+    "Hawarden Hills",
+    "Corona",
+    "Moreno Valley"
+   ],
+   "say": "Is your Riverside home or office too hot, too bright, or too exposed? Meet Riverside Window Film Pros, the local window film and window tinting installers."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "Window film blocks up to 99 percent of UV rays, up to 80 percent of solar heat, and up to 90 percent of glare. Your numbers depend on the film and the glass, and they spec that before install."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Commercial Security",
+     "desc": "Safety and security film with optional frame attachment for retail",
+     "icon": "shield",
+     "cue": "commercial"
+    },
+    {
+     "name": "Anti-Graffiti",
+     "desc": "Clear sacrificial film that takes scratches, etching and tags",
+     "icon": "star",
+     "cue": "anti-graffiti"
+    },
+    {
+     "name": "Decorative & Frosted Glass",
+     "desc": "Frosted bands, cut logos and gradient film for office partitions",
+     "icon": "chart",
+     "cue": "decorative"
+    },
+    {
+     "name": "Solar Control",
+     "desc": "High-rejection solar film for large commercial glass",
+     "icon": "bolt",
+     "cue": "solar"
+    }
+   ],
+   "say": "For businesses: Commercial Security: Safety and security film with optional frame attachment for retail, clinic and office glass prone to smash-and-grab entry. Anti-Graffiti: Clear sacrificial film that takes scratches, etching and tags so the damaged layer gets replaced instead of the whole pane of glass. Decorative & Frosted Glass: Frosted bands, cut logos and gradient film for office partitions, reception walls and clinic windows that need privacy without losing light. Solar Control: High-rejection solar film for large commercial glass, from downtown office façades to the office fronts on Inland Empire logistics buildings."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in Riverside",
+   "cards": [
+    {
+     "name": "Heat Control",
+     "desc": "Film that rejects solar heat on sliding doors",
+     "image": "w15-residential-window-tinting.jpg",
+     "cue": "heat"
+    },
+    {
+     "name": "UV Protection",
+     "desc": "Nearly clear film that blocks the ultraviolet behind faded hardwood",
+     "image": "w02-street-view-through-window-glass.jpg",
+     "cue": "uv"
+    },
+    {
+     "name": "Privacy",
+     "desc": "Frosted, reflective or patterned film for bathrooms",
+     "image": "w10-frosted-privacy-window-film.jpg",
+     "cue": "privacy"
+    },
+    {
+     "name": "Decorative",
+     "desc": "Etched, frosted and patterned film for entry sidelights",
+     "image": "w03-uv-protection-window-film-home.jpg",
+     "cue": "decorative"
+    }
+   ],
+   "say": "For homes: Heat Control: Film that rejects solar heat on sliding doors, great-room glass and upstairs bedrooms that overheat during Riverside's 100-degree afternoons. UV Protection: Nearly clear film that blocks the ultraviolet behind faded hardwood, rugs, upholstery and artwork in sunny Inland Empire rooms. Privacy: Frosted, reflective or patterned film for bathrooms, street-facing windows and second-story glass that looks straight into a neighbor's yard. Decorative: Etched, frosted and patterned film for entry sidelights, transoms and bath windows, including looks that suit Craftsman and Spanish revival homes."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Why Window Film Matters in Riverside's Inland Heat",
+   "sub": "Riverside, CA",
+   "steps": [
+    {
+     "image": "w09-frosted-glass-window-film.jpg"
+    },
+    {
+     "image": "w04-decorative-storefront-window-graphics.jpg"
+    },
+    {
+     "image": "w14-home-window-tinting-living-room.jpg"
+    }
+   ],
+   "say": "Riverside sits far enough from the ocean that the cool coastal air rarely does much for it in summer. Triple-digit afternoons are common from June into September, and warm spells can arrive in May and linger well into October. That makes for a long cooling season, and much of the heat that air conditioners fight comes straight through the glass."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Window Tinting for Riverside's Historic and Newer Homes",
+   "sub": "Moreno Valley · Jurupa Valley · Norco",
+   "steps": [
+    {
+     "image": "w00-anti-graffiti-film-tag-removal.jpg"
+    },
+    {
+     "image": "w02-street-view-through-window-glass.jpg"
+    },
+    {
+     "image": "w06-commercial-window-tinting.jpg"
+    }
+   ],
+   "say": "Riverside's housing stock covers a wide range. Around downtown and in the Wood Streets you find Craftsman bungalows and Spanish revival houses with original wood sashes and single-pane glass, some of it old and wavy. Those windows let in plenty of heat and UV, and owners often want to keep the glass rather than swap it for vinyl."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Can I put window film on dual-pane windows?",
+     "desc": "Usually yes, with the right film",
+     "icon": "page",
+     "cue": "can"
+    },
+    {
+     "name": "Can film affect the warranty on my windows?",
+     "desc": "Certain window makers reduce their coverage once aftermarket film",
+     "icon": "roof",
+     "cue": "can"
+    },
+    {
+     "name": "Does my HOA allow window tinting?",
+     "desc": "Many HOAs in Orangecrest, Eastvale",
+     "icon": "chart",
+     "cue": "does"
+    },
+    {
+     "name": "Does window film help with wildfire smoke?",
+     "desc": "No",
+     "icon": "search",
+     "cue": "does"
+    }
+   ],
+   "say": "Common questions: Can I put window film on dual-pane windows? Usually yes, with the right film. Can film affect the warranty on my windows? Certain window makers reduce their coverage once aftermarket film goes on, and certain film makers back the glass to make up for it. Does my HOA allow window tinting? Many HOAs in Orangecrest, Eastvale, Menifee, Murrieta and Temecula regulate how windows look from the street, and some restrict mirrored film."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "Through the quote form, describe the rooms or storefronts",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "They confirm measurements, identify single-pane, dual-pane",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "Installers protect floors and sills",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Some haze or small water pockets are normal for the first",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, through the quote form, describe the rooms or storefronts that bother you, which way they face and rough window sizes. Then, they confirm measurements, identify single-pane, dual-pane or low-E glass and check for seal failure or damage. On install day, installers protect floors and sills, clean each pane thoroughly, then apply the film wet and squeegee it flat. Finally, some haze or small water pockets are normal for the first days while the film cures."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in Riverside",
+   "items": [
+    "Murrieta",
+    "Redlands",
+    "Downtown Riverside",
+    "Wood Streets",
+    "Canyon Crest",
+    "Orangecrest",
+    "Mission Grove",
+    "Arlington"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover Riverside neighborhoods including Murrieta, Redlands, Downtown Riverside, Wood Streets, Canyon Crest, Orangecrest, Mission Grove, and Arlington."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w21-skylight-solar-control-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "Riverside Window Film Pros",
+   "nameCue": "Riverside",
+   "where": "Hawarden Hills · Corona · Moreno Valley · Jurupa Valley",
+   "logo": "logo-riverside.png",
+   "logoBg": "#fff",
+   "points": [
+    "Residential & commercial window film",
+    "Film matched to your glass & orientation",
+    "Samples shown on your own windows",
+    "After-hours installs for offices & shops",
+    "Reply within 24 hours"
+   ],
+   "say": "If you need window film or window tinting in Riverside, give Riverside Window Film Pros a shout. They handle homes and businesses, and they match the film to your glass, not a catalog."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w04-decorative-storefront-window-graphics.jpg",
+   "logo": "logo-riverside.png",
+   "name": "Riverside Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmriverside.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film riverside dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmriverside.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w13-home-window-film-installation.jpg",
+   "kicker": "Riverside · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Riverside",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Hawarden Hills",
+    "Corona",
+    "Moreno Valley",
+    "Jurupa Valley"
+   ],
+   "say": "Too much sun in Riverside? Here's a local fix."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w21-skylight-solar-control-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "Riverside Window Film Pros",
+   "nameCue": "Riverside",
+   "where": "Hawarden Hills · Corona · Moreno Valley",
+   "logo": "logo-riverside.png",
+   "logoBg": "#fff",
+   "points": [
+    "Residential & commercial window film",
+    "Film matched to your glass & orientation",
+    "Samples shown on your own windows"
+   ],
+   "say": "For homes and businesses across Riverside, give Riverside Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w04-decorative-storefront-window-graphics.jpg",
+   "logo": "logo-riverside.png",
+   "name": "Riverside Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmriverside.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film riverside dot pro.",
+   "say": "For a free window film quote, visit windowfilmriverside.pro."
+  }
+ ]
+}

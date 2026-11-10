@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-BrianNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "San Francisco · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmsanfrancisco.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w13-home-window-film-installation.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Window",
+   "Tinting"
+  ],
+  "sub": "San Francisco Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "80%",
+   [
+    "LESS",
+    "HEAT"
+   ]
+  ],
+  "reelStamp": [
+   "90%",
+   [
+    "LESS",
+    "GLARE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w09-frosted-glass-window-film.jpg",
+   "kicker": "San Francisco · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "SF",
+    "Window Film Pros"
+   ],
+   "year": "2026",
+   "chips": [
+    "Mission District",
+    "SoMa",
+    "Financial District",
+    "Nob Hill",
+    "Russian Hill"
+   ],
+   "say": "Is your San Francisco home or office too hot, too bright, or too exposed? Meet San Francisco Window Film Pros, the local window film and window tinting installers."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "The numbers: up to 99 percent of UV, up to 80 percent of solar heat, and up to 90 percent of glare, depending on the film and your glass."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Commercial Security",
+     "desc": "Security film, with optional attachment systems",
+     "icon": "shield",
+     "cue": "commercial"
+    },
+    {
+     "name": "Anti-Graffiti",
+     "desc": "Clear sacrificial film that takes tags",
+     "icon": "star",
+     "cue": "anti-graffiti"
+    },
+    {
+     "name": "Decorative & Frosted Glass",
+     "desc": "Frosted, etched-look and printed films for office partitions",
+     "icon": "chart",
+     "cue": "decorative"
+    },
+    {
+     "name": "Solar Control",
+     "desc": "Solar control film for commercial curtain walls and large glazing",
+     "icon": "bolt",
+     "cue": "solar"
+    }
+   ],
+   "say": "For businesses: Commercial Security: Security film, with optional attachment systems, that slows smash-and-grab entry through storefront and lobby glass and keeps shattered panes in the frame until a glazier can replace them. Anti-Graffiti: Clear sacrificial film that takes tags, etching and scratchiti instead of the glass, then gets peeled and replaced for far less than a new pane. Decorative & Frosted Glass: Frosted, etched-look and printed films for office partitions, clinic windows and branded storefront glass, with cut lettering, logos, door markings and bird-safe patterns available on request. Solar Control: Solar control film for commercial curtain walls and large glazing, reducing heat gain and hot spots near the perimeter of south and west-facing floors without replacing any glass."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in SF",
+   "cards": [
+    {
+     "name": "Heat Control",
+     "desc": "Film that rejects solar heat on the south",
+     "image": "w15-residential-window-tinting.jpg",
+     "cue": "heat"
+    },
+    {
+     "name": "UV Protection",
+     "desc": "Nearly clear film that blocks almost all ultraviolet light to slow fading",
+     "image": "w02-street-view-through-window-glass.jpg",
+     "cue": "uv"
+    },
+    {
+     "name": "Privacy",
+     "desc": "Frosted, one-way and gradient films for lightwell windows",
+     "image": "w10-frosted-privacy-window-film.jpg",
+     "cue": "privacy"
+    },
+    {
+     "name": "Decorative",
+     "desc": "Etched, patterned and stained-glass-look films for entry doors",
+     "image": "w03-uv-protection-window-film-home.jpg",
+     "cue": "decorative"
+    }
+   ],
+   "say": "For homes: Heat Control: Film that rejects solar heat on the south and west glass that overheats during September and October, a real help in the many city homes that have no air conditioning. UV Protection: Nearly clear film that blocks almost all ultraviolet light to slow fading of hardwood floors, rugs, art and upholstery, even in fog-belt rooms where UV still gets through a thin marine layer. Privacy: Frosted, one-way and gradient films for lightwell windows, garden-level units, bathrooms and street-facing bays where neighbors and passersby can see straight in, chosen so the room keeps its daylight. Decorative: Etched, patterned and stained-glass-look films for entry doors, transoms and sidelights."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "San Francisco Microclimates and the Window Film They Call For",
+   "sub": "San Francisco, CA",
+   "steps": [
+    {
+     "image": "w09-frosted-glass-window-film.jpg"
+    },
+    {
+     "image": "w11-glass-facade-solar-film.jpg"
+    },
+    {
+     "image": "w14-home-window-tinting-living-room.jpg"
+    }
+   ],
+   "say": "San Francisco is a small city with very different weather from one ridge to the next. On a typical July afternoon the Outer Sunset and the Richmond District can sit under a grey marine layer while the Mission, Potrero Hill and Dogpatch are in full sun. A window film that makes sense on a bright Bernal Heights hillside can be the wrong call for a foggy block near Ocean Beach, where owners care more about holding winter warmth than rejecting heat."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "San Francisco Rules That Touch Window Film Projects",
+   "sub": "Mission District · SoMa · Financial District",
+   "steps": [
+    {
+     "image": "w21-skylight-solar-control-film.jpg"
+    },
+    {
+     "image": "w02-street-view-through-window-glass.jpg"
+    },
+    {
+     "image": "w16-glass-anti-graffiti-film.jpg"
+    }
+   ],
+   "say": "Interior window film is usually not a permit item, but a few local rules still come up. Buildings in historic districts and designated landmarks go through Planning review for visible exterior changes, so a mirrored film that changes how a facade reads from the street deserves a check first. Neutral and lightly tinted films rarely draw attention."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Do I need window film if I live in the foggy part of the city?",
+     "desc": "Often not for heat",
+     "icon": "clock",
+     "cue": "do"
+    },
+    {
+     "name": "Is tinted glass going to make my SF flat gloomy?",
+     "desc": "Only if you pick a dark product",
+     "icon": "shield",
+     "cue": "is"
+    },
+    {
+     "name": "Can you put film on old Victorian glass?",
+     "desc": "Yes, in most cases",
+     "icon": "page",
+     "cue": "can"
+    },
+    {
+     "name": "Do I need permission from Planning or my HOA?",
+     "desc": "Interior film is rarely a permit issue",
+     "icon": "roof",
+     "cue": "do"
+    }
+   ],
+   "say": "Common questions: Do I need window film if I live in the foggy part of the city? Often not for heat. Is tinted glass going to make my SF flat gloomy? Only if you pick a dark product. Can you put film on old Victorian glass? Yes, in most cases."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "Start with the quote form: name the rooms or floors",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "They visit, confirm measurements",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "They protect floors and sills",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Small haze or water pockets can show for a few weeks while",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, start with the quote form: name the rooms or floors that give you trouble and the time of day it happens. Then, they visit, confirm measurements and identify the glass: single-pane, dual-pane, tempered, laminated or old annealed glass. On install day, they protect floors and sills, clean each pane, apply the film wet and squeeze out the solution. Finally, small haze or water pockets can show for a few weeks while the film cures, and it takes longer in cool, damp fog-belt weather."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in SF",
+   "items": [
+    "Noe Valley",
+    "Mission District",
+    "SoMa",
+    "Financial District",
+    "Nob Hill",
+    "Russian Hill",
+    "North Beach",
+    "Hayes Valley"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover San Francisco neighborhoods including Noe Valley, Mission District, SoMa, Financial District, Nob Hill, Russian Hill, North Beach, and Hayes Valley."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w13-home-window-film-installation.jpg",
+   "stamp": "Local spotlight",
+   "name": "San Francisco Window Film Pros",
+   "nameCue": "San",
+   "where": "Marina District · Noe Valley · Mission District · SoMa",
+   "logo": "logo-sanfrancisco.png",
+   "logoBg": "#fff",
+   "points": [
+    "Heat, glare, UV & privacy film",
+    "Security & anti-graffiti film",
+    "Glass checked before anything is installed",
+    "Quotes by online request",
+    "Reply within 24 hours"
+   ],
+   "say": "So if your San Francisco windows are too hot, too bright or too exposed, give San Francisco Window Film Pros a shout for a quote."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w21-skylight-solar-control-film.jpg",
+   "logo": "logo-sanfrancisco.png",
+   "name": "San Francisco Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmsanfrancisco.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film sanfrancisco dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmsanfrancisco.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w09-frosted-glass-window-film.jpg",
+   "kicker": "San Francisco · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "SF",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Marina District",
+    "Noe Valley",
+    "Mission District",
+    "SoMa"
+   ],
+   "say": "Meet San Francisco Window Film Pros."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w13-home-window-film-installation.jpg",
+   "stamp": "Local spotlight",
+   "name": "San Francisco Window Film Pros",
+   "nameCue": "San",
+   "where": "Marina District · Noe Valley · Mission District",
+   "logo": "logo-sanfrancisco.png",
+   "logoBg": "#fff",
+   "points": [
+    "Heat, glare, UV & privacy film",
+    "Security & anti-graffiti film",
+    "Glass checked before anything is installed"
+   ],
+   "say": "For homes and businesses across San Francisco, give San Francisco Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w21-skylight-solar-control-film.jpg",
+   "logo": "logo-sanfrancisco.png",
+   "name": "San Francisco Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmsanfrancisco.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film sanfrancisco dot pro.",
+   "say": "For a free window film quote, visit windowfilmsanfrancisco.pro."
+  }
+ ]
+}

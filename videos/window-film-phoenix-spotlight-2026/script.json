@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-ChristopherNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "Phoenix · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmphoenix.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w10-frosted-privacy-window-film.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Window",
+   "Tinting"
+  ],
+  "sub": "Phoenix Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "90%",
+   [
+    "LESS",
+    "GLARE"
+   ]
+  ],
+  "reelStamp": [
+   "LOCAL",
+   [
+    "SPOT",
+    "LIGHT"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w12-graffiti-etched-storefront-glass.jpg",
+   "kicker": "Phoenix · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Meet the",
+    "Window Film Pros"
+   ],
+   "year": "2026",
+   "chips": [
+    "Chandler",
+    "Gilbert",
+    "Glendale",
+    "Peoria",
+    "Paradise Valley"
+   ],
+   "say": "Today on Local Vibe Check, we're spotlighting Phoenix Window Film Pros, a window film installer working in neighborhoods from Downtown Phoenix to Desert Ridge."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Window Tinting for Phoenix Homes",
+   "sub": "Glendale · Peoria · Paradise Valley",
+   "steps": [
+    {
+     "image": "w12-graffiti-etched-storefront-glass.jpg"
+    },
+    {
+     "image": "w03-uv-protection-window-film-home.jpg"
+    },
+    {
+     "image": "w11-glass-facade-solar-film.jpg"
+    }
+   ],
+   "say": "Valley houses span a century of styles. Central Phoenix historic districts such as Willo, Encanto-Palmcroft and Roosevelt hold 1920s bungalows and Spanish Colonial Revival homes, often with original single-pane wood windows. Mid-century ranch houses in Arcadia and around Central Phoenix have aluminum sliders and big panes facing the backyard pool."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Why Window Film Pays Off in Phoenix's Desert Heat",
+   "sub": "Phoenix, AZ",
+   "steps": [
+    {
+     "image": "w10-frosted-privacy-window-film.jpg"
+    },
+    {
+     "image": "w06-commercial-window-tinting.jpg"
+    },
+    {
+     "image": "w15-residential-window-tinting.jpg"
+    }
+   ],
+   "say": "Phoenix sits in the Sonoran Desert at a latitude where the summer sun climbs nearly overhead at midday. Roof overhangs shade much of the south glass in July, but east windows take hard, low sun every morning and west windows take it from mid-afternoon until dark. The cooling season starts in spring and runs deep into fall, with triple-digit afternoons and nights that barely cool off in the urban core."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in Phoenix",
+   "cards": [
+    {
+     "name": "UV Protection",
+     "desc": "Stops almost all UV at the pane",
+     "image": "w02-street-view-through-window-glass.jpg",
+     "cue": "uv"
+    },
+    {
+     "name": "Privacy",
+     "desc": "Daytime privacy for bathrooms",
+     "image": "w03-uv-protection-window-film-home.jpg",
+     "cue": "privacy"
+    },
+    {
+     "name": "Decorative",
+     "desc": "Etched, striped and patterned film for front-door sidelights",
+     "image": "w07-living-room-heat-control-film.jpg",
+     "cue": "decorative"
+    },
+    {
+     "name": "Security",
+     "desc": "Thick clear safety film for sliders, sidelights and ground-floor windows",
+     "image": "w13-home-window-film-installation.jpg",
+     "cue": "security"
+    }
+   ],
+   "say": "For homes: UV Protection: Stops almost all UV at the pane, which slows the bleaching of wood floors, leather sofas and framed prints. Privacy: Daytime privacy for bathrooms, street-facing rooms and windows that look into the next two-story house, in frosted, reflective or gradient finishes that still pass daylight. Decorative: Etched, striped and patterned film for front-door sidelights, shower glass and cabinet doors. Security: Thick clear safety film for sliders, sidelights and ground-floor windows."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "The numbers: up to 99 percent of UV, up to 80 percent of solar heat, and up to 90 percent of glare, depending on the film and your glass."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Anti-Graffiti",
+     "desc": "A clear sacrificial skin on storefront, lobby and light-rail-facing glass",
+     "icon": "star",
+     "cue": "anti-graffiti"
+    },
+    {
+     "name": "Decorative & Frosted Glass",
+     "desc": "Etched-look strips, plotter-cut company marks",
+     "icon": "chart",
+     "cue": "decorative"
+    },
+    {
+     "name": "Solar Control",
+     "desc": "Reduces solar heat on big commercial glass",
+     "icon": "bolt",
+     "cue": "solar"
+    },
+    {
+     "name": "Conference Room Privacy",
+     "desc": "Frosted or graduated bands on glass meeting rooms that hide screens",
+     "icon": "search",
+     "cue": "conference"
+    }
+   ],
+   "say": "For businesses: Anti-Graffiti: A clear sacrificial skin on storefront, lobby and light-rail-facing glass. Decorative & Frosted Glass: Etched-look strips, plotter-cut company marks and textured film on interior office glass, clinic doors and glass walls, with clean edges and easy removal when a lease ends. Solar Control: Reduces solar heat on big commercial glass, including tower curtain walls and tilt-up warehouse offices, matched to the existing glass and checked for thermal stress. Conference Room Privacy: Frosted or graduated bands on glass meeting rooms that hide screens, whiteboards and faces from the hallway but leave the room bright."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "Through the quote form, give them approximate pane sizes",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "On site they identify the glazing",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "They cover floors and sills",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Low humidity and strong sun help film dry faster here than",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, through the quote form, give them approximate pane sizes and which spaces are uncomfortable. Then, on site they identify the glazing, look for factory coatings and failed dual-pane seals, and hold samples against the actual panes in afternoon sun. On install day, they cover floors and sills, wash off every trace of desert dust, cut film to each pane and squeegee it flat. Finally, low humidity and strong sun help film dry faster here than in most places, often within days in summer."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in Phoenix",
+   "items": [
+    "Downtown Phoenix",
+    "Midtown Phoenix",
+    "Arcadia",
+    "Biltmore",
+    "Ahwatukee",
+    "Desert Ridge",
+    "Deer Valley",
+    "Scottsdale"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover Phoenix neighborhoods including Downtown Phoenix, Midtown Phoenix, Arcadia, Biltmore, Ahwatukee, Desert Ridge, Deer Valley, and Scottsdale."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Do we need landlord or HOA approval for window film?",
+     "desc": "Usually",
+     "icon": "roof",
+     "cue": "do"
+    },
+    {
+     "name": "What lifespan should I expect from film under Arizona sun?",
+     "desc": "Film applied to the inside of the glass usually stays in service for",
+     "icon": "chart",
+     "cue": "what"
+    },
+    {
+     "name": "Does window film help during monsoon dust storms?",
+     "desc": "Safety film holds glass together if a pane breaks from wind-blown",
+     "icon": "search",
+     "cue": "does"
+    },
+    {
+     "name": "Can you install film on Phoenix office buildings after hours?",
+     "desc": "Yes",
+     "icon": "clock",
+     "cue": "can"
+    }
+   ],
+   "say": "Common questions: Do we need landlord or HOA approval for window film? Usually. What lifespan should I expect from film under Arizona sun? Film applied to the inside of the glass usually stays in service for many years; the manufacturer's written warranty spells out the term. Does window film help during monsoon dust storms? Safety film holds glass together if a pane breaks from wind-blown debris, which reduces sharp fragments inside."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w01-conference-room-frosted-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "Phoenix Window Film Pros",
+   "nameCue": "Phoenix",
+   "where": "Chandler · Gilbert · Glendale · Peoria",
+   "logo": "logo-phoenix.png",
+   "logoBg": "#fff",
+   "points": [
+    "Heat, glare, UV & privacy film",
+    "Security & anti-graffiti film",
+    "Glass checked before anything is installed",
+    "Quotes by online request",
+    "Reply within 24 hours"
+   ],
+   "say": "So if your Phoenix windows are too hot, too bright or too exposed, give Phoenix Window Film Pros a shout for a quote."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w09-frosted-glass-window-film.jpg",
+   "logo": "logo-phoenix.png",
+   "name": "Phoenix Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmphoenix.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film phoenix dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmphoenix.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w12-graffiti-etched-storefront-glass.jpg",
+   "kicker": "Phoenix · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Phoenix",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Chandler",
+    "Gilbert",
+    "Glendale",
+    "Peoria"
+   ],
+   "say": "Meet Phoenix Window Film Pros."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w01-conference-room-frosted-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "Phoenix Window Film Pros",
+   "nameCue": "Phoenix",
+   "where": "Chandler · Gilbert · Glendale",
+   "logo": "logo-phoenix.png",
+   "logoBg": "#fff",
+   "points": [
+    "Heat, glare, UV & privacy film",
+    "Security & anti-graffiti film",
+    "Glass checked before anything is installed"
+   ],
+   "say": "For homes and businesses across Phoenix, give Phoenix Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w09-frosted-glass-window-film.jpg",
+   "logo": "logo-phoenix.png",
+   "name": "Phoenix Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmphoenix.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film phoenix dot pro.",
+   "say": "For a free window film quote, visit windowfilmphoenix.pro."
+  }
+ ]
+}

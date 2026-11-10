@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-ChristopherNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "Seattle · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmseattle.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w03-uv-protection-window-film-home.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Window Film",
+   "Seattle"
+  ],
+  "sub": "Seattle Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "90%",
+   [
+    "LESS",
+    "GLARE"
+   ]
+  ],
+  "reelStamp": [
+   "LOCAL",
+   [
+    "SPOT",
+    "LIGHT"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w01-conference-room-frosted-film.jpg",
+   "kicker": "Seattle · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Meet the",
+    "Window Film Pros"
+   ],
+   "year": "2026",
+   "chips": [
+    "Bellevue",
+    "Kirkland",
+    "Capitol Hill",
+    "Queen Anne",
+    "Ballard"
+   ],
+   "say": "Today on Local Vibe Check, we're spotlighting Seattle Window Film Pros, a window film installer working in neighborhoods from Capitol Hill to Green Lake."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Window Tinting in Seattle After the 2021 Heat Dome",
+   "sub": "Downtown Seattle · South Lake Union · Belltown",
+   "steps": [
+    {
+     "image": "w01-conference-room-frosted-film.jpg"
+    },
+    {
+     "image": "w09-frosted-glass-window-film.jpg"
+    },
+    {
+     "image": "w17-solar-control-storefront-film.jpg"
+    }
+   ],
+   "say": "The late June 2021 heat wave changed how a lot of Seattle homeowners think about their windows. The city logged three straight days over 100 degrees, and many houses had no air conditioning because for most of the twentieth century they simply did not need it. Upstairs bedrooms in older homes stayed hot well after midnight, and portable units struggled to keep up."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Why Seattle Window Film Has to Handle Two Different Suns",
+   "sub": "Seattle, WA",
+   "steps": [
+    {
+     "image": "w03-uv-protection-window-film-home.jpg"
+    },
+    {
+     "image": "w21-skylight-solar-control-film.jpg"
+    },
+    {
+     "image": "w15-residential-window-tinting.jpg"
+    }
+   ],
+   "say": "Seattle sits far enough north that the sun behaves very differently from one season to the next. Around the June solstice, daylight runs about sixteen hours, the sun climbs high, and a west window can take direct light well past 8 p.m. In December the days shrink to roughly eight and a half hours, and even at noon the sun stays under twenty degrees above the horizon."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in Seattle",
+   "cards": [
+    {
+     "name": "Glare Reduction",
+     "desc": "Cuts the low, flat winter sun that crosses Seattle living rooms",
+     "image": "w02-street-view-through-window-glass.jpg",
+     "cue": "glare"
+    },
+    {
+     "name": "Energy-Saving",
+     "desc": "Film that reduces summer heat gain and",
+     "image": "w09-frosted-glass-window-film.jpg",
+     "cue": "energy-saving"
+    },
+    {
+     "name": "Home Tinting",
+     "desc": "Room-by-room tinting plans for Seattle houses and condos",
+     "image": "w07-living-room-heat-control-film.jpg",
+     "cue": "home"
+    },
+    {
+     "name": "Heat Control",
+     "desc": "Heat control film for upstairs bedrooms",
+     "image": "w13-home-window-film-installation.jpg",
+     "cue": "heat"
+    }
+   ],
+   "say": "For homes: Glare Reduction: Cuts the low, flat winter sun that crosses Seattle living rooms and home offices, plus reflected light off Puget Sound, Lake Union and Lake Washington. Energy-Saving: Film that reduces summer heat gain and, in low-E versions, winter heat loss. Home Tinting: Room-by-room tinting plans for Seattle houses and condos. Heat Control: Heat control film for upstairs bedrooms and west-facing living rooms that cook on long July evenings."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "Window film blocks up to 99 percent of UV rays, up to 80 percent of solar heat, and up to 90 percent of glare. Your numbers depend on the film and the glass, and they spec that before install."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Low-E",
+     "desc": "A coated film that bounces furnace",
+     "icon": "pin",
+     "cue": "low-e"
+    },
+    {
+     "name": "Office",
+     "desc": "Office window film for downtown",
+     "icon": "clock",
+     "cue": "office"
+    },
+    {
+     "name": "Storefront",
+     "desc": "Storefront film for Seattle retail",
+     "icon": "page",
+     "cue": "storefront"
+    },
+    {
+     "name": "Commercial Security",
+     "desc": "Commercial security film for glass doors",
+     "icon": "shield",
+     "cue": "commercial"
+    }
+   ],
+   "say": "For businesses: Low-E: A coated film that bounces furnace and heat pump warmth back indoors through Seattle's long heating season, then turns away solar heat in July. Office: Office window film for downtown and South Lake Union floors where curtain walls create monitor glare, hot perimeter desks and cold interior zones. Storefront: Storefront film for Seattle retail and restaurants that blocks UV fading on displays, softens afternoon glare for diners and can add a layer of break-in resistance. Commercial Security: Commercial security film for glass doors and display windows that slows smash-and-grab entry and holds shattered glass in place."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "Fill out the quote form with your address",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "They look at glass type, frame condition",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "The crew protects floors and sills",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Film needs time for the mounting solution to dry out",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, fill out the quote form with your address, which rooms or floors bother you, and what the problem is: heat, glare, fading, privacy or security. Then, they look at glass type, frame condition and which way each window faces, then hold film samples up so you can compare them in your own light. On install day, the crew protects floors and sills, cleans each pane thoroughly, then applies film cut to the edge of the glass. Finally, film needs time for the mounting solution to dry out."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in Seattle",
+   "items": [
+    "Montlake",
+    "Ravenna",
+    "University District",
+    "Beacon Hill",
+    "Columbia City",
+    "Phinney Ridge",
+    "Bellevue",
+    "Kirkland"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover Seattle neighborhoods including Montlake, Ravenna, University District, Beacon Hill, Columbia City, Phinney Ridge, Bellevue, and Kirkland."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Do I need approval for window film in a condo or landmark district?",
+     "desc": "Many condo associations have rules on how windows look from outside",
+     "icon": "search",
+     "cue": "do"
+    },
+    {
+     "name": "What does window film cost for a Seattle house or office?",
+     "desc": "The four big variables are film type",
+     "icon": "clock",
+     "cue": "what"
+    },
+    {
+     "name": "Will window film make my home too dark in winter?",
+     "desc": "Only if you choose a dark film",
+     "icon": "shield",
+     "cue": "will"
+    },
+    {
+     "name": "Does window tinting help with heat if I have no air conditioning?",
+     "desc": "Yes, it reduces how much solar heat enters through sunny windows",
+     "icon": "page",
+     "cue": "does"
+    }
+   ],
+   "say": "Common questions: Do I need approval for window film in a condo or landmark district? Many condo associations have rules on how windows look from outside, so check before ordering. What does window film cost for a Seattle house or office? The four big variables are film type, total square footage of glass, how easy the windows are to reach and whether old film needs to come off first. Will window film make my Seattle home too dark in winter? Only if you choose a dark film."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w10-frosted-privacy-window-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "Seattle Window Film Pros",
+   "nameCue": "Seattle",
+   "where": "Magnolia · West Seattle · Downtown Seattle · South Lake Union",
+   "logo": "logo-seattle.png",
+   "logoBg": "#fff",
+   "points": [
+    "Residential & commercial window film",
+    "Film matched to your glass & orientation",
+    "Samples shown on your own windows",
+    "After-hours installs for offices & shops",
+    "Reply within 24 hours"
+   ],
+   "say": "If you need window film or window tinting in Seattle, give Seattle Window Film Pros a shout. They handle homes and businesses, and they match the film to your glass, not a catalog."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w20-window-film-installation.jpg",
+   "logo": "logo-seattle.png",
+   "name": "Seattle Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmseattle.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film seattle dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmseattle.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w01-conference-room-frosted-film.jpg",
+   "kicker": "Seattle · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Seattle",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Magnolia",
+    "West Seattle",
+    "Downtown Seattle",
+    "South Lake Union"
+   ],
+   "say": "Too much sun in Seattle? Here's a local fix."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w10-frosted-privacy-window-film.jpg",
+   "stamp": "Local spotlight",
+   "name": "Seattle Window Film Pros",
+   "nameCue": "Seattle",
+   "where": "Magnolia · West Seattle · Downtown Seattle",
+   "logo": "logo-seattle.png",
+   "logoBg": "#fff",
+   "points": [
+    "Residential & commercial window film",
+    "Film matched to your glass & orientation",
+    "Samples shown on your own windows"
+   ],
+   "say": "For homes and businesses across Seattle, give Seattle Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w20-window-film-installation.jpg",
+   "logo": "logo-seattle.png",
+   "name": "Seattle Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmseattle.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film seattle dot pro.",
+   "say": "For a free window film quote, visit windowfilmseattle.pro."
+  }
+ ]
+}

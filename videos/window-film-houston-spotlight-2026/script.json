@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-ChristopherNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "Houston · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmhouston.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w18-tinted-window-film.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Houston",
+   "Window Film"
+  ],
+  "sub": "Houston Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "90%",
+   [
+    "LESS",
+    "GLARE"
+   ]
+  ],
+  "reelStamp": [
+   "LOCAL",
+   [
+    "SPOT",
+    "LIGHT"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w07-living-room-heat-control-film.jpg",
+   "kicker": "Houston · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Meet the",
+    "Window Film Pros"
+   ],
+   "year": "2026",
+   "chips": [
+    "Museum District",
+    "Rice Military",
+    "Energy Corridor",
+    "Spring Branch",
+    "Meyerland"
+   ],
+   "say": "Today on Local Vibe Check, we're spotlighting Houston Window Film Pros, a window film installer working in neighborhoods from The Heights to Memorial."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Houston Deed Restrictions, HOAs and Historic Districts",
+   "sub": "Downtown Houston · Memorial · Museum District",
+   "steps": [
+    {
+     "image": "w05-floor-to-ceiling-glass-film-install.jpg"
+    },
+    {
+     "image": "w09-frosted-glass-window-film.jpg"
+    },
+    {
+     "image": "w00-anti-graffiti-film-tag-removal.jpg"
+    }
+   ],
+   "say": "Houston has no zoning code, but that does not mean anything goes. Deed restrictions cover many older neighborhoods, and master-planned communities in the suburbs have HOAs with architectural review committees that care about how a house looks from the street. Mirror-like reflective film is the thing most likely to draw a letter."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Why Window Film Pays Off in Houston's Heat and Humidity",
+   "sub": "Houston, TX",
+   "steps": [
+    {
+     "image": "w02-street-view-through-window-glass.jpg"
+    },
+    {
+     "image": "w18-tinted-window-film.jpg"
+    },
+    {
+     "image": "w07-living-room-heat-control-film.jpg"
+    }
+   ],
+   "say": "Houston's cooling season is long. Air conditioners start working hard in spring and often do not get a real break until fall, and the humidity means nights stay warm enough that the house never fully sheds the day's heat. Every bit of solar energy that comes through the glass is heat the AC has to pull back out, on top of the moisture it is already removing from the air."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in Houston",
+   "cards": [
+    {
+     "name": "UV Protection",
+     "desc": "Blocks nearly all ultraviolet light to slow fading on hardwood floors",
+     "image": "w15-residential-window-tinting.jpg",
+     "cue": "uv"
+    },
+    {
+     "name": "Privacy",
+     "desc": "Daytime privacy for bathrooms",
+     "image": "w09-frosted-glass-window-film.jpg",
+     "cue": "privacy"
+    },
+    {
+     "name": "Decorative",
+     "desc": "Etched, striped and gradient patterns for front-door sidelights",
+     "image": "w10-frosted-privacy-window-film.jpg",
+     "cue": "decorative"
+    },
+    {
+     "name": "Security",
+     "desc": "Thick safety film that holds broken glass in place",
+     "image": "w03-uv-protection-window-film-home.jpg",
+     "cue": "security"
+    }
+   ],
+   "say": "For homes: UV Protection: Blocks nearly all ultraviolet light to slow fading on hardwood floors, rugs, upholstery and art. Privacy: Daytime privacy for bathrooms, street-facing rooms and townhouse windows that look straight into the place next door, in frosted, reflective or graduated finishes that still pass light. Decorative: Etched, striped and gradient patterns for front-door sidelights, bathroom windows and glass cabinet fronts. Security: Thick safety film that holds broken glass in place and slows a forced entry through back doors, sidelights and ground-floor windows."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "On the glass you already have, film can block up to 99 percent of UV rays, up to 80 percent of solar heat, and up to 90 percent of glare."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Anti-Graffiti",
+     "desc": "A clear sacrificial layer over storefront and lobby glass",
+     "icon": "star",
+     "cue": "anti-graffiti"
+    },
+    {
+     "name": "Decorative & Frosted Glass",
+     "desc": "Frosted bands, logos and patterned film for office partitions",
+     "icon": "chart",
+     "cue": "decorative"
+    },
+    {
+     "name": "Solar Control",
+     "desc": "Heat and glare rejection for large commercial glass",
+     "icon": "bolt",
+     "cue": "solar"
+    },
+    {
+     "name": "Conference Room Privacy",
+     "desc": "Frosted or patterned film on meeting room glass",
+     "icon": "search",
+     "cue": "conference"
+    }
+   ],
+   "say": "For businesses: Anti-Graffiti: A clear sacrificial layer over storefront and lobby glass. Decorative & Frosted Glass: Frosted bands, logos and patterned film for office partitions, entry doors and glass walls, with clean cut lines, branding options and easy removal at the end of a lease. Solar Control: Heat and glare rejection for large commercial glass, from strip-center storefronts to curtain-wall offices, chosen to suit the building's existing glazing and checked for thermal stress risk. Conference Room Privacy: Frosted or patterned film on meeting room glass so conversations, whiteboards and screens stay private from the corridor while the room still borrows daylight from the floor."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "Use the quote form to list window sizes",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "On site they identify the glazing",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "They protect floors and sills",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Film needs time for the remaining moisture to escape",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, use the quote form to list window sizes and the rooms or spaces that bother you. Then, on site they identify the glazing, check for factory low-E coatings and failing seals, and tape samples to the actual panes. On install day, they protect floors and sills, clean each pane, cut film to size and squeegee it into place. Finally, film needs time for the remaining moisture to escape."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in Houston",
+   "items": [
+    "Downtown Houston",
+    "Memorial",
+    "Museum District",
+    "Rice Military",
+    "Energy Corridor",
+    "Spring Branch",
+    "Meyerland",
+    "Garden Oaks"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover Houston neighborhoods including Downtown Houston, Memorial, Museum District, Rice Military, Energy Corridor, Spring Branch, Meyerland, and Garden Oaks."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Does window film protect against hurricanes?",
+     "desc": "Safety film holds broken glass together and reduces flying shards",
+     "icon": "shield",
+     "cue": "does"
+    },
+    {
+     "name": "What is the lifespan of window film on a Houston house?",
+     "desc": "Interior film on residential glass typically holds up for many years",
+     "icon": "page",
+     "cue": "what"
+    },
+    {
+     "name": "Can adding film affect the warranty on my windows?",
+     "desc": "It can",
+     "icon": "roof",
+     "cue": "can"
+    },
+    {
+     "name": "Will my Katy or Sugar Land HOA care about window film?",
+     "desc": "It depends on your HOA's rules",
+     "icon": "chart",
+     "cue": "will"
+    }
+   ],
+   "say": "Common questions: Does window film protect against hurricanes? Safety film holds broken glass together and reduces flying shards, but it is not hurricane-rated impact protection unless it is part of a tested system. What is the lifespan of window film on a Houston house? Interior film on residential glass typically holds up for many years, often longer than a decade, and the film maker's warranty spells out the exact term. Can adding film affect the warranty on my windows? It can."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w14-home-window-tinting-living-room.jpg",
+   "stamp": "Local spotlight",
+   "name": "Houston Window Film Pros",
+   "nameCue": "Houston",
+   "where": "Montrose · Midtown · Downtown Houston · Memorial",
+   "logo": "logo-houston.png",
+   "logoBg": "#fff",
+   "points": [
+    "Homes, condos, offices & storefronts",
+    "Most houses done in a day or less",
+    "Honest advice on which windows need film",
+    "Decorative & frosted glass film",
+    "Reply within 24 hours"
+   ],
+   "say": "Need window tinting in Houston? Houston Window Film Pros is worth a call. They'll tell you which windows need film, and which should be left alone."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w02-street-view-through-window-glass.jpg",
+   "logo": "logo-houston.png",
+   "name": "Houston Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmhouston.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film houston dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmhouston.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w07-living-room-heat-control-film.jpg",
+   "kicker": "Houston · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Houston",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Montrose",
+    "Midtown",
+    "Downtown Houston",
+    "Memorial"
+   ],
+   "say": "Window tinting in Houston? Watch this."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w14-home-window-tinting-living-room.jpg",
+   "stamp": "Local spotlight",
+   "name": "Houston Window Film Pros",
+   "nameCue": "Houston",
+   "where": "Montrose · Midtown · Downtown Houston",
+   "logo": "logo-houston.png",
+   "logoBg": "#fff",
+   "points": [
+    "Homes, condos, offices & storefronts",
+    "Most houses done in a day or less",
+    "Honest advice on which windows need film"
+   ],
+   "say": "For homes and businesses across Houston, give Houston Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w02-street-view-through-window-glass.jpg",
+   "logo": "logo-houston.png",
+   "name": "Houston Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmhouston.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film houston dot pro.",
+   "say": "For a free window film quote, visit windowfilmhouston.pro."
+  }
+ ]
+}

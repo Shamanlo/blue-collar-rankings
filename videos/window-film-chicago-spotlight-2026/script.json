@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-BrianNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "Chicago · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmchicago.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w19-storefront-window-film-crew.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Chicago",
+   "Window Film"
+  ],
+  "sub": "Chicago Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "80%",
+   [
+    "LESS",
+    "HEAT"
+   ]
+  ],
+  "reelStamp": [
+   "90%",
+   [
+    "LESS",
+    "GLARE"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w19-storefront-window-film-crew.jpg",
+   "kicker": "Chicago · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Chicago",
+    "Window Film Pros"
+   ],
+   "year": "2026",
+   "chips": [
+    "Rogers Park",
+    "Ravenswood",
+    "Pilsen",
+    "Bridgeport",
+    "Evanston"
+   ],
+   "say": "Is your Chicago home or office too hot, too bright, or too exposed? Meet Chicago Window Film Pros, the local window film and window tinting installers."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "On the glass you already have, film can block up to 99 percent of UV rays, up to 80 percent of solar heat, and up to 90 percent of glare."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Conference Room Privacy",
+     "desc": "Frosted bands and full-height privacy film for glass-walled meeting rooms",
+     "icon": "search",
+     "cue": "conference"
+    },
+    {
+     "name": "Low-E",
+     "desc": "A low-emissivity coating on film that keeps radiator",
+     "icon": "pin",
+     "cue": "low-e"
+    },
+    {
+     "name": "Office",
+     "desc": "Solar, glare and privacy film for Chicago office suites",
+     "icon": "clock",
+     "cue": "office"
+    },
+    {
+     "name": "Storefront",
+     "desc": "UV and heat film that protects merchandise in display windows while",
+     "icon": "page",
+     "cue": "storefront"
+    }
+   ],
+   "say": "For businesses: Conference Room Privacy: Frosted bands and full-height privacy film for glass-walled meeting rooms that still let daylight reach the interior of the floor. Low-E: A low-emissivity coating on film that keeps radiator and furnace warmth on your side of the glass, plus summer heat rejection. Office: Solar, glare and privacy film for Chicago office suites, installed after hours or in phases so floors stay open while the work is done. Storefront: UV and heat film that protects merchandise in display windows while keeping the shop readable and inviting from the sidewalk."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in Chicago",
+   "cards": [
+    {
+     "name": "Security",
+     "desc": "Thicker safety film that holds broken glass together",
+     "image": "w02-street-view-through-window-glass.jpg",
+     "cue": "security"
+    },
+    {
+     "name": "Glare Reduction",
+     "desc": "Film that softens low winter sun",
+     "image": "w09-frosted-glass-window-film.jpg",
+     "cue": "glare"
+    },
+    {
+     "name": "Energy-Saving",
+     "desc": "Films chosen to lower air conditioning load in summer and",
+     "image": "w10-frosted-privacy-window-film.jpg",
+     "cue": "energy-saving"
+    },
+    {
+     "name": "Home Tinting",
+     "desc": "Tinting for Chicago houses and condos, planned one elevation at a time",
+     "image": "w03-uv-protection-window-film-home.jpg",
+     "cue": "home"
+    }
+   ],
+   "say": "For homes: Security: Thicker safety film that holds broken glass together, slowing a break-in through garden apartment windows, back doors and first-floor sash. Glare Reduction: Film that softens low winter sun, snow glare and morning light off Lake Michigan so screens are readable and blinds can stay open. Energy-Saving: Films chosen to lower air conditioning load in summer and, with low-E options, keep more furnace heat indoors through a long Chicago winter. Home Tinting: Tinting for Chicago houses and condos, planned one elevation at a time."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Why Window Film in Chicago Has to Work in Two Seasons",
+   "sub": "Chicago, IL",
+   "steps": [
+    {
+     "image": "w15-residential-window-tinting.jpg"
+    },
+    {
+     "image": "w00-anti-graffiti-film-tag-removal.jpg"
+    },
+    {
+     "image": "w13-home-window-film-installation.jpg"
+    }
+   ],
+   "say": "Most cities buy window film to fight sun. Chicago buyers have to think about both ends of the year. From June through September the city gets real heat and heavy humidity, and an east-facing high-rise unit near the lake or a south-facing bungalow front room can bake by midafternoon."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Window Film, ComEd Bills and Chicago Heating Costs",
+   "sub": "West Loop · South Loop · Streeterville",
+   "steps": [
+    {
+     "image": "w04-decorative-storefront-window-graphics.jpg"
+    },
+    {
+     "image": "w09-frosted-glass-window-film.jpg"
+    },
+    {
+     "image": "w08-retail-display-window-film.jpg"
+    }
+   ],
+   "say": "Window film affects two utility bills here. In summer, solar heat that comes through glass is heat your air conditioner removes with ComEd electricity. In winter, heat that escapes through glass is heat your furnace or boiler replaces, usually on Peoples Gas in the city or Nicor in many suburbs."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Is window film allowed in a Chicago high-rise condo?",
+     "desc": "Usually, but many associations set rules on how film looks from",
+     "icon": "chart",
+     "cue": "is"
+    },
+    {
+     "name": "How many years will interior window film hold up?",
+     "desc": "Good interior film usually stays in service for many years",
+     "icon": "search",
+     "cue": "how"
+    },
+    {
+     "name": "Can window film be installed in a Chicago winter?",
+     "desc": "Yes",
+     "icon": "clock",
+     "cue": "can"
+    },
+    {
+     "name": "Will window film stop condensation on my windows?",
+     "desc": "No, and they would be wary of anyone who says it will",
+     "icon": "shield",
+     "cue": "will"
+    }
+   ],
+   "say": "Common questions: Is window film allowed in a Chicago high-rise condo? Usually, but many associations set rules on how film looks from outside, and some buildings require a certificate of insurance before work starts. How many years will interior window film hold up in Chicago? Good interior film usually stays in service for many years, often more than ten. Can window film be installed in a Chicago winter? Yes."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "The quote form asks for your neighborhood",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "They check glass type, seals and frames",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "Each pane gets scraped and washed",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Film needs time for trapped moisture to dry out",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, the quote form asks for your neighborhood, an approximate window count, the direction the glass faces and what is bothering you. Then, they check glass type, seals and frames, then hold samples on the actual windows so you can see tint, reflection and view. On install day, each pane gets scraped and washed. Finally, film needs time for trapped moisture to dry out."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in Chicago",
+   "items": [
+    "Logan Square",
+    "Old Town",
+    "Andersonville",
+    "Hyde Park",
+    "Edgewater",
+    "Rogers Park",
+    "Ravenswood",
+    "Pilsen"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover Chicago neighborhoods including Logan Square, Old Town, Andersonville, Hyde Park, Edgewater, Rogers Park, Ravenswood, and Pilsen."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w04-decorative-storefront-window-graphics.jpg",
+   "stamp": "Local spotlight",
+   "name": "Chicago Window Film Pros",
+   "nameCue": "Chicago",
+   "where": "Wicker Park · Bucktown · West Loop · South Loop",
+   "logo": "logo-chicago.png",
+   "logoBg": "#fff",
+   "points": [
+    "Homes, condos, offices & storefronts",
+    "Most houses done in a day or less",
+    "Honest advice on which windows need film",
+    "Decorative & frosted glass film",
+    "Reply within 24 hours"
+   ],
+   "say": "Need window tinting in Chicago? Chicago Window Film Pros is worth a call. They'll tell you which windows need film, and which should be left alone."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w14-home-window-tinting-living-room.jpg",
+   "logo": "logo-chicago.png",
+   "name": "Chicago Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmchicago.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film chicago dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmchicago.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w19-storefront-window-film-crew.jpg",
+   "kicker": "Chicago · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Chicago",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Wicker Park",
+    "Bucktown",
+    "West Loop",
+    "South Loop"
+   ],
+   "say": "Window tinting in Chicago? Watch this."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w04-decorative-storefront-window-graphics.jpg",
+   "stamp": "Local spotlight",
+   "name": "Chicago Window Film Pros",
+   "nameCue": "Chicago",
+   "where": "Wicker Park · Bucktown · West Loop",
+   "logo": "logo-chicago.png",
+   "logoBg": "#fff",
+   "points": [
+    "Homes, condos, offices & storefronts",
+    "Most houses done in a day or less",
+    "Honest advice on which windows need film"
+   ],
+   "say": "For homes and businesses across Chicago, give Chicago Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w14-home-window-tinting-living-room.jpg",
+   "logo": "logo-chicago.png",
+   "name": "Chicago Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmchicago.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film chicago dot pro.",
+   "say": "For a free window film quote, visit windowfilmchicago.pro."
+  }
+ ]
+}

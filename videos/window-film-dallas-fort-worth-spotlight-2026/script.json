@@ -1,0 +1,407 @@
+{
+ "voice": "en-US-GuyNeural",
+ "rate": "+6%",
+ "assetsDir": "../_shared/window-film-pros",
+ "header": "Dallas-Fort Worth · Local Business Spotlight · 2026",
+ "source": "Business details from windowfilmdfw.pro. Film figures are typical upper ranges.",
+ "sourceKinds": [
+  "stats"
+ ],
+ "thumbs": {
+  "image": "w04-decorative-storefront-window-graphics.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "50% 50%",
+  "lines": [
+   "Window Film",
+   "DFW"
+  ],
+  "sub": "DFW Window Film Pros",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 174,
+  "subPx": 44,
+  "reelSubPx": 60,
+  "stamp": [
+   "LOCAL",
+   [
+    "SPOT",
+    "LIGHT"
+   ]
+  ],
+  "reelStamp": [
+   "99%",
+   [
+    "UV",
+    "BLOCKED"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w07-living-room-heat-control-film.jpg",
+   "kicker": "Dallas-Fort Worth · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "Local Spotlight:",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Garland",
+    "Carrollton",
+    "Southlake",
+    "Grapevine",
+    "Flower Mound"
+   ],
+   "say": "Thinking about window tinting in Dallas-Fort Worth? Here's a look at DFW Window Film Pros, what they install, and why window film makes sense here."
+  },
+  {
+   "id": "weather",
+   "kind": "steps",
+   "label": "Why Window Film Here",
+   "plain": true,
+   "title": "Why Window Film Pays Off in the DFW Cooling Season",
+   "sub": "Dallas-Fort Worth, TX",
+   "steps": [
+    {
+     "image": "w02-street-view-through-window-glass.jpg"
+    },
+    {
+     "image": "w06-commercial-window-tinting.jpg"
+    },
+    {
+     "image": "w07-living-room-heat-control-film.jpg"
+    }
+   ],
+   "say": "Air conditioners in Dallas-Fort Worth usually start working hard in May and do not get a real break until October. In between come the July and August runs of triple-digit afternoons, and nights that barely drop below 80. A house or office never gets the chance to shed the heat it soaked up during the day, so every window that takes direct sun adds to a load the AC is already struggling with."
+  },
+  {
+   "id": "res",
+   "kind": "factors",
+   "label": "For Homes",
+   "cols": 4,
+   "title": "Home window film in DFW",
+   "cards": [
+    {
+     "name": "Privacy",
+     "desc": "Daytime privacy for street-facing windows",
+     "image": "w09-frosted-glass-window-film.jpg",
+     "cue": "privacy"
+    },
+    {
+     "name": "Decorative",
+     "desc": "Frosted, etched-look and patterned films for entry sidelights",
+     "image": "w10-frosted-privacy-window-film.jpg",
+     "cue": "decorative"
+    },
+    {
+     "name": "Security",
+     "desc": "Thick safety film that holds shattered glass together after a break-in",
+     "image": "w03-uv-protection-window-film-home.jpg",
+     "cue": "security"
+    },
+    {
+     "name": "Glare Reduction",
+     "desc": "Film that tames the low evening sun that washes out TVs",
+     "image": "w13-home-window-film-installation.jpg",
+     "cue": "glare"
+    }
+   ],
+   "say": "For homes: Privacy: Daytime privacy for street-facing windows, bathrooms and close-set suburban lots, using reflective, frosted or dual-reflective film depending on how the room is used. Decorative: Frosted, etched-look and patterned films for entry sidelights, transoms, shower glass and cabinet doors, removable later without damaging the glass. Security: Thick safety film that holds shattered glass together after a break-in attempt or a storm, with honest guidance on what film can and cannot stop. Glare Reduction: Film that tames the low evening sun that washes out TVs and monitors in west-facing DFW rooms, without turning the room dark."
+  },
+  {
+   "id": "com",
+   "kind": "factors",
+   "label": "For Businesses",
+   "cols": 4,
+   "title": "Commercial window film",
+   "cards": [
+    {
+     "name": "Decorative & Frosted Glass",
+     "desc": "Frosted, gradient and branded glass film for office fronts",
+     "icon": "chart",
+     "cue": "decorative"
+    },
+    {
+     "name": "Solar Control",
+     "desc": "Solar control film for commercial curtain walls and storefront systems",
+     "icon": "bolt",
+     "cue": "solar"
+    },
+    {
+     "name": "Conference Room Privacy",
+     "desc": "Frosted bands, gradients and full-coverage film",
+     "icon": "search",
+     "cue": "conference"
+    },
+    {
+     "name": "Low-E",
+     "desc": "Low-emissivity film for older commercial single-pane glass",
+     "icon": "pin",
+     "cue": "low-e"
+    }
+   ],
+   "say": "For businesses: Decorative & Frosted Glass: Frosted, gradient and branded glass film for office fronts, clinic windows and interior partitions across Dallas-Fort Worth. Solar Control: Solar control film for commercial curtain walls and storefront systems, reducing heat gain and hot spots near west and south glass. Conference Room Privacy: Frosted bands, gradients and full-coverage film that keep glass-walled meeting rooms private without losing daylight. Low-E: Low-emissivity film for older commercial single-pane glass, cutting summer heat gain and holding some heat inside during cold snaps."
+  },
+  {
+   "id": "stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "note": "Typical upper ranges; your numbers depend on the film and the glass.",
+   "noteCue": "typical",
+   "say": "Window film blocks up to 99 percent of UV rays, up to 80 percent of solar heat, and up to 90 percent of glare. Your numbers depend on the film and the glass, and they spec that before install."
+  },
+  {
+   "id": "faq",
+   "kind": "factors",
+   "label": "Common Questions",
+   "cols": 4,
+   "title": "Common questions, answered",
+   "cards": [
+    {
+     "name": "Can window film stop hail from breaking my windows?",
+     "desc": "No",
+     "icon": "page",
+     "cue": "can"
+    },
+    {
+     "name": "How long does window film last in the Texas sun?",
+     "desc": "Good interior film on a Dallas-Fort Worth house typically holds up",
+     "icon": "roof",
+     "cue": "how"
+    },
+    {
+     "name": "Will window tinting make my house dark?",
+     "desc": "Only if you choose dark film",
+     "icon": "chart",
+     "cue": "will"
+    },
+    {
+     "name": "Do you install window film in both Dallas and Fort Worth?",
+     "desc": "Yes",
+     "icon": "search",
+     "cue": "do"
+    }
+   ],
+   "say": "Common questions: Can window film stop hail from breaking my windows? No. How long does window film last in the Texas sun? Good interior film on a Dallas-Fort Worth house typically holds up for many years, west windows included. Will window tinting make my house dark? Only if you choose dark film."
+  },
+  {
+   "id": "local",
+   "kind": "steps",
+   "label": "Local Know-How",
+   "plain": true,
+   "title": "Window Tinting for Dallas-Fort Worth Houses, Old and New",
+   "sub": "Irving · McKinney · Allen",
+   "steps": [
+    {
+     "image": "w20-window-film-installation.jpg"
+    },
+    {
+     "image": "w10-frosted-privacy-window-film.jpg"
+    },
+    {
+     "image": "w21-skylight-solar-control-film.jpg"
+    }
+   ],
+   "say": "The Metroplex has almost every kind of house a film installer can meet. Postwar brick ranch homes fill large parts of Richardson, Garland and east Fort Worth, usually with aluminum or older vinyl windows. The M Streets in Dallas and Fairmount in Fort Worth have Tudor cottages and Craftsman bungalows with original wood sashes."
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Where they work in DFW",
+   "items": [
+    "McKinney",
+    "Allen",
+    "Richardson",
+    "Garland",
+    "Carrollton",
+    "Southlake",
+    "Grapevine",
+    "Flower Mound"
+   ],
+   "note": "20 neighborhoods & nearby cities served",
+   "noteCue": "20",
+   "say": "They cover Dallas-Fort Worth neighborhoods including McKinney, Allen, Richardson, Garland, Carrollton, Southlake, Grapevine, and Flower Mound."
+  },
+  {
+   "id": "process",
+   "kind": "stats",
+   "label": "How It Works",
+   "title": "How an install works",
+   "tiles": [
+    {
+     "v": "01",
+     "n": "Request a quote",
+     "s": "Use the quote form to tell them the city",
+     "cue": "first"
+    },
+    {
+     "v": "02",
+     "n": "Film & glass check",
+     "s": "They confirm the glass type",
+     "cue": "then"
+    },
+    {
+     "v": "03",
+     "n": "Install day",
+     "s": "Glass gets cleaned and the edges scraped",
+     "cue": "on"
+    },
+    {
+     "v": "04",
+     "n": "Curing & care",
+     "s": "Small water pockets and slight haze are normal for the",
+     "cue": "finally"
+    }
+   ],
+   "say": "Here's how an install works. First, use the quote form to tell them the city, the rooms or floors involved, which direction the windows face and what bothers you most. Then, they confirm the glass type, look for existing low-E coatings and failed seals, and hold film samples up on the actual windows. On install day, glass gets cleaned and the edges scraped, then the film is cut to fit and squeegeed into place. Finally, small water pockets and slight haze are normal for the first days and clear faster in warm weather."
+  },
+  {
+   "id": "pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w14-home-window-tinting-living-room.jpg",
+   "stamp": "Local spotlight",
+   "name": "DFW Window Film Pros",
+   "nameCue": "DFW",
+   "where": "Frisco · Arlington · Irving · McKinney",
+   "logo": "logo-dfw.png",
+   "logoBg": "#fff",
+   "points": [
+    "Residential & commercial window film",
+    "Film matched to your glass & orientation",
+    "Samples shown on your own windows",
+    "After-hours installs for offices & shops",
+    "Reply within 24 hours"
+   ],
+   "say": "If you need window film or window tinting in Dallas-Fort Worth, give DFW Window Film Pros a shout. They handle homes and businesses, and they match the film to your glass, not a catalog."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w04-decorative-storefront-window-graphics.jpg",
+   "logo": "logo-dfw.png",
+   "name": "DFW Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmdfw.pro",
+   "urlCue": "visit",
+   "tip": "Send rough window sizes for a faster quote.",
+   "speak": "For a free window film quote, visit window film D F W dot pro. This has been Local Vibe Check.",
+   "say": "For a free window film quote, visit windowfilmdfw.pro. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "w07-living-room-heat-control-film.jpg",
+   "kicker": "Dallas-Fort Worth · Local business spotlight",
+   "titlePx": 112,
+   "title": [
+    "DFW",
+    "Window Film"
+   ],
+   "year": "2026",
+   "chips": [
+    "Frisco",
+    "Arlington",
+    "Irving",
+    "McKinney"
+   ],
+   "say": "Too much sun in Dallas-Fort Worth? Here's a local fix."
+  },
+  {
+   "id": "r-stats",
+   "kind": "stats",
+   "label": "What Film Blocks",
+   "title": "What window film can block",
+   "tiles": [
+    {
+     "v": "99%",
+     "n": "UV rays",
+     "s": "Slows fading of floors & furniture",
+     "cue": "UV"
+    },
+    {
+     "v": "80%",
+     "n": "Solar heat",
+     "s": "Cooler rooms near the glass",
+     "cue": "solar"
+    },
+    {
+     "v": "90%",
+     "n": "Glare",
+     "s": "Screens stay readable",
+     "cue": "glare"
+    }
+   ],
+   "say": "Window film can block up to 99 percent of UV, 80 percent of solar heat, and 90 percent of glare."
+  },
+  {
+   "id": "r-pick",
+   "kind": "winner",
+   "label": "Local Spotlight",
+   "image": "w14-home-window-tinting-living-room.jpg",
+   "stamp": "Local spotlight",
+   "name": "DFW Window Film Pros",
+   "nameCue": "DFW",
+   "where": "Frisco · Arlington · Irving",
+   "logo": "logo-dfw.png",
+   "logoBg": "#fff",
+   "points": [
+    "Residential & commercial window film",
+    "Film matched to your glass & orientation",
+    "Samples shown on your own windows"
+   ],
+   "say": "For homes and businesses across Dallas-Fort Worth, give DFW Window Film Pros a shout."
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Free Quote",
+   "image": "w04-decorative-storefront-window-graphics.jpg",
+   "logo": "logo-dfw.png",
+   "name": "DFW Window Film Pros",
+   "phone": "Free Quote",
+   "phoneCue": "free",
+   "address": "Homes · Offices · Storefronts",
+   "hours": "Reply within 24 hours by phone or email",
+   "url": "windowfilmdfw.pro",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "For a free window film quote, visit window film D F W dot pro.",
+   "say": "For a free window film quote, visit windowfilmdfw.pro."
+  }
+ ]
+}
