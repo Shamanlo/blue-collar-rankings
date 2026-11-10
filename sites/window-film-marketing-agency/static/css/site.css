@@ -82,7 +82,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .menu-btn { display: none; width: 46px; height: 46px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--card); align-items: center; justify-content: center; }
 
 @media (max-width: 1080px) {
-  .nav { position: fixed; inset: var(--header-h) 0 0 0; background: var(--bg); padding: 16px 16px 40px; overflow-y: auto; display: none; margin: 0; }
+  /* Anchored to the sticky header, not position:fixed: the header's backdrop blur makes it the containing block for fixed children, which collapsed this panel. */
+  .nav { position: absolute; top: 100%; left: 0; right: 0; height: calc(100vh - var(--header-h)); height: calc(100dvh - var(--header-h)); background: var(--bg); padding: 16px 16px 40px; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; display: none; margin: 0; }
   body.menu-open .nav { display: block; }
   body.menu-open { overflow: hidden; }
   .nav-list { flex-direction: column; align-items: stretch; gap: 2px; }
@@ -91,6 +92,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .has-drop.open .drop { display: block; transform: none; }
   .has-drop:hover .drop { transform: none; }
   .menu-btn { display: inline-flex; }
+  .menu-btn .i + .i, body.menu-open .menu-btn .i:first-child { display: none; }
+  body.menu-open .menu-btn .i + .i { display: block; }
   .hdr-cta .btn { display: none; }
   .hdr-cta { margin-left: auto; }
 }

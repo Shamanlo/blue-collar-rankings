@@ -90,7 +90,7 @@ function header(active) {
   </ul></nav>
   <div class="hdr-cta">
     <a class="btn btn-primary btn-sm" href="/contact/#form">Free Marketing Audit</a>
-    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">${icon("menu", 24)}</button>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">${icon("menu", 24)}${icon("x", 24)}</button>
   </div>
 </div></header>`;
 }

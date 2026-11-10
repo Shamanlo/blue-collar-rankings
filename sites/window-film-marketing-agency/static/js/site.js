@@ -5,11 +5,15 @@
   // Mobile menu
   const menuBtn = document.querySelector(".menu-btn");
   if (menuBtn) {
-    menuBtn.addEventListener("click", () => {
-      const open = body.classList.toggle("menu-open");
+    const setMenu = (open) => {
+      body.classList.toggle("menu-open", open);
       menuBtn.setAttribute("aria-expanded", open);
       menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-    });
+    };
+    menuBtn.addEventListener("click", () => setMenu(!body.classList.contains("menu-open")));
+    // Close after choosing a page, and when a page comes back from the back/forward cache
+    document.querySelector(".nav").addEventListener("click", (e) => { if (e.target.closest("a")) setMenu(false); });
+    window.addEventListener("pageshow", (e) => { if (e.persisted) setMenu(false); });
   }
 
   // Dropdowns: click toggles (touch and mobile); hover handles desktop in CSS
