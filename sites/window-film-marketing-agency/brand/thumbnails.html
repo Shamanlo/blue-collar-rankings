@@ -53,6 +53,20 @@ body{background:#333}
 .row.you .n{background:#FF3B30}
 .row.you .s{color:#B4BEC8}
 .arrow{position:absolute}
+
+/* vertical reel covers, 1080x1920; key content kept inside the centered 1080x1440 grid crop */
+.thumb.v{width:1080px;height:1920px}
+.v > .h,.v > .tag,.v > .phone,.v > .missed,.v > .arrow{margin-top:40px}
+.v .h{left:0;width:1080px;text-align:center}
+.v .tag{left:50%;transform:translateX(-50%);font-size:40px;padding:18px 28px;border-radius:14px}
+.v .brand{left:0;width:1080px;justify-content:center;bottom:262px;font-size:24px}
+.v .brand i{width:40px;height:40px;gap:4px;padding:5px;border-radius:9px}
+.v .phone{width:420px;height:800px;border-radius:64px;padding:16px}
+.v .scr{border-radius:50px}
+.v .call{padding-top:80px}.v .call .lbl{font-size:18px}.v .call .av{width:150px;height:150px;margin:38px 0 28px}.v .call .av svg{width:70px;height:70px}
+.v .call .nm{font-size:44px}.v .call .sub{font-size:24px}.v .call .val{font-size:32px;margin-top:22px}.v .call .btns{bottom:66px}.v .call .btns span{width:94px;height:94px}
+.v .missed{font-size:110px;border-width:12px}
+.v .maps .bar{height:76px;font-size:20px;border-radius:38px}.v .maps .map{height:190px}.v .row{padding:20px 22px}.v .row .n{width:50px;height:50px;font-size:22px}.v .row .t{font-size:25px}.v .row .s{font-size:19px}
 </style>
 </head>
 <body>
@@ -99,6 +113,50 @@ body{background:#333}
     </div>
   </div>
   <svg class="arrow" style="left:600px;top:470px" width="300" height="200" viewBox="0 0 300 200"><path d="M14 40 C 90 10, 190 30, 250 150" fill="none" stroke="#FF3B30" stroke-width="18" stroke-linecap="round"/><path d="M212 140 L 262 168 L 268 108" fill="none" stroke="#FF3B30" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="brand"><i><b></b><b></b><b></b><b></b></i>Window Film Marketing Agency</div>
+</div>
+
+<!-- vertical cover A -->
+<div class="thumb v" data-out="reel-cover-a-this-call-20k.png">
+  <div class="glow" style="left:90px;top:760px;width:900px;height:900px;background:radial-gradient(circle,rgba(255,59,48,.32),rgba(255,59,48,0) 62%)"></div>
+  <div class="vig"></div>
+  <div class="h shadow" style="top:250px;font-size:190px">This call</div>
+  <div class="h y shadow" style="top:425px;font-size:300px">= $20K</div>
+  <div class="tag" style="top:760px;background:#FF3B30;color:#fff;box-shadow:0 10px 30px rgba(255,59,48,.35)">…and it went to your competitor</div>
+  <div class="phone" style="left:330px;top:870px;transform:rotate(6deg) scale(.84);transform-origin:50% 0">
+    <div class="scr call">
+      <div class="lbl">Incoming call</div>
+      <div class="av"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></div>
+      <div class="nm">Commercial<br>lead</div>
+      <div class="sub">Office building · solar film<br>calling <b style="color:#fff">Rival Tint Co.</b></div>
+      <div class="val">$20,000+ job</div>
+      <div class="btns"><span style="background:#FF3B30"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span style="background:#3CCB7F"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span></div>
+    </div>
+  </div>
+  <div class="missed" style="left:560px;top:1395px">MISSED</div>
+  <div class="brand"><i><b></b><b></b><b></b><b></b></i>Window Film Marketing Agency</div>
+</div>
+
+<!-- vertical cover B -->
+<div class="thumb v" data-out="reel-cover-b-youre-14-on-maps.png">
+  <div class="glow" style="left:90px;top:700px;width:900px;height:900px;background:radial-gradient(circle,rgba(255,212,0,.2),rgba(255,212,0,0) 62%)"></div>
+  <div class="vig"></div>
+  <div class="h shadow" style="top:250px;font-size:200px">You're <span class="r">#14</span></div>
+  <div class="h y shadow" style="top:438px;font-size:190px">on Google</div>
+  <div class="h y shadow" style="top:612px;font-size:190px">Maps</div>
+  <div class="tag" style="top:820px;background:#fff;color:#0A0B0D">Top 3 get the $20K jobs</div>
+  <div class="phone" style="left:350px;top:930px;transform:rotate(-5deg) scale(.77);transform-origin:50% 0">
+    <div class="scr maps">
+      <div class="bar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>window tinting near me</div>
+      <div class="map"><i class="pin" style="left:90px;top:60px"></i><i class="pin" style="left:180px;top:100px"></i><i class="pin" style="left:260px;top:46px"></i></div>
+      <div class="row"><span class="n">1</span><div><div class="t">Rival Tint Co.</div><div class="s">★★★★★</div></div></div>
+      <div class="row"><span class="n">2</span><div><div class="t">Competitor Film</div><div class="s">★★★★★</div></div></div>
+      <div class="row"><span class="n">3</span><div><div class="t">Other Guys Tint</div><div class="s">★★★★☆</div></div></div>
+      <div class="row dots">• • •</div>
+      <div class="row you"><span class="n">14</span><div><div class="t">Your Company</div><div class="s">☆☆☆☆☆</div></div></div>
+    </div>
+  </div>
+  <svg class="arrow" style="left:60px;top:1250px" width="340" height="260" viewBox="0 0 340 260"><path d="M30 20 C 40 140, 140 220, 290 210" fill="none" stroke="#FF3B30" stroke-width="20" stroke-linecap="round"/><path d="M240 170 L 300 210 L 246 250" fill="none" stroke="#FF3B30" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <div class="brand"><i><b></b><b></b><b></b><b></b></i>Window Film Marketing Agency</div>
 </div>
 </body>
