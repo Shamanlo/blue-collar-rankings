@@ -31,7 +31,13 @@ ADU examples around Thousand Oaks:
 • Dos Vientos: Junior ADU inside an HOA home ($65,000 – $130,000+). Compact lots with HOA design rules and little spare yard.
 • Wildwood: Detached ADU on a sloped lot near open space ($210,000 – $425,000+). Lots that slope toward canyon edges and carry mature oaks.
 
-What drives ADU cost in Thousand Oaks: city or ventura county (County islands like Casa Conejo & Lynn Ranch); oak trees (Work in a root zone can need an oak permit); slopes & canyon edges (Retaining walls & stepped foundations); wildland edge (Ignition-resistant materials near open space); utilities (Panel upgrades & long trench runs); hoa review (Dos Vientos & Lang Ranch design standards).
+What drives ADU cost in Thousand Oaks:
+• City or Ventura County: County islands like Casa Conejo & Lynn Ranch
+• Oak trees: Work in a root zone can need an oak permit
+• Slopes & canyon edges: Retaining walls & stepped foundations
+• Wildland edge: Ignition-resistant materials near open space
+• Utilities: Panel upgrades & long trench runs
+• HOA review: Dos Vientos & Lang Ranch design standards
 
 Rules to know: A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. ADUs of 750 square feet or less skip impact fees. And Thousand Oaks adopted a new ADU ordinance in 2026, but state law still sets the floor.
 
@@ -59,7 +65,7 @@ Chapters:
 2:55 Inside a finished ADU
 3:02 Get a free consultation
 
-Prices are estimated 2026 ballpark ranges: a Westside design/build ADU baseline (All Exclusive Construction's Santa Monica ADU guide) adjusted for Thousand Oaks conditions. Thousand Oaks ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
+Prices are estimated 2026 ballpark ranges, based on Los Angeles-area design/build ADU pricing and adjusted for Thousand Oaks conditions. Thousand Oaks ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 

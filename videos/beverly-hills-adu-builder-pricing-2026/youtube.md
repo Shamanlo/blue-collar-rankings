@@ -31,7 +31,13 @@ ADU examples around Beverly Hills:
 • Beverly Crest: Garage conversion on a hillside lot ($145,000 – $290,000+). Steep lots on the LA side of the 90210.
 • Southwest Beverly Hills: Attached ADU on a rectangular lot ($230,000 – $430,000+). More rectangular lots south of Wilshire.
 
-What drives ADU cost in Beverly Hills: finish level (High-end kitchens, baths & materials); size & height (Guest houses up to 1,400 sq ft); fire zone (North of Sunset: ignition-resistant build); city of la lots (Beverly Crest & Benedict Canyon follow LADBS); extra review (Minor Accommodation Permit if you exceed standards); utilities (Panel upgrades & sewer runs).
+What drives ADU cost in Beverly Hills:
+• Finish level: High-end kitchens, baths & materials
+• Size & height: Guest houses up to 1,400 sq ft
+• Fire zone: North of Sunset: ignition-resistant build
+• City of LA lots: Beverly Crest & Benedict Canyon follow LADBS
+• Extra review: Minor Accommodation Permit if you exceed standards
+• Utilities: Panel upgrades & sewer runs
 
 Rules to know: A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. ADUs of 750 square feet or less skip impact fees. And Beverly Hills allows up to four units on a single-family lot.
 
@@ -59,7 +65,7 @@ Chapters:
 2:52 Inside a finished ADU
 2:58 Get a free consultation
 
-Prices are estimated 2026 ballpark ranges: a Westside design/build ADU baseline (All Exclusive Construction's Santa Monica ADU guide) adjusted for Beverly Hills conditions. Beverly Hills ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
+Prices are estimated 2026 ballpark ranges, based on Los Angeles-area design/build ADU pricing and adjusted for Beverly Hills conditions. Beverly Hills ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 

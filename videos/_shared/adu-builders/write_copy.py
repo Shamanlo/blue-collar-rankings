@@ -95,7 +95,7 @@ def main():
             f"• {f[1]}: {f[2]} ({k(pr[f[0]][0])} – {k(pr[f[0]][1])}+). {f[5]}" for f in c["feats"])
         price_lines = "\n".join(
             f"• {TYPE[t][0]} ({TYPE[t][1].lower()}): {k(pr[t][0])} – {k(pr[t][1])}+" for t in ("jadu", "garage", "attached", "detached"))
-        drivers = "; ".join(f"{d_[0].lower()} ({d_[1]})" for d_ in c["drivers"])
+        drivers = "\n".join(f"• {d_[0]}: {d_[1]}" for d_ in c["drivers"])
         faq = "\n".join(f"• {q} {a}." for q, a, _ in c["faq"])
         rules = by_id["rules"]["say"].replace("A few rules to know. ", "")
         title = TITLES[i % 3].format(city=city)
@@ -128,7 +128,8 @@ How much does it cost to build an ADU in {city}, California in 2026? This pricin
 ADU examples around {city}:
 {feats}
 
-What drives ADU cost in {city}: {drivers}.
+What drives ADU cost in {city}:
+{drivers}
 
 Rules to know: {rules}
 
@@ -143,7 +144,7 @@ Serving {c['areas']}
 Chapters:
 {chapters}
 
-Prices are estimated 2026 ballpark ranges: a Westside design/build ADU baseline (All Exclusive Construction's Santa Monica ADU guide) adjusted for {city} conditions. {co} doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
+Prices are estimated 2026 ballpark ranges, based on Los Angeles-area design/build ADU pricing and adjusted for {city} conditions. {co} doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 

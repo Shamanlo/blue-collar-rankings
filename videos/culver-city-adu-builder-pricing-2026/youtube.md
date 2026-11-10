@@ -31,7 +31,13 @@ ADU examples around Culver City:
 • Blair Hills: Detached ADU on a fire-zone hillside ($230,000 – $465,000+). Very High fire zone on the slopes of the Baldwin Hills.
 • Sunkist Park: Junior ADU inside a post-war home ($70,000 – $140,000+). Compact post-war homes on modest lots.
 
-What drives ADU cost in Culver City: pre-approved plans (468, 637 or 806 sq ft new-build layouts); baldwin hills slopes (Retaining walls & longer utility runs); fire zone (Blair Hills & Culver Crest); water provider (LADWP or Golden State Water); older garages (Foundation & framing checks); finishes (Kitchens & baths move the total).
+What drives ADU cost in Culver City:
+• Pre-approved plans: 468, 637 or 806 sq ft new-build layouts
+• Baldwin Hills slopes: Retaining walls & longer utility runs
+• Fire zone: Blair Hills & Culver Crest
+• Water provider: LADWP or Golden State Water
+• Older garages: Foundation & framing checks
+• Finishes: Kitchens & baths move the total
 
 Rules to know: A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. ADUs of 750 square feet or less skip impact fees. And Culver City offers three pre-approved ADU plans for new builds.
 
@@ -59,7 +65,7 @@ Chapters:
 2:49 Inside a finished ADU
 2:56 Get a free consultation
 
-Prices are estimated 2026 ballpark ranges: a Westside design/build ADU baseline (All Exclusive Construction's Santa Monica ADU guide) adjusted for Culver City conditions. Culver City ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
+Prices are estimated 2026 ballpark ranges, based on Los Angeles-area design/build ADU pricing and adjusted for Culver City conditions. Culver City ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 

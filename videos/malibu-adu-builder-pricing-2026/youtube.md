@@ -31,7 +31,13 @@ ADU examples around Malibu:
 • Malibu Park: Garage conversion on an existing pad ($150,000 – $300,000+). Canyon and hillside lots often have one level pad: the garage.
 • Carbon Beach: Junior ADU inside a beach house ($90,000 – $180,000+). Tight beachfront lots where the buildable area is small.
 
-What drives ADU cost in Malibu: coastal review (Every Malibu ADU is checked for coastal compliance); foundations (Slabs, caissons or deep piles near the waves); septic (An upgrade can change budget and placement); hillside & bluffs (Retaining walls, drainage & bluff setbacks); fire rebuilds (Plan the ADU with the new house to share costs); geology reports (Common on canyon & bluff parcels).
+What drives ADU cost in Malibu:
+• Coastal review: Every Malibu ADU is checked for coastal compliance
+• Foundations: Slabs, caissons or deep piles near the waves
+• Septic: An upgrade can change budget and placement
+• Hillside & bluffs: Retaining walls, drainage & bluff setbacks
+• Fire rebuilds: Plan the ADU with the new house to share costs
+• Geology reports: Common on canyon & bluff parcels
 
 Rules to know: A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. And because all of Malibu is in the Coastal Zone, coastal review comes first.
 
@@ -59,7 +65,7 @@ Chapters:
 2:49 Inside a finished ADU
 2:56 Get a free consultation
 
-Prices are estimated 2026 ballpark ranges: a Westside design/build ADU baseline (All Exclusive Construction's Santa Monica ADU guide) adjusted for Malibu conditions. Malibu ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
+Prices are estimated 2026 ballpark ranges, based on Los Angeles-area design/build ADU pricing and adjusted for Malibu conditions. Malibu ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 

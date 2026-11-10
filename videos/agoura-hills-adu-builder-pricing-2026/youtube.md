@@ -31,7 +31,13 @@ ADU examples around Agoura Hills:
 • Old Agoura: Detached cottage on an estate lot ($225,000 – $450,000+). Room for a cottage set well back from the main house.
 • Liberty Canyon: Garage conversion on a level lot ($110,000 – $225,000+). Modest, mostly level lots in the original tracts.
 
-What drives ADU cost in Agoura Hills: oak tree zones (The site plan must show oaks & root zones); fire zone (Most of the city, including all south of the 101); septic (Old Agoura parcels need Public Health sign-off); slopes (Grading & retaining walls in Indian Hills); hoa review (Morrison Ranch & Chateau Park CC&Rs); long utility runs (Big lots mean longer trenches).
+What drives ADU cost in Agoura Hills:
+• Oak tree zones: The site plan must show oaks & root zones
+• Fire zone: Most of the city, including all south of the 101
+• Septic: Old Agoura parcels need Public Health sign-off
+• Slopes: Grading & retaining walls in Indian Hills
+• HOA review: Morrison Ranch & Chateau Park CC&Rs
+• Long utility runs: Big lots mean longer trenches
 
 Rules to know: A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. And in Agoura Hills, every ADU site plan has to show the oak trees and their root zones.
 
@@ -59,7 +65,7 @@ Chapters:
 2:56 Inside a finished ADU
 3:02 Get a free consultation
 
-Prices are estimated 2026 ballpark ranges: a Westside design/build ADU baseline (All Exclusive Construction's Santa Monica ADU guide) adjusted for Agoura Hills conditions. Agoura Hills ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
+Prices are estimated 2026 ballpark ranges, based on Los Angeles-area design/build ADU pricing and adjusted for Agoura Hills conditions. Agoura Hills ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 

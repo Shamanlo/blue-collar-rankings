@@ -31,7 +31,13 @@ ADU examples around Pacific Palisades:
 • Huntington Palisades: Attached ADU set back from a bluff ($220,000 – $415,000+). Bluff-top parcels where distance from the edge sets the buildable area.
 • Rustic Canyon: Garage conversion on a narrow canyon street ($140,000 – $275,000+). Canyon streets with little room to stage a new build.
 
-What drives ADU cost in Pacific Palisades: fire rebuild timing (Build the ADU with or before the new home); bluffs & hillsides (Deeper foundations & setbacks from the edge); narrow streets (Staging, deliveries & haul trips); fire-zone materials (Ignition-resistant construction); ladwp service (A separate meter means a bigger panel); hoa guidelines (Many Palisades HOAs regulate design).
+What drives ADU cost in Pacific Palisades:
+• Fire rebuild timing: Build the ADU with or before the new home
+• Bluffs & hillsides: Deeper foundations & setbacks from the edge
+• Narrow streets: Staging, deliveries & haul trips
+• Fire-zone materials: Ignition-resistant construction
+• LADWP service: A separate meter means a bigger panel
+• HOA guidelines: Many Palisades HOAs regulate design
 
 Rules to know: A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. ADUs of 750 square feet or less skip impact fees. And on fire-damaged lots, the Mayor's executive order lets many rebuild ADUs skip Coastal and CEQA review.
 
@@ -59,7 +65,7 @@ Chapters:
 2:52 Inside a finished ADU
 2:58 Get a free consultation
 
-Prices are estimated 2026 ballpark ranges: a Westside design/build ADU baseline (All Exclusive Construction's Santa Monica ADU guide) adjusted for Pacific Palisades conditions. Pacific Palisades ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
+Prices are estimated 2026 ballpark ranges, based on Los Angeles-area design/build ADU pricing and adjusted for Pacific Palisades conditions. Pacific Palisades ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 

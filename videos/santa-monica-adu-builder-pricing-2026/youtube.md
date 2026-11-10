@@ -31,7 +31,13 @@ ADU examples around Santa Monica:
 • Sunset Park: Garage conversion behind a 1940s cottage ($125,000 – $250,000+). Small postwar homes with a detached garage at the back.
 • Mid-City: Junior ADU with alley access ($75,000 – $150,000+). Grid blocks where a rear alley is the most useful thing on the lot.
 
-What drives ADU cost in Santa Monica: alley access (Utilities, deliveries & a separate front door); coastal zone lots (Some parcels need a Coastal Commission permit); two-story units (Structure, stairs & fire separation); older slabs (Postwar garages often need upgrades); panel upgrades (A second kitchen needs more power); finishes (Kitchens & baths set the total).
+What drives ADU cost in Santa Monica:
+• Alley access: Utilities, deliveries & a separate front door
+• Coastal Zone lots: Some parcels need a Coastal Commission permit
+• Two-story units: Structure, stairs & fire separation
+• Older slabs: Postwar garages often need upgrades
+• Panel upgrades: A second kitchen needs more power
+• Finishes: Kitchens & baths set the total
 
 Rules to know: A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. ADUs of 750 square feet or less skip impact fees. And Santa Monica is one of the few cities where an ADU can be sold separately, as a condo.
 
@@ -59,7 +65,7 @@ Chapters:
 2:53 Inside a finished ADU
 3:00 Get a free consultation
 
-Prices are estimated 2026 ballpark ranges: a Westside design/build ADU baseline (All Exclusive Construction's Santa Monica ADU guide) adjusted for Santa Monica conditions. Santa Monica ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
+Prices are estimated 2026 ballpark ranges, based on Los Angeles-area design/build ADU pricing and adjusted for Santa Monica conditions. Santa Monica ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 

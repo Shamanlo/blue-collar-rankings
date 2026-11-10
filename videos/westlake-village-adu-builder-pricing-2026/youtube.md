@@ -31,7 +31,13 @@ ADU examples around Westlake Village:
 • Southshore Hills: Attached ADU on a sloped hillside lot ($175,000 – $325,000+). Homes that step down the hillsides south of the lake.
 • North Ranch: Detached ADU among the oaks ($220,000 – $435,000+). Larger lots around the country club.
 
-What drives ADU cost in Westlake Village: which agency permits it (City + LA County, Thousand Oaks or Ventura County); oak trees (Protected oaks shape the footprint); hillside pads (Structural work instead of cutting into slopes); well & septic (Hidden Valley ranch parcels); hoa review (Colors, materials & roof style); finishes (Kitchens & baths concentrate cost).
+What drives ADU cost in Westlake Village:
+• Which agency permits it: City + LA County, Thousand Oaks or Ventura County
+• Oak trees: Protected oaks shape the footprint
+• Hillside pads: Structural work instead of cutting into slopes
+• Well & septic: Hidden Valley ranch parcels
+• HOA review: Colors, materials & roof style
+• Finishes: Kitchens & baths concentrate cost
 
 Rules to know: A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. A junior ADU tops out at 500 square feet. And in Westlake Village, you need two approvals in a row: a city Zoning Clearance, then an LA County building permit.
 
@@ -59,7 +65,7 @@ Chapters:
 3:00 Inside a finished ADU
 3:06 Get a free consultation
 
-Prices are estimated 2026 ballpark ranges: a Westside design/build ADU baseline (All Exclusive Construction's Santa Monica ADU guide) adjusted for Westlake Village conditions. Westlake Village ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
+Prices are estimated 2026 ballpark ranges, based on Los Angeles-area design/build ADU pricing and adjusted for Westlake Village conditions. Westlake Village ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 

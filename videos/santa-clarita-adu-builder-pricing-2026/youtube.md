@@ -31,7 +31,13 @@ ADU examples around Santa Clarita:
 • Bridgeport: Junior ADU inside a Cape Cod home ($60,000 – $120,000+). Compact Valencia lots where a backyard unit may not fit.
 • Stevenson Ranch: Detached ADU on a hillside lot ($200,000 – $400,000+). Sloped rear yards in the Santa Susana foothills.
 
-What drives ADU cost in Santa Clarita: city or county permit (Stevenson Ranch & Castaic go through LA County); hillside lots (Grading, retaining walls & soils reports); oak trees (Protected oaks change where the ADU can go); fire zones (2025 maps grew the Very High zones); utility runs (Sewer laterals, trenching & panel upgrades); kitchens & baths (Finishes move the total most).
+What drives ADU cost in Santa Clarita:
+• City or county permit: Stevenson Ranch & Castaic go through LA County
+• Hillside lots: Grading, retaining walls & soils reports
+• Oak trees: Protected oaks change where the ADU can go
+• Fire zones: 2025 maps grew the Very High zones
+• Utility runs: Sewer laterals, trenching & panel upgrades
+• Kitchens & baths: Finishes move the total most
 
 Rules to know: A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. ADUs of 750 square feet or less skip impact fees. And in Santa Clarita, the city's 2026 handout requires 0 parking spaces for ADUs.
 
@@ -59,7 +65,7 @@ Chapters:
 2:50 Inside a finished ADU
 2:56 Get a free consultation
 
-Prices are estimated 2026 ballpark ranges: a Westside design/build ADU baseline (All Exclusive Construction's Santa Monica ADU guide) adjusted for Santa Clarita conditions. Santa Clarita ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
+Prices are estimated 2026 ballpark ranges, based on Los Angeles-area design/build ADU pricing and adjusted for Santa Clarita conditions. Santa Clarita ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 

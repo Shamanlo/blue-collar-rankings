@@ -31,7 +31,13 @@ ADU examples around Calabasas:
 • Calabasas Highlands: Attached ADU on a sloped hillside lot ($195,000 – $365,000+). Steep rear yards make a freestanding pad costly.
 • Park Moderne: Compact detached ADU on a 5,000 sq ft lot ($240,000 – $485,000+). The original 1920s lots leave little rear yard.
 
-What drives ADU cost in Calabasas: hillside foundations (Can add a large share to any project); fire zone (Wildland-urban interface standards & brush clearance); hoa design rules (Master-planned tracts off Parkway Calabasas); utility runs (How far water, sewer & power must go); small lots (Park Moderne's 5,000 sq ft parcels); kitchens & baths (Same cost whether the unit is big or small).
+What drives ADU cost in Calabasas:
+• Hillside foundations: Can add a large share to any project
+• Fire zone: Wildland-urban interface standards & brush clearance
+• HOA design rules: Master-planned tracts off Parkway Calabasas
+• Utility runs: How far water, sewer & power must go
+• Small lots: Park Moderne's 5,000 sq ft parcels
+• Kitchens & baths: Same cost whether the unit is big or small
 
 Rules to know: A city can require no more than 4-foot side and rear setbacks. A city has 60 days to act on a complete application. ADUs of 750 square feet or less skip impact fees. And Calabasas's ADU ordinance is under state review, so state law controls where they conflict.
 
@@ -59,7 +65,7 @@ Chapters:
 2:53 Inside a finished ADU
 2:59 Get a free consultation
 
-Prices are estimated 2026 ballpark ranges: a Westside design/build ADU baseline (All Exclusive Construction's Santa Monica ADU guide) adjusted for Calabasas conditions. Calabasas ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
+Prices are estimated 2026 ballpark ranges, based on Los Angeles-area design/build ADU pricing and adjusted for Calabasas conditions. Calabasas ADU Builder Pros doesn't publish prices; your cost depends on your lot, the ADU type, size and finishes. Get an on-site estimate.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local price guides.
 
