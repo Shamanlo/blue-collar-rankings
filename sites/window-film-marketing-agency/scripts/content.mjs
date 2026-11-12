@@ -11,6 +11,7 @@ export const site = {
   year: 2026,
   tagline: "Marketing, AI search, web design, video and social media built only for window film companies.",
   usa: "Proud to be based in the USA & serving USA companies",
+  youtube: "https://www.youtube.com/@WindowFilmMarketingAgency",
 };
 
 // ---------- Marketing services ----------

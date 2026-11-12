@@ -1,4 +1,7 @@
-// Send visitors on the *.pages.dev address or www. to the same page on windowfilmmarketingagency.com.
+// Send visitors on the *.pages.dev address or www. to the same page on windowfilmmarketingagency.com,
+// and fill [data-yt-feed] placeholders with the latest YouTube uploads (see _youtube.js).
+import { getVideos, renderFeed } from "./_youtube.js";
+
 const CANONICAL = "windowfilmmarketingagency.com";
 
 export async function onRequest({ request, next }) {
@@ -13,5 +16,16 @@ export async function onRequest({ request, next }) {
   if (url.pathname.startsWith("/services/google-ads")) {
     return Response.redirect(new URL("/services/", url).toString(), 301);
   }
-  return next();
+  const res = await next();
+  if (request.method !== "GET" || !(res.headers.get("content-type") || "").includes("text/html")) return res;
+  let videos = null;
+  return new HTMLRewriter()
+    .on("[data-yt-feed]", {
+      async element(el) {
+        videos ??= await getVideos();
+        const html = renderFeed(videos, { mode: el.getAttribute("data-yt-feed") });
+        if (html) el.setInnerContent(html, { html: true });  // otherwise the static fallback stays
+      },
+    })
+    .transform(res);
 }

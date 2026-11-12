@@ -85,6 +85,7 @@ function header(active) {
   ${LOGO}
   <nav class="nav" aria-label="Main"><ul class="nav-list">
     ${groups.map(drop).join("")}
+    <li><a class="nav-top${active === "videos" ? " is-active" : ""}" href="/videos/">Videos</a></li>
     <li><a class="nav-top${active === "about" ? " is-active" : ""}" href="/about/">About</a></li>
     <li><a class="nav-top${active === "contact" ? " is-active" : ""}" href="/contact/">Contact</a></li>
   </ul></nav>
@@ -102,7 +103,7 @@ function footer() {
     <div class="ftr-brand">${LOGO}<p>${esc(site.tagline)}</p>
       <p><a class="ftr-mail" href="mailto:${site.email}">${icon("mail", 18)}${site.email}</a></p></div>
     ${groups.map(col).join("")}
-    <div><h4>Company</h4><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li><li><a href="/contact/">Contact</a></li><li><a href="/contact/?topic=call#form">Book a call</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="/about/">About</a></li><li><a href="/videos/">Videos</a></li><li><a href="/case-studies/">Case studies</a></li><li><a href="/contact/">Contact</a></li><li><a href="/contact/?topic=call#form">Book a call</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
   </div>
   <div class="ftr-bottom"><span>© ${site.year} ${esc(site.name)}</span>${USA}</div>
 </div></footer>`;
@@ -224,6 +225,11 @@ function workSection(head = {}) {
 </div>${more.length ? `<div class="wrap work-grid">${more.map(ytPhone).join("")}</div>` : ""}</section>`;
 }
 
+// Placeholder for the latest YouTube uploads; the edge middleware swaps in the real list.
+function ytFeed(mode) {
+  return `<div class="yt-feed" data-yt-feed="${mode}"><p class="yt-more"><a class="btn btn-ghost" href="${site.youtube}" target="_blank" rel="noopener">Watch our videos on YouTube</a></p></div>`;
+}
+
 function ctaSection(h = ["Are buyers finding you, ", "or your competitors?"]) {
   return `<section class="sec cta-dark" id="form"><div class="wrap cta-grid">
   <div class="cta-copy">
@@ -331,6 +337,12 @@ function caseSection(cs, cls = " sec-tint") {
 </div></section>
 
 ${workSection()}
+
+<section class="sec" id="latest-videos"><div class="wrap">
+  <div class="sec-head"><p class="eyebrow">On our YouTube</p><h2>Marketing tips for <span class="hl">window film companies</span></h2>
+    <p>Short, practical videos on getting found, getting reviews and getting booked. New ones every week.</p></div>
+  ${ytFeed("home")}
+</div></section>
 
 <section class="sec sec-dark" id="web-design"><div class="wrap split">
   <div>
@@ -464,6 +476,18 @@ ${ctaSection(["Your site could be ", "the next one"])}`;
   addPage("/case-studies/", { title: "Case Studies | Window Film Marketing Agency", desc: "Websites we've built for window film companies, including MD Window Films in Los Angeles.", active: "web-design", body, ld: [crumbLd(trail)] });
 }
 
+// Videos (filled with the latest uploads at request time by functions/_middleware.js)
+{
+  const trail = [["Home", "/"], ["Videos", "/videos/"]];
+  const body = `<section class="hero hero-sub"><div class="wrap">${crumbs(trail)}
+  <p class="eyebrow">YouTube</p><h1>Videos for <span class="hl">window film companies</span></h1>
+  <p class="lead">Marketing tips, website breakdowns and short-form video ideas for tint and film installers. New videos appear here as soon as they go live on our channel.</p>
+  <div class="hero-ctas"><a class="btn btn-primary" href="${site.youtube}?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube ${icon("arrow", 18)}</a><a class="btn btn-ghost" href="/contact/#form">Get a free audit</a></div></div></section>
+<section class="sec"><div class="wrap">${ytFeed("all")}</div></section>
+${ctaSection()}`;
+  addPage("/videos/", { title: "Videos | Window Film Marketing Agency", desc: "YouTube videos on marketing for window film and window tinting companies: Google Maps, AI search, websites and short-form video.", active: "videos", body, ld: [crumbLd(trail)] });
+}
+
 // About
 {
   const trail = [["Home", "/"], ["About", "/about/"]];
@@ -528,6 +552,9 @@ ${webDesign.map((p) => `- [${p.nav}](${site.url}${url(groups[1], p)}): ${p.card}
 
 ## Case studies
 ${caseStudies.map((c) => `- [${c.client}](${site.url}/case-studies/${c.slug}/): ${c.metaDesc}`).join("\n")}
+
+## Videos
+- [YouTube channel](${site.youtube}): marketing videos for window film companies, also listed at ${site.url}/videos/
 
 ## Who we serve
 ${specialties.map((p) => `- [${p.nav}](${site.url}${url(groups[2], p)}): ${p.card}`).join("\n")}
