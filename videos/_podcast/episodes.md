@@ -152,3 +152,12 @@ A full roof replacement in the Iowa City area typically runs $7,840 to $19,600, 
 
 Looking for a roofer in the Iowa City area? Give Michel Cuevas Home Improvement a call: (319) 333-5046
 https://www.michelcuevashome.com/
+
+## 20 · A1 Sewer Service: Iowa City's 24/7 Sewer & Drain Experts (Local Business Spotlight)
+File: `20-a1-sewer-service-spotlight-2026.mp3` (2:08)
+
+Local business spotlight: A1 Sewer Service LLC, the sewer and drain experts in Iowa City. Locally owned, open 24/7, and rated 5.0 stars from 43 Google reviews. We walk through a basement lift station pump replacement, a downspout drainage project and a sewer main backed up by tree roots, plus their services, service areas and what customers say.
+
+Need a sewer or drain pro in Iowa City? Give A1 Sewer Service a call: (319) 600-4224
+A1 Sewer Service LLC · 738 Bay Ridge Dr, Iowa City, IA 52246 · Open 24/7
+https://a1seweriowacity.com/
