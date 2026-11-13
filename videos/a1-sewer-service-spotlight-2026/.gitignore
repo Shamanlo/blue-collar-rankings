@@ -1,0 +1,7 @@
+# Keep only the deliverables and timings from out/ (clip frames are rebuilt from assets/*.mp4)
+out/*
+!out/timings.json
+!out/a1-sewer-service-spotlight-2026.mp4
+!out/a1-sewer-service-spotlight-2026-reel.mp4
+!out/thumbnail-youtube.jpg
+!out/thumbnail-reel.jpg

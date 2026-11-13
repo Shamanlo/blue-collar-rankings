@@ -42,3 +42,10 @@ files for the fields each one takes. `data-cue`-style fields (`cue`, `priceCue`,
 `pin`, `star`, `page`, `code`, `mega`, `drop`, `flame`, `roof`, `bolt`, `clock`, `map`, `shield`,
 `search`, `chart`, `snow`, `wind`, `hail`, `sun`, `tool`. In `ranges`, a price label sits inside its
 bar when the bar is wide enough to hold it.
+
+Video footage: any scene with a photo can take `"clip"` instead of `"image"`: a file name in the
+assets folder, or `{"file", "from", "to", "rate", "hold"}`. Frames are extracted once to
+`out/clips/` and stepped in sync with the render; `hold` freezes the last frame instead of looping.
+The `footage` kind shows a clip in a big rounded panel with `kicker`, `title` and `chips` as a
+lower third; with `"side": true` it shows a vertical clip beside a title and cue-timed `bullets`.
+`steps` takes `"tall": true` for three large portrait photos.

@@ -1,0 +1,381 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "header": "Iowa City, IA · Local Business Spotlight · 2026",
+ "source": "Business details and Google reviews via a1seweriowacity.com. Job footage and photos from A1 Sewer Service.",
+ "sourceKinds": [
+  "reviews"
+ ],
+ "thumbs": {
+  "image": "trench-frame.jpg",
+  "landscapePos": "50% 50%",
+  "reelPos": "45% 50%",
+  "lines": [
+   "A1 Sewer",
+   "Service"
+  ],
+  "sub": "Iowa City, IA",
+  "tag": "Open 24/7",
+  "year": "2026",
+  "bigPx": 120,
+  "reelBigPx": 180,
+  "subPx": 52,
+  "reelSubPx": 70,
+  "stamp": [
+   "5.0",
+   [
+    "43",
+    "REVIEWS"
+   ]
+  ],
+  "reelStamp": [
+   "24/7",
+   [
+    "OPEN",
+    "DAILY"
+   ]
+  ]
+ },
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "footage",
+   "label": "Local Business Spotlight",
+   "clip": "downspout-steps.mp4",
+   "imgPos": "50% 60%",
+   "kicker": "Local business spotlight · Iowa City, IA",
+   "title": "A1 Sewer Service",
+   "chips": [
+    "Open 24/7",
+    "5.0★ · 43 reviews",
+    "Sewer & drain experts"
+   ],
+   "speak": "Local business spotlight: A1 Sewer Service, the sewer and drain experts in Iowa City. Locally owned, open twenty-four seven, and rated five stars by their customers.",
+   "say": "Local business spotlight: A1 Sewer Service, the sewer and drain experts in Iowa City. Locally owned, open 24/7, and rated five stars by their customers."
+  },
+  {
+   "id": "why",
+   "kind": "factors",
+   "label": "Why A1",
+   "cols": 4,
+   "title": "Why Iowa City calls A1 first",
+   "cards": [
+    {
+     "name": "Open 24/7",
+     "desc": "Emergency service, even weekends & holidays",
+     "icon": "clock",
+     "cue": "on"
+    },
+    {
+     "name": "No after-hours fees",
+     "desc": "Until 8 PM, weekends included",
+     "icon": "star",
+     "cue": "no"
+    },
+    {
+     "name": "Upfront pricing",
+     "desc": "Free, clear estimates before work begins",
+     "icon": "page",
+     "cue": "free"
+    },
+    {
+     "name": "Community discounts",
+     "desc": "Teachers, seniors, military & law enforcement",
+     "icon": "shield",
+     "cue": "discounts"
+    }
+   ],
+   "speak": "A1 is locally owned, with more than eight years of hands-on sewer and drain experience. They're on call twenty-four seven, with no after-hours fees until 8 PM, even on weekends. You get free, upfront estimates before any work begins, and discounts for teachers, seniors, military, and law enforcement.",
+   "say": "A1 is locally owned, with more than eight years of hands-on sewer and drain experience. They're on call 24/7, with no after-hours fees until 8 PM, even on weekends. You get free, upfront estimates before any work begins, and discounts for teachers, seniors, military, and law enforcement."
+  },
+  {
+   "id": "services",
+   "kind": "factors",
+   "label": "Services",
+   "cols": 3,
+   "title": "What A1 Sewer Service does",
+   "cards": [
+    {
+     "name": "Drain cleaning",
+     "desc": "Tough clogs cleared, plus hydro jetting",
+     "image": "drain-cleaning.jpg",
+     "imgPos": "50% 55%",
+     "cue": "drain"
+    },
+    {
+     "name": "Sewer line repair",
+     "desc": "Video inspection, digging & repair",
+     "image": "excavator.jpg",
+     "imgPos": "50% 50%",
+     "cue": "sewer"
+    },
+    {
+     "name": "Sump pumps",
+     "desc": "Installs & repairs to keep basements dry",
+     "image": "sump-pump.jpg",
+     "imgPos": "50% 45%",
+     "cue": "sump"
+    },
+    {
+     "name": "Water heaters",
+     "desc": "Gas & electric tanks, repaired or replaced",
+     "image": "water-heater-1.jpg",
+     "imgPos": "50% 40%",
+     "cue": "water"
+    },
+    {
+     "name": "Downspout lines",
+     "desc": "Rainwater carried away from the house",
+     "image": "sump-line-2.jpg",
+     "imgPos": "50% 55%",
+     "cue": "downspout"
+    },
+    {
+     "name": "Sinks & disposals",
+     "desc": "Fixtures installed & leak detection",
+     "image": "sink-after.jpg",
+     "imgPos": "50% 50%",
+     "cue": "sinks"
+    }
+   ],
+   "say": "They handle drain cleaning and hydro jetting, sewer line repair with video inspection and excavation, sump pumps, water heaters, downspout lines, and sinks, garbage disposals and leak detection."
+  },
+  {
+   "id": "lift",
+   "kind": "footage",
+   "label": "Recent Job",
+   "side": true,
+   "clip": {
+    "file": "lift-station.mp4",
+    "from": 0.4,
+    "to": 10.6,
+    "rate": 0.87,
+    "hold": true
+   },
+   "kicker": "Recent job · Iowa City",
+   "title": "Basement lift station pump replacement",
+   "bullets": [
+    {
+     "t": "Basement backing up with water",
+     "cue": "basement"
+    },
+    {
+     "t": "Found a bad lift station pump",
+     "cue": "found"
+    },
+    {
+     "t": "Swapped out the old pump",
+     "cue": "swapped"
+    },
+    {
+     "t": "New lift station pump installed",
+     "cue": "installed"
+    }
+   ],
+   "say": "Here's a recent job in Iowa City. A basement was backing up with water. A1 found a bad lift station pump, swapped out the old pump, and installed a brand-new one, so the basement could drain again."
+  },
+  {
+   "id": "downspout",
+   "kind": "footage",
+   "label": "Downspout Project",
+   "clip": "downspout-trench.mp4",
+   "imgPos": "50% 50%",
+   "kicker": "Downspout drainage project · Iowa City",
+   "title": "Rainwater, away from the house",
+   "speak": "On this Iowa City downspout project, A1 trenched a new drain line across the yard, so water from the downspouts is carried away from the foundation instead of pooling around the house.",
+   "say": "On this Iowa City downspout project, A1 trenched a new drain line across the yard, so water from the downspouts is carried away from the foundation instead of pooling around the house."
+  },
+  {
+   "id": "sewer",
+   "kind": "steps",
+   "label": "Latest Job",
+   "plain": true,
+   "title": "Sewer main backing up? Tree roots.",
+   "sub": "Latest job · Iowa City",
+   "steps": [
+    {
+     "image": "sewer-main-1.jpg",
+     "imgPos": "50% 30%",
+     "cue": "main"
+    },
+    {
+     "image": "sewer-main-2.jpg",
+     "imgPos": "50% 30%",
+     "cue": "cabled"
+    },
+    {
+     "image": "sewer-main-3.jpg",
+     "imgPos": "50% 30%",
+     "cue": "pulled"
+    }
+   ],
+   "say": "Their latest job: a main sewer line backing up in an Iowa City basement. They cabled the main line, pulled out the tree roots that had grown into it, and got it flowing again.",
+   "tall": true
+  },
+  {
+   "id": "areas",
+   "kind": "list",
+   "label": "Service Areas",
+   "title": "Serving Iowa City & Eastern Iowa",
+   "items": [
+    "Iowa City",
+    "Coralville",
+    "North Liberty",
+    "Cedar Rapids",
+    "Tiffin & Swisher",
+    "Kalona & West Liberty"
+   ],
+   "note": "Johnson, Linn, Iowa & Washington Counties",
+   "noteCue": "Johnson",
+   "say": "A1 serves homes and businesses in Iowa City, Coralville, North Liberty, Cedar Rapids, Tiffin, Swisher, Kalona, and West Liberty, across Johnson, Linn, Iowa, and Washington Counties."
+  },
+  {
+   "id": "reviews",
+   "kind": "reviews",
+   "label": "What Customers Say",
+   "title": "What customers say",
+   "sub": "5.0★ · 43 Google reviews",
+   "cards": [
+    {
+     "text": "Andy at A1 Sewer Services was the first one to do a more thorough inspection rather than just clearing out the line. I highly recommend A1.",
+     "name": "Nic Huette",
+     "meta": "Google review · Aug 2026",
+     "cue": "first"
+    },
+    {
+     "text": "Andy came within the hour that I called to unclog a basement floor drain. Reasonable charges for good work. Highly recommended.",
+     "name": "Dennis Harnack",
+     "meta": "Google review · Aug 2026",
+     "cue": "came"
+    },
+    {
+     "text": "He was very quick, efficient, and effective at clearing the basement drain. I highly recommend A1 Sewer.",
+     "name": "Howard",
+     "meta": "Google review · Jul 2026",
+     "cue": "quick"
+    }
+   ],
+   "say": "And here's what customers say. \"The first one to do a more thorough inspection, rather than just clearing out the line.\" \"Andy came within the hour that I called.\" And: \"Very quick, efficient, and effective. I highly recommend A1 Sewer.\""
+  },
+  {
+   "id": "reviews2",
+   "kind": "reviews",
+   "label": "What Customers Say",
+   "title": "Five stars, again and again",
+   "sub": "Google reviews",
+   "cards": [
+    {
+     "text": "Told him the bottom of my water heater is leaking, and he was out the next day replacing it at a reasonable price!",
+     "name": "Noah H.",
+     "meta": "Google review · Mar 2026",
+     "cue": "out"
+    },
+    {
+     "text": "10 Stars if I could. Arrived within hours of first contact. More than reasonable price. In my phone for next time!",
+     "name": "Joshua Nimmo",
+     "meta": "Google review",
+     "cue": "ten"
+    },
+    {
+     "text": "Andy was on time, communicated well, very detail-oriented, and trustworthy. Estimate was on target as well.",
+     "name": "Eugene",
+     "meta": "Google review · Oct 2025",
+     "cue": "on"
+    }
+   ],
+   "speak": "\"He was out the next day, replacing my water heater at a reasonable price.\" \"Ten stars if I could.\" And: \"On time, detail-oriented, and trustworthy. The estimate was on target.\"",
+   "say": "\"He was out the next day, replacing my water heater at a reasonable price.\" \"10 stars if I could.\" And: \"On time, detail-oriented, and trustworthy. The estimate was on target.\""
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Call A1 Today",
+   "clip": "downspout-dig.mp4",
+   "imgPos": "50% 50%",
+   "logo": "a1-logo.jpg",
+   "name": "A1 Sewer Service LLC",
+   "phone": "(319) 600-4224",
+   "address": "738 Bay Ridge Dr, Iowa City, IA 52246",
+   "hours": "Open 24/7 · Free, upfront estimates",
+   "url": "a1seweriowacity.com",
+   "urlCue": "visit",
+   "tip": "No after-hours fees until 8 PM, weekends included.",
+   "speak": "Need a sewer or drain pro in Iowa City? Give A1 Sewer Service a call at (319) 600-4224, or visit A1 sewer iowa city dot com. This has been Local Vibe Check.",
+   "say": "Need a sewer or drain pro in Iowa City? Give A1 Sewer Service a call at (319) 600-4224, or visit a1seweriowacity.com. This has been Local Vibe Check."
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-lift",
+   "kind": "footage",
+   "label": "Local Spotlight",
+   "side": true,
+   "clip": {
+    "file": "lift-station.mp4",
+    "from": 0.4,
+    "to": 10.6,
+    "rate": 1.12,
+    "hold": true
+   },
+   "say": "Basement backing up with water in Iowa City? A1 Sewer Service found a bad lift station pump, swapped out the old one, and installed a new pump."
+  },
+  {
+   "id": "r-downspout",
+   "kind": "footage",
+   "label": "Downspout Project",
+   "clip": "downspout-trench.mp4",
+   "imgPos": "45% 50%",
+   "kicker": "Iowa City",
+   "title": "Downspout lines",
+   "chips": [
+    "Drains",
+    "Sewer lines",
+    "Sump pumps",
+    "Water heaters"
+   ],
+   "say": "They also handle drain cleaning, sewer lines, sump pumps, water heaters, and downspout lines like this one."
+  },
+  {
+   "id": "r-reviews",
+   "kind": "reviews",
+   "label": "5.0★ on Google",
+   "title": "5.0★ · 43 reviews",
+   "cards": [
+    {
+     "text": "Andy came within the hour that I called. Highly recommended.",
+     "name": "Dennis Harnack",
+     "meta": "Google review",
+     "cue": "came"
+    },
+    {
+     "text": "10 Stars if I could. Arrived within hours of first contact.",
+     "name": "Joshua Nimmo",
+     "meta": "Google review",
+     "cue": "ten"
+    }
+   ],
+   "speak": "Five stars from forty-three reviews. \"Andy came within the hour.\" \"Ten stars if I could.\"",
+   "say": "Five stars from 43 reviews. \"Andy came within the hour.\" \"10 stars if I could.\""
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Call A1 Today",
+   "clip": "downspout-dig.mp4",
+   "imgPos": "50% 50%",
+   "logo": "a1-logo.jpg",
+   "name": "A1 Sewer Service LLC",
+   "phone": "(319) 600-4224",
+   "address": "738 Bay Ridge Dr, Iowa City",
+   "hours": "Open 24/7",
+   "url": "a1seweriowacity.com",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Call (319) 600-4224, or visit A1 sewer iowa city dot com.",
+   "say": "Call (319) 600-4224, or visit a1seweriowacity.com."
+  }
+ ]
+}

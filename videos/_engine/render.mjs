@@ -4,7 +4,7 @@
 // then muxes out/{format}-mix.wav (from audio.py) into out/{name}[-reel].mp4 if it exists.
 import { createRequire } from "node:module";
 import { spawn, spawnSync } from "node:child_process";
-import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -63,8 +63,33 @@ function chunks(words) {
 }
 
 const pinSvg = engineAsset("pin.svg");
-const photo = (s, dir = "left", d = 0.1, extra = "") =>
+const photo = (s, dir = "left", d = 0.1, extra = "") => s.clip ? `<div ${a(`${dir} photo`, d)}>${clipEl(s.clip, ` style="object-position:${s.imgPos || "50% 50%"}"`)}${extra}</div>` :
   `<div ${a(`${dir} photo`, d)}><img class="kb" src="${img(s.image)}" style="object-position:${s.imgPos || "50% 50%"}${s.zoomFrom ? `;transform-origin:${s.zoomFrom}` : ""}${s.fit ? `;object-fit:contain;background:${s.fit}` : ""}">${extra}</div>`;
+
+// Video clips: "clip": "file.mp4" or {"file", "from", "to", "rate", "hold"} (file in the assets folder).
+// Frames are extracted once to out/clips/ and swapped per rendered frame, so footage plays in sync.
+const CLIP_FPS = 15;
+const clipCache = {};
+function clipFrames(c) {
+  const spec = typeof c === "string" ? { file: c } : c;
+  const key = [spec.file.replace(/\.[^.]+$/, ""), spec.from || 0, spec.to || "end", format].join("_").replace(/[^\w.-]/g, "");
+  if (clipCache[key]) return { ...spec, ...clipCache[key] };
+  const dir = path.join(OUT, "clips", key);
+  if (!existsSync(path.join(dir, "f00001.jpg"))) {
+    mkdirSync(dir, { recursive: true });
+    const scale = format === "reel" ? "scale=-2:1440" : "scale=1920:-2";
+    const r = spawnSync("ffmpeg", ["-loglevel", "error", "-y", ...(spec.from ? ["-ss", String(spec.from)] : []), "-i", path.join(ASSETS, spec.file),
+      ...(spec.to ? ["-t", String(spec.to - (spec.from || 0))] : []), "-an", "-vf", `fps=${CLIP_FPS},${scale}`, "-q:v", "3", path.join(dir, "f%05d.jpg")], { stdio: "inherit" });
+    if (r.status) throw new Error("clip extract failed: " + spec.file);
+  }
+  const n = readdirSync(dir).filter((f) => f.endsWith(".jpg")).length;
+  clipCache[key] = { dir: rel(dir), n };
+  return { ...spec, ...clipCache[key] };
+}
+const clipEl = (c, extra = "") => {
+  const k = clipFrames(c);
+  return `<img class="seq" data-dir="${k.dir}" data-n="${k.n}" data-fps="${CLIP_FPS}" data-rate="${k.rate || 1}" data-hold="${k.hold ? 1 : 0}" src="${k.dir}/f00001.jpg"${extra}>`;
+};
 
 const ic = (d) => `<svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
 const icons = {
@@ -219,7 +244,7 @@ const build = {
   steps: (s) => `
     <div ${a("up h2", 0.1)}>${esc(s.title)}</div>
     ${s.sub ? `<div ${a("up subline", 0.3)}>${esc(s.sub)}</div>` : ""}
-    <div class="sgrid">${s.steps.map((st, i) => `
+    <div class="sgrid${s.tall ? " tall" : ""}">${s.steps.map((st, i) => `
       <div class="a pop step"${cueAttr(st.cue)} style="--d:${0.6 + i * 0.3}">
         <img src="${img(st.image)}" style="object-position:${st.imgPos || "50% 50%"}">${s.plain ? "" : `<span class="sn">${String(i + 1).padStart(2, "0")}</span>`}${st.name ? `<span class="st">${esc(st.name)}</span>` : ""}</div>`).join("")}</div>`,
 
@@ -282,6 +307,24 @@ const build = {
         <div class="cb"><div class="cn">${esc(c.name)}</div><div class="cs">${esc(c.sub)}</div></div>
         <div class="cp">${esc(c.price)}</div>
       </div>`).join("")}</div>`,
+
+  // Real job footage in a big rounded panel, with a lower-third title. "side": a vertical
+  // clip next to a title and cue-timed bullets (landscape only; the reel shows just the clip).
+  footage: (s) => {
+    const panel = `<div class="fwrap a fade${s.side ? " vert" : ""}" style="--d:0">${clipEl(s.clip, ` style="object-position:${s.imgPos || "50% 50%"}"`)}
+      ${s.title && !(s.side && format === "landscape") ? `<div class="fshade"></div><div class="ftag">
+        ${s.kicker ? `<div class="a up fkick" style="--d:.3">${esc(s.kicker)}</div>` : ""}
+        <div class="a up ftitle" style="--d:.5">${esc(s.title)}</div>
+        ${s.chips ? `<div class="fchips">${s.chips.map((c, i) => `<span class="a pop chip" style="--d:${1 + i * 0.12}">${esc(c)}</span>`).join("")}</div>` : ""}
+      </div>` : ""}</div>`;
+    if (!(s.side && format === "landscape")) return panel;
+    return `<div class="col">
+        ${s.kicker ? `<div ${a("up kicker", 0.1)}>${esc(s.kicker)}</div>` : ""}
+        <div ${a("up h2", 0.2)}>${esc(s.title)}</div>
+        <div ${a("wipe bar-accent", 0.5, "width:420px")}></div>
+        <ul class="points">${(s.bullets || []).map((p, i) => `<li class="a left"${cueAttr(p.cue)} data-at="${p.cue ? "" : 0.2 + (i * 0.6) / s.bullets.length}" style="--d:2"><i></i>${esc(p.t || p)}</li>`).join("")}</ul>
+      </div>${panel}`;
+  },
 
   cta: (s) => `
     ${photo(s)}
@@ -348,10 +391,12 @@ function html() {
     sc._anims = sc.getAnimations({ subtree: true });
     sc._anims.forEach(a => a.pause());
     sc._counts = [...sc.querySelectorAll('[data-count]')];
+    sc._seqs = [...sc.querySelectorAll('img.seq')];
   }
   const bgAnims = [...document.querySelectorAll('.drift')].flatMap(e => e.getAnimations());
   bgAnims.forEach(a => a.pause());
   window.renderAt = (t) => {
+    const waits = [];
     let active = scenes[0];
     scenes.forEach((sc, i) => {
       const st = +sc.dataset.start, du = +sc.dataset.dur, lt = t - st;
@@ -363,6 +408,12 @@ function html() {
       sc.style.transform = vis ? 'scale(' + (1.02 - 0.02 * Math.min(1, lt / 0.5)) + ')' : '';
       if (!vis) return;
       sc._anims.forEach(a => a.currentTime = lt * 1000);
+      sc._seqs.forEach(im => {
+        const n = +im.dataset.n, f = Math.floor(Math.max(0, lt) * im.dataset.fps * im.dataset.rate);
+        const i = im.dataset.hold === '1' ? Math.min(n - 1, f) : f % n;
+        const src = im.dataset.dir + '/f' + String(i + 1).padStart(5, '0') + '.jpg';
+        if (im.getAttribute('src') !== src) { im.setAttribute('src', src); waits.push(im.decode().catch(() => {})); }
+      });
       sc._counts.forEach(el => {
         const p = Math.min(1, Math.max(0, (lt - +el.dataset.cd) / 0.9));
         const e = 1 - Math.pow(1 - p, 3);
@@ -380,11 +431,12 @@ function html() {
       const end = Math.min(next ? next.t0 : 1e9, last + 0.9, k.sceneEnd);
       if (t >= k.t0 && t < end) { c = k; break; }
     }
-    if (!c) { cap.style.visibility = 'hidden'; return; }
+    if (!c) { cap.style.visibility = 'hidden'; return Promise.all(waits); }
     cap.style.visibility = 'visible';
     let cur = -1;
     c.words.forEach((w, i) => { if (t >= w[0] - 0.02) cur = i; });
     cap.innerHTML = c.words.map((w, i) => i === cur ? '<em>' + w[1].replace(/</g, '&lt;') + '</em>' : w[1].replace(/</g, '&lt;')).join(' ');
+    return Promise.all(waits);
   };
   window.ready = document.fonts.ready.then(() => Promise.all([...document.images].map(i => i.decode().catch(() => {}))));
   </script></body></html>`;

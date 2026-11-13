@@ -431,3 +431,25 @@ blockquote { font: 400 76px/1.12 var(--display); text-transform: uppercase; colo
 .rangebox.compact .rfill b { font-size: 36px; }
 .bigprice.dollars { font-size: 104px; }
 .reel .bigprice.dollars { font-size: 120px; }
+
+/* Footage: real job video in a rounded panel */
+.scene.footage { justify-content: center; }
+.fwrap { position: relative; flex: none; width: 1740px; height: 770px; border-radius: 30px; overflow: hidden; border: 8px solid #fff; box-shadow: var(--shadow); background: #0b2545; }
+.fwrap.vert { width: 436px; height: 776px; }
+.reel .fwrap, .reel .fwrap.vert { width: 960px; height: 1380px; }
+img.seq { width: 100%; height: 100%; object-fit: cover; display: block; }
+.fshade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,37,69,0) 45%, rgba(11,37,69,.78) 100%); }
+.ftag { position: absolute; left: 40px; right: 40px; bottom: 36px; }
+.fkick { display: inline-block; font: 700 22px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: #fff; background: var(--teal); padding: 11px 18px; border-radius: 999px; margin-bottom: 16px; }
+.ftitle { font: 400 96px/.95 var(--display); text-transform: uppercase; color: #fff; text-shadow: 0 4px 24px rgba(0,0,0,.45); }
+.fchips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.fchips .chip { font-size: 20px; padding: 11px 17px; }
+.reel .ftitle { font-size: 104px; }
+.reel .fkick { font-size: 26px; }
+.reel .fchips .chip { font-size: 26px; }
+.footage .col .h2 { font-size: 76px; }
+.sgrid.tall { grid-template-columns: repeat(3, 380px); justify-content: center; gap: 28px; }
+.sgrid.tall .step { height: 500px; }
+.reel .sgrid.tall { grid-template-columns: repeat(3, 1fr); }
+.reel .sgrid.tall .step { height: 560px; }
+.scene.steps:has(.sgrid.tall) .h2, .scene.steps:has(.sgrid.tall) .subline { text-align: center; }
