@@ -152,8 +152,29 @@
     "file": "lift-station.mp4",
     "from": 0.4,
     "to": 10.6,
-    "rate": 0.87,
-    "hold": true
+    "hold": true,
+    "sync": [
+     [
+      0,
+      0
+     ],
+     [
+      5.01,
+      2.6
+     ],
+     [
+      7.01,
+      5.6
+     ],
+     [
+      8.31,
+      7.9
+     ],
+     [
+      11.0,
+      10.15
+     ]
+    ]
    },
    "kicker": "Recent job · Iowa City",
    "title": "Basement lift station pump replacement",
@@ -317,8 +338,29 @@
     "file": "lift-station.mp4",
     "from": 0.4,
     "to": 10.6,
-    "rate": 1.12,
-    "hold": true
+    "hold": true,
+    "sync": [
+     [
+      0,
+      0
+     ],
+     [
+      4.29,
+      2.6
+     ],
+     [
+      5.97,
+      5.6
+     ],
+     [
+      7.41,
+      7.9
+     ],
+     [
+      9.0,
+      10.15
+     ]
+    ]
    },
    "say": "Basement backing up with water in Iowa City? A1 Sewer Service found a bad lift station pump, swapped out the old one, and installed a new pump."
   },

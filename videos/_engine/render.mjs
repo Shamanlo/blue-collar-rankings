@@ -88,7 +88,7 @@ function clipFrames(c) {
 }
 const clipEl = (c, extra = "") => {
   const k = clipFrames(c);
-  return `<img class="seq" data-dir="${k.dir}" data-n="${k.n}" data-fps="${CLIP_FPS}" data-rate="${k.rate || 1}" data-hold="${k.hold ? 1 : 0}" src="${k.dir}/f00001.jpg"${extra}>`;
+  return `<img class="seq" data-dir="${k.dir}" data-n="${k.n}" data-fps="${CLIP_FPS}" data-rate="${k.rate || 1}" data-hold="${k.hold ? 1 : 0}"${k.sync ? ` data-sync="${esc(JSON.stringify(k.sync))}"` : ""} src="${k.dir}/f00001.jpg"${extra}>`;
 };
 
 const ic = (d) => `<svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
@@ -409,7 +409,13 @@ function html() {
       if (!vis) return;
       sc._anims.forEach(a => a.currentTime = lt * 1000);
       sc._seqs.forEach(im => {
-        const n = +im.dataset.n, f = Math.floor(Math.max(0, lt) * im.dataset.fps * im.dataset.rate);
+        // "sync": [[sceneTime, clipTime], ...] maps narration moments to moments in the clip.
+        let ct = Math.max(0, lt) * im.dataset.rate;
+        if (im.dataset.sync) {
+          const m = JSON.parse(im.dataset.sync); ct = m[m.length - 1][1];
+          for (let j = 1; j < m.length; j++) if (lt < m[j][0]) { const [a0, b0] = m[j - 1], [a1, b1] = m[j]; ct = b0 + (b1 - b0) * Math.max(0, lt - a0) / (a1 - a0); break; }
+        }
+        const n = +im.dataset.n, f = Math.floor(ct * im.dataset.fps);
         const i = im.dataset.hold === '1' ? Math.min(n - 1, f) : f % n;
         const src = im.dataset.dir + '/f' + String(i + 1).padStart(5, '0') + '.jpg';
         if (im.getAttribute('src') !== src) { im.setAttribute('src', src); waits.push(im.decode().catch(() => {})); }
