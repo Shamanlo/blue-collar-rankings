@@ -355,7 +355,7 @@ function html() {
     <path d="M0 170 C 160 120, 330 250, 560 240 S 760 260, 820 300 L0 300Z" fill="#7fd6cc" opacity=".55"/>
     <path d="M520 300 C 760 230, 960 160, 1200 120 L1200 300Z" fill="#ffb562" opacity=".5"/>
     <path d="M0 230 C 150 200, 300 270, 470 300 L0 300Z" fill="#2cb6bd" opacity=".45"/></svg>`;
-  return `<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="${rel(path.join(ENGINE, "scenes.css"))}">
+  return `<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="${rel(path.join(ENGINE, "scenes.css"))}">${spec.theme ? `<link rel="stylesheet" href="${img(spec.theme)}">` : ""}
   <style>:root{--w:${W}px;--h:${H}px}</style></head>
   <body class="${format}"><div class="stage">
     <div class="wave">${wave}</div>

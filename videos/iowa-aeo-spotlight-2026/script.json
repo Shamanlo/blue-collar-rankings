@@ -1,0 +1,166 @@
+{
+  "tts": "gemini",
+  "gemini": {"model": "gemini-3.8-flash-tts", "voice": "Charon"},
+  "theme": "theme.css",
+  "header": "Iowa · Local Business Spotlight · 2026",
+  "source": "Details from iowaaeo.com. AI answers vary by platform and change over time.",
+  "sourceKinds": [],
+  "landscape": [
+    {
+      "id": "hook", "kind": "title", "label": "Local Business Spotlight",
+      "image": "iowa-aeo-commercial.jpg", "imgPos": "50% 0%", "zoomFrom": "50% 0%",
+      "kicker": "Local business spotlight · Iowa", "titlePx": 104,
+      "title": ["Get recommended", "by AI in Iowa."], "year": "Iowa AEO",
+      "chips": ["ChatGPT", "Gemini", "Perplexity", "Claude", "Google AI Overviews"],
+      "speak": "Local business spotlight: Iowa A-E-O. They're on the cutting edge of AI visibility, helping Iowa businesses get recommended by ChatGPT, Gemini, Perplexity, Claude, and Google's AI Overviews.",
+      "say": "Local business spotlight: Iowa AEO. They're on the cutting edge of AI visibility, helping Iowa businesses get recommended by ChatGPT, Gemini, Perplexity, Claude, and Google's AI Overviews."
+    },
+    {
+      "id": "shift", "kind": "chat", "label": "Search Changed", "source": true,
+      "app": "AI assistant",
+      "ask": "My water heater is leaking. Is there a plumber in Cedar Rapids who can come today?", "askCue": "my",
+      "answer": "Here are a few Cedar Rapids plumbers who can come today:", "answerCue": "names",
+      "picks": [{"name": "Plumber A", "note": "Same-day · 4.9★"}, {"name": "Plumber B", "note": "24/7 emergency"}, {"name": "Plumber C", "note": "Water heater pros"}],
+      "pickAt": 0.62,
+      "miss": "Not mentioned", "missCue": "isn't",
+      "side": [{"t": "No list of ten links", "cue": "instead"}, {"t": "Just two or three names", "cue": "names"}],
+      "say": "Search has changed. Instead of scrolling ten blue links, customers ask AI a full question, like: \"My water heater is leaking. Is there a plumber in Cedar Rapids who can come today?\" AI names just two or three businesses. If yours isn't one of them, you don't get the call."
+    },
+    {
+      "id": "signals", "kind": "factors", "label": "What AI Looks For",
+      "title": "The five signals AI looks for",
+      "cards": [
+        {"name": "Consistent listings", "desc": "Name, hours & address match on Google, Bing, Apple Maps & Yelp", "icon": "pin", "cue": "consistent"},
+        {"name": "Specific reviews", "desc": "Customers describe what you do best, in their own words", "icon": "star", "cue": "specific"},
+        {"name": "Answer-ready website", "desc": "Clear pages that answer the questions people ask AI", "icon": "page", "cue": "answer-ready"},
+        {"name": "Structured data", "desc": "Schema tells AI your services, service area & hours", "icon": "code", "cue": "structured"},
+        {"name": "Trusted mentions", "desc": "Local press, guides & directories mention you by name", "icon": "mega", "cue": "trusted"}
+      ],
+      "say": "Iowa AEO builds the five signals AI looks for when it picks a business: consistent listings, specific reviews, an answer-ready website, structured data, and trusted mentions in local press and directories.",
+      "speak": "Iowa A-E-O builds the five signals AI looks for when it picks a business: consistent listings, specific reviews, an answer-ready website, structured data, and trusted mentions in local press and directories."
+    },
+    {
+      "id": "services", "kind": "factors", "label": "What They Do", "cols": 4,
+      "title": "What Iowa AEO does",
+      "cards": [
+        {"name": "AI Visibility Audit", "desc": "Your customers' questions, asked across 5 AI assistants", "icon": "search", "cue": "visibility"},
+        {"name": "Entity & Listing Cleanup", "desc": "Name, hours & services consistent everywhere AI looks", "icon": "map", "cue": "listing"},
+        {"name": "Answer-Ready Content", "desc": "Service pages, FAQs & structured data AI can quote", "icon": "page", "cue": "answer-ready"},
+        {"name": "Citations & Reviews", "desc": "Trusted local mentions & reviews that say what you do best", "icon": "star", "cue": "citations"}
+      ],
+      "speak": "Their services start with an AI visibility audit: they ask five AI assistants the questions your customers ask, and show you who gets named. Then entity and listing cleanup, answer-ready content like service pages and FAQs, and citations and reviews that tell AI what you do best.",
+      "say": "Their services start with an AI visibility audit: they ask five AI assistants the questions your customers ask, and show you who gets named. Then entity and listing cleanup, answer-ready content like service pages and FAQs, and citations and reviews that tell AI what you do best."
+    },
+    {
+      "id": "process", "kind": "stats", "label": "How It Works",
+      "title": "From invisible to recommended",
+      "tiles": [
+        {"v": "01", "n": "Audit", "s": "Dozens of real questions across 5 AI assistants", "cue": "audit"},
+        {"v": "02", "n": "Fix the facts", "s": "Listings, website details & structured data", "cue": "fix"},
+        {"v": "03", "n": "Publish answers", "s": "Pages & FAQs for what people ask AI", "cue": "publish"},
+        {"v": "04", "n": "Earn trust & track", "s": "Reviews, mentions & a re-test every month", "cue": "earn"}
+      ],
+      "note": "No tricks or gimmicks: clean, consistent, verifiable facts.", "noteCue": "no",
+      "say": "The process goes from invisible to recommended: audit, fix the facts, publish answers, then earn trust and track, with a re-test every month so you can see your AI visibility change. No tricks, and no gimmicks."
+    },
+    {
+      "id": "versus", "kind": "versus", "label": "AEO vs. SEO",
+      "title": "Search changed. So did the rules.", "left": "Traditional SEO", "right": "AEO",
+      "rows": [
+        {"label": "Goal", "a": "Rank in a list of ten blue links", "b": "Get named in the answer itself", "cue": "SEO"},
+        {"label": "What wins", "a": "Keywords, backlinks, page speed", "b": "Consistent facts, specific reviews, clear answers", "cue": "AEO"},
+        {"label": "How people search", "a": "“plumber Ankeny”", "b": "“Who can fix my water heater in Ankeny today?”", "cue": "people"},
+        {"label": "What you measure", "a": "Rankings and clicks", "b": "Mentions & how AI describes you", "cue": "measure"}
+      ],
+      "note": "Good AEO and good SEO support each other.", "noteCue": "good",
+      "speak": "SEO is about ranking in a list of ten blue links. A-E-O is about getting named in the answer itself. People search with full questions now, and you measure mentions, and how AI describes you. Good A-E-O and good SEO support each other.",
+      "say": "SEO is about ranking in a list of ten blue links. AEO is about getting named in the answer itself. People search with full questions now, and you measure mentions, and how AI describes you. Good AEO and good SEO support each other."
+    },
+    {
+      "id": "industries", "kind": "list", "label": "Industries",
+      "title": "Built for Iowa's local businesses",
+      "items": ["Restaurants & bars", "Home services", "Dentists & orthodontists", "Law firms", "Medical & med spas", "Real estate"],
+      "note": "Plus auto repair & dealers, and ag & rural businesses.", "noteCue": "plus",
+      "say": "They tailor the work to each industry: restaurants and bars, home services, dentists and orthodontists, law firms, medical and med spas, and real estate. Plus auto repair and dealers, and ag and rural businesses, because farmers ask AI too."
+    },
+    {
+      "id": "markets", "kind": "factors", "label": "Where They Work", "cols": 4,
+      "title": "Four home markets, all of Iowa",
+      "cards": [
+        {"name": "Des Moines", "desc": "Ankeny, West Des Moines, Urbandale, Ames & more", "icon": "pin", "cue": "Des"},
+        {"name": "Cedar Rapids", "desc": "Marion, Hiawatha, Robins, Mount Vernon & more", "icon": "pin", "cue": "Cedar"},
+        {"name": "Iowa City", "desc": "Coralville, North Liberty, Tiffin, Solon & more", "icon": "pin", "cue": "Iowa"},
+        {"name": "Quad Cities", "desc": "Davenport, Bettendorf, Moline & Rock Island", "icon": "pin", "cue": "Quad"}
+      ],
+      "say": "They have four home markets: Des Moines, Cedar Rapids, Iowa City, and the Quad Cities, and they work with businesses anywhere in Iowa."
+    },
+    {
+      "id": "pick", "kind": "winner", "label": "Local Spotlight",
+      "image": "iowa-aeo-og.png", "fit": "#F6F5F0",
+      "stamp": "Local spotlight", "name": "Iowa AEO", "nameCue": "what",
+      "where": "Des Moines · Cedar Rapids · Iowa City · Quad Cities",
+      "logo": "iowa-aeo-logo.png", "logoBg": "#fff",
+      "points": ["We test, not guess", "Iowa first", "Plain English, no jargon", "Clean facts, no spammy tricks", "Re-tested every month"],
+      "say": "What sets them apart? They test instead of guessing. They're Iowa first. They explain everything in plain English. And it's clean, verifiable facts, with no spammy shortcuts, re-tested every month."
+    },
+    {
+      "id": "cta", "kind": "cta", "label": "Free AI Check",
+      "image": "iowa-aeo-og.png", "fit": "#F6F5F0",
+      "logo": "iowa-aeo-logo.png",
+      "name": "Free AI visibility check",
+      "phone": "(515) 690-6632",
+      "address": "No cost, no obligation",
+      "hours": "Real answers from 5 AI assistants",
+      "url": "iowaaeo.com", "urlCue": "visit",
+      "tip": "Plain-English next steps for your business.",
+      "speak": "Want to know if AI is recommending your business? Get a free AI visibility check from Iowa A-E-O. Call (515) 690-6632, or visit iowa a-e-o dot com. This has been Local Vibe Check.",
+      "say": "Want to know if AI is recommending your business? Get a free AI visibility check from Iowa AEO. Call (515) 690-6632, or visit iowaaeo.com. This has been Local Vibe Check."
+    }
+  ],
+  "reel": [
+    {
+      "id": "r-hook", "kind": "title", "label": "Local Spotlight",
+      "image": "iowa-aeo-commercial.jpg", "imgPos": "50% 0%", "zoomFrom": "50% 0%",
+      "kicker": "Local spotlight · Iowa",
+      "title": ["Get recommended", "by AI."], "year": "Iowa AEO",
+      "chips": ["ChatGPT", "Gemini", "Perplexity", "Claude"],
+      "speak": "Is AI recommending your business? Meet Iowa A-E-O.",
+      "say": "Is AI recommending your business? Meet Iowa AEO."
+    },
+    {
+      "id": "r-shift", "kind": "chat", "label": "Search Changed",
+      "app": "AI assistant",
+      "ask": "Is there a plumber in Cedar Rapids who can come today?", "askCue": "is",
+      "answer": "Here are a few plumbers near you:", "answerCue": "names",
+      "picks": [{"name": "Plumber A", "note": "Same-day"}, {"name": "Plumber B", "note": "24/7"}, {"name": "Plumber C", "note": "Specialist"}],
+      "pickAt": 0.55,
+      "miss": "Not mentioned", "missCue": "isn't",
+      "say": "Customers now ask AI: \"Is there a plumber in Cedar Rapids who can come today?\" AI names two or three businesses. If yours isn't one, you don't get the call."
+    },
+    {
+      "id": "r-services", "kind": "factors", "label": "What They Do", "cols": 2,
+      "title": "What Iowa AEO does",
+      "cards": [
+        {"name": "AI visibility audit", "desc": "5 AI assistants tested", "icon": "search", "cue": "audit"},
+        {"name": "Listing cleanup", "desc": "Facts consistent everywhere", "icon": "map", "cue": "listing"},
+        {"name": "Answer-ready content", "desc": "Pages & FAQs AI can quote", "icon": "page", "cue": "answer-ready"},
+        {"name": "Citations & reviews", "desc": "Trusted local proof", "icon": "star", "cue": "citations"}
+      ],
+      "speak": "Iowa A-E-O runs an AI visibility audit, cleans up your listings, builds answer-ready content, and grows citations and reviews.",
+      "say": "Iowa AEO runs an AI visibility audit, cleans up your listings, builds answer-ready content, and grows citations and reviews."
+    },
+    {
+      "id": "r-cta", "kind": "cta", "label": "Free AI Check",
+      "image": "iowa-aeo-og.png", "fit": "#F6F5F0",
+      "logo": "iowa-aeo-logo.png",
+      "name": "Free AI visibility check",
+      "phone": "(515) 690-6632",
+      "address": "No cost, no obligation",
+      "hours": "Real answers from 5 AI assistants",
+      "url": "iowaaeo.com", "urlCue": "visit",
+      "tip": "Follow Local Vibe Check for more.",
+      "speak": "Get a free AI visibility check. Call (515) 690-6632, or visit iowa a-e-o dot com.",
+      "say": "Get a free AI visibility check. Call (515) 690-6632, or visit iowaaeo.com."
+    }
+  ]
+}

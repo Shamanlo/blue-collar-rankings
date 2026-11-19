@@ -49,3 +49,7 @@ assets folder, or `{"file", "from", "to", "rate", "hold"}`. Frames are extracted
 The `footage` kind shows a clip in a big rounded panel with `kicker`, `title` and `chips` as a
 lower third; with `"side": true` it shows a vertical clip beside a title and cue-timed `bullets`.
 `steps` takes `"tall": true` for three large portrait photos.
+
+Brand themes: `"theme": "theme.css"` in script.json loads that file from the assets folder after
+the engine's styles, so a business spotlight can use the business's own colors, fonts and accents
+(see `iowa-aeo-spotlight-2026/assets/theme.css`).

@@ -1,0 +1,77 @@
+/* Iowa AEO brand theme (from iowaaeo.com site.css): ink #0E0F0C, green #34C73A / #23962A,
+   paper #F6F5F0, Bricolage Grotesque headlines, DM Sans body, DM Mono labels, green highlighter. */
+@import url("fonts-local.css");
+:root {
+  --navy: #0E0F0C; --navy-2: #2a2c27; --ink-2: #4b4d46;
+  --teal: #23962A; --teal-2: #34C73A; --blue: #146B1B;
+  --orange: #34C73A; --orange-2: #23962A;
+  --cream: #F6F5F0; --peach: #E5F7E2; --line: #E3E1D8;
+  --grad: linear-gradient(90deg, #34C73A, #23962A);
+  --pin: linear-gradient(160deg, #34C73A, #23962A);
+  --display: "Bricolage Grotesque", system-ui, sans-serif;
+  --body: "DM Sans", system-ui, sans-serif;
+  --mono: "DM Mono", ui-monospace, monospace;
+  --shadow: 0 1px 0 #E3E1D8, 0 18px 40px rgba(14, 15, 12, .08);
+  --hl: linear-gradient(transparent 50%, #34C73A 50%, #34C73A 82%, transparent 82%);
+}
+.stage { background: radial-gradient(55% 55% at 90% 6%, #d6f1d0 0%, rgba(214, 241, 208, 0) 70%),
+                     radial-gradient(45% 45% at 0% 100%, #EFEEE7 0%, rgba(239, 238, 231, 0) 70%), #F6F5F0; }
+.wave path:nth-child(1) { fill: #E5F7E2; opacity: 1; }
+.wave path:nth-child(2) { fill: #cdeec8; opacity: .8; }
+.wave path:nth-child(3) { fill: #34C73A; opacity: .22; }
+.wave path:nth-child(4) { fill: #23962A; opacity: .18; }
+.dots.tr, .dots.tl { color: #34C73A; opacity: .4; }
+
+/* Headlines: Bricolage 800, sentence case, tight tracking (it runs wider than Anton) */
+.h1, .h2, .year, .item .n, .tile .tv, .callout, .stamp, .wname, .contact .cname, .phone, .fn, .ft,
+.step .sn, blockquote, .rname2, .pick .pn, .sideitem, .vhead span, .ftitle {
+  font-weight: 800; letter-spacing: -.035em; text-transform: none; }
+.h1 { font-size: 112px; line-height: 1; }
+.title .h1 > div:last-child { width: fit-content; background: var(--hl); padding: 0 .06em; }
+.h2 { font-size: 64px; line-height: 1.04; }
+.reel .h2 { font-size: 84px; }
+.year { font-size: 64px; color: #0E0F0C; background: #34C73A; box-shadow: 0 5px 0 #23962A; }
+.kicker, .subline { font-family: var(--mono) !important; font-weight: 500 !important; letter-spacing: .14em; color: #64665F; }
+.chip { font-weight: 600; border: 1.5px solid #E3E1D8; box-shadow: none; }
+.chip::before, .chip:nth-child(even)::before { color: #34C73A; }
+.bar-accent { background: #34C73A; height: 8px; }
+.bar-accent::after { background: #0E0F0C; }
+.pinbig, .stamp img { display: none; }
+.stamp { background: #34C73A; color: #0E0F0C; box-shadow: 0 5px 0 #23962A; }
+
+.tile { border-top-color: #34C73A; }
+.tile.best { border-top-color: #0E0F0C; }
+.tile .tv, .stats .tile .tv { font-size: 84px; }
+.tile.best .tv { color: #0E0F0C; }
+.reel .stats .tile .tv { font-size: 110px; }
+.fic { background: #0E0F0C; }
+.fic svg { stroke: #34C73A; }
+.fn { background: #34C73A; color: #0E0F0C; }
+.ft { font-size: 30px; line-height: 1.05; }
+.item .n { background: #34C73A; color: #0E0F0C; }
+.item:nth-child(even) .n { background: #0E0F0C; color: #34C73A; }
+.points li i, .points li:first-child i { background: #34C73A; }
+.points li i::after { border-color: #0E0F0C; }
+.points li:first-child { color: #146B1B; }
+.bub.user { background: #0E0F0C; }
+.bub.ai { background: #F1FBEF; }
+.missing2 { border-color: #23962A; color: #146B1B; }
+.vhead span:last-child { background: var(--hl); }
+.rcard { border-top-color: #34C73A !important; }
+
+.contact .cname { font-size: 54px; }
+.phone { font-size: 84px; color: #0E0F0C; width: fit-content; background: var(--hl); }
+.reel .contact .cname { font-size: 70px; }
+.reel .phone { margin: 0 auto; }
+.url { background: #0E0F0C; }
+
+.label { font: 500 15px/1 var(--mono); letter-spacing: .12em; background: #0E0F0C; }
+.label::before { background: #34C73A; }
+.caption span.box { font: 700 42px/1.15 var(--body); text-transform: none; letter-spacing: -.01em; background: #0E0F0C; }
+.caption em { color: #34C73A; }
+.reel .caption span.box { font-size: 54px; }
+.source { font-family: var(--mono); }
+.reel .title .h1 { font-size: 118px !important; line-height: 1; }
+.reel .title .h1 > div:last-child { margin: 0 auto; }
+.reel .title .kicker { margin-top: 40px; }
+.reel .year { font-size: 84px; }
