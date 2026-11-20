@@ -338,7 +338,9 @@ const build = {
         <div class="a up url"${cueAttr(s.urlCue)} style="--d:2">${esc(s.url).replace("\n", "<br>")}</div>
       </div>
       <div class="a up tip" style="--d:.6"><img src="${pinSvg}">${esc(s.tip)}</div>
-    </div>`,
+    </div>${s.verdict ? `
+    <div class="a slam verdict"${cueAttr(s.verdictCue)} style="--d:${s.verdictAt ?? 1.5}"><img src="${pinSvg}">
+      <div class="vt"><span>${esc(s.verdict[0])}</span><b>${esc(s.verdict[1])}</b></div></div>` : ""}`,
 };
 
 const sourceKinds = new Set(spec.sourceKinds || ["bars", "mini", "deposit", "table", "list"]);

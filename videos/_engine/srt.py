@@ -54,10 +54,13 @@ def cues(scenes, fmt):
             nxt = words[i + 1][0] if i + 1 < len(words) else None
             text = " ".join(line)
             brk = (nxt is None or len(text) + len(words[i + 1][1]) + 1 > MAX_CHARS
-                   or nxt - t0 > MAX_SECS or w.endswith((".", "?", "!", ":")) or (w.endswith(",") and len(text) > 24))
+                   or nxt - t0 > MAX_SECS or w.endswith((".", "?", "!")) or (w.endswith((",", ":")) and len(text) > 24))
             if brk:
                 end = min(nxt if nxt is not None else end_of_scene - 0.3, t0 + 4.5)
-                out.append((t0, max(end, t0 + 0.6), text))
+                end = max(end, t0 + 0.6)
+                if nxt is not None:
+                    end = min(end, nxt)  # never overlap the next cue
+                out.append((t0, end, text))
                 line, t0 = [], None
     return out
 

@@ -163,17 +163,21 @@ mid-trip, they had him back on the road in
 about two hours.
 
 42
-00:01:16,480 --> 00:01:18,360
+00:01:16,480 --> 00:01:18,420
 Need a Ford in Iowa City?
 
 43
-00:01:18,360 --> 00:01:21,310
+00:01:18,420 --> 00:01:21,540
 Call Deery Brothers Ford at (319)
 
 44
-00:01:21,310 --> 00:01:25,660
+00:01:21,540 --> 00:01:25,173
 337-4600, or visit deeryford.com.
 
 45
-00:01:25,660 --> 00:01:29,681
-This has been Local Vibe Check.
+00:01:25,173 --> 00:01:27,140
+Deery Brothers Ford?
+
+46
+00:01:27,140 --> 00:01:29,710
+Vibe check: passed.

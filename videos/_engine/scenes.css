@@ -211,6 +211,22 @@ table.big th, table.big td { padding: 16px 30px; }
 .reel .contact { width: 100%; text-align: center; }
 .reel .tip { justify-content: center; }
 
+/* Series sign-off stamp ("Vibe check / Passed"): always in Local Vibe Check colors, whatever the theme */
+.verdict { position: absolute; z-index: 5; display: flex; align-items: center; gap: 18px; padding: 16px 34px 18px 22px;
+  background: #fff; color: #0b2545; border: 6px solid #19b3b8; border-radius: 26px; transform: rotate(-6deg);
+  box-shadow: 0 0 0 7px #fff, 0 0 0 11px #ff8e0a, 0 26px 50px rgba(11, 37, 69, .35); }
+.verdict img { height: 100px; flex: none; }
+.verdict .vt { display: flex; flex-direction: column; }
+.verdict .vt span { font: 800 25px/1 "Poppins", sans-serif; letter-spacing: .2em; text-transform: uppercase; color: #0b2545; }
+.verdict .vt b { font: 400 96px/.95 "Anton", Impact, sans-serif; text-transform: uppercase; letter-spacing: .02em; color: #19b3b8; margin-top: 6px; }
+.slam { animation-name: slam; animation-duration: .45s; animation-timing-function: cubic-bezier(.25, 1.35, .45, 1); }
+@keyframes slam { 0% { opacity: 0; transform: rotate(-14deg) scale(2.3); } 55% { opacity: 1; } 100% { opacity: 1; transform: rotate(-6deg) scale(1); } }
+.cta .verdict { left: 300px; bottom: 150px; }
+.reel .cta .verdict { left: auto; right: 70px; bottom: auto; top: 470px; }
+.reel .verdict img { height: 120px; }
+.reel .verdict .vt span { font-size: 30px; }
+.reel .verdict .vt b { font-size: 116px; }
+
 /* Captions */
 .caption { position: absolute; left: 0; right: 0; bottom: 56px; display: flex; justify-content: center; z-index: 6; }
 .caption span.box { font: 800 46px/1.15 var(--body); text-transform: uppercase; letter-spacing: .01em; color: #fff; background: var(--navy); padding: 16px 30px 18px; border-radius: 18px; box-shadow: 0 10px 30px rgba(11, 37, 69, .35); border-bottom: 6px solid var(--orange); max-width: 80%; text-align: center; }

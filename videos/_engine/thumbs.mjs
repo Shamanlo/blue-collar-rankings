@@ -62,8 +62,8 @@ ${wave}
   <div class="big" style="font-size:${T.bigPx || 156}px">${lines}</div>
   <div class="big" style="font-size:${T.subPx || 66}px;color:#19b3b8;margin-top:10px">${T.sub}</div>
   <div class="grad" style="width:600px;margin:20px 0 22px"></div>
-  <span class="tag" style="font-size:66px;background:#ff8e0a;padding:12px 24px 16px;box-shadow:0 12px 30px rgba(247,123,0,.4)">${T.tag}</span>
-  <span class="tag" style="font-size:66px;background:#0b2545;padding:12px 22px 16px;margin-left:10px">${T.year}</span>
+  <span class="tag" style="font-size:${T.tagPx || 66}px;background:#ff8e0a;padding:12px 24px 16px;box-shadow:0 12px 30px rgba(247,123,0,.4)">${T.tag}</span>
+  <span class="tag" style="font-size:${T.tagPx || 66}px;background:#0b2545;padding:12px 22px 16px;margin-left:10px">${T.year}</span>
 </div>`;
 
 const reel = `

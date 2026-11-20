@@ -8,11 +8,11 @@ Captions: `out/deery-brothers-ford-spotlight-2026.srt` (YouTube Studio → Subti
 
 ### Title
 
-Deery Brothers Ford Iowa City: No Haggling, In & Out in 90 Minutes (Local Business Spotlight)
+Vibe Check Passed ✅ Deery Brothers Ford, Iowa City (No Haggling, In & Out in 90 Minutes)
 
 Shorter alternatives:
-- Deery Brothers Ford: Iowa City's Hometown Ford Dealer | Local Vibe Check
-- Meet Deery Brothers Ford, Iowa City (Co-Owner Tyler Eads on Respect & Transparency)
+- Deery Brothers Ford, Iowa City: Vibe Check Passed ✅ | Local Vibe Check
+- Vibe Check Passed: Iowa City's Hometown Ford Dealer, Deery Brothers Ford
 
 ### Description
 
@@ -39,6 +39,8 @@ See dealer for complete warranty details and eligibility.
 
 "Buying the car is the wedding. Owning the car is the marriage." – Tyler Eads, co-owner
 
+✅ Deery Brothers Ford: vibe check passed.
+
 What customers say (4.8★ on Google):
 ⭐ "Had such a phenomenal experience buying my first big girl car at Deery!! What can typically be a very intimidating process was made so easy." – Elizabeth J.
 ⭐ "My salesman was prompt, professional, and so easy to work with. Overall, 6 out of 5 stars." – Eric H.
@@ -49,17 +51,17 @@ Chapters:
 0:20 New, used, financing & service
 0:37 The ownership experience: warranty & awards
 0:58 Treated fairly: customer reviews
-1:16 Visit Deery Brothers Ford
+1:16 Visit Deery Brothers Ford: vibe check passed
 
 Details from deeryford.com. Reviews via Deery Brothers Ford's customer reviews page. Footage: Deery Brothers Ford.
 
 Local Vibe Check: price guides, places and trusted local businesses. Subscribe for more local spotlights.
 
-#DeeryBrothersFord #IowaCity #FordDealer #IowaCityFord #LocalBusiness #Iowa #LocalVibeCheck
+#VibeCheckPassed #DeeryBrothersFord #IowaCity #FordDealer #IowaCityFord #LocalBusiness #LocalVibeCheck
 
 ### Tags
 
-deery brothers ford, deery ford, deery brothers ford iowa city, iowa city ford dealer, ford dealer iowa city, iowa city car dealership, new ford iowa city, used cars iowa city, ford service iowa city, ford f-150 iowa city, tyler eads, no haggle car buying, iowa city, coralville, north liberty, local business spotlight, local vibe check
+deery brothers ford, deery ford, deery brothers ford iowa city, iowa city ford dealer, ford dealer iowa city, iowa city car dealership, new ford iowa city, used cars iowa city, ford service iowa city, ford f-150 iowa city, tyler eads, no haggle car buying, iowa city, coralville, north liberty, local business spotlight, local vibe check, vibe check passed
 
 ### Settings
 
@@ -76,16 +78,17 @@ Captions: burned in. `out/deery-brothers-ford-spotlight-2026-reel.srt` is option
 
 ### Title
 
-No Haggling, In & Out in 90 Minutes 🚙 Deery Brothers Ford Iowa City #shorts
+Vibe Check Passed ✅ Deery Brothers Ford, Iowa City #shorts
 
 ### Caption
 
 "People just want to be respected." 👇 Co-owner Tyler Eads on how Deery Brothers Ford does it in Iowa City.
 🚙 New & used Fords · 💳 financing & trades · 🔧 service & parts · 🚚 free pickup & delivery
 ⭐ 4.8 stars on Google
+✅ Vibe check: passed.
 
 📞 (319) 337-4600
 📍 2343 Mormon Trek Blvd, Iowa City, IA 52246
 🔗 https://www.deeryford.com/
 
-#shorts #DeeryBrothersFord #IowaCity #FordDealer #LocalVibeCheck
+#shorts #VibeCheckPassed #DeeryBrothersFord #IowaCity #LocalVibeCheck

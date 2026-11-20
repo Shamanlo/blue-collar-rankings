@@ -235,9 +235,14 @@
    "url": "deeryford.com",
    "urlCue": "visit",
    "tip": "Sales, service & parts: one number.",
-   "speak": "Need a Ford in Iowa City? Call Deery Brothers Ford at (319) 337-4600, or visit deery ford dot com. This has been Local Vibe Check.",
-   "say": "Need a Ford in Iowa City? Call Deery Brothers Ford at (319) 337-4600, or visit deeryford.com. This has been Local Vibe Check.",
-   "hold": 2.2
+   "speak": "Need a Ford in Iowa City? Call Deery Brothers Ford at (319) 337-4600, or visit deery ford dot com. Deery Brothers Ford? Vibe check... passed.",
+   "say": "Need a Ford in Iowa City? Call Deery Brothers Ford at (319) 337-4600, or visit deeryford.com. Deery Brothers Ford? Vibe check: passed.",
+   "hold": 1.0,
+   "verdict": [
+    "Vibe check",
+    "Passed"
+   ],
+   "verdictCue": "pas"
   }
  ],
  "reel": [
@@ -373,9 +378,14 @@
    "url": "deeryford.com",
    "urlCue": "visit",
    "tip": "Follow Local Vibe Check for more.",
-   "speak": "Call (319) 337-4600, or visit deery ford dot com.",
-   "say": "Call (319) 337-4600, or visit deeryford.com.",
-   "hold": 1.0
+   "speak": "Call (319) 337-4600. Vibe check: passed!",
+   "say": "Call (319) 337-4600. Vibe check: passed.",
+   "hold": 0,
+   "verdict": [
+    "Vibe check",
+    "Passed"
+   ],
+   "verdictCue": "pas"
   }
  ],
  "thumbs": {
@@ -387,7 +397,7 @@
    "Brothers Ford"
   ],
   "sub": "Iowa City, IA",
-  "tag": "Local Spotlight",
+  "tag": "Vibe Check Passed",
   "year": "2026",
   "bigPx": 104,
   "reelBigPx": 150,
@@ -406,6 +416,7 @@
     "TOP FORD",
     "DEALERS"
    ]
-  ]
+  ],
+  "tagPx": 60
  }
 }

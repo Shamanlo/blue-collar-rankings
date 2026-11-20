@@ -57,6 +57,11 @@ clip's own audio instead of a voiceover (Whisper times its captions). Start the 
 strip for a scene (the source footage often has its own) and gives a `footage` side panel more room
 (see `deery-brothers-ford-spotlight-2026/script.json`).
 
+Business spotlights end on the series sign-off: give the `cta` scene `"verdict": ["Vibe check", "Passed"]`
+and `"verdictCue": "pas"` and end the narration with "Vibe check: passed." A stamp in Local Vibe
+Check colors (whatever the business theme) slams onto the photo on that word. Set the thumbnail
+`tag` to "Vibe Check Passed" too (`tagPx` shrinks the landscape tag if it pushes the year onto its own line).
+
 Brand themes: `"theme": "theme.css"` in script.json loads that file from the assets folder after
 the engine's styles, so a business spotlight can use the business's own colors, fonts and accents
 (see `iowa-aeo-spotlight-2026/assets/theme.css`).
