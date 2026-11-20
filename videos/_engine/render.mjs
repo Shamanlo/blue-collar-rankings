@@ -347,9 +347,9 @@ function html() {
   const sceneHtml = scenes.map((s) => {
     const words = punctuate(s.words, s.say);
     const src = s.source ?? sourceKinds.has(s.kind);
-    return `<section class="scene ${s.kind}" data-start="${s.start}" data-dur="${s.dur}" data-words="${esc(JSON.stringify(words))}" data-label="${esc(s.label)}" data-source="${src ? 1 : 0}">${build[s.kind](s)}</section>`;
+    return `<section class="scene ${s.kind}${s.captions === false ? " nocap" : ""}" data-start="${s.start}" data-dur="${s.dur}" data-words="${esc(JSON.stringify(words))}" data-label="${esc(s.label)}" data-source="${src ? 1 : 0}">${build[s.kind](s)}</section>`;
   }).join("\n");
-  const caps = scenes.flatMap((s) => chunks(punctuate(s.words, s.say)).map((c) => ({ t0: s.start + c[0].t - 0.05, words: c.map((w) => [s.start + w.t, w.w]), sceneEnd: s.start + s.dur })));
+  const caps = scenes.filter((s) => s.captions !== false).flatMap((s) => chunks(punctuate(s.words, s.say)).map((c) => ({ t0: s.start + c[0].t - 0.05, words: c.map((w) => [s.start + w.t, w.w]), sceneEnd: s.start + s.dur })));
   const wave = `<svg viewBox="0 0 1200 300" preserveAspectRatio="none">
     <path d="M0 120 C 200 60, 380 200, 640 170 S 1000 90, 1200 150 L1200 300 L0 300Z" fill="#ffd3a1" opacity=".55"/>
     <path d="M0 170 C 160 120, 330 250, 560 240 S 760 260, 820 300 L0 300Z" fill="#7fd6cc" opacity=".55"/>

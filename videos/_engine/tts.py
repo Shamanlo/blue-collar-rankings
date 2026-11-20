@@ -7,6 +7,8 @@ With "tts": "gemini" it uses Google Gemini TTS ("gemini": {"model", "voice", "st
 and the GEMINI_API_KEY env var (or ~/.gemini_key); Gemini returns no word timings, so a
 local Whisper model times the script's words against the audio.
 
+A scene with "soundbite" plays that clip's own audio (see soundbite()).
+
 Writes {project}/out/vo/{scene-id}.wav and {project}/out/timings.json:
   {format: [{id, start, dur, audio, words: [[t, text], ...]}]}
 """
@@ -170,6 +172,16 @@ def speak_gemini(say, text, cfg, wav):
     return words
 
 
+def soundbite(sb, spec, wav):
+    """A scene that plays a clip's own audio (someone on camera) instead of the narrator.
+    "soundbite": {"file": "clip.mp4", "from": 2.0, "to": 12.9} (file in the assets folder)."""
+    src = (HERE / spec.get("assetsDir", "assets") / sb["file"]).resolve()
+    dur = sb["to"] - sb["from"]
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-ss", str(sb["from"]), "-i", str(src), "-t", str(dur), "-vn",
+                    "-af", f"afade=t=in:d=0.08,afade=t=out:st={max(0, dur - 0.12):.3f}:d=0.12", "-ar", "48000", "-ac", "1", str(wav)], check=True)
+    return [(round(t, 3), w) for t, w in whisper_words(wav)]
+
+
 def duration(path):
     out = subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
                                    "-of", "csv=p=0", str(path)])
@@ -186,7 +198,9 @@ async def main(formats):
         for s in spec[fmt]:
             mp3 = OUT / "vo" / f"{s['id']}.mp3"
             wav = OUT / "vo" / f"{s['id']}.wav"
-            if spec.get("tts") == "gemini":
+            if s.get("soundbite"):
+                words = soundbite(s["soundbite"], spec, wav)
+            elif spec.get("tts") == "gemini":
                 words = speak_gemini(s["say"], s.get("speak", s["say"]), spec["gemini"], wav)
             else:
                 words = await speak(s["say"], spec["voice"], spec["rate"], mp3)

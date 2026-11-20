@@ -1,0 +1,36 @@
+/* Deery Brothers Ford: Deery blue #1A75BC on black (their logo), with Ford blue #003478. */
+:root {
+  --navy: #0A1A33; --navy-2: #003478; --ink-2: #3d4b63;
+  --teal: #1A75BC; --teal-2: #3a9be0; --blue: #003478;
+  --orange: #1A75BC; --orange-2: #135a92;
+  --cream: #f5f8fc; --peach: #e3eefa;
+  --grad: linear-gradient(90deg, #003478 0%, #1A75BC 100%);
+  --pin: linear-gradient(160deg, #3a9be0, #1A75BC 55%, #003478);
+}
+.stage { background: radial-gradient(60% 55% at 92% 6%, #d6e8f8 0%, rgba(214, 232, 248, 0) 70%),
+                     radial-gradient(50% 50% at 0% 0%, #eef4fb 0%, rgba(238, 244, 251, 0) 70%), #f7f9fc; }
+.wave path:nth-child(1) { fill: #dceaf8; opacity: 1; }
+.wave path:nth-child(2) { fill: #b9d6f1; opacity: .7; }
+.wave path:nth-child(3) { fill: #1A75BC; opacity: .22; }
+.wave path:nth-child(4) { fill: #003478; opacity: .2; }
+.dots.tr, .dots.tl { color: #1A75BC; opacity: .35; }
+.year { background: #0A1A33; color: #fff; }
+.chip::before, .chip:nth-child(even)::before { color: #1A75BC; }
+.bar-accent::after { background: #003478; }
+.caption span.box { background: #0A1A33; }
+.caption em { color: #5fb2f0; }
+.points li:first-child { color: #135a92; }
+.points li:first-child i, .item:nth-child(even) .n { background: linear-gradient(160deg, #1A75BC, #003478); }
+.tile { border-top-color: #1A75BC; }
+.tile.best { border-top-color: #003478; }
+.tile.best .tv { color: #1A75BC; }
+.tile .tv { font-size: 86px; }
+.stats .tile .tv { font-size: 80px; }
+.reel .stats .tile .tv { font-size: 104px; }
+.phone { color: #1A75BC; }
+.clogo { background: #000; padding: 10px 16px; border-radius: 12px; height: 96px; }
+.reel .clogo { height: 120px; }
+.footage .col .h2 { font-size: 70px; }
+.label::before { background: #5fb2f0; }
+.ivologo { background: #000; }
+.reel .title .h1 { font-size: 128px; }

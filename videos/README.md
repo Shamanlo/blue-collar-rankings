@@ -26,6 +26,7 @@ python3 _engine/audio.py $P                # music bed + voice mix -> out/{forma
 node _engine/render.mjs $P landscape       # frames + mux -> out/$P.mp4
 node _engine/render.mjs $P reel            # -> out/$P-reel.mp4
 node _engine/thumbs.mjs $P                 # out/thumbnail-youtube.jpg, out/thumbnail-reel.jpg
+python3 _engine/srt.py $P                  # YouTube captions -> out/$P.srt, out/$P-reel.srt
 ```
 
 `node _engine/render.mjs $P landscape --still 12,40` writes preview frames at those times.
@@ -49,6 +50,12 @@ assets folder, or `{"file", "from", "to", "rate", "hold"}`. Frames are extracted
 The `footage` kind shows a clip in a big rounded panel with `kicker`, `title` and `chips` as a
 lower third; with `"side": true` it shows a vertical clip beside a title and cue-timed `bullets`.
 `steps` takes `"tall": true` for three large portrait photos.
+
+On-camera soundbites: a scene with `"soundbite": {"file", "from", "to"}` plays that stretch of the
+clip's own audio instead of a voiceover (Whisper times its captions). Start the scene's `clip` about
+0.35 s before the soundbite so lips stay in sync. `"captions": false` hides the burned-in caption
+strip for a scene (the source footage often has its own) and gives a `footage` side panel more room
+(see `deery-brothers-ford-spotlight-2026/script.json`).
 
 Brand themes: `"theme": "theme.css"` in script.json loads that file from the assets folder after
 the engine's styles, so a business spotlight can use the business's own colors, fonts and accents

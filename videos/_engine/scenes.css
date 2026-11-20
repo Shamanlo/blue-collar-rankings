@@ -453,3 +453,9 @@ img.seq { width: 100%; height: 100%; object-fit: cover; display: block; }
 .reel .sgrid.tall { grid-template-columns: repeat(3, 1fr); }
 .reel .sgrid.tall .step { height: 560px; }
 .scene.steps:has(.sgrid.tall) .h2, .scene.steps:has(.sgrid.tall) .subline { text-align: center; }
+/* Footage scenes without captions (someone talking on camera) get a bigger panel. */
+.footage.nocap { padding-top: 112px; padding-bottom: 70px; gap: 90px; }
+.footage.nocap .fwrap.vert { width: 504px; height: 896px; }
+.footage.nocap .col .h2 { font-size: 88px; }
+.reel .footage.nocap { padding-bottom: 240px; }
+.reel .footage.nocap .fwrap.vert { width: 960px; height: 1480px; }

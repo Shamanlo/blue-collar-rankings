@@ -1,0 +1,411 @@
+{
+ "tts": "gemini",
+ "gemini": {
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Charon"
+ },
+ "theme": "theme.css",
+ "header": "Iowa City, IA · Local Business Spotlight · 2026",
+ "source": "Details from deeryford.com; reviews via Deery Brothers Ford's customer reviews page. Footage: Deery Brothers Ford.",
+ "sourceKinds": [
+  "reviews"
+ ],
+ "landscape": [
+  {
+   "id": "hook",
+   "kind": "title",
+   "label": "Local Business Spotlight",
+   "image": "deery-team.jpg",
+   "imgPos": "50% 45%",
+   "kicker": "Local business spotlight · Iowa City",
+   "titlePx": 132,
+   "title": [
+    "Deery Brothers",
+    "Ford"
+   ],
+   "year": "Iowa City",
+   "chips": [
+    "New Fords",
+    "Pre-owned",
+    "Service",
+    "Parts"
+   ],
+   "say": "Local business spotlight: Deery Brothers Ford, Iowa City's hometown Ford dealer. Here's co-owner Tyler Eads.",
+   "hold": 1.0
+  },
+  {
+   "id": "sb-respect",
+   "kind": "footage",
+   "label": "Meet the Owner",
+   "side": true,
+   "captions": false,
+   "soundbite": {
+    "file": "tyler-eads-reel.mp4",
+    "from": 2.0,
+    "to": 12.95
+   },
+   "clip": {
+    "file": "tyler-eads-reel.mp4",
+    "from": 1.65,
+    "to": 13.5,
+    "hold": true
+   },
+   "kicker": "Co-owner · Tyler Eads",
+   "title": "“People just want to be respected.”",
+   "bullets": [
+    {
+     "t": "Transparency",
+     "cue": "transparency"
+    },
+    {
+     "t": "In and out in 90 minutes or less",
+     "cue": "90"
+    },
+    {
+     "t": "No haggling over dollars and cents",
+     "cue": "haggle"
+    }
+   ],
+   "say": "People just want to be respected, they want transparency, and they want their time respected. They want to be in and out in 90 minutes or less, and they don't want to have to go back and forth and haggle over dollars and cents on their car deal."
+  },
+  {
+   "id": "services",
+   "kind": "factors",
+   "label": "Services",
+   "cols": 3,
+   "title": "What Deery Brothers Ford does",
+   "cards": [
+    {
+     "name": "New Fords",
+     "desc": "Trucks, SUVs & EVs, from Escape to Super Duty",
+     "image": "ford-grille.jpg",
+     "imgPos": "50% 55%",
+     "cue": "new"
+    },
+    {
+     "name": "Pre-owned & certified",
+     "desc": "Used trucks, SUVs & cars for every budget",
+     "image": "explorer-home.jpg",
+     "imgPos": "50% 60%",
+     "cue": "pre-owned"
+    },
+    {
+     "name": "Financing & trade-ins",
+     "desc": "Ford financing & trade appraisals in-house",
+     "image": "explorer-family.jpg",
+     "imgPos": "60% 55%",
+     "cue": "financing"
+    },
+    {
+     "name": "Service center",
+     "desc": "Factory-trained techs & genuine Ford parts",
+     "image": "service-center.jpg",
+     "imgPos": "50% 60%",
+     "cue": "service"
+    },
+    {
+     "name": "Pickup & delivery",
+     "desc": "Free Ford Pickup & Delivery for service",
+     "image": "mobile-service-customer.jpg",
+     "imgPos": "50% 40%",
+     "cue": "free"
+    },
+    {
+     "name": "Mobile service van",
+     "desc": "Oil changes, batteries & more, where you are",
+     "image": "mobile-service-tech.jpg",
+     "imgPos": "50% 40%",
+     "cue": "mobile"
+    }
+   ],
+   "say": "They sell new Ford trucks, SUVs and EVs, plus pre-owned and certified vehicles, with financing and trade-ins in-house. Their service center has factory-trained technicians and genuine Ford parts, with free Ford Pickup and Delivery, and a mobile service van that comes to you."
+  },
+  {
+   "id": "sb-wedding",
+   "kind": "footage",
+   "label": "Meet the Owner",
+   "side": true,
+   "captions": false,
+   "soundbite": {
+    "file": "tyler-eads-reel.mp4",
+    "from": 13.4,
+    "to": 20.2
+   },
+   "clip": {
+    "file": "tyler-eads-reel.mp4",
+    "from": 13.05,
+    "to": 20.75,
+    "hold": true
+   },
+   "kicker": "Co-owner · Tyler Eads",
+   "title": "“Buying is the wedding. Owning is the marriage.”",
+   "say": "The analogy I would use is when you're buying the car, that's really the wedding, and when you're owning the car, that ownership experience is the marriage itself."
+  },
+  {
+   "id": "perks",
+   "kind": "stats",
+   "label": "Why Buy Here",
+   "title": "Why buy at Deery Brothers",
+   "tiles": [
+    {
+     "v": "Lifetime",
+     "n": "Coverage warranty",
+     "s": "With maintenance at Deery",
+     "cue": "lifetime"
+    },
+    {
+     "v": "6/6K",
+     "n": "Used warranty",
+     "s": "6 months / 6,000 miles, under 130K miles",
+     "cue": "used"
+    },
+    {
+     "v": "Top 340",
+     "n": "Ford President's Award",
+     "s": "Of 5,000+ Ford dealers, 2020",
+     "cue": "Ford"
+    }
+   ],
+   "note": "See dealer for complete warranty details and eligibility.",
+   "noteCue": "see",
+   "speak": "Buy here and you get their lifetime coverage warranty, and used vehicles under a hundred thirty thousand miles get six months or six thousand miles. Plus, they're a Ford President's Award winner, one of just three hundred forty dealers nationwide.",
+   "say": "Buy here and you get their lifetime coverage warranty, and used vehicles under 130,000 miles get six months or 6,000 miles. Plus, they're a Ford President's Award winner, one of just 340 dealers nationwide."
+  },
+  {
+   "id": "sb-fair",
+   "kind": "footage",
+   "label": "Meet the Owner",
+   "side": true,
+   "captions": false,
+   "soundbite": {
+    "file": "tyler-eads-reel.mp4",
+    "from": 30.2,
+    "to": 36.85
+   },
+   "clip": {
+    "file": "tyler-eads-reel.mp4",
+    "from": 29.85,
+    "to": 37.4,
+    "hold": true
+   },
+   "kicker": "Co-owner · Tyler Eads",
+   "title": "“Treated fairly, with respect.”",
+   "say": "We may not have the largest selection or inventory of cars, but people know that they can come here and they're going to get treated fairly, with respect."
+  },
+  {
+   "id": "reviews",
+   "kind": "reviews",
+   "label": "What Customers Say",
+   "title": "What customers say",
+   "sub": "4.8★ on Google",
+   "cards": [
+    {
+     "text": "Had such a phenomenal experience buying my first big girl car at Deery!! What can typically be a very intimidating process was made so easy.",
+     "name": "Elizabeth J.",
+     "meta": "Customer review",
+     "cue": "customers"
+    },
+    {
+     "text": "My salesman was prompt, professional, and so easy to work with. Overall, 6 out of 5 stars.",
+     "name": "Eric H.",
+     "meta": "Customer review",
+     "cue": "Eric"
+    },
+    {
+     "text": "My truck broke down in the middle of a trip... He got us in right away and got us back on the road ASAP!!",
+     "name": "William P.",
+     "meta": "Customer review",
+     "cue": "William"
+    }
+   ],
+   "speak": "Customers rate them four point eight stars on Google. Eric gave them six out of five stars, and when William's truck broke down mid-trip, they had him back on the road in about two hours.",
+   "say": "Customers rate them 4.8 stars on Google. Eric gave them six out of five stars, and when William's truck broke down mid-trip, they had him back on the road in about two hours."
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "label": "Visit Deery Brothers",
+   "image": "explorer-family.jpg",
+   "imgPos": "60% 55%",
+   "logo": "deery-logo.png",
+   "name": "Deery Brothers Ford",
+   "phone": "(319) 337-4600",
+   "address": "2343 Mormon Trek Blvd, Iowa City, IA 52246",
+   "hours": "Mon–Thu 8:30–7 · Fri 8:30–6 · Sat 8:30–5",
+   "url": "deeryford.com",
+   "urlCue": "visit",
+   "tip": "Sales, service & parts: one number.",
+   "speak": "Need a Ford in Iowa City? Call Deery Brothers Ford at (319) 337-4600, or visit deery ford dot com. This has been Local Vibe Check.",
+   "say": "Need a Ford in Iowa City? Call Deery Brothers Ford at (319) 337-4600, or visit deeryford.com. This has been Local Vibe Check.",
+   "hold": 2.2
+  }
+ ],
+ "reel": [
+  {
+   "id": "r-hook",
+   "kind": "title",
+   "label": "Local Spotlight",
+   "image": "deery-team.jpg",
+   "imgPos": "50% 45%",
+   "kicker": "Local spotlight · Iowa City",
+   "title": [
+    "Deery Brothers",
+    "Ford"
+   ],
+   "year": "Iowa City",
+   "chips": [
+    "New",
+    "Pre-owned",
+    "Service",
+    "Parts"
+   ],
+   "say": "Meet Deery Brothers Ford in Iowa City, and co-owner Tyler Eads."
+  },
+  {
+   "id": "r-sb-respect",
+   "kind": "footage",
+   "label": "Meet the Owner",
+   "side": true,
+   "captions": false,
+   "soundbite": {
+    "file": "tyler-eads-reel.mp4",
+    "from": 2.0,
+    "to": 12.95
+   },
+   "clip": {
+    "file": "tyler-eads-reel.mp4",
+    "from": 1.65,
+    "to": 13.5,
+    "hold": true
+   },
+   "say": "People just want to be respected, they want transparency, and they want their time respected. They want to be in and out in 90 minutes or less, and they don't want to have to go back and forth and haggle over dollars and cents on their car deal."
+  },
+  {
+   "id": "r-services",
+   "kind": "factors",
+   "label": "Services",
+   "cols": 2,
+   "title": "What they do",
+   "cards": [
+    {
+     "name": "New & used Fords",
+     "desc": "Trucks, SUVs & EVs",
+     "image": "ford-grille.jpg",
+     "imgPos": "50% 55%",
+     "cue": "new"
+    },
+    {
+     "name": "Financing & trades",
+     "desc": "All in-house",
+     "image": "explorer-family.jpg",
+     "imgPos": "60% 55%",
+     "cue": "financing"
+    },
+    {
+     "name": "Service & parts",
+     "desc": "Factory-trained techs",
+     "image": "service-center.jpg",
+     "imgPos": "50% 60%",
+     "cue": "service"
+    },
+    {
+     "name": "Pickup & delivery",
+     "desc": "Free, plus mobile service",
+     "image": "mobile-service-customer.jpg",
+     "imgPos": "50% 40%",
+     "cue": "pickup"
+    }
+   ],
+   "say": "New and used Fords, financing and trade-ins, a full service center, and free pickup and delivery for service."
+  },
+  {
+   "id": "r-sb-fair",
+   "kind": "footage",
+   "label": "Meet the Owner",
+   "side": true,
+   "captions": false,
+   "soundbite": {
+    "file": "tyler-eads-reel.mp4",
+    "from": 30.2,
+    "to": 36.85
+   },
+   "clip": {
+    "file": "tyler-eads-reel.mp4",
+    "from": 29.85,
+    "to": 37.4,
+    "hold": true
+   },
+   "say": "We may not have the largest selection or inventory of cars, but people know that they can come here and they're going to get treated fairly, with respect."
+  },
+  {
+   "id": "r-reviews",
+   "kind": "reviews",
+   "label": "4.8★ on Google",
+   "title": "4.8★ on Google",
+   "cards": [
+    {
+     "text": "Prompt, professional, and so easy to work with. Overall, 6 out of 5 stars.",
+     "name": "Eric H.",
+     "meta": "Customer review",
+     "cue": "six"
+    },
+    {
+     "text": "Got us in right away and got us back on the road ASAP!!",
+     "name": "William P.",
+     "meta": "Customer review",
+     "cue": "back"
+    }
+   ],
+   "speak": "Four point eight stars on Google. Six out of five stars. Back on the road, A-S-A-P.",
+   "say": "4.8 stars on Google. \"Six out of five stars.\" \"Back on the road ASAP.\""
+  },
+  {
+   "id": "r-cta",
+   "kind": "cta",
+   "label": "Visit Deery Brothers",
+   "image": "explorer-family.jpg",
+   "imgPos": "60% 55%",
+   "logo": "deery-logo.png",
+   "name": "Deery Brothers Ford",
+   "phone": "(319) 337-4600",
+   "address": "2343 Mormon Trek Blvd, Iowa City",
+   "hours": "Mon–Sat",
+   "url": "deeryford.com",
+   "urlCue": "visit",
+   "tip": "Follow Local Vibe Check for more.",
+   "speak": "Call (319) 337-4600, or visit deery ford dot com.",
+   "say": "Call (319) 337-4600, or visit deeryford.com.",
+   "hold": 1.0
+  }
+ ],
+ "thumbs": {
+  "image": "deery-team.jpg",
+  "landscapePos": "50% 45%",
+  "reelPos": "50% 45%",
+  "lines": [
+   "Deery",
+   "Brothers Ford"
+  ],
+  "sub": "Iowa City, IA",
+  "tag": "Local Spotlight",
+  "year": "2026",
+  "bigPx": 104,
+  "reelBigPx": 150,
+  "subPx": 50,
+  "reelSubPx": 66,
+  "stamp": [
+   "4.8",
+   [
+    "GOOGLE",
+    "STARS"
+   ]
+  ],
+  "reelStamp": [
+   "340",
+   [
+    "TOP FORD",
+    "DEALERS"
+   ]
+  ]
+ }
+}
